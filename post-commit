@@ -1,1 +1,1 @@
-make publish && make github
+make github
