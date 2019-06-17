@@ -33,3 +33,12 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
+
+# to use a custom domain in github pages
+STATIC_PATHS = ['extra/CNAME']
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/humans.txt': {'path': 'humans.txt'},
+    'extra/robots.txt': {'path': 'robots.txt'},
+}
