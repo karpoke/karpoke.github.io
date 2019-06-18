@@ -14,8 +14,11 @@ from pelicanconf import *
 SITEURL = "https://karpoke.ignaciocano.com"
 RELATIVE_URLS = False
 
-FEED_ALL_RSS = "feeds/all.rss.xml"
-CATEGORY_FEED_RSS = "feeds/{slug}.rss.xml"
+FEED_RSS = "feeds/rss.xml"
+AUTHOR_FEED_RSS = "feeds/author/{slug}.rss.xml"
+CATEGORY_FEED_RSS = "feeds/category/{slug}.rss.xml"
+TAG_FEED_RSS = "feeds/tag/{slug}.rss.xml"
+FEED_MAX_ITEMS = 10
 
 DELETE_OUTPUT_DIRECTORY = True
 
