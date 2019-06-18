@@ -26,6 +26,7 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
+    ('github', 'http://github.com/karpoke'),
 )
 
 DEFAULT_PAGINATION = 10

@@ -26,9 +26,4 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # disable cache when experimenting with different settings
 LOAD_CONTENT_CACHE = True
-
-# Social widget
-SOCIAL = (
-    ("atom feed", "{}/{}".format(SITEURL, FEED_ALL_ATOM)),
-)
-
+CACHE_CONTENT = True
