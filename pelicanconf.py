@@ -26,7 +26,6 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ("atom", "{}/{}".format(SITEURL, FEED_ALL_ATOM)),
 )
 
 DEFAULT_PAGINATION = 10
@@ -44,7 +43,8 @@ EXTRA_PATH_METADATA = {
 }
 
 # disable cache when experimenting with different settings
-# LOAD_CONTENT_CACHE = False
+LOAD_CONTENT_CACHE = False
 
 # control whether all pages are displayed in the primary navigation menu
 # DISPLAY_PAGES_ON_MENU = True
+
