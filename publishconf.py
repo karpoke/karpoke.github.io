@@ -15,8 +15,8 @@ SITEURL = "https://karpoke.ignaciocano.com"
 RELATIVE_URLS = False
 
 FEED_RSS = "feeds/rss.xml"
-# if FEED_ATOM_RSS is set it'll show up in the social bar
-FEED_ATOM_RSS = FEED_RSS
+# if FEED_ALL_RSS is set it'll show up in the social bar
+FEED_ALL_RSS = "feeds/all/rss.xml"
 AUTHOR_FEED_RSS = "feeds/author/{slug}/rss.xml"
 CATEGORY_FEED_RSS = "feeds/category/{slug}/rss.xml"
 TAG_FEED_RSS = "feeds/tag/{slug}/rss.xml"
