@@ -15,9 +15,11 @@ SITEURL = "https://karpoke.ignaciocano.com"
 RELATIVE_URLS = False
 
 FEED_RSS = "feeds/rss.xml"
-AUTHOR_FEED_RSS = "feeds/author/{slug}.rss.xml"
-CATEGORY_FEED_RSS = "feeds/category/{slug}.rss.xml"
-TAG_FEED_RSS = "feeds/tag/{slug}.rss.xml"
+# if FEED_ATOM_RSS is set it'll show up in the social bar
+FEED_ATOM_RSS = FEED_RSS
+AUTHOR_FEED_RSS = "feeds/author/{slug}/rss.xml"
+CATEGORY_FEED_RSS = "feeds/category/{slug}/rss.xml"
+TAG_FEED_RSS = "feeds/tag/{slug}/rss.xml"
 FEED_MAX_ITEMS = 10
 
 DELETE_OUTPUT_DIRECTORY = True
