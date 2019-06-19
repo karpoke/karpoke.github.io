@@ -14,12 +14,14 @@ from pelicanconf import *
 SITEURL = "https://karpoke.ignaciocano.com"
 RELATIVE_URLS = False
 
-FEED_RSS = "feeds/rss.xml"
+FEED_URL = "feeds/"
+FEED_SAVE_AS = "rss.xml"
+FEED_RSS = "{}{}".format(FEED_URL, FEED_SAVE_AS)
 # if FEED_ALL_RSS is set it'll show up in the social bar
-FEED_ALL_RSS = "feeds/all/rss.xml"
-AUTHOR_FEED_RSS = "feeds/author/{slug}/rss.xml"
-CATEGORY_FEED_RSS = "feeds/category/{slug}/rss.xml"
-TAG_FEED_RSS = "feeds/tag/{slug}/rss.xml"
+FEED_ALL_RSS = "{}all/{}".format(FEED_URL, FEED_SAVE_AS)
+AUTHOR_FEED_RSS = "{}{}{}".format(FEED_URL, AUTHOR_URL, FEED_SAVE_AS)
+CATEGORY_FEED_RSS = "{}{}{}".format(FEED_URL, CATEGORY_URL, FEED_SAVE_AS)
+TAG_FEED_RSS = "{}{}{}".format(FEED_URL, TAG_URL, FEED_SAVE_AS)
 FEED_MAX_ITEMS = 10
 
 DELETE_OUTPUT_DIRECTORY = True
