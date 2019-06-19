@@ -1,0 +1,12 @@
+/* TEAM */
+	Author:		Ignacio Cano
+	Contact:	nacho [at] ignaciocano [dot] com
+	Twitter: 	@karpoke
+	Github:		karpoke
+	From:		Palma de Mallorca, Balearic Islands, Spain
+
+/* SITE */
+	Last update:	2011/08/16
+	Language:	Spanish
+	Doctype:	HTML5
+	IDE:		vim, convert
