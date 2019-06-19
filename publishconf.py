@@ -32,3 +32,7 @@ DELETE_OUTPUT_DIRECTORY = True
 # disable cache when experimenting with different settings
 LOAD_CONTENT_CACHE = True
 CACHE_CONTENT = True
+
+DEFAULT_PAGINATION = 10
+DEFAULT_ORPHANS = 5
+

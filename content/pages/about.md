@@ -1,1 +1,1 @@
-Title: Acerca de Ignacio Cano
+Title: Acerca
