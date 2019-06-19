@@ -60,9 +60,13 @@ PAGE_URL = "{slug}/"
 PAGE_SAVE_AS = "{}index.html".format(PAGE_URL)
 ARCHIVES_URL = "archivos/"
 ARCHIVES_SAVE_AS = "{}index.html".format(ARCHIVES_URL)
-YEAR_ARCHIVE_SAVE_AS = "{}{{date:%Y}}/index.html".format(ARCHIVES_URL)
-MONTH_ARCHIVE_SAVE_AS = "{}{{date:%Y}}/{{date:%m}}/index.html".format(ARCHIVES_URL)
-DAY_ARCHIVE_SAVE_AS = "{}{{date:%Y}}/{{date:%m}}/{{date:%d}}/index.html".format(ARCHIVES_URL)
+YEAR_ARCHIVE_URL = "{date:%Y}/"
+YEAR_ARCHIVE_SAVE_AS = "{}index.html".format(YEAR_ARCHIVE_URL)
+MONTH_ARCHIVE_URL = "{}{{date:%m}}/".format(YEAR_ARCHIVE_URL)
+MONTH_ARCHIVE_SAVE_AS = "{}index.html".format(MONTH_ARCHIVE_URL)
+# Used only if you have the {url} placeholder in PAGINATION_PATTERNS
+DAY_ARCHIVE_URL = "{}{{date:%d}}/".format(MONTH_ARCHIVE_URL)
+DAY_ARCHIVE_SAVE_AS = "{}index.html".format(DAY_ARCHIVE_URL)
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -82,8 +86,8 @@ EXTRA_PATH_METADATA = {
 }
 
 # disable cache when experimenting with different settings
-LOAD_CONTENT_CACHE = True
-CACHE_CONTENT = True
+LOAD_CONTENT_CACHE = False
+CACHE_CONTENT = False
 
 # control whether all pages are displayed in the primary navigation menu
 # DISPLAY_PAGES_ON_MENU = True
