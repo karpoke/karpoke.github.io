@@ -34,39 +34,41 @@ SOCIAL = (
 DEFAULT_PAGINATION = 10
 DEFAULT_ORPHANS = 5
 
+# url patterns
+INDEX_SAVE_AS = "index.html"
+
 PAGINATION_PAGE_URL = "{base_name}/pagina/{number}/"
-PAGINATION_PAGE_SAVE_AS = "{}index.html".format(PAGINATION_PAGE_URL)
+PAGINATION_PAGE_SAVE_AS = "{}{}".format(PAGINATION_PAGE_URL, INDEX_SAVE_AS)
 PAGINATION_PATTERNS = (
     (1, "{url}", "{save_as}"),
     (2, PAGINATION_PAGE_URL, PAGINATION_PAGE_SAVE_AS),
 )
 
-# url patterns
 ARTICLE_URL = "{date:%Y}/{date:%m}/{date:%d}/{slug}/"
-ARTICLE_SAVE_AS = "{}index.html".format(ARTICLE_URL)
+ARTICLE_SAVE_AS = "{}{}".format(ARTICLE_URL, INDEX_SAVE_AS)
 AUTHOR_URL = "autor/{slug}/"
-AUTHOR_SAVE_AS = "{}index.html".format(AUTHOR_URL)
+AUTHOR_SAVE_AS = "{}{}".format(AUTHOR_URL, INDEX_SAVE_AS)
 AUTHORS_URL = "autores/"
-AUTHORS_SAVE_AS = "{}index.html".format(AUTHORS_URL)
+AUTHORS_SAVE_AS = "{}{}".format(AUTHORS_URL, INDEX_SAVE_AS)
 CATEGORY_URL = "categoria/{slug}/"
-CATEGORY_SAVE_AS = "{}index.html".format(CATEGORY_URL)
+CATEGORY_SAVE_AS = "{}{}".format(CATEGORY_URL, INDEX_SAVE_AS)
 CATEGORIES_URL = "categorias/"
-CATEGORIES_SAVE_AS = "{}index.html".format(CATEGORIES_URL)
+CATEGORIES_SAVE_AS = "{}{}".format(CATEGORIES_URL, INDEX_SAVE_AS)
 TAG_URL = "etiqueta/{slug}/"
-TAG_SAVE_AS = "{}index.html".format(TAG_URL)
+TAG_SAVE_AS = "{}{}".format(TAG_URL, INDEX_SAVE_AS)
 TAGS_URL = "etiquetas/"
-TAGS_SAVE_AS = "{}index.html".format(TAGS_URL)
+TAGS_SAVE_AS = "{}{}".format(TAGS_URL, INDEX_SAVE_AS)
 PAGE_URL = "{slug}/"
-PAGE_SAVE_AS = "{}index.html".format(PAGE_URL)
+PAGE_SAVE_AS = "{}{}".format(PAGE_URL, INDEX_SAVE_AS)
 ARCHIVES_URL = "archivos/"
-ARCHIVES_SAVE_AS = "{}index.html".format(ARCHIVES_URL)
+ARCHIVES_SAVE_AS = "{}{}".format(ARCHIVES_URL, INDEX_SAVE_AS)
 YEAR_ARCHIVE_URL = "{date:%Y}/"
-YEAR_ARCHIVE_SAVE_AS = "{}index.html".format(YEAR_ARCHIVE_URL)
-MONTH_ARCHIVE_URL = "{}{{date:%m}}/".format(YEAR_ARCHIVE_URL)
-MONTH_ARCHIVE_SAVE_AS = "{}index.html".format(MONTH_ARCHIVE_URL)
+YEAR_ARCHIVE_SAVE_AS = "{}{}".format(YEAR_ARCHIVE_URL, INDEX_SAVE_AS)
+MONTH_ARCHIVE_URL = "{}{{date:%m}}/".format(YEAR_ARCHIVE_URL, INDEX_SAVE_AS)
+MONTH_ARCHIVE_SAVE_AS = "{}{}".format(MONTH_ARCHIVE_URL, INDEX_SAVE_AS)
 # Used only if you have the {url} placeholder in PAGINATION_PATTERNS
 DAY_ARCHIVE_URL = "{}{{date:%d}}/".format(MONTH_ARCHIVE_URL)
-DAY_ARCHIVE_SAVE_AS = "{}index.html".format(DAY_ARCHIVE_URL)
+DAY_ARCHIVE_SAVE_AS = "{}{}".format(DAY_ARCHIVE_URL, INDEX_SAVE_AS)
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -86,6 +88,7 @@ EXTRA_PATH_METADATA = {
 }
 
 # disable cache when experimenting with different settings
+AUTORELOAD_IGNORE_CACHE = True
 LOAD_CONTENT_CACHE = False
 CACHE_CONTENT = False
 
