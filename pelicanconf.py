@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u"Ignacio Cano"
 SITENAME = u"Karpoke"
-SITEURL = ""
+SITEURL = "/"
 
 PATH = "content"
 
@@ -20,6 +20,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
+LINKS_WIDGET_NAME = "enlaces"
 LINKS = (
     ("Ignacio Cano", "https://www.ignaciocano.com"),
 )
@@ -29,12 +30,39 @@ SOCIAL = (
     ('github', 'http://github.com/karpoke'),
 )
 
+# pagination
 DEFAULT_PAGINATION = 10
 DEFAULT_ORPHANS = 5
+
+PAGINATION_PAGE_URL = "{base_name}/pagina/{number}/"
+PAGINATION_PAGE_SAVE_AS = "{}index.html".format(PAGINATION_PAGE_URL)
 PAGINATION_PATTERNS = (
     (1, "{url}", "{save_as}"),
-    (2, "{base_name}/page/{number}/", "{base_name}/page/{number}/index.html"),
+    (2, PAGINATION_PAGE_URL, PAGINATION_PAGE_SAVE_AS),
 )
+
+# url patterns
+ARTICLE_URL = "{date:%Y}/{date:%m}/{date:%d}/{slug}/"
+ARTICLE_SAVE_AS = "{}index.html".format(ARTICLE_URL)
+AUTHOR_URL = "autor/{slug}/"
+AUTHOR_SAVE_AS = "{}index.html".format(AUTHOR_URL)
+AUTHORS_URL = "autores/"
+AUTHORS_SAVE_AS = "{}index.html".format(AUTHORS_URL)
+CATEGORY_URL = "cateogria/{slug}/"
+CATEGORY_SAVE_AS = "{}index.html".format(CATEGORY_URL)
+CATEGORIES_URL = "categorias/"
+CATEGORIES_SAVE_AS = "{}index.html".format(CATEGORIES_URL)
+TAG_URL = "etiqueta/{slug}/"
+TAG_SAVE_AS = "{}index.html".format(TAG_URL)
+TAGS_URL = "etiquetas/"
+TAGS_SAVE_AS = "{}index.html".format(TAGS_URL)
+PAGE_URL = "{slug}/"
+PAGE_SAVE_AS = "{}index.html".format(PAGE_URL)
+ARCHIVES_URL = "archivos/"
+ARCHIVES_SAVE_AS = "{}index.html".format(ARCHIVES_URL)
+YEAR_ARCHIVE_SAVE_AS = "{}{{date:%Y}}/index.html".format(ARCHIVES_URL)
+MONTH_ARCHIVE_SAVE_AS = "{}{{date:%Y}}/{{date:%m}}/index.html".format(ARCHIVES_URL)
+DAY_ARCHIVE_SAVE_AS = "{}{{date:%Y}}/{{date:%m}}/{{date:%d}}/index.html".format(ARCHIVES_URL)
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -62,6 +90,5 @@ CACHE_CONTENT = True
 
 STATIC_CHECK_IF_MODIFIED = False
 
+# github ribbon
 GITHUB_URL = "https://github.com/karpoke/karpoke.github.io"
-
-LINKS_WIDGET_NAME = "enlaces"

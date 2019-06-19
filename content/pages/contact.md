@@ -1,1 +1,1 @@
-Title: Página de contacto
+Title: Contacto
