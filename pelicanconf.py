@@ -27,7 +27,7 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ('github', 'http://github.com/karpoke'),
+    ('github', 'https://github.com/karpoke'),
 )
 
 # pagination
