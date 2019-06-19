@@ -28,7 +28,3 @@ DELETE_OUTPUT_DIRECTORY = True
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
-
-# disable cache when experimenting with different settings
-LOAD_CONTENT_CACHE = True
-CACHE_CONTENT = True
