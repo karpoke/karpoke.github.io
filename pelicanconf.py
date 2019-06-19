@@ -88,8 +88,8 @@ EXTRA_PATH_METADATA = {
 }
 
 # disable cache when experimenting with different settings
-MLOAD_CONTENT_CACHE = False
-CACHE_CONTENT = False
+LOAD_CONTENT_CACHE = True
+CACHE_CONTENT = True
 
 # control whether all pages are displayed in the primary navigation menu
 # DISPLAY_PAGES_ON_MENU = True
