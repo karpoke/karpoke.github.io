@@ -60,3 +60,5 @@ LOAD_CONTENT_CACHE = False
 # DISPLAY_PAGES_ON_MENU = True
 
 STATIC_CHECK_IF_MODIFIED = False
+
+GITHUB_URL = "https://github.com/karpoke/karpoke.github.io"
