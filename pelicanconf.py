@@ -62,3 +62,5 @@ LOAD_CONTENT_CACHE = False
 STATIC_CHECK_IF_MODIFIED = False
 
 GITHUB_URL = "https://github.com/karpoke/karpoke.github.io"
+
+LINKS_WIDGET_NAME = "enlaces"
