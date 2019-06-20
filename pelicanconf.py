@@ -78,10 +78,13 @@ RELATIVE_URLS = True
 PAGE_EXCLUDES = ["extra"]
 ARTICLE_EXCLUDES = PAGE_EXCLUDES
 
-# to use a custom domain in github pages
+# CNAME: to use a custom domain in github pages
+# .nojekyll: to bypass Jekyll in GHP:
+# https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/
 STATIC_PATHS = [
     "extra/CNAME",
     "extra/README.md",
+    "extra/.nojekyll",
     "extra/favicon.ico",
     "extra/humans.txt",
     "extra/robots.txt",
@@ -90,6 +93,7 @@ EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
     "extra/README.md": {"path": "README.md"},
     "extra/favicon.ico": {"path": "favicon.ico"},
+    "extra/.nojekyll": {"path": ".nojekyll"},
     "extra/humans.txt": {"path": "humans.txt"},
     "extra/robots.txt": {"path": "robots.txt"},
 }
