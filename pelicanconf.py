@@ -82,7 +82,9 @@ ARTICLE_EXCLUDES = PAGE_EXCLUDES
 # .nojekyll: to bypass Jekyll in GHP:
 # https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/
 STATIC_PATHS = [
+    "images",
     "extra/CNAME",
+    "extra/LICENSE",
     "extra/README.md",
     "extra/.nojekyll",
     "extra/favicon.ico",
@@ -91,6 +93,7 @@ STATIC_PATHS = [
 ]
 EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
+    "extra/LICENSE": {"path": "LICENSE"},
     "extra/README.md": {"path": "README.md"},
     "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/.nojekyll": {"path": ".nojekyll"},
