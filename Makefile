@@ -9,7 +9,8 @@ CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 GITHUB_PAGES_BRANCH=master
-
+TRAVIS_BRANCH=release
+DEVELOP_BRANCH=develop
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -40,6 +41,7 @@ help:
 	@echo '   make ssh_upload                     upload the web site via SSH        '
 	@echo '   make rsync_upload                   upload the web site via rsync+ssh  '
 	@echo '   make github                         upload the web site via gh-pages   '
+	@echo '   make travis                         upload the web site via travis ci  '
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
@@ -84,5 +86,11 @@ github: publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
+travis:
+	git checkout $(TRAVIS_BRANCH)
+	git pull
+	git merge --no-ff $(DEVELOP_BRANCH) -m"Merge '$(DEVELOP_BRANCH)' into '$(TRAVIS_BRANCH)'"
+	git push
+	git checkout $(DEVELOP_BRANCH)
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish github
