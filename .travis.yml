@@ -2,7 +2,7 @@ branches:
   only:
   - release
 
-language: python
+language: python:2.7
 
 # cache: pip
 
