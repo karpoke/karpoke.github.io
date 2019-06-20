@@ -1,5 +1,10 @@
-# Cache Dependencies
-cache: pip
+branches:
+  only:
+  - release
+
+language: python
+
+# cache: pip
 
 install:
   - pip install -r requirements.txt
