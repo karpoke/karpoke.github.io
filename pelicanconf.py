@@ -91,10 +91,10 @@ EXTRA_PATH_METADATA = {
 LOAD_CONTENT_CACHE = True
 CACHE_CONTENT = True
 
+STATIC_CHECK_IF_MODIFIED = False
+
 # control whether all pages are displayed in the primary navigation menu
 # DISPLAY_PAGES_ON_MENU = True
-
-STATIC_CHECK_IF_MODIFIED = False
 
 # github ribbon
 GITHUB_URL = "https://github.com/karpoke/karpoke.github.io"
