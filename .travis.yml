@@ -15,6 +15,9 @@ install:
 script:
   - make publish
 
+git:
+  depth: 1
+
 # to generate a personal access token: https://github.com/settings/tokens
 # to keep the token secret: travis-encrypt --env --password "GITHUB_TOKEN=<personal access token>" karpoke karpoke.github.io
 env:
