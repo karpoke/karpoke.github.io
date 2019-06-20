@@ -6,6 +6,12 @@ branches:
   only:
   - release
 
+install:
+  - pip install -r requirements.txt
+
+script:
+  - make publish
+
 deploy:
   provider: pages
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
