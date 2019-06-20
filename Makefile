@@ -1,12 +1,12 @@
 PY?=python
 PELICAN?=pelican
-PELICANOPTS=
+PELICAN_OPTS=
 
-BASEDIR=$(CURDIR)
-INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/output
-CONFFILE=$(BASEDIR)/pelicanconf.py
-PUBLISHCONF=$(BASEDIR)/publishconf.py
+BASE_DIR=$(CUR_DIR)
+INPUT_DIR=$(BASE_DIR)/content
+OUTPUT_DIR=$(BASE_DIR)/output
+CONFIG_FILE=$(BASE_DIR)/pelicanconf.py
+PUBLISHCONF=$(BASE_DIR)/publishconf.py
 
 GITHUB_PAGES_BRANCH=master
 TRAVIS_BRANCH=release
@@ -14,76 +14,76 @@ DEVELOP_BRANCH=develop
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
-	PELICANOPTS += -D
+	PELICAN_OPTS += -D
 endif
 
 RELATIVE ?= 0
 ifeq ($(RELATIVE), 1)
-	PELICANOPTS += --relative-urls
+	PELICAN_OPTS += --relative-urls
 endif
 
-IGNORECACHE ?= 0
-ifeq ($(IGNORECACHE), 1)
-	PELICANOPTS += --ignore-cache
+IGNORE_CACHE ?= 0
+ifeq ($(IGNORE_CACHE), 1)
+	PELICAN_OPTS += --ignore-cache
 endif
+
+PELICAN_DEFAULT=$(PELICAN) $(INPUT_DIR) -o $(OUTPUT_DIR) $(PELICAN_OPTS)
+PELICAN_DEFAULT_DEV=$(PELICAN_DEFAULT) -s $(CONFIG_FILE)
 
 help:
 	@echo 'Makefile for a pelican Web site                                           '
 	@echo '                                                                          '
 	@echo 'Usage:                                                                    '
-	@echo '   make html                           (re)generate the web site          '
 	@echo '   make clean                          remove the generated files         '
+	@echo '   make html                           (re)generate the web site          '
 	@echo '   make regenerate                     regenerate files upon modification '
-	@echo '   make publish                        generate using production settings '
 	@echo '   make serve [PORT=8000]              serve site at http://localhost:8000'
 	@echo '   make serve-global [SERVER=0.0.0.0]  serve (as root) to $(SERVER):80    '
 	@echo '   make devserver [PORT=8000]          serve and regenerate together      '
-	@echo '   make ssh_upload                     upload the web site via SSH        '
-	@echo '   make rsync_upload                   upload the web site via rsync+ssh  '
+	@echo '   make publish                        generate using production settings '
 	@echo '   make github                         upload the web site via gh-pages   '
 	@echo '   make travis                         upload the web site via travis ci  '
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
-	@echo 'Set the IGNORECACHE variable to 1 to ignore cache files                   '
+	@echo 'Set the IGNORE_CACHE variable to 1 to ignore cache files                   '
 	@echo '                                                                          '
 
-html:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
-
 clean:
-	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
+	[ ! -d $(OUTPUT_DIR) ] || rm -rf $(OUTPUT_DIR)
+
+html:
+	$(PELICAN_DEFAULT_DEV)
 
 regenerate:
-	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN_DEFAULT_DEV) -r
 
 serve:
 ifdef PORT
-	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT)
+	$(PELICAN_DEFAULT_DEV) -l -p $(PORT)
 else
-	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN_DEFAULT_DEV) -l
 endif
 
 serve-global:
 ifdef SERVER
-	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT) -b $(SERVER)
+	$(PELICAN_DEFAULT_DEV) -l -p $(POST) -b $(SERVER)
 else
-	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT) -b 0.0.0.0
+	$(PELICAN_DEFAULT_DEV) -l -p $(POST) -b 0.0.0.0
 endif
-
 
 devserver:
 ifdef PORT
-	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT)
+	$(PELICAN_DEFAULT_DEV) -lr -p $(PORT)
 else
-	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN_DEFAULT_DEV) -lr
 endif
 
 publish:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	$(PELICAN_DEFAULT) -s $(PUBLISHCONF)
 
 github: publish
-	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
+	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUT_DIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 travis:
@@ -93,4 +93,4 @@ travis:
 	git push
 	git checkout $(DEVELOP_BRANCH)
 
-.PHONY: html help clean regenerate serve serve-global devserver stopserver publish github
+.PHONY: help clean html regenerate serve serve-global devserver publish github travis
