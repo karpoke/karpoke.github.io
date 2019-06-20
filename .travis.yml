@@ -1,13 +1,10 @@
+language: python
+python:
+  - "2.7"
+
 branches:
   only:
   - release
-
-language: python:2.7
-
-# cache: pip
-
-install:
-  - pip install -r requirements.txt
 
 deploy:
   provider: pages
@@ -17,3 +14,5 @@ deploy:
   target-branch: master
   on:
     branch: release
+  local_dir: ${TRAVIS_BUILD_DIR}/output
+  fqdn: karpoke.ignaciocano.com
