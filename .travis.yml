@@ -16,7 +16,7 @@ script:
   - make publish
 
 git:
-  depth: 1
+  depth: 3
 
 env:
   global:
@@ -28,7 +28,7 @@ env:
 
 deploy:
   provider: pages
-  # github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   local_dir: output
   fqdn: karpoke.ignaciocano.com
   skip_cleanup: true
