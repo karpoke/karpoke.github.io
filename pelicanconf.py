@@ -23,6 +23,8 @@ AUTHOR_FEED_RSS = None
 LINKS_WIDGET_NAME = "enlaces"
 LINKS = (
     ("Ignacio Cano", "https://www.ignaciocano.com"),
+    ("Pelican", "http://getpelican.com/"),
+    ("Python.org", "http://python.org/"),
 )
 
 # Social widget
