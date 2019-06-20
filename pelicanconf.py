@@ -66,7 +66,7 @@ ARCHIVES_URL = "archivos/"
 ARCHIVES_SAVE_AS = "{}{}".format(ARCHIVES_URL, INDEX_SAVE_AS)
 YEAR_ARCHIVE_URL = "{date:%Y}/"
 YEAR_ARCHIVE_SAVE_AS = "{}{}".format(YEAR_ARCHIVE_URL, INDEX_SAVE_AS)
-MONTH_ARCHIVE_URL = "{}{{date:%m}}/".format(YEAR_ARCHIVE_URL, INDEX_SAVE_AS)
+MONTH_ARCHIVE_URL = "{}{{date:%m}}/".format(YEAR_ARCHIVE_URL)
 MONTH_ARCHIVE_SAVE_AS = "{}{}".format(MONTH_ARCHIVE_URL, INDEX_SAVE_AS)
 # Used only if you have the {url} placeholder in PAGINATION_PATTERNS
 DAY_ARCHIVE_URL = "{}{{date:%d}}/".format(MONTH_ARCHIVE_URL)
@@ -77,13 +77,15 @@ RELATIVE_URLS = True
 
 # to use a custom domain in github pages
 STATIC_PATHS = [
-    "extra/CNAME", 
+    "extra/CNAME",
+    "extra/README.md",
     "extra/favicon.ico",
     "extra/humans.txt",
     "extra/robots.txt",
 ]
 EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
+    "extra/README.md": {"path": "README.md"},
     "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/humans.txt": {"path": "humans.txt"},
     "extra/robots.txt": {"path": "robots.txt"},
