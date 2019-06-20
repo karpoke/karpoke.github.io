@@ -2,7 +2,7 @@ PY?=python
 PELICAN?=pelican
 PELICAN_OPTS=
 
-BASE_DIR=$(CUR_DIR)
+BASE_DIR=$(CURDIR)
 INPUT_DIR=$(BASE_DIR)/content
 OUTPUT_DIR=$(BASE_DIR)/output
 CONFIG_FILE=$(BASE_DIR)/pelicanconf.py
