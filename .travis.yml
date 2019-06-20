@@ -2,11 +2,6 @@ language: python
 python:
   - "2.7"
 
-# cache: pip
-
-install:
-  - pip install -r requirements.txt
-
 branches:
   only:
   - release
@@ -17,5 +12,3 @@ deploy:
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   target-branch: master
-  on:
-    branch: release
