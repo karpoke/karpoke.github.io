@@ -89,7 +89,7 @@ github: publish
 travis:
 	git checkout $(TRAVIS_BRANCH)
 	git pull
-	git merge --no-ff $(DEVELOP_BRANCH) -m"Merge '$(DEVELOP_BRANCH)' into '$(TRAVIS_BRANCH)'"
+	git merge --no-ff $(DEVELOP_BRANCH) -m"Merge branch '$(DEVELOP_BRANCH)' into '$(TRAVIS_BRANCH)'"
 	git push
 	git checkout $(DEVELOP_BRANCH)
 
