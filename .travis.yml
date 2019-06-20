@@ -2,10 +2,6 @@ language: python
 python:
   - "2.7"
 
-branches:
-  only:
-  - release
-
 deploy:
   provider: pages
   skip_cleanup: true
