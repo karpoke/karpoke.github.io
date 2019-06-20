@@ -12,3 +12,7 @@ deploy:
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   target-branch: master
+  on:
+    branch: release
+  local_dir: ${TRAVIS_BUILD_DIR}/output
+  fqdn: karpoke.ignaciocano.com
