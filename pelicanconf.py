@@ -75,17 +75,20 @@ DAY_ARCHIVE_SAVE_AS = "{}{}".format(DAY_ARCHIVE_URL, INDEX_SAVE_AS)
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
+PAGE_EXCLUDES = ["extra"]
+ARTICLE_EXCLUDES = PAGE_EXCLUDES
+
 # to use a custom domain in github pages
 STATIC_PATHS = [
     "extra/CNAME",
-    "extra/README",
+    "extra/README.md",
     "extra/favicon.ico",
     "extra/humans.txt",
     "extra/robots.txt",
 ]
 EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
-    "extra/README": {"path": "README"},
+    "extra/README.md": {"path": "README.md"},
     "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/humans.txt": {"path": "humans.txt"},
     "extra/robots.txt": {"path": "robots.txt"},
