@@ -78,14 +78,14 @@ RELATIVE_URLS = True
 # to use a custom domain in github pages
 STATIC_PATHS = [
     "extra/CNAME",
-    "extra/README.md",
+    "extra/README",
     "extra/favicon.ico",
     "extra/humans.txt",
     "extra/robots.txt",
 ]
 EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
-    "extra/README.md": {"path": "README.md"},
+    "extra/README": {"path": "README"},
     "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/humans.txt": {"path": "humans.txt"},
     "extra/robots.txt": {"path": "robots.txt"},
