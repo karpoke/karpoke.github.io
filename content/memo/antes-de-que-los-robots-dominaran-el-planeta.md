@@ -14,7 +14,7 @@ Disallow: /ignoring/human/orders
 Disallow: /harm/to/self
 ```
 
-![Terminator Arm]({filename}/images/terminator_sideshow_endo_arm-208x300.jpg)
+![Terminator Arm]({static}/images/terminator_sideshow_endo_arm-208x300.jpg)
 
 - [barrapunto][]
 

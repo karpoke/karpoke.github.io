@@ -4,7 +4,7 @@ Author: Ignacio Cano
 Tags: das keyboad, fuck yeah
 Slug: fuck-yeah
 
-![Keyboard]({filename}/images/keyboard-300x125.jpg)
+![Keyboard]({static}/images/keyboard-300x125.jpg)
 
 [keyboard cult][]
 
