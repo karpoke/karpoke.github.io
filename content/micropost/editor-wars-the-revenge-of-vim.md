@@ -1,6 +1,6 @@
 Title: Editor wars: the revenge of vim
 Date: 2016-09-11 13:42
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: editor-wars-the-revenge-of-vim
 
 > Al, like a lot of you out there, thinks that he “knows how to use vi”.

@@ -1,6 +1,6 @@
 Title: Statistical functions in MySQL
 Date: 2012-07-14 19:38
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: statistical-functions-in-mysql
 
 > Even in times of a growing market of specialized NoSQL databases, the

@@ -1,6 +1,6 @@
 Title: How to Have Fun Programming
 Date: 2012-06-03 13:00
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-to-have-fun-programming
 
 > I may not be a great programmer, but I have a ton of fun programming.

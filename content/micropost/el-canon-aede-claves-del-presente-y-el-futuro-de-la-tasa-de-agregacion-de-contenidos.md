@@ -1,6 +1,6 @@
 Title: El ’canon AEDE’: claves del presente y el futuro de la tasa de agregación de contenidos
 Date: 2015-01-01 11:49
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-canon-aede-claves-del-presente-y-el-futuro-de-la-tasa-de-agregacion-de-contenidos
 
 > Este jueves, 1 de enero, entra en vigor gran parte de la ley Lassalle

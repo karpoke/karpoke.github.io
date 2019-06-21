@@ -1,6 +1,6 @@
 Title: Daft Punk, el dúo francés que revolucionó la música electrónica
 Date: 2014-11-22 16:10
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: daft-punk-el-duo-frances-que-revoluciono-la-musica-electronica
 
 > Han pasado 20 años desde el nacimiento de Daft Punk, y apenas llevan

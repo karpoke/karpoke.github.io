@@ -1,6 +1,6 @@
 Title: Tetris Printer Algorithm
 Date: 2013-06-05 23:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: tetris-printer-algorithm
 
 > The algorithm converts pixels from a source image into squares in the

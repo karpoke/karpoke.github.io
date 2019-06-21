@@ -1,6 +1,6 @@
 Title: Run time profiling with cProfile
 Date: 2013-03-27 21:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: run-time-profiling-with-cprofile
 
 > Python is distributed with profiling modules. They describe the run

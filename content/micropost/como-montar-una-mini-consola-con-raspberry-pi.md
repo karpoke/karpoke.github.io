@@ -1,6 +1,6 @@
 Title: Cómo montar una mini consola con Raspberry Pi
 Date: 2016-12-07 21:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: raspberry pi, emuladores, retropie, retroarch, Sega, Nintendo, NES, SNES, N64, Gameboy, DS, Master System, Mega Drive, 32X, Saturn, Dreamcast, MAME, ScummVM, DosBOX, PSX, PSP, Amstrad, Amiga, Commodore, Atari, Spectrum, Kodi
 Slug: como-montar-una-mini-consola-con-raspberry-pi
 

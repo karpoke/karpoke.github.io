@@ -1,6 +1,6 @@
 Title: LogJam — This new encryption glitch puts Internet users at risk
 Date: 2015-05-20 18:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: LogJam, FREAK, MitM, intercambio de claves Diffie-Hellman, DHE
 Slug: logjam-this-new-encryption-glitch-puts-internet-users-at-risk
 

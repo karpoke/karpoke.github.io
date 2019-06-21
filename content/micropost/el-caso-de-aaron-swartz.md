@@ -1,6 +1,6 @@
 Title: EL CASO DE AARON SWARTZ
 Date: 2013-01-13 13:59
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-caso-de-aaron-swartz
 
 > Ayer se suicidó Aaron Swartz, uno de los activistas de Internet que

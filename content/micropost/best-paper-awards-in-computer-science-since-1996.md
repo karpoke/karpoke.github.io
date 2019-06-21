@@ -1,6 +1,6 @@
 Title: Best Paper Awards in Computer Science (since 1996)
 Date: 2012-08-15 17:30
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: best-paper-awards-in-computer-science-since-1996
 
 > Much of this data was entered by hand (obtained by contacting past

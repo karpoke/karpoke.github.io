@@ -1,6 +1,6 @@
 Title: TRS Drawbot
 Date: 2014-05-24 15:02
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: trs-drawbot
 
 > On a standard headphone plug, the left channel comes through the outer

@@ -1,6 +1,6 @@
 Title: Why NULL points to 0?
 Date: 2012-06-26 02:40
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: why-null-points-to-0
 
 > A few years ago I would answer the above question with ”because NULL

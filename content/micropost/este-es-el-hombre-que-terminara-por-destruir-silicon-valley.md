@@ -1,6 +1,6 @@
 Title: Este es el hombre que terminará por destruir Silicon Valley
 Date: 2013-11-18 20:41
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: este-es-el-hombre-que-terminara-por-destruir-silicon-valley
 
 > El cumplimiento de la ecuación de Moore ha sido posible hasta la fecha

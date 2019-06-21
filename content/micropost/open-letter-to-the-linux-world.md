@@ -1,6 +1,6 @@
 Title: Open letter to the Linux World
 Date: 2014-08-31 17:34
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: open-letter-to-the-linux-world
 
 > So, what is systemd? Well, meet your new God. You may have been

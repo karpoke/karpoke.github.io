@@ -1,6 +1,6 @@
 Title: El salto de Felix Baumgartner en Python
 Date: 2012-10-15 20:15
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-salto-de-felix-baumgartner-en-python
 
 > Supongo que todos estáis al tanto de la hazaña de Felix Baumgartner,

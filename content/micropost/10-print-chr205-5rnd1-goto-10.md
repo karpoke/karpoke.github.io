@@ -1,6 +1,6 @@
 Title: 10 PRINT CHR$(205.5+RND(1)); : GOTO 10
 Date: 2012-12-18 16:50
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 10-print-chr205-5rnd1-goto-10
 
 > This book takes a single line of code”the extremely concise BASIC

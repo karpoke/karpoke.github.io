@@ -1,6 +1,6 @@
 Title: Initializing and Managing Services in Linux: Past, Present and Future
 Date: 2015-05-20 18:38
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: initializing-and-managing-services-in-linux-past-present-and-future
 
 > One of the most crucial pieces of any UNIX-like operating system is

@@ -1,6 +1,6 @@
 Title: What are the chances of survival of individual chess pieces in average games?
 Date: 2014-10-26 09:20
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: what-are-the-chances-of-survival-of-individual-chess-pieces-in-average-games
 
 > In case anyone’s wondering how I approached this as a programming

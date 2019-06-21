@@ -1,6 +1,6 @@
 Title: An unbeatable computer program has finally solved two-player limit Texas hold’em poker
 Date: 2015-01-10 22:27
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: an-unbeatable-computer-program-has-finally-solved-two-player-limit-texas-holdem-poker
 
 > Two-player limit Texas hold’em poker has finally been solved,

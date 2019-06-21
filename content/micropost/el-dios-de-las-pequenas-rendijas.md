@@ -1,6 +1,6 @@
 Title: El dios de las pequeñas rendijas
 Date: 2012-07-31 13:20
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-dios-de-las-pequenas-rendijas
 
 > Ninguna multinacional tiene tantas sucursales, ninguna empresa engloba

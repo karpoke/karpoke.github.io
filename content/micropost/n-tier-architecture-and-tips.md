@@ -1,6 +1,6 @@
 Title: N-Tier Architecture And Tips
 Date: 2012-07-31 14:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: n-tier-architecture-and-tips
 
 > N-Tier architecture is an industry-proved software architecture model,

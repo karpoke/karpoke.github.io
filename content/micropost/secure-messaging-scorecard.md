@@ -1,6 +1,6 @@
 Title: Secure messaging scorecard
 Date: 2014-11-07 09:07
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: secure-messaging-scorecard
 
 > In the face of widespread Internet surveillance, we need a secure and

@@ -1,6 +1,6 @@
 Title: Who invented pointers, amortized complexity, and more?
 Date: 2014-09-09 22:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: who-invented-pointers-amortized-complexity-and-more
 
 > Andrey Kolmogorov, Fred Hennie, Richard Stearns, and Walter Savitch

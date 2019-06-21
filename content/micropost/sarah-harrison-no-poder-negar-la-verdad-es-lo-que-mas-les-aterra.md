@@ -1,6 +1,6 @@
 Title: Sarah Harrison: ”No poder negar la verdad es lo que más les aterra”
 Date: 2014-07-21 07:45
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: sarah-harrison-no-poder-negar-la-verdad-es-lo-que-mas-les-aterra
 
 > Lo mismo sucede con el término de ”seguridad nacional” ampliamente

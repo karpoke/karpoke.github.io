@@ -1,6 +1,6 @@
 Title: Lo que sucede cuando un software se convierte en un agujero negro
 Date: 2015-11-07 13:35
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: lo-que-sucede-cuando-un-software-se-convierte-en-un-agujero-negro
 
 > Fue a Bjarne Stroustrup a quién le leí que “un sistema grande y

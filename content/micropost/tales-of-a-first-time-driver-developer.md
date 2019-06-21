@@ -1,6 +1,6 @@
 Title: Tales Of A First Time Driver Developer
 Date: 2012-08-26 15:25
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: tales-of-a-first-time-driver-developer
 
 > Since 2004, I’ve owned a ThinkPad A22m - a laptop that came out in

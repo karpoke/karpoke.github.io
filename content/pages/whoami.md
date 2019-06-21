@@ -1,10 +1,10 @@
 Title: whoami
 Date: 2010-05-20 09:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: whoami
 
 
-[Karpoke][] es el blog personal de Ignacio Cano, vivaracho admirado como
+[Karpoke][] es el blog personal de Nacho Cano, vivaracho admirado como
 programador informático, con poderes de súper vaca. Fan del _steampunk_, del
 _ASCII art_ y de los 8 bits. Nací en el Mediterráneo.
 

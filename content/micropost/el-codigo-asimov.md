@@ -1,6 +1,6 @@
 Title: El código Asimov
 Date: 2013-03-24 21:55
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-codigo-asimov
 
 > El hombre artificial siempre fue una fantasía que resulta tan

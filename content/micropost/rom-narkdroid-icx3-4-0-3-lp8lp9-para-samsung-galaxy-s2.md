@@ -1,6 +1,6 @@
 Title: ROM NaRkDrOiD IcX3 (4.0.3 LP8/LP9) para Samsung Galaxy S2
 Date: 2012-07-13 17:30
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: rom-narkdroid-icx3-4-0-3-lp8lp9-para-samsung-galaxy-s2
 
 [ROM] [UPDATE1] [{\^NaRkDrOiD IcX3\^}][4.0.3.

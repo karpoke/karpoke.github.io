@@ -1,6 +1,6 @@
 Title: Walking paper
 Date: 2012-08-30 11:53
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: walking-paper
 
 > Paper Biped Robot making process from H/P MPM (Mechanical Paper

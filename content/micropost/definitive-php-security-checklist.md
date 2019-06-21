@@ -1,6 +1,6 @@
 Title: Definitive PHP security checklist
 Date: 2012-07-06 14:34
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: definitive-php-security-checklist
 
 > There was a recent question about a PHP security checklist on a forum

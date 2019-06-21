@@ -1,6 +1,6 @@
 Title: Traducción de la Nota G
 Date: 2014-11-14 12:20
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: traduccion-de-la-nota-g
 
 > La Máquina Analítica no tiene ninguna pretensión de producir nada.

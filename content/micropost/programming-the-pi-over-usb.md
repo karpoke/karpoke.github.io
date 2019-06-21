@@ -1,6 +1,6 @@
 Title: Programming the Pi over USB
 Date: 2016-07-10 00:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: programming-the-pi-over-usb
 
 > A comprehensive video covering how to set up your Raspberry Pi Zero so that

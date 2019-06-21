@@ -1,6 +1,6 @@
 Title: A Visual Git Reference
 Date: 2012-07-15 17:31
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: git, resumen, gráfico
 Slug: a-visual-git-reference
 

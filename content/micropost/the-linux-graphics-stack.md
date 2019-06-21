@@ -1,6 +1,6 @@
 Title: The Linux Graphics Stack
 Date: 2012-06-22 17:04
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-linux-graphics-stack
 
 > This is an introductory overview post for the Linux Graphics Stack,

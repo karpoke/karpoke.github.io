@@ -1,6 +1,6 @@
 Title: Preliminary discussion of the logical design of an electronic computing instrument
 Date: 2012-07-13 18:59
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: preliminary-discussion-of-the-logical-design-of-an-electronic-computing-instrument
 
 > Arthur W. Burks / Herman H. Goldstine / John von Neumann

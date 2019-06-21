@@ -1,6 +1,6 @@
 Title: La escala del universo
 Date: 2012-05-15 20:09
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: la-escala-del-universo
 
 - [link][] | via [reddit][]

@@ -1,6 +1,6 @@
 Title: Homenaje a un clásico: las 10 mejores curiosidades de Monkey Island
 Date: 2015-01-01 23:19
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: homenaje-a-un-clasico-las-10-mejores-curiosidades-de-monkey-island
 
 > Monkey Island es uno de los videojuegos más míticos de todos los

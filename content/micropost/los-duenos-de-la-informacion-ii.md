@@ -1,6 +1,6 @@
 Title: Los dueños de la información II
 Date: 2012-08-31 18:43
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: los-duenos-de-la-informacion-ii
 
 > Hace año y medio que recopilé datos sobre la distribución de la

@@ -1,6 +1,6 @@
 Title: Internet Census 2012: Port scanning /0 using insecure embedded devices
 Date: 2013-04-01 00:50
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: internet-census-2012-port-scanning-0-using-insecure-embedded-devices
 
 > While playing around with the Nmap Scripting Engine (NSE) we

@@ -1,6 +1,6 @@
 Title: M.C. Escher - Metamorphose
 Date: 2012-06-25 10:40
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: m-c-escher-metamorphose
 
 > Maurits Cornelis Escher es un artista holandés nacido en la ciudad de

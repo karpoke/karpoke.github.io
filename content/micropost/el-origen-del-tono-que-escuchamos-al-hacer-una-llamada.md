@@ -1,6 +1,6 @@
 Title: El origen del tono que escuchamos al hacer una llamada
 Date: 2016-06-02 00:44
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-origen-del-tono-que-escuchamos-al-hacer-una-llamada
 
 > Hay aspectos tan mínimos en lo que usamos a diario que a menudo no reparamos

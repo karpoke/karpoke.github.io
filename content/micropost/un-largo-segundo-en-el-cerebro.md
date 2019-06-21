@@ -1,6 +1,6 @@
 Title: Un largo segundo en el cerebro
 Date: 2012-07-16 19:32
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: un-largo-segundo-en-el-cerebro
 
 > Millones de impulsos llegan al cerebro desde distintos sentidos.

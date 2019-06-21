@@ -1,6 +1,6 @@
 Title: Coder creates smallest chess game for computers
 Date: 2015-01-30 17:11
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: coder-creates-smallest-chess-game-for-computers
 
 > A French coder has developed what is thought to be the smallest-sized

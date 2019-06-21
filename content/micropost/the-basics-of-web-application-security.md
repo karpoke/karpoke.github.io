@@ -1,6 +1,6 @@
 Title: The basics of web application security
 Date: 2016-09-25 13:04
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-basics-of-web-application-security
 
 > Somewhere, way down at the bottom of the list of requirements, behind, fast,

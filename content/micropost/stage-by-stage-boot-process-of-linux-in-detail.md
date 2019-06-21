@@ -1,6 +1,6 @@
 Title: Stage By Stage Boot Process Of Linux In Detail
 Date: 2013-06-08 23:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: stage-by-stage-boot-process-of-linux-in-detail
 
 > This article describes linux booting process in detail, what are the

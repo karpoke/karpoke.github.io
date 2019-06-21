@@ -1,6 +1,6 @@
 Title: Imponiendo GPL; usando técnicas de Judo
 Date: 2012-05-24 12:18
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: imponiendo-gpl-usando-tecnicas-de-judo
 
 > El propósito del software libre es hacer que el código que corre en

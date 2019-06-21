@@ -1,6 +1,6 @@
 Title: Reverse Engineering a Furby
 Date: 2014-01-18 15:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: Furby, ingeniería inversa, EEPROM, I2C, microscopio electrónico de barrido
 Slug: reverse-engineering-a-furby
 

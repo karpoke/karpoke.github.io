@@ -1,6 +1,6 @@
 Title: Una cebolla que nos puede hacer llorar
 Date: 2012-07-01 23:51
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: una-cebolla-que-nos-puede-hacer-llorar
 
 > El pasado día 26 de junio asistí al evento ”Iniciativas Open Data en

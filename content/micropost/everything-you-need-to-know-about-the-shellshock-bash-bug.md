@@ -1,6 +1,6 @@
 Title: Everything you need to know about the Shellshock Bash bug
 Date: 2014-11-14 16:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: everything-you-need-to-know-about-the-shellshock-bash-bug
 
 > Remember Heartbleed? If you believe the hype today, Shellshock is in

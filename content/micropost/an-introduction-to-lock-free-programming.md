@@ -1,6 +1,6 @@
 Title: An Introduction to Lock-Free Programming
 Date: 2012-06-27 23:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: an-introduction-to-lock-free-programming
 
 > Lock-free programming is a challenge, not just because of the

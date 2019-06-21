@@ -1,6 +1,6 @@
 Title: Southampton engineers a Raspberry Pi Supercomputer
 Date: 2012-09-13 12:30
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: Raspberry Pi, superordenador, cluster
 Slug: southampton-engineers-a-raspberry-pi-supercomputer
 

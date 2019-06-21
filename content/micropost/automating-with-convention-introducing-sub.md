@@ -1,6 +1,6 @@
 Title: Automating with convention: Introducing sub
 Date: 2012-10-28 12:38
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: automating-with-convention-introducing-sub
 
 > When I started my on-call shifts, we had pretty little in the way of

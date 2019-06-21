@@ -1,6 +1,6 @@
 Title: The simple solution to eliminate traffic
 Date: 2016-09-11 17:09
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-simple-solution-to-eliminate-traffic
 
 > Here’s a simple way to make traffic disappear.

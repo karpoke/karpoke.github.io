@@ -1,6 +1,6 @@
 Title: Hidden Secret Codes for Google Android Mobile Phones
 Date: 2013-02-09 14:32
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: hidden-secret-codes-for-google-android-mobile-phones
 
 > Recently I got a Google Android mobile phone ”Samsung Galaxy I7500”.

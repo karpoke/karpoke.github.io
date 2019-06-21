@@ -1,6 +1,6 @@
 Title: ASCII Chart
 Date: 2014-06-01 22:42
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: ascii-chart
 
 > The American Standard Code for Information Interchange (ASCII) was

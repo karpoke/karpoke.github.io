@@ -1,6 +1,6 @@
 Title: Nyan Cat Telnet Server
 Date: 2012-08-20 18:53
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: nyan-cat-telnet-server
 
 > This is an animated, color, ANSI-text telnet server that renders a

@@ -1,6 +1,6 @@
 Title: Sin dejar rastro, el ciberactivista paranoico
 Date: 2012-12-30 14:36
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: sin-dejar-rastro-el-ciberactivista-paranoico
 
 > Ser ciberactivista cada día es más peligroso en este país donde

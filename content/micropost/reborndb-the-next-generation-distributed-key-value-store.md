@@ -1,6 +1,6 @@
 Title: RebornDB: The next generation distributed key-value store
 Date: 2015-07-08 21:34
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: reborndb-the-next-generation-distributed-key-value-store
 
 > Redis is advanced key-value cache and store, under BSD license. It is

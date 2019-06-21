@@ -1,6 +1,6 @@
 Title: Bobina de Tesla reproduce la melodía de Super Mario Bros
 Date: 2013-02-22 23:19
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: bobina-de-tesla-reproduce-la-melodia-de-super-mario-bros
 
 > Estudiantes de ingeniería de la Universidad del Sur de Florida han

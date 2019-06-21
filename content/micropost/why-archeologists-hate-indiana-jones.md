@@ -1,6 +1,6 @@
 Title: Why Archeologists Hate Indiana Jones
 Date: 2014-09-19 17:35
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: why-archeologists-hate-indiana-jones
 
 > It’s not surprising that academics -- hell bent on taking the fun out

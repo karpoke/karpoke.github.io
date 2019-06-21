@@ -1,6 +1,6 @@
 Title: Reverse debugging for Python
 Date: 2016-09-11 14:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: reverse-debugging-for-python
 
 > A ”reverse debugger” is a debugger where you can go forward and backward in

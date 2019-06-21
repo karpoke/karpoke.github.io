@@ -1,6 +1,6 @@
 Title: Stealing Keys from PCs using a Radio: Cheap Electromagnetic Attacks on Windowed Exponentiation
 Date: 2015-06-25 22:16
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: stealing-keys-from-pcs-using-a-radio-cheap-electromagnetic-attacks-on-windowed-exponentiation
 
 > We demonstrate the extraction of secret decryption keys from laptop

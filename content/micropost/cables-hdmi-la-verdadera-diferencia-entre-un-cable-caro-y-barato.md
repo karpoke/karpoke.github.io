@@ -1,6 +1,6 @@
 Title: Cables HDMI, la verdadera diferencia entre un cable caro y barato
 Date: 2012-05-23 00:00
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: cables-hdmi-la-verdadera-diferencia-entre-un-cable-caro-y-barato
 
 > El uso de un cable HDMI permite transmitir una señal digital, señal de

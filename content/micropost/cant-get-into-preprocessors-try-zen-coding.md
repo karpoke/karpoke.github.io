@@ -1,6 +1,6 @@
 Title: Can’t Get Into Preprocessors? Try Zen Coding
 Date: 2012-05-23 00:08
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: cant-get-into-preprocessors-try-zen-coding
 
 > A ton of discussion lately has been given to preprocessors. These

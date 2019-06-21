@@ -1,6 +1,6 @@
 Title: More shell, less egg
 Date: 2015-01-21 21:23
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: more-shell-less-egg
 
 > The program Bentley asked Knuth to write is one that’s become familiar

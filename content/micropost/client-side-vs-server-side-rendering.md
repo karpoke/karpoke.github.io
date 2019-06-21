@@ -1,6 +1,6 @@
 Title: Client-Side vs. Server-Side Rendering
 Date: 2012-06-04 14:15
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: client-side-vs-server-side-rendering
 
 > Yesterday Twitter announced that it was moving away from client-side

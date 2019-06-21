@@ -1,6 +1,6 @@
 Title: f2fs: introduce flash-friendly file system
 Date: 2012-10-06 13:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: f2fs-introduce-flash-friendly-file-system
 
 > NAND flash memory-based storage devices, such as SSD, eMMC, and SD

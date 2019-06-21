@@ -1,6 +1,6 @@
 Title: Android, iOS, tiempos de respuestas y por qué nada es gratis en sistemas informáticos
 Date: 2012-10-09 19:59
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: android-ios-tiempos-de-respuestas-y-por-que-nada-es-gratis-en-sistemas-informaticos
 
 > Apple tomó muchas decisiones técnicas con el objetivo de mejorar la

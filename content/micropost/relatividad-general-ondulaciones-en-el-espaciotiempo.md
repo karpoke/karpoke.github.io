@@ -1,6 +1,6 @@
 Title: Relatividad general, ondulaciones en el espaciotiempo
 Date: 2015-11-07 14:57
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: relatividad-general-ondulaciones-en-el-espaciotiempo
 
 > La teoría del electromagnetismo viene codificada en cuatro ecuaciones,

@@ -1,6 +1,6 @@
 Title: Bash implementation of 2048 game
 Date: 2014-05-24 17:43
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: bash-implementation-of-2048-game
 
     Bash 2048 v1.1 (https://github.com/mydzor/bash2048) pieces=16 target=2048 score=2884

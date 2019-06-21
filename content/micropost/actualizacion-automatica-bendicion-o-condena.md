@@ -1,6 +1,6 @@
 Title: Actualización automática ¿Bendición o condena?
 Date: 2012-06-26 12:48
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: actualizacion-automatica-bendicion-o-condena
 
 > El caso TheFlame ha promovido muchas reacciones: los articulistas

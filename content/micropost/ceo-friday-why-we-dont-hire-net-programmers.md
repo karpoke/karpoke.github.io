@@ -1,6 +1,6 @@
 Title: CEO Friday: Why we don’t hire .NET programmers
 Date: 2013-03-17 19:09
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: ceo-friday-why-we-dont-hire-net-programmers
 
 > See, experience is cheap. All it takes is time. Skill is harder, but

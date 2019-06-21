@@ -1,6 +1,6 @@
 Title: NSA has hidden software in hard drives around the world
 Date: 2015-02-23 22:04
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: nsa-has-hidden-software-in-hard-drives-around-the-world
 
 > The U.S. National Security Agency has figured out how to hide spying

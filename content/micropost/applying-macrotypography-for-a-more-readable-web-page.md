@@ -1,6 +1,6 @@
 Title: Applying Macrotypography For A More Readable Web Page
 Date: 2012-05-28 01:32
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: applying-macrotypography-for-a-more-readable-web-page
 
 > Any application of typography can be divided into two arenas: micro

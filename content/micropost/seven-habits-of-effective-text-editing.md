@@ -1,6 +1,6 @@
 Title: Seven habits of effective text editing
 Date: 2012-05-20 03:46
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: seven-habits-of-effective-text-editing
 
 > If you spend a lot of time typing plain text, writing programs or

@@ -1,6 +1,6 @@
 Title: Declaration of Internet freedom
 Date: 2012-07-05 18:52
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: declaration-of-internet-freedom
 
 > We believe that a free and open Internet can bring about a better

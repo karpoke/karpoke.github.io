@@ -1,6 +1,6 @@
 Title: Los códigos genéticos e informáticos comparten sorprendentes similitudes
 Date: 2013-04-20 15:11
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: los-codigos-geneticos-e-informaticos-comparten-sorprendentes-similitudes
 
 > La teoría de la ”supervivencia del más apto” de Darwin puede aplicarse

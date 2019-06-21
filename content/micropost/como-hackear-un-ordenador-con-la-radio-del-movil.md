@@ -1,6 +1,6 @@
 Title: Cómo ’hackear’ un ordenador con la radio del móvil
 Date: 2014-11-04 09:50
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: como-hackear-un-ordenador-con-la-radio-del-movil
 
 > El sistema truca las ondas electromagnéticas del monitor. De esta

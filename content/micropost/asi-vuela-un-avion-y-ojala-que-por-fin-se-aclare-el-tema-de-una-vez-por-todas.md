@@ -1,6 +1,6 @@
 Title: Así vuela un avión, y ojalá que por fin se aclare el tema de una vez por todas
 Date: 2013-06-16 23:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: asi-vuela-un-avion-y-ojala-que-por-fin-se-aclare-el-tema-de-una-vez-por-todas
 
 > ”¿Cómo es posible que este montón de metal pueda sustentarse en el

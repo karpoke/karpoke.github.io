@@ -1,6 +1,6 @@
 Title: The curious case of the switch statement
 Date: 2016-09-22 08:31
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-curious-case-of-the-switch-statement
 
 > The earliest incarnation I can find is in ALGOL 58. The original

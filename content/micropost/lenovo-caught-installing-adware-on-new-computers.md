@@ -1,6 +1,6 @@
 Title: Lenovo caught installing adware on new computers
 Date: 2015-02-23 22:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: lenovo-caught-installing-adware-on-new-computers
 
 > Other users are reporting that the adware actually installs its own

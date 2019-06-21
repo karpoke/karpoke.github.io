@@ -1,6 +1,6 @@
 Title: Volcado de memoria #RAM en #Linux - #LiME
 Date: 2016-09-17 14:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: volcado de memoria, análisis forense, recolección de evidencias, LiME
 Slug: volcado-de-memoria-ram-en-linux-lime
 

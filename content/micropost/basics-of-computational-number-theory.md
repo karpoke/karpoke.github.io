@@ -1,6 +1,6 @@
 Title: Basics of Computational Number Theory
 Date: 2012-05-16 23:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: basics-of-computational-number-theory
 
 > This document is a gentle introduction to computational number theory.

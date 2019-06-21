@@ -1,6 +1,6 @@
 Title: Quake on an oscilloscope: A technical report
 Date: 2015-01-01 11:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: quake-on-an-oscilloscope-a-technical-report
 
 > A summary of some problems I faced when tinkering with Quake to get it

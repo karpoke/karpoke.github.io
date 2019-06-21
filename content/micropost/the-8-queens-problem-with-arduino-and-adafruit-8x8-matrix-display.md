@@ -1,6 +1,6 @@
 Title: The 8 Queens Problem with Arduino and Adafruit 8x8 Matrix display
 Date: 2012-06-21 03:47
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-8-queens-problem-with-arduino-and-adafruit-8x8-matrix-display
 
 > Using an Arduino and an 8x8 matrix display from Adafruit (with I2C

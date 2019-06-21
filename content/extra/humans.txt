@@ -1,5 +1,5 @@
 /* TEAM */
-	Author:		Ignacio Cano
+	Author:		Nacho Cano
 	Contact:	nacho [at] ignaciocano [dot] com
 	Twitter: 	@karpoke
 	Github:		karpoke

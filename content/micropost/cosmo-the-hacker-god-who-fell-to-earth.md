@@ -1,6 +1,6 @@
 Title: Cosmo, the Hacker ’God’ Who Fell to Earth
 Date: 2012-09-16 11:31
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: cosmo-the-hacker-god-who-fell-to-earth
 
 > Cosmo is huge ” 6 foot 7 and 220 pounds the last time he was weighed,

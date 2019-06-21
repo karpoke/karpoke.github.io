@@ -1,6 +1,6 @@
 Title: in which three programming methods are compared
 Date: 2012-06-25 11:25
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: in-which-three-programming-methods-are-compared
 
 > There are, roughly speaking, three ways to develop large user-facing

@@ -1,6 +1,6 @@
 Title: Envenenamiento de cabeceras en Django 1.3 y 1.4
 Date: 2012-10-28 12:57
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: envenenamiento-de-cabeceras-en-django-1-3-y-1-4
 
 > Django, framework de desarrollo web basado en Python ha actualizado

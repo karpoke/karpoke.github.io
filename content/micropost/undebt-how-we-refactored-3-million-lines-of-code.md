@@ -1,6 +1,6 @@
 Title: Undebt: how we refactored 3 million lines of code
 Date: 2016-12-07 20:57
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: refactorización
 Slug: undebt-how-we-refactored-3-million-lines-of-code
 

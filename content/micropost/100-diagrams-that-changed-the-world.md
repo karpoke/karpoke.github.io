@@ -1,6 +1,6 @@
 Title: 100 Diagrams That Changed the World
 Date: 2012-12-30 14:32
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 100-diagrams-that-changed-the-world
 
 > Since the dawn of recorded history, we’ve been using visual depictions

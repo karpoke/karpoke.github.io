@@ -1,6 +1,6 @@
 Title: 12 million home and business routers vulnerable to critical hijacking hack
 Date: 2014-12-21 12:11
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 12-million-home-and-business-routers-vulnerable-to-critical-hijacking-hack
 
 > More than 12 million routers in homes and small offices are vulnerable

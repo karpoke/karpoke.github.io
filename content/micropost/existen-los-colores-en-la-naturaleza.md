@@ -1,6 +1,6 @@
 Title: ¿Existen los colores en la naturaleza?
 Date: 2012-07-15 17:17
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: existen-los-colores-en-la-naturaleza
 
 > Aparentemente esta pregunta parece absurda, ¿Como no van a existir los

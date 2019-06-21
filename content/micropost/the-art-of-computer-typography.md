@@ -1,6 +1,6 @@
 Title: The Art of Computer Typography
 Date: 2012-05-26 11:24
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-art-of-computer-typography
 
 > Ever since I came across Jürg Lehni’s essay on typographic technology

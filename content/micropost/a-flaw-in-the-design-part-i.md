@@ -1,6 +1,6 @@
 Title: A flaw in the design (Part I)
 Date: 2015-06-13 11:30
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: a-flaw-in-the-design-part-i
 
 > David D. Clark, an MIT scientist whose air of genial wisdom earned him

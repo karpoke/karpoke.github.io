@@ -1,6 +1,6 @@
 Title: Un universo desde la nada
 Date: 2012-06-25 11:09
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: un-universo-desde-la-nada
 
 > Lawrence Krauss da una charla sobre nuestro actual panorama del

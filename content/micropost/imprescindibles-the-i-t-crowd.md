@@ -1,6 +1,6 @@
 Title: Imprescindibles: The I.T. Crowd
 Date: 2013-04-28 13:08
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: imprescindibles-the-i-t-crowd
 
 > Probablemente es una de las series de televisión que más carcajadas me

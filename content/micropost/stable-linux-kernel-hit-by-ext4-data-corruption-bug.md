@@ -1,6 +1,6 @@
 Title: Stable Linux kernel hit by ext4 data corruption bug
 Date: 2012-10-26 08:48
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: stable-linux-kernel-hit-by-ext4-data-corruption-bug
 
 > Linux kernel developer Theodore ”Ted” Ts’o has released a series of

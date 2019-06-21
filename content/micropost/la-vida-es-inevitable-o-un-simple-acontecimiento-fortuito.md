@@ -1,6 +1,6 @@
 Title: La vida, ¿es inevitable o un simple acontecimiento fortuito?
 Date: 2012-07-07 18:35
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: la-vida-es-inevitable-o-un-simple-acontecimiento-fortuito
 
 > Bajo la intensa mirada del telescopio espacial Kepler, van apareciendo

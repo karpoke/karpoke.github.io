@@ -1,6 +1,6 @@
 Title: 11 Ways To Track Your Moves When Using a Web Browser
 Date: 2015-03-15 12:21
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 11-ways-to-track-your-moves-when-using-a-web-browser
 
 > some tracking methods do attempt to track the user over a long time,

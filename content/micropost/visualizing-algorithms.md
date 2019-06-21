@@ -1,6 +1,6 @@
 Title: Visualizing Algorithms
 Date: 2014-06-29 18:52
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: visualizing-algorithms
 
 > Algorithms are a fascinating use case for visualization. To visualize

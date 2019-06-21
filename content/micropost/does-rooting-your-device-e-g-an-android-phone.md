@@ -1,6 +1,6 @@
 Title: Does rooting your device void your statutory warranty?
 Date: 2012-12-19 17:35
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: does-rooting-your-device-void-your-statutory-warranty
 
 > No.

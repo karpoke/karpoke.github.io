@@ -1,6 +1,6 @@
 Title: Descansad en paz, hackers.
 Date: 2013-11-17 13:55
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: descansad-en-paz-hackers
 
 > Llevamos unos días en los que nos hemos enterado vía twitter de

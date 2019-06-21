@@ -1,6 +1,6 @@
 Title: A Short History of the O’Reilly Animals
 Date: 2013-06-01 00:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: a-short-history-of-the-oreilly-animals
 
 > In the mid-1980s, O’Reilly (aka O’Reilly & Associates) was selling

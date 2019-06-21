@@ -1,6 +1,6 @@
 Title: How Video Game Breasts Are Made (And Why They Can Go Wrong)
 Date: 2015-03-12 21:48
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-video-game-breasts-are-made-and-why-they-can-go-wrong
 
 > If you’ve played games that have breast physics, you’ve probably seen

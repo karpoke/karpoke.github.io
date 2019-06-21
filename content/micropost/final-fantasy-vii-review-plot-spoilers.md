@@ -1,6 +1,6 @@
 Title: Final Fantasy VII Review (Plot Spoilers)
 Date: 2013-03-18 00:37
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: final-fantasy-vii-review-plot-spoilers
 
 > My review of the 7th installment in the Final Fantasy series.

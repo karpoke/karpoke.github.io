@@ -1,6 +1,6 @@
 Title: IMDB Top 250 in 2 1/2 Minutes
 Date: 2012-11-03 13:49
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: imdb-top-250-in-2-12-minutes
 
 > This is one incredible list of films/movies. If Peter Weyland wanted

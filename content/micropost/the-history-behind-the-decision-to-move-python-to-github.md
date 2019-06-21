@@ -1,6 +1,6 @@
 Title: The history behind the decision to move Python to GitHub
 Date: 2016-02-07 15:16
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-history-behind-the-decision-to-move-python-to-github
 
 > I asked on Twitter if people would be interested in having me write

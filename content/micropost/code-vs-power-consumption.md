@@ -1,6 +1,6 @@
 Title: Code vs. power consumption
 Date: 2012-06-16 18:49
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: code-vs-power-consumption
 
 > I’ve been wondering for some time whether the power consumption of an

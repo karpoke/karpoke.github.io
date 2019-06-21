@@ -1,6 +1,6 @@
 Title: 25 años del gusano de Morris
 Date: 2013-11-02 13:00
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 25-anos-del-gusano-de-morris
 
 > El bicho explotaba vulnerabilidades en distintos servicios, como un

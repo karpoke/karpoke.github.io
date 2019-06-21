@@ -1,6 +1,6 @@
 Title: Highly critical “Ghost” allowing code execution affects most Linux systems
 Date: 2015-02-06 16:11
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: highly-critical-ghost-allowing-code-execution-affects-most-linux-systems
 
 > The vulnerability in the GNU C Library (glibc) represents a major

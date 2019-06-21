@@ -1,6 +1,6 @@
 Title: Never use hard tabs
 Date: 2012-05-20 12:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: never-use-hard-tabs
 
 > As there seems to be some confusion when hard tab characters (ASCII

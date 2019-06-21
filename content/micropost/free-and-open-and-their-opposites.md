@@ -1,6 +1,6 @@
 Title: Free and Openand Their Opposites
 Date: 2013-04-04 21:31
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: free-and-open-and-their-opposites
 
 > Merriam-Webster defines a tenet as ”a principle, belief, or doctrine

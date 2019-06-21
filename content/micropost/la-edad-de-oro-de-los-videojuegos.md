@@ -1,6 +1,6 @@
 Title: La edad de Oro de los videojuegos
 Date: 2013-06-30 23:46
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: la-edad-de-oro-de-los-videojuegos
 
 > La edad de oro de los videojuegos en España (1985 - 1991). EL número

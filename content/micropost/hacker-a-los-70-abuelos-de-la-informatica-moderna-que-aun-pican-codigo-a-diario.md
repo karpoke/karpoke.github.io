@@ -1,6 +1,6 @@
 Title: Hacker a los 70: abuelos de la informática moderna que aún pican código a diario
 Date: 2014-07-22 09:00
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: hacker-a-los-70-abuelos-de-la-informatica-moderna-que-aun-pican-codigo-a-diario
 
 > Estamos tan inmersos en un mundo de electrónica, unos y ceros, que

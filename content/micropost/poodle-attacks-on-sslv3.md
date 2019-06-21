@@ -1,6 +1,6 @@
 Title: POODLE attacks on SSLv3
 Date: 2014-11-14 15:24
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: poodle-attacks-on-sslv3
 
 > My colleague, Bodo M¶ller, in collaboration with Thai Duong and

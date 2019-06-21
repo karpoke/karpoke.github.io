@@ -1,6 +1,6 @@
 Title: Why you should never use hash functions for message authentication
 Date: 2012-06-27 23:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: why-you-should-never-use-hash-functions-for-message-authentication
 
 > The general thrust of this post is: use a MAC function like HMAC to

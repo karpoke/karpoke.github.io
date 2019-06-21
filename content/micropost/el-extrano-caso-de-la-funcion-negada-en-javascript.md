@@ -1,6 +1,6 @@
 Title: El extraño caso de la función negada en Javascript
 Date: 2012-06-26 13:23
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-extrano-caso-de-la-funcion-negada-en-javascript
 
 > Tras este novelesco título lo que se esconde en esta ocasión es una

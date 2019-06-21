@@ -1,6 +1,6 @@
 Title: Code rot & OpenBSD
 Date: 2015-01-06 19:14
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: code-rot-openbsd
 
 > The background is set, you know why I took interest now it’s time to

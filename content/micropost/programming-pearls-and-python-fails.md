@@ -1,6 +1,6 @@
 Title: Programming Pearls and Python fails
 Date: 2016-09-22 08:30
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: programming-pearls-and-python-fails
 
 > Computer science books contains timeless wisdom, but performance advice

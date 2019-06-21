@@ -1,6 +1,6 @@
 Title: Gestión de RAID a través de MDADM
 Date: 2013-06-16 23:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: gestion-de-raid-a-traves-de-mdadm
 
 > MDADM (Multiple Device Administrator) es un conjunto de herramientas

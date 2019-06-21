@@ -1,6 +1,6 @@
 Title: Upstart Intro, Cookbook and Best Practises
 Date: 2012-05-14 13:35
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: upstart-intro-cookbook-and-best-practises
 
 > The purpose of this document is multi-faceted. It is intended as:

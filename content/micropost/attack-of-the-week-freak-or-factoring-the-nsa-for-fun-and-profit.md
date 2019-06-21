@@ -1,6 +1,6 @@
 Title: Attack of the week: FREAK (or ’factoring the NSA for fun and profit’)
 Date: 2015-03-05 22:19
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: attack-of-the-week-freak-or-factoring-the-nsa-for-fun-and-profit
 
 > A group of cryptographers at INRIA, Microsoft Research and IMDEA have

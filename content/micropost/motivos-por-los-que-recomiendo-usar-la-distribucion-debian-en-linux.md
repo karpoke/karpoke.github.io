@@ -1,6 +1,6 @@
 Title: Motivos por los que recomiendo usar la distribución Debian en Linux
 Date: 2016-08-14 13:29
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: motivos-por-los-que-recomiendo-usar-la-distribucion-debian-en-linux
 
 > Llevo más de 5 años usando Debian y la verdad es que estoy más que

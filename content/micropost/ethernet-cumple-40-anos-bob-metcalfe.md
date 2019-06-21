@@ -1,6 +1,6 @@
 Title: Ethernet cumple 40 años: Bob Metcalfe
 Date: 2013-06-16 23:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: ethernet-cumple-40-anos-bob-metcalfe
 
 > Éranse una vez los años 70, y un lugar denominado Centro de

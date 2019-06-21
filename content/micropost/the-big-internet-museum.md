@@ -1,6 +1,6 @@
 Title: The Big Internet Museum
 Date: 2012-12-15 13:15
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-big-internet-museum
 
 > You are about to enter the Big Internet Museum. Explore an interactive

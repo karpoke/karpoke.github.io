@@ -1,6 +1,6 @@
 Title: Golden Axe - Desvelando todos sus secretos
 Date: 2012-06-26 02:00
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: golden-axe-desvelando-todos-sus-secretos
 
 > Buenas, aquí os traigo, en primicia, una guía que destripa los

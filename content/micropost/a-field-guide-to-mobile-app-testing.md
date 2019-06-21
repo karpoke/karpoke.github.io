@@ -1,6 +1,6 @@
 Title: A Field Guide To Mobile App Testing
 Date: 2012-10-28 13:07
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: a-field-guide-to-mobile-app-testing
 
 > Testers are often thought of as people who find bugs, but have you

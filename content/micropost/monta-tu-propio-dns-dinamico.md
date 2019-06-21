@@ -1,6 +1,6 @@
 Title: Monta tu propio DNS dinámico
 Date: 2012-05-23 21:36
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: monta-tu-propio-dns-dinamico
 
 > Ahora que todos los servicios tipo dyndns.org y no-ip.org se han

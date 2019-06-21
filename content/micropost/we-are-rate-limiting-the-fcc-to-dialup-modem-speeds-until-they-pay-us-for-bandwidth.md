@@ -1,6 +1,6 @@
 Title: We are rate limiting the FCC to dialup modem speeds until they pay us for bandwidth
 Date: 2014-06-05 09:34
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: we-are-rate-limiting-the-fcc-to-dialup-modem-speeds-until-they-pay-us-for-bandwidth
 
 > Since the FCC seems to have no problem with this idea, I’ve (through

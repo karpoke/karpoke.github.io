@@ -1,6 +1,6 @@
 Title: First Glimpse into the Soul of a Tamagotchi
 Date: 2013-06-08 23:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: first-glimpse-into-the-soul-of-a-tamagotchi
 
 > I dumped the ROM of a Tamagotchi using the code execution ability I

@@ -1,6 +1,6 @@
 Title: The web architecture of The Internet map
 Date: 2012-08-08 18:04
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-web-architecture-of-the-internet-map
 
 > You must have heard about The Internet map by now. If not, you can

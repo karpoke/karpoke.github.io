@@ -1,6 +1,6 @@
 Title: List of TCS conferences and workshops
 Date: 2012-05-30 18:31
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: list-of-tcs-conferences-and-workshops
 
 > I would like to ask for help in compiling a list of as many

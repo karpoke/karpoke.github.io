@@ -1,6 +1,6 @@
 Title: Recopilación de relojes matemáticos
 Date: 2012-10-05 12:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: curiosidad, humor matemático
 Slug: recopilacion-de-relojes-matematicos
 

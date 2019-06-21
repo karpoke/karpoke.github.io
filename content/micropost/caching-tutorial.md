@@ -1,6 +1,6 @@
 Title: Caching Tutorial
 Date: 2012-05-23 00:14
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: caching-tutorial
 
 > This is an informational document. Although technical in nature, it

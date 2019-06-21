@@ -1,6 +1,6 @@
 Title: So You Want to Be a Security Expert
 Date: 2012-07-24 20:51
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: so-you-want-to-be-a-security-expert
 
 > I regularly receive e-mail from people who want advice on how to learn

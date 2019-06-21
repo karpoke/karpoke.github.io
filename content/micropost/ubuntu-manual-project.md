@@ -1,6 +1,6 @@
 Title: Ubuntu Manual Project
 Date: 2012-07-04 00:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: ubuntu-manual-project
 
 > Primeros pasos con Ubuntu 12.04 es una guía para principiantes del

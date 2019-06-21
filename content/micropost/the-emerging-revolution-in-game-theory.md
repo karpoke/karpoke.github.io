@@ -1,6 +1,6 @@
 Title: The Emerging Revolution in Game Theory
 Date: 2012-08-20 00:17
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-emerging-revolution-in-game-theory
 
 > The world of game theory is currently on fire. In May, Freeman Dyson

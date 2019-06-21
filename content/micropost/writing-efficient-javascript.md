@@ -1,6 +1,6 @@
 Title: Writing efficient JavaScript
 Date: 2016-11-30 08:34
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: javascript, eficiencia, optimización, recolector de basura
 Slug: writing-efficient-javascript
 

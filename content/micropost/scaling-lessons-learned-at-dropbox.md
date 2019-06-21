@@ -1,6 +1,6 @@
 Title: Scaling lessons learned at Dropbox
 Date: 2012-07-13 18:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: scaling-lessons-learned-at-dropbox
 
 > I was in charge of scaling Dropbox for a while, from roughly 4,000 to

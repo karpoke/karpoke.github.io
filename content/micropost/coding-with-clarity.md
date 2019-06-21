@@ -1,6 +1,6 @@
 Title: Coding with clarity
 Date: 2017-10-28 16:42
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: buenas prácticas, principio de responsabilidad única, separación de comandos y consultas, bajo acoplamiento, alta cohesión
 Slug: coding-with-clarity
 

@@ -1,6 +1,6 @@
 Title: SOLID CSS
 Date: 2012-10-09 21:02
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: solid-css
 
 > CSS was meant to style academic documents and simple sites (eg. wiki,

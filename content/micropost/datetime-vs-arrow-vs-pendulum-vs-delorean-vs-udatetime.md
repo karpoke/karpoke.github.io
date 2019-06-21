@@ -1,6 +1,6 @@
 Title: datetime vs Arrow vs Pendulum vs Delorean vs udatetime
 Date: 2016-09-11 13:55
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: datetime-vs-arrow-vs-pendulum-vs-delorean-vs-udatetime
 
 > So I setup a benchmark, which can be found here to compare Python datetime,

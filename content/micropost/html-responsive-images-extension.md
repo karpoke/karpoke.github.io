@@ -1,6 +1,6 @@
 Title: HTML Responsive Images Extension
 Date: 2012-09-07 11:18
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: html-responsive-images-extension
 
 > This proposal adds new elements and attribute to [HTML5] to enable

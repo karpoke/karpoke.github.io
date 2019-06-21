@@ -1,6 +1,6 @@
 Title: La polémica SystemD
 Date: 2016-06-05 20:08
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: la-polemica-systemd
 
 > Es un programa que genera una inmensa polémica, del que se está oyendo

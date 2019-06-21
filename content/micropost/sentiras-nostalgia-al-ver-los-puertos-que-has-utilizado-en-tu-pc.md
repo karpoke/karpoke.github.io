@@ -1,6 +1,6 @@
 Title: Sentirás nostalgia al ver los puertos que has utilizado en tu PC
 Date: 2016-06-28 07:42
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: sentiras-nostalgia-al-ver-los-puertos-que-has-utilizado-en-tu-pc
 
 > Los que llevamos unos cuantos años utilizando ordenadores hemos visto pasar

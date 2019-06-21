@@ -1,6 +1,6 @@
 Title: El increíble caso de Werner Koch y GPG
 Date: 2015-02-07 11:02
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-increible-caso-de-werner-koch-y-gpg
 
 > Así, cabe preguntarse por qué el principal desarrollador de una pieza

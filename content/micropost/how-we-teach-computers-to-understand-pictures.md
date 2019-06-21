@@ -1,6 +1,6 @@
 Title: How We Teach Computers to Understand Pictures
 Date: 2016-06-29 01:33
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-we-teach-computers-to-understand-pictures
 
 > When a very young child looks at a picture, she can identify simple elements:

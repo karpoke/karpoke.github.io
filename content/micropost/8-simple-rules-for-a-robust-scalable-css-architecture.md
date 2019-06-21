@@ -1,6 +1,6 @@
 Title: 8 simple rules for a robust, scalable CSS architecture
 Date: 2016-11-01 14:43
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: CSS, arquitectura, escalabilidad, orientación a componentes
 Slug: 8-simple-rules-for-a-robust-scalable-css-architecture
 Related:

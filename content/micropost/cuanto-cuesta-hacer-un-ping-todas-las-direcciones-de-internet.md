@@ -1,6 +1,6 @@
 Title: ¿Cuánto cuesta hacer un ping todas las direcciones de Internet?
 Date: 2013-03-13 00:59
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: cuanto-cuesta-hacer-un-ping-todas-las-direcciones-de-internet
 
 > Internet, la red de redes; todas las organizaciones modernas del mundo

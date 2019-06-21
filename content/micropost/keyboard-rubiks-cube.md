@@ -1,6 +1,6 @@
 Title: Keyboard rubik’s cube
 Date: 2013-02-25 00:27
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: keyboard-rubiks-cube
 
 > This is my keyboard rubik’s cube. Must be solved in the normal way,

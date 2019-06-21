@@ -1,6 +1,6 @@
 Title: Ringing in 2015 with 40 Linux-friendly hacker SBCs
 Date: 2015-01-01 11:36
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: ringing-in-2015-with-40-linux-friendly-hacker-sbcs
 
 > In May of this year, LinuxGizmos and Linux.com collaborated on a joint

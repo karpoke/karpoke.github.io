@@ -1,6 +1,6 @@
 Title: Computadoras imprescindibles
 Date: 2015-03-01 11:12
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: computadoras-imprescindibles
 
 > Gracias a la desbordante imaginación de una dama victoriana del siglo

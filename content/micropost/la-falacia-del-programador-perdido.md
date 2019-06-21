@@ -1,6 +1,6 @@
 Title: La falacia del Programador Perdido
 Date: 2012-06-12 20:37
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: la-falacia-del-programador-perdido
 
 > La semana pasada desayuné con un polémico artículo de Enrique Dans

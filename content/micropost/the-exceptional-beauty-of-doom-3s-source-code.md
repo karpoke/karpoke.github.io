@@ -1,6 +1,6 @@
 Title: The Exceptional Beauty of Doom 3’s Source Code
 Date: 2015-02-08 19:25
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-exceptional-beauty-of-doom-3s-source-code
 
 > What would ”nice looking”—or ”beautiful”, for that matter—actually

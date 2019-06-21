@@ -1,6 +1,6 @@
 Title: Seeing Through Walls With a Wireless Router
 Date: 2012-08-06 03:19
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: seeing-through-walls-with-a-wireless-router
 
 > Wi-Fi radio signals are found in 61 percent of homes in the U.S. and

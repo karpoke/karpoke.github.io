@@ -1,6 +1,6 @@
 Title: Hacker puts Doom on a printer to highlight security vulnerabilities
 Date: 2014-09-20 23:08
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: hacker-puts-doom-on-a-printer-to-highlight-security-vulnerabilities
 
 > Running Doom on a printer is more than a gimmick: it’s a security

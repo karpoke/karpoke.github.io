@@ -1,6 +1,6 @@
 Title: BSD vs Linux
 Date: 2012-08-15 18:59
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: bsd-vs-linux
 
 > I run FreeBSD on my computers. A lot of my friends run Linux, or at

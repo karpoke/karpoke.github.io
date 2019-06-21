@@ -1,6 +1,6 @@
 Title: Secure Secure Shell
 Date: 2015-01-06 19:09
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: secure-secure-shell
 
 > Reading the documents, I have the feeling that the NSA can 1) decrypt

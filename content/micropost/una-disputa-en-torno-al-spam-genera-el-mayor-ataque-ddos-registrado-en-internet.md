@@ -1,6 +1,6 @@
 Title: Una disputa en torno al spam genera el mayor ataque DDOS registrado en Internet
 Date: 2013-03-29 20:00
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: una-disputa-en-torno-al-spam-genera-el-mayor-ataque-ddos-registrado-en-internet
 
 > Varios medios se han hecho eco del que puede ser, probablemente, el

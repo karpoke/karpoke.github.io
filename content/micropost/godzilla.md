@@ -1,6 +1,6 @@
 Title: Godzilla
 Date: 2013-03-09 11:28
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: godzilla
 
 > No hay duda de que Japón se ha convertido en el paraíso frikinal (con

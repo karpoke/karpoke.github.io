@@ -1,6 +1,6 @@
 Title: Una abadía con muros de plata
 Date: 2012-12-12 13:29
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: videojuegos, época dorada del software español
 Slug: una-abadia-con-muros-de-plata
 

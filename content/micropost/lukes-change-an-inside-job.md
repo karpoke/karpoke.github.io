@@ -1,6 +1,6 @@
 Title: Luke’s Change: an Inside Job
 Date: 2013-05-01 15:13
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: lukes-change-an-inside-job
 
 > An examination of some questionable events and circumstances leading

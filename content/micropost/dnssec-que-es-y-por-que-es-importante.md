@@ -1,6 +1,6 @@
 Title: DNSSEC – ¿Qué es y por qué es importante?
 Date: 2012-06-21 17:55
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: dnssec-que-es-y-por-que-es-importante
 
 > Para contactar a otra persona a través de Internet, debe escribir una

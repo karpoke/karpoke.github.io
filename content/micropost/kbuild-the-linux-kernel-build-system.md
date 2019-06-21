@@ -1,6 +1,6 @@
 Title: Kbuild: the Linux Kernel Build System
 Date: 2012-12-30 14:34
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: kbuild-the-linux-kernel-build-system
 
 > One amazing thing about Linux is that the same code base is used for a

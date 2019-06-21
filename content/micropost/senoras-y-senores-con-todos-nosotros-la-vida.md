@@ -1,6 +1,6 @@
 Title: Señoras y señores, con todos nosotros: La Vida
 Date: 2013-04-10 21:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: senoras-y-senores-con-todos-nosotros-la-vida
 
 > La vida es algo de lo que tenemos constancia directa, identificamos si

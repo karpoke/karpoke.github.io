@@ -1,6 +1,6 @@
 Title: Las matemáticas explican por qué no puedes ganar al Tetris hagas lo que hagas
 Date: 2015-05-05 22:13
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: las-matematicas-explican-por-que-no-puedes-ganar-al-tetris-hagas-lo-que-hagas
 
 > “La única forma de ganar es no jugar”. Tom Murphy, programador, creó

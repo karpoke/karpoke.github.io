@@ -1,6 +1,6 @@
 Title: Por qué el lobby de los derechos de autor ama la pornografía infantil
 Date: 2012-05-27 13:12
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: por-que-el-lobby-de-los-derechos-de-autor-ama-la-pornografia-infantil
 
 > ”La pornografía infantil es genial,” dijo entusiastamente el sujeto.

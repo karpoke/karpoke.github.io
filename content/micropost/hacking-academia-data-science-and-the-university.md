@@ -1,6 +1,6 @@
 Title: Hacking Academia: Data Science and the University
 Date: 2014-09-21 14:48
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: hacking-academia-data-science-and-the-university
 
 > The problem we discussed is laid out in some detail in my Brain Drain

@@ -1,6 +1,6 @@
 Title: Never write for-loops again
 Date: 2016-12-12 00:22
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: buenas prácticas, bucles, listas por comprensión, iteradores, generadores, Python
 Slug: never-write-for-loops-again
 

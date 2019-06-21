@@ -1,6 +1,6 @@
 Title: How crackers ransack passwords like ’qeadzcwrsfxv1331’
 Date: 2013-06-08 23:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-crackers-ransack-passwords-like-qeadzcwrsfxv1331
 
 > In March, readers followed along as Nate Anderson, Ars deputy editor

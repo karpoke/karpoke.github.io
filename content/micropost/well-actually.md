@@ -1,6 +1,6 @@
 Title: Well, Actually
 Date: 2012-09-10 17:25
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: well-actually
 
 > As software developers, we develop habits that allow us to build

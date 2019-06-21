@@ -1,6 +1,6 @@
 Title: Alfonso Azpiri y la época dorada del software español
 Date: 2015-05-30 11:32
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: alfonso-azpiri-y-la-epoca-dorada-del-software-espanol
 
 > Por aquel entonces, Azpiri se había ganado merecidamente su fama de

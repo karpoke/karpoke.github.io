@@ -1,6 +1,6 @@
 Title: Visualization of Regular Expression Character Classes
 Date: 2013-03-26 20:52
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: visualization-of-regular-expression-character-classes
 
 > We all know the regular expression character classes, right? There are

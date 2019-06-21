@@ -1,6 +1,6 @@
 Title: Regular Expression Matching Can Be Simple And Fast
 Date: 2012-06-21 18:21
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: regular-expression-matching-can-be-simple-and-fast
 
 > Historically, regular expressions are one of computer science’s

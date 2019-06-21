@@ -1,6 +1,6 @@
 Title: Learn Vim Progressively
 Date: 2012-07-31 14:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: learn-vim-progressively
 
 > You want to teach yourself vim (the best text editor known to human

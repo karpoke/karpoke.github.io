@@ -1,6 +1,6 @@
 Title: What Every App Developer Should Know About Android
 Date: 2014-11-02 10:59
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: what-every-app-developer-should-know-about-android
 
 > The goal for this research was to identify the most common problems

@@ -1,6 +1,6 @@
 Title: Sócrates y el efecto Dunning-Kruger
 Date: 2012-06-14 12:38
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: socrates-y-el-efecto-dunning-kruger
 
 > El efecto Dunning-Kruger se puede expresar de la siguiente manera: los

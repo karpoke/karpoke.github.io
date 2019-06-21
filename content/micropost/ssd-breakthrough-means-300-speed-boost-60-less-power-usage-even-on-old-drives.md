@@ -1,6 +1,6 @@
 Title: SSD breakthrough means 300% speed boost, 60% less power usage... even on old drives
 Date: 2014-05-24 16:08
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: SSD, rendimiento, NAND
 Slug: ssd-breakthrough-means-300-speed-boost-60-less-power-usage-even-on-old-drives
 

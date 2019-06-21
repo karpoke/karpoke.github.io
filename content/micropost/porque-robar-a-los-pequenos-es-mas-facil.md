@@ -1,6 +1,6 @@
 Title: Porque robar a los pequeños es más fácil
 Date: 2012-06-04 00:28
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: porque-robar-a-los-pequenos-es-mas-facil
 
 > Porque, en el mejor de los casos, seguimos pensando que ver la ”s” de

@@ -1,6 +1,6 @@
 Title: Hacking the <a> tag in 100 characters
 Date: 2013-03-23 12:21
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: hacking-the-tag-in-100-characters
 
 > A short while ago, I discovered that JavaScript allows you to change

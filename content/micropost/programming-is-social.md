@@ -1,6 +1,6 @@
 Title: Programming is social
 Date: 2014-05-31 13:20
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: programming-is-social
 
 > Programming is social, too. Most people think it’s not. With

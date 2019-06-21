@@ -1,6 +1,6 @@
 Title: El Gobierno de España está librando una guerra en contra del internet y tú eres la víctima
 Date: 2014-07-21 07:38
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-gobierno-de-espana-esta-librando-una-guerra-en-contra-del-internet-y-tu-eres-la-victima
 
 > El canon AEDE se aprobaría el martes 22 de julio y sus implicaciones

@@ -1,6 +1,6 @@
 Title: How to C in 2016
 Date: 2016-02-07 15:01
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-to-c-in-2016
 
 > The first rule of C is don’t write C if you can avoid it. If you must

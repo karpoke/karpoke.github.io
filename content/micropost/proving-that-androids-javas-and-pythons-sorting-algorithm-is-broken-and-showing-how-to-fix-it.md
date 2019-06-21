@@ -1,6 +1,6 @@
 Title: Proving that Android’s, Java’s and Python’s sorting algorithm is broken (and showing how to fix it)
 Date: 2015-02-28 14:31
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: proving-that-androids-javas-and-pythons-sorting-algorithm-is-broken-and-showing-how-to-fix-it
 
 > Tim Peters developed the Timsort hybrid sorting algorithm in 2002. It

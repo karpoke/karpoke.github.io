@@ -1,6 +1,6 @@
 Title: Un ejército de ’frikis’ contra Telefónica
 Date: 2014-01-07 01:19
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: un-ejercito-de-frikis-contra-telefonica
 
 > Hubo un tiempo en que sólo había un camino para surcar las redes: la

@@ -1,6 +1,6 @@
 Title: The Twelve-Factor App
 Date: 2015-05-18 22:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-twelve-factor-app
 
 > In the modern era, software is commonly delivered as a service: called

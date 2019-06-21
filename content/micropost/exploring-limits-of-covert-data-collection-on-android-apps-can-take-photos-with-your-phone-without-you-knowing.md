@@ -1,6 +1,6 @@
 Title: Exploring limits of covert data collection on Android: apps can take photos with your phone without you knowing
 Date: 2014-05-25 09:42
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: exploring-limits-of-covert-data-collection-on-android-apps-can-take-photos-with-your-phone-without-you-knowing
 
 > Android apps can take photos with your phone in background phones

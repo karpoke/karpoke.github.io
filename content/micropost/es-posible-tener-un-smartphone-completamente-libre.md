@@ -1,6 +1,6 @@
 Title: ¿Es posible tener un smartphone completamente libre?
 Date: 2012-08-24 23:51
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: es-posible-tener-un-smartphone-completamente-libre
 
 > Desde el punto de vista del usuario ¿Se puede tener una plataforma

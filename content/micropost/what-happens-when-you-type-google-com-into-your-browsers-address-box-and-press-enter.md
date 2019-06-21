@@ -1,6 +1,6 @@
 Title: What happens when you type google.com into your browser’s address box and press enter?
 Date: 2015-01-30 20:11
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: what-happens-when-you-type-google-com-into-your-browsers-address-box-and-press-enter
 
 > Except instead of the usual story, we’re going to try to answer this

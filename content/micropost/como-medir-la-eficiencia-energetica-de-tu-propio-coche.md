@@ -1,6 +1,6 @@
 Title: Cómo medir la eficiencia energética de tu propio coche
 Date: 2012-07-14 18:27
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: como-medir-la-eficiencia-energetica-de-tu-propio-coche
 
 > Pere Roura (Universitat de Girona) y Daniel Oliu nos cuentan en ”How

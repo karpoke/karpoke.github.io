@@ -1,6 +1,6 @@
 Title: Lepton image compression: saving 22% losslessly from images at 15MB/s
 Date: 2016-07-17 23:48
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: compresión de imágenes, Letpon, sin pérdida de calidad, Dropbox
 Slug: lepton-image-compression-saving-22-percent-losslessly-from-images-at-15mbps
 

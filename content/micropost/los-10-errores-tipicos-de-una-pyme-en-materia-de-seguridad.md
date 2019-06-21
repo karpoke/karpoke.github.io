@@ -1,6 +1,6 @@
 Title: Los 10 errores típicos de una PYME en materia de seguridad
 Date: 2013-06-08 23:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: los-10-errores-tipicos-de-una-pyme-en-materia-de-seguridad
 
 > No cabe duda de que en los últimos años hemos avanzado mucho en

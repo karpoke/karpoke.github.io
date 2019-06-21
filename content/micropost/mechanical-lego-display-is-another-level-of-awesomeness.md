@@ -1,6 +1,6 @@
 Title: Mechanical LEGO Display Is Another Level Of Awesomeness
 Date: 2015-05-03 11:30
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: mechanical-lego-display-is-another-level-of-awesomeness
 
 > You don’t often see clever builds like this Technic Dot Matrix Display

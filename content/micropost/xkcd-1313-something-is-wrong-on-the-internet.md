@@ -1,6 +1,6 @@
 Title: xkcd 1313: Something is Wrong on the Internet!
 Date: 2014-01-07 01:41
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: expresiones regulares, optimización, algoritmos genéticos, XKCD
 Slug: xkcd-1313-something-is-wrong-on-the-internet
 

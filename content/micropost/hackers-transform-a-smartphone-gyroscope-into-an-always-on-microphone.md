@@ -1,6 +1,6 @@
 Title: Hackers transform a smartphone gyroscope into an always-on microphone
 Date: 2014-08-16 09:16
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: hackers-transform-a-smartphone-gyroscope-into-an-always-on-microphone
 
 > Apps that use your smartphone’s microphone need to ask permission, but

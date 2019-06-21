@@ -1,6 +1,6 @@
 Title: How To Become A Hacker
 Date: 2014-11-08 00:31
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-to-become-a-hacker
 
 > There is a community, a shared culture, of expert programmers and

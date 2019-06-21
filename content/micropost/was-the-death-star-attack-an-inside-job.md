@@ -1,6 +1,6 @@
 Title: Was the Death Star Attack an Inside Job?
 Date: 2014-12-21 11:59
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: was-the-death-star-attack-an-inside-job
 
 > We’ve all heard the ”official conspiracy theory” of the Death Star

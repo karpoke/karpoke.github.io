@@ -1,6 +1,6 @@
 Title: Hasta el infinito y más allá. Bienvenido IPv6 (I)
 Date: 2016-11-25 18:33
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: IPv6, adopción, ventajas, desventajas
 Slug: hasta-el-infinito-y-mas-alla-bienvenido-ipv6-i
 

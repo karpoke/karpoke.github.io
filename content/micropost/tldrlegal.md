@@ -1,6 +1,6 @@
 Title: tl;drLegal
 Date: 2012-07-04 00:44
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: tldrlegal
 
 > SKIP THE LICENSE

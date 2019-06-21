@@ -1,6 +1,6 @@
 Title: The Humble Programmer
 Date: 2012-07-26 23:07
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-humble-programmer
 
 > As a result of a long sequence of coincidences I entered the

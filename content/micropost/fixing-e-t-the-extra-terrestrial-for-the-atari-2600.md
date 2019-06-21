@@ -1,6 +1,6 @@
 Title: Fixing E.T. The Extra-Terrestrial for the Atari 2600
 Date: 2016-09-24 17:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: fixing-e-t-the-extra-terrestrial-for-the-atari-2600
 
 > If you’re reading this page, chances are that you’re already well aware

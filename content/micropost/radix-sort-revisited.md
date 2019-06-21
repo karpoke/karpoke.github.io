@@ -1,6 +1,6 @@
 Title: Radix Sort Revisited
 Date: 2012-07-05 18:43
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: radix-sort-revisited
 
 > In every decent programmer’s toolbox lies a strange weapon called a

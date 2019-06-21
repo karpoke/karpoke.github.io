@@ -1,6 +1,6 @@
 Title: Las primeras programadoras
 Date: 2013-03-31 16:22
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: las-primeras-programadoras
 
 > Cuando se habla del nacimiento de los primeros computadores,

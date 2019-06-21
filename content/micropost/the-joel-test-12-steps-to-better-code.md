@@ -1,6 +1,6 @@
 Title: The Joel Test: 12 Steps to Better Code
 Date: 2016-05-31 07:49
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-joel-test:-12-steps-to-better-code
 
 > Have you ever heard of SEMA? It’s a fairly esoteric system for measuring

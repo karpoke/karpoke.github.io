@@ -1,6 +1,6 @@
 Title: Los geniales Huevos de Pascua de LucasArts
 Date: 2016-02-07 12:53
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: los-geniales-huevos-de-pascua-de-lucasarts
 
 > La facilidad de manejo gracias al motor SCUMM y la mezcla única de una

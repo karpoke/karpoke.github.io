@@ -1,6 +1,6 @@
 Title: Cómo perder peso (en el navegador)
 Date: 2013-04-02 22:39
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: como-perder-peso-en-el-navegador
 
 > ¿Y si nos juntáramos un grupo de expertos que trabajan en grandes

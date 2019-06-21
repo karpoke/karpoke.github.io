@@ -1,6 +1,6 @@
 Title: The website of the world’s first-ever web server
 Date: 2012-08-06 03:11
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-website-of-the-worlds-first-ever-web-server
 
 > CERN, the European Organization for Nuclear Research, is where it all

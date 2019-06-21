@@ -1,6 +1,6 @@
 Title: Así funcionaba el primer gran sistema que evitaba que hicieras copias de VHS
 Date: 2017-10-22 22:51
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: VHS, sistemas antipiratería
 Slug: asi-funcionaba-el-primer-gran-sistema-que-evitaba-que-hicieras-copias-de-vhs
 

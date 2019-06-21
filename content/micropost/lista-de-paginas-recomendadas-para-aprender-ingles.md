@@ -1,6 +1,6 @@
 Title: Lista de páginas recomendadas para aprender inglés
 Date: 2012-12-12 13:36
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: lista-de-paginas-recomendadas-para-aprender-ingles
 
 > A continuación os pongo una serie de páginas webs que considero

@@ -1,6 +1,6 @@
 Title: I Was a Teenage Hacker
 Date: 2012-08-10 10:38
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: i-was-a-teenage-hacker
 
 > Twenty-four years ago today, I had a very bad day.

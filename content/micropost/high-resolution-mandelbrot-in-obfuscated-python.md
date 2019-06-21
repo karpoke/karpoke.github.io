@@ -1,6 +1,6 @@
 Title: High-Resolution Mandelbrot in Obfuscated Python
 Date: 2013-01-06 01:40
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: high-resolution-mandelbrot-in-obfuscated-python
 
 > Here’s a followup to last month’s post about Penrose Tiling in

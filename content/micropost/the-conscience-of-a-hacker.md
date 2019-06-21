@@ -1,6 +1,6 @@
 Title: The Conscience of a Hacker
 Date: 2012-06-21 03:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-conscience-of-a-hacker
 
 > Another one got caught today, it’s all over the papers. ”Teenager

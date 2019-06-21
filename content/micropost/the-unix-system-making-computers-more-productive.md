@@ -1,6 +1,6 @@
 Title: The UNIX System: Making Computers More Productive
 Date: 2012-05-21 10:35
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-unix-system-making-computers-more-productive
 
 > In the late 1960s, Bell Laboratories computer scientists Dennis

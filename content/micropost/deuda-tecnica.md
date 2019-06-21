@@ -1,6 +1,6 @@
 Title: Deuda técnica
 Date: 2012-06-04 14:12
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: deuda-tecnica
 
 > ¿Qué desarrollador de software nunca ha estado una semana programando

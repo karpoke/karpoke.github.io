@@ -1,6 +1,6 @@
 Title: Logran que un cuadricóptero sea capaz de lanzar y equilibrar un péndulo invertido
 Date: 2013-02-23 23:22
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: logran-que-un-cuadricoptero-sea-capaz-de-lanzar-y-equilibrar-un-pendulo-invertido
 
 > Un equipo de investigadores del Instituto de Tecnología de Suecia ha

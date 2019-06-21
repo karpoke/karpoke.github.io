@@ -1,6 +1,6 @@
 Title: No debes despreciar aquello que más necesitas
 Date: 2013-04-27 13:07
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: no-debes-despreciar-aquello-que-mas-necesitas
 
 > En mi opinión el origen de todos los males que afectan a la profesión

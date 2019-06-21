@@ -1,6 +1,6 @@
 Title: A dash of algebra on wireless networks promises to boost bandwidth tenfold, without new infrastructure
 Date: 2012-10-28 12:01
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: a-dash-of-algebra-on-wireless-networks-promises-to-boost-bandwidth-tenfold-without-new-infrastructure
 
 > Academic researchers have improved wireless bandwidth by an order of

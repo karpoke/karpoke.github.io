@@ -1,6 +1,6 @@
 Title: Writing Plugins for gedit 3 with Python
 Date: 2012-05-23 00:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: writing-plugins-for-gedit-3-with-python
 
 > This is a guide to programming plugins for gedit 3, the default text

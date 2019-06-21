@@ -1,6 +1,6 @@
 title: Uncovering android master key that makes 99% of devices vulnerable
 Date: 2013-07-06 13:24
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: uncovering-android-master-key-that-makes-99-of-devices-vulnerable
 
 > The Bluebox Security research team – Bluebox Labs – recently

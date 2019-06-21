@@ -1,6 +1,6 @@
 Title: España y el software que fue
 Date: 2016-02-29 09:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: espana-y-el-software-que-fue
 
 > La abadía del crimen fue publicado en 1987, en el cénit de los viejos

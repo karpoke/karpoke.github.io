@@ -1,6 +1,6 @@
 Title: Ya puedes jugar a todas las máquinas recreativas de tu infancia gratis
 Date: 2014-12-06 16:30
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: ya-puedes-jugar-a-todas-las-maquinas-recreativas-de-tu-infancia-gratis
 
 > ¿Conocéis Archive.org? Es una organización sin ánimo de lucro que

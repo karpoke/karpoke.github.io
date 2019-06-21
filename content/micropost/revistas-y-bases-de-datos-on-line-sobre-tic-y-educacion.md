@@ -1,6 +1,6 @@
 Title: Revistas y bases de datos on line sobre TIC y Educación
 Date: 2012-05-31 00:16
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: revistas-y-bases-de-datos-on-line-sobre-tic-y-educacion
 
 > Listado de aquellas publicaciones tanto de naturaleza académica y

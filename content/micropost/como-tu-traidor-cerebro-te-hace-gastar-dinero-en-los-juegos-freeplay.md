@@ -1,6 +1,6 @@
 Title: Cómo tu traidor cerebro te hace gastar dinero en los juegos freeplay
 Date: 2015-05-03 15:04
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: como-tu-traidor-cerebro-te-hace-gastar-dinero-en-los-juegos-freeplay
 
 > El cerebro es un órgano fascinante y relativamente desconocido para la

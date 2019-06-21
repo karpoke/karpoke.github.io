@@ -1,6 +1,6 @@
 Title: Una partida ’perfecta’ de Serpiente
 Date: 2013-04-29 13:13
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: una-partida-perfecta-de-serpiente
 
 > En 1997 esto era lo más avanzado en la industria del entretenimiento

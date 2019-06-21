@@ -1,6 +1,6 @@
 Title: Monkey Island y LucasArts: de referencias a referente
 Date: 2012-07-31 13:25
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: monkey-island-y-lucasarts-de-referencias-a-referente
 
 > En un lugar de Melee Island^TM^ de cuyo nombre no quiero acordarme,

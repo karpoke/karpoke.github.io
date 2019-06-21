@@ -1,6 +1,6 @@
 Title: Piratería: cuando la mentira repetida mil veces se convierte en verdad
 Date: 2015-04-06 15:14
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: pirateria-cuando-la-mentira-repetida-mil-veces-se-convierte-en-verdad
 
 > Pero nada, oye, les da igual. Da igual que las webs de descargas, con

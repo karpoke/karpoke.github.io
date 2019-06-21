@@ -1,6 +1,6 @@
 Title: Sistema binario: unos y ceros a través de la historia
 Date: 2014-09-06 13:29
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: sistema-binario-unos-y-ceros-a-traves-de-la-historia
 
 > Los unos y los ceros llevan milenios entre nosotros, desde algunas

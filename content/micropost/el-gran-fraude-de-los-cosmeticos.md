@@ -1,6 +1,6 @@
 Title: El gran fraude de los cosméticos
 Date: 2012-08-17 12:53
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-gran-fraude-de-los-cosmeticos
 
 > El pasado martes, Mercadona retiró 11 productos cosméticos después de

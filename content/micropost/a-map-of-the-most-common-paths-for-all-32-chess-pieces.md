@@ -1,6 +1,6 @@
 Title: A Map Of The Most Common Paths For All 32 Chess Pieces
 Date: 2015-06-04 17:34
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: a-map-of-the-most-common-paths-for-all-32-chess-pieces
 
 > There are just 32 pieces on a chessboard, but the number of patterns

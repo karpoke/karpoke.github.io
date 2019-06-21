@@ -1,6 +1,6 @@
 Title: Reflections on Trusting Trust
 Date: 2014-08-15 08:05
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: reflections-on-trusting-trust
 
 > You can’t trust code that you did not totally create yourself.

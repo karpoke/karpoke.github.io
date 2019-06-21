@@ -1,6 +1,6 @@
 Title: Desarrollan el primer transistor biológico
 Date: 2013-04-05 23:47
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: desarrollan-el-primer-transistor-biologico
 
 > Un equipo de investigadores de la Universidad de Stanford ha

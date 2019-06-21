@@ -1,6 +1,6 @@
 Title: Levels of aspiration
 Date: 2012-07-15 17:20
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: levels-of-aspiration
 
 > Debates over technology, technique, and process often go nowhere

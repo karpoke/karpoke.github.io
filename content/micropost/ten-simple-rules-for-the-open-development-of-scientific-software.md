@@ -1,6 +1,6 @@
 Title: Ten Simple Rules for the Open Development of Scientific Software
 Date: 2012-12-16 14:44
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: ten-simple-rules-for-the-open-development-of-scientific-software
 
 > If you have the choice, embracing an open approach to development has

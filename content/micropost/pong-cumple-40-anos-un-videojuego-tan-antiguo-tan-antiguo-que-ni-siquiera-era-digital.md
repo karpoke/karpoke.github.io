@@ -1,6 +1,6 @@
 Title: Pong cumple 40 años: un videojuego tan antiguo, tan antiguo que ni siquiera era digital
 Date: 2012-12-16 13:17
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: pong-cumple-40-anos-un-videojuego-tan-antiguo-tan-antiguo-que-ni-siquiera-era-digital
 
 > El 29 de noviembre de 1972, hace ahora 40 años, un extraño artilugio

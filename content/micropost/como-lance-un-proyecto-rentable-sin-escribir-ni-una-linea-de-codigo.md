@@ -1,6 +1,6 @@
 Title: Cómo lancé un proyecto rentable sin escribir ni una línea de código
 Date: 2014-10-26 12:32
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: iniciativas, proyectos, proveedores, servicios
 Slug: como-lance-un-proyecto-rentable-sin-escribir-ni-una-linea-de-codigo
 

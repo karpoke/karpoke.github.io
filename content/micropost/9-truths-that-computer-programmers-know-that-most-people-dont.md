@@ -1,6 +1,6 @@
 Title: 9 truths that computer programmers know that most people don’t.
 Date: 2015-03-14 11:59
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 9-truths-that-computer-programmers-know-that-most-people-dont
 
 > Ever wondered why programmers are known as nightbirds? Why we stay up

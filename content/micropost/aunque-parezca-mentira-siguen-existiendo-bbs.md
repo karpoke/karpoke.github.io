@@ -1,6 +1,6 @@
 Title: Aunque parezca mentira, siguen existiendo BBS
 Date: 2014-05-24 16:42
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: aunque-parezca-mentira-siguen-existiendo-bbs
 
 > Belky es el ”sysop” (administrador) de VampireBBS. Anda estos días muy

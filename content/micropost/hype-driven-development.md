@@ -1,6 +1,6 @@
 Title: Hype Driven Development
 Date: 2016-11-25 20:29
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: hdd, nuevas tecnologías, modas pasajeras, bombo y platillo
 Slug: hype-driven-development
 

@@ -1,6 +1,6 @@
 Title: The programmer’s price
 Date: 2014-11-23 18:12
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-programmers-price
 
 > Finally, Bradley received an e-mail from 10x, a talent company. 10x

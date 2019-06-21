@@ -1,6 +1,6 @@
 Title: Old Spice Muscle Music
 Date: 2012-08-31 16:04
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: old-spice-muscle-music
 
 > Watch me jam solo, then use the special interactive player to record

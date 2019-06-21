@@ -1,6 +1,6 @@
 Title: HubCap Chromecast Root Release
 Date: 2014-08-31 18:01
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: hubcap-chromecast-root-release
 
 > We’re happy to announce that fail0verflow, GTVHacker, and Team-Eureka

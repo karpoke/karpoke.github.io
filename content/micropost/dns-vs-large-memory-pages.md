@@ -1,6 +1,6 @@
 Title: DNS vs. large memory pages
 Date: 2012-05-25 14:05
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: dns-vs-large-memory-pages
 
 > As everyone knows, an important threat against the Internet is that of

@@ -1,6 +1,6 @@
 Title: Bash prompts
 Date: 2012-07-27 19:34
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: bash-prompts
 
 > You can tell a lot about a shell user by looking at their prompt. Most

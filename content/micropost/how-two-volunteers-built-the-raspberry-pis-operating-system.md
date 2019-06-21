@@ -1,6 +1,6 @@
 Title: How two volunteers built the Raspberry Pi’s operating system
 Date: 2013-04-06 18:02
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-two-volunteers-built-the-raspberry-pis-operating-system
 
 > When you buy a Raspberry Pi, the \$35 computer doesn’t come with an

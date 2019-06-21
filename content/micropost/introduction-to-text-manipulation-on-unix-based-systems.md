@@ -1,6 +1,6 @@
 Title: Introduction to text manipulation on UNIX-based systems
 Date: 2012-07-31 15:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: introduction-to-text-manipulation-on-unix-based-systems
 
 > A basic tenets of UNIX philosophy is to create programs (or processes)

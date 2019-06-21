@@ -1,6 +1,6 @@
 Title: Bullet proofing Django models
 Date: 2016-11-07 01:17
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: django, buenas prácticas, DRY, bajo acoplamiento, concurrencia, atomicidad, validación, testeo
 Slug: bullet-proofing-django-models
 Related:
