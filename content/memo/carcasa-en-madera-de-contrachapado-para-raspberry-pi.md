@@ -27,9 +27,9 @@ cuenta es el grosor de la madera para las piezas laterales:
 
 Éste es el resultado:
 
-![Raspberry Pi wood case]({filename}/images/raspberry_pi_wood_case-300x218.jpg)
+![Raspberry Pi wood case]({static}/images/raspberry_pi_wood_case-300x218.jpg)
 
-![Raspberry Pi wood case]({filename}/images/raspberry_pi_wood_case_2-300x212.jpg)
+![Raspberry Pi wood case]({static}/images/raspberry_pi_wood_case_2-300x212.jpg)
 
 Referencias
 -----------

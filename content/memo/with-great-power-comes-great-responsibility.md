@@ -17,19 +17,19 @@ Administrator. It usually boils down to these three things:
 
 Trust... _my ass_:
 
-![Sandwich]({filename}/images/sandwich-300x249.png)
+![Sandwich]({static}/images/sandwich-300x249.png)
 
 <small>_Fuente: [xkcd.com][]_</small>
 
-![sudo rm]({filename}/images/sudorm.jpg)
+![sudo rm]({static}/images/sudorm.jpg)
 
 <small>_Fuente: [leprosys.info][]_</small>
 
-![whoops]({filename}/images/whoops-300x272.png)
+![whoops]({static}/images/whoops-300x272.png)
 
 <small>_Fuente: [leprosys.info][]_</small>
 
-![sudo-rm]({filename}/images/sudo-rm-300x193.png)
+![sudo-rm]({static}/images/sudo-rm-300x193.png)
 
 <small>_Fuente: [genbeta.com][]_</small>
 

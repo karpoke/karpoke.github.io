@@ -10,7 +10,7 @@ Ejecutamos `swipl`, uno de los compiladores de Prolog libres:
 $ swipl
 ```
 
-![Marvin]({filename}/images/marvin-186x300.jpg)
+![Marvin]({static}/images/marvin-186x300.jpg)
 
 Y si le interrogamos por el valor de una variable de la cual no puede
 inferir ningún valor...

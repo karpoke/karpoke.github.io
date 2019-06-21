@@ -18,7 +18,7 @@ robar][]. La industria quiere meterte miedo. ¿Cómo podemos ejercer
 nuestros derechos? __Comparte, descarga y copia la siguiente lista__ de
 recursos culturales.
 
-![Comparted]({filename}/images/comparte-300x143.jpg)
+![Comparted]({static}/images/comparte-300x143.jpg)
 
 **[Comparte en Twitter][]. Pega [en Facebook][]. Envíala por email.
 Complétala en tu blog. Llévate la lista. [PDF][], [DOC][], [HTML][]**

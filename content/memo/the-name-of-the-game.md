@@ -31,7 +31,7 @@ Este servidor, de nombre Términus, es un viejo portátil venido a
 sobremesa. La batería ya hace tiempo que [pasó a mejor vida][], aunque
 tiempo antes ya había tenido problemas con la tarjeta gráfica.
 
-![Terminus gedit]({filename}/images/terminus_gedit-300x181.png )
+![Terminus gedit]({static}/images/terminus_gedit-300x181.png )
 
 Comenzaron apareciendo patrones extraños que cambiaban de color según
 el color del fondo. En la captura se puede ver que con el fondo blanco
@@ -57,7 +57,7 @@ encuadrar un texto en ASCII.
 Al final, también comenzó a hacerlo en los terminales de texto,
 `Ctrl+Alt+F{1..6}`, mostrando una interfaz de usuario caleidoscópica.
 
-![Terminus TTY]({filename}/images/terminus_tty-300x225.jpg)
+![Terminus TTY]({static}/images/terminus_tty-300x225.jpg)
 
   [La Fundación]: http://es.wikipedia.org/wiki/Terminus
     "La Fundación"
