@@ -1,6 +1,6 @@
 Title: Tesla, el genio que hizo la luz
 Date: 2012-06-25 11:07
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: tesla-el-genio-que-hizo-la-luz
 
 > Nicola Tesla, ingeniero y matemático fue uno de los grandes inventores

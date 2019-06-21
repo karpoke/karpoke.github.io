@@ -1,6 +1,6 @@
 Title: Solving Unicode Problems in Python 2.7
 Date: 2016-06-08 22:24
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: solving-unicode-problems-in-python-2-7
 
 > One of the toughest things to get right in a Python program is Unicode

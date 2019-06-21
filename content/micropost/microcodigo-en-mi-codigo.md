@@ -1,6 +1,6 @@
 Title: Microcódigo en mi código
 Date: 2012-06-21 18:10
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: microcodigo-en-mi-codigo
 
 > El micro-código corresponde tradicionalmente con la forma más ”pura”

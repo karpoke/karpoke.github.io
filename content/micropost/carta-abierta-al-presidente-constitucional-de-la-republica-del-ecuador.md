@@ -1,6 +1,6 @@
 Title: Carta abierta al Presidente Constitucional de la República del Ecuador
 Date: 2012-06-26 17:44
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: carta-abierta-al-presidente-constitucional-de-la-republica-del-ecuador
 
 > Estimado Rafael Correa,

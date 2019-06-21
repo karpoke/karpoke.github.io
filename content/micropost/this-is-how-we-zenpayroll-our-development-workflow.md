@@ -1,6 +1,6 @@
 Title: This is how we ZenPayroll: Our Development Workflow
 Date: 2014-11-23 12:33
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: flujo de trabajo, calidad del código, revisión de código, programación en pareja, testeo, separación de entornos
 Slug: this-is-how-we-zenpayroll-our-development-workflow
 

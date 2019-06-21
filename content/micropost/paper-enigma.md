@@ -1,6 +1,6 @@
 Title: Paper Enigma
 Date: 2012-07-01 21:02
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: paper-enigma
 
 > Although the Enigma cipher as a whole is quite complex (it’s

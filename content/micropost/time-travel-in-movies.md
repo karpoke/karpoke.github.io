@@ -1,6 +1,6 @@
 Title: Time travel in movies
 Date: 2013-04-21 20:48
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: time-travel-in-movies
 
 ![Time travel in movies][]

@@ -1,6 +1,6 @@
 Title: Brainfuck beware: JavaScript is after you!
 Date: 2012-08-13 19:32
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: brainfuck-beware-javascript-is-after-you
 
 > I just made a tool to transform any javascript code into an equivalent

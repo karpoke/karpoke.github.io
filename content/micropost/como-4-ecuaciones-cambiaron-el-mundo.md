@@ -1,6 +1,6 @@
 Title: Cómo 4 ecuaciones cambiaron el mundo
 Date: 2013-05-04 21:43
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: como-4-ecuaciones-cambiaron-el-mundo
 
 > Cuenta la anécdota que un día de la primavera de 1855 el físico inglés

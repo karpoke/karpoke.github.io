@@ -1,6 +1,6 @@
 Title: Así es como la ingeniería inversa cambió la historia de la informática para siempre
 Date: 2016-06-13 13:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: asi-es-como-la-ingenieria-inversa-cambio-la-historia-de-la-informatica-para-siempre
 
 > IBM era el dueño y señor de los bits y los bytes a principios de los 80. En

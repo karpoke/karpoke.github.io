@@ -1,6 +1,6 @@
 Title: Todo el mundo debería saber programar
 Date: 2013-06-29 11:01
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: todo-el-mundo-deberia-saber-programar
 
 !youtube(my_g0GKH3YA)

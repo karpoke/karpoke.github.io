@@ -1,6 +1,6 @@
 Title: La obra de M. C. Escher en la cultura popular
 Date: 2013-03-28 19:46
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: la-obra-de-m-c-escher-en-la-cultura-popular
 
 > La obra de Maurits Cornelis Escher está plagada de composiciones

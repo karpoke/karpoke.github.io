@@ -1,6 +1,6 @@
 Title: La idea matemática que hizo volar al Voyager
 Date: 2012-10-30 12:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: la-idea-matematica-que-hizo-volar-al-voyager
 
 > La sonda espacial Voyager ha cautivado al mundo con su proeza en los

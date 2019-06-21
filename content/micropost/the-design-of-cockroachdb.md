@@ -1,6 +1,6 @@
 Title: The design of CockroachDB
 Date: 2016-10-02 14:42
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-design-of-cockroachdb
 
 > CockroachDB is a distributed SQL database. The primary design goals are

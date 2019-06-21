@@ -1,6 +1,6 @@
 Title: La primera hoja de cálculo para PCs cumple 35 años
 Date: 2014-06-11 21:15
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: la-primera-hoja-de-calculo-para-pcs-cumple-35-anos
 
 > En la primavera de 1978 mientras que Dan Bricklin se sentaba en una de

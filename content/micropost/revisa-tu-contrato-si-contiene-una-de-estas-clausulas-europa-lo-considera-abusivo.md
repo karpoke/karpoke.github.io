@@ -1,6 +1,6 @@
 Title: Revisa tu contrato: si contiene una de estas cláusulas, Europa lo considera abusivo
 Date: 2013-03-16 13:18
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: revisa-tu-contrato-si-contiene-una-de-estas-clausulas-europa-lo-considera-abusivo
 
 > La propia Unión Europea reconoce que los abusos más frecuentes son:

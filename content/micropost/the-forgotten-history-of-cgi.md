@@ -1,6 +1,6 @@
 Title: The Forgotten History Of CGI
 Date: 2014-05-31 20:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-forgotten-history-of-cgi
 
 > The roots of CGI lie in the first mechanical aids to drawing and

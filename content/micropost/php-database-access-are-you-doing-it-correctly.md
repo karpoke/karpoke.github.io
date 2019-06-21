@@ -1,6 +1,6 @@
 Title: PHP Database Access: Are You Doing It Correctly?
 Date: 2012-06-25 11:52
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: php-database-access-are-you-doing-it-correctly
 
 > We’ve covered PHP’s PDO API a couple of times here on Nettuts+, but,

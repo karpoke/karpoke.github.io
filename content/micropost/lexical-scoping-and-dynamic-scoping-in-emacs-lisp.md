@@ -1,6 +1,6 @@
 Title: lexical scoping and dynamic scoping in Emacs Lisp
 Date: 2012-06-26 12:39
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: lexical-scoping-and-dynamic-scoping-in-emacs-lisp
 
 > In this article, I demonstrate:

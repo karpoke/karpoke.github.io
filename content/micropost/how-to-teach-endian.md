@@ -1,6 +1,6 @@
 Title: How to teach endian
 Date: 2016-12-07 20:26
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: endian, little-endian, big-endian, bytes, nibbles, parsear, formatear
 Slug: how-to-teach-endian
 

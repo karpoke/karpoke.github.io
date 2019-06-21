@@ -1,6 +1,6 @@
 Title: The TTY demystified
 Date: 2012-07-09 20:09
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-tty-demystified
 
 > The TTY subsystem is central to the design of Linux, and UNIX in

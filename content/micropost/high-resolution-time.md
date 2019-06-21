@@ -1,6 +1,6 @@
 Title: High Resolution Time
 Date: 2012-10-28 13:05
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: high-resolution-time
 
 > This specification defines a JavaScript interface that provides the

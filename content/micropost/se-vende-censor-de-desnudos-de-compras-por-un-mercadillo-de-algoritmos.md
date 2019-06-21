@@ -1,6 +1,6 @@
 Title: Se vende censor de desnudos: de compras por un mercadillo de algoritmos
 Date: 2016-12-07 20:36
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: algoritmia, algoritmos, pago por uso, inteligencia artificial, visión por ordenador, aprendizaje automático
 Slug: se-vende-censor-de-desnudos-de-compras-por-un-mercadillo-de-algoritmos
 

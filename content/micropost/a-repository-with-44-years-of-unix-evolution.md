@@ -1,6 +1,6 @@
 Title: A repository with 44 years of Unix evolution
 Date: 2015-06-06 09:31
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: a-repository-with-44-years-of-unix-evolution
 
 > The evolution of the Unix operating system is made available as a

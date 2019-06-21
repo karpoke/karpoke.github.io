@@ -1,6 +1,6 @@
 Title: Google’s Got an Open Source Android Problem
 Date: 2014-09-14 16:41
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: Google, Android, fragmentación, código abierto, código libre
 Slug: googles-got-an-open-source-android-problem
 

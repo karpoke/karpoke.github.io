@@ -1,6 +1,6 @@
 Title: Caching with Twemcache
 Date: 2012-07-11 00:36
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: caching-with-twemcache
 
 > We built Twemcache because we needed a more robust and manageable

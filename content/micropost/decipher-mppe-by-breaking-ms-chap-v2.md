@@ -1,6 +1,6 @@
 Title: Decipher MPPE by breaking MS-CHAP v2
 Date: 2012-08-20 19:13
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: decipher-mppe-by-breaking-ms-chap-v2
 
 > Our investigation focuses on Microsoft proprietary protocols with the

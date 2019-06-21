@@ -1,6 +1,6 @@
 Title: Savvy Imgur user builds working 1KB hard drive inside ’vanilla’ Minecraft
 Date: 2014-09-21 11:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: savvy-imgur-user-builds-working-1kb-hard-drive-inside-vanilla-minecraft
 
 > Imgur user smellystring has officially changed my view of Minecraft –

@@ -1,6 +1,6 @@
 Title: 10 Colossal Old Computers That Changed History
 Date: 2013-07-07 20:47
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 10-colossal-old-computers-that-changed-history
 
 > Computers have come a long way since the early days, when two of the

@@ -1,6 +1,6 @@
 Title: How Chess Has Changed Over The Last 150 Years
 Date: 2015-05-29 18:45
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-chess-has-changed-over-the-last-150-years
 
 > The rules of chess have remained consistent since the early 19th

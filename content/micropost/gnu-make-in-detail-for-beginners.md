@@ -1,6 +1,6 @@
 Title: GNU Make in Detail for Beginners
 Date: 2012-06-28 12:56
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: gnu-make-in-detail-for-beginners
 
 > Large projects can contain thousands of lines of code, distributed in

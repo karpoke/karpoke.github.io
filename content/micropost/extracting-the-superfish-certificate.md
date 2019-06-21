@@ -1,6 +1,6 @@
 Title: Extracting the SuperFish certificate
 Date: 2015-02-23 22:56
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: extracting-the-superfish-certificate
 
 > I extracted the certificate from the SuperFish adware and cracked the

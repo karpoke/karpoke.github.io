@@ -1,6 +1,6 @@
 Title: The Feynman Lectures on Physics, completely online
 Date: 2014-08-30 11:56
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-feynman-lectures-on-physics-completely-online
 
 > Last fall, we let you know that Caltech and The Feynman Lectures

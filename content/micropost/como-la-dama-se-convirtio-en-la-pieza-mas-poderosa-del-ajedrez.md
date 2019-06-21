@@ -1,6 +1,6 @@
 Title: Cómo la Dama se convirtió en la pieza más poderosa del Ajedrez
 Date: 2015-05-30 08:56
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: como-la-dama-se-convirtio-en-la-pieza-mas-poderosa-del-ajedrez
 
 > La Dama en el Ajedrez no siempre tuvo los movimientos que tiene hoy,

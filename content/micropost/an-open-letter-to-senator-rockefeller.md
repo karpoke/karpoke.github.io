@@ -1,6 +1,6 @@
 Title: An open letter to Senator Rockefeller
 Date: 2012-09-20 20:49
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: an-open-letter-to-senator-rockefeller
 
 > Dear Sen. Rockefeller,

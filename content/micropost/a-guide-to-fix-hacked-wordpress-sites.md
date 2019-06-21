@@ -1,6 +1,6 @@
 Title: A guide to fix hacked WordPress sites
 Date: 2016-09-17 14:43
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: a-guide-to-fix-hacked-wordpress-sites
 
 > Our content, web design, and development teams spent months putting together

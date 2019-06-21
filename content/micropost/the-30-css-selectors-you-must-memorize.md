@@ -1,6 +1,6 @@
 Title: The 30 CSS Selectors you Must Memorize
 Date: 2013-10-13 11:31
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-30-css-selectors-you-must-memorize
 
 > So you learned the base id, class, and descendant selectors – and then

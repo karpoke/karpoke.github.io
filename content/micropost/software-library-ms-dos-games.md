@@ -1,6 +1,6 @@
 Title: Software Library: MS-DOS Games
 Date: 2015-01-05 17:53
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: software-library-ms-dos-games
 
 > Software for MS-DOS machines that represent entertainment and games.

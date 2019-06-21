@@ -1,6 +1,6 @@
 Title: Programming Sucks
 Date: 2014-05-31 17:30
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: programming-sucks
 
 > Every friend I have with a job that involves picking up something

@@ -1,6 +1,6 @@
 Title: Linux: The 0.01 Release
 Date: 2012-06-16 18:47
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: linux-the-0-01-release
 
 > ”This is a free minix-like kernel for i386(+) based AT-machines,”

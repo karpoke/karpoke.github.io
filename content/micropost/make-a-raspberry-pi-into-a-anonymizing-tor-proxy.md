@@ -1,6 +1,6 @@
 Title: Make a Raspberry Pi into a Anonymizing Tor Proxy!
 Date: 2013-11-04 12:30
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: make-a-raspberry-pi-into-a-anonymizing-tor-proxy
 
 > Feel like someone is snooping on you? Browse anonymously anywhere you

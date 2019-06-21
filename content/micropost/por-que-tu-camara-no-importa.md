@@ -1,6 +1,6 @@
 Title: Por Que Tu Cámara No Importa
 Date: 2012-10-30 12:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: por-que-tu-camara-no-importa
 
 > ¿Porqué es que fotógrafos cargados con los artefactos más

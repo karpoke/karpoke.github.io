@@ -1,6 +1,6 @@
 Title: 12 resolutions for programmers
 Date: 2012-05-20 12:26
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 12-resolutions-for-programmers
 
 > It’s important for programmers to challenge themselves.

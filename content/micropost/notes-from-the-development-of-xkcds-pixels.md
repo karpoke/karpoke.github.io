@@ -1,6 +1,6 @@
 Title: Notes from the development of xkcd’s ”Pixels”
 Date: 2014-09-14 12:29
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: notes-from-the-development-of-xkcds-pixels
 
 > Over the years, I’ve had the pleasure of hacking on the frontend code

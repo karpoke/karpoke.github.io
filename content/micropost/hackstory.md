@@ -1,6 +1,6 @@
 Title: Hackstory
 Date: 2012-06-21 03:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: hackstory
 
 > La Hackstory es una enciclopedia online que versa sobre la cultura e

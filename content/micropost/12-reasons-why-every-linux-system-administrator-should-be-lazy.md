@@ -1,6 +1,6 @@
 Title: 12 Reasons Why Every Linux System Administrator Should be Lazy
 Date: 2012-07-24 18:32
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 12-reasons-why-every-linux-system-administrator-should-be-lazy
 
 > > Lazy sysadmin is the best sysadmin –Anonymous

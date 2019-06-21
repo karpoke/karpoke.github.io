@@ -1,6 +1,6 @@
 Title: Mr. Robot S02E06: easter eggs más elaborados y un curso acelerado de hacking
 Date: 2016-09-11 18:52
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: mr-robot-s02e06-easter-eggs-mas-elaborados-y-un-curso-acelerado-de-hacking
 
 > Volvemos a la crónica tecnológica de Mr. Robot con el análisis del sexto

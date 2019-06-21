@@ -1,6 +1,6 @@
 Title: History of the browser user-agent string
 Date: 2012-07-17 13:09
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: history-of-the-browser-user-agent-string
 
 > In the beginning there was NCSA Mosaic, and Mosaic called itself

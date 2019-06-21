@@ -1,6 +1,6 @@
 Title: Exigimos la retirada de la Ley Lassalle (nueva reforma de la Ley de Propiedad Intelectual)
 Date: 2013-03-21 00:00
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: exigimos-la-retirada-de-la-ley-lassalle-nueva-reforma-de-la-ley-de-propiedad-intelectual
 
 > Exigimos la retirada de la Ley Lassalle y la apertura de un diálogo

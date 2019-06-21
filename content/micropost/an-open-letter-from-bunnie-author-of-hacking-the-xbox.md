@@ -1,6 +1,6 @@
 Title: An open letter from bunnie, author of Hacking the Xbox
 Date: 2013-03-15 02:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: an-open-letter-from-bunnie-author-of-hacking-the-xbox
 
 > No Starch Press and I have decided to release this free ebook version

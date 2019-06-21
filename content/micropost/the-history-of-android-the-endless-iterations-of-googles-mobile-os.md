@@ -1,6 +1,6 @@
 Title: The history of Android: The endless iterations of Google’s mobile OS
 Date: 2014-06-17 20:14
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: android, google, diseño, historia de android
 Slug: the-history-of-android-the-endless-iterations-of-googles-mobile-os
 Related:

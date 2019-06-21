@@ -1,6 +1,6 @@
 Title: Meterpretear una apk
 Date: 2016-08-14 12:49
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: meterpretear-una-apk
 
 > Primero digamos que en este post vamos a tocar los temas de las APKs de

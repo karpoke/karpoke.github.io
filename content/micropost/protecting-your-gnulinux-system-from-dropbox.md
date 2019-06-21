@@ -1,6 +1,6 @@
 Title: Protecting Your GNU/Linux System from Dropbox
 Date: 2012-05-30 00:18
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: protecting-your-gnulinux-system-from-dropbox
 
 > Typical blog posts about Dropbox security concentrate on data or

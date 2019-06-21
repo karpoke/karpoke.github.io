@@ -1,6 +1,6 @@
 Title: Celebra, Dragon Ball cumple 30 años
 Date: 2014-11-22 16:11
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: celebra-dragon-ball-cumple-30-anos
 
 > Ha pasado mucho tiempo luego de que apareciera por primera vez la

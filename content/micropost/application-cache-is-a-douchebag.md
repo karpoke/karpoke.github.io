@@ -1,6 +1,6 @@
 Title: Application Cache is a Douchebag
 Date: 2012-05-22 15:21
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: application-cache-is-a-douchebag
 
 > Good morning! Over in ”castle Lanyrd” we recently launched our mobile

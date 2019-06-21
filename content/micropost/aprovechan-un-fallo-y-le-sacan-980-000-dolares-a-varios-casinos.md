@@ -1,6 +1,6 @@
 Title: Aprovechan un fallo y le sacan 980.000 dólares a varios casinos
 Date: 2014-10-09 20:13
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: aprovechan-un-fallo-y-le-sacan-980-000-dolares-a-varios-casinos
 
 > Las máquinas de vídeopóquer Game King llegaron a los casinos en 1970 y

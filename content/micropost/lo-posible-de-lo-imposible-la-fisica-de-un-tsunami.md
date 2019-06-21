@@ -1,6 +1,6 @@
 Title: Lo posible de lo imposible: la física de un tsunami
 Date: 2014-12-01 22:11
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: lo-posible-de-lo-imposible-la-fisica-de-un-tsunami
 
 > Desde el punto de vista de la física, un tsunami es sencillamente una

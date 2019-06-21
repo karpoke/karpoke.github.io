@@ -1,6 +1,6 @@
 Title: Mario5
 Date: 2012-06-21 19:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: mario5
 
 > In the history of computer games some games have created and carried

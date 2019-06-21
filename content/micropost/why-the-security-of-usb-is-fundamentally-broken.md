@@ -1,6 +1,6 @@
 Title: Why the Security of USB Is Fundamentally Broken
 Date: 2014-08-02 11:20
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: why-the-security-of-usb-is-fundamentally-broken
 
 > That’s the takeaway from findings security researchers Karsten Nohl

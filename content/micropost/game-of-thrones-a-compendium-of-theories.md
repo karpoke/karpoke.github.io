@@ -1,6 +1,6 @@
 Title: Game of thrones: A Compendium of Theories
 Date: 2014-09-06 13:33
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: game-of-thrones-a-compendium-of-theories
 
 > For those less familiar with the story and the theories, I thought it

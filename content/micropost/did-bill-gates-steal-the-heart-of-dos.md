@@ -1,6 +1,6 @@
 Title: Did Bill Gates Steal the Heart of DOS?
 Date: 2012-08-08 17:43
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: did-bill-gates-steal-the-heart-of-dos
 
 > The history of the computer industry is filled with fascinating tales

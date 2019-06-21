@@ -1,6 +1,6 @@
 Title: HoneyMap
 Date: 2012-10-01 11:40
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: honeymap
 
 > You are looking at the HoneyMap, a real-time world map which

@@ -1,6 +1,6 @@
 Title: OAuth - Open Authorization Protocol
 Date: 2012-06-04 14:14
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: oauth-open-authorization-protocol
 
 > Cuando en 2006 los ingenieros de twitter estaban tratando de

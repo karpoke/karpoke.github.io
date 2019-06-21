@@ -1,6 +1,6 @@
 Title: 10 Years of Git: An Interview with Git Creator Linus Torvalds
 Date: 2015-04-07 22:13
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 10-years-of-git-an-interview-with-git-creator-linus-torvalds
 
 > Ten years ago this week, the Linux kernel community faced a daunting

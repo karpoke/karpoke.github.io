@@ -1,6 +1,6 @@
 Title: MySQL, MSSQL and Oracle SQL Injection Compilation
 Date: 2012-07-15 17:59
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: mysql-mssql-and-oracle-sql-injection-compilation
 
 > This Knowledge Base was put together and is maintained by Roberto

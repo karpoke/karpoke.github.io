@@ -1,6 +1,6 @@
 Title: Moving persistent data out of Redis
 Date: 2017-01-14 14:36
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: caché, LRU, Redis, datos persistentes, datos temporales
 Slug: moving-persistent-data-out-of-redis
 

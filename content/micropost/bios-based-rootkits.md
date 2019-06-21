@@ -1,6 +1,6 @@
 Title: BIOS Based Rootkits
 Date: 2013-06-14 23:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: bios-based-rootkits
 
 > Everything described here is based on a project I completed in early

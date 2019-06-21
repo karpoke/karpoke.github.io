@@ -1,6 +1,6 @@
 Title: The Man Who Made ’Tetris’
 Date: 2014-11-23 12:30
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-man-who-made-tetris
 
 > Tetris was formally released in June 1984 by the Academy of Sciences,

@@ -1,6 +1,6 @@
 Title: Command-line Forensics of hacked PHP.net
 Date: 2013-11-05 12:55
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: command-line-forensics-of-hacked-php-net
 
 > The good people from Barracuda Labs were kind enough to share a PCAP

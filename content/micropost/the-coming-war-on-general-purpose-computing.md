@@ -1,6 +1,6 @@
 Title: The coming war on general-purpose computing
 Date: 2015-02-23 22:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-coming-war-on-general-purpose-computing
 
 > Enter Digital Rights Management in its most primitive forms: let’s

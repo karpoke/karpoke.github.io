@@ -1,6 +1,6 @@
 Title: No Nobel for the Father of the LED
 Date: 2014-10-08 19:21
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: no-nobel-for-the-father-of-the-led
 
 > Nick Holonyak Jr., the person widely credited with the development of

@@ -1,6 +1,6 @@
 Title: The History of Film
 Date: 2012-10-15 20:37
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-history-of-film
 
 > This graphic chronicles the history of feature films from the origins

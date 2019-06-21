@@ -1,6 +1,6 @@
 Title: Curso de Asterisk
 Date: 2012-05-14 14:27
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: curso-de-asterisk
 
 - [dragonjar.org][]

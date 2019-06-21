@@ -1,6 +1,6 @@
 Title: Early Digital Research CP/M Source Code
 Date: 2014-11-03 09:57
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: early-digital-research-cpm-source-code
 
 > Computer Scientist Gary Kildall created just such an operating system

@@ -1,6 +1,6 @@
 Title: Python internals: adding a new statement to Python
 Date: 2013-03-01 10:44
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: python-internals-adding-a-new-statement-to-python
 
 > This article is an attempt to better understand how the front-end of

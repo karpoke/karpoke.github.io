@@ -1,6 +1,6 @@
 Title: The open source technology behind Twitter
 Date: 2012-09-01 12:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-open-source-technology-behind-twitter
 
 > Without open source, Twitter wouldn’t exist. Every Tweet you send and

@@ -1,6 +1,6 @@
 Title: A Gentle Introduction to Algorithm Complexity Analysis
 Date: 2012-07-05 18:17
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: a-gentle-introduction-to-algorithm-complexity-analysis
 
 > A lot of programmers that make some of the coolest and most useful

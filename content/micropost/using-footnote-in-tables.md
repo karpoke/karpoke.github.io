@@ -1,6 +1,6 @@
 Title: Using footnote in tables
 Date: 2012-10-09 17:46
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: using-footnote-in-tables
 
 > Have you ever tried to add a footnote to a table inside the tabular

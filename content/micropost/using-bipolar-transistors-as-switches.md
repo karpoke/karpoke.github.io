@@ -1,6 +1,6 @@
 Title: Using Bipolar Transistors As Switches
 Date: 2012-08-02 12:41
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: using-bipolar-transistors-as-switches
 
 > While transistors have many uses, one of the less known uses by

@@ -1,6 +1,6 @@
 Title: Historia de los videojuegos: los orígenes
 Date: 2015-02-18 21:05
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: historia-de-los-videojuegos-los-origenes
 
 > En 1972 se ponía en venta en las tiendas norteamericanas la Magnavox

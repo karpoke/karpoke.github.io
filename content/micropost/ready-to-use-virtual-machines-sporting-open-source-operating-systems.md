@@ -1,6 +1,6 @@
 Title: Ready-to-use virtual machines sporting open-source operating systems
 Date: 2012-07-14 19:31
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: ready-to-use-virtual-machines-sporting-open-source-operating-systems
 
 > We provide pre-built images for several open-source operating systems.

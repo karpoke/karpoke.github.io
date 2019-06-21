@@ -1,6 +1,6 @@
 Title: Live patching for 3.20
 Date: 2015-02-23 21:28
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: live-patching-for-3-20
 
 > Originally, there was kSplice as a standalone project that implemented

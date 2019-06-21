@@ -1,6 +1,6 @@
 Title: The VP of Devil’s Advocacy
 Date: 2014-08-07 21:04
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-vp-of-devils-advocacy
 
 > The tenth man. If nine of us look at the same information and arrive

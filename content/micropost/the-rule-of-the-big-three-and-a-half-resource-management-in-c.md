@@ -1,6 +1,6 @@
 Title: The Rule of The Big Three (and a half) – Resource Management in C++
 Date: 2015-01-18 10:59
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-rule-of-the-big-three-and-a-half-resource-management-in-c
 
 > The dynamic creation and destruction of objects was always one of the

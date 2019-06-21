@@ -1,6 +1,6 @@
 Title: Understanding Python Decorators in 12 Easy Steps!
 Date: 2012-07-24 19:52
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: understanding-python-decorators-in-12-easy-steps
 
 > Ok, perhaps I jest. As a Python instructor, understanding decorators

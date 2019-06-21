@@ -1,6 +1,6 @@
 Title: 10 Futurama jokes that will make you smarter
 Date: 2015-01-01 11:36
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 10-futurama-jokes-that-will-make-you-smarter
 
 > The Futurama writers had a rule that the show’s more obscure jokes

@@ -1,6 +1,6 @@
 Title: The Origins of the  Tag
 Date: 2014-12-30 23:11
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-origins-of-the-tag
 
 > Sometime in late summer I took a break with some of the other

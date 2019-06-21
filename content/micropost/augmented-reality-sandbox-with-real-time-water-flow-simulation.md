@@ -1,6 +1,6 @@
 Title: Augmented reality sandbox with real-time water flow simulation
 Date: 2012-05-16 09:26
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: augmented-reality-sandbox-with-real-time-water-flow-simulation
 
 > Video of a sandbox equipped with a Kinect 3D camera and a projector to

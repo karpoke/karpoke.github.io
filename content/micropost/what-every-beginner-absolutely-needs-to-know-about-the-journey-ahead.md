@@ -1,6 +1,6 @@
 Title: What every beginner absolutely needs to know about the journey ahead
 Date: 2015-02-08 19:37
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: what-every-beginner-absolutely-needs-to-know-about-the-journey-ahead
 
 > Quincy Larson was just a ”guy in a suit in an office” and decided he

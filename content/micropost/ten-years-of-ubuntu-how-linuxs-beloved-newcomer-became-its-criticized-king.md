@@ -1,6 +1,6 @@
 Title: Ten years of Ubuntu: how Linux’s beloved newcomer became its criticized king
 Date: 2014-12-07 15:01
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: ten-years-of-ubuntu-how-linuxs-beloved-newcomer-became-its-criticized-king
 
 > In October of 2004, a new Linux distro appeared on the scene with a

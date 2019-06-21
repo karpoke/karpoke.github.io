@@ -1,6 +1,6 @@
 Title: New release under development; suggestions requested
 Date: 2012-08-17 12:29
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: new-release-under-development-suggestions-requested
 
 > Fellow Linuxers,

@@ -1,6 +1,6 @@
 Title: Why ‘print’ became a function in Python 3
 Date: 2016-01-31 16:22
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: why-print-became-a-function-in-python-3
 
 > But the real key to the print function is somewhat subtle and it all

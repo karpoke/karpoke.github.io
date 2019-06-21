@@ -1,6 +1,6 @@
 Title: DRM en HTML: la guerra por poseer la Web
 Date: 2013-03-30 20:02
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: drm-en-html-la-guerra-por-poseer-la-web
 
 > Tim Berners-Lee habló hace unos días en las conferencias SXSW acerca

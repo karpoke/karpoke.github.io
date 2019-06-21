@@ -1,6 +1,6 @@
 Title: Introducing the HTML5 Hard Disk Filler¢ API
 Date: 2013-03-27 21:42
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: introducing-the-html5-hard-disk-filler-api
 
 > The HTML5 Web Storage standard was developed to allow sites to store

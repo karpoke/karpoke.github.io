@@ -1,6 +1,6 @@
 Title: WhatsApp is using IMEI numbers as passwords
 Date: 2012-09-07 10:56
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: whatsapp-is-using-imei-numbers-as-passwords
 
 > As you probably already heard in recent news, 1,000,001 Apple UDID’s

@@ -1,6 +1,6 @@
 Title: Script-injected ”async scripts” considered harmful
 Date: 2014-05-23 21:21
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: script-injected-async-scripts-considered-harmful
 
 > The inline JavaScript solution has a subtle, but very important (and

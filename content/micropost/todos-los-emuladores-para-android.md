@@ -1,6 +1,6 @@
 Title: Todos los emuladores para Android
 Date: 2012-07-24 19:59
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: todos-los-emuladores-para-android
 
 > Muchos de nosotros somos auténticos gamers en Android, y como buenos

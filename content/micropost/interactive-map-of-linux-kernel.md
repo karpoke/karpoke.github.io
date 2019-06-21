@@ -1,6 +1,6 @@
 Title: Interactive map of Linux kernel
 Date: 2012-05-27 13:10
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: mapa interactivo, kernel, Linux, subsitemas, capas, funciones, interfaces, dispositivos, código fuente
 Slug: interactive-map-of-linux-kernel
 

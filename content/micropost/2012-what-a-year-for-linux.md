@@ -1,6 +1,6 @@
 Title: 2012: What a Year for Linux
 Date: 2012-12-15 13:10
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 2012-what-a-year-for-linux
 
 > 2012 has been another year of records for Linux. The operating system is the

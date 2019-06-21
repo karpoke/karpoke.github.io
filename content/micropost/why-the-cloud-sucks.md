@@ -1,6 +1,6 @@
 Title: Why the Cloud Sucks
 Date: 2012-08-07 01:22
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: why-the-cloud-sucks
 
 > I’ve had too many personal experiences get messed up just because

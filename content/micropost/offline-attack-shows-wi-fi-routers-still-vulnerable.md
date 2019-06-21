@@ -1,6 +1,6 @@
 Title: Offline attack shows Wi-Fi routers still vulnerable
 Date: 2014-08-30 17:41
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: offline-attack-shows-wi-fi-routers-still-vulnerable
 
 > The attack exploits weak randomization, or the lack of randomization,

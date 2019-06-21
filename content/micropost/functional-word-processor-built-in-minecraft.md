@@ -1,6 +1,6 @@
 Title: Functional word processor built in Minecraft
 Date: 2015-01-18 22:44
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: functional-word-processor-built-in-minecraft
 
 > There was a time not so long ago when Minecraft was actually a game.

@@ -1,6 +1,6 @@
 Title: El principio de exclusión explicado con urinarios
 Date: 2013-03-20 00:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: principio de exlusión, Wolfgang Pauli, orbitales, regla de Hund, nivel de valencia
 Slug: el-principio-de-exclusion-explicado-con-urinarios
 

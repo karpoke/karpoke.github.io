@@ -1,6 +1,6 @@
 Title: Lostalgic
 Date: 2012-10-05 12:39
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: lostalgic
 
 > This project is based on the entire ABC’s LOST TV show scripts, 115

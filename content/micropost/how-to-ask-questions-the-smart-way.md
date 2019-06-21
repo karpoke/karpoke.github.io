@@ -1,6 +1,6 @@
 Title: How To Ask Questions The Smart Way
 Date: 2012-09-26 10:13
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: hackers, preguntas inteligentes, problemas interesantes
 Slug: how-to-ask-questions-the-smart-way
 

@@ -1,6 +1,6 @@
 Title: HTTP: The Protocol Every Web Developer Must Know – Part 1
 Date: 2013-04-30 00:12
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: http-the-protocol-every-web-developer-must-know-part-1
 
 > HTTP stands for Hypertext Transfer Protocol. It’s a stateless,

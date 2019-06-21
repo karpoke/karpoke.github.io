@@ -1,6 +1,6 @@
 Title: Improve your photographic composition by following these guidelines
 Date: 2016-09-29 00:16
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: improve-your-photographic-composition-by-following-these-guidelines
 
 > First of all we have to define what is meant by ‘composition’.

@@ -1,6 +1,6 @@
 Title: Django’s CBVs were a mistake
 Date: 2012-05-29 17:31
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: djangos-cbvs-were-a-mistake
 
 > I’ve written before about the somewhat doubtful advantages of

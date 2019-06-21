@@ -1,6 +1,6 @@
 Title: How we made editing Wikipedia twice as fast
 Date: 2015-01-11 18:07
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-we-made-editing-wikipedia-twice-as-fast
 
 > HipHop Virtual Machine, or HHVM, reduces the median page-saving time

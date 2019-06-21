@@ -1,6 +1,6 @@
 Title: Los tres monos sabios de WhatsApp
 Date: 2014-06-15 09:18
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: los-tres-monos-sabios-de-whatsapp
 
 > Abres WhatsApp cada diez minutos y, sin embargo, nunca has reparado en

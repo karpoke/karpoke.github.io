@@ -1,6 +1,6 @@
 Title: Streisand: Una herramienta que permite evadir la censura de Gobiernos y ISP de forma fácil
 Date: 2016-11-06 13:48
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: seguridad, vpn, ssh, proxy, tor, ansible, openvpn, openssh, stunnel, libreswan, L2TP/IPsec, xl2tpd, streisand
 Slug: streisand-una-herramienta-que-permite-evadir-la-censura-de-gobiernos-y-isp-de-forma-facil
 Related:

@@ -1,6 +1,6 @@
 Title: How High Can You Get?
 Date: 2013-03-20 01:21
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-high-can-you-get
 
 > So I wanted to find out: what exactly is the bug in the program that

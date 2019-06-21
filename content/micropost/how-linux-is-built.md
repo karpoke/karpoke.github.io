@@ -1,6 +1,6 @@
 Title: How Linux is Built
 Date: 2012-05-17 21:07
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-linux-is-built
 
 > While Linux is running our phones, friend requests, tweets, financial

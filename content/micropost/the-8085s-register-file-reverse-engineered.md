@@ -1,6 +1,6 @@
 Title: The 8085’s register file reverse engineered
 Date: 2013-03-31 20:28
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-8085s-register-file-reverse-engineered
 
 > On the surface, a microprocessor’s registers seem like simple storage,

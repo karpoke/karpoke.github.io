@@ -1,6 +1,6 @@
 Title: The History of Encryption
 Date: 2012-05-28 01:39
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-history-of-encryption
 
 - [infografía][] | via [cyberhades.com][]

@@ -1,6 +1,6 @@
 Title: The Mathematics of Autism
 Date: 2012-07-24 19:02
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-mathematics-of-autism
 
 > Autism may be associated with mathematical skills. Autism researcher

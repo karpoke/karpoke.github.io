@@ -1,6 +1,6 @@
 Title: Crash of the Titans Science Visualization
 Date: 2012-06-01 15:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: crash-of-the-titans-science-visualization
 
 > This scientific visualization of a computer simulation depicts the

@@ -1,6 +1,6 @@
 Title: Los tres años que cambiaron para siempre la industria del videojuego
 Date: 2016-09-18 15:47
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: los-tres-anos-que-cambiaron-para-siempre-la-industria-del-videojuego
 
 > Es un periodo en la historia del software bien diferenciado. Uno en el que

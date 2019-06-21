@@ -1,6 +1,6 @@
 Title: I won’t hire people who use poor grammar. here’s why.
 Date: 2012-07-31 14:37
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: i-wont-hire-people-who-use-poor-grammar-heres-why
 
 > In the same vein, programmers who pay attention to how they construct

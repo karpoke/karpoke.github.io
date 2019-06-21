@@ -1,6 +1,6 @@
 Title: The scope of index variables in Python’s for loops
 Date: 2015-02-18 00:04
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-scope-of-index-variables-in-pythons-for-loops
 
 > <p>

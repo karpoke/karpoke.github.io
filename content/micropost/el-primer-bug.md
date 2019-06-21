@@ -1,6 +1,6 @@
 Title: El primer ’bug’
 Date: 2014-09-09 19:12
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-primer-bug
 
 > Ese día, la programadora Grace Hopper se encontraba trabajando con un

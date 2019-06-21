@@ -1,6 +1,6 @@
 Title: Dario Taraborelli: The Beauty of LaTeX
 Date: 2012-05-16 23:50
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: dario-taraborelli-the-beauty-of-latex
 
 > There are several reasons why one should prefer LaTeX to a WYSIWYG

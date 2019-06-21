@@ -1,6 +1,6 @@
 Title: Manual del perfecto conductor español
 Date: 2012-05-23 10:45
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: manual-del-perfecto-conductor-espanol
 
 > En cierta ocasión se realizó una encuesta entre los conductores

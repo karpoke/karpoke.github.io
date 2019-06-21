@@ -1,6 +1,6 @@
 Title: The open guide to Amazon Web Services
 Date: 2016-11-07 00:20
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: AWS, servicio web, Amazon, EC2, S3, balanceadores de carga, EBS, IAM, computación en la nube, IaaS, infraestructura como servicio
 Slug: the-open-guide-to-amazon-web-services
 Related:

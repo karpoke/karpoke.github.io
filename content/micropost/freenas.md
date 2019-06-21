@@ -1,6 +1,6 @@
 Title: FreeNAS
 Date: 2013-11-03 13:35
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: freenas
 
 > FreeNAS es un sistema operativo basado en FreeBSD pero orientado a

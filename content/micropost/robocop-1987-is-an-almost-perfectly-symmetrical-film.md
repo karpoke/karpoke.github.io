@@ -1,6 +1,6 @@
 Title: RoboCop (1987) Is an Almost Perfectly Symmetrical Film
 Date: 2015-01-21 21:13
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: robocop-1987-is-an-almost-perfectly-symmetrical-film
 
 > The Old Testament is full of examples of chiasmus, which is a figure

@@ -1,6 +1,6 @@
 Title: What Absolutely Everyone Needs To Know About Isaac Asimov’s Foundation
 Date: 2014-12-27 11:52
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: what-absolutely-everyone-needs-to-know-about-isaac-asimovs-foundation
 
 > It’s an accomplishment all the more remarkable given that the story

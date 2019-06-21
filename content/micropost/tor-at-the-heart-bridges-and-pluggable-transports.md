@@ -1,6 +1,6 @@
 Title: Tor at the heart: bridges and pluggable transports
 Date: 2016-12-11 22:43
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: Tor, censura, anonimato, protocolos ofuscados, repetidores anónimos
 Slug: tor-at-the-heart-bridges-and-pluggable-transports
 

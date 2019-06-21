@@ -1,6 +1,6 @@
 Title: Noam Chomsky. La lingüistica, la informática y el activismo
 Date: 2012-12-18 17:05
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: noam-chomsky-la-linguistica-la-informatica-y-el-activismo
 
 > En cuanto a la relación de Chomsky con la informática proviene de sus

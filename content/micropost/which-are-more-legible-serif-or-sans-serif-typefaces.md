@@ -1,6 +1,6 @@
 Title: Which Are More Legible: Serif or Sans Serif Typefaces?
 Date: 2012-08-27 21:12
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: which-are-more-legible-serif-or-sans-serif-typefaces
 
 > Back in 1998 when Times New Roman was still widely used on the web, my

@@ -1,6 +1,6 @@
 Title: El cifrado sin control, no sirve de nada
 Date: 2013-03-05 15:23
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-cifrado-sin-control-no-sirve-de-nada
 
 > Últimamente, tanto en auditorías que realizamos, como en código que

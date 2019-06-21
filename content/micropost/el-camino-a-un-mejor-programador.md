@@ -1,6 +1,6 @@
 Title: El camino a un mejor programador
 Date: 2012-12-17 01:08
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-camino-a-un-mejor-programador
 
 > ;\`El camino a un mejor programador;’ es un libro que recopila

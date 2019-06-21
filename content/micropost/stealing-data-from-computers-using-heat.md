@@ -1,6 +1,6 @@
 Title: Stealing Data From Computers Using Heat
 Date: 2015-03-23 22:28
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: stealing-data-from-computers-using-heat
 
 > Security researchers at Ben Gurion University in Israel have found a

@@ -1,6 +1,6 @@
 Title: Prince of persia code review
 Date: 2013-06-15 23:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: prince-of-persia-code-review
 
 > Even though it is the Apple II version written in 6502 assembly

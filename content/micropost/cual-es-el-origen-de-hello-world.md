@@ -1,6 +1,6 @@
 Title: ¿Cuál es el origen de “Hello world”?
 Date: 2016-02-07 14:55
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: cual-es-el-origen-de-hello-world
 
 > Brian Kernighan, autor de uno de los libros de programación más

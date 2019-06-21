@@ -1,6 +1,6 @@
 Title: Por qué me enamoré de los hackers
 Date: 2012-05-25 23:35
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: por-que-me-enamore-de-los-hackers
 
 > Porque son gente lista y genial, de inacabable curiosidad, sentido del

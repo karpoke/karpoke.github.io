@@ -1,6 +1,6 @@
 Title: Por qué no utilizo métricas
 Date: 2016-09-25 12:48
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: por-que-no-utilizo-metricas
 
 > Al principio me molestaba en calcular métricas sobre el código fuente

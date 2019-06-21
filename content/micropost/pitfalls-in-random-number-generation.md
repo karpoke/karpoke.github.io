@@ -1,6 +1,6 @@
 Title: Pitfalls in Random Number Generation
 Date: 2012-07-09 20:07
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: números aleatorios, generador, distribución, bernoulli, binomial, exponencial, gamma, geométrica, normal, poisson, semilla
 Slug: pitfalls-in-random-number-generation
 

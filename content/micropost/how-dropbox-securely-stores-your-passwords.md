@@ -1,6 +1,6 @@
 Title: How Dropbox securely stores your passwords
 Date: 2016-09-24 13:32
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-dropbox-securely-stores-your-passwords
 
 > It’s universally acknowledged that it’s a bad idea to store plain-text

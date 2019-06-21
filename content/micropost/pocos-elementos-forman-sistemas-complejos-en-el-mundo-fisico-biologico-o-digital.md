@@ -1,6 +1,6 @@
 Title: Pocos elementos forman sistemas complejos en el mundo físico, biológico o digital
 Date: 2012-10-20 16:22
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: pocos-elementos-forman-sistemas-complejos-en-el-mundo-fisico-biologico-o-digital
 
 > Cuando observamos el mundo físico que nos rodea, nos maravillamos de

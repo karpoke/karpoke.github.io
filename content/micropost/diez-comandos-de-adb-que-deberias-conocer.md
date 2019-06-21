@@ -1,6 +1,6 @@
 Title: Diez comandos de ADB que deberías conocer
 Date: 2013-02-09 15:29
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: diez-comandos-de-adb-que-deberias-conocer
 
 > Una de las muchas razones por la que una gran cantidad de usuarios

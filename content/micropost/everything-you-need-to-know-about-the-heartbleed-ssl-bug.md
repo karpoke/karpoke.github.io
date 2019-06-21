@@ -1,6 +1,6 @@
 Title: Everything you need to know about the Heartbleed SSL bug
 Date: 2014-11-14 16:02
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: everything-you-need-to-know-about-the-heartbleed-ssl-bug
 
 > Every now and then in the world of security, something rather serious

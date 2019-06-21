@@ -1,6 +1,6 @@
 Title: Vim: revisited
 Date: 2012-05-20 03:56
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: vim-revisited
 
 > I’ve had an off/on relationship with Vim for the past many years.

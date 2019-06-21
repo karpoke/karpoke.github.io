@@ -1,6 +1,6 @@
 Title: The Command Line is Your Best Friend
 Date: 2013-04-03 23:43
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-command-line-is-your-best-friend
 
 > Yes, it’s that white (or green) on black screen, where mysterious text

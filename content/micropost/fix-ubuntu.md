@@ -1,6 +1,6 @@
 Title: fix ubuntu
 Date: 2013-12-15 20:02
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: fix-ubuntu
 
 > If you’re an Ubuntu user and you’re using the default settings, each

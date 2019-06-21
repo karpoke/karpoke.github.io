@@ -1,6 +1,6 @@
 Title: Transformada de Fourier discreta en Python con SciPy
 Date: 2012-10-29 10:00
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: transformada-de-fourier-discreta-en-python-con-scipy
 
 > En este artículo vamos a ver cómo calcular la transformada de Fourier

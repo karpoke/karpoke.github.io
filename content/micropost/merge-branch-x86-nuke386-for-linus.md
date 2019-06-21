@@ -1,6 +1,6 @@
 Title: Merge branch ’x86-nuke386-for-linus’
 Date: 2012-12-16 13:41
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: Linux, 386
 Slug: merge-branch-x86-nuke386-for-linus
 

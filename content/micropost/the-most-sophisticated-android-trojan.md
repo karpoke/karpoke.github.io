@@ -1,6 +1,6 @@
 Title: The most sophisticated Android Trojan
 Date: 2013-06-09 23:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-most-sophisticated-android-trojan
 
 > Recently, an Android application came to us for analysis. At a glance,

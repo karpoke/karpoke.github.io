@@ -1,6 +1,6 @@
 Title: Announcing Ubuntu Core, with snappy transactional updates!
 Date: 2014-12-09 23:57
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: announcing-ubuntu-core-with-snappy-transactional-updates
 
 > What if your cloud instances could be updated with the same certainty

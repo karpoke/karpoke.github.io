@@ -1,6 +1,6 @@
 Title: A Turing Complete Puzzle Game
 Date: 2012-07-17 13:08
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: Alan Turing, puzzle, Google code, máquina de Turing
 Slug: a-turing-complete-puzzle-game
 

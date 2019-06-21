@@ -1,6 +1,6 @@
 Title: Linux containers in 500 lines of code
 Date: 2016-11-01 15:09
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: contenedores en linux, c, kernel, cgroups, strlimit, llamadas de sistema, puntos de montaje, recursos de sistema, configuración de red
 Slug: linux-containers-in-500-lines-of-code
 Relatd:

@@ -1,6 +1,6 @@
 Title: Superman vs Hulk - The Fight
 Date: 2013-02-24 23:58
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: superman-vs-hulk-the-fight
 
 > Superman finds Hulk somewhere in the Mojave Desert. This is a prelude

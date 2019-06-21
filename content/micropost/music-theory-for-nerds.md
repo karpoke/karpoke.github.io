@@ -1,6 +1,6 @@
 Title: Music theory for nerds
 Date: 2016-09-25 12:26
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: music-theory-for-nerds
 
 > I don’t know anything about music. I know there are letters but sometimes

@@ -1,6 +1,6 @@
 Title: A nerd’s guide to color on the web
 Date: 2016-09-25 12:42
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: a-nerds-guide-to-color-on-the-web
 
 > There are a lot of ways to work with color on the web. I think it’s helpful

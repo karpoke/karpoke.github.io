@@ -1,6 +1,6 @@
 Title: ¿Influye la edad en la calidad como programador?
 Date: 2013-05-13 00:10
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: influye-la-edad-en-la-calidad-como-programador
 
 > Se dice que son necesarias 10.000 horas de trabajo de programación

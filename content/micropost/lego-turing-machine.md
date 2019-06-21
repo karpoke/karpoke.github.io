@@ -1,6 +1,6 @@
 Title: LEGO Turing Machine
 Date: 2012-06-21 03:43
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: lego-turing-machine
 
 > This is a short documentary about the LEGO Turing Machine built by

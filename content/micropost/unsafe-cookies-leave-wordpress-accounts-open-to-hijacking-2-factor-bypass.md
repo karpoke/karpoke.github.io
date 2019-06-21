@@ -1,6 +1,6 @@
 Title: Unsafe cookies leave WordPress accounts open to hijacking, 2-factor bypass
 Date: 2014-05-26 21:50
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: unsafe-cookies-leave-wordpress-accounts-open-to-hijacking-2-factor-bypass
 
 > Yan Zhu, a staff technologist at the Electronic Frontier Foundation,

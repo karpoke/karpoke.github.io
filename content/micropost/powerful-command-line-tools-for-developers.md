@@ -1,6 +1,6 @@
 Title: Powerful Command Line Tools For Developers
 Date: 2012-11-03 14:13
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: powerful-command-line-tools-for-developers
 
 > Good tools are invaluable in figuring out where problems lie, and can

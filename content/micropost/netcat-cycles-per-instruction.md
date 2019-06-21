@@ -1,6 +1,6 @@
 Title: netcat - Cycles Per Instruction
 Date: 2014-05-25 11:48
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: netcat-cycles-per-instruction
 
 > Welcome to the most unnecessarily complicated netcat album release

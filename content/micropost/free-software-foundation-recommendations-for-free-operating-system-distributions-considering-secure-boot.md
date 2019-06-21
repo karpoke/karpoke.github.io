@@ -1,6 +1,6 @@
 Title: Free Software Foundation recommendations for free operating system distributions considering Secure Boot
 Date: 2012-07-06 14:33
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: free-software-foundation-recommendations-for-free-operating-system-distributions-considering-secure-boot
 
 > We have been working hard the last several months to stop Restricted

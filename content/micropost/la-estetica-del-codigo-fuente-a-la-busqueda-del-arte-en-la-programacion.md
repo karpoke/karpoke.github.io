@@ -1,6 +1,6 @@
 Title: La estética del código fuente: a la búsqueda del Arte en la Programación
 Date: 2016-09-16 21:45
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: el arte de la programación, teoría de la programación, la belleza del código
 Slug: la-estetica-del-codigo-fuente-a-la-busqueda-del-arte-en-la-programacion
 

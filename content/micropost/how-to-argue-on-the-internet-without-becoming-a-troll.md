@@ -1,6 +1,6 @@
 Title: How to Argue on the Internet Without Becoming a Troll
 Date: 2012-09-15 10:56
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-to-argue-on-the-internet-without-becoming-a-troll
 
 > It’s September of an election year, and people are drawing lines,

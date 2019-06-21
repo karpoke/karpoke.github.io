@@ -1,6 +1,6 @@
 Title: From SQL injection to shell
 Date: 2012-10-08 13:00
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: from-sql-injection-to-shell
 
 > This course details the exploitation of SQL injection in a PHP based

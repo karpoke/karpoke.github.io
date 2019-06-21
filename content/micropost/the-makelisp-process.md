@@ -1,6 +1,6 @@
 Title: The MakeLisp Process
 Date: 2015-03-08 13:23
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-makelisp-process
 
 > So you want to write a Lisp interpreter? Welcome! The goal of the

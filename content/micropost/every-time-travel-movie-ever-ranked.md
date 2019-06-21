@@ -1,6 +1,6 @@
 Title: Every Time Travel Movie Ever, Ranked
 Date: 2015-01-29 23:32
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: every-time-travel-movie-ever-ranked
 
 > With the release of yet another time travel movie this week (Project

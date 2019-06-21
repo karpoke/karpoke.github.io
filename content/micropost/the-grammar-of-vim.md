@@ -1,6 +1,6 @@
 Title: The grammar of VIM
 Date: 2012-05-14 14:33
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-grammar-of-vim
 
 > Like a lot of people, I have gone retro when it comes to editors,

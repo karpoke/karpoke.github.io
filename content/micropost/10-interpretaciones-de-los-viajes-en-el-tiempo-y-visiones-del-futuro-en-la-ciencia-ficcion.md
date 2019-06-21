@@ -1,6 +1,6 @@
 Title: 10 interpretaciones de los viajes en el tiempo y visiones del futuro en la ciencia ficción
 Date: 2012-12-19 00:35
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: 10-interpretaciones-de-los-viajes-en-el-tiempo-y-visiones-del-futuro-en-la-ciencia-ficcion
 
 > Desde que en 1781 apareció la obra ”Año 7603”, primera en la que se

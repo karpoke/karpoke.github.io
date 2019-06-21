@@ -1,6 +1,6 @@
 Title: La ESI de Ciudad Real libera 4 libros sobre Desarrollo de Videojuegos
 Date: 2012-08-01 10:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: la-esi-de-ciudad-real-libera-4-libros-sobre-desarrollo-de-videojuegos
 
 > La Escuela Superior de Informática de la Universidad de Castilla-La

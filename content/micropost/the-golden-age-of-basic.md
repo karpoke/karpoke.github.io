@@ -1,6 +1,6 @@
 Title: The Golden Age of Basic
 Date: 2014-05-31 17:39
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-golden-age-of-basic
 
 > I remember my first program, by which I mean one that I cobbled

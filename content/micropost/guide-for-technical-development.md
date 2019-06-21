@@ -1,6 +1,6 @@
 Title: Guide for Technical Development
 Date: 2015-05-30 08:55
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: guide-for-technical-development
 
 > Having a solid foundation in Computer Science is important to become a

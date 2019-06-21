@@ -1,6 +1,6 @@
 Title: Bash One-Liners Explained, Part III: All about redirections
 Date: 2012-10-09 19:54
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: bash-one-liners-explained-part-iii-all-about-redirections
 
 > Working with redirections in bash is really easy once you realize that

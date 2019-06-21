@@ -1,6 +1,6 @@
 Title: Propiedad intelectual: Preguntas frecuentes sobre la Ley Lasalle
 Date: 2013-03-19 00:48
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: propiedad-intelectual-preguntas-frecuentes-sobre-la-ley-lasalle
 
 > Lo que hace la Ley Lasalle es terminar con ese debate en España

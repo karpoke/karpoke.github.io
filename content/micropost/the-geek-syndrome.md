@@ -1,6 +1,6 @@
 Title: The Geek Syndrome
 Date: 2012-07-24 19:05
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-geek-syndrome
 
 > Nick is building a universe on his computer. He’s already mapped out

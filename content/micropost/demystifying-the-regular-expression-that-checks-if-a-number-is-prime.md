@@ -1,6 +1,6 @@
 Title: Demystifying the regular expression that checks if a number is prime
 Date: 2016-09-10 18:02
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: demystifying-the-regular-expression-that-checks-if-a-number-is-prime
 
 > A while back I was researching the most efficient way to check if a number

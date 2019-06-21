@@ -1,6 +1,6 @@
 Title: Why Java is a compiled language and Python is not
 Date: 2014-05-24 07:36
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: why-java-is-a-compiled-language-and-python-is-not
 
 > One comment’s answer was ’marketing’, which in a sense is correct; one

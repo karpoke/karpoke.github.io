@@ -1,6 +1,6 @@
 Title: The greatest program ever written
 Date: 2015-03-08 13:31
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-greatest-program-ever-written
 
 > I’m a programmer. I write games. Games programmers get a lot of

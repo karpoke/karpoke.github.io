@@ -1,6 +1,6 @@
 Title: Quickly navigate your filesystem from the command-line
 Date: 2014-09-07 10:44
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: quickly-navigate-your-filesystem-from-the-command-line
 
 > Like many others, I spend most of my day behind a computer. In order

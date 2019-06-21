@@ -1,6 +1,6 @@
 Title: Indian Developers Redesigning Linux Kernel With OOP, C++ Support
 Date: 2014-10-05 11:36
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: indian-developers-redesigning-linux-kernel-with-oop-c-support
 
 > DOS Lab IIT Madras and CDAC Chennai out of India are aiming to

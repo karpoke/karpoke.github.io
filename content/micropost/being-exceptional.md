@@ -1,6 +1,6 @@
 Title: Being exceptional
 Date: 2012-05-29 16:30
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: being-exceptional
 
 > Apparently, in Python, it is easier to ask for forgiveness rather than

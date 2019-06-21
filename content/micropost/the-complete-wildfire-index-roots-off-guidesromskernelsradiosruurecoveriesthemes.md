@@ -1,6 +1,6 @@
 Title: The Complete Wildfire Index (Root/S-OFF Guides/ROMs/Kernels/Radios/RUU/Recoveries/Themes)
 Date: 2012-07-13 17:37
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: the-complete-wildfire-index-roots-off-guidesromskernelsradiosruurecoveriesthemes
 
 > This thread has 2 Posts, and is categorized as following. You can

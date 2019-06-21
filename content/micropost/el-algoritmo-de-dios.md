@@ -1,6 +1,6 @@
 Title: El algoritmo de Dios
 Date: 2012-06-28 12:15
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-algoritmo-de-dios
 
 > El algoritmo de Dios es un término que surgió en la búsqueda de aquel

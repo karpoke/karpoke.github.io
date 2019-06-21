@@ -1,6 +1,6 @@
 Title: Python Ecosystem - An Introduction
 Date: 2012-08-15 17:26
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: python-ecosystem-an-introduction
 
 > When developers shift from PHP, Ruby or any other platform to Python,

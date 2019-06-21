@@ -1,6 +1,6 @@
 Title: Cómo trabajar con vhdl usando software libre
 Date: 2012-12-15 19:25
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: como-trabajar-con-vhdl-usando-software-libre
 
 > Las clases de ingeniería electrónica suelen dictarse usando

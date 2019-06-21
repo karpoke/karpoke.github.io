@@ -1,6 +1,6 @@
 Title: Álbum para celebrar los 30 años de la FAMICOM/NES
 Date: 2013-12-15 15:27
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: album-para-celebrar-los-30-anos-de-la-famicomnes
 
 > A finales de 1983 la compañía Nintendo sacó al mercado la consola

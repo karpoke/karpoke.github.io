@@ -1,6 +1,6 @@
 Title: ¿Dónde aprendieron los 'hackers' a ser ’hackers’?
 Date: 2014-12-07 10:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: donde-aprendieron-los-hackers-a-ser-hackers
 
 > Una de las principales premisas éticas del ’hacker’, desde los

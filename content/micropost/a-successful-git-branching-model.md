@@ -1,6 +1,6 @@
 Title: A successful Git branching model
 Date: 2012-12-16 14:46
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: a-successful-git-branching-model
 
 > In this post I present the development model that I’ve introduced for

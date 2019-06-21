@@ -1,6 +1,6 @@
 Title: Key Principles of Maintainable JavaScript
 Date: 2012-07-11 18:45
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: key-principles-of-maintainable-javascript
 
 > The thing to remember, above all else when writing JS code, is that

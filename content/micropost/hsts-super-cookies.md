@@ -1,6 +1,6 @@
 Title: HSTS Super Cookies
 Date: 2015-01-11 18:53
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: hsts-super-cookies
 
 > Using HSTS to track your browsing habits evades the features of web

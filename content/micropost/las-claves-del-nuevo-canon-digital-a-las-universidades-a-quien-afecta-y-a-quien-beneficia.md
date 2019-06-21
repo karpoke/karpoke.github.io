@@ -1,6 +1,6 @@
 Title: Las claves del nuevo canon digital a las universidades: ¿a quién afecta y a quién beneficia?
 Date: 2013-03-20 23:20
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: las-claves-del-nuevo-canon-digital-a-las-universidades-a-quien-afecta-y-a-quien-beneficia
 
 > El Gobierno de Mariano Rajoy planea la creación de un canon digital

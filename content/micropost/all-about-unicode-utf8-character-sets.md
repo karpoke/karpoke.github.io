@@ -1,6 +1,6 @@
 Title: All About Unicode, UTF8 & Character Sets
 Date: 2012-06-27 23:52
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: all-about-unicode-utf8-character-sets
 
 > This is a story that dates back to the earliest days of computers. The

@@ -1,6 +1,6 @@
 Title: Learn to Hack
 Date: 2012-05-14 13:30
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: learn-to-hack
 
 > Attack servers, crack passwords, exploit services, beat encryption -

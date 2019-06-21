@@ -1,6 +1,6 @@
 Title: Game deaths
 Date: 2012-08-15 18:09
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: game-deaths
 
 > A compilation of classic arcade deaths, arranged to an 8-bit cover of

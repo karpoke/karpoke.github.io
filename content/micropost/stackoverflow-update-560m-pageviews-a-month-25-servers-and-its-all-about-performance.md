@@ -1,6 +1,6 @@
 Title: StackOverflow Update: 560M Pageviews A Month, 25 Servers, And It’s All About Performance
 Date: 2014-07-21 17:38
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: stackoverflow-update-560m-pageviews-a-month-25-servers-and-its-all-about-performance
 
 > The network of sites that make up StackExchange, which includes

@@ -1,6 +1,6 @@
 Title: Debian and I
 Date: 2012-08-25 12:39
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: debian-and-i
 
 > Debian is the most influential Linux distribution ever. Of the 305

@@ -1,6 +1,6 @@
 Title: Hacking my vagina
 Date: 2012-12-15 16:06
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: hacking-my-vagina
 
 > This project has been an astonishing little journey. Many of my

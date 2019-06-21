@@ -1,6 +1,6 @@
 Title: How To Make Your Own Text Adventure On A Computer
 Date: 2012-05-14 13:34
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: how-to-make-your-own-text-adventure-on-a-computer
 
 > If you have made a text adventure in your mind that you really like,

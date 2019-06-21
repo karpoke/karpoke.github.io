@@ -1,6 +1,6 @@
 Title: Against DNSSEC
 Date: 2015-01-29 19:52
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: against-dnssec
 
 > All secure crypto on the Internet assumes that the DNS lookup from

@@ -1,6 +1,6 @@
 Title: El Top 7 de dilemas que enfrentan los desarrolladores de hoy
 Date: 2012-06-16 18:40
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: el-top-7-de-dilemas-que-enfrentan-los-desarrolladores-de-hoy
 
 > Tu jefe lo quiere para ayer, pero más vale que cumpla con los

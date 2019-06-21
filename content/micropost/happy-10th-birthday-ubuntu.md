@@ -1,6 +1,6 @@
 Title: Happy 10th Birthday, Ubuntu
 Date: 2014-10-25 18:10
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: happy-10th-birthday-ubuntu
 
 > I’m putting a team of Debian developers together to work full time on

@@ -1,6 +1,6 @@
 Title: Érase una vez unos ’hackers’ hispanos...
 Date: 2014-09-05 22:47
-Author: Ignacio Cano
+Author: Nacho Cano
 Slug: erase-una-vez-unos-hackers-hispanos
 
 > Vivimos en una era de ’ciberguerras’, intrusiones en línea e
