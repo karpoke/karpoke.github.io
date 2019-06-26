@@ -1,6 +1,9 @@
 #!/bin/bash
 # This hook is sourced after this virtualenv is activated.
 
+# install it with:
+# ln -sf ~/karpoke/karpoke.github.io/postactivate ~/.virtualenvs/karpoke.github.io/bin/postactivate
+
 PROJECT_DIR=~/karpoke/karpoke.github.io
 if [ "$PWD" != "$(readlink -f "$PROJECT_DIR")" ]; then
 	cd "$PROJECT_DIR"
