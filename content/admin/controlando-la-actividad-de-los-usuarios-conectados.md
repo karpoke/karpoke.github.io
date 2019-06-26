@@ -364,7 +364,7 @@ Today   total        0.31 = 0h 18m 36s
     "la variable DISPLAY"
   [iniciar otra sesión gráfica]: http://usuariodebian.blogspot.com/2007/08/varias-sesiones-la-misma-vez.html
     "iniciar otra sesión gráfica"
-  [única y exclusivamente]: {filename}/nota-mental/true.md
+  [única y exclusivamente]: {filename}/memo/true.md
     "No hay nada como hacer sólo una cosa, pero hacerla bien..."
   [convertirlo fácilmente a sexagesimal]: http://www.commandlinefu.com/commands/view/5908/print-statistics-about-users-connect-time
     "convertirlo fácilmente a sexagesimal"

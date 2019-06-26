@@ -83,5 +83,5 @@ debemos hacer la prueba en un entorno controlado, sin que haya
 interferencias de otros usuarios o procesos, tanto en la red como en el
 servidor.
 
-  [viejo servidor]: {filename}/nota-mental/the-name-of-the-game.md
+  [viejo servidor]: {filename}/memo/the-name-of-the-game.md
     "viejo servidor"

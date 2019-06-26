@@ -38,7 +38,7 @@ Un saludo.
 
   [Karpoke]: /
     "Karpoke"
-  [alojado en un viejo portátil reciclado en servidor]: {filename}/nota-mental/the-name-of-the-game.md
+  [alojado en un viejo portátil reciclado en servidor]: {filename}/memo/the-name-of-the-game.md
     "the name of the game"
   [Reconocimiento-CompartirIgual 3.0]: http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES
     "Creative Commons Reconocimiento-CompartirIgual 3.0"

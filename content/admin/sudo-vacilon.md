@@ -32,5 +32,5 @@ Defaults        env_reset,insults
 
   [escribes mal la contraseña de sudo]: http://usemoslinux.blogspot.com/2011/08/sudo-no-me-insultes-el-terminal-se.html
     "escribes mal la contraseña de sudo"
-  [sudo]: {filename}/nota-mental/with-great-power-comes-great-responsibility.md
+  [sudo]: {filename}/memo/with-great-power-comes-great-responsibility.md
     "un gran poder conlleva una gran responsabilidad"
