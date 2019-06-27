@@ -8,9 +8,8 @@ Slug: whoami
 programador informático, con poderes de súper vaca. Fan del _steampunk_, del
 _ASCII art_ y de los 8 bits. Nací en el Mediterráneo.
 
-Este sitio ya no se encuentra [alojado en aquel viejo portátil reciclado en
-servidor][], abandonado en un oscuro sótano, sino que se ha mudado a GitHub
-Pages.
+Este sitio ya no se encuentra [alojado en aquel viejo portátil reciclado en servidor][],
+ abandonado en un oscuro sótano, sino que se ha mudado a GitHub Pages.
 
 La temática de la página, coincidiendo con mis gustos e intereses, está
 relacionada con el mundo GNU/Linux visto desde la austera perspectiva de una
@@ -38,7 +37,7 @@ Un saludo.
 
   [Karpoke]: /
     "Karpoke"
-  [alojado en un viejo portátil reciclado en servidor]: {filename}/memo/the-name-of-the-game.md
+  [alojado en aquel viejo portátil reciclado en servidor]: {filename}/memo/the-name-of-the-game.md
     "the name of the game"
   [Reconocimiento-CompartirIgual 3.0]: http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES
     "Creative Commons Reconocimiento-CompartirIgual 3.0"
