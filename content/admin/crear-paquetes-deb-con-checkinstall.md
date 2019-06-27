@@ -177,9 +177,9 @@ Referencias
     "libsodium"
   [opciones]: http://www.asic-linux.com.mx/~izto/checkinstall/docs/README
     "opciones"
-  [libsodium_0.4.5-1_i386.deb]: {filename}/deb/libsodium_0.4.5-1_i386.deb
+  [libsodium_0.4.5-1_i386.deb]: {static}/deb/libsodium_0.4.5-1_i386.deb
     "libsodium_0.4.5-1_i386.deb"
-  [dnscrypt-proxy_1.4.0-1_i386.deb]: {filename}/deb/dnscrypt-proxy_1.4.0-1_i386.deb
+  [dnscrypt-proxy_1.4.0-1_i386.deb]: {static}/deb/dnscrypt-proxy_1.4.0-1_i386.deb
     "dnscrypt-proxy_1.4.0-1_i386.deb"
   [Checkinstall, crear paquetes .deb fácilmente a partir del código]: http://ubuntulife.wordpress.com/2010/08/05/checkinstall-crear-paquetes-deb-facilmente-a-partir-del-codigo/
     "Checkinstall, crear paquetes .deb fácilmente a partir del código"

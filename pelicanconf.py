@@ -83,6 +83,7 @@ ARTICLE_EXCLUDES = PAGE_EXCLUDES
 # https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/
 STATIC_PATHS = [
     "images",
+    "deb",
     "extra/CNAME",
     "extra/LICENSE",
     "extra/README.md",
