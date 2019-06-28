@@ -23,7 +23,7 @@ distribuir, comunicar públicamente, modificar, transformar y hacer uso de
 dicho contenido, siempre que se reconozca al autor y que cualquier trabajo
 derivado sea distribuido bajo una licencia idéntica, con una excepción: *"No
 autorizo a ninguna Entidad de Derechos de Autor a reclamar cantidad alguna en
-mi nombre"*. (Más información sobre esta iniciativa en [kriptopolis][].)
+mi nombre"*. (Inciativa iniciada desde la desparecida "kriptopolis".)
 
 Si echas en falta la omnipresente y ominosa capa de aviso de _cookies_, te
 diré que éste es un blog personal sin ánimo de lucro en el que ni siquiera
@@ -41,8 +41,6 @@ Un saludo.
     "the name of the game"
   [Reconocimiento-CompartirIgual 3.0]: http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES
     "Creative Commons Reconocimiento-CompartirIgual 3.0"
-  [kriptopolis]: http://www.kriptopolis.com/novedades-anti-lpi
-    "Kriptópolis"
   [@karpoke]: http://twitter.com/karpoke
     "@karpoke en Twitter"
   [mi clave pública GPG]: http://www.ignaciocano.com/gpg/public.asc
