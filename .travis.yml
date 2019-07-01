@@ -32,7 +32,7 @@ deploy:
   local_dir: output
   fqdn: karpoke.ignaciocano.com
   skip_cleanup: true
-  keep_history: true
+  keep_history: false
   target-branch: master
   on:
     branch: release

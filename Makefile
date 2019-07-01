@@ -9,8 +9,8 @@ CONFIG_FILE=$(BASE_DIR)/pelicanconf.py
 PUBLISHCONF=$(BASE_DIR)/publishconf.py
 
 GITHUB_PAGES_BRANCH=master
-TRAVIS_BRANCH=release
 DEVELOP_BRANCH=develop
+TRAVIS_BRANCH=release
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -46,7 +46,7 @@ help:
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
-	@echo 'Set the IGNORE_CACHE variable to 1 to ignore cache files                   '
+	@echo 'Set the IGNORE_CACHE variable to 1 to ignore cache files                  '
 	@echo '                                                                          '
 
 clean:
@@ -67,9 +67,9 @@ endif
 
 serve-global:
 ifdef SERVER
-	$(PELICAN_DEFAULT_DEV) -l -p $(POST) -b $(SERVER)
+	$(PELICAN_DEFAULT_DEV) -l -p $(PORT) -b $(SERVER)
 else
-	$(PELICAN_DEFAULT_DEV) -l -p $(POST) -b 0.0.0.0
+	$(PELICAN_DEFAULT_DEV) -l -p $(PORT) -b 0.0.0.0
 endif
 
 devserver:
