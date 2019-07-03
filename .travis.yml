@@ -10,6 +10,7 @@ cache: pip
 
 install:
   - pip install --upgrade pip
+  # pip install pelican ghp-import Markdown typogrify
   - pip install -r requirements.txt
   - sudo apt-get install shellcheck
 
@@ -32,7 +33,7 @@ env:
 
 deploy:
   provider: pages
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  github_token: $GITHUB_TOKEN  # set as secure variable
   local_dir: output
   fqdn: karpoke.ignaciocano.com
   skip_cleanup: true

@@ -2,7 +2,7 @@ Title: Extraer un archivo de un archivo comprimido, desde el terminal
 Date: 2011-06-30 20:36
 Author: Nacho Cano
 Tags: copia de seguridad, ssh, sudo, tar, tee, vim, wtf
-Slug: extraer-un-archivo-de-un-cmprimido-desde-el-terminal
+Slug: extraer-un-archivo-de-un-archivo-comprimido-desde-el-terminal
 
 Un día estás editando un archivo en un servidor remoto, [por `ssh`][por ssh],
 y, a la hora de guardar, te das cuenta de que has editado el fichero sin
