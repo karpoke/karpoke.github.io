@@ -11,6 +11,10 @@ cache: pip
 install:
   - pip install --upgrade pip
   - pip install -r requirements.txt
+  - sudo apt-get install shellcheck
+
+before_script:
+  - shellcheck *.sh
 
 script:
   - make publish
