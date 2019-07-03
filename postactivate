@@ -6,5 +6,5 @@
 
 PROJECT_DIR=~/karpoke/karpoke.github.io
 if [ "$PWD" != "$(readlink -f "$PROJECT_DIR")" ]; then
-	cd "$PROJECT_DIR"
+    cd "$PROJECT_DIR"
 fi
