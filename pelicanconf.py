@@ -92,6 +92,7 @@ STATIC_PATHS = [
     "extra/favicon.ico",
     "extra/humans.txt",
     "extra/robots.txt",
+    "extra/.imgbotconfig",
 ]
 EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
@@ -101,6 +102,7 @@ EXTRA_PATH_METADATA = {
     "extra/.nojekyll": {"path": ".nojekyll"},
     "extra/humans.txt": {"path": "humans.txt"},
     "extra/robots.txt": {"path": "robots.txt"},
+    "extra/.imgbotconfig": {"path": ".imgbotconfig"},
 }
 
 # disable cache when experimenting with different settings
