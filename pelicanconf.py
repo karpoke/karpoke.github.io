@@ -117,3 +117,11 @@ STATIC_CHECK_IF_MODIFIED = False
 
 # github ribbon
 GITHUB_URL = "https://github.com/karpoke/karpoke.github.io"
+
+PLUGIN_PATHS = [
+    "./pelican-plugins",
+]
+PLUGINS = [
+#    "gzip_cache",  # github already does it
+    "render_math",
+]
