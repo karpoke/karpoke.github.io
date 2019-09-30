@@ -8,9 +8,12 @@ branches:
 
 cache: pip
 
+before_install:
+  - git submodule update --init --recursive
+
 install:
   - pip install --upgrade pip
-  # pip install pelican ghp-import Markdown typogrify
+  # pip install pelican ghp-import Markdown typogrify beautifulsoup4 
   - pip install -r requirements.txt
   - sudo apt-get install shellcheck
 

@@ -1,0 +1,4 @@
+[submodule "pelican-plugins"]
+    path = pelican-plugins
+    url = https://github.com/karpoke/pelican-plugins
+    branch = master
