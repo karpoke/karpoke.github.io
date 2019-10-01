@@ -2,3 +2,8 @@
     path = pelican-plugins
     url = https://github.com/karpoke/pelican-plugins
     branch = master
+
+[submodule "pelican-themes"]
+    path = pelican-themes
+    url = https://github.com/karpoke/pelican-themes
+    branch = master
