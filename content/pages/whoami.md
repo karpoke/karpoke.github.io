@@ -13,7 +13,7 @@ Este sitio ya no se encuentra [alojado en aquel viejo portátil reciclado en ser
 
 La temática de la página, coincidiendo con mis gustos e intereses, está
 relacionada con el mundo GNU/Linux visto desde la austera perspectiva de una
-ocura terminal, el software libre, la administración de sistemas, la
+oscura terminal, el software libre, la administración de sistemas, la
 programación y la seguridad. Es un cuaderno de bitácora, compendio de
 anotaciones que en un momento dado pudieron resultar útiles.
 
