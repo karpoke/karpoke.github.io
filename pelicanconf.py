@@ -125,3 +125,5 @@ PLUGINS = [
 #    "gzip_cache",  # github already does it
     "render_math",
 ]
+
+THEME = "./pelican-themes/elegant"
