@@ -13,7 +13,6 @@ before_install:
 
 install:
   # pip install --upgrade pip  # travis already has it
-  # pip install pelican ghp-import Markdown typogrify beautifulsoup4 
   - pip install -r requirements.txt
   - sudo apt-get install shellcheck
 
