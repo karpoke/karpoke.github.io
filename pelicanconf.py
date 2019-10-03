@@ -126,4 +126,4 @@ PLUGINS = [
     "render_math",
 ]
 
-THEME = "./pelican-themes/elegant"
+THEME = "themes/elegant"
