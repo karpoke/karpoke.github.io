@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u"Nacho Cano"
 SITENAME = u"Karpoke"
@@ -109,8 +110,9 @@ EXTRA_PATH_METADATA = {
 }
 
 # disable cache when experimenting with different settings
-LOAD_CONTENT_CACHE = True
-CACHE_CONTENT = True
+if bool(os.environ.get("IGNORE_CACHE")):
+    LOAD_CONTENT_CACHE = False
+    CACHE_CONTENT = False
 
 STATIC_CHECK_IF_MODIFIED = False
 
