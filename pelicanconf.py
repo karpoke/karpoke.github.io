@@ -31,7 +31,8 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ('github', 'https://github.com/karpoke'),
+    ("GitHub", "https://github.com/karpoke"),
+    ("RSS", SITEURL + "/feeds/all/rss.xml"),
 )
 
 # pagination
