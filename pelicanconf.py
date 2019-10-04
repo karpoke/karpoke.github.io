@@ -127,3 +127,6 @@ PLUGINS = [
 ]
 
 THEME = "themes/elegant"
+
+# custom 404 created in github (content/pages/404.md)
+# https://help.github.com/en/articles/creating-a-custom-404-page-for-your-github-pages-site
