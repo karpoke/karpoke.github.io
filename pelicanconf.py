@@ -27,6 +27,7 @@ LINKS = (
     ("Python", "https://www.python.org/"),
     ("Travis CI", "https://travis-ci.org/"),
     ("ImgBot", "https://imgbot.net/"),
+    ("Elegant", "https://github.com/Pelican-Elegant/"),
 )
 
 # Social widget
