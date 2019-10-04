@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+
 import os
+from datetime import date
 
 AUTHOR = u"Nacho Cano"
 SITENAME = u"Karpoke"
@@ -136,6 +138,12 @@ PLUGINS = [
 THEME = "themes/elegant"
 SOCIAL_PROFILE_LABEL = "Contacto"
 RELATED_POSTS_LABEL = "Entradas relacionadas"
+SITE_LICENSE = (
+    "2010-{} (cc) Contenido bajo licencia "
+    "<a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/3.0/es/\">"
+    "Creative Commons Reconocimiento-CompartirIgual"
+    "</a>.").format(date.today().year
+)
 
 # custom 404 created in github (content/pages/404.md)
 # https://help.github.com/en/articles/creating-a-custom-404-page-for-your-github-pages-site
