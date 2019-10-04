@@ -124,6 +124,7 @@ PLUGIN_PATHS = [
 PLUGINS = [
 #    "gzip_cache",  # github already does it
     "neighbors",
+    "related_posts",
     "render_math",
 ]
 
