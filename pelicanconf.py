@@ -134,6 +134,8 @@ PLUGINS = [
 ]
 
 THEME = "themes/elegant"
+SOCIAL_PROFILE_LABEL = "Contacto"
+RELATED_POSTS_LABEL = "Entradas relacionadas"
 
 # custom 404 created in github (content/pages/404.md)
 # https://help.github.com/en/articles/creating-a-custom-404-page-for-your-github-pages-site
