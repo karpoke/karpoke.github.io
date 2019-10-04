@@ -1,6 +1,6 @@
 Title: true
 Date: 2011-04-19 12:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: true
 Slug: true
 

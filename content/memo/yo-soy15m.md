@@ -1,6 +1,6 @@
 Title: Yo #soy15m
 Date: 2011-06-18 18:53
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: soy15m
 Slug: yo-soy15m
 

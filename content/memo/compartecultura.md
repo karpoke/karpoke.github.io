@@ -1,6 +1,6 @@
 Title: #ComparteCultura
 Date: 2012-01-11 01:33
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: compartir, internet, kurioso, ley sinde, libertad, neutralidad, propiedad intelectual, regulación, sopa
 Slug: compartecultura
 Related: la-red-resiste

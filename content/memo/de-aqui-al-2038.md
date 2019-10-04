@@ -1,6 +1,6 @@
 Title: De aquí al 2038
 Date: 2010-10-07 13:27
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: cadenas, cal, y2k38
 Slug: de-aqui-al-2038
 

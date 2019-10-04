@@ -1,6 +1,6 @@
 Title: Instalar Postgresql 9.6 en Ubuntu 16.04
 Date: 2016-12-13 19:24
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: Postgresql, 9.6, Ubuntu, Xenial Xerus, 16.04, apt-key, apt, PPA, sources.list
 Slug: instalar-postgresql-9-6-en-ubuntu-16-04
 

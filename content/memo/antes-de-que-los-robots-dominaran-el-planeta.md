@@ -1,6 +1,6 @@
 Title: Antes de que los robots dominaran el planeta
 Date: 2010-07-28 12:52
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: isaac asimov, robots
 Slug: antes-de-que-los-robots-dominaran-el-planeta
 

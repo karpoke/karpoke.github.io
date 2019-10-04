@@ -1,6 +1,6 @@
 Title: El día negado
 Date: 2013-03-14 02:03
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: año bisiesto, cal
 Slug: el-dia-negado
 Related: de-aqui-al-2038
