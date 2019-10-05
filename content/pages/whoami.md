@@ -1,4 +1,4 @@
-Title: whoami
+Title: Who am I
 Date: 2010-05-20 09:03
 Author: Nacho Cano
 Slug: whoami
@@ -39,7 +39,7 @@ Un saludo.
     "Karpoke"
   [alojado en aquel viejo portátil reciclado en servidor]: {filename}/memo/the-name-of-the-game.md
     "the name of the game"
-  [Reconocimiento-CompartirIgual 3.0]: http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES
+  [Reconocimiento-CompartirIgual 3.0]: https://creativecommons.org/licenses/by-sa/3.0/es/
     "Creative Commons Reconocimiento-CompartirIgual 3.0"
   [@karpoke]: http://twitter.com/karpoke
     "@karpoke en Twitter"
