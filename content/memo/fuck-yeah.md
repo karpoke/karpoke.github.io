@@ -1,6 +1,6 @@
 Title: Fuck yeah
 Date: 2010-10-23 18:33
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: das keyboad, fuck yeah
 Slug: fuck-yeah
 

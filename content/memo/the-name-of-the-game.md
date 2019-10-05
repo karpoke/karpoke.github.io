@@ -1,6 +1,6 @@
 Title: The name of the game
 Date: 2010-10-28 19:07
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: isaac asimov, terminus
 Slug: the-name-of-the-game
 

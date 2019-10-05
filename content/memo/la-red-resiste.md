@@ -1,6 +1,6 @@
 Title: La red resiste
 Date: 2011-12-02 12:02
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: canon, internet, ley sinde, libertad, neutralidad, propiedad intelectual, regulación, sgae
 Slug: la-red-resiste
 

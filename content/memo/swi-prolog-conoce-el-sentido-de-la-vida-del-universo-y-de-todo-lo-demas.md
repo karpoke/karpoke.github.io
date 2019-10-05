@@ -1,6 +1,6 @@
 Title: SWI-Prolog conoce el sentido de la vida, del universo y de todo lo demas
 Date: 2011-01-18 12:22
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: 42, el sentido de la vida, swi-prolog, swipl
 Slug: swi-prolog-conoce-el-sentido-de-la-vida-del-universo-y-de-todo-lo-demas
 

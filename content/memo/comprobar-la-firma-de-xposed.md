@@ -1,6 +1,6 @@
 Title: Comprobar la firma de Xposed
 Date: 2016-11-25 22:26
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: xposed, gpg, comprobación de firma, cyanogenmod
 Slug: comprobar-la-firma-de-xposed
 

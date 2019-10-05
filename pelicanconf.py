@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import os
+from datetime import date
+
 AUTHOR = u"Nacho Cano"
 SITENAME = u"Karpoke"
 SITEURL = ""
@@ -27,11 +30,13 @@ LINKS = (
     ("Python", "https://www.python.org/"),
     ("Travis CI", "https://travis-ci.org/"),
     ("ImgBot", "https://imgbot.net/"),
+    ("Elegant", "https://github.com/Pelican-Elegant/"),
 )
 
 # Social widget
 SOCIAL = (
-    ('github', 'https://github.com/karpoke'),
+    ("GitHub", "https://github.com/karpoke"),
+    ("RSS", SITEURL + "/feeds/all/rss.xml"),
 )
 
 # pagination
@@ -107,8 +112,9 @@ EXTRA_PATH_METADATA = {
 }
 
 # disable cache when experimenting with different settings
-LOAD_CONTENT_CACHE = True
-CACHE_CONTENT = True
+if bool(os.environ.get("IGNORE_CACHE")):
+    LOAD_CONTENT_CACHE = False
+    CACHE_CONTENT = False
 
 STATIC_CHECK_IF_MODIFIED = False
 
@@ -123,7 +129,40 @@ PLUGIN_PATHS = [
 ]
 PLUGINS = [
 #    "gzip_cache",  # github already does it
+    "neighbors",
+    "related_posts",
     "render_math",
+    "sitemap",
+    "tipue_search",
 ]
 
 THEME = "themes/elegant"
+SOCIAL_PROFILE_LABEL = "Contacto"
+RELATED_POSTS_LABEL = "Entradas relacionadas"
+SITE_LICENSE = (
+    "2010-{} (cc) Contenido bajo licencia "
+    "<a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/3.0/es/\">"
+    "Creative Commons Reconocimiento-CompartirIgual"
+    "</a>.").format(date.today().year
+)
+
+# custom 404 created in github (content/pages/404.md)
+# https://help.github.com/en/articles/creating-a-custom-404-page-for-your-github-pages-site
+
+# tipue search
+DIRECT_TEMPLATES = ["index", "authors", "categories", "tags", "archives", "search"]
+
+# sitemap
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 0.7,
+        "indexes": 0.5,
+        "pages": 1.0
+    },
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly",
+    }
+}

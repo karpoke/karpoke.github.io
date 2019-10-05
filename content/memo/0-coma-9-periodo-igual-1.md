@@ -1,6 +1,6 @@
 Title: 0.999...=1
 Date: 2011-05-18 14:21
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: latex
 Slug: 0-coma-9-periodo-igual-1
 

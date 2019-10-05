@@ -1,6 +1,6 @@
 Title: 0!=1!
 Date: 2011-05-18 14:07
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: factorial, latex
 Slug: 0-factorial-igual-1-factorial
 

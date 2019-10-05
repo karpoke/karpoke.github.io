@@ -1,6 +1,6 @@
 Title: With great power comes great responsibility
 Date: 2011-03-07 22:40
-Author: Ignacio Cano
+Author: Nacho Cano
 Tags: sudo, sudo rm -fr
 Slug: with-great-power-comes-great-responsibility
 
