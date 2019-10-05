@@ -132,6 +132,7 @@ PLUGINS = [
     "neighbors",
     "related_posts",
     "render_math",
+    "sitemap",
     "tipue_search",
 ]
 
@@ -150,3 +151,18 @@ SITE_LICENSE = (
 
 # tipue search
 DIRECT_TEMPLATES = ["index", "authors", "categories", "tags", "archives", "search"]
+
+# sitemap
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 0.7,
+        "indexes": 0.5,
+        "pages": 1.0
+    },
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly",
+    }
+}
