@@ -136,6 +136,7 @@ PLUGINS = [
     "tipue_search",
 ]
 
+# https://github.com/Pelican-Elegant/elegant/
 THEME = "themes/elegant"
 SOCIAL_PROFILE_LABEL = "Contacto"
 RELATED_POSTS_LABEL = "Entradas relacionadas"
@@ -164,5 +165,13 @@ SITEMAP = {
         "articles": "monthly",
         "indexes": "daily",
         "pages": "monthly",
+    }
+}
+
+# markdown extensions
+MARKDOWN = {
+    "extension_configs": {
+        # https://pyembed.github.io
+        "pyembed.markdown": {}
     }
 }
