@@ -11,7 +11,7 @@ Slug: tetris-printer-algorithm
 > cleared, leaving behind the protruding square. Three examples of the
 > process appear below
 
-!youtube(PJkHwulsac4)
+[!embed](https://www.youtube.com/watch?v=PJkHwulsac4)
 
 - Michael Birken | [meatfighter.com][]
 

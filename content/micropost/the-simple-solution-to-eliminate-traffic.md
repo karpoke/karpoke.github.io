@@ -5,7 +5,7 @@ Slug: the-simple-solution-to-eliminate-traffic
 
 > Here’s a simple way to make traffic disappear.
 
-!youtube(iHzzSao6ypE)
+[!embed](https://www.youtube.com/watch?v=iHzzSao6ypE)
 
 - [CPG Grey][] | via [geeksaresexy.net][]
 

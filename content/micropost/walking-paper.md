@@ -9,7 +9,7 @@ Slug: walking-paper
 >  All paper made Biped Robot without wooden shafts and elastic band as
 > power source
 
-!youtube(Jx7nS7_Kf7E)
+[!embed](https://www.youtube.com/watch?v=Jx7nS7_Kf7E)
 
 - [geocities.jp/kikousya290821][] | via [microsiervos.com][]
 

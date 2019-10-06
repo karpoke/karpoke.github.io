@@ -7,9 +7,9 @@ Slug: keyboard-rubiks-cube
 > but you have toï’¿ consider the centers and positioning the right way
 > when you are solving the cube.
 
-!youtube(eeOCuVbDmQk)
+[!embed](https://www.youtube.com/watch?v=eeOCuVbDmQk)
 
 - Miguel Alonso | [youtube.com][]
 
-  [youtube.com]: http://www.youtube.com/watch?v=eeOCuVbDmQk
+  [youtube.com]: https://www.youtube.com/watch?v=eeOCuVbDmQk
     "Keyboard rubik's cube"

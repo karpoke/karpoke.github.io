@@ -18,7 +18,7 @@ Slug: how-high-can-you-get
 > timer because the multiplication and addition yields a number larger
 > than 256.
 
-!youtube(UmkhXdSC62w)
+[!embed](https://www.youtube.com/watch?v=UmkhXdSC62w)
 
 - Don Hodges | [donhodges.com][]
 

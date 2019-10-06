@@ -8,7 +8,7 @@ Slug: game-deaths
 >
 > The music is a cover of Mad World, by Tears for Fears.
 
-!youtube(gJ6APKIjFQY)
+[!embed](https://www.youtube.com/watch?v=gJ6APKIjFQY)
 
 - Rob Beschizza | [boingboing.net][]
 

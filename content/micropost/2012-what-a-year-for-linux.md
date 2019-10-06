@@ -16,7 +16,7 @@ Slug: 2012-what-a-year-for-linux
 > - Amazon (Kindle) 
 > - Google (Chromebook)
 
-!youtube(Unfx2qCj6Ao)
+[!embed](https://www.youtube.com/watch?v=Unfx2qCj6Ao)
 
 - TheLinuxFoundation | [youtube.com][]
 
@@ -24,5 +24,5 @@ Slug: 2012-what-a-year-for-linux
     "www.linuxfoundation.org"
   [www.linux.com]: http://www.linux.com.
     "www.linux.com"
-  [youtube.com]: http://www.youtube.com/watch?v=Unfx2qCj6Ao
+  [youtube.com]: https://www.youtube.com/watch?v=Unfx2qCj6Ao
     "2012: What a Year for Linux"

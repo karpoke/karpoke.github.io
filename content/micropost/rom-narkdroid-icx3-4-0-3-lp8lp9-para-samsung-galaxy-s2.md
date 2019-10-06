@@ -7,7 +7,7 @@ Slug: rom-narkdroid-icx3-4-0-3-lp8lp9-para-samsung-galaxy-s2
 LP8/LP9][MejorasVarias][Mods][Extras][Novedades y mucho más!] [ ¿¿TE LO
 VAS A PERDER?? ]
 
-!youtube(R0Gnec5UpGs)
+[!embed](https://www.youtube.com/watch?v=R0Gnec5UpGs)
 
 - anarko919 | [htcmania.com][]
 
