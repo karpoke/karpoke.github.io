@@ -12,7 +12,7 @@ Slug: imdb-top-250-in-2-12-minutes
 > (as of 11/1/12). However, none of my haters can tell me that any of
 > these 303 titles do not exist on IMDB.
 
-!youtube(U0x9HtYgVqA)
+[!embed](https://www.youtube.com/watch?v=U0x9HtYgVqA)
 
 - Jonathan Keogh | [youtube.com][]
 

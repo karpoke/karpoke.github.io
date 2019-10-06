@@ -827,9 +827,9 @@ otras fuentes. Compartid por email con vuestros contactos¦
     "Teledocumentales"
   [Documentary24]: http://www.documentary24.com/
     "Documentary24"
-  [Youtube Movies]: http://www.youtube.com/movies
+  [Youtube Movies]: https://www.youtube.com/movies
     "Youtube Movies"
-  [puede valer millones]: http://www.youtube.com/movie/capulina-vs-las-momias
+  [puede valer millones]: https://www.youtube.com/movie/capulina-vs-las-momias
     "puede valer millones"
   [Ted Talks]: http://www.ted.com/talks
     "Ted Talks"
@@ -1025,7 +1025,7 @@ otras fuentes. Compartid por email con vuestros contactos¦
     "Librosmaravillosos.com"
   [Orsai]: http://editorialorsai.com/
     "Orsai"
-  [en esta TED]: http://www.youtube.com/watch?feature=player_embedded&v=_VEYn3bXz34
+  [en esta TED]: https://www.youtube.com/watch?feature=player_embedded&v=_VEYn3bXz34
     "en esta TED"
   [Freefullpdf]: http://freefullpdf.com/
     "Freefullpdf"

@@ -9,9 +9,9 @@ Slug: augmented-reality-sandbox-with-real-time-water-flow-simulation
 > using a GPU-based simulation of the Saint-Venant set of shallow water
 > equations.
 
-!youtube(j9JXtTj0mzE)
+[!embed](https://www.youtube.com/watch?v=j9JXtTj0mzE)
 
 - @okreylos | [youtube.com][]
 
-  [youtube.com]: http://www.youtube.com/watch?v=j9JXtTj0mzE
+  [youtube.com]: https://www.youtube.com/watch?v=j9JXtTj0mzE
     "Augmented reality sandbox with real-time water flow simulation"

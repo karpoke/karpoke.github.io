@@ -10,7 +10,7 @@ Slug: how-we-teach-computers-to-understand-pictures
 > her team built to ”teach” a computer to understand pictures — and the key
 > insights yet to come.
 
-!youtube(40riCqvRoMs)
+[!embed](https://www.youtube.com/watch?v=40riCqvRoMs)
 
 - Fei Fei Li | [youtube.com][] | via [xombra.com][]
 

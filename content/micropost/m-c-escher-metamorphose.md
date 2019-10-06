@@ -18,9 +18,9 @@ Slug: m-c-escher-metamorphose
 > conocimientos básicos de dibujo, y destacó sobremanera en la técnica
 > de grabado en madera, la cual llegó a dominar con gran maestría.
 
-!youtube(1d5blV9RDgM)
+[!embed](https://www.youtube.com/watch?v=tjboEi8p4o4)
 
 - @stanchinsky | [youtube.com][]
 
-  [youtube.com]: http://www.youtube.com/watch?v=1d5blV9RDgM
+  [youtube.com]: https://www.youtube.com/watch?v=tjboEi8p4o4
     "M.C. Escher - Metamorphose"

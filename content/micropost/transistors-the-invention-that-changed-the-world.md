@@ -4,7 +4,7 @@ Author: Nacho Cano
 Tags: transistor, invento, ENIAC, microchip, NPN, puertas lógicas, Ley de Moore
 Slug: transistors-the-invention-that-changed-the-world
 
-!youtube(OwS9aTE2Go4)
+[!embed](https://www.youtube.com/watch?v=OwS9aTE2Go4)
 
 - Real Engineering | [youtube.com][]
 

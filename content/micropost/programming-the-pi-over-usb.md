@@ -9,7 +9,7 @@ Slug: programming-the-pi-over-usb
 > Great for on the go or when another monitor or screen is not suitable.
 > (It even supports Minecraft which can be played)
 
-!youtube(4gLzJGrkfVw)
+[!embed](https://www.youtube.com/watch?v=4gLzJGrkfVw)
 
 - Te Co Ed | [youtube.com][] | via [raspberrypi.org][]
 
