@@ -57,7 +57,7 @@ Tiempo estimado para generar un dominio con un procesador a 1.5Ghz:
 Referencias
 -----------
 
-- [Servicios ocultos en la red Tor][]
+» [Servicios ocultos en la red Tor][]
 
   [dominio .onion]: https://lists.torproject.org/pipermail/tor-talk/2014-October/035413.html
     "dominio .onion"

@@ -10,7 +10,7 @@ Slug: interactive-map-of-linux-kernel
 > works, can get exhausted just trying to figure out what invokes what ” so the
 > kernel map comes to the rescue!
 
-- [makelinux.com][]
+» [makelinux.com][]
 
   [makelinux.com]: http://www.makelinux.com/kernel_map/intro
     "Interactive map of Linux kernel"

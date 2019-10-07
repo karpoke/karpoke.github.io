@@ -13,7 +13,7 @@ Slug: applying-macrotypography-for-a-more-readable-web-page
 > build a more harmonious, adaptable and, most importantly, readable Web
 > page.
 
-- [smashingmagazine.com][]
+» [smashingmagazine.com][]
 
   [smashingmagazine.com]: http://www.smashingmagazine.com/2012/05/02/applying-macrotypography-for-readable-web-page/
     "Applying Macrotypography For A More Readable Web Page"

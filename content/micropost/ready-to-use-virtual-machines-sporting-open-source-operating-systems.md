@@ -15,7 +15,7 @@ Slug: ready-to-use-virtual-machines-sporting-open-source-operating-systems
 > own user, or at least to change passwords, if you intend to use the
 > images in a public environment.
 
-- [virtualboxes.org][]
+» [virtualboxes.org][]
 
   [virtualboxes.org]: http://virtualboxes.org/images/
     "Ready-to-use virtual machines sporting open-source operating systems"

@@ -205,9 +205,9 @@ IP=192.168.1.1
 Referencias
 -----------
 
-- [Shell script to reboot DSL/ADSL router][]
-- [yad examples][]
-- [Script cambio IP Comtrend VR-3025un (para JDownloader)][foro de Banda Ancha]
+» [Shell script to reboot DSL/ADSL router][]
+» [yad examples][]
+» [Script cambio IP Comtrend VR-3025un (para JDownloader)][foro de Banda Ancha]
 
   [foro de Banda Ancha]: http://bandaancha.eu/foros/script-cambio-ip-comtrend-vr-3025un-1681948
     "foro de Banda Ancha"

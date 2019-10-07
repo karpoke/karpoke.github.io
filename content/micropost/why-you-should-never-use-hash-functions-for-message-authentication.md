@@ -13,7 +13,7 @@ Slug: why-you-should-never-use-hash-functions-for-message-authentication
 > functions that were designed for this task instead of inventing your
 > own crypto schemes.
 
-- [jcoglan.com][]
+» [jcoglan.com][]
 
   [jcoglan.com]: http://blog.jcoglan.com/2012/06/09/why-you-should-never-use-hash-functions-for-message-authentication/
     "Why you should never use hash functions for message authentication"

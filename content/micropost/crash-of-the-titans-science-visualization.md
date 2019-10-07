@@ -13,7 +13,7 @@ Slug: crash-of-the-titans-science-visualization
 > encounter. Around 6 billion years from now, the two galaxies will
 > merge to form a single elliptical galaxy.
 
-- [hubblesite.org][]
+» [hubblesite.org][]
 
   [hubblesite.org]: http://hubblesite.org/newscenter/archive/releases/2012/20/video/a/
     "Crash of the Titans Science Visualization"

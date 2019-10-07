@@ -13,7 +13,7 @@ Slug: paper-enigma
 > is completely compatible with all settings of a real Enigma machine
 > (models I, M1, M2 and M3).
 
-- [franklinheath.co.uk][]
+» [franklinheath.co.uk][]
 
   [franklinheath.co.uk]: http://wiki.franklinheath.co.uk/index.php/Enigma/Paper_Enigma
     "Paper Enigma"

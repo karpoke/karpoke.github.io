@@ -25,8 +25,8 @@ $ mv -i ~/.fonts.conf ~/.config/fontconfig/fonts.conf
 Referencias
 -----------
 
-- [Fontconfig warning][]
-- [better \~/.fonts.conf deprecation warning][tal como apunta Githlar
+» [Fontconfig warning][]
+» [better \~/.fonts.conf deprecation warning][tal como apunta Githlar
 en este foro]
 
   [tal como apunta Githlar en este foro]: http://askubuntu.com/questions/206271/fontconfig-warning

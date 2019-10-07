@@ -153,7 +153,7 @@ NAME                      UUID                                   TYPE           
 Referencias
 -----------
 
-- [Configuring a NetworkManager Wireless Connection without Graphics][]
+» [Configuring a NetworkManager Wireless Connection without Graphics][]
 
   [El otro día]: {filename}/admin/raspbmc.md
     "El otro día"

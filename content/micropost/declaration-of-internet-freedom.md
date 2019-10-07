@@ -43,7 +43,7 @@ Slug: declaration-of-internet-freedom
 > Privacy: Protect privacy and defend everyone’s ability to control how
 > their data and devices are used.
 
-- [internetdeclaration.org][]
+» [internetdeclaration.org][]
 
   [internetdeclaration.org]: http://www.internetdeclaration.org/freedom
     "Declaration of Internet freedom"

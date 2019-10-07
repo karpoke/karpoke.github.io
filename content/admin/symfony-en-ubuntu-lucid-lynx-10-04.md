@@ -308,7 +308,7 @@ mejorar la experiencia de usuario.
 Referencias
 -----------
 
-- [Symfony: getting started][]
+» [Symfony: getting started][]
 
   [Symfony]: http://www.symfony-project.org/
     "Symfony"

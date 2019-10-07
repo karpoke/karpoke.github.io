@@ -8,7 +8,7 @@ Slug: writing-plugins-for-gedit-3-with-python
 > the plugins can be written using C or Python. This guide will only
 > cover writing plugins with Python.
 
-- [micahcarrick.com][]
+» [micahcarrick.com][]
 
   [micahcarrick.com]: http://www.micahcarrick.com/writing-plugins-for-gedit-3-in-python.html
     "Writing Plugins for gedit 3 with Python"

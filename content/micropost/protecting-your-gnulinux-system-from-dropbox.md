@@ -13,7 +13,7 @@ Slug: protecting-your-gnulinux-system-from-dropbox
 > and teach how to protect against them. Many of the attacks and
 > defenses described here are portable to apps other than Dropbox.
 
-- [grepular.com][]
+» [grepular.com][]
 
   [grepular.com]: http://grepular.com/Protecting_Your_GNU_Linux_System_from_Dropbox
     "Protecting Your GNU/Linux System from Dropbox"

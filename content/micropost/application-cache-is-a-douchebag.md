@@ -9,7 +9,7 @@ Slug: application-cache-is-a-douchebag
 > all the code on Github. But before we delve into the code, let me tell
 > you a true story. Totally true.
 
-- [alistapart.com][]
+» [alistapart.com][]
 
   [alistapart.com]: http://www.alistapart.com/articles/application-cache-is-a-douchebag/
     "Application Cache is a Douchebag"

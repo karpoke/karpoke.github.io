@@ -12,7 +12,7 @@ Slug: los-codigos-geneticos-e-informaticos-comparten-sorprendentes-similitudes
 > similitud estaría en que las dos son sistemas de acceso libre, afirman
 > los científicos.
 
-- [laflecha.net][]
+» [laflecha.net][]
 
   [laflecha.net]: http://www.laflecha.net/canales/ciencia/noticias/los-codigos-geneticos-e-informaticos-comparten-sorprendentes-similitudes
     "Los códigos genéticos e informáticos comparten sorprendentes similitudes"

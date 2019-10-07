@@ -7,7 +7,7 @@ Slug: in-which-three-programming-methods-are-compared
 > programs, which we will refer to here as 0) the Unix way, 1) the Emacs
 > way, and 2) the wrong way.
 
-- [technomancy.us][]
+» [technomancy.us][]
 
   [technomancy.us]: http://technomancy.us/161
     "in which three programming methods are compared"

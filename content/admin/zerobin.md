@@ -45,8 +45,8 @@ Un ejemplo de uso lo tenemos en [anonpaste.tk/][].
 Referencias
 -----------
 
-- [ZeroBin][]
-- [Stanford Javascript Crypto Library][librería de cifrado y descifrado
+» [ZeroBin][]
+» [Stanford Javascript Crypto Library][librería de cifrado y descifrado
 en JavaScript]
 
   [pastebin.com]: http://pastebin.com/

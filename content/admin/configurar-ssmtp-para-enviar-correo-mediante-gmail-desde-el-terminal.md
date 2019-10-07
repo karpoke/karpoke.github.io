@@ -82,7 +82,7 @@ quién envió el correo.
 Referencias
 -----------
 
-- [How To Use Gmail Account To Relay Email From a Shell Prompt][] | Via
+» [How To Use Gmail Account To Relay Email From a Shell Prompt][] | Via
 [L'home dibuixat][]
 
   [How To Use Gmail Account To Relay Email From a Shell Prompt]: http://www.cyberciti.biz/tips/linux-use-gmail-as-a-smarthost.html

@@ -115,10 +115,10 @@ Listado ordenado:
 Referencias
 -----------
 
-- [Vim, Markdown y WordPress][]
-- [vimrepress][1]
-- [Markdown syntax][Markdown]
-- [Markdown web dingus][]
+» [Vim, Markdown y WordPress][]
+» [vimrepress][1]
+» [Markdown syntax][Markdown]
+» [Markdown web dingus][]
 
   [vimrepress]: http://www.vim.org/scripts/download_script.php?src_id=16490
     "vimrepress"

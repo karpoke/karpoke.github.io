@@ -15,7 +15,7 @@ Slug: why-null-points-to-0
 > nullptr of std::nullptr_t type btw). For TL;DR scroll down, I
 > summarize the points anyway.
 
-- [gynvael.coldwind.pl][]
+» [gynvael.coldwind.pl][]
 
   [gynvael.coldwind.pl]: http://gynvael.coldwind.pl/
     "Why NULL points to 0?"

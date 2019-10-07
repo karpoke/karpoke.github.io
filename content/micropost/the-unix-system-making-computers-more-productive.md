@@ -11,7 +11,7 @@ Slug: the-unix-system-making-computers-more-productive
 > some of the problems with the Multics OS, set out to create a more
 > useful, flexible, and portable system for programmers to work with.
 
-- [techchannel.att.com][]
+» [techchannel.att.com][]
 
   [techchannel.att.com]: http://techchannel.att.com/play-video.cfm/2012/2/22/AT&T-Archives-The-UNIX-System
     "The UNIX System: Making Computers More Productive"

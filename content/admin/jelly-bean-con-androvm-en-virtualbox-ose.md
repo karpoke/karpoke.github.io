@@ -64,7 +64,7 @@ $ ./AndroVMplayer 1024 600 160
 Referencias
 -----------
 
-- [androvm.org][]
+» [androvm.org][]
 
   [AndroVM]: http://androvm.org/
     "AndroVM"

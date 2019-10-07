@@ -11,7 +11,7 @@ Slug: dns-vs-large-memory-pages
 > done with \$2000, half for the desktop machine, and the other half for
 > the dual-port 10-gig Ethernet.
 
-- [erratasec.blogspot.com.es][]
+» [erratasec.blogspot.com.es][]
 
   [erratasec.blogspot.com.es]: http://erratasec.blogspot.com.es/2012/05/dns-vs-large-memory-pages.html
     "DNS vs. large memory pages"

@@ -128,9 +128,9 @@ mediante `Ctrl+Shift+r`.
 Referencias
 -----------
 
-- [phpMyAdmin doc: almacenamiento de configuración para phpMyAdmin][]
-- [phpMyAdmin doc: pmadb][]
-- [phpMyAdmin doc: tracking][]
+» [phpMyAdmin doc: almacenamiento de configuración para phpMyAdmin][]
+» [phpMyAdmin doc: pmadb][]
+» [phpMyAdmin doc: tracking][]
 
   [aquí]: http://www.phpmyadmin.net/localized_docs/es/Documentation.html#tracking
     "aquí"

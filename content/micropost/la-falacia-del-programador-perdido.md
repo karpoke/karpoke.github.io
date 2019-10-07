@@ -18,7 +18,7 @@ Slug: la-falacia-del-programador-perdido
 > del software, tanto en España como en eso que llaman Silicon Valley,
 > yo conozco otra verdad. Una verdad incómoda.
 
-- [bonillaware.com][]
+» [bonillaware.com][]
 
   [bonillaware.com]: http://www.bonillaware.com/la-falacia-del-programador-perdido
     "La falacia del Programador Perdido"

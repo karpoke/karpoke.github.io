@@ -12,7 +12,7 @@ Slug: senoras-y-senores-con-todos-nosotros-la-vida
 > inertes es más que evidente. Y la pregunta es: ¿cómo se originó la
 > vida? ¿qué condiciones dieron lugar a la misma?
 
-- [cuentos-cuanticos.com][]
+» [cuentos-cuanticos.com][]
 
   [cuentos-cuanticos.com]: http://cuentos-cuanticos.com/2013/04/09/teorias-origen-de-la-vida/
     "Señoras y señores, con todos nosotros: La Vida"

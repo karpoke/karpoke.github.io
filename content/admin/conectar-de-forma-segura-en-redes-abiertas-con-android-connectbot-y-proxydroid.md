@@ -66,8 +66,8 @@ encontremos una manera de [saltarnos dicho portal cautivo][]).
 Referencias
 -----------
 
-- [ConnectBot][] en el _market_
-- [ProxyDroid][1] en el _market_
+» [ConnectBot][] en el _market_
+» [ProxyDroid][1] en el _market_
 
   [ProxyDroid]: http://code.google.com/p/proxydroid/
     "ProxyDroid"

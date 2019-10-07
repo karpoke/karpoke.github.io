@@ -110,10 +110,10 @@ EOF
 Referencias
 -----------
 
-- [How to install Deluge (v1.2.x/v1.3.x) headless on Ubuntu Server][]
-- [Ubuntu Init Script][]
-- [Bandwith Tweaking][]
-- [Deluge FAQ][]
+» [How to install Deluge (v1.2.x/v1.3.x) headless on Ubuntu Server][]
+» [Ubuntu Init Script][]
+» [Bandwith Tweaking][]
+» [Deluge FAQ][]
 
   [deluge-daemon]: http://terminus.ignaciocano.com/wp-uploads/linked/deluge-daemon
     "deluge-daemon"

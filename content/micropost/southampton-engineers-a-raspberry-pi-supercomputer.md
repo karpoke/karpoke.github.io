@@ -18,7 +18,7 @@ Slug: southampton-engineers-a-raspberry-pi-supercomputer
 > software on the Pi starting from a standard Debian Wheezy system image and we
 > have published a guide so you can build your own supercomputer.”
 
-- [southampton.ac.uk][]
+» [southampton.ac.uk][]
 - Simon Cox | [Steps to make a Raspberry Pi Supercomputer][]
 
   [southampton.ac.uk]: http://www.southampton.ac.uk/mediacentre/features/raspberry_pi_supercomputer.shtml

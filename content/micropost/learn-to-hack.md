@@ -12,7 +12,7 @@ Slug: learn-to-hack
 > problems. No system is 100% safe from hackers, but by following a few
 > simple steps you can make yours much harder for intruders to attack.
 
-- [tuxradar.com][]
+» [tuxradar.com][]
 
   [tuxradar.com]: http://www.tuxradar.com/content/learn-hack/
     "Learn to Hack"

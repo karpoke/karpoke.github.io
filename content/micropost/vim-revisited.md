@@ -20,7 +20,7 @@ Slug: vim-revisited
 > motivation stronger. And so you don’t spend as much time learning as I
 > did, I am going to lay down some fundamentals.
 
-- [mislav.uniqpath.com][]
+» [mislav.uniqpath.com][]
 
   [mislav.uniqpath.com]: http://mislav.uniqpath.com/2011/12/vim-revisited/
     "Vim: revisited"

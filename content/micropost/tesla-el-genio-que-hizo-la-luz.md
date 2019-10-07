@@ -16,7 +16,7 @@ Slug: tesla-el-genio-que-hizo-la-luz
 > escolares españoles. Es el llamado proyecto ESTALMAT, que sigue los
 > pasos de las antiguas escuelas de conocimiento.
 
-- [Tesla, el genio que hizo la luz][]
+» [Tesla, el genio que hizo la luz][]
 
   [Tesla, el genio que hizo la luz]: http://www.rtve.es/alacarta/videos/informe-semanal/informe-semanal-tesla-genio-luz-20120623-2230-169/1445335/
     "Tesla, el genio que hizo la luz"

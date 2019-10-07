@@ -7,7 +7,7 @@ Slug: the-simple-solution-to-eliminate-traffic
 
 [!embed](https://www.youtube.com/watch?v=iHzzSao6ypE)
 
-- [CPG Grey][] | via [geeksaresexy.net][]
+» [CPG Grey][] | via [geeksaresexy.net][]
 
   [CPG Grey]: https://www.youtube.com/channel/UC2C_jShtL725hvbm1arSV9w
     "CPG Grey"

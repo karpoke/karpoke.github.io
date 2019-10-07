@@ -369,11 +369,11 @@ Lo iniciamos:
 Referencias
 -----------
 
-- [Raspberry Pi][]
-- [Beginners’ Guide][]
-- [Arch Linux Arm: First steps][]
-- [pacman: gestor de paquetes de Arch][gestor de paquetes de Arch]
-- [Arch Linux ARM: Raspberry Pi Forum][]
+» [Raspberry Pi][]
+» [Beginners’ Guide][]
+» [Arch Linux Arm: First steps][]
+» [pacman: gestor de paquetes de Arch][gestor de paquetes de Arch]
+» [Arch Linux ARM: Raspberry Pi Forum][]
 
   [Raspberry Pi con Debian]: {filename}/admin/raspberry-pi.md
     "Raspberry Pi"

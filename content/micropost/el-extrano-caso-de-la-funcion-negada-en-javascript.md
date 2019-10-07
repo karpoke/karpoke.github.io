@@ -19,7 +19,7 @@ Slug: el-extrano-caso-de-la-funcion-negada-en-javascript
 > ¿Qué es exactamente esta función negada? ¿Cómo y porqué funciona?
 > Echemos un vistazo a las tripas de Javascript¦
 
-- [etnassoft.com][]
+» [etnassoft.com][]
 
   [etnassoft.com]: http://www.etnassoft.com/2012/06/08/el-extrano-caso-de-la-funcion-negada-en-javascript/
     "El extraño caso de la función negada en Javascript"

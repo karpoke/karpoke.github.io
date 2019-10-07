@@ -30,7 +30,7 @@ Slug: an-introduction-to-lock-free-programming
 > using mutexes, and other high-level synchronization objects such as
 > semaphores and events.
 
-- [preshing.com][]
+» [preshing.com][]
 
   [preshing.com]: http://preshing.com/20120612/an-introduction-to-lock-free-programming
     "An Introduction to Lock-Free Programming"

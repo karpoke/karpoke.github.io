@@ -11,7 +11,7 @@ Slug: software-library-ms-dos-games
 > beta - contact Jason Scott, Software Curator, if there are issues or
 > questions.
 
-- [archive.org][]
+» [archive.org][]
 
   [archive.org]: https://archive.org/details/softwarelibrary_msdos_games/v2
     "Software Library: MS-DOS Games"

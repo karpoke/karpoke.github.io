@@ -19,7 +19,7 @@ Slug: deuda-tecnica
 > que es muy difícil de mantener, extender y reutilizar; y un aplicativo
 > que funcionalmente tiene problemas.
 
-- [programandonet.com][]
+» [programandonet.com][]
 
   [programandonet.com]: http://www.programandonet.com/site/deuda-tecnica
     "Deuda técnica"

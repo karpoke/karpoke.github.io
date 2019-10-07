@@ -12,7 +12,7 @@ Slug: historia-de-los-videojuegos-los-origenes
 > entretenimiento capaz de competir en seguidores y volumen de ventas
 > con el cine o la música.
 
-- [documentalium.blogspot.com.es][]
+» [documentalium.blogspot.com.es][]
 
   [documentalium.blogspot.com.es]: http://documentalium.blogspot.com.es/2013/12/historia-de-los-videojuegos-los-origenes.html
     "Historia de los videojuegos: los orígenes"

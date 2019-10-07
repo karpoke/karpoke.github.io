@@ -27,7 +27,7 @@ sed -i 's/NoDisplay=true/NoDisplay=false/' /etc/xdg/autostart/*
 Referencias
 -----------
 
-- [Tip: Como ver las aplicaciones que se ejecutan al inicio en
+» [Tip: Como ver las aplicaciones que se ejecutan al inicio en
 Ubuntu][estas aplicaciones se muestren]
 
   [estas aplicaciones se muestren]: http://linuxzone.es/2012/06/07/tip-como-ver-las-aplicaciones-que-se-ejecutan-al-inicio-en-ubuntu/

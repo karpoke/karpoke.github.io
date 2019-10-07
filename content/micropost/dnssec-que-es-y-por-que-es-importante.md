@@ -15,7 +15,7 @@ Slug: dnssec-que-es-y-por-que-es-importante
 > corresponde a Protocolo de Internet). ICANN coordina el sistema de
 > direcciones para garantizar que sean únicas.
 
-- [icann.org][]
+» [icann.org][]
 
   [icann.org]: http://www.icann.org/es/about/learning/factsheets/dnssec-qaa-09oct08-es.htm
     "DNSSEC – ¿Qué es y por qué es importante?"

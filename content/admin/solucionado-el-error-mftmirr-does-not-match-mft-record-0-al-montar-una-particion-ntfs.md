@@ -56,7 +56,7 @@ ficheros, listar directorios, deshacer el borrado de ficheros, etc.
 Referencias
 -----------
 
-- [How to fix '$MFTMirr does not match $MFT (record 0)'][]
+» [How to fix '$MFTMirr does not match $MFT (record 0)'][]
 
   [How to fix '$MFTMirr does not match $MFT (record 0)']: https://wmarkito.wordpress.com/2010/12/29/how-to-fix-mftmirr-does-not-match-mft-record-0/
     "How to fix '$MFTMirr does not match $MFT (record 0)'"

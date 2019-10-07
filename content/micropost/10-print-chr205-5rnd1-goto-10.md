@@ -15,7 +15,7 @@ Slug: 10-print-chr205-5rnd1-goto-10
 > BASIC programming language, and the highly influential Commodore 64
 > computer.
 
-- [10print.org][]
+» [10print.org][]
 
   [10print.org]: http://10print.org/
     "10 PRINT CHR$(205.5+RND(1)); : GOTO 10"

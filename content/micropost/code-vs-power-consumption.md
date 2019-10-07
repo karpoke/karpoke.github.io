@@ -8,7 +8,7 @@ Slug: code-vs-power-consumption
 > modes and clock rate changes have a major impact – but how about plain
 > loops?
 
-- [jeelabs.org][]
+» [jeelabs.org][]
 
   [jeelabs.org]: http://jeelabs.org/2012/06/13/code-vs-power-consumption/
     "Code vs. power consumption"

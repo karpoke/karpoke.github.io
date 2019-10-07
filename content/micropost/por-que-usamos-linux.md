@@ -7,7 +7,7 @@ Slug: por-que-usamos-linux
 > libre, porque lo podemos adaptar a nuestras necesidades, porque es
 > gratis, porque tiene un soporte excelente por parte de la comunidad...
 
-- [wallbase.cc][]
+» [wallbase.cc][]
 
   [wallbase.cc]: http://wallbase.cc/wallpaper/945124
     "¿Por qué usamos Linux?"

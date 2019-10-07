@@ -17,7 +17,7 @@ Slug: revistas-y-bases-de-datos-on-line-sobre-tic-y-educacion
 > Españolas y Latinoamericanas. Y también, por supuesto, el buscador
 > Google.
 
-- [humanodigital.com.ar][]
+» [humanodigital.com.ar][]
 
   [humanodigital.com.ar]: http://www.humanodigital.com.ar/revistas-y-bases-de-datos-on-line-sobre-tic-y-educacion/#.T8aWCUi_qe7
     "Revistas y bases de datos on line sobre TIC y Educación"

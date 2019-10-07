@@ -12,7 +12,7 @@ Slug: 10-interpretaciones-de-los-viajes-en-el-tiempo-y-visiones-del-futuro-en-la
 > que puede pasar cuando se conoce el futuro, ya sea conocido por viajes
 > en el tiempo, predicciones u otros medios.
 
-- [zurditorium.com][]
+» [zurditorium.com][]
 
   [zurditorium.com]: http://www.zurditorium.com/10-interpretaciones-de-los-viajes-en-el-tiempo-y-visiones-del-futuro-en-la-ciencia-ficcion
     "10 interpretaciones de los viajes en el tiempo y visiones del futuro en la ciencia ficción"

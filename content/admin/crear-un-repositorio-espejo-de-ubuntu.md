@@ -129,7 +129,7 @@ $ sudo aptitude update
 Referencias
 -----------
 
-- [Creating an Ubuntu repository mirror with apt-mirror][]
+» [Creating an Ubuntu repository mirror with apt-mirror][]
 
   [utilizar un _proxy/caché_ de paquetes]: {filename}/admin/cache-de-paquetes-descargados-en-ubuntu-trusty-tahr.md
     "Caché de paquetes descargados en Ubuntu Trusty Tahr"

@@ -29,7 +29,7 @@ $ whois -h whois.radb.net -- "-i origin $AS" | awk '/^route6:/{print $2}'
 Referencias
 -----------
 
-- [How can I list all IPs relating to a single AS?][]
+» [How can I list all IPs relating to a single AS?][]
 
   [How can I list all IPs relating to a single AS?]: http://www.fir3net.com/How-Tos/how-can-i-list-all-ips-relating-to-a-single-as.html
     "How can I list all IPs relating to a single AS?"

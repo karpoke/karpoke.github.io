@@ -44,7 +44,7 @@ cada grupo de prensa: <http://pykiss.github.io/anti-AEDE/domains.list>.
 Referencias
 -----------
 
-- [Los usuarios de Menéame se levantan contra los medios de AEDE][]
+» [Los usuarios de Menéame se levantan contra los medios de AEDE][]
 
   [Firefox]: https://github.com/pykiss/anti-AEDE/blob/master/script.user.js
     "Firefox"

@@ -9,7 +9,7 @@ Slug: system-administrator-appreciation-day
 > it for stability, set up the software, and kept backups in case
 > anything went wrong. All to serve this webpage.
 
-- [sysadminday.com][]
+» [sysadminday.com][]
 
   [sysadminday.com]: http://sysadminday.com/
     "System Administrator Appreciation Day"

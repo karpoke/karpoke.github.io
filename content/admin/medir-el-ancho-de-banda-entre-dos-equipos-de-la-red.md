@@ -84,7 +84,7 @@ $ sh jperf.sh
 Referencias
 -----------
 
-- [Verificando el ancho de banda entre tus clientes de la red][]
+» [Verificando el ancho de banda entre tus clientes de la red][]
 
   [Jperf]: http://code.google.com/p/xjperf/
     "Jperf"

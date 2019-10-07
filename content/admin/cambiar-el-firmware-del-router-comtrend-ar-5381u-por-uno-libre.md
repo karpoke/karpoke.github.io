@@ -151,10 +151,10 @@ activamos.
 Referencias
 -----------
 
-- [Nuevos firms no oficiales ( y libres, por fin :D) para el AR-5381u
+» [Nuevos firms no oficiales ( y libres, por fin :D) para el AR-5381u
 con soporte 3G y DLNA (Act. 4 de septiembre)][actualizar el firmware que
 trae por uno libre no oficial]
-- [Nuevos firmwares (no oficiales) para el AR-5381u][]
+» [Nuevos firmwares (no oficiales) para el AR-5381u][]
 
   [actualizar el firmware que trae por uno libre no oficial]: http://bandaancha.eu/tema/1684224/nuevos-firms-no-oficiales-libres-fin-d-ar-5381u-soporte-3g-dlna-act-4-septiembre
     "actualizar el firmware que trae por uno libre no oficial"

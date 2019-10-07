@@ -18,7 +18,7 @@ Related:
 > It arose from discussion and editing over beers by several engineers who have
 > used AWS extensively.
 
-- [github.com]
+» [github.com]
 
   [github.com]: https://github.com/open-guides/og-aws
     "The open guide to Amazon Web Services"

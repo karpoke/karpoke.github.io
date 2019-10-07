@@ -169,9 +169,9 @@ ahorraros el trabajo, aquí tenéis ambos paquetes .deb:
 Referencias
 -----------
 
-- [Checkinstall, crear paquetes .deb fácilmente a partir del código][]
-- [How to compile and install DNScrypt][]
-- [Checkinstall README][opciones]
+» [Checkinstall, crear paquetes .deb fácilmente a partir del código][]
+» [How to compile and install DNScrypt][]
+» [Checkinstall README][opciones]
 
   [libsodium]: https://download.libsodium.org/libsodium/releases/
     "libsodium"

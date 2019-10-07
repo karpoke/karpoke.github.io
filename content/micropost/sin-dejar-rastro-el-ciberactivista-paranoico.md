@@ -12,7 +12,7 @@ Slug: sin-dejar-rastro-el-ciberactivista-paranoico
 > no es cierto, máxime cuando se pretende criminalizar hasta la
 > convocatoria de manifestaciones a través de las redes sociales.
 
-- [bofhers.wordpress.com][]
+» [bofhers.wordpress.com][]
 
   [bofhers.wordpress.com]: http://bofhers.wordpress.com/2012/12/21/sin-dejar-rastro-el-ciberactivista-paranoico/
     "Sin dejar rastro, el ciberactivista paranoico"

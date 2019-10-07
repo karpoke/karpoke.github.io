@@ -13,7 +13,7 @@ Slug: secure-secure-shell
 > then a man in the middle might downgrade you to bad ones. This hurts
 > interoperability but everyone uses OpenSSH anyway.
 
-- [stribika.github.io][]
+» [stribika.github.io][]
 
   [stribika.github.io]: https://stribika.github.io/2015/01/04/secure-secure-shell.html
     "Secure Secure Shell"

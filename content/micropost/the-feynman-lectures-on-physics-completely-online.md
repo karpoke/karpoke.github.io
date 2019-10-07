@@ -11,7 +11,7 @@ Slug: the-feynman-lectures-on-physics-completely-online
 > Feynman Lectures on Physics, Volume II][] » [The Feynman Lectures on
 > Physics, Volume III][] » [Free textbooks][] » | [Free ebooks][]
 
-- [openculture.com][]
+» [openculture.com][]
 
   [The Feynman Lectures on Physics, Volume I]: http://www.feynmanlectures.caltech.edu/I_toc.html
     "The Feynman Lectures on Physics, Volume I"

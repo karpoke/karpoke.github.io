@@ -83,10 +83,10 @@ en este artículo en [wp-code.com][].
 Referencias
 -----------
 
-- [How to Customize Your WordPress Theme With a Child Theme][]
-- [Don't edit child themes – use grandchild themes!][wp-code.com]
-- [WordPress Child Themes][tema hijo en WordPress]
-- [WordPress Pluggable Functions][]
+» [How to Customize Your WordPress Theme With a Child Theme][]
+» [Don't edit child themes – use grandchild themes!][wp-code.com]
+» [WordPress Child Themes][tema hijo en WordPress]
+» [WordPress Pluggable Functions][]
 
   [tema hijo en WordPress]: http://codex.wordpress.org/Child_Themes
     "tema hijo en WordPress"

@@ -18,7 +18,7 @@ Slug: the-twelve-factor-app
 > written in any programming language, and which use any combination of
 > backing services (database, queue, memory cache, etc).
 
-- [12factor.net][]
+» [12factor.net][]
 
   [12factor.net]: http://12factor.net/
     "The Twelve-Factor App"

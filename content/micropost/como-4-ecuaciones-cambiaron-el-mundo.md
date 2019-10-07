@@ -12,7 +12,7 @@ Slug: como-4-ecuaciones-cambiaron-el-mundo
 > encontraremos una aplicación práctica?”, a lo que Faraday respondió:
 > ”no se preocupe, algún día el gobierno cobrará impuestos sobre esto”.
 
-- [principiamarsupia.com][]
+» [principiamarsupia.com][]
 
   [principiamarsupia.com]: http://www.principiamarsupia.com/2012/09/12/como-17-ecuaciones-cambiaron-el-mundo/
     "Cómo 4 ecuaciones cambiaron el mundo"

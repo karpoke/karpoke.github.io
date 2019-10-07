@@ -28,7 +28,7 @@ Y ejecutamos el comando `do-release-upgrade`:
 $ sudo do-release-upgrade
 ```
 
-- [ubuntugeek][]
+» [ubuntugeek][]
 
   [LTS]: http://es.wikipedia.org/wiki/Ubuntu
     "LTS"

@@ -184,10 +184,10 @@ $ adb connect 192.168.1.51:5555
 Referencias
 -----------
 
-- [Analyzing Android Network Traffic][]
-- [Android: Binary solo][]
-- [Android Developer Tools][herramientas de desarrollo para Android]
-- [Cross Compiling on Linux][]
+» [Analyzing Android Network Traffic][]
+» [Android: Binary solo][]
+» [Android Developer Tools][herramientas de desarrollo para Android]
+» [Cross Compiling on Linux][]
 
   [herramientas de desarrollo para Android]: http://developer.android.com/tools/index.html
     "herramientas de desarrollo para Android"

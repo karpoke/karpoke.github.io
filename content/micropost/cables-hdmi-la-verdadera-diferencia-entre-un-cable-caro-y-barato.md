@@ -12,7 +12,7 @@ Slug: cables-hdmi-la-verdadera-diferencia-entre-un-cable-caro-y-barato
 > 3D y junto a las mejoras de audio es capaz de enviar y recibir datos a
 > través de una conexión Ethernet incorporada en el propio cable.
 
-- [xakatahome.com][]
+» [xakatahome.com][]
 
   [xakatahome.com]: http://www.xatakahome.com/televisores/cables-hdmi-la-verdadera-diferencia-entre-un-cable-caro-y-barato
     "Cables HDMI, la verdadera diferencia entre un cable caro y barato"

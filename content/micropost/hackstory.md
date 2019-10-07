@@ -31,7 +31,7 @@ Slug: hackstory
 
 [!embed](https://www.youtube.com/watch?v=WgbpQ-iHmAI)
 
-- [goteo.org][]
+» [goteo.org][]
 
   [goteo.org]: http://www.goteo.org/project/hackstory
     "Hackstory"

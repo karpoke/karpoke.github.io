@@ -57,7 +57,7 @@ echo Lorem impsum dolor | mail -s Subject to@example.com
 Referencias
 -----------
 
-- [Send Gmail from the Linux Command Line][]
+» [Send Gmail from the Linux Command Line][]
 
   [ssmtp]: {filename}/admin/configurar-ssmtp-para-enviar-correo-mediante-gmail-desde-el-terminal.md
     "Configurar ssmtp para enviar correo mediante GMail desde el terminal"

@@ -41,8 +41,8 @@ Host: www.google.com
 Referencias
 -----------
 
-- [Apache Server Frequently Asked Questions][]
-- [HTTP Wiki - Proxy abuse][]
+» [Apache Server Frequently Asked Questions][]
+» [HTTP Wiki - Proxy abuse][]
 
   [Apache Server Frequently Asked Questions]: https://httpd.apache.org/docs/1.3/misc/FAQ.html#proxyscan
     "Apache Server Frequently Asked Questions"

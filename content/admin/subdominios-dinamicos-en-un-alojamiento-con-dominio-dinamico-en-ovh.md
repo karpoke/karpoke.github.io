@@ -151,9 +151,9 @@ RewriteRule ^/(.*) https://%{HTTP_HOST}/$1 [NC,R,L]
 Referencias
 -----------
 
-- [Redirect of wildcard subdomain to subfolder][]
-- [Wildcard subdomain directory names][]
-- [HTTP over TLS][no se puede utilizar para estos subdominios de un
+» [Redirect of wildcard subdomain to subfolder][]
+» [Wildcard subdomain directory names][]
+» [HTTP over TLS][no se puede utilizar para estos subdominios de un
 subdominio]
 
   [vhost_alias]: http://httpd.apache.org/docs/2.2/mod/mod_vhost_alias.html

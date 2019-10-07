@@ -24,7 +24,7 @@ Slug: the-emerging-revolution-in-game-theory
 >
 > What should Alice and Bob do?
 
-- [technologyreview.com][]
+» [technologyreview.com][]
 
   [technologyreview.com]: http://www.technologyreview.com/view/428920/the-emerging-revolution-in-game-theory/
     "The Emerging Revolution in Game Theory"

@@ -20,7 +20,7 @@ Slug: oauth-open-authorization-protocol
 > usuario tenga que introducir sus credenciales en una aplicación de un
 > tercero para acceder a otro servicio?
 
-- [s21sec.com][]
+» [s21sec.com][]
 
   [s21sec.com]: http://blog.s21sec.com/2012/06/oauth-open-authorization-protocol.html
     "OAuth - Open Authorization Protocol"

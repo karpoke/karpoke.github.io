@@ -244,8 +244,8 @@ $ sudo service pamusb-agent start
 Referencias
 -----------
 
-- [pam_usb][]
-- [Upstart][]
+» [pam_usb][]
+» [Upstart][]
 
   [pam_usb]: http://pamusb.org/
     "pam_usb"

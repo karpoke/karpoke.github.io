@@ -11,7 +11,7 @@ Slug: never-use-hard-tabs
 > ​1. 1) Unless your source code is hard tab sensitive (only such format
 > I know is Makefile)
 
-- [opensourcehacker.com][]
+» [opensourcehacker.com][]
 
   [opensourcehacker.com]: http://opensourcehacker.com/2012/05/13/never-use-hard-tabs/
     "Never use hard tabs"

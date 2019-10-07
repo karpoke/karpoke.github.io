@@ -267,9 +267,9 @@ $ sudo service unbound restart
 Referencias
 -----------
 
-- [dnscrypt-proxy][]
-- [Introducing DNSCrypt (Preview Release)][]
-- [Como cifrar el trafico DNS y saltarse algunos filtros de navegacion web implementados por algunos ISP][]
+» [dnscrypt-proxy][]
+» [Introducing DNSCrypt (Preview Release)][]
+» [Como cifrar el trafico DNS y saltarse algunos filtros de navegacion web implementados por algunos ISP][]
 
   [DNSCrypt]: https://github.com/opendns/dnscrypt-proxy
     "DNSCrypt"

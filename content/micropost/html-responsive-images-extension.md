@@ -21,7 +21,7 @@ Slug: html-responsive-images-extension
 > different version of an image that has been modified by the author to
 > be suitable for a particular use (see: art direction use case).
 
-- [w3.org][]
+» [w3.org][]
 
   [w3.org]: http://dvcs.w3.org/hg/html-proposals/raw-file/tip/responsive-images/responsive-images.html
     "HTML Responsive Images Extension"

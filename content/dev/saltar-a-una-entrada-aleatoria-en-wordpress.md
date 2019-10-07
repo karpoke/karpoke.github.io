@@ -48,9 +48,9 @@ RewriteRule ^salta/$ salta.php
 Referencias
 -----------
 
-- [Function Reference/query posts][]
-- [The Loop][]
-- [Template Tags/get posts][]
+» [Function Reference/query posts][]
+» [The Loop][]
+» [Template Tags/get posts][]
 
   [Microsiervos]: http://www.microsiervos.com/archivo/general/salta.html
     "Microsiervos"

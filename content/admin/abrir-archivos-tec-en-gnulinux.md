@@ -50,11 +50,11 @@ directorio.
 Referencias
 -----------
 
-- [Recover deleted photos from an Android device][vídeo donde se explica
+» [Recover deleted photos from an Android device][vídeo donde se explica
 cómo abrirlas]
-- [Best way to remove bytes from the start of a file?][eliminar los 6
+» [Best way to remove bytes from the start of a file?][eliminar los 6
 primeros bytes]
-- [JPEG File Interchange Format (JFIF)][]
+» [JPEG File Interchange Format (JFIF)][]
 
   [deben ser imágenes en miniatura]: http://androidforums.com/samsung-galaxy-s2-international/427146-dcim-camera-cache.html
     "deben ser imágenes en miniatura"

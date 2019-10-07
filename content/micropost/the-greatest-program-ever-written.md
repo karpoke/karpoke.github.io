@@ -12,7 +12,7 @@ Slug: the-greatest-program-ever-written
 > with AI, that ran on a poorly documented, buggy machine that contained
 > only 1k of memory.
 
-- [thad.frogley.info][]
+» [thad.frogley.info][]
 
   [thad.frogley.info]: http://thad.frogley.info/archive/the_greatest_program.html
     "The greatest program ever written"

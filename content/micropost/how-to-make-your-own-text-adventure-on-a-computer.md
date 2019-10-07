@@ -8,7 +8,7 @@ Slug: how-to-make-your-own-text-adventure-on-a-computer
 > computer language, this page is for you! I’m teaching you a shortcut
 > to make a text adventure, for those who actually know Python.
 
-- [bluezandmuse.com][]
+» [bluezandmuse.com][]
 
   [bluezandmuse.com]: http://www.bluzeandmuse.com/final_site/how_to.html
     "How To Make Your Own Text Adventure On A Computer"

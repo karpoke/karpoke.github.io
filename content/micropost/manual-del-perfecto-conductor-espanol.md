@@ -14,7 +14,7 @@ Slug: manual-del-perfecto-conductor-espanol
 > Antropólogo Indecente y vayamos a echarle un vistazo a la fauna que
 > puebla la jungla de asfalto.
 
-- [fronterasblog.wordpress.com][]
+» [fronterasblog.wordpress.com][]
 
   [fronterasblog.wordpress.com]: https://fronterasblog.wordpress.com/2012/05/21/manual-del-perfecto-conductor-espanol/
     "Manual del perfecto conductor español"

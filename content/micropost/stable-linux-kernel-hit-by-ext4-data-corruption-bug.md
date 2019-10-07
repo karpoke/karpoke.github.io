@@ -13,7 +13,7 @@ Slug: stable-linux-kernel-hit-by-ext4-data-corruption-bug
 > data corruption bug was hard to track down as it only manifests itself
 > if a system is rebooted twice in a relatively short period of time.
 
-- [h-online.com][]
+» [h-online.com][]
 
   [h-online.com]: http://www.h-online.com/open/news/item/Stable-Linux-kernel-hit-by-ext4-data-corruption-bug-Update-1736110.html
     "Stable Linux kernel hit by ext4 data corruption bug"

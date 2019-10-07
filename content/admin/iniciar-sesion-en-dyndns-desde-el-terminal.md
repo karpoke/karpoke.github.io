@@ -75,7 +75,7 @@ Actualizada la URL en la que encontraremos el formulario de _login_.
 Referencias
 -----------
 
-- [Emulating a Browser in Python with mechanize][]
+» [Emulating a Browser in Python with mechanize][]
 
   [Emulating a Browser in Python with mechanize]: http://stockrt.github.io/p/emulating-a-browser-in-python-with-mechanize/
     "Emulating a Browser in Python with mechanize"

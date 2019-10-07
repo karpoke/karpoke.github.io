@@ -27,7 +27,7 @@ alias bzip2=pbzip2
 Referencias
 -----------
 
-- [Speed Up Compression via Parallel BZIP2 (PBZIP2)][]
+» [Speed Up Compression via Parallel BZIP2 (PBZIP2)][]
 
   [Speed Up Compression via Parallel BZIP2 (PBZIP2)]: http://hackercodex.com/guide/parallel-bzip-compression/
     "Speed Up Compression via Parallel BZIP2 (PBZIP2)"

@@ -135,10 +135,10 @@ Otros ejemplos:
 Referencias
 -----------
 
-- [A proof that Unix utility "sed" is Turing complete][construir una
+» [A proof that Unix utility "sed" is Turing complete][construir una
 máquina de Turing con él]
-- [Implementation of a Turing Machine as Sed Script][]
-- [Turing machine simulator][]
+» [Implementation of a Turing Machine as Sed Script][]
+» [Turing machine simulator][]
 
   [construir una máquina de Turing con él]: http://www.catonmat.net/blog/proof-that-sed-is-turing-complete/
     "construir una máquina de Turing con él"

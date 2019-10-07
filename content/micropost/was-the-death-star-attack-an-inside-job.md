@@ -11,7 +11,7 @@ Slug: was-the-death-star-attack-an-inside-job
 > in a massive chain reaction that not just damaged, but completely
 > obliterated that massive technological wonder.
 
-- [debunking911.com][]
+» [debunking911.com][]
 
   [debunking911.com]: http://www.debunking911.com/questions.htm
     "Was the Death Star Attack an Inside Job?"

@@ -30,7 +30,7 @@ Slug: carta-abierta-al-presidente-constitucional-de-la-republica-del-ecuador
 >  Sinceramente en el espíritu de ayudar,
 >  Richard Stallman
 
-- [telegrafo.com.ec][]
+» [telegrafo.com.ec][]
 
   [telegrafo.com.ec]: http://www.telegrafo.com.ec/index.php?option=com_zoo&task=item&item_id=44026&Itemid=26
     "Carta abierta al Presidente Constitucional de la República del Ecuador"

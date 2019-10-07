@@ -11,7 +11,7 @@ Slug: album-para-celebrar-los-30-anos-de-la-famicomnes
 > un CD de música que se distribuye de manera gratuita bajo licencia
 > Creative Commons.
 
-- [sawsquarenoise.com][]
+» [sawsquarenoise.com][]
 
   [sawsquarenoise.com]: http://www.sawsquarenoise.com/2013/12/sonido-de-la-nintendo-nes.html
     "Álbum para celebrar los 30 años de la FAMICOM/NES"

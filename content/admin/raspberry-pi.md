@@ -438,10 +438,10 @@ Algunos proyectos que ya están en marcha, relacionados con Raspberry Pi:
 
 Otros enlaces interesantes:
 
-- [Carcasas][]
-- [Placas de expansión][]
-- [Periféricos de bajo nivel][]
-- [Especificaciones de hardware][]
+» [Carcasas][]
+» [Placas de expansión][]
+» [Periféricos de bajo nivel][]
+» [Especificaciones de hardware][]
 
 Referencias
 -----------
