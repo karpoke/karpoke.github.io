@@ -8,9 +8,6 @@ branches:
 
 cache: pip
 
-before_install:
-  - git submodule update --init --recursive
-
 install:
   # pip install --upgrade pip  # travis already has it
   # pip install pelican ghp-import Markdown typogrify beautifulsoup4 pyembed-markdown
@@ -25,6 +22,7 @@ script:
 
 git:
   depth: 3
+  submodules: true
 
 env:
   global:
