@@ -53,7 +53,7 @@ Referencias
 -----------
 
 » [pgbovine.net][CDE]
-- Via [linuxzone.es][]
+» Via [linuxzone.es][]
 
   [CDE]: http://www.pgbovine.net/cde.html
     "CDE"
