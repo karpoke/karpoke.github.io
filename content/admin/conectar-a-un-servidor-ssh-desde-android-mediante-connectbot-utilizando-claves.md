@@ -80,7 +80,7 @@ username@remote:~$ sed -i '/keyname$/d' ~/.ssh/authorized_keys
 Referencias
 -----------
 
-- [ConnectBot][1] en el _market_
+» [ConnectBot][1] en el _market_
 
   [ConnectBot]: http://code.google.com/p/connectbot/
     "ConnectBot"

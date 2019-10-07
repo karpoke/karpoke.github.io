@@ -318,11 +318,11 @@ Server: incognito
 Referencias
 -----------
 
-- [mod_security][]
-- [mod_security wiki][]
-- [mod_security on Apache][]
-- [Howto: Mod_security][]
-- [OWASP ModSecurity Core Rule Set Project][]
+» [mod_security][]
+» [mod_security wiki][]
+» [mod_security on Apache][]
+» [Howto: Mod_security][]
+» [OWASP ModSecurity Core Rule Set Project][]
 
   [renombrar esta variable por su valor anterior]: http://comments.gmane.org/gmane.comp.apache.mod-security.owasp-crs/410
     "renombrar esta variable por su valor anterior"

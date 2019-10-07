@@ -147,7 +147,7 @@ ALLOWHIDDENFILE="/etc/.bzrignore"
 Referencias
 -----------
 
-- [Using Version Control For Your /etc Directory With etckeeper And
+» [Using Version Control For Your /etc Directory With etckeeper And
 Bazaar On Debian Squeeze][]
 
   [actualizar el fichero /etc/hosts]: {filename}/admin/hphosts-evitando-la-navegacion-por-dominios-maliciosos.md

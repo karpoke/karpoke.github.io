@@ -9,7 +9,7 @@ Slug: php-database-access-are-you-doing-it-correctly
 >  To put it plainly, if you’re still using PHP’s old mysql API to
 > connect to your databases, read on!
 
-- [tutsplus.com][]
+» [tutsplus.com][]
 
   [tutsplus.com]: http://net.tutsplus.com/tutorials/php/php-database-access-are-you-doing-it-correctly/
     "PHP Database Access: Are You Doing It Correctly?"

@@ -11,7 +11,7 @@ Slug: cant-get-into-preprocessors-try-zen-coding
 > time without reinventing your workflow with compilers and other
 > complications: Zen Coding.
 
-- [designhack.net][]
+» [designhack.net][]
 
   [designhack.net]: http://designshack.net/articles/css/cant-get-into-preprocessors-try-zen-coding/
     "Can't Get Into Preprocessors? Try Zen Coding"

@@ -18,7 +18,7 @@ Slug: the-website-of-the-worlds-first-ever-web-server
 > texts on web pages using links. The first examples were developed on
 > NeXT computers.
 
-- [info.cern.ch][]
+» [info.cern.ch][]
 
   [info.cern.ch]: http://info.cern.ch/
     "The website of the world's first-ever web server"

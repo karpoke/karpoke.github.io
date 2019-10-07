@@ -100,7 +100,7 @@ _cracking online_.
 Referencias
 -----------
 
-- [hash-identifier][]
+» [hash-identifier][]
 
   [encontrar el hash utilizando findmyhash.py]: {filename}/hack/encuentra-el-hash.md
     "encuentra el hash"

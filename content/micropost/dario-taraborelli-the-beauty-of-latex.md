@@ -14,7 +14,7 @@ Slug: dario-taraborelli-the-beauty-of-latex
 > software takes care of the actual typesetting, structuring and page
 > formatting, producing documents of astonishing elegance.
 
-- [nitens.org][]
+» [nitens.org][]
 
   [nitens.org]: http://nitens.org/taraborelli/latex
     "Dario Taraborelli: The Beauty of LaTeX"

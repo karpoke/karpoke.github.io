@@ -10,7 +10,7 @@ Slug: relatividad-general-ondulaciones-en-el-espaciotiempo
 > la piedra angular de nuestra tecnología y, de paso, de nuestra
 > química.
 
-- [cuentos-cuanticos.com][]
+» [cuentos-cuanticos.com][]
 
   [cuentos-cuanticos.com]: http://cuentos-cuanticos.com/2015/11/06/relatividad-general-ondulaciones-en-el-espaciotiempo/
     "Relatividad general, ondulaciones en el espaciotiempo"

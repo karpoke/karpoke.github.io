@@ -20,7 +20,7 @@ Slug: linux-the-0-01-release
 > get it working fast. I wanted the kernel simple, yet powerful enough
 > to run most unix software.”
 
-- [kerneltrap.org][]
+» [kerneltrap.org][]
 
   [kerneltrap.org]: http://kerneltrap.org/node/14002
     "Linux: The 0.01 Release"

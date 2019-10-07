@@ -11,7 +11,7 @@ Slug: lenovo-caught-installing-adware-on-new-computers
 > software to decrypt secure requests, yet Lenovo appears to be shipping
 > this software with some of its products out of the box.
 
-- [thenextweb.com][]
+» [thenextweb.com][]
 
   [thenextweb.com]: http://thenextweb.com/insider/2015/02/19/lenovo-caught-installing-adware-new-computers/
     "Lenovo caught installing adware on new computers"

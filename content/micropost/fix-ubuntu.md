@@ -12,7 +12,7 @@ Slug: fix-ubuntu
 > can use the code to the left to disable the parts of Ubuntu which are
 > invasive to your privacy.
 
-- [fixubuntu.com][]
+» [fixubuntu.com][]
 
   [fixubuntu.com]: https://fixubuntu.com/
     "fix ubuntu"

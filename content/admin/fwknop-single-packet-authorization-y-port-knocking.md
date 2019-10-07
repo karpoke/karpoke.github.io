@@ -352,12 +352,12 @@ Más información
 ---------------
 
 - `fwknop`
-- [Single Packet Authorization][]
-- [Single Packet Authorization in Ubuntu][]
-- [GPG Howto][]
-- [fwknopping your way to success with single packet authorisation][]
-- [SPA, Single Packet Authorization][]
-- [_Port knocking_, ofuscación o capa de seguridad?][]
+» [Single Packet Authorization][]
+» [Single Packet Authorization in Ubuntu][]
+» [GPG Howto][]
+» [fwknopping your way to success with single packet authorisation][]
+» [SPA, Single Packet Authorization][]
+» [_Port knocking_, ofuscación o capa de seguridad?][]
 
   [generar entropía]: http://dajul.com/2010/12/18/generar-mas-entropia/
     "generar entropía"

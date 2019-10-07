@@ -13,7 +13,7 @@ Slug: guide-for-technical-development
 > courses available at your university. However, they may help
 > supplement your learnings or provide an introduction to a topic.
 
-- [google.com][]
+» [google.com][]
 
   [google.com]: https://www.google.com/about/careers/students/guide-to-technical-development.html
     "Guide for Technical Development"

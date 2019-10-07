@@ -11,7 +11,7 @@ Slug: el-camino-a-un-mejor-programador
 > manera u otra, pero el tema común es mejorar como profesional de la
 > informática.
 
-- [emanchado.github.com][]
+» [emanchado.github.com][]
 
   [emanchado.github.com]: http://emanchado.github.com/camino-mejor-programador/
     "El camino a un mejor programador"

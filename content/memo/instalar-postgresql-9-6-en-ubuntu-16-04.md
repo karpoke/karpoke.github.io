@@ -31,7 +31,7 @@ $ sudo apt install postgresql-9.6 postgresql-contrib
 Referencias
 -----------
 
-- [linoxide.com][]
+» [linoxide.com][]
 
   [linoxide.com]: http://linoxide.com/tools/setup-postgresql-access-phppgadmin-ubuntu-16-04/
     "linoxide.com"

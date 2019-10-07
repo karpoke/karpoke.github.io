@@ -25,7 +25,7 @@ Slug: stealing-keys-from-pcs-using-a-radio-cheap-electromagnetic-attacks-on-wind
 > exponentiation routine). The secret key can be deduced from these
 > fluctuations, through signal processing and cryptanalysis.
 
-- [tac.ac.il][]
+» [tac.ac.il][]
 
   [tac.ac.il]: http://www.tau.ac.il/~tromer/radioexp/index.html
     "Stealing Keys from PCs using a Radio: Cheap Electromagnetic Attacks on Windowed Exponentiation"

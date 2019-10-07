@@ -19,7 +19,7 @@ Slug: client-side-vs-server-side-rendering
 > embarrassing because it means that I don’t know the fundamentals. But
 > I’ll be glad to have learned (which is why I blog).
 
-- [openmymind.net][]
+» [openmymind.net][]
 
   [openmymind.net]: http://openmymind.net/2012/5/30/Client-Side-vs-Server-Side-Rendering/
     "Client-Side vs. Server-Side Rendering"

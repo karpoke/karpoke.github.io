@@ -93,9 +93,9 @@ acciones, como vaciar la caché.
 Referencias
 -----------
 
-- [apt-cacher-ng][]
-- [Apt-Cacher-NG User Manual][]
-- [Install Apt-Cacher-NG – Ubuntu][]
+» [apt-cacher-ng][]
+» [Apt-Cacher-NG User Manual][]
+» [Install Apt-Cacher-NG – Ubuntu][]
 
   [apt-cacher-ng]: http://alioth.debian.org/projects/apt-cacher-ng/
     "apt-cacher-ng"

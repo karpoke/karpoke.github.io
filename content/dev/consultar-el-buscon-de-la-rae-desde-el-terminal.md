@@ -353,11 +353,11 @@ $ rae.sh line[TAB][TAB]
 Referencias
 -----------
 
-- [DuckDuckGo » User Agent][]
-- [Foro de Ubuntu-es][foro de Ubuntu]
-- [Bash manual > Programmable Completion][]
-- [An introduction to bash completion][]
-- [Handling spaces and quotes in autocompletion][deban ser escapadas primero]
+» [DuckDuckGo » User Agent][]
+» [Foro de Ubuntu-es][foro de Ubuntu]
+» [Bash manual > Programmable Completion][]
+» [An introduction to bash completion][]
+» [Handling spaces and quotes in autocompletion][deban ser escapadas primero]
 
   [buscón de la RAE]: http://buscon.rae.es/draeI/
     "buscón de la RAE"

@@ -12,7 +12,7 @@ Slug: existen-los-colores-en-la-naturaleza
 > Lo primero que tenemos que hacer para tratar de responderla es
 > analizar brevemente como y por que vemos los objetos que nos rodean.
 
-- [revolucioncientifica.com][]
+» [revolucioncientifica.com][]
 
   [revolucioncientifica.com]: http://revolucioncientifica.com/curiosidades%20cientificas/existen%20los%20colores%20en%20la%20naturaleza.asp
     "¿Existen los colores en la naturaleza?"

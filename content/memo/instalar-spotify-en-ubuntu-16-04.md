@@ -36,7 +36,7 @@ $ sudo apt update
 Referencias
 -----------
 
-- [spotify.com][]
+» [spotify.com][]
 
   [spotify.com]: https://www.spotify.com/es/download/linux/
     "Spotify for Linux"

@@ -48,7 +48,7 @@ consultando a direcciones IP a las que ya estemos conectados.
 Referencias
 -----------
 
-- [¿El futuro de BitTorrent? DHT, PEX y Enlaces Magnéticos
+» [¿El futuro de BitTorrent? DHT, PEX y Enlaces Magnéticos
 explicados.][]
 
   [iblocklist.com]: http://iblocklist.com

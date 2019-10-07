@@ -16,7 +16,7 @@ Slug: seven-habits-of-effective-text-editing
 > know which editor to use or are dissatisfied with what you are
 > currently using, give Vim a try; you won’t be disappointed.
 
-- [moolenaar.net][]
+» [moolenaar.net][]
 
   [moolenaar.net]: http://www.moolenaar.net/habits.html
     "Seven habits of effective text editing"

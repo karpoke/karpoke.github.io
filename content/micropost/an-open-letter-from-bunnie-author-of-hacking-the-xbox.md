@@ -17,9 +17,9 @@ Slug: an-open-letter-from-bunnie-author-of-hacking-the-xbox
 > repudiating any association with my work, effectively leaving me on my
 > own to face Microsoft.
 
-- [nostarch.com][]
+» [nostarch.com][]
 - bunnie | [bunniestudios.com][]
-- [Hacking the XBox (PDF)][]
+» [Hacking the XBox (PDF)][]
 
   [nostarch.com]: http://nostarch.com/xboxfree
     "nostarch.com"

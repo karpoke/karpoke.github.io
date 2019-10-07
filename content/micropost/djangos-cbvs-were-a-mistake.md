@@ -20,7 +20,7 @@ Slug: djangos-cbvs-were-a-mistake
 > supposed to solve, and then analyse the problems with them in terms of
 > the Zen of Python.
 
-- [lukeplant.me.uk][]
+» [lukeplant.me.uk][]
 
   [lukeplant.me.uk]: http://lukeplant.me.uk/blog/posts/djangos-cbvs-were-a-mistake/
     "Django's CBVs were a mistake"

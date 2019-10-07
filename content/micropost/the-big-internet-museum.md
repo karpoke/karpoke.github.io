@@ -15,7 +15,7 @@ Slug: the-big-internet-museum
 > piece to the collection! We might even open a gift shop. There, we’ve
 > said it.
 
-- [thebiginternetmuseum.com][]
+» [thebiginternetmuseum.com][]
 
   [thebiginternetmuseum.com]: http://www.thebiginternetmuseum.com/
     "The Big Internet Museum"

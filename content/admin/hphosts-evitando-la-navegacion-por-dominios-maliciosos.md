@@ -111,8 +111,8 @@ el motivo][], en esta otra.
 Referencias
 -----------
 
-- [http://hosts-file.net][]
-- [Protección a nivel local, archivo hosts][]
+» [http://hosts-file.net][]
+» [Protección a nivel local, archivo hosts][]
 
   [catálogo]: http://hosts-file.net/?s=Browse
     "catálogo"

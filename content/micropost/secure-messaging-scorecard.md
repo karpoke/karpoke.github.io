@@ -9,7 +9,7 @@ Slug: secure-messaging-scorecard
 > these systems actually secure? We decided to find out, in the first
 > phase of a new EFF Campaign for Secure & Usable Crypto.
 
-- [eff.org][]
+» [eff.org][]
 
   [eff.org]: https://www.eff.org/secure-messaging-scorecard
     "Secure messaging scorecard"

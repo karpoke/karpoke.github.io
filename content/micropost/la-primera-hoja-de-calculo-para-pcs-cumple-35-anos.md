@@ -12,7 +12,7 @@ Slug: la-primera-hoja-de-calculo-para-pcs-cumple-35-anos
 > decir, a Bricklin se le acababa de ocurrir la idea de crear una hoja
 > de cálculo electrónica.
 
-- [cyberhades.com][]
+» [cyberhades.com][]
 
   [cyberhades.com]: http://www.cyberhades.com/2014/05/14/microhistorias-la-primera-hoja-de-calculo-para-pcs-cumple-35-anos/
     "La primera hoja de cálculo para PCs cumple 35 años"

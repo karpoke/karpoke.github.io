@@ -32,7 +32,7 @@ Slug: como-medir-la-eficiencia-energetica-de-tu-propio-coche
 > correo electrónico una copia a Pepe Roura (que seguro que estará
 > encantado por el interés despertado por su artículo).
 
-- [francisthemulenews.wordpress.com][]
+» [francisthemulenews.wordpress.com][]
 
   [francisthemulenews.wordpress.com]: https://francisthemulenews.wordpress.com/2012/07/14/como-medir-la-eficiencia-energetica-de-tu-propio-coche/
     "Cómo medir la eficiencia energética de tu propio coche "

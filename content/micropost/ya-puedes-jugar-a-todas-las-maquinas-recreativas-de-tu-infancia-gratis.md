@@ -13,7 +13,7 @@ Slug: ya-puedes-jugar-a-todas-las-maquinas-recreativas-de-tu-infancia-gratis
 > » [archive.org][]
 > » [The InternetArcade][]
 
-- [yofuiaegb.com][]
+» [yofuiaegb.com][]
 
   [archive.org]: https://archive.org/
     "archive.org"

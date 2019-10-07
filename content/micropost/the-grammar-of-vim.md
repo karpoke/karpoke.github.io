@@ -8,7 +8,7 @@ Slug: the-grammar-of-vim
 > development these days in a terminal window, logged directly into a VM
 > where I test my code.
 
-- [rc3.org][]
+» [rc3.org][]
 
   [rc3.org]: http://rc3.org/2012/05/12/the-grammar-of-vim/
     "The grammar of VIM"

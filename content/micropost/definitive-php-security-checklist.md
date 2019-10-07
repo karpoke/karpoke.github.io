@@ -10,7 +10,7 @@ Slug: definitive-php-security-checklist
 > Securing PHP web applications would be a better title for this
 > article.
 
-- [sk89q.com][]
+» [sk89q.com][]
 
   [sk89q.com]: http://www.sk89q.com/2009/08/definitive-php-security-checklist/
     "Definitive PHP security checklist"

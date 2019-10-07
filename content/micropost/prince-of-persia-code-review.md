@@ -14,9 +14,9 @@ Slug: prince-of-persia-code-review
 > skewing lookup tables: Prince Of Persia features engineering treasures
 > in every modules.
 
-- [Part I : Introduction][]
-- [Part II : Bootloader][]
-- [Part III : Code explained][]
+» [Part I : Introduction][]
+» [Part II : Bootloader][]
+» [Part III : Code explained][]
 
 - Jordan Mechner | [fabiensanglard.net][Part I : Introduction]
 

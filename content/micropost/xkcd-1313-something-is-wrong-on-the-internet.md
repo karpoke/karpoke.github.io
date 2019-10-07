@@ -15,7 +15,7 @@ Slug: xkcd-1313-something-is-wrong-on-the-internet
 > what regular expression does cover the winners and not the losers? And let’s
 > try to find a short one, although perhaps not the very shortest.
 
-- [nbviewer.ipython.org][]
+» [nbviewer.ipython.org][]
 
   [nbviewer.ipython.org]: http://nbviewer.ipython.org/url/norvig.com/ipython/xkcd1313.ipynb
     "xkcd 1313: Something is Wrong on the Internet!"

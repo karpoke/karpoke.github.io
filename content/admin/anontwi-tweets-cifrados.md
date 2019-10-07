@@ -214,10 +214,10 @@ $ anontwi.gambas
 Referencias
 -----------
 
-- [anontwi.sourceforge.net][AnonTwi]
-- [AnonTwi: cliente de Twitter que permite cifrar tweets y mensajeria
+» [anontwi.sourceforge.net][AnonTwi]
+» [AnonTwi: cliente de Twitter que permite cifrar tweets y mensajeria
 privada][]
-- [Como cambiar las dependencias de un paquete (.deb)][]
+» [Como cambiar las dependencias de un paquete (.deb)][]
 
   [AnonTwi]: http://anontwi.sourceforge.net/
     "AnonTwi"

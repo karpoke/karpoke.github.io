@@ -18,7 +18,7 @@ Slug: el-top-7-de-dilemas-que-enfrentan-los-desarrolladores-de-hoy
 > pareciera como si el mundo de la programación enfrentara una nueva
 > elección – y dilema – a un ritmo creciente.
 
-- [elbauldelprogramador.com][]
+» [elbauldelprogramador.com][]
 
   [elbauldelprogramador.com]: http://www.elbauldelprogramador.com/programacion/el-top-7-de-dilemas-que-enfrentan-los-desarrolladores-de-hoy/
     "El Top 7 de dilemas que enfrentan los desarrolladores de hoy"

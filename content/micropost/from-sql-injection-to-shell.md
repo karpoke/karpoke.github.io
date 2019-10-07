@@ -18,7 +18,7 @@ Slug: from-sql-injection-to-shell
 >     step in which you will access the operating system and run
 >     commands.
 
-- [pentesterlab.com][]
+» [pentesterlab.com][]
 
   [pentesterlab.com]: https://www.pentesterlab.com/from_sqli_to_shell.html
     "From SQL injection to shell"

@@ -15,7 +15,7 @@ Slug: code-rot-openbsd
 > possible and how to use it. It will also tell you the best practices
 > for using the tool and warn you about the common pitfalls.
 
-- [homing-on-code.blogspot.com][]
+» [homing-on-code.blogspot.com][]
 
   [homing-on-code.blogspot.com]: http://homing-on-code.blogspot.com/2015/01/code-rot-openbsd.html
     "Code rot & OpenBSD"

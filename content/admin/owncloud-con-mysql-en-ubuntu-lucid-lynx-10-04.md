@@ -295,10 +295,10 @@ panel de administración, por lo que he tenido que deshacer los cambios.
 Referencias
 -----------
 
-- [ownCloud site][ownCloud]
-- [ownCloud support][]
-- [ownCloud apps][aplicaciones de terceros]
-- [ownCloud 2, your personal cloud server][]
+» [ownCloud site][ownCloud]
+» [ownCloud support][]
+» [ownCloud apps][aplicaciones de terceros]
+» [ownCloud 2, your personal cloud server][]
 
   [ownCloud]: http://owncloud.org/
     "ownCloud"

@@ -33,7 +33,7 @@ $ ps a | grep sshpass
 Referencias
 -----------
 
-- [sshpass: Login To SSH Server / Provide SSH Password Using A Shell
+» [sshpass: Login To SSH Server / Provide SSH Password Using A Shell
 Script][]
 
   [utilizar claves]: {filename}/admin/conectarse-por-ssh-solo-usando-la-clave.md

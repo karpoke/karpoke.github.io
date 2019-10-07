@@ -17,7 +17,7 @@ Slug: the-conscience-of-a-hacker
 >  the other kids, this crap they teach us bores me...
 >  Damn underachiever. They’re all alike.
 
-- [phrack.org][]
+» [phrack.org][]
 
   [phrack.org]: http://www.phrack.org/issues.html?issue=7&id=3&mode=txt
     "The Conscience of a Hacker"

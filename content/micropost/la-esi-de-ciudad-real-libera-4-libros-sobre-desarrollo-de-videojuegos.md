@@ -14,7 +14,7 @@ Slug: la-esi-de-ciudad-real-libera-4-libros-sobre-desarrollo-de-videojuegos
 > ejemplos del libro se distribuye con licencia GPLv3 y el libro con
 > licencia Creative Commons BY NC ND
 
-- [cursodesarrollovideojuegos.com][] | via [barrapunto.com][]
+» [cursodesarrollovideojuegos.com][] | via [barrapunto.com][]
 
   [cursodesarrollovideojuegos.com]: http://www.cursodesarrollovideojuegos.com/
     "cursodesarrollovideojuegos.com"

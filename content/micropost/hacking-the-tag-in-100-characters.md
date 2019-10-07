@@ -8,7 +8,7 @@ Slug: hacking-the-tag-in-100-characters
 > first glance, but rest assured, it can trick customers into giving in
 > their details to fraudsters.</a>
 
-- [bilaw.al][]
+» [bilaw.al][]
 
   [bilaw.al]: http://bilaw.al/2013/03/17/hacking-the-a-tag-in-100-characters.html
     "Hacking the <a> tag in 100 characters"

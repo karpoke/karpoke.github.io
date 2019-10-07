@@ -136,7 +136,7 @@ $ mount /home/user/mega.enc
 Referencias
 -----------
 
-- [Encrypted filesystem on Mega.co.nz][]
+» [Encrypted filesystem on Mega.co.nz][]
 
   [megatools instaladas]: {filename}/admin/megasync-y-megatools-para-acceder-a-mega-desde-ubuntu.md
     "MegaSync y Megatools para acceder a Mega desde Ubuntu"

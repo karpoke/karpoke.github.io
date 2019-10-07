@@ -10,7 +10,7 @@ Slug: el-primer-bug
 > pegaron sus restos en el libro de registro del ordenador, junto a una
 > nota que decía ’First actual case of bug being found’.
 
-- [ztfnews.wordpress.com][]
+» [ztfnews.wordpress.com][]
 
   [ztfnews.wordpress.com]: http://ztfnews.wordpress.com/2014/09/09/el-primer-bug/
     "El primer 'bug'"

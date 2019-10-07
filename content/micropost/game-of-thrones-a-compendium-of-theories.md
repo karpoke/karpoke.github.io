@@ -10,7 +10,7 @@ Slug: game-of-thrones-a-compendium-of-theories
 > these boards and some of them have come up with truly excellent
 > theories, right or wrong, to answer those thoughts we have.
 
-- [asoiaf.westeros.org][]
+» [asoiaf.westeros.org][]
 
   [asoiaf.westeros.org]: http://asoiaf.westeros.org/index.php/topic/79775-a-compendium-of-theories/
     "Game of thrones: A Compendium of Theories"

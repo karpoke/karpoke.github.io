@@ -156,7 +156,7 @@ contaremos con el siguiente _script_ en Python, `word-frequency.py`:
 
 ```python
 #!/usr/bin/env python
-# -_- encoding: utf8 -_-
+# encoding: utf-8
 
 import re
 import sys
@@ -283,9 +283,9 @@ Curiosamente, se parece bastante a la anterior.
 Referencias
 -----------
 
-- [Distribution of Oft-Used Bash Commands][distribución de su frecuencia de uso]
-- [The Project Gutenberg EBook of Don Quijote][Quijote]
-- [Advanced Bash-Scripting Guide][]
+» [Distribution of Oft-Used Bash Commands][distribución de su frecuencia de uso]
+» [The Project Gutenberg EBook of Don Quijote][Quijote]
+» [Advanced Bash-Scripting Guide][]
 
   [comandos más utilizados]: http://www.commandlinefu.com/commands/view/604/list-of-commands-you-use-most-often
     "comandos más utilizados"

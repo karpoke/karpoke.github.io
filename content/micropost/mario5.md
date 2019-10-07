@@ -19,7 +19,7 @@ Slug: mario5
 > will give us some object oriented constraints. This will be very
 > useful to stay in the same pattern through the whole coding.
 
-- [codeproject.com][]
+» [codeproject.com][]
 
   [codeproject.com]: http://www.codeproject.com/Articles/396959/Mario5
     "Mario5"

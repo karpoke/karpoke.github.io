@@ -9,7 +9,7 @@ Slug: hidden-secret-codes-for-google-android-mobile-phones
 > phone. These codes can also show many useful information about the
 > phone.
 
-- [askvg.com][]
+» [askvg.com][]
 
   [askvg.com]: http://www.askvg.com/google-android-hidden-secret-codes/
     "Hidden Secret Codes for Google Android Mobile Phones"

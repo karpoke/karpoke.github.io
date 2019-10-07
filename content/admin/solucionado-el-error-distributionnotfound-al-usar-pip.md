@@ -78,7 +78,7 @@ General Options:
 Referencias
 -----------
 
-- [stackoverflow.com][]
+» [stackoverflow.com][]
 
   [stackoverflow.com]: http://stackoverflow.com/questions/6200056/pip-broke-how-to-fix-distributionnotfound-error
     "stackoverflow.com"

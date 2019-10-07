@@ -32,7 +32,7 @@ Slug: free-software-foundation-recommendations-for-free-operating-system-distrib
 > security, which makes their platitudes about restricting us for our
 > own good both hollow and deceitful.
 
-- [fsf.org][]
+» [fsf.org][]
 
   [fsf.org]: http://www.fsf.org/campaigns/secure-boot-vs-restricted-boot/whitepaper-web
     "Free Software Foundation recommendations for free operating system distributions considering Secure Boot"

@@ -12,7 +12,7 @@ Slug: what-are-the-chances-of-survival-of-individual-chess-pieces-in-average-gam
 > handle castling and en passant carefully). » [png-extract][] »
 > [SurvivingPieces][]
 
-- [quora.com][]
+» [quora.com][]
 
   [png-extract]: http://www.cs.kent.ac.uk/people/staff/djb/pgn-extract/
     "png-extract"

@@ -17,7 +17,7 @@ Slug: tldrlegal
 > Next time include a link alongside your license.
 >  TL;DR - Link a summary in place of a license.
 
-- [tldrlegal.com][]
+» [tldrlegal.com][]
 
   [tldrlegal.com]: http://www.tldrlegal.com/
     "tl;drLegal"

@@ -52,7 +52,7 @@ $ ~/CDE/cde firefox
 Referencias
 -----------
 
-- [pgbovine.net][CDE]
+» [pgbovine.net][CDE]
 - Via [linuxzone.es][]
 
   [CDE]: http://www.pgbovine.net/cde.html

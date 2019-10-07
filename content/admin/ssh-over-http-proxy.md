@@ -187,16 +187,16 @@ $ htc -P proxy.evil.com:80 -F 8080 remotehost:80
 Referencias
 -----------
 
-- [SSH Through or Over Proxy][]
-- [Accessing Trillian Pro Remotely and Through an Encrypted
+» [SSH Through or Over Proxy][]
+» [Accessing Trillian Pro Remotely and Through an Encrypted
 Tunnel][bloqueo podría ser por puerto o por protocolo]
-- [Using Corkscrew to tunnel SSH over HTTP][pasar a través del
+» [Using Corkscrew to tunnel SSH over HTTP][pasar a través del
 proxy]
-- [Tunneling SSH over HTTP(S)][]
-- [Bypass Any Firewall][]
-- [SSHThroughHTTPProxy][]
-- [Tunneling SSH over an HTTP-Proxy Server][]
-- [Apache Module mod_proxy][]
+» [Tunneling SSH over HTTP(S)][]
+» [Bypass Any Firewall][]
+» [SSHThroughHTTPProxy][]
+» [Tunneling SSH over an HTTP-Proxy Server][]
+» [Apache Module mod_proxy][]
 
   [bloqueo podría ser por puerto o por protocolo]: http://ha.ckers.org/trillianremote.html
     "bloqueo podría ser por puerto o por protocolo"

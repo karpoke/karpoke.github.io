@@ -14,7 +14,7 @@ Slug: freenas
 > con los permisos adecuados, crear unidades RAID para hacer copias de
 > seguridad redundantes o aumentar el rendimiento del sistema.
 
-- [redeszone.net][]
+» [redeszone.net][]
 
   [redeszone.net]: http://www.redeszone.net/fabrica-tu-nas-servidor-de-archivos-con-freenas/
     "FreeNAS"

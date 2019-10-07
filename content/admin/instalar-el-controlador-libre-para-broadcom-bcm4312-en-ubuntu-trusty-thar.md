@@ -50,8 +50,8 @@ deberíamos tener este problema.
 Referencias
 -----------
 
-- [Community Help Wiki | WifiDocs/Driver/bcm43xx][]
-- [b43 and b43legacy][]
+» [Community Help Wiki | WifiDocs/Driver/bcm43xx][]
+» [b43 and b43legacy][]
 
   [no se ha descargado correctamente]: https://bbs.archlinux.org/viewtopic.php?pid=1276722#p1276722
     "no se ha descargado correctamente"

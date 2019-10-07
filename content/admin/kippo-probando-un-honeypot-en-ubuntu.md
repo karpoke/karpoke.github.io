@@ -176,10 +176,10 @@ Service Info: OS: Linux
 Referencias
 -----------
 
-- [Kippo][]
-- [Installing kippo on a ubuntu system][]
-- [Instalando kippo, un honeypot SSH][]
-- [kippo honeypot on ubuntu 10.04][]
+» [Kippo][]
+» [Installing kippo on a ubuntu system][]
+» [Instalando kippo, un honeypot SSH][]
+» [kippo honeypot on ubuntu 10.04][]
 
   [Kippo]: http://code.google.com/p/kippo/
     "Kippo"

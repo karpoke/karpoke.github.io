@@ -13,7 +13,7 @@ Slug: basics-of-computational-number-theory
 > Companion papers will examine number theory from a more advanced
 > perspective.
 
-- [userpages.umbc.edu/\~rcampbel][]
+» [userpages.umbc.edu/\~rcampbel][]
 
   [userpages.umbc.edu/\~rcampbel]: http://userpages.umbc.edu/~rcampbel/NumbThy/Class/BasicNumbThy.html
     "Basics of Computational Number Theory"

@@ -14,7 +14,7 @@ Slug: the-history-of-film
 > The History of Film was created by Larry Gormley, an award winning
 > designer.
 
-- [historyshots.com][]
+» [historyshots.com][]
 
   [historyshots.com]: http://www.historyshots.com/film/index.cfm?s=cirk
     "The History of Film"

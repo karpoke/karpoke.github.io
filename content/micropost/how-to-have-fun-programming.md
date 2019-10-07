@@ -9,7 +9,7 @@ Slug: how-to-have-fun-programming
 > reflections about what makes me happy while programming, and serves as
 > reminder to myself why I should keep pushing onwards!
 
-- [rdegges.com][]
+» [rdegges.com][]
 
   [rdegges.com]: http://rdegges.com/how-to-have-fun-programming
     "How to Have Fun Programming"

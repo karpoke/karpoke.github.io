@@ -14,7 +14,7 @@ Slug: socrates-y-el-efecto-dunning-kruger
 > rendimiento o con técnicos de laboratorios médicos calibrando su nivel
 > de dominio del trabajo.
 
-- [experientiadocet.com][]
+» [experientiadocet.com][]
 
   [experientiadocet.com]: http://www.experientiadocet.com/2012/06/socrates-y-el-efecto-dunning-kruger-con.html
     "Sócrates y el efecto Dunning-Kruger"

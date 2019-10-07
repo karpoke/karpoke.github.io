@@ -16,7 +16,7 @@ Disallow: /harm/to/self
 
 ![Terminator Arm]({static}/images/terminator_sideshow_endo_arm-208x300.jpg)
 
-- [barrapunto][]
+» [barrapunto][]
 
   [Skynet]: http://es.wikipedia.org/wiki/Skynet_(Terminator) "Skynet"
     "Skynet"

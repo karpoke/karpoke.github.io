@@ -5,7 +5,7 @@ Slug: todo-el-mundo-deberia-saber-programar
 
 [!embed](https://www.youtube.com/watch?v=8lp20JFiB4s)
 
-- [code.org][] | Via Friki Cabrón [youtube.com][]
+» [code.org][] | Via Friki Cabrón [youtube.com][]
 
   [code.org]: http://www.code.org/
     "code.org"

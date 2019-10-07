@@ -3,7 +3,7 @@ Date: 2012-05-15 20:09
 Author: Nacho Cano
 Slug: la-escala-del-universo
 
-- [link][] | via [reddit][]
+» [link][] | via [reddit][]
 
   [link]: http://i.imgur.com/0fPRk.jpg
     "link"

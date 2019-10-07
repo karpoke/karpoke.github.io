@@ -11,7 +11,7 @@ Slug: fixing-e-t-the-extra-terrestrial-for-the-atari-2600
 > On this page I’m going to briefly explore why people hate E.T., and how the
 > game can be fixed.
 
-- [necomputer.org][]
+» [necomputer.org][]
 
   [necomputer.org]: http://www.neocomputer.org/projects/et/
     "Fixing E.T. The Extra-Terrestrial for the Atari 2600"

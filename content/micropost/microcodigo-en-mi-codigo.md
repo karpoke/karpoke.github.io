@@ -13,7 +13,7 @@ Slug: microcodigo-en-mi-codigo
 > nuestros programas, que toma la idea básica de las lógicas
 > micro-programadas.
 
-- [genbetadev.com][]
+» [genbetadev.com][]
 
   [genbetadev.com]: http://www.genbetadev.com/metodologias-de-programacion/microcodigo-en-mi-codigo
     "Microcódigo en mi código"

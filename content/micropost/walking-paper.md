@@ -11,7 +11,7 @@ Slug: walking-paper
 
 [!embed](https://www.youtube.com/watch?v=Jx7nS7_Kf7E)
 
-- [geocities.jp/kikousya290821][] | via [microsiervos.com][]
+» [geocities.jp/kikousya290821][] | via [microsiervos.com][]
 
   [geocities.jp/kikousya290821]: http://www.geocities.jp/kikousya290821/newmpm.htm
     "geocities.jp/kikousya290821"

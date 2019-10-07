@@ -11,7 +11,7 @@ Slug: list-of-tcs-conferences-and-workshops
 > attending. Beyond that, I hope a list like this would give everyone a
 > better sense of the lay of the theory land.
 
-- [cstheory.stackexchange.com][]
+» [cstheory.stackexchange.com][]
 
   [cstheory.stackexchange.com]: http://cstheory.stackexchange.com/questions/7900/list-of-tcs-conferences-and-workshops/7901#7901
     "List of TCS conferences and workshops"

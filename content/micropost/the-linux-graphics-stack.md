@@ -13,7 +13,7 @@ Slug: the-linux-graphics-stack
 > didn’t know of any. I started this one. It has been reviewed by Adam
 > Jackson and David Airlie, both of whom work on this exact stack.
 
-- [mecheye.net][]
+» [mecheye.net][]
 
   [mecheye.net]: http://blog.mecheye.net/2012/06/the-linux-graphics-stack/
     "The Linux Graphics Stack"

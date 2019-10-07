@@ -11,7 +11,7 @@ Slug: actualizacion-automatica-bendicion-o-condena
 > antivirus... pero sobre todo, en la criptografía y en la actualización
 > automática.
 
-- [hispasec.com][]
+» [hispasec.com][]
 
   [hispasec.com]: http://unaaldia.hispasec.com/2012/06/actualizacion-automatica-bendicion-o.html
     "Actualización automática ¿Bendición o condena?"

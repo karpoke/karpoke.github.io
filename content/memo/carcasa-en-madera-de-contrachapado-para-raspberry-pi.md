@@ -34,7 +34,7 @@ cuenta es el grosor de la madera para las piezas laterales:
 Referencias
 -----------
 
-- [Punnet, a home printable cardboard case for your Raspberry Pi][plano]
+» [Punnet, a home printable cardboard case for your Raspberry Pi][plano]
 
   [1]: http://www.raspberrypi.org/archives/tag/cases
     "1"

@@ -3,7 +3,7 @@ Date: 2012-05-27 12:19
 Author: Nacho Cano
 Slug: why-nikola-testa-was-the-greatest-geek-who-ever-lived
 
-- [theoatmeal.com][] | [Response][] to Forbes
+» [theoatmeal.com][] | [Response][] to Forbes
 
   [theoatmeal.com]: http://theoatmeal.com/comics/tesla
     "theoatmeal.com"

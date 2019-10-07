@@ -10,7 +10,7 @@ Slug: los-geniales-huevos-de-pascua-de-lucasarts
 > trama, LucasArts escondió también en sus aventuras gráficas numerosos
 > huevos de pascua y guiños a sus películas o a otros videojuegos.
 
-- [tabernadegrog.blogspot.com.es][]
+» [tabernadegrog.blogspot.com.es][]
 
   [tabernadegrog.blogspot.com.es]: http://tabernadegrog.blogspot.com.es/2016/01/los-geniales-huevos-de-pascua-de.html
     "Los geniales Huevos de Pascua de LucasArts"

@@ -121,7 +121,7 @@ versión 4.48.0.
 Referencias
 -----------
 
-- [getmail documentation][]
+» [getmail documentation][]
 
   [copia de seguridad de GMail]: http://www.mattcutts.com/blog/backup-gmail-in-linux-with-getmail/
     "copia de seguridad de GMail"

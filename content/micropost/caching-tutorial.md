@@ -10,7 +10,7 @@ Slug: caching-tutorial
 > are interested in the minutia of the subject, please explore the
 > References and Further Information at the end.
 
-- [mnot.net][]
+» [mnot.net][]
 
   [mnot.net]: http://www.mnot.net/cache_docs/
     "Caching Tutorial"

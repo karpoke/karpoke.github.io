@@ -12,7 +12,7 @@ Slug: ubuntu-manual-project
 > más. Al centrarse en instrucciones fáciles de seguir, es adecuado para
 > todos los niveles de experiencia.
 
-- [ubuntu-manual.org][]
+» [ubuntu-manual.org][]
 
   [ubuntu-manual.org]: http://ubuntu-manual.org/
     "Ubuntu Manual Project"

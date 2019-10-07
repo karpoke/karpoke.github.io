@@ -141,10 +141,10 @@ tcp6       0      0 [::]:www                [::]:*             ESCUCHAR    9452/
 _Previously_
 ------------
 
-- [Cabeceras HTTP][]
-- [Ocultando cabeceras][]
-- [Cabeceras HTTPS personalizadas en Apache2][]
-- [w00tw00t]["w00tw00t"] en los logs de Apache
+» [Cabeceras HTTP][]
+» [Ocultando cabeceras][]
+» [Cabeceras HTTPS personalizadas en Apache2][]
+» [w00tw00t]["w00tw00t"] en los logs de Apache
 
   [Varnish]: http://www.varnish-cache.org/docs/2.1/
     "Varnish"
