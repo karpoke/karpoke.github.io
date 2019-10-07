@@ -56,7 +56,7 @@ siguientes medidas de protección.
      RequestHeader unset Range
     ```
 
--   [Limitar el número de intervalos][] mediante `mod_rewrite`:
+» [Limitar el número de intervalos][] mediante `mod_rewrite`:
 
     ```bash
      RewriteEngine On
@@ -64,7 +64,7 @@ siguientes medidas de protección.
     RewriteRule .* - [NS,L,F]
     ```
 
--   [Deshabilitar el módulo `mod_deflate`][Deshabilitar el módulo mod_deflate]:
+» [Deshabilitar el módulo `mod_deflate`][Deshabilitar el módulo mod_deflate]:
 
     ```bash
 $ sudo a2dismod deflate

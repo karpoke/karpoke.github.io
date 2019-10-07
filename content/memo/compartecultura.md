@@ -155,7 +155,7 @@ Algunos de los mejores buscadores de torrents:
     que no exista.
 -   __[Torrentbutler][].__ Un buscador solo de torrents para películas
     en HD. Entorno visual muy cuidado
--   [__Torrent-finder__.][] Buscador de buscadores. Gestiona tu consulta
+» [__Torrent-finder__.][] Buscador de buscadores. Gestiona tu consulta
     entre más de 150 buscadores.
 -   __[Torrentz][].__ Otro meta-buscador sencillo y práctico
 
@@ -418,7 +418,7 @@ Algunos de los mejores buscadores de torrents:
     con temática social y surgida a raíz del movimiento 15M. Sólo son
     descargables los que tienen una marca blanca en la ficha.
 
--   [__1libro1euro__.][] 30 libros gratis de autores contemporáneos a
+» [__1libro1euro__.][] 30 libros gratis de autores contemporáneos a
     cambio de una donación voluntaria por una buena causa.
 
 -   __[Youkioske.com][]__. Quizás la mayor comunidad para compartir
@@ -545,7 +545,7 @@ Algunos de los mejores buscadores de torrents:
     informes, conferencias seminarios y monografías sobre economía e
     innovación empresarial.
 
--   [__Scirus__.][] Buscador de documentos científicos con más de 440
+» [__Scirus__.][] Buscador de documentos científicos con más de 440
     millones de entradas. En inglés.
 
 -   __[Google Scholar][].__ Buscador para artículos de revistas

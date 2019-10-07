@@ -110,8 +110,8 @@ archivo `includes/ap_release.h`, deberíamos cambiar:
 Otras opciones para modificar la cabecera `ServerTokens` o evitar que
 aparezca, sin tener que compilar, son:
 
--   [utilizar el módulo `mod_security`][utilizar el módulo mod_security]
--   [utilizar Varnish][]
+» [utilizar el módulo `mod_security`][utilizar el módulo mod_security]
+» [utilizar Varnish][]
 
 * * * * *
 

@@ -63,14 +63,14 @@ que comprueban si han sido definidas previamente.
 A partir de ahora, podemos llenar el fichero `functions.php` de nuestro
 tema hijo con todas esas funciones imprescindibles de sitios como:
 
--   [WordPress Stack Exchange][]
--   [Cats who code][]
--   [Smashing Magazine][]
--   [WordPress Recipes][]
--   [WordPress Mix][]
--   [Dig WordPress][]
--   [WordPress Tutplus][]
--   [WordPress Code Snippets][]
+» [WordPress Stack Exchange][]
+» [Cats who code][]
+» [Smashing Magazine][]
+» [WordPress Recipes][]
+» [WordPress Mix][]
+» [Dig WordPress][]
+» [WordPress Tutplus][]
+» [WordPress Code Snippets][]
 
 ¿Y si ya estoy utilizando un tema hijo?
 ---------------------------------------

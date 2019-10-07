@@ -119,9 +119,9 @@ return render_to_response("my_list.html",
     context_instance=RequestContext(request))
 ```
 
--   [1] Existen aplicaciones para realizar búsquedas, como [haystack][]
+» [1] Existen aplicaciones para realizar búsquedas, como [haystack][]
     o `django-sphinx`.
--   [2] Según James Bennett, en "Django practical projects", utilizar
+» [2] Según James Bennett, en "Django practical projects", utilizar
     `_default_manager` en lugar de `objects` es una buena práctica, ya
     que podría ser que el modelo tuviera un _manager_ personalizado.
     Utilizar `_default_manager` siempre es seguro.

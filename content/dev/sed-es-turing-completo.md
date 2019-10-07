@@ -128,9 +128,9 @@ El siguiente programa concatena dos cadenas de unos:
 
 Otros ejemplos:
 
--   [Tetris][]
--   [Sokoban (juego][]
--   [Calculator][]
+» [Tetris][]
+» [Sokoban (juego][]
+» [Calculator][]
 
 Referencias
 -----------
