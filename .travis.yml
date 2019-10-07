@@ -5,12 +5,12 @@ python:
 
 branches:
   only:
-  - release
+    - release
 
 cache:
   directories:
-    - $PIP_CACHE_DIR
-    - $PIPENV_CACHE_DIR
+    - $HOME/.cache/pip  # PIP_CACHE_DIR
+    - $HOME/.cache/pipenv  # PIPENV_CACHE_DIR
 
 install:
   # pelican ghp-import Markdown typogrify beautifulsoup4 pyembed-markdown
@@ -29,13 +29,16 @@ git:
   submodules: true
 
 env:
-  - PIP_CACHE_DIR=$HOME/.cache/pip
-  - PIPENV_CACHE_DIR=$HOME/.cache/pipenv
   global:
     # https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml
     # https://docs.travis-ci.com/user/deployment/pages/#setting-the-github-token
     # https://github.com/settings/tokens
-    # to keep the token secret: travis-encrypt --env --password "GITHUB_TOKEN=<personal access token>" karpoke karpoke.github.io
+    # to keep the token secret:
+    #   travis-encrypt \
+    #     --env \
+    #     --password "GITHUB_TOKEN=<personal access token>" \
+    #     karpoke \
+    #     karpoke.github.io
     secure: y4flWat7HDCyMG9LoGvYd23Sb5dQu3mZhBEJWhSxz+kIwTEfMakXz+AKji5ofxWop98Q0Gb67chZxXFTo7PPnFQwembm0Cgq09MF0kPLFNuHURPwzoDIWWC2949cC0L42fcp3IJ7+NTrn+LXXavRvsgcoymzVSpIAQBcaSH9H1sSYkoA7lDNH39yBW31SyZMK5PraFUXlFxosyxSrF41Lz25Dqhvpy1m/qZbM92fa8Z11fDsEIUST9XUweuXqlPqu5akGPSYQmWz1V03Il2ggHP1IYuFCHl8Rd5kfmKxFbyOSrphC9YKHoYqPqTofShVSu+ruMM/ewCdIxjaLYohD0c1aOtf+K1o8Jan+bTXww6z96t9jpesIsevCgW+JULxZXUf/OAQzHB4D/swwF3qxJYN+ESvYnTWDvjkXYtcKAwli1Rn7tPmg71R/plX0wfqo2GQay9xEkaa2/14TSBYNTd7bL61oIKPTPLam53QYOJnFclqmvIwLQhShIY/QydIqzIcIoQdU/iLMLnC9u+An0Emtw+ZIl7AS+co9SAWGEpiWEI2BGG2Nx29u1wPQAOaIILacB/96tyQq5SOB2jQCbz179AFgdyJoxXsm453euxrSRF13lvy9HohqDIuc5wTbWcpsCwOdOs0CKxYiPchwjaAfKi+q7DiBwGyZQJTog8=
 
 deploy:
