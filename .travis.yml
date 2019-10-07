@@ -1,3 +1,5 @@
+# check this file: yamllint -d relaxed .travis.yml 
+
 language: python
 
 python:
@@ -25,7 +27,8 @@ script:
   - make publish
 
 git:
-  depth: 3
+  depth: false
+  quiet: true
   submodules: true
 
 env:
