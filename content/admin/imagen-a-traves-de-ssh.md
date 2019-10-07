@@ -9,14 +9,14 @@ Si tenemos acceso por SSH a otro ordenador, ambos con entorno gráfico,
 podemos redirigir la pantalla, el teclado y el ratón en ambos sentidos,
 es decir, podemos conseguir cosas como:
 
--   [aplicaciones remotas que se muestren en nuestro equipo][]
--   [aplicaciones remotas que se muestren en el equipo remoto][]
--   [aplicaciones locales que se muestren en el equipo remoto][]
--   [recibir una captura de pantalla del equipo remoto][]
--   [enviar una captura de pantalla de nuestro equipo al equipo
+» [aplicaciones remotas que se muestren en nuestro equipo][]
+» [aplicaciones remotas que se muestren en el equipo remoto][]
+» [aplicaciones locales que se muestren en el equipo remoto][]
+» [recibir una captura de pantalla del equipo remoto][]
+» [enviar una captura de pantalla de nuestro equipo al equipo
     remoto][]
--   [mostrar una imagen remota en nuestro equipo][]
--   [mostrar una imagen local en el equipo remoto][]
+» [mostrar una imagen remota en nuestro equipo][]
+» [mostrar una imagen local en el equipo remoto][]
 
 
 <a name="aplicaciones-remotas-a-servidor-local"></a>

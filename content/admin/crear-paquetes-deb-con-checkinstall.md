@@ -163,8 +163,8 @@ $ dpkg -I libsodium_0.4.5-1_i386.deb
 Ya que estamos, también he creado un .deb para dnscrypt. Si queréis
 ahorraros el trabajo, aquí tenéis ambos paquetes .deb:
 
--   [libsodium_0.4.5-1_i386.deb][]
--   [dnscrypt-proxy_1.4.0-1_i386.deb][]
+» [libsodium_0.4.5-1_i386.deb][]
+» [dnscrypt-proxy_1.4.0-1_i386.deb][]
 
 Referencias
 -----------

@@ -12,22 +12,22 @@ rastreado*
 Un pequeño listado de [complementos para Firefox para proteger nuestra
 privacidad][]:
 
--   [No-Script][], bloquea la ejecución de Javascript, Java, Flash,
+» [No-Script][], bloquea la ejecución de Javascript, Java, Flash,
     Silverlight y otros
--   [Ghostery][], bloquea aquellos servicios que recolectan información
+» [Ghostery][], bloquea aquellos servicios que recolectan información
     privada y del comportamiento del usuario
--   [BetterPrivacy][], bloquea las cookies de Flash
--   [Foxy Proxy][], permite cambiar entre _proxies_ basándose en reglas
+» [BetterPrivacy][], bloquea las cookies de Flash
+» [Foxy Proxy][], permite cambiar entre _proxies_ basándose en reglas
     y de forma automática
--   [DuckDuckGo][], incluye al buscador [DuckDuckGo][1], el cual
+» [DuckDuckGo][], incluye al buscador [DuckDuckGo][1], el cual
     presumiblemente [no registra información][] sobre los usuarios, en
     la lista de buscadores
 
 Otros complementos:
 
--   [HTTP-Everywhere][], permite realizar una [conexión segura al servidor web][],
+» [HTTP-Everywhere][], permite realizar una [conexión segura al servidor web][],
     siempre que ésta esté disponible
--   [Blacksheep][], nos alerta si un usuario está [utilizando Firesheep en la misma red][]
+» [Blacksheep][], nos alerta si un usuario está [utilizando Firesheep en la misma red][]
 
   [complementos para Firefox para proteger nuestra privacidad]: http://usemoslinux.blogspot.com/2011/07/las-5-mejores-extensiones-de-firefox.html
     "complementos para Firefox para proteger nuestra privacidad"
