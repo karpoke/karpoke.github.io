@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 ipython = "*"
+yamllint = "*"
 
 [packages]
 beautifulsoup4 = "==4.8.1"
