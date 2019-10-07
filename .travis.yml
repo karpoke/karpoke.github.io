@@ -1,17 +1,21 @@
 language: python
+
 python:
-  - 2.7
+  - 3.6
 
 branches:
   only:
   - release
 
-cache: pip
+cache:
+  directories:
+    - $PIP_CACHE_DIR
+    - $PIPENV_CACHE_DIR
 
 install:
-  # pip install --upgrade pip  # travis already has it
-  # pip install pelican ghp-import Markdown typogrify beautifulsoup4 pyembed-markdown
-  - pip install -r requirements.txt
+  # pelican ghp-import Markdown typogrify beautifulsoup4 pyembed-markdown
+  - pip install pipenv
+  - pipenv install
   - sudo apt-get install shellcheck
 
 before_script:
@@ -25,6 +29,8 @@ git:
   submodules: true
 
 env:
+  - PIP_CACHE_DIR=$HOME/.cache/pip
+  - PIPENV_CACHE_DIR=$HOME/.cache/pipenv
   global:
     # https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml
     # https://docs.travis-ci.com/user/deployment/pages/#setting-the-github-token

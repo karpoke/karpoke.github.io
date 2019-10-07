@@ -1,7 +1,6 @@
 # https://github.com/getpelican/pelican-blog/blob/master/.gitignore
 *~
 ._*
-*.lock
 *.DS_Store
 *.swp
 *.out
