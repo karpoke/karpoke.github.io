@@ -1,5 +1,4 @@
-# check this file: yamllint -d relaxed .travis.yml 
-
+---
 language: python
 
 python:
@@ -42,7 +41,17 @@ env:
     #     --password "GITHUB_TOKEN=<personal access token>" \
     #     karpoke \
     #     karpoke.github.io
-    secure: y4flWat7HDCyMG9LoGvYd23Sb5dQu3mZhBEJWhSxz+kIwTEfMakXz+AKji5ofxWop98Q0Gb67chZxXFTo7PPnFQwembm0Cgq09MF0kPLFNuHURPwzoDIWWC2949cC0L42fcp3IJ7+NTrn+LXXavRvsgcoymzVSpIAQBcaSH9H1sSYkoA7lDNH39yBW31SyZMK5PraFUXlFxosyxSrF41Lz25Dqhvpy1m/qZbM92fa8Z11fDsEIUST9XUweuXqlPqu5akGPSYQmWz1V03Il2ggHP1IYuFCHl8Rd5kfmKxFbyOSrphC9YKHoYqPqTofShVSu+ruMM/ewCdIxjaLYohD0c1aOtf+K1o8Jan+bTXww6z96t9jpesIsevCgW+JULxZXUf/OAQzHB4D/swwF3qxJYN+ESvYnTWDvjkXYtcKAwli1Rn7tPmg71R/plX0wfqo2GQay9xEkaa2/14TSBYNTd7bL61oIKPTPLam53QYOJnFclqmvIwLQhShIY/QydIqzIcIoQdU/iLMLnC9u+An0Emtw+ZIl7AS+co9SAWGEpiWEI2BGG2Nx29u1wPQAOaIILacB/96tyQq5SOB2jQCbz179AFgdyJoxXsm453euxrSRF13lvy9HohqDIuc5wTbWcpsCwOdOs0CKxYiPchwjaAfKi+q7DiBwGyZQJTog8=
+    secure: >
+      "y4flWat7HDCyMG9LoGvYd23Sb5dQu3mZhBEJWhSxz+kIwTEfMakXz+AKji5ofxWop98Q0Gb"
+      "67chZxXFTo7PPnFQwembm0Cgq09MF0kPLFNuHURPwzoDIWWC2949cC0L42fcp3IJ7+NTrn+"
+      "LXXavRvsgcoymzVSpIAQBcaSH9H1sSYkoA7lDNH39yBW31SyZMK5PraFUXlFxosyxSrF41L"
+      "z25Dqhvpy1m/qZbM92fa8Z11fDsEIUST9XUweuXqlPqu5akGPSYQmWz1V03Il2ggHP1IYuF"
+      "CHl8Rd5kfmKxFbyOSrphC9YKHoYqPqTofShVSu+ruMM/ewCdIxjaLYohD0c1aOtf+K1o8Ja"
+      "n+bTXww6z96t9jpesIsevCgW+JULxZXUf/OAQzHB4D/swwF3qxJYN+ESvYnTWDvjkXYtcKA"
+      "wli1Rn7tPmg71R/plX0wfqo2GQay9xEkaa2/14TSBYNTd7bL61oIKPTPLam53QYOJnFclqm"
+      "vIwLQhShIY/QydIqzIcIoQdU/iLMLnC9u+An0Emtw+ZIl7AS+co9SAWGEpiWEI2BGG2Nx29"
+      "u1wPQAOaIILacB/96tyQq5SOB2jQCbz179AFgdyJoxXsm453euxrSRF13lvy9HohqDIuc5w"
+      "TbWcpsCwOdOs0CKxYiPchwjaAfKi+q7DiBwGyZQJTog8="
 
 deploy:
   provider: pages
@@ -52,6 +61,8 @@ deploy:
   skip_cleanup: true
   keep_history: false
   target-branch: master
+  # yamllint disable rule:truthy
   on:
     branch: release
+  # yamllint enable rule:truthy
   verbose: true
