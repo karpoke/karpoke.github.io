@@ -10,9 +10,9 @@ Slug: volcado-de-memoria-ram-en-linux-lime
 > lleva por título “Guidelines for Evidence Collection and Archiving”,
 > (Directrices para la recolección y archivo de la Evidencia). Vuelvo a decir:
 > recomiendo encarecidamente su lectura.
-> 
+>
 > En esta ocasión, vamos a realizar un volcado de memoria de un sistema Linux.
-> 
+>
 > Para ello, vamos a usar [LiME][], (Linux Memory Extractor). LiME es una
 > herramienta desarrollada por 504ensics Labs, de código abierto, que permite
 > la adquisición de la memoria volátil de sistemas Linux y dispositivos basados

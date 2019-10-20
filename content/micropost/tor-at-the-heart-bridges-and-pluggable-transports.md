@@ -16,7 +16,7 @@ Slug: tor-at-the-heart-bridges-and-pluggable-transports
 > that works for most people. If obfs4 doesn’t work, try fte. If that doesn’t
 > work, it may mean that the default bridges are blocked, and you should get a
 > custom bridge from bridges.torproject.org. If the custom bridge doesn’t work,
-> try meek-azure or meek-amazon.  
+> try meek-azure or meek-amazon.
 
 » ssteele | [torproject.org][]
 
