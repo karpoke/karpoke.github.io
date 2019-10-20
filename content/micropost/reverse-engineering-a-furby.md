@@ -9,7 +9,7 @@ Slug: reverse-engineering-a-furby
 > of months looking at a passport scanner, one of my friends jokingly suggested
 > I hack a Furby, the notoriously annoying toy of late 1990s fame. Everyone
 > laughed, and we all moved on with our lives.
-> 
+>
 > However, the joke didn’t stop there. Within two weeks, this same friend said
 > they had a present for me. And that’s how I started reverse engineering a
 > Furby.

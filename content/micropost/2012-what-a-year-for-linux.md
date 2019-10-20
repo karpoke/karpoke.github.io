@@ -12,8 +12,8 @@ Slug: 2012-what-a-year-for-linux
 >
 > Third-party Video and Photo Credits In order of appearance:
 >
-> - Technology Academy of Finland 
-> - Amazon (Kindle) 
+> - Technology Academy of Finland
+> - Amazon (Kindle)
 > - Google (Chromebook)
 
 [!embed](https://www.youtube.com/watch?v=Unfx2qCj6Ao)
