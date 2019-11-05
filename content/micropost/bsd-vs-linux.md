@@ -26,7 +26,7 @@ Slug: bsd-vs-linux
 > anything; it’s the deeper differences that both explain and justify
 > why each group does things the way they do.
 
-- Matthew D. Fuller | [www.over-yonder.net/\~fullermd][]
+- Matthew D. Fuller | [over-yonder.net/\~fullermd][]
 
-  [www.over-yonder.net/\~fullermd]: http://www.over-yonder.net/~fullermd/rants/bsd4linux/01
+  [over-yonder.net/\~fullermd]: http://www.over-yonder.net/~fullermd/rants/bsd4linux/01
     "BSD vs Linux"

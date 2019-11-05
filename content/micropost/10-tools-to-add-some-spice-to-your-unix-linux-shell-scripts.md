@@ -6,7 +6,7 @@ Slug: 10-tools-to-add-some-spice-to-your-unix-linux-shell-scripts
 > With the following tools, you can build powerful, interactive, user-friendly
 > UNIX/Linux bash shell scripts.
 
-- nixCraft: Linux Tips, Hacks, Tutorials, And Ideas In Blog Format | [www.cyberciti.biz][]
+- nixCraft: Linux Tips, Hacks, Tutorials, And Ideas In Blog Format | [cyberciti.biz][]
 
-  [www.cyberciti.biz]: https://www.cyberciti.biz/tips/spice-up-your-unix-linux-shell-scripts.html
+  [cyberciti.biz]: https://www.cyberciti.biz/tips/spice-up-your-unix-linux-shell-scripts.html
     "10 Tools To Add Some Spice To Your UNIX/Linux Shell Scripts"

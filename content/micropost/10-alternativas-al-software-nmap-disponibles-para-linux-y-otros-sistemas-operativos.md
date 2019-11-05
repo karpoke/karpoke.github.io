@@ -8,7 +8,7 @@ Slug: 10-alternativas-al-software-nmap-disponibles-para-linux-y-otros-sistemas-o
 > Posee licencia GNU y se puede adquirir de forma totalmente gratuita. Está
 > desarrollado utilizando varios lenguajes, como C, Java o incluso Python.
 
-- RedesZone | [www.redeszone.net][]
+- RedesZone | [redeszone.net][]
 
-  [www.redeszone.net]: https://www.redeszone.net/2018/01/24/10-alternativas-al-software-nmap-disponibles-linux-otros-sistemas-operativos/
+  [redeszone.net]: https://www.redeszone.net/2018/01/24/10-alternativas-al-software-nmap-disponibles-linux-otros-sistemas-operativos/
     "10 alternativas al software Nmap disponibles para Linux y otros sistemas operativos"

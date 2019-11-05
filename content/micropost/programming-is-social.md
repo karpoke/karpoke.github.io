@@ -11,8 +11,8 @@ Slug: programming-is-social
 > about the places where they are stuck, as well as the places they used
 > to be stuck. War stories are the currency of the programmer community.
 
-- Eugene Wallingford | [][][www.cs.uni.edu][]
+- Eugene Wallingford | [][][cs.uni.edu][]
 
   []: http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2014-05.html#e2014-05-30T16_09_12.htm
-  [www.cs.uni.edu]: http://www.cs.uni.edu
+  [cs.uni.edu]: http://www.cs.uni.edu
     "Programming is social"

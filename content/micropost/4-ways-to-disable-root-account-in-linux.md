@@ -9,7 +9,7 @@ Slug: 4-ways-to-disable-root-account-in-linux
 > any kind of task on a system; to create/update/access/delete other users’
 > accounts, install/remove/upgrade software packages, and so much more.
 
-- Tecmint: Linux Howtos, Tutorials &amp; Guides | [www.tecmint.com][]
+- Tecmint: Linux Howtos, Tutorials &amp; Guides | [tecmint.com][]
 
-  [www.tecmint.com]: https://www.tecmint.com/disable-root-login-in-linux/
+  [tecmint.com]: https://www.tecmint.com/disable-root-login-in-linux/
     "4 Ways to Disable Root Account in Linux"

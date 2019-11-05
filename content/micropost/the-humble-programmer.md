@@ -41,7 +41,7 @@ Slug: the-humble-programmer
 > above story is, of course, that we must be very careful when we give
 > advice to younger people; sometimes they follow it!
 
-- Edsger W. Dijkstra | [www.cs.utexas.edu][]
+- Edsger W. Dijkstra | [cs.utexas.edu][]
 
-  [www.cs.utexas.edu]: http://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html/
+  [cs.utexas.edu]: http://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html/
     "The Humble Programmer"
