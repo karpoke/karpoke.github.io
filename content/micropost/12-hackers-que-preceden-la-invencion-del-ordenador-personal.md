@@ -11,7 +11,7 @@ Slug: 12-hackers-que-preceden-la-invencion-del-ordenador-personal
 > un par de dólares extra, y en casos más críticos, salvar vidas. Hoy vamos a
 > nombrar a algunos de ellos.
 
-- NeoTeo | [www.neoteo.com][]
+- NeoTeo | [neoteo.com][]
 
-  [www.neoteo.com]: https://www.neoteo.com/12-hackers-que-preceden-la-invencion-del-ordenador-personal/
+  [neoteo.com]: https://www.neoteo.com/12-hackers-que-preceden-la-invencion-del-ordenador-personal/
     "12 hackers que preceden la invención del ordenador personal"

@@ -27,7 +27,7 @@ requiere abrir todos los ficheros puede ser lenta.
 
 ![Maildir]({static}/images/maildir-300x270.png)
 
-<small>Fuente: [www.mattcutss.com][copia de seguridad de GMail]</small>
+<small>Fuente: [mattcutss.com][copia de seguridad de GMail]</small>
 
 
 ### mbox
@@ -40,7 +40,7 @@ de ficheros de red y que el formato se corrompe fácilmente.
 
 ![mbox]({static}/images/mbox.png)
 
-<small>Fuente: [www.mattcutss.com][copia de seguridad de GMail]</small>
+<small>Fuente: [mattcutss.com][copia de seguridad de GMail]</small>
 
 Realizar el backup
 ------------------

@@ -20,7 +20,7 @@ averiguar qué hace exactamente esta función. He aquí una pista:
 
 ![prime numnbers]({static}/images/prime-numbers-300x300.gif "prime-numbers")
 
-Fuente: [www.numberspiral.com]
+Fuente: [numberspiral.com]
 
 ```python
 
@@ -45,5 +45,5 @@ Fuente: [www.numberspiral.com]
     "zen"
   [elegante]: http://blog.garlicsim.org/post/3504711416#comment-156082460
     "elegante"
-  [www.numberspiral.com]: http://www.numberspiral.com/
+  [numberspiral.com]: http://www.numberspiral.com/
     "www.numberspiral.com"

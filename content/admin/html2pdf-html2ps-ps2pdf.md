@@ -17,7 +17,7 @@ respecto a la ruta proporcionada.
 
 ![Cool HTML Codes]({static}/images/cool-html-codes-300x225.jpg)
 
-<small>_Fuente: [www.techpin.com][]_</small>
+<small>_Fuente: [techpin.com][]_</small>
 
 Podemos crear un alias que reciba dos parámetros, la URL y el nombre que
 queremos ponerle al PDF:
@@ -29,5 +29,5 @@ $ html2pdf http://www.vala-project.org/doc/vala/ vala-doc.pdf
 
   [convertir una web a PDF]: http://www.atareao.es/ubuntu/conociendo-ubuntu/convetir-un-sitio-web-a-pdf-en-ubuntu/
     "convertir una web a PDF"
-  [www.techpin.com]: http://www.techpin.com/
+  [techpin.com]: http://www.techpin.com/
     "www.techpin.com"

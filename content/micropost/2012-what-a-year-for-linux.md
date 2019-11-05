@@ -8,7 +8,7 @@ Slug: 2012-what-a-year-for-linux
 > projects every single day. Join us as we review this amazing year and
 > celebrate Linux and its global community of developers, contributors and
 > sponsors. For more information about Linux, please visit
-> [www.linuxfoundation.org][] and [www.linux.com][].
+> [linuxfoundation.org][] and [linux.com][].
 >
 > Third-party Video and Photo Credits In order of appearance:
 >
@@ -20,9 +20,9 @@ Slug: 2012-what-a-year-for-linux
 
 - TheLinuxFoundation | [youtube.com][]
 
-  [www.linuxfoundation.org]: http://www.linuxfoundation.org
+  [linuxfoundation.org]: http://www.linuxfoundation.org
     "www.linuxfoundation.org"
-  [www.linux.com]: http://www.linux.com.
+  [linux.com]: http://www.linux.com.
     "www.linux.com"
   [youtube.com]: https://www.youtube.com/watch?v=Unfx2qCj6Ao
     "2012: What a Year for Linux"

@@ -31,7 +31,7 @@ Slug: preliminary-discussion-of-the-logical-design-of-an-electronic-computing-in
 > these program orders. There must, moreover, be a unit which can
 > understand these instructions and order their execution.
 
-» [www.cs.unc.edu/\~adyilie][]
+» [cs.unc.edu/\~adyilie][]
 
-  [www.cs.unc.edu/\~adyilie]: http://www.cs.unc.edu/~adyilie/comp265/vonNeumann.html
+  [cs.unc.edu/\~adyilie]: http://www.cs.unc.edu/~adyilie/comp265/vonNeumann.html
     "Preliminary discussion of the logical design of an electronic computing instrument"
