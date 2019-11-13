@@ -26,10 +26,11 @@ AUTHOR_FEED_RSS = None
 LINKS_WIDGET_NAME = "enlaces"
 LINKS = (
     ("Ignacio Cano", "https://www.ignaciocano.com"),
-    ("Pelican", "https://blog.getpelican.com/"),
-    ("Python", "https://www.python.org/"),
-    ("Travis CI", "https://travis-ci.org/"),
-    ("ImgBot", "https://imgbot.net/"),
+    ("Pelican", "https://blog.getpelican.com"),
+    ("Python", "https://www.python.org"),
+    ("Travis CI", "https://travis-ci.org"),
+    ("ImgBot", "https://imgbot.net"),
+    ("Mergify", "https://mergify.io"),
     ("Elegant", "https://github.com/Pelican-Elegant/"),
 )
 
@@ -99,6 +100,7 @@ STATIC_PATHS = [
     "extra/humans.txt",
     "extra/robots.txt",
     "extra/.imgbotconfig",
+    "extra/.mergify.yml",
 ]
 EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
@@ -109,6 +111,7 @@ EXTRA_PATH_METADATA = {
     "extra/humans.txt": {"path": "humans.txt"},
     "extra/robots.txt": {"path": "robots.txt"},
     "extra/.imgbotconfig": {"path": ".imgbotconfig"},
+    "extra/.mergify.yml": {"path": ".mergify.yml"},
 }
 
 # disable cache when experimenting with different settings
