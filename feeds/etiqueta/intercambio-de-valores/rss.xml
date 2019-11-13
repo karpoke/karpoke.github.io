@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - intercambio de valores</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 29 Mar 2011 20:00:00 +0200</lastBuildDate><item><title>Desordenando listas en Python</title><link>https://karpoke.ignaciocano.com/2011/03/29/desordenando-listas-en-python/</link><description>&lt;p&gt;Si tenemos una lista de elementos, por ejemplo:&lt;/p&gt;
+&lt;p&gt;```python&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;l = [ 2, 3, 5, 7, 11, 13, 17, 19 ]
+```&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="Deck Card Shuffler" src="https://karpoke.ignaciocano.com/images/deck_card_shuffler-300x213.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Y queremos desordenarla, pero con la condición de que ningún elemento
+ocupe la misma posición que ocupaba originalmente, podemos aplicar el
+&lt;a href="http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#Sattolo.27s_algorithm" title="algoritmo de Sottolo"&gt;algoritmo de Sottolo&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;```python&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;from random import randrange
+def sattoloCycle(items …&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 29 Mar 2011 20:00:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-29:/2011/03/29/desordenando-listas-en-python/</guid><category>algoritmo de Sattolo</category><category>intercambio de valores</category><category>permutación</category><category>python</category><category>shuffle</category></item><item><title>Intercambio de los valores de dos variables</title><link>https://karpoke.ignaciocano.com/2010/12/03/intercambio-de-los-valores-de-dos-variables/</link><description>&lt;p&gt;&lt;img alt="Teleporter" src="https://karpoke.ignaciocano.com/images/teleporter-300x299.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;En algunos lenguajes, intercambiar el valor de la variable &lt;code&gt;a&lt;/code&gt; por el de
+la variable &lt;code&gt;b&lt;/code&gt; implica, explícitamente, utilizar una variable temporal:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+t = a;
+a = b;
+b = t;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;En Python:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python
+a, b = b, a&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Pero esperen, aún hay más:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python
+a, b, c, d = d, c, b, a …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 03 Dec 2010 21:01:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-12-03:/2010/12/03/intercambio-de-los-valores-de-dos-variables/</guid><category>bash</category><category>intercambio de valores</category><category>python</category></item></channel></rss>

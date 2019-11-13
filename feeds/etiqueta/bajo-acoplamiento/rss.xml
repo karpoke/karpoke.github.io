@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - bajo acoplamiento</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 28 Oct 2017 16:42:00 +0200</lastBuildDate><item><title>Coding with clarity</title><link>https://karpoke.ignaciocano.com/2017/10/28/coding-with-clarity/</link><description>&lt;blockquote&gt;
+&lt;p&gt;Working code isn’t necessarily good code. Your code also needs to be easy to
+read, understand, and modify. It needs clarity, and to achieve that, it has
+to be organized well, with careful planning and proper separation of ideas
+taking place before you even open your code editor. Coding …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 28 Oct 2017 16:42:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2017-10-28:/2017/10/28/coding-with-clarity/</guid><category>buenas prácticas</category><category>principio de responsabilidad única</category><category>separación de comandos y consultas</category><category>bajo acoplamiento</category><category>alta cohesión</category></item><item><title>Bullet proofing Django models</title><link>https://karpoke.ignaciocano.com/2016/11/07/bullet-proofing-django-models/</link><description>&lt;blockquote&gt;
+&lt;p&gt;We recently added a bank account like functionality into one of our products.
+During the development we encountered some textbook problems and I thought it
+can be a good opportunity to go over some of the patterns we use in our
+Django models.
+This article was written in the order …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 07 Nov 2016 01:17:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-11-07:/2016/11/07/bullet-proofing-django-models/</guid><category>django</category><category>buenas prácticas</category><category>DRY</category><category>bajo acoplamiento</category><category>concurrencia</category><category>atomicidad</category><category>validación</category><category>testeo</category></item></channel></rss>

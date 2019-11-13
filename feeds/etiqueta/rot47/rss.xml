@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - rot47</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 16 Feb 2011 04:26:00 +0100</lastBuildDate><item><title>Descifrando al César en Bash</title><link>https://karpoke.ignaciocano.com/2011/02/16/descifrando-al-cesar-en-bash/</link><description>&lt;p&gt;Después de ver cómo se &lt;a href="https://karpoke.ignaciocano.com/2011/02/16/descifrando-al-cesar-en-python/" title="descifra al César en Python"&gt;descifra al César en Python&lt;/a&gt;, me he encontrado
+con un par de maneras elegantes de hacerlo desde Bash.&lt;/p&gt;
+&lt;h2&gt;Cifrado César&lt;/h2&gt;
+&lt;p&gt;Con &lt;code&gt;tr&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ echo "lorem ipsum dolor sit amet" | tr 'a-z' 'd-za-c'
+oruhp lsvxp groru vlw dphw
+$ echo "oruhp lsvxp groru vlw dphw" | tr 'd-za-c' …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 16 Feb 2011 04:26:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-16:/2011/02/16/descifrando-al-cesar-en-bash/</guid><category>cifrado césar</category><category>rot13</category><category>rot47</category><category>sed</category><category>tr</category><category>bsdgames</category></item><item><title>Descifrando al César en Python</title><link>https://karpoke.ignaciocano.com/2011/02/16/descifrando-al-cesar-en-python/</link><description>&lt;p&gt;Si lo que pretendemos es, dada una cadena, sustituir una serie de
+caracteres por otra, en Python es tan sencillo como pasarle al método
+&lt;code&gt;maketrans&lt;/code&gt; una cadena con los caracteres que queremos cambiar y otra
+con los caracteres a utilizar en su lugar. Ambas cadenas deberán tener
+la misma longitud …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 16 Feb 2011 03:40:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-16:/2011/02/16/descifrando-al-cesar-en-python/</guid><category>ASCII</category><category>cifrado césar</category><category>maketrans</category><category>python</category><category>rot13</category><category>rot47</category><category>translate</category><category>vigenere</category></item></channel></rss>

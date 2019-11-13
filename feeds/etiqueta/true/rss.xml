@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - true</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 19 Apr 2011 12:03:00 +0200</lastBuildDate><item><title>true</title><link>https://karpoke.ignaciocano.com/2011/04/19/true/</link><description>&lt;p&gt;```bash
+$ man true
+NAME
+       true - do nothing, successfully&lt;/p&gt;
+&lt;p&gt;SYNOPSIS
+       true [ignored command line arguments]
+       true OPTION&lt;/p&gt;
+&lt;p&gt;DESCRIPTION
+       Exit with a status code indicating success.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   --help display this help and exit
+
+   --version
+          output version information and exit
+
+   NOTE:  your  shell may have its own version of true, which usually supersedes
+   the …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 19 Apr 2011 12:03:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-04-19:/2011/04/19/true/</guid><category>true</category></item></channel></rss>

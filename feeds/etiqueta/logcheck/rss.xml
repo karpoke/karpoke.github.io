@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - logcheck</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 30 Jul 2011 19:21:00 +0200</lastBuildDate><item><title>sslh, compartiendo el puerto 443</title><link>https://karpoke.ignaciocano.com/2011/07/30/sslh-compartiendo-el-puerto-443/</link><description>&lt;p&gt;Podemos tener varios motivos para tener escuchando nuestro servicio de SSH en
+el puerto 443. Ya sea porque queremos evitarnos los continuos intentos de
+conexión que sufrimos por tener el servicio escuchando en el puerto 22 o porque
+desde donde estemos, ya sea en el trabajo o en un hotel …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 30 Jul 2011 19:21:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-07-30:/2011/07/30/sslh-compartiendo-el-puerto-443/</guid><category>apache</category><category>firewall</category><category>https</category><category>logcheck</category><category>puertos bien conocidos</category><category>ssh</category><category>ssl</category><category>sslh</category><category>ufw</category></item><item><title>Detectando intrusos en Ubuntu Maverick Meerkat</title><link>https://karpoke.ignaciocano.com/2011/03/07/detectando-intrusos-en-ubuntu-maverick-meerkat/</link><description>&lt;p&gt;Un artículo para tener en cuenta algunas de las acciones que podemos
+llevar a cabo para &lt;a href="http://dzulkifli.com/index.php?option=com_content&amp;amp;view=article&amp;amp;id=109:securing-maverick-meerkat&amp;amp;catid=35:ubuntu&amp;amp;Itemid=85" title="securizar Ubuntu Maverick Meerkat"&gt;securizar Ubuntu Maverick Meerkat&lt;/a&gt;. Algunos
+programas para facilitar la tarea de controlar los intentos de acceso al
+sistema:&lt;/p&gt;
+&lt;h2&gt;ufw&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ufw&lt;/code&gt; es una forma sencilla de manejar un cortafuegos. Nada más
+instalarlo, lo habilitamos:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 07 Mar 2011 22:11:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-07:/2011/03/07/detectando-intrusos-en-ubuntu-maverick-meerkat/</guid><category>10.10</category><category>denyhosts</category><category>detección de intrusos</category><category>fail2ban</category><category>firewall</category><category>http</category><category>https</category><category>log</category><category>logcheck</category><category>logwatch</category><category>psad</category><category>ssh</category><category>tiger</category><category>ufw</category></item><item><title>kernel time sync status change</title><link>https://karpoke.ignaciocano.com/2011/01/07/kernel-time-sync-status-change/</link><description>&lt;p&gt;Tras instalar &lt;code&gt;logcheck&lt;/code&gt;, un programa que escanea los ficheros de &lt;em&gt;log&lt;/em&gt;
+del sistema en busca de "líneas interesantes", comencé a recibir
+demasiados avisos del tipo:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+Jan  7 02:04:38 terminus ntpd[1117]: kernel time sync status change 6001
+    "1117"
+Jan  7 02:21:44 terminus ntpd[1117]: kernel …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 07 Jan 2011 06:04:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-01-07:/2011/01/07/kernel-time-sync-status-change/</guid><category>logcheck</category><category>ntp</category></item></channel></rss>

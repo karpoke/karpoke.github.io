@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - mechanize</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 10 Jun 2013 01:00:00 +0200</lastBuildDate><item><title>Iniciar sesión en DynDNS desde el terminal</title><link>https://karpoke.ignaciocano.com/2013/06/10/iniciar-sesion-en-dyndns-desde-el-terminal/</link><description>&lt;p&gt;Hace un par de semanas, DynDNS cambió su política de uso de las cuentas
+gratuitas para incluir una cláusula por la cual es necesario hacer
+mínimo un login al mes si no se quieren perder los dominios que
+tengamos:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Starting now, if you would like to maintain your free Dyn …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 10 Jun 2013 01:00:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2013-06-10:/2013/06/10/iniciar-sesion-en-dyndns-desde-el-terminal/</guid><category>dominio dinámico</category><category>dyndns</category><category>mechanize</category><category>python</category><category>script</category></item></channel></rss>

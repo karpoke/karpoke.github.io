@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - ftp</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 17 Jun 2011 14:59:00 +0200</lastBuildDate><item><title>Conectarse por SSH utilizando expect</title><link>https://karpoke.ignaciocano.com/2011/06/17/conectarse-por-ssh-utilizando-expect/</link><description>&lt;p&gt;&lt;code&gt;expect&lt;/code&gt; es un comando que "habla" con otros programas interactivos. Se
+definen unas reglas en función de lo que esperamos que nos digan esos
+programas y lo que queremos contestar.&lt;/p&gt;
+&lt;p&gt;Un típico ejemplo es realizar una conexión a un servicio de FTP o SSH, y
+utilizar &lt;code&gt;expect&lt;/code&gt; para que introduzca …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 17 Jun 2011 14:59:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-06-17:/2011/06/17/conectarse-por-ssh-utilizando-expect/</guid><category>clave pública</category><category>contraseña</category><category>expect</category><category>ftp</category><category>inicio de sesión</category><category>openssh</category><category>rsa</category><category>script</category><category>ssh</category></item></channel></rss>

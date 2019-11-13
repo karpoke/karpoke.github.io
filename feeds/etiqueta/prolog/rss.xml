@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - prolog</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 26 Dec 2015 19:02:00 +0100</lastBuildDate><item><title>«¿De quién es el pez?», resuelto mediante Prolog</title><link>https://karpoke.ignaciocano.com/2015/12/26/de-quien-es-el-pez-resuelto-mediante-prolog/</link><description>&lt;p&gt;Éste es un viejo &lt;a href="http://hipertextual.com/2015/12/acertijo-de-einstein" title="acertijo lógico"&gt;acertijo lógico&lt;/a&gt;, atribuido a Einstein:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;El inglés vive en la casa roja.&lt;/li&gt;
+&lt;li&gt;El sueco tiene perro.&lt;/li&gt;
+&lt;li&gt;El danés toma té.&lt;/li&gt;
+&lt;li&gt;El noruego vive en la primera casa.&lt;/li&gt;
+&lt;li&gt;El Alemán fuma Prince.&lt;/li&gt;
+&lt;li&gt;La casa verde queda inmediatamente a la izquierda de la blanca.&lt;/li&gt;
+&lt;li&gt;El dueño de la …&lt;/li&gt;&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 26 Dec 2015 19:02:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2015-12-26:/2015/12/26/de-quien-es-el-pez-resuelto-mediante-prolog/</guid><category>acertijo lógico</category><category>Einstein</category><category>problemas de matemáticas</category><category>prolog</category><category>swipl</category></item></channel></rss>

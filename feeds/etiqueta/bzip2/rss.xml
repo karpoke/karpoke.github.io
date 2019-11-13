@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - bzip2</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 13 Jun 2012 18:43:00 +0200</lastBuildDate><item><title>pbzip2, un bzip2 más rápido</title><link>https://karpoke.ignaciocano.com/2012/06/13/pbzip2-un-bzip2-mas-rapido/</link><description>&lt;p&gt;&lt;code&gt;pbzip2&lt;/code&gt;, de &lt;em&gt;parallel bzip2&lt;/em&gt;, permite aprovechar toda la potencia de
+los procesadores con más de un núcleo a la hora de comprimir o
+descomprimir, cosa que &lt;code&gt;bzip2&lt;/code&gt; no hace.&lt;/p&gt;
+&lt;h2&gt;Instalación&lt;/h2&gt;
+&lt;p&gt;En Ubuntu se encuentra disponible en los repositorios:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ sudo aptitude install pbzip2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Su uso es idéntico al de &lt;code&gt;bzip2 …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 13 Jun 2012 18:43:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-06-13:/2012/06/13/pbzip2-un-bzip2-mas-rapido/</guid><category>bzip2</category><category>compresión de archivos</category><category>pbzip2</category></item></channel></rss>

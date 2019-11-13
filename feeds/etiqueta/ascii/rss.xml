@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - ASCII</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 28 May 2011 17:32:00 +0200</lastBuildDate><item><title>UnicodeDecodeError con Wapiti</title><link>https://karpoke.ignaciocano.com/2011/05/28/unicodedecodeerror-con-wapiti/</link><description>&lt;p&gt;&lt;a href="http://wapiti.sourceforge.net/" title="Wapiti"&gt;Wapiti&lt;/a&gt; es un escáner de vulnerabilidades web basado en
+&lt;a href="http://omniumpotentior.wordpress.com/2011/05/18/fuzzing-web-con-wapiti/" title="_fuzzing_"&gt;&lt;em&gt;fuzzing&lt;/em&gt;&lt;/a&gt;. En la última versión, &lt;a href="http://wapiti.sourceforge.net/README" title="2.2.1"&gt;2.2.1&lt;/a&gt;, permite detectar
+vulnerabilidades referente a:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Errores de gestión de ficheros (include/require local y remoto,
+    fopen, readfile...)&lt;/li&gt;
+&lt;li&gt;Database Injection (PHP/JSP/ASP SQL Injections y XPath Injections)&lt;/li&gt;
+&lt;li&gt;XSS (Cross Site Scripting) Injection&lt;/li&gt;
+&lt;li&gt;LDAP …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 28 May 2011 17:32:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-05-28:/2011/05/28/unicodedecodeerror-con-wapiti/</guid><category>11.04</category><category>ASCII</category><category>crlf injection</category><category>cross site scripting</category><category>escáner de vulnerabilidades</category><category>ldap injection</category><category>python</category><category>sql injection</category><category>ubuntu natty narwhal</category><category>uft-8</category><category>unicode</category><category>wapiti</category><category>xpath injection</category><category>xss</category></item><item><title>urlencode y urldecode</title><link>https://karpoke.ignaciocano.com/2011/03/06/urlencode-y-urldecode/</link><description>&lt;p&gt;Los siguientes caracteres &lt;a href="http://tools.ietf.org/html/rfc3986#section-2.3" title="son los únicos que se pueden utilizar"&gt;son los únicos que se pueden utilizar&lt;/a&gt; en
+una URL:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+[a-zA-Z0-9-._~]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;El resto, se deben codificar usando el prefijo &lt;code&gt;%&lt;/code&gt; seguido del valor
+ASCII hexadecimal del carácter. Por ejemplo:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+( = %28
+) = %29
+/ = %2F
++ = %2B
+...&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Para &lt;a href="http://stackoverflow.com/questions/296536/urlencode-from-a-bash-script/298258#298258" title="codificar la URL"&gt;codificar la URL&lt;/a&gt; podemos utilizar la función &lt;code&gt;uri_escape&lt;/code&gt; del
+módulo &lt;code&gt;URI …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 06 Mar 2011 17:45:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-06:/2011/03/06/urlencode-y-urldecode/</guid><category>alias</category><category>ASCII</category><category>escape</category><category>perl</category><category>rfc3986</category><category>sed</category><category>uri</category><category>uri_escape</category><category>url</category><category>urldec</category><category>urlenc</category></item><item><title>Descifrando al César en Python</title><link>https://karpoke.ignaciocano.com/2011/02/16/descifrando-al-cesar-en-python/</link><description>&lt;p&gt;Si lo que pretendemos es, dada una cadena, sustituir una serie de
+caracteres por otra, en Python es tan sencillo como pasarle al método
+&lt;code&gt;maketrans&lt;/code&gt; una cadena con los caracteres que queremos cambiar y otra
+con los caracteres a utilizar en su lugar. Ambas cadenas deberán tener
+la misma longitud …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 16 Feb 2011 03:40:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-16:/2011/02/16/descifrando-al-cesar-en-python/</guid><category>ASCII</category><category>cifrado césar</category><category>maketrans</category><category>python</category><category>rot13</category><category>rot47</category><category>translate</category><category>vigenere</category></item></channel></rss>

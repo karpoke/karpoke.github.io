@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nacho Cano" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="apache, firewall, https, logcheck, puertos bien conocidos, ssh, ssl, sslh, ufw, admin, " />
+
+<meta property="og:title" content="sslh, compartiendo el puerto 443 "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2011/07/30/sslh-compartiendo-el-puerto-443/" />
+<meta property="og:description" content="Podemos tener varios motivos para tener escuchando nuestro servicio de SSH en el puerto 443. Ya sea porque queremos evitarnos los continuos intentos de conexión que sufrimos por tener el servicio escuchando en el puerto 22 o porque desde donde estemos, ya sea en el trabajo o en un hotel …" />
+<meta property="og:site_name" content="Karpoke" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2011-07-30T19:21:00+02:00" />
+<meta name="twitter:title" content="sslh, compartiendo el puerto 443 ">
+<meta name="twitter:description" content="Podemos tener varios motivos para tener escuchando nuestro servicio de SSH en el puerto 443. Ya sea porque queremos evitarnos los continuos intentos de conexión que sufrimos por tener el servicio escuchando en el puerto 22 o porque desde donde estemos, ya sea en el trabajo o en un hotel …">
+
+        <title>sslh, compartiendo el puerto 443  · Karpoke
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/admonition.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2011/07/30/sslh-compartiendo-el-puerto-443/">
+                sslh, compartiendo el puerto 443
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p>Podemos tener varios motivos para tener escuchando nuestro servicio de SSH en
+el puerto 443. Ya sea porque queremos evitarnos los continuos intentos de
+conexión que sufrimos por tener el servicio escuchando en el puerto 22 o porque
+desde donde estemos, ya sea en el trabajo o en un hotel, no estén permitidas
+las conexiones que no sean al puerto 80 o 443. Pero, ¿y si <a href="http://dischord.org/blog/2010/08/25/multiplexing-ssh-and-ssl/" title="ya tenemos un servidor web">ya tenemos un
+servidor web</a> escuchando en el puerto 443?</p>
+<p>Mediante <code>sslh</code> se puede multiplexar la conexión al puerto 443, de tal forma
+que dependiendo del protocolo utilizado para conectarnos reenvíe la conexión al
+puerto 22 si es SSH o al 443 si es SSL. La detección del protocolo se basa en
+los primeros bytes enviados por el cliente. Las conexiones SSH empiezan con la
+identificación del cliente utilizando la cadena "SSH-2.0", dependiendo de la
+versión. Los clientes OpenVPN cmoienzan con 0x00 0x0D 0x38. Hay dos tipos de
+clientes SSH, los que esperan que sea el servidor el primero que envíe su
+versión (<em>shy client</em>) y los que son ellos los que la envían primero (<em>bold
+client</em>).</p>
+<p><code>sslh</code> espera un tiempo para recibir la versión de SSH. Si transcurrido ese
+tiempo no ha recibido nada, asume que es un "cliente tímido" y se realiza la
+conexión con el servidor SSH. Si el cliente envía un paquete antes, <code>sslh</code> lo
+lee y se lo envía al servidor SSH o SSL, según corresponda.</p>
+<p>Uno de los inconvenientes de <code>sslh</code> es que tanto el servidor de SSH como el
+servidor web no ven la IP original, ya que la conexión se redirecciona desde
+<code>sslh</code>. Para poder limitar el acceso, <code>sslh</code> se puede compilar para que
+compruebe las listas de acceso definidas en <code>/etc/hosts.allow</code> y
+<code>/etc/hosts.deny</code>.</p>
+<h2>Instalación desde los respositorios de Ubuntu Lucid Lynx</h2>
+<p>Lo podemos instalar desde los respositorios. Es Ubuntu Lucid Lynx está la
+versión 1.6i-4:</p>
+<p><code>bash
+$ sudo aptitude install sslh</code></p>
+<p>Al principio, se encuentra desactivado, para obligarnos a leer la
+documentación. Después de echarle un ojo a la página del <code>man</code>, podemos
+configurarlo editando el fichero <code>/etc/default/sslh</code>:</p>
+<pre><code>DAEMON_OPTS="-u sslh -p 0.0.0.0:443 -s 127.0.0.1:22 -l 127.0.0.1:1443 -P /var/run/sslh.pid"
+RUN=yes
+</code></pre>
+<p>Estas opciones indican que el servicio se ejecutará como el usuario
+<code>sslh</code>, escuchando en todas las interfaces en el puerto 443, y
+redireccionará las conexiones SSH al puerto 22 de la máquina local, y
+las conexiones SSL al puerto 1443 de la máquina local. El archivo que
+contiene el PID del servicio es <code>/var/run/sslh.pid</code>. Para que pueda
+ejecutarse, debemos añadir la última línea, <code>RUN=yes</code>.</p>
+<h2>Instalación desde el código fuente</h2>
+<p>Ahora mismo van por la versión 1.9, así que en lugar de instalarlo desde los
+repositorios, lo haremos desde el código fuente:</p>
+<p><code>bash
+$ wget http://www.rutschle.net/tech/sslh-1.9.tar.gz
+$ tar xzvf sslh-1.9.tar.gz
+$ cd sslh-1.9/</code></p>
+<p>Si queremos compilar con la opción de que se comprueben las listas de acceso,
+deberemos realizar un par de acciones previas al <code>make install</code>:</p>
+<p><code>bash
+$ sudo aptitude install libwrap0{,-dev} tcpd
+$ sed -i 's/USELIBWRAP=./USELIBWRAP=1/' Makefile</code></p>
+<p>Ahora ya podemos pasar a la instalación:</p>
+<p><code>bash
+$ sudo make install
+$ sudo make install-debian</code></p>
+<p>Editamos el fichero <code>/etc/default/sslh</code> para configurar las interfaces.  Para
+evitar que haya cualquier tipo de colisión entre <code>openssh</code>, <code>apache2</code> y <code>sslh</code>,
+debemos asegurarnos de que no escuchan en el mismo puerto o que lo hacen en
+interfaces diferentes. En la interfaz en la que escucha <code>sslh</code> podríamos poner
+nuestra IP pública, si fuese fija. Sino, lo más cómodo será cambiar el puerto
+en el que escucha <code>apache2</code> para las conexiones seguras:</p>
+<pre><code>LISTEN=0.0.0.0:443
+SSH=localhost:22
+SSL=localhost:1443
+</code></pre>
+<h2>Configurar <code>apache2</code></h2>
+<p>Antes de reiniciar el servicio <code>sslh</code>, deberemos modificar la configuración de
+Apache para que no haya conflicto entre las interfaces.  En el fichero
+<code>/etc/apache2/ports.conf</code> cambiamos el número de puerto en el que escucha para
+<a href="https://karpoke.ignaciocano.com/2011/06/14/configurar-apache-para-servir-conexiones-seguras/" title="configurar apache para servir conexiones seguras">las conexiones seguras</a>:</p>
+<pre><code>Listen 1443 # formerly 443
+</code></pre>
+<p>No olvidemos cambiarlo también en la configuración del <code>VirtualHost</code>, por
+ejemplo en <code>/etc/apache2/sites-available/default-ssl</code>.</p>
+<p>Ahora, reiniciamos ambos servicios:</p>
+<p><code>bash
+$ sudo service sslh start
+$ sudo service apache2 restart</code></p>
+<p>Ya podemos probarlo.</p>
+<p><code>bash
+$ w3m https://mydomain.com
+$ ssh -p443 mydomain.com</code></p>
+<p>En los <em>logs</em>, <code>/var/log/syslog</code>, podremos ver algo como:</p>
+<pre><code>Jul 30 19:38:00 terminus sslh[25196]: connection from 1.2.3.4:42711 forwarded to SSL
+Jul 30 19:38:01 terminus sslh[25196]: connection from 1.2.3.4:42712 forwarded to SSL
+Jul 30 19:39:01 terminus sslh[25196]: connection from 1.2.3.4:43923 forwarded to SSH
+</code></pre>
+<h2><code>logcheck</code> nos alerta de cada conexión redirigida</h2>
+<p>Si tenemos instalado <a href="https://karpoke.ignaciocano.com/2011/03/07/detectando-intrusos-en-ubuntu-maverick-meerkat/" title="detectando intrusos en ubuntu"><code>logcheck</code></a> y <a href="https://karpoke.ignaciocano.com/2011/01/07/kernel-time-sync-status-change/" title="ignorar mensajes kernel time sync status change en logcheck">no queremos que nos lleguen
+estos avisos</a> cada vez, podemos crear el archivo
+<code>/etc/logcheck/ignore.d.server/sslh</code> e incluir la siguiente línea:</p>
+<p><code>bash
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sslh\[[[:digit:]]+\]: connection from [:.[:xdigit:]]+ forwarded to SS(L|H)$</code></p>
+<h2>¿Y el cortafuegos?</h2>
+<p>Si, por ejemplo, utilizamos <a href="https://karpoke.ignaciocano.com/2011/03/07/detectando-intrusos-en-ubuntu-maverick-meerkat/" title="detectando intrusos en ubuntu"><code>ufw</code></a>, podemos modificar la <a href="http://pka.engr.ccny.cuny.edu/~jmao/node/28" title="regla para permitir las conexiones">regla para
+permitir las conexiones</a> al puerto 22 únicamente desde la propia LAN:</p>
+<p><code>bash
+$ sudo ufw allow proto tcp from 192.168.50.0/24 to any port 22</code></p>
+<p>También podemos borrar la regla antigua:</p>
+<p><code>bash
+$ sudo ufw delete allow tcp/22</code></p>
+
+
+            
+            
+            
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2011/03/07/detectando-intrusos-en-ubuntu-maverick-meerkat/" title="Detectando intrusos en Ubuntu Maverick Meerkat">Detectando intrusos en Ubuntu Maverick Meerkat</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/06/14/usando-una-conexion-segura-en-el-panel-de-control-de-wordpress/" title="Usando una conexión segura en el panel de control de Wordpress">Usando una conexión segura en el panel de control de Wordpress</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/08/15/ssh-over-http-proxy/" title="SSH over HTTP-Proxy">SSH over HTTP-Proxy</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/09/11/http-strict-transport-security/" title="HTTP Strict Transport Security">HTTP Strict Transport Security</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/12/15/subdominios-dinamicos-en-un-alojamiento-con-dominio-dinamico-en-ovh/" title="Subdominios dinámicos en un alojamiento con dominio dinámico en OVH">Subdominios dinámicos en un alojamiento con dominio dinámico en OVH</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2011/07/30/endianness/" title="Previous: Endianness">Endianness</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2011/08/01/controlando-la-actividad-de-los-usuarios-conectados/" title="Next: Controlando la actividad de los usuarios conectados">Controlando la actividad de los usuarios conectados</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2011-07-30T19:21:00+02:00">Jul 30, 2011</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#admin-ref">admin</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#apache-ref">apache
+                    <span>14</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#firewall-ref">firewall
+                    <span>3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#https-ref">https
+                    <span>11</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#logcheck-ref">logcheck
+                    <span>3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#puertos-bien-conocidos-ref">puertos bien conocidos
+                    <span>2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ssh-ref">ssh
+                    <span>24</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ssl-ref">ssl
+                    <span>10</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#sslh-ref">sslh
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ufw-ref">ufw
+                    <span>9</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </div>
+        </section>
+</div>
+</article>
+                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2019 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - sql injection</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 28 May 2011 17:32:00 +0200</lastBuildDate><item><title>UnicodeDecodeError con Wapiti</title><link>https://karpoke.ignaciocano.com/2011/05/28/unicodedecodeerror-con-wapiti/</link><description>&lt;p&gt;&lt;a href="http://wapiti.sourceforge.net/" title="Wapiti"&gt;Wapiti&lt;/a&gt; es un escáner de vulnerabilidades web basado en
+&lt;a href="http://omniumpotentior.wordpress.com/2011/05/18/fuzzing-web-con-wapiti/" title="_fuzzing_"&gt;&lt;em&gt;fuzzing&lt;/em&gt;&lt;/a&gt;. En la última versión, &lt;a href="http://wapiti.sourceforge.net/README" title="2.2.1"&gt;2.2.1&lt;/a&gt;, permite detectar
+vulnerabilidades referente a:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Errores de gestión de ficheros (include/require local y remoto,
+    fopen, readfile...)&lt;/li&gt;
+&lt;li&gt;Database Injection (PHP/JSP/ASP SQL Injections y XPath Injections)&lt;/li&gt;
+&lt;li&gt;XSS (Cross Site Scripting) Injection&lt;/li&gt;
+&lt;li&gt;LDAP …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 28 May 2011 17:32:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-05-28:/2011/05/28/unicodedecodeerror-con-wapiti/</guid><category>11.04</category><category>ASCII</category><category>crlf injection</category><category>cross site scripting</category><category>escáner de vulnerabilidades</category><category>ldap injection</category><category>python</category><category>sql injection</category><category>ubuntu natty narwhal</category><category>uft-8</category><category>unicode</category><category>wapiti</category><category>xpath injection</category><category>xss</category></item></channel></rss>

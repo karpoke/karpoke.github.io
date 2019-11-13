@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - compresión de imágenes</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 17 Jul 2016 23:48:00 +0200</lastBuildDate><item><title>Lepton image compression: saving 22% losslessly from images at 15MB/s</title><link>https://karpoke.ignaciocano.com/2016/07/17/lepton-image-compression-saving-22-percent-losslessly-from-images-at-15mbps/</link><description>&lt;blockquote&gt;
+&lt;p&gt;Lepton achieves a 22% savings reduction for existing JPEG images, by
+predicting coefficients in JPEG blocks and feeding those predictions as
+context into an arithmetic coder. Lepton preserves the original file
+bit-for-bit perfectly. It compresses JPEG files at a rate of 5 megabytes per
+second and decodes them back to …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 17 Jul 2016 23:48:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-07-17:/2016/07/17/lepton-image-compression-saving-22-percent-losslessly-from-images-at-15mbps/</guid><category>compresión de imágenes</category><category>Letpon</category><category>sin pérdida de calidad</category><category>Dropbox</category></item></channel></rss>

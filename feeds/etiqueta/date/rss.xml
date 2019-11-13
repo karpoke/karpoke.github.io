@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - date</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 27 Oct 2010 12:55:00 +0200</lastBuildDate><item><title>y2k38</title><link>https://karpoke.ignaciocano.com/2010/10/27/y2k38/</link><description>&lt;p&gt;&lt;img alt="Nuke mushroom" src="https://karpoke.ignaciocano.com/images/nuke_mushroom-300x165.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;```bash
+$ grep INT_MAX /usr/include/limits.h&lt;/p&gt;
+&lt;h1&gt;define INT_MAX   2147483647&lt;/h1&gt;
+&lt;p&gt;$ date -u -d @2147483647
+mar ene 19 03:14:07 UTC 2038
+$ date -d @2147483647
+mar ene 19 04:14:07 CET 2038
+$ date -u -d @2147483648
+date: fecha ``@2147483648'' inválida
+```&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 27 Oct 2010 12:55:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-10-27:/2010/10/27/y2k38/</guid><category>cuarta dimensión</category><category>date</category><category>y2k38</category></item></channel></rss>

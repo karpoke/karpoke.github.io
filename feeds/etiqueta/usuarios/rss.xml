@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - usuarios</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 02 Aug 2012 13:45:00 +0200</lastBuildDate><item><title>De usuarios en WordPress</title><link>https://karpoke.ignaciocano.com/2012/08/02/de-usuarios-en-wordpress/</link><description>&lt;p&gt;Uno de los peores hábitos, en cuanto a seguridad en informática se
+refiere, es utilizar la cuenta de administrador de forma compulsiva para
+todo, sin importar que la tarea que estemos haciendo requiera
+privilegios de administrador o no. Esto se puede aplicar tanto a la
+cuenta de &lt;code&gt;root&lt;/code&gt; en un …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 02 Aug 2012 13:45:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-08-02:/2012/08/02/de-usuarios-en-wordpress/</guid><category>administrador</category><category>fingerprinting</category><category>mysql</category><category>privilegios</category><category>root</category><category>usuarios</category><category>wordpress</category></item></channel></rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - sudo</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 22 Jun 2012 20:41:00 +0200</lastBuildDate><item><title>Arch en Raspberry Pi</title><link>https://karpoke.ignaciocano.com/2012/06/22/arch-en-raspberry-pi/</link><description>&lt;p&gt;Después de haber estado usando la &lt;a href="https://karpoke.ignaciocano.com/2012/06/21/raspberry-pi/" title="Raspberry Pi"&gt;Raspberry Pi con Debian&lt;/a&gt;, he
+querido probar otras distribuciones, en este caso Arch.&lt;/p&gt;
+&lt;p&gt;Desde la página de &lt;a href="http://www.raspberrypi.org/downloads" title="descargas"&gt;descargas&lt;/a&gt;, nos bajamos el torrent, así no
+sobrecargamos el servidor.&lt;/p&gt;
+&lt;h2&gt;Crear una copia de la tarjeta SD&lt;/h2&gt;
+&lt;p&gt;He estado unos días trasteando con Debian, ya sabéis, modificando …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 22 Jun 2012 20:41:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-06-22:/2012/06/22/arch-en-raspberry-pi/</guid><category>arch</category><category>autocompletado</category><category>byobu</category><category>copia de seguridad</category><category>dd</category><category>pacman</category><category>pbzip2</category><category>raspberry pi</category><category>sudo</category><category>sudoers</category><category>tarjeta SD</category><category>visudo</category></item><item><title>sudo vacilón</title><link>https://karpoke.ignaciocano.com/2011/08/04/sudo-vacilon/</link><description>&lt;p&gt;&lt;code&gt;bash
+$ sudo passwd
+[sudo] password for user:
+Are you on drugs?
+[sudo] password for user:
+Maybe if you used more than just two fingers...
+[sudo] password for user:
+I’ve seen penguins that can type better than that.
+sudo: 3 incorrect password attempts&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Si te gustaría recibir un piropo cada …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 04 Aug 2011 13:32:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-08-04:/2011/08/04/sudo-vacilon/</guid><category>sudo</category><category>sudo rm -fr</category><category>visudo</category></item><item><title>Extraer un archivo de un archivo comprimido, desde el terminal</title><link>https://karpoke.ignaciocano.com/2011/06/30/extraer-un-archivo-de-un-archivo-comprimido-desde-el-terminal/</link><description>&lt;p&gt;Un día estás editando un archivo en un servidor remoto, &lt;a href="https://karpoke.ignaciocano.com/2011/06/17/compartiendo-una-conexion-por-ssh/" title="compartiendo una conexión por ssh"&gt;por &lt;code&gt;ssh&lt;/code&gt;&lt;/a&gt;,
+y, a la hora de guardar, te das cuenta de que has editado el fichero sin
+tener los privilegios suficientes, por lo que &lt;code&gt;vim&lt;/code&gt; se queja:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+E505: "app.config" is read-only (add ! to override)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;La solución es …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 30 Jun 2011 20:36:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-06-30:/2011/06/30/extraer-un-archivo-de-un-archivo-comprimido-desde-el-terminal/</guid><category>copia de seguridad</category><category>ssh</category><category>sudo</category><category>tar</category><category>tee</category><category>vim</category><category>wtf</category></item><item><title>With great power comes great responsibility</title><link>https://karpoke.ignaciocano.com/2011/03/07/with-great-power-comes-great-responsibility/</link><description>&lt;p&gt;Cuando ejecutamos &lt;code&gt;sudo&lt;/code&gt; por primera vez nos dice:&lt;/p&gt;
+&lt;p&gt;```bash
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#1) Respect the privacy of others.
+#2) Think before you type.
+#3) With great power comes great responsibility.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Trust... &lt;em&gt;my …&lt;/em&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 07 Mar 2011 22:40:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-07:/2011/03/07/with-great-power-comes-great-responsibility/</guid><category>sudo</category><category>sudo rm -fr</category></item></channel></rss>

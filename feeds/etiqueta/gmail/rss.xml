@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - gmail</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 04 Jun 2014 23:13:00 +0200</lastBuildDate><item><title>Configurar msmtp para enviar correo mediante GMail desde el terminal</title><link>https://karpoke.ignaciocano.com/2014/06/04/configurar-msmtp-para-enviar-correo-mediante-gmail-desde-el-terminal/</link><description>&lt;p&gt;Otra alternativa para enviar correos electrónicos desde el terminal sin
+necesidad de tener instalado un servidor de correo. Su configuración es
+incluso más sencilla que con &lt;a href="https://karpoke.ignaciocano.com/2012/01/14/configurar-ssmtp-para-enviar-correo-mediante-gmail-desde-el-terminal/" title="Configurar ssmtp para enviar correo mediante GMail desde el terminal"&gt;ssmtp&lt;/a&gt;. Si tenemos instalado &lt;code&gt;ssmtp&lt;/code&gt;
+deberemos desinstalarlo para poder instalar &lt;code&gt;msmtp&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Instalamos &lt;code&gt;mstmp-mta&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Instalamos el paquete &lt;code&gt;msmtp-mta&lt;/code&gt; desde los repositorios y editamos el
+fichero …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 04 Jun 2014 23:13:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-06-04:/2014/06/04/configurar-msmtp-para-enviar-correo-mediante-gmail-desde-el-terminal/</guid><category>bsd-mailx</category><category>gmail</category><category>msmtp</category><category>mta</category><category>sendmail</category><category>smtp</category><category>ssmtp</category></item><item><title>Configurar sSMTP para enviar correo mediante GMail desde el terminal</title><link>https://karpoke.ignaciocano.com/2012/01/14/configurar-ssmtp-para-enviar-correo-mediante-gmail-desde-el-terminal/</link><description>&lt;p&gt;Con esta receta, podremos enviar correos electrónicos desde el terminal
+sin necesidad de tener instalado un servidor de correo, simplemente
+utilizando una cuenta de GMail y  sSMTP, que se encuentra en los
+repositorios. Esta opción puede estar bien para enviar correos desde un
+sistema que utilizamos sólo nosotros, pero no …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 14 Jan 2012 13:50:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-01-14:/2012/01/14/configurar-ssmtp-para-enviar-correo-mediante-gmail-desde-el-terminal/</guid><category>bsd-mailx</category><category>cabeceras SMTP</category><category>gmail</category><category>mail</category><category>sendmail</category><category>sSMTP</category></item><item><title>Copia de seguridad de GMail con getmail</title><link>https://karpoke.ignaciocano.com/2011/07/08/copia-de-seguridad-de-gmail-con-getmail/</link><description>&lt;p&gt;Hay otras maneras de realizar una &lt;a href="http://www.mattcutts.com/blog/backup-gmail-in-linux-with-getmail/" title="copia de seguridad de GMail"&gt;copia de seguridad de GMail&lt;/a&gt;, como
+por ejemplo, usar Thunderbird, pero utilizar &lt;code&gt;getmail&lt;/code&gt; tiene la ventaja
+de que es sencillo, puede realizar la copia en formato Maildir y no
+necesitamos utilizar ningún gestor de correo electrónico.&lt;/p&gt;
+&lt;h2&gt;Maildir y mbox&lt;/h2&gt;
+&lt;p&gt;Básicamente, en GNU/Linux hay …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 08 Jul 2011 15:52:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-07-08:/2011/07/08/copia-de-seguridad-de-gmail-con-getmail/</guid><category>copia de seguridad</category><category>getmail</category><category>gmail</category><category>google</category><category>maildir</category><category>mbox</category></item><item><title>Abusando del código de estado HTTP</title><link>https://karpoke.ignaciocano.com/2011/02/22/abusando-del-codigo-de-estado-http/</link><description>&lt;script type="text/javascript"&gt;
+function logged_in(id, txt) {
+   document.getElementById(id).innerHTML = txt;
+}
+&lt;/script&gt;
+
+&lt;p&gt;En el artículo original, de &lt;a href="http://grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information" title="Mark Cardwell"&gt;Mark Cardwell&lt;/a&gt;, se muestra como podemos
+saber si un visitante de nuestra página está conectado a diferentes
+servicios, como GMail, Facebook, Twitter, etc, aprovechando las
+diferencias de comportamiento que muestran estos servicios al acceder a
+enlaces …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 22 Feb 2011 17:02:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-22:/2011/02/22/abusando-del-codigo-de-estado-http/</guid><category>facebook</category><category>fingerprinting</category><category>gmail</category><category>twitter</category></item></channel></rss>

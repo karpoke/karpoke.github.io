@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - ancho de banda</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 08 Apr 2012 13:27:00 +0200</lastBuildDate><item><title>Medir el ancho de banda entre dos equipos de la red</title><link>https://karpoke.ignaciocano.com/2012/04/08/medir-el-ancho-de-banda-entre-dos-equipos-de-la-red/</link><description>&lt;p&gt;Mediante &lt;code&gt;iperf&lt;/code&gt; podemos medir el ancho de banda de nuestra red. El
+programa se ejecuta en un equipo en modo servidor y se lanza desde cada
+equipo desde el que queramos medir el ancho de banda en modo cliente.&lt;/p&gt;
+&lt;p&gt;Por ejemplo, para probar el ancho de banda entre:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;un servidor …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 08 Apr 2012 13:27:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-04-08:/2012/04/08/medir-el-ancho-de-banda-entre-dos-equipos-de-la-red/</guid><category>ancho de banda</category><category>iperf</category><category>rendimiento</category><category>ufw</category></item></channel></rss>

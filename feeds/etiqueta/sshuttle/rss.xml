@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - sshuttle</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 20 Oct 2013 21:03:00 +0200</lastBuildDate><item><title>sshuttle, la VPN de los pobres</title><link>https://karpoke.ignaciocano.com/2013/10/20/sshuttle-la-vpn-de-los-pobres/</link><description>&lt;p&gt;&lt;a href="https://github.com/apenwarr/sshuttle" title="shuttle"&gt;shuttle&lt;/a&gt; es una herramienta que nos permite redirigir todo el tráfico
+a través de una conexión SSH, incluyendo las peticiones DNS. Está
+disponible tanto en los repositorios como en GitHub.&lt;/p&gt;
+&lt;p&gt;Su uso es sencillo. Para establecer la conexión:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ sshuttle --D --pidfile=/tmp/sshuttle.pid -r user@server:1234 --dns …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 20 Oct 2013 21:03:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2013-10-20:/2013/10/20/sshuttle-la-vpn-de-los-pobres/</guid><category>dns</category><category>proxy</category><category>ssh</category><category>sshuttle</category><category>tunnel</category><category>vpn</category></item></channel></rss>

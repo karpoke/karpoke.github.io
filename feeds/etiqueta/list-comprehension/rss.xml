@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - list comprehension</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 26 Feb 2011 00:49:00 +0100</lastBuildDate><item><title>Mystery</title><link>https://karpoke.ignaciocano.com/2011/02/26/mystery/</link><description>&lt;p&gt;Casi parece que está escrito en chino, o mejor dicho en &lt;em&gt;brainfuck&lt;/em&gt;, o
+puede que no sea muy &lt;em&gt;&lt;a href="https://karpoke.ignaciocano.com/2011/02/26/python-zen/" title="zen"&gt;zen&lt;/a&gt;&lt;/em&gt;, pero no deja de ser &lt;em&gt;&lt;a href="http://blog.garlicsim.org/post/3504711416#comment-156082460" title="elegante"&gt;elegante&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;```python&lt;/p&gt;
+&lt;p&gt;def mystery(n):
+    a = list(range(n))
+    [[(yield i) for a[::i] in [([0]*n)[::i]]] for i in a[2:] if a[i …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 26 Feb 2011 00:49:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-26:/2011/02/26/mystery/</guid><category>generador</category><category>list comprehension</category><category>python</category><category>yield</category></item></channel></rss>

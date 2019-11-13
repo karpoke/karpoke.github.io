@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - dnscrypt-proxy</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 17 Jan 2013 19:44:00 +0100</lastBuildDate><item><title>Cifrando el tráfico DNS</title><link>https://karpoke.ignaciocano.com/2013/01/17/cifrando-el-trafico-dns/</link><description>&lt;p&gt;&lt;a href="https://github.com/opendns/dnscrypt-proxy" title="DNSCrypt"&gt;DNSCrypt&lt;/a&gt; proporciona un servicio local para resolver nombres de
+dominio que permite cifrar el tráfico entre nuestro equipo y el servidor
+DNS primario, por defecto OpenDNS, lo que ayuda a protegerse de ataques
+MitM y &lt;em&gt;phishing&lt;/em&gt; y proporciona cierta confidencialidad en las
+peticiones DNS.&lt;/p&gt;
+&lt;h2&gt;Instalación&lt;/h2&gt;
+&lt;p&gt;Para instalarlo, basta que nos …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 17 Jan 2013 19:44:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2013-01-17:/2013/01/17/cifrando-el-trafico-dns/</guid><category>cloudns</category><category>dig</category><category>dns</category><category>dnscrypt</category><category>dnscrypt-proxy</category><category>dnssec</category><category>drill</category><category>gpg</category><category>importar claves públicas</category><category>ldnsutils</category><category>mitm</category><category>nslookup</category><category>opendns</category><category>opennic</category><category>phishing</category><category>proxy</category><category>unbound</category><category>verificar un paquete firmado</category></item></channel></rss>

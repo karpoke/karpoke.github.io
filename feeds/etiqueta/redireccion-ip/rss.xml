@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - redirección ip</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 29 Jun 2012 04:45:00 +0200</lastBuildDate><item><title>Raspbmc</title><link>https://karpoke.ignaciocano.com/2012/06/29/raspbmc/</link><description>&lt;p&gt;&lt;a href="http://www.raspbmc.com/" title="Raspbmc"&gt;Raspbmc&lt;/a&gt; es una distribución basada en debian que permite ejecutar
+XBMC en la Raspberry Pi, lo que la transforma en un interesante
+reproductor multimedia casero (HTPC).&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Raspbmc logo" src="https://karpoke.ignaciocano.com/images/raspbmc-logo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Esta distribución recibe actualizaciones constantes que añaden mejoras,
+actualizaciones de &lt;em&gt;drivers&lt;/em&gt; y nuevas funcionalidades. Además, permite
+compartir el contenido multimedia a través de NFS …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 29 Jun 2012 04:45:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-06-29:/2012/06/29/raspbmc/</guid><category>12.04</category><category>compartir conexión</category><category>debian</category><category>htpc</category><category>iptables</category><category>nat</category><category>raspberry pi</category><category>raspbmc</category><category>redirección ip</category><category>ubuntu precise pangolin</category><category>xbmc</category></item></channel></rss>

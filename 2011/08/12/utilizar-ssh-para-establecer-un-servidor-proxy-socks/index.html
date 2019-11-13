@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nacho Cano" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="autossh, firefox, proxy, proxy socks, proxychains, puertos bien conocidos, scp, sftp, SOCKS, ssh, tsocks, admin, " />
+
+<meta property="og:title" content="Utilizar SSH para establecer un servidor proxy SOCKS "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2011/08/12/utilizar-ssh-para-establecer-un-servidor-proxy-socks/" />
+<meta property="og:description" content="Un proxy SOCKS es un servidor que permite el acceso, normalmente, a través de un cortafuegos. Podemos utilizar SSH para crear un proxy SOCKSv5 en local, de tal manera que si configuramos una aplicación para que se conecte a través de este proxy, todo el tráfico vaya a través del …" />
+<meta property="og:site_name" content="Karpoke" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2011-08-12T13:07:00+02:00" />
+<meta name="twitter:title" content="Utilizar SSH para establecer un servidor proxy SOCKS ">
+<meta name="twitter:description" content="Un proxy SOCKS es un servidor que permite el acceso, normalmente, a través de un cortafuegos. Podemos utilizar SSH para crear un proxy SOCKSv5 en local, de tal manera que si configuramos una aplicación para que se conecte a través de este proxy, todo el tráfico vaya a través del …">
+
+        <title>Utilizar SSH para establecer un servidor proxy SOCKS  · Karpoke
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/admonition.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2011/08/12/utilizar-ssh-para-establecer-un-servidor-proxy-socks/">
+                Utilizar SSH para establecer un servidor proxy SOCKS
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p>Un <em>proxy</em> SOCKS es un servidor que permite el acceso, normalmente, a
+través de un cortafuegos. Podemos utilizar SSH para crear un <em>proxy</em>
+SOCKSv5 en local, de tal manera que si configuramos una aplicación para
+que se conecte a través de este <em>proxy</em>, todo el tráfico vaya a través
+del canal seguro creado por SSH, y sea como si la conexión con dicha
+aplicación se hiciera en la máquina remota a la cual nos hemos conectado
+por SSH. Además, podemos utilizarlo con varias aplicaciones y diferentes
+protocolos.</p>
+<p>Esto nos permitirá, por ejemplo, navegar por cualquier sitio sin las
+restricciones que pudiera tener la red a la cual nos hemos conectado, y
+sin que nadie de dicha red pueda conocer qué páginas visitamos. No se
+limita únicamente a navegar, también lo podemos utilizar para consultar
+el correo electrónico, mensajería instantánea, etc. Se puede aplicar a
+cualquier aplicación que pueda utilizar un <em>proxy</em> SOCKS. De hecho,
+incluso con aplicaciones que no están pensadas para utilizar este tipo
+de <em>proxies</em>.</p>
+<h2>Crear el <em>proxy</em> SOCKS</h2>
+<p>Para crear el <em>proxy</em> SOCKS, ejecutamos:</p>
+<p><code>bash
+$ ssh -f -N -D 1080 user@remotehost</code></p>
+<p>Con el argumento <code>-f</code> ejecutamos SSH en segundo plano. Con el argumento <code>-N</code>
+le decimos que no vamos a ejecutar ningún comando, por lo que no nos
+dará acceso a la consola. El argumento <code>-D</code> es el que crea una redirección
+de puertos local a nivel de aplicación. Crea un <em>socket</em> que escucha en
+el puerto especificado, en este caso el 1080, en nuestra máquina y
+cuando se realiza una conexión a este puerto, la conexión se
+redirecciona a través del canal seguro creado.</p>
+<p>Están soportadas las versiones SOCKS4 y SOCKS5. La principal diferencia
+entre las dos es que la versión 5 incorporando autenticación. Sólo el
+<code>root</code> puede redirigir puertos bien conocidos.</p>
+<h2>Configurar las aplicaciones</h2>
+<p>Una vez creado el <em>proxy</em> SOCKS, deberemos configurar la aplicación para
+que haga uso de él. Por ejemplo, para Firefox debemos ir a
+Editar &gt; Preferencias &gt; Avanzado &gt; Red &gt; Configuración de la conexión &gt; Configuración manual del <em>proxy</em>
+y ponemos:</p>
+<p><code>bash
+Servidor SOCKS: localhost
+Puerto:         1080</code></p>
+<h2><code>tsocks</code>, para las aplicaciones que no soportan el uso de <em>proxies</em></h2>
+<p>Hay aplicaciones que no están pensadas para utilizar un <em>proxy</em> SOCKS.
+En este caso, utilizaremos el comando <code>tsocks</code>, que permite que
+cualquier aplicación utilice este tipo de <em>proxies</em> de forma
+transparente. Después de instalarlo de los repositorios, debemos
+configurarlo editando el fichero <code>/etc/tsocks.conf</code>:</p>
+<p><code>bash
+server = 127.0.0.1
+server_type = 5
+server_port = 1080</code></p>
+<p>Para conseguir que una aplicación utilice nuestro <em>proxy</em> SOCKS:</p>
+<p><code>bash
+$ tsocks telnet google.com 80
+Trying 209.85.148.106...
+Connected to google.com.
+Escape character is '^]'.
+^C</code></p>
+<p><a href="http://rubensa.wordpress.com/2006/03/22/ubuntu-tsocks/" title="`tsocks` se basa en el concepto de &quot;shared library interceptor&quot;"><code>tsocks</code> se basa en el concepto de "shared library interceptor"</a>.
+Mediante el uso de la variable de entorno <code>LD_PRELOAD</code>, o del archivo
+<code>/etc/ld.so.preload</code>, <code>tsocks</code> se carga automáticamente en el espacio
+del proceso de cada programa ejecutado y sobrescribe la función
+<code>connect()</code>, de tal manera que cuando una aplicación quiere establecer
+una conexión TCP, en su lugar, pasa el control a <code>tsocks</code>, quien
+determina si la conexión tiene que realizarse a través de un servidor
+SOCKS (comprobando <code>/etc/tsocks.conf</code>) y, si es así, negocia la conexión
+utilizando la función <code>connect()</code> real.</p>
+<p>Si ejecutamos <code>tsocks</code> sin pasarle ningún parámetro, crea una consola en
+la que <code>tsocks</code> están incluido en la variable <code>LD_PRELOAD</code>.</p>
+<p>También podemos incluir <code>tsocks</code> en la variable de entorno <code>LD_PRELOAD</code>
+de la sesión actual, eliminarlo o comprobar si ya está incluido:</p>
+<p><code>bash
+$ tsocks -on
+$ tsocks -off
+$ tsocks -show</code></p>
+<p>Por lo visto, las aplicaciones Java no se entienden con <code>tsocks</code> y
+requieren una configuración especial:</p>
+<p><code>bash
+$ java -DsocksProxyHost=127.0.0.1 -DsocksProxyPort=1080 MiAplicacionJava</code></p>
+<h2><code>autossh</code>, cuando el <em>proxy</em> se cae</h2>
+<p>Podría pasar que la conexión se corte de vez en cuando. En este caso,
+podemos utilizar <code>autossh</code>:</p>
+<p><code>bash
+$ autossh -f -N -D 1080 user@remotehost</code></p>
+<h2>SSH a través del <em>proxy</em> SOCKS</h2>
+<p>Para conectarnos a un servidor SSH a través de otro, no es necesario que
+creemos un <em>proxy</em> SOCKS. Podemos conectarnos utilizando uno de
+intermediario:</p>
+<p><code>bash
+$ ssh -t remotehost ssh otherremotehost</code></p>
+<p>Esto se suele utilizar si, desde donde estamos, <code>remotehost</code> es
+accesible pero <code>otherremotehost</code> no lo es, pero éste sí es accesible
+desde el primero. Sin embargo, esta opción no va del todo bien si lo que
+queremos es utilizar <code>scp</code> o <code>sftp</code>.</p>
+<p>Podríamos utilizar <code>tsocks</code> para crear una <a href="http://crysol.org/es/node/1355" title="conexión SSH a través del _proxy_ SOCKS">conexión SSH a través del
+<em>proxy</em> SOCKS</a> que tenemos:</p>
+<p><code>bash
+$ tsocks ssh otherremotehost</code></p>
+<p>Pero <code>ssh</code> también dispone de sus propios métodos. La opción
+<code>ProxyCommand</code> sirve para conectar a un servidor SSH a través de un
+<em>proxy</em>:</p>
+<p><code>bash
+$ ssh -o "ProxyCommand /bin/nc.openbsd -x localhost %h %p" user@otherremotethost</code></p>
+<p>También podríamos añadir la configuración de <a href="http://www.statusq.org/archives/2008/07/03/1916/" title="`ProxyCommand` a nuestro archivo `~/.ssh/config`"><code>ProxyCommand</code> a nuestro
+archivo <code>~/.ssh/config</code></a>:</p>
+<p><code>bash
+Host otherremotehost
+     ProxyCommand ssh remotehost exec nc %h %p</code></p>
+<p>Ahora, para conectarnos a <code>otherremotehost</code> se puede hacer de forma
+directa, sin pasarle ningún parámetro demás a <code>ssh</code>. Ojo, necesitamos
+tener instalado <code>netcat</code> (<code>nc</code>) en ambos casos.</p>
+<p><code>bash
+$ ssh otherremotehost</code></p>
+<p>Con algún que otro truco, también se puede conseguir utilizar
+<a href="http://www.rschulz.eu/2008/09/ssh-proxycommand-without-netcat.html" title="`ProxyCommand` sin utilizar `netcat`"><code>ProxyCommand</code> sin utilizar <code>netcat</code></a>.
+Se trata de utilizar el fichero especial <code>/dev/tcp</code>:</p>
+<p><code>bash
+ProxyCommand ssh remotehost 'exec 3&lt;&gt;/dev/tcp/otherremotehost/22; cat &lt; &amp;3 &amp; cat &gt;&amp;3;kill $!'</code></p>
+<p>Para <a href="http://bugs.launchpad.net/ubuntu/+source/bash/+bug/215034/comments/15" title="comprobar que esta funcionalidad está soportada">comprobar que esta funcionalidad está soportada</a>, deberemos
+ejecutar lo siguiente en <code>remotehost</code>, lo que nos devolverá la página de
+inicio de Google:</p>
+<p><code>bash
+$ exec 3&lt;&gt;/dev/tcp/www.google.com/80
+$ echo -e "GET / HTTP/1.1\n\n"&gt;&amp;3
+$ cat &lt; &amp;3</code></p>
+<p>Si queremos estar seguros de que utilizamos <code>bash</code>, podemos poner:</p>
+<p><code>bash
+ProxyCommand ssh remotehost "/bin/bash -c 'exec 3&lt;&gt;/dev/tcp/otherremotehost/22; cat &lt; &amp;3 &amp; cat &gt;&amp;3;kill $!'"</code></p>
+<p>Los ficheros <code>/dev/tcp</code> y <code>/dev/udp</code> no existen, sino que son
+interpretados por Bash directamente.</p>
+<p><code>bash
+$ strings /bin/bash | grep -iE "tcp|udp"
+/dev/tcp/_/_
+/dev/udp/_/_</code></p>
+<h2>Encadenar <em>proxies</em> mediante <code>proxychains</code></h2>
+<p>Por último, podemos utilizar <code>proxychains</code> para encadenar varios
+<em>proxies</em>. <code>proxychains</code> acepta <em>proxies</em> SOCKS4, SOCKS4 y HTTP
+<em>proxies</em>. Los ficheros de configuración que se comprueban, en orden,
+son:</p>
+<ul>
+<li><code>./proxychains.conf</code></li>
+<li><code>$HOME/.proxychains/proxychains.conf</code></li>
+<li><code>/etc/proxychains.conf</code></li>
+</ul>
+<p>Lo más sencillo es editar el fichero <code>/etc/proxychains.conf</code>. Algunos
+ejemplos de configuración:</p>
+<p><code>bash
+socks5  192.168.67.78   1080    lamer   secret
+http    192.168.89.3    8080    justu   hidden
+socks4  192.168.1.49    1080
+http    192.168.39.93   8080</code></p>
+<p>En nuestro caso, tendríamos únicamente el <em>proxy</em> SOCKS que hemos creado
+nosotros:</p>
+<p><code>bash
+socks5  127.0.0.1       1080</code></p>
+<p>Para ejecutarlo, es similar a <code>tsocks</code>:</p>
+<p><code>bash
+$ proxychains telnet google.com 80
+ProxyChains-3.1 (http://proxychains.sf.net)
+|DNS-request| google.com
+|S-chain|-&lt;&gt;-127.0.0.1:9050-&lt;&gt;&lt;&gt;-4.2.2.2:53-&lt;&gt;&lt;&gt;-OK
+|DNS-response| google.com is 209.85.148.106
+Trying 209.85.148.106...
+|S-chain|-&lt;&gt;-127.0.0.1:1080-&lt;&gt;&lt;&gt;-209.85.148.106:80-&lt;&gt;&lt;&gt;-OK
+Connected to google.com.
+Escape character is '^]'.
+^C</code></p>
+
+
+            
+            
+            
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2011/07/02/i-do-not-want-to-be-tracked/" title="I do not want to be tracked">I do not want to be tracked</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/08/15/ssh-over-http-proxy/" title="SSH over HTTP-Proxy">SSH over HTTP-Proxy</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/05/15/saltandonos-el-portal-cautivo-de-una-biblioteca/" title="Saltándonos el portal cautivo de una biblioteca">Saltándonos el portal cautivo de una biblioteca</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2013/10/20/sshuttle-la-vpn-de-los-pobres/" title="sshuttle, la VPN de los pobres">sshuttle, la VPN de los pobres</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2016/11/06/streisand-una-herramienta-que-permite-evadir-la-censura-de-gobiernos-y-isp-de-forma-facil/" title="Streisand: Una herramienta que permite evadir la censura de Gobiernos y ISP de forma fácil">Streisand: Una herramienta que permite evadir la censura de Gobiernos y ISP de forma fácil</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2011/08/07/instalacion-automatica-de-las-fuentes-para-web-de-google/" title="Previous: Instalación automática de las fuentes para web de Google">Instalación automática de las fuentes para web de Google</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2011/08/14/obteniendo-la-ip-publica-la-ip-privada-y-la-direccion-mac-en-bash/" title="Next: Obteniendo la IP pública, la IP privada y la dirección MAC en Bash">Obteniendo la IP pública, la IP privada y la dirección MAC en Bash</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2011-08-12T13:07:00+02:00">Aug 12, 2011</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#admin-ref">admin</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#autossh-ref">autossh
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#firefox-ref">firefox
+                    <span>7</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#proxy-ref">proxy
+                    <span>9</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#proxy-socks-ref">proxy socks
+                    <span>3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#proxychains-ref">proxychains
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#puertos-bien-conocidos-ref">puertos bien conocidos
+                    <span>2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#scp-ref">scp
+                    <span>4</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#sftp-ref">sftp
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#socks-ref">SOCKS
+                    <span>2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ssh-ref">ssh
+                    <span>24</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#tsocks-ref">tsocks
+                    <span>1</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </div>
+        </section>
+</div>
+</article>
+                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2019 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

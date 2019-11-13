@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - daemon</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 09 Feb 2012 02:31:00 +0100</lastBuildDate><item><title>Instalar deluge en Ubuntu Lucid Lynx</title><link>https://karpoke.ignaciocano.com/2012/02/09/instalar-deluge-en-ubuntu-lucid-lynx/</link><description>&lt;p&gt;&lt;code&gt;deluge&lt;/code&gt; es un cliente de BitTorrent en el que la interfaz está separada
+del núcleo, que corre como un servicio, lo que posibilita usarlo de
+forma remota a través de una interfaz web.&lt;/p&gt;
+&lt;h2&gt;Instalación&lt;/h2&gt;
+&lt;p&gt;Podemos instalar &lt;code&gt;deluge&lt;/code&gt; y su interfaz web desde los repositorios:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ sudo aptitude install deluged deluge-webui …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 09 Feb 2012 02:31:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-02-09:/2012/02/09/instalar-deluge-en-ubuntu-lucid-lynx/</guid><category>10.04</category><category>bittorrent</category><category>daemon</category><category>deluge</category><category>p2p</category><category>script</category><category>torrent</category><category>ubuntu lucid lyns</category><category>ufw</category><category>web</category></item></channel></rss>

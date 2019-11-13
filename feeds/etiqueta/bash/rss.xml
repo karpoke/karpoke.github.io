@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - bash</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 01 Aug 2011 19:23:00 +0200</lastBuildDate><item><title>Limitando el número de procesos por usuario</title><link>https://karpoke.ignaciocano.com/2011/08/01/limitando-el-numero-de-procesos-por-usuario/</link><description>&lt;p&gt;Mediante el comando &lt;code&gt;ulimit&lt;/code&gt; podemos consultar y controlar el valor de los
+recursos disponibles para la consola y los &lt;a href="https://karpoke.ignaciocano.com/2010/12/16/mejora-del-rendimiento-interactivo-agrupando-tareas-por-terminal/" title="mejora del rendimiento interactivo agrupando tareas por terminal"&gt;procesos que puedan ser iniciados
+desde ella&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Las diferentes opciones que acepta este comando son:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+-a     All current limits are reported
+-b     The maximum socket buffer size
+-c     The maximum …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 01 Aug 2011 19:23:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-08-01:/2011/08/01/limitando-el-numero-de-procesos-por-usuario/</guid><category>bash</category><category>bomba fork</category><category>c</category><category>limits.conf</category><category>perl</category><category>python</category><category>ubuntu</category><category>ulimit</category></item><item><title>Variables variables en Bash</title><link>https://karpoke.ignaciocano.com/2011/06/29/variables-variables-en-bash/</link><description>&lt;p&gt;Las variables variables se utilizan cuando queremos tener nombres de
+variables que puedan usarse y modificarse de forma dinámica. &lt;a href="http://php.net/manual/en/language.variables.variable.php" title="PHP permite su uso"&gt;PHP
+permite su uso&lt;/a&gt; de forma directa:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;php
+&amp;lt;?php
+$a = 'hello';
+?&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Una variable variable toma el valor de una variable y lo usa para el
+nombre de la variable. Podemos utilizar …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 29 Jun 2011 12:11:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-06-29:/2011/06/29/variables-variables-en-bash/</guid><category>bash</category><category>eval</category><category>ksh</category><category>php</category><category>shell</category><category>variables</category></item><item><title>Intercambio de los valores de dos variables</title><link>https://karpoke.ignaciocano.com/2010/12/03/intercambio-de-los-valores-de-dos-variables/</link><description>&lt;p&gt;&lt;img alt="Teleporter" src="https://karpoke.ignaciocano.com/images/teleporter-300x299.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;En algunos lenguajes, intercambiar el valor de la variable &lt;code&gt;a&lt;/code&gt; por el de
+la variable &lt;code&gt;b&lt;/code&gt; implica, explícitamente, utilizar una variable temporal:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+t = a;
+a = b;
+b = t;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;En Python:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python
+a, b = b, a&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Pero esperen, aún hay más:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python
+a, b, c, d = d, c, b, a …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 03 Dec 2010 21:01:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-12-03:/2010/12/03/intercambio-de-los-valores-de-dos-variables/</guid><category>bash</category><category>intercambio de valores</category><category>python</category></item></channel></rss>

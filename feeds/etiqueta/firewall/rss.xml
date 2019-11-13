@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - firewall</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 12 Jun 2012 20:05:00 +0200</lastBuildDate><item><title>webmin, configurando nuestro servidor a través del navegador</title><link>https://karpoke.ignaciocano.com/2012/06/12/webmin-configurando-nuestro-servidor-a-traves-del-navegador/</link><description>&lt;p&gt;&lt;a href="http://www.webmin.com/" title="Webmin"&gt;Webmin&lt;/a&gt; es una interfaz web para la administración de un servidor,
+compatible con cualquier navegador moderno, mediante la que podemos
+configurar cuentas de usuario, Apache, DNS, intercambio de ficheros,
+etc. Es una alternativa a la configuración manual de ficheros.&lt;/p&gt;
+&lt;h2&gt;Instalación&lt;/h2&gt;
+&lt;p&gt;Instalamos las dependencias:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ sudo aptitude install perl libnet-ssleay-perl openssl …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 12 Jun 2012 20:05:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-06-12:/2012/06/12/webmin-configurando-nuestro-servidor-a-traves-del-navegador/</guid><category>firewall</category><category>ubuntu</category><category>ufw</category><category>webmin</category></item><item><title>sslh, compartiendo el puerto 443</title><link>https://karpoke.ignaciocano.com/2011/07/30/sslh-compartiendo-el-puerto-443/</link><description>&lt;p&gt;Podemos tener varios motivos para tener escuchando nuestro servicio de SSH en
+el puerto 443. Ya sea porque queremos evitarnos los continuos intentos de
+conexión que sufrimos por tener el servicio escuchando en el puerto 22 o porque
+desde donde estemos, ya sea en el trabajo o en un hotel …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 30 Jul 2011 19:21:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-07-30:/2011/07/30/sslh-compartiendo-el-puerto-443/</guid><category>apache</category><category>firewall</category><category>https</category><category>logcheck</category><category>puertos bien conocidos</category><category>ssh</category><category>ssl</category><category>sslh</category><category>ufw</category></item><item><title>Detectando intrusos en Ubuntu Maverick Meerkat</title><link>https://karpoke.ignaciocano.com/2011/03/07/detectando-intrusos-en-ubuntu-maverick-meerkat/</link><description>&lt;p&gt;Un artículo para tener en cuenta algunas de las acciones que podemos
+llevar a cabo para &lt;a href="http://dzulkifli.com/index.php?option=com_content&amp;amp;view=article&amp;amp;id=109:securing-maverick-meerkat&amp;amp;catid=35:ubuntu&amp;amp;Itemid=85" title="securizar Ubuntu Maverick Meerkat"&gt;securizar Ubuntu Maverick Meerkat&lt;/a&gt;. Algunos
+programas para facilitar la tarea de controlar los intentos de acceso al
+sistema:&lt;/p&gt;
+&lt;h2&gt;ufw&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ufw&lt;/code&gt; es una forma sencilla de manejar un cortafuegos. Nada más
+instalarlo, lo habilitamos:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 07 Mar 2011 22:11:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-07:/2011/03/07/detectando-intrusos-en-ubuntu-maverick-meerkat/</guid><category>10.10</category><category>denyhosts</category><category>detección de intrusos</category><category>fail2ban</category><category>firewall</category><category>http</category><category>https</category><category>log</category><category>logcheck</category><category>logwatch</category><category>psad</category><category>ssh</category><category>tiger</category><category>ufw</category></item></channel></rss>

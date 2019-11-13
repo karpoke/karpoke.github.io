@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - banca en línea</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 25 Oct 2010 11:50:00 +0200</lastBuildDate><item><title>Sa Nostra y SSL</title><link>https://karpoke.ignaciocano.com/2010/10/25/sa-nostra-y-ssl/</link><description>&lt;p&gt;Leyendo la comparativa de &lt;a href="http://www.securitybydefault.com/2010/10/bancos-y-ssl-quien-aprueba.html" title="SbD"&gt;SbD&lt;/a&gt; sobre el uso de SSL por parte de los
+bancos online, estos son los resultados de Sa Nostra:&lt;/p&gt;
+&lt;p&gt;URL: https://linea.sanostra.es&lt;/p&gt;
+&lt;h2&gt;Verificación SSLv2&lt;/h2&gt;
+&lt;p&gt;Comando:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ openssl s_client -ssl2 -connect linea.sanostra.es:443&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Bien: no da soporte&lt;/p&gt;
+&lt;h2&gt;Tipo de certificado (Normal/EV)&lt;/h2&gt;
+&lt;p&gt;Esto …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 25 Oct 2010 11:50:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-10-25:/2010/10/25/sa-nostra-y-ssl/</guid><category>banca en línea</category><category>openssl</category><category>ssl</category></item></channel></rss>

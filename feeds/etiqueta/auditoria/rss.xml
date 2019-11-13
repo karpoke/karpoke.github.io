@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - auditoría</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 03 Dec 2016 19:17:00 +0100</lastBuildDate><item><title>Lynis para auditorías de seguridad</title><link>https://karpoke.ignaciocano.com/2012/07/14/lynis-para-auditorias-de-seguridad/</link><description>&lt;p&gt;&lt;a href="http://www.rootkit.nl/projects/lynis.html" title="Lynis"&gt;Lynis&lt;/a&gt; es una herramienta para realizar auditorías en sistemas Unix.
+Escanea el sistema en busca de vulnerabilidades y fallos de seguridad.
+También muestra información general del sistema, paquetes instalados y
+errores de configuración.&lt;/p&gt;
+&lt;p&gt;Su objetivo es ayudar en el proceso de auditoría, actualización del
+software y escaneo de vulnerabilidades y …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 14 Jul 2012 19:23:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-07-14:/2012/07/14/lynis-para-auditorias-de-seguridad/</guid><category>auditoría</category><category>Basel II</category><category>cron</category><category>escáner de vulnerabilidades</category><category>GLBA</category><category>HIPAA</category><category>malware</category><category>PCI DSS</category><category>SOX</category><category>wget</category><category>apt-key</category></item></channel></rss>

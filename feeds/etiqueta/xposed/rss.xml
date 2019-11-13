@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - xposed</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 25 Nov 2016 22:26:00 +0100</lastBuildDate><item><title>Comprobar la firma de Xposed</title><link>https://karpoke.ignaciocano.com/2016/11/25/comprobar-la-firma-de-xposed/</link><description>&lt;p&gt;Ayer mismo, se subió una &lt;a href="http://dl-xda.xposed.info/framework/sdk23/arm/" title="Xposed v87 SDK23 ARM"&gt;nueva versión&lt;/a&gt; del &lt;em&gt;framework&lt;/em&gt; &lt;a href="http://repo.xposed.info/" title="Xposed framework"&gt;Xposed&lt;/a&gt;, el
+cual tengo instalado en un Samsung S4.&lt;/p&gt;
+&lt;p&gt;Si queremos descargarla y comprobar mediante la firma que lo que nos hemos
+bajado no ha sido alterado, no tenemos más que hacer uso de &lt;code&gt;gpg&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Descargamos los archivos:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ wget http …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 25 Nov 2016 22:26:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-11-25:/2016/11/25/comprobar-la-firma-de-xposed/</guid><category>xposed</category><category>gpg</category><category>comprobación de firma</category><category>cyanogenmod</category></item></channel></rss>

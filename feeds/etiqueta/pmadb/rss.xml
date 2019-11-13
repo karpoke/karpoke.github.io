@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - pmadb</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 10 May 2012 12:26:00 +0200</lastBuildDate><item><title>Opciones adicionales para trabajar con tablas vinculadas en phpMyAdmin</title><link>https://karpoke.ignaciocano.com/2012/05/10/opciones-adicionales-para-trabajar-con-tablas-vinculadas-en-phpmyadmin/</link><description>&lt;p&gt;&lt;img alt="PhpMyAdmin Logo" src="https://karpoke.ignaciocano.com/images/PhpMyAdmin-Logo-300x212.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Puede que alguna vez hayamos visto este mensaje en el panel de
+administración de phpMyAdmin:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Las opciones adicionales para trabajar con tablas vinculadas fueron
+desactivadas. Para saber porqué, dé clic &lt;a href="http://www.phpmyadmin.net/localized_docs/es/Documentation.html#tracking" title="aquí"&gt;aquí&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Si seguimos el enlace, nos lleva a la documentación donde nos explican
+que, a partir de la versión 3 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 10 May 2012 12:26:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-05-10:/2012/05/10/opciones-adicionales-para-trabajar-con-tablas-vinculadas-en-phpmyadmin/</guid><category>consultas sql</category><category>mysql</category><category>phpMyAdmin</category><category>pmadb</category><category>seguimiento</category><category>tablas vinculadas</category><category>tracking</category></item></channel></rss>

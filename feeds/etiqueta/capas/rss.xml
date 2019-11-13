@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - capas</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 27 May 2012 13:10:00 +0200</lastBuildDate><item><title>Interactive map of Linux kernel</title><link>https://karpoke.ignaciocano.com/2012/05/27/interactive-map-of-linux-kernel/</link><description>&lt;blockquote&gt;
+&lt;p&gt;The interactive Linux kernel map helps you traverse complex interconnections
+between subsystems of the kernel while you explore its source code. A Linux
+hacker, trying to track down a bug or just understand how some subsystem
+works, can get exhausted just trying to figure out what invokes what ” so the …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 27 May 2012 13:10:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-05-27:/2012/05/27/interactive-map-of-linux-kernel/</guid><category>mapa interactivo</category><category>kernel</category><category>Linux</category><category>subsitemas</category><category>capas</category><category>funciones</category><category>interfaces</category><category>dispositivos</category><category>código fuente</category></item></channel></rss>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - memo</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 15 Dec 2016 07:58:00 +0100</lastBuildDate><item><title>Instalar Spotify en Ubuntu 16.04</title><link>https://karpoke.ignaciocano.com/2016/12/15/instalar-spotify-en-ubuntu-16-04/</link><description>&lt;p&gt;Si queremos instalar el cliente de Spotify en Ubuntu Xenial Xerus, tan sólo
+tenemos que instalar la clave:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+Executing: /tmp/tmp.imoQkQ9ZVV/gpg.1.sh --keyserver
+hkp://keyserver.ubuntu.com:80
+--recv-keys
+BBEBDCB318AD50EC6865090613B00F1FD2C19886
+gpg: solicitando clave D2C19886 de …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 15 Dec 2016 07:58:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-12-15:/2016/12/15/instalar-spotify-en-ubuntu-16-04/</guid><category>Spotify</category><category>Ubuntu</category><category>Xenial Xerus</category><category>16.04</category><category>apt-key</category><category>sources.list</category><category>apt</category><category>PPA</category></item><item><title>Instalar Postgresql 9.6 en Ubuntu 16.04</title><link>https://karpoke.ignaciocano.com/2016/12/13/instalar-postgresql-9-6-en-ubuntu-16-04/</link><description>&lt;p&gt;La versión de Postgresql que viene en los repositorios de Ubuntu Xenial Xerus
+es la 9.5. Si queremos instalar la 9.6, podemos recurrrir al PPA oficial.&lt;/p&gt;
+&lt;p&gt;Importamos la clave:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc |
+  sudo apt-key add -&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Añadimos el PPA:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 13 Dec 2016 19:24:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-12-13:/2016/12/13/instalar-postgresql-9-6-en-ubuntu-16-04/</guid><category>Postgresql</category><category>9.6</category><category>Ubuntu</category><category>Xenial Xerus</category><category>16.04</category><category>apt-key</category><category>apt</category><category>PPA</category><category>sources.list</category></item><item><title>Comprobar la firma de Xposed</title><link>https://karpoke.ignaciocano.com/2016/11/25/comprobar-la-firma-de-xposed/</link><description>&lt;p&gt;Ayer mismo, se subió una &lt;a href="http://dl-xda.xposed.info/framework/sdk23/arm/" title="Xposed v87 SDK23 ARM"&gt;nueva versión&lt;/a&gt; del &lt;em&gt;framework&lt;/em&gt; &lt;a href="http://repo.xposed.info/" title="Xposed framework"&gt;Xposed&lt;/a&gt;, el
+cual tengo instalado en un Samsung S4.&lt;/p&gt;
+&lt;p&gt;Si queremos descargarla y comprobar mediante la firma que lo que nos hemos
+bajado no ha sido alterado, no tenemos más que hacer uso de &lt;code&gt;gpg&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Descargamos los archivos:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ wget http …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 25 Nov 2016 22:26:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-11-25:/2016/11/25/comprobar-la-firma-de-xposed/</guid><category>xposed</category><category>gpg</category><category>comprobación de firma</category><category>cyanogenmod</category></item><item><title>El día negado</title><link>https://karpoke.ignaciocano.com/2013/03/14/el-dia-negado/</link><description>&lt;p&gt;Leyendo el &lt;a href="http://espejo-ludico.blogspot.com.es/2013/03/el-dia-negado.html" title="espejo lúdico"&gt;espejo lúdico&lt;/a&gt;, me encuentro con estas dos preguntas:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;¿Hay algún día de la semana en el que nunca puede empezar un siglo?
+ Por el contrario, ¿cuál es el día de la semana que puede ser inicio y
+final de un siglo?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;que pueden quedar contestadas rápidamente ejecutando el …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 14 Mar 2013 02:03:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2013-03-14:/2013/03/14/el-dia-negado/</guid><category>año bisiesto</category><category>cal</category></item><item><title>Carcasa en madera de contrachapado para Raspberry Pi</title><link>https://karpoke.ignaciocano.com/2012/07/27/carcasa-en-madera-de-contrachapado-para-raspberry-pi/</link><description>&lt;p&gt;Por ahora, la Raspberry Pi viene sin carcasa, por lo que no sólo hay
+opciones comerciales, sino que la comunidad ha tenido ideas muy
+creativas: [&lt;a href="http://www.raspberrypi.org/archives/tag/cases" title="1"&gt;1&lt;/a&gt;], [&lt;a href="http://venturebeat.com/2012/07/16/9-amazing-raspberry-pi-case-mods-including-one-that-looks-like-a-raspberry/" title="2"&gt;2&lt;/a&gt;] y [&lt;a href="http://www.makeuseof.com/tag/8-interesting-diy-raspberry-pi-case-ideas/" title="3"&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;Entre todas las opciones, la de &lt;a href="http://www.raspberrypi.org/archives/1310" title="imprimir tu propia carcasa"&gt;imprimir tu propia carcasa&lt;/a&gt; me ha
+llamado la atención. Es sencilla, rápida de hacer y …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 27 Jul 2012 11:06:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-07-27:/2012/07/27/carcasa-en-madera-de-contrachapado-para-raspberry-pi/</guid><category>bricolaje</category><category>caja</category><category>carcasa</category><category>diy</category><category>funda</category><category>raspberry pi</category></item><item><title>#ComparteCultura</title><link>https://karpoke.ignaciocano.com/2012/01/11/compartecultura/</link><description>&lt;p&gt;&lt;strong&gt;La recopilación de la lista original de #ComparteCultura es obra de
+@kurioso y está en &lt;a href="http://kurioso.es/2012/01/09/compartecultura/" title="#ComparteCultura"&gt;#ComparteCultura&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;En 1980 la industria discográfica británica realizó una campaña
+antipiratería con el slogan "&lt;em&gt;&lt;a href="http://en.wikipedia.org/wiki/Home_Taping_Is_Killing_Music" title="Home Taping Is Killing Music"&gt;Home Taping Is Killing Music&lt;/a&gt;&lt;/em&gt;". 30
+años más tarde &lt;a href="http://www.enriquedans.com/2011/03/mas-evidencias-la-musica-esta-mas-viva-que-nunca.html" title="la música está más viva que nunca"&gt;la música está más viva que nunca&lt;/a&gt; y lo que está
+muriendo …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 11 Jan 2012 01:33:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-01-11:/2012/01/11/compartecultura/</guid><category>compartir</category><category>internet</category><category>kurioso</category><category>ley sinde</category><category>libertad</category><category>neutralidad</category><category>propiedad intelectual</category><category>regulación</category><category>sopa</category></item><item><title>La red resiste</title><link>https://karpoke.ignaciocano.com/2011/12/02/la-red-resiste/</link><description>&lt;p&gt;&lt;a href="http://redresiste.net/" title="la red resiste"&gt;La red resiste&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hace exactamente dos años tuvimos conocimiento del anteproyecto de Ley
+Sinde. Gran parte de la ciudadanía señaló de inmediato su rechazo en las
+redes a través del #&lt;a href="http://es.wikipedia.org/wiki/Manifiesto_%C2%ABEn_defensa_de_los_derechos_fundamentales_en_internet%C2%BB" title="manifiesto por los derechos fundamentales en Internet"&gt;manifiesto por los derechos fundamentales en
+Internet&lt;/a&gt;. En estos 24 meses el debate social sobre esta iniciativa ha
+sido intenso …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 02 Dec 2011 12:02:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-12-02:/2011/12/02/la-red-resiste/</guid><category>canon</category><category>internet</category><category>ley sinde</category><category>libertad</category><category>neutralidad</category><category>propiedad intelectual</category><category>regulación</category><category>sgae</category></item><item><title>Yo #soy15m</title><link>https://karpoke.ignaciocano.com/2011/06/18/yo-soy15m/</link><description>&lt;p&gt;Como parte del #15m me declaro una persona pacífica y condeno
+radicalmente todo tipo de violencia: la de los violentos infiltrados en
+nuestras manifestaciones, y la del Estado, que ha causado más dolor y
+heridos. Además, condeno la manipulación mediática que enfatiza la
+información sesgada, parcial o errónea con el …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 18 Jun 2011 18:53:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-06-18:/2011/06/18/yo-soy15m/</guid><category>soy15m</category></item><item><title>0.999...=1</title><link>https://karpoke.ignaciocano.com/2011/05/18/0-coma-9-periodo-igual-1/</link><description>&lt;div class="math"&gt;$$
+\large\begin{align*}
+\frac{1}{3} &amp;amp;= 0.\stackrel{\frown}{3} \\
+\frac{1}{3} &amp;amp;= 0.333\dots \\
+3 \cdot \frac{1}{3} &amp;amp;= 3 \cdot 0.333\dots \\
+1 &amp;amp;= 0.999\dots \\
+1 &amp;amp;= 0.\stackrel{\frown}{9}
+\end{align*}
+$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false …&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 18 May 2011 14:21:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-05-18:/2011/05/18/0-coma-9-periodo-igual-1/</guid><category>latex</category></item><item><title>0!=1!</title><link>https://karpoke.ignaciocano.com/2011/05/18/0-factorial-igual-1-factorial/</link><description>&lt;div class="math"&gt;$$
+\large\begin{align*}
+n! &amp;amp;= n \cdot (n-1) \cdot (n-2) \cdots 3 \cdot 2 \cdot 1 \\
+n! &amp;amp;= n \cdot (n-1)! \\
+(n-1)! &amp;amp;= \frac{n!}{n}
+\end{align*}
+$$&lt;/div&gt;
+&lt;p&gt;Si &lt;a href="http://www.adonald.btinternet.co.uk/Factor/Zero.html" title="tomamos"&gt;tomamos&lt;/a&gt; &lt;span class="math"&gt;\(n=1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\large\begin{align*}
+(1-1)! &amp;amp;= \frac{1!}{1} \\
+0! &amp;amp;= 1
+\end{align*}
+$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak …&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 18 May 2011 14:07:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-05-18:/2011/05/18/0-factorial-igual-1-factorial/</guid><category>factorial</category><category>latex</category></item></channel></rss>

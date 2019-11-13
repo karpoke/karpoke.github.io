@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - sed</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 27 Jul 2014 11:28:00 +0200</lastBuildDate><item><title>Conseguir la lista actualizada de medios AEDE para bloquearlos</title><link>https://karpoke.ignaciocano.com/2014/07/27/conseguir-la-lista-actualizada-de-medios-aede-para-bloquearlos/</link><description>&lt;p&gt;La lista de medios asociados a AEDE se puede consultar en su página:
+www.aede.es/publica/Periodicos_Asociados.asp. Si no queremos visitar ni
+por error las páginas de dichos medios, tenemos diferentes alternativas,
+desde &lt;em&gt;scripts&lt;/em&gt; de GreaseMonkey para &lt;a href="https://github.com/pykiss/anti-AEDE/blob/master/script.user.js" title="Firefox"&gt;Firefox&lt;/a&gt; y complementos para
+&lt;a href="https://chrome.google.com/webstore/detail/aede-blocker/olfbaiingdbeoihdemklgmakblhcgpmn?hl=es" title="Chrome"&gt;Chrome&lt;/a&gt;, hasta &lt;a href="http://anotacionsalmarge.wordpress.com/2014/02/17/bloquejar-pagines-web/" title="añadir los dominios en el fichero /etc/hosts"&gt;añadir los dominios en el …&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 27 Jul 2014 11:28:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-07-27:/2014/07/27/conseguir-la-lista-actualizada-de-medios-aede-para-bloquearlos/</guid><category>aede</category><category>awk</category><category>boycott</category><category>chrome</category><category>curl</category><category>firefox</category><category>greasemonkey</category><category>hosts</category><category>lynx</category><category>plugin</category><category>script</category><category>sed</category><category>sort</category><category>uniq</category><category>wordpress</category></item><item><title>sed es Turing completo</title><link>https://karpoke.ignaciocano.com/2012/04/22/sed-es-turing-completo/</link><description>&lt;p&gt;¿Cómo puede ser un editor de flujo, una utilidad para el tratamiento de
+texto, un lenguaje Turing completo? &lt;code&gt;sed&lt;/code&gt; permite saltos condiciones e
+incondicionales y utiliza un &lt;em&gt;buffer&lt;/em&gt; temporal, lo que permite
+&lt;a href="http://www.catonmat.net/blog/proof-that-sed-is-turing-complete/" title="construir una máquina de Turing con él"&gt;construir una máquina de Turing con él&lt;/a&gt;, y cualquier lenguaje que
+pueda construir una máquina de Turing es …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 22 Apr 2012 00:32:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-04-22:/2012/04/22/sed-es-turing-completo/</guid><category>máquina de turing</category><category>sed</category><category>turing completo</category></item><item><title>Salvapantallas con el código fuente del kernel</title><link>https://karpoke.ignaciocano.com/2011/07/28/salvapantallas-con-el-codigo-fuente-del-kernel/</link><description>&lt;p&gt;Si queremos que cada vez que aparezca el salvapantallas, lo haga
+mostrando algunas líneas del código fuente del &lt;em&gt;kernel&lt;/em&gt; por pantalla,
+sólo necesitamos configurar el salvapantallas &lt;code&gt;phosphor&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Phosphor" src="https://karpoke.ignaciocano.com/images/phosphor-300x178.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Lo primero es instalar el código fuente del &lt;code&gt;kernel&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ sudo apt-get source linux-source-$(uname -r)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;El comando &lt;code&gt;uname&lt;/code&gt; muestra información acerca del …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 28 Jul 2011 12:42:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-07-28:/2011/07/28/salvapantallas-con-el-codigo-fuente-del-kernel/</guid><category>aleatoriedad</category><category>código fuente</category><category>kernel</category><category>linux</category><category>phosphor</category><category>protector de pantalla</category><category>salvapantallas</category><category>script</category><category>sed</category><category>uname</category></item><item><title>urlencode y urldecode</title><link>https://karpoke.ignaciocano.com/2011/03/06/urlencode-y-urldecode/</link><description>&lt;p&gt;Los siguientes caracteres &lt;a href="http://tools.ietf.org/html/rfc3986#section-2.3" title="son los únicos que se pueden utilizar"&gt;son los únicos que se pueden utilizar&lt;/a&gt; en
+una URL:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+[a-zA-Z0-9-._~]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;El resto, se deben codificar usando el prefijo &lt;code&gt;%&lt;/code&gt; seguido del valor
+ASCII hexadecimal del carácter. Por ejemplo:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+( = %28
+) = %29
+/ = %2F
++ = %2B
+...&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Para &lt;a href="http://stackoverflow.com/questions/296536/urlencode-from-a-bash-script/298258#298258" title="codificar la URL"&gt;codificar la URL&lt;/a&gt; podemos utilizar la función &lt;code&gt;uri_escape&lt;/code&gt; del
+módulo &lt;code&gt;URI …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 06 Mar 2011 17:45:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-06:/2011/03/06/urlencode-y-urldecode/</guid><category>alias</category><category>ASCII</category><category>escape</category><category>perl</category><category>rfc3986</category><category>sed</category><category>uri</category><category>uri_escape</category><category>url</category><category>urldec</category><category>urlenc</category></item><item><title>Descifrando al César en Bash</title><link>https://karpoke.ignaciocano.com/2011/02/16/descifrando-al-cesar-en-bash/</link><description>&lt;p&gt;Después de ver cómo se &lt;a href="https://karpoke.ignaciocano.com/2011/02/16/descifrando-al-cesar-en-python/" title="descifra al César en Python"&gt;descifra al César en Python&lt;/a&gt;, me he encontrado
+con un par de maneras elegantes de hacerlo desde Bash.&lt;/p&gt;
+&lt;h2&gt;Cifrado César&lt;/h2&gt;
+&lt;p&gt;Con &lt;code&gt;tr&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ echo "lorem ipsum dolor sit amet" | tr 'a-z' 'd-za-c'
+oruhp lsvxp groru vlw dphw
+$ echo "oruhp lsvxp groru vlw dphw" | tr 'd-za-c' …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 16 Feb 2011 04:26:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-16:/2011/02/16/descifrando-al-cesar-en-bash/</guid><category>cifrado césar</category><category>rot13</category><category>rot47</category><category>sed</category><category>tr</category><category>bsdgames</category></item><item><title>Cambiar la dirección MAC</title><link>https://karpoke.ignaciocano.com/2011/02/09/cambiar-la-direccion-mac/</link><description>&lt;p&gt;A veces, nos puede interesar cambiar la MAC de nuestra tarjeta de red,
+ya sea porqué nos conectamos a una red en la que no queremos que quede
+registrada nuestra MAC real (todavía se podría ser más paranoico), ya
+sea porqué hay un filtrado por MAC y la nuestra no …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 09 Feb 2011 12:58:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-09:/2011/02/09/cambiar-la-direccion-mac/</guid><category>ifconfig</category><category>ip</category><category>ipconfig</category><category>kismet</category><category>mac</category><category>mac aleatoria</category><category>macchanger</category><category>md5sum</category><category>sed</category></item></channel></rss>

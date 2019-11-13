@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - egg</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 28 May 2011 16:03:00 +0200</lastBuildDate><item><title>¿Dónde está el site-packages?</title><link>https://karpoke.ignaciocano.com/2011/05/28/donde-esta-el-site-packages/</link><description>&lt;p&gt;&lt;a href="http://docs.djangoproject.com/en/dev/topics/install/?from=olddocs#remove-any-old-versions-of-django" title="Nota"&gt;Nota&lt;/a&gt; mental:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ python -c "from distutils.sysconfig import get_python_lib; print get_python_lib()"
+/usr/lib/python2.7/dist-packages&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Ligeramente relacionado&lt;/h2&gt;
+&lt;p&gt;» &lt;a href="https://karpoke.ignaciocano.com/2011/03/27/creando-y-leyendo-codigos-qr-desde-python/" title="Creando y leyendo códigos QR desde Python"&gt;Creando y leyendo códigos QR desde Python&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A lo mejor, si el intérprete de Python no encuentra un paquete es que no
+está donde debería... :facepalm:&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 28 May 2011 16:03:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-05-28:/2011/05/28/donde-esta-el-site-packages/</guid><category>dist-packages</category><category>egg</category><category>ipython</category><category>python</category><category>site-packages</category></item><item><title>Creando y leyendo códigos QR desde Python</title><link>https://karpoke.ignaciocano.com/2011/03/27/creando-y-leyendo-codigos-qr-desde-python/</link><description>&lt;p&gt;Un código QR (Quick Response Barcode) permite almacenar información en
+un código de barras de dos dimensiones.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="cc.qr.code.capacity`" src="https://karpoke.ignaciocano.com/images/cc.qr_.code_.capacity-300x166.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Hay bastantes servicios en la web que nos permiten crear nuestros
+propios códigos, por ejemplo &lt;a href="http://code.google.com/apis/chart/infographics/docs/qr_codes.html" title="el de Google"&gt;el de Google&lt;/a&gt;, que podemos emplear desde
+la línea de comandos:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ curl http://chart.apis.google.com …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 27 Mar 2011 19:46:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-27:/2011/03/27/creando-y-leyendo-codigos-qr-desde-python/</guid><category>10.10</category><category>curl</category><category>egg</category><category>google chart api</category><category>imaging</category><category>jcc</category><category>make</category><category>oneliner</category><category>pyqrcode</category><category>python</category><category>qr</category><category>qrcode</category><category>qrencode</category><category>setuptools</category><category>ubuntu maverick meerkat</category><category>ubuntu one</category></item></channel></rss>

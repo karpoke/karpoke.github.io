@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nacho Cano" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="10.04, https, mysql, nautilus, nube, owncloud, soberanía de datos, ubuntu lucid lynx, webdav, admin, " />
+
+<meta property="og:title" content="ownCloud con MySQL en Ubuntu Lucid Lynx 10.04 "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2012/05/10/owncloud-con-mysql-en-ubuntu-lucid-lynx-10-04/" />
+<meta property="og:description" content="ownCloud es una aplicación de código abierto que nos facilita tener nuestra propia nube, permitiendo guardar, sincronizar y compartir todo tipo de archivos, incluyendo imágenes, música y vídeos. También tenemos la posibilidad de incluir aplicaciones de terceros tales como un calendario, un gestor de contactos, un editor de texto, gestión …" />
+<meta property="og:site_name" content="Karpoke" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2012-05-10T16:17:00+02:00" />
+<meta name="twitter:title" content="ownCloud con MySQL en Ubuntu Lucid Lynx 10.04 ">
+<meta name="twitter:description" content="ownCloud es una aplicación de código abierto que nos facilita tener nuestra propia nube, permitiendo guardar, sincronizar y compartir todo tipo de archivos, incluyendo imágenes, música y vídeos. También tenemos la posibilidad de incluir aplicaciones de terceros tales como un calendario, un gestor de contactos, un editor de texto, gestión …">
+
+        <title>ownCloud con MySQL en Ubuntu Lucid Lynx 10.04  · Karpoke
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/admonition.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2012/05/10/owncloud-con-mysql-en-ubuntu-lucid-lynx-10-04/">
+                ownCloud con MySQL en Ubuntu Lucid Lynx 10.04
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p><img alt="Owncloud logo" src="https://karpoke.ignaciocano.com/images/owncloud-logo-300x148.png" /></p>
+<p><a href="http://owncloud.org/" title="ownCloud">ownCloud</a> es una aplicación de código abierto que nos facilita tener
+nuestra propia nube, permitiendo guardar, sincronizar y compartir todo
+tipo de archivos, incluyendo imágenes, música y vídeos. También tenemos
+la posibilidad de incluir <a href="http://apps.owncloud.com/" title="aplicaciones de terceros">aplicaciones de terceros</a> tales como un
+calendario, un gestor de contactos, un editor de texto, gestión de
+enlaces, etc.</p>
+<p><img alt="Owncloud files" src="https://karpoke.ignaciocano.com/images/owncloud-files-300x119.png" /></p>
+<p>Para instalarlo en Ubuntu Lucid Lynx 10.04, seguiremos los siguientes
+pasos.</p>
+<p>Instalamos las dependencias, incluyendo algunas opcionales:</p>
+<p><code>bash
+$ sudo aptitude install apache2 php5 php-pear php-xml-parser php5-json zip php5-gd php5-sqlite sqlite php5-mysql id3v2 curl libcurl3 libcurl4-openssl-dev php5-curl</code></p>
+<p>Descargamos la última versión estable, en estos momentos 3.0.3:</p>
+<p><code>bash
+$ wget http://owncloud.org/releases/owncloud-3.0.3.tar.bz2</code></p>
+<p>Comprobamos el MD5:</p>
+<p><code>bash
+$ md5sum owncloud-3.0.3.tar.bz2
+01300ca8b8be549af166f568fef8538f  owncloud-3.0.3.tar.bz2
+$ wget -qO - http://owncloud.org/releases/owncloud-3.0.3.tar.bz2.md5
+01300ca8b8be549af166f568fef8538f  owncloud-3.0.3.tar.bz2</code></p>
+<p>Descomprimimos el fichero:</p>
+<p><code>bash
+$ tar -xjf owncloud-3.0.3.tar.bz2</code></p>
+<p>Lo movemos al <code>DocumentRoot</code>:</p>
+<p><code>bash
+$ sudo mv owncloud /var/www/</code></p>
+<p>Le cambiamos el propietario a los ficheros:</p>
+<p><code>bash
+$ sudo chown -R www-data:www-data /var/www/owncloud</code></p>
+<p>Creamos la base de datos y el usuario en MySQL:</p>
+<p><code>bash
+$ mysql -uroot -p
+mysql&gt; CREATE DATABASE owncloud;
+mysql&gt; CREATE USER 'owncloud'@'localhost' IDENTIFIED BY 'password';
+mysql&gt; GRANT ALL PRIVILEGES ON owncloud.* TO 'owncloud'@'localhost';
+mysql&gt; FLUSH PRIVILEGES;</code></p>
+<p>Nos aseguramos de tener habilitado <code>.htaccess</code> en Apache. Basta
+comprobar que en el fichero de configuración del sitio, la directiva
+<code>AllowOverride</code> para el <code>DocumentRoot</code> es <code>All</code>.</p>
+<p>También deberán estar instalados y activados los módulos <code>mod_headers</code>,
+<code>mod_rewrite</code> y <code>mod_env</code> en Apache:</p>
+<p><code>bash
+$ sudo a2enmod headers
+$ sudo a2enmod rewrite
+$ sudo a2enmod env</code></p>
+<p>Reiniciamos Apache:</p>
+<p><code>bash
+$ sudo apache2ctl restart</code></p>
+<p>Ya podemos acceder al panel de administración de ownCloud en
+<code>http://localhost/owncloud</code>. Creamos el usuario administrador y
+configuramos los valores de hemos utilizado en MySQL.</p>
+<hr />
+<h4>Actualizado el 28 de julio de 2012</h4>
+<h3>Atención: Es necesario mover el directorio <code>data</code> fuera del <code>DocumentRoot</code></h3>
+<p>A partir de la versión 4.0.5, si utilizamos un directorio de datos que
+se encuentre dentro del <code>DocumentRoot</code>, al abrir la pestaña de
+Administración encontraremos algo como esto:</p>
+<blockquote>
+<p><em>Your data directory and your files are probably accessible from the
+internet. The .htaccess file that ownCloud provides is not working. We
+strongly suggest that you configure your webserver in a way that the
+data directory is no longer accessible or you move the data directory
+outside the webserver document root.</em></p>
+</blockquote>
+<p>Tal como indica, el contenido del directorio <code>data</code> puede que sea
+accesible desde fuera de la red. No podremos obtener un listado de los
+ficheros que contiene, pero si supiéramos el nombre de algún fichero sí
+que podríamos descargarlo directamente, <strong>de cualquier usuario, incluso
+sin haber iniciado sesión</strong>.</p>
+<p>Para evitarlo, moveremos el directorio <code>data</code> a cualquier otro
+directorio que esté fuera del <code>DocumentRoot</code>, conservando los permisos
+que tenía, y acto seguido modificamos el fichero de configuración
+<code>owncloud/config/config.php</code>:</p>
+<p><code>bash
+"datadirectory" =&gt; '/new/path/to/data',</code></p>
+<p>Sólo queda reiniciar el servidor para que los cambios tengan efecto:</p>
+<p><code>bash
+$ sudo apache2ctl restart</code></p>
+<hr />
+<h2>Acceso mediante Nautilius y WebDAV</h2>
+<p>ownCloud lleva incluido un servidor WebDAV, por lo que podemos acceder
+desde Nautilus y montar el directorio. En Nautilus, vamos a Archivo &gt;
+Conectar al servidor y además de nuestro usuario y contraseña, ponemos
+los siguientes datos:</p>
+<ul>
+<li>Server: localhost/owncloud</li>
+<li>Folder: /files/webdav.php</li>
+</ul>
+<h2>Acceso seguro mediante HTTPS</h2>
+<p>Si queremos obligar a que el acceso a ownCloud se haga <a href="https://karpoke.ignaciocano.com/2012/05/10/forzar-el-uso-de-sslhttps-de-un-directorio-en-apache2-mediante-htaccess-y-mod_rewrite/" title="Forzar el uso de SSL/HTTPS de un directorio en Apache2 mediante .htaccess y mod_rewrite">a través de una
+conexión segura</a>, podemos editar el fichero <code>.htaccess</code> del directorio
+<code>/var/www/owncloud</code> para que contenga:</p>
+<p>```bash</p>
+<p>RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.<em>) https://%{HTTP_HOST}%{REQUEST_URI}
+RewriteRule .</em> - [env=HTTP_AUTHORIZATION:%{HTTP:Authorization},last]
+```</p>
+<h2>Actualizaciones</h2>
+<p>Instalar una actualización es tan sencillo como reemplazar los ficheros.
+Los directorios <code>config/</code> y <code>data/</code> no se verán afectados, por lo que no
+perderemos nuestros datos. La actualización se llevará a cabo cuando
+iniciemos sesión como administrador.</p>
+<hr />
+<h4>Actualizado el 24 de mayo de 2012</h4>
+<p>Acaba de salir la versión estable 4.0.0. Entre las <a href="http://owncloud.org/features/" title="mejoras de la versión 4.0.0">mejoras de la
+versión 4.0.0</a> se encuentra el cifrado de archivos, cargar archivos
+arrastrando los ficheros, visor de ficheros ODF y muchas más.</p>
+<p>Para actualizar, simplemente descargamos la versión y la descomprimimos
+en el mismo directorio de instalación:</p>
+<p><code>bash
+$ wget http://owncloud.org/releases/owncloud-4.0.0.tar.bz2</code></p>
+<p>Comprobamos el MD5:</p>
+<p><code>bash
+$ md5sum owncloud-4.0.0.tar.bz2
+440837c2b4908a2ec06f96978d6b7525  owncloud-4.0.0.tar.bz2
+$ wget -qO - http://owncloud.org/releases/owncloud-4.0.0.tar.bz2.md5
+440837c2b4908a2ec06f96978d6b7525  owncloud-4.0.0.tar.bz2</code></p>
+<p>Descomprimimos el fichero:</p>
+<p><code>bash
+$ tar -xjf owncloud-4.0.0.tar.bz2</code></p>
+<p>Le cambiamos el propietario a los ficheros:</p>
+<p><code>bash
+$ sudo chown -R www-data:www-data owncloud</code></p>
+<p>Lo copiamos al <code>DocumentRoot</code>:</p>
+<p><code>bash
+$ cd owncloud
+$ sudo cp -r * /var/www/owncloud/</code></p>
+<p>Reiniciamos el Apache:</p>
+<p><code>bash
+$ sudo apache2ctl restart</code></p>
+<p>Al iniciar sesión como administrador se lleva a cabo la actualización.</p>
+<p>Si nos encontramos con que nuestras canciones, marcadores o <a href="http://forum.owncloud.org/viewtopic.php?f=3&amp;t=2536" title="archivos han desaparecido">archivos
+han desaparecido</a>, es posible que le lleve un tiempo a la aplicación
+escanear el contenido, podemos probar a cerrar sesión y volver a entrar,
+escanear de nuevo en busca de los ficheros o incluso volver a reiniciar
+el Apache.</p>
+<hr />
+<h2>Instalar aplicaciones</h2>
+<p>Para instalar una aplicación, la descargamos y la copiamos al directorio
+<code>apps</code> dentro de <code>owncloud</code>. Por ejemplo, la aplicación Files Move
+muestra permite mover los archivos de sitio desde la aplicación.</p>
+<p>Para instalarlo:</p>
+<p><code>bash
+$ wget http://apps.owncloud.com/CONTENT/content-files/150271-files_mv.0.21.tgz
+$ tar xvzf 150271-files_mv.0.21.tgz
+$ sudo mv files_mv/ /var/www/owncloud/apps/
+$ sudo chown  -R www-data:www-data /var/www/owncloud/apps/</code></p>
+<p>Ahora deberemos activar la aplicación desde el panel de administración
+de ownCloud.</p>
+<h3>Problemas al instalar algunas aplicaciones</h3>
+<p>He tenido algún que otro problema instalando alguna aplicación, por
+ejemplo la anterior. La activación de la aplicación en el panel de
+control no se queda de forma permanente, sino que nada más recargar la
+página ésta vuelve a estar desactivada. Parece que es un <a href="http://forum.owncloud.org/viewtopic.php?f=3&amp;t=1880#p2702" title="fallo conocido">fallo
+conocido</a>.</p>
+<p>Después de haber descomprimido, movido y cambiado el propietario de la
+aplicación, creamos el fichero <code>/var/www/owncloud/refresh_apps.php</code>, tal
+como sugiere <em>sshambar</em>:</p>
+<p>```php
+&lt;?php
+$RUNTIME_NOAPPS = TRUE; //no apps, yet</p>
+<p>require_once('lib/base.php');</p>
+<p>// Setup required :
+<span class="math">\(not_installed = !OC_Config::getValue('installed', false);
+if(\)</span>not_installed) {
+header("Location: ".OC::$WEBROOT.'/');
+exit();
+}
+OC_Installer::installShippedApps();
+echo(json_encode('Apps updated!'));
+?&gt;
+```</p>
+<p>Accedemos al fichero desde el navegador mediante
+<code>http://localhost/owncloud/refresh_apps.php</code>, y creará las entradas en
+la tabla <code>oc_appconfig</code> de la base de datos.</p>
+<p>Aún así, esto no ha sido suficiente, ya que en dicha tabla quedaba
+registrada como instalada pero no activada, y seguía sin poder activarla
+desde el administrador, así que he probado a actualizar la base de datos
+de forma directa y me ha funcionado, pero no estoy seguro de que esto
+funcione en todos los casos ni de que no entrañe ningún tipo de riesgo.
+Así es como he logrado instalar File Move:</p>
+<p><code>bash
+$ mysql -uowncloud -p owncloud
+mysql&gt; update oc_appconfig set configvalue="yes" where appid="storage_charts-v2.0" and configkey="enabled";</code></p>
+<p>Sin embargo, con la aplicación Storage Chart v2, que muestra el espacio
+utilizado por nuestros ficheros en la nuestra nube, lo anterior no me ha
+funcionado y la aplicación daba error, ni siquiera dejaba acceder al
+panel de administración, por lo que he tenido que deshacer los cambios.</p>
+<h2>Referencias</h2>
+<p>» <a href="http://owncloud.org/" title="ownCloud">ownCloud site</a>
+» <a href="http://owncloud.org/install&gt;Install%20ownCloud&lt;/a&gt;&lt;br%20/&gt;%0A»%20&lt;a%20href=" title="ownCloud support">ownCloud support</a>
+» <a href="http://apps.owncloud.com/" title="aplicaciones de terceros">ownCloud apps</a>
+» <a href="http://www.webupd8.org/2011/10/owncloud-2-your-personal-cloud-server.html" title="ownCloud 2, your personal cloud server">ownCloud 2, your personal cloud server</a></p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+
+            
+            
+            
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2011/01/07/actualizando-ubuntu-a-la-ultima-distribucion-de-forma-remota/" title="Actualizando Ubuntu a la última distribución de forma remota">Actualizando Ubuntu a la última distribución de forma remota</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/08/05/servicio-de-ssh-con-sistema-de-verificacion-en-dos-pasos-de-google-en-ubuntu-natty-narwhal/" title="Servicio de SSH con sistema de verificación en dos pasos de Google en Ubuntu Natty Narwhal">Servicio de SSH con sistema de verificación en dos pasos de Google en Ubuntu Natty Narwhal</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/02/09/instalar-deluge-en-ubuntu-lucid-lynx/" title="Instalar deluge en Ubuntu Lucid Lynx">Instalar deluge en Ubuntu Lucid Lynx</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/04/12/apache2-y-mod_security-en-ubuntu-lucid-lynx-10-04/" title="Apache2 y mod_security en Ubuntu Lucid Lynx 10.04">Apache2 y mod_security en Ubuntu Lucid Lynx 10.04</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/06/03/symfony-en-ubuntu-lucid-lynx-10-04/" title="Symfony en Ubuntu Lucid Lynx 10.04">Symfony en Ubuntu Lucid Lynx 10.04</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2012/05/10/forzar-el-uso-de-sslhttps-de-un-directorio-en-apache2-mediante-htaccess-y-mod_rewrite/" title="Previous: Forzar el uso de SSL/HTTPS de un directorio en Apache2 mediante .htaccess y mod_rewrite">Forzar el uso de SSL/HTTPS de un directorio en Apache2 mediante .htaccess y mod_rewrite</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2012/05/10/benchmarking-de-un-servidor-web/" title="Next: Benchmarking de un servidor web">Benchmarking de un servidor web</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2012-05-10T16:17:00+02:00">May 10, 2012</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#admin-ref">admin</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#1004-ref">10.04
+                    <span>6</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#https-ref">https
+                    <span>11</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#mysql-ref">mysql
+                    <span>12</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#nautilus-ref">nautilus
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#nube-ref">nube
+                    <span>2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#owncloud-ref">owncloud
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#soberania-de-datos-ref">soberanía de datos
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ubuntu-lucid-lynx-ref">ubuntu lucid lynx
+                    <span>5</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#webdav-ref">webdav
+                    <span>1</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </div>
+        </section>
+</div>
+</article>
+                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2019 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

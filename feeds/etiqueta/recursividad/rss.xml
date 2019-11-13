@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - recursividad</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 28 Sep 2010 13:50:00 +0200</lastBuildDate><item><title>Actualización recursiva de un diccionario en Python</title><link>https://karpoke.ignaciocano.com/2010/09/28/actualizacion-recursiva-de-un-diccionario-en-python/</link><description>&lt;p&gt;Cuando actualizamos un diccionario con otro en Pyhton, el método &lt;code&gt;update&lt;/code&gt; copia
+las entradas del diccionario fuente en el diccionario destino, sobreescribiendo
+las de éste si la entrada existe en ambos diccionarios.&lt;/p&gt;
+&lt;p&gt;En particular, si un diccionario contiene una entrada que es a su vez otro
+diccionario, no se realiza …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 28 Sep 2010 13:50:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-09-28:/2010/09/28/actualizacion-recursiva-de-un-diccionario-en-python/</guid><category>diccionario de datos</category><category>django</category><category>python</category><category>recursividad</category></item></channel></rss>

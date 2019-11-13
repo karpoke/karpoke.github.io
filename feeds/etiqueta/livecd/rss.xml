@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - livecd</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 11 May 2011 19:28:00 +0200</lastBuildDate><item><title>Recuperar los datos guardados en una sesión livecd</title><link>https://karpoke.ignaciocano.com/2011/05/11/recuperar-los-datos-guardados-en-una-sesion-livecd/</link><description>&lt;p&gt;Si habíamos estado trabajando en una sesión &lt;em&gt;livecd&lt;/em&gt;, más tarde podemos
+&lt;a href="http://www.portalubuntu.com/2011/05/como-recuperar-los-archivos-guardados.html" title="recuperar los datos que hayamos guardado en dicha sesión"&gt;recuperar los datos que hayamos guardado en dicha sesión&lt;/a&gt; montando el
+&lt;em&gt;usb&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ sudo mount /media/miusb/casper.rw /mnt -o loop&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 11 May 2011 19:28:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-05-11:/2011/05/11/recuperar-los-datos-guardados-en-una-sesion-livecd/</guid><category>livecd</category><category>mount</category><category>recuperación de información</category><category>usb</category></item></channel></rss>

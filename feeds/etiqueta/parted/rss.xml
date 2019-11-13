@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - parted</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 21 Jun 2012 13:47:00 +0200</lastBuildDate><item><title>Raspberry Pi</title><link>https://karpoke.ignaciocano.com/2012/06/21/raspberry-pi/</link><description>&lt;p&gt;En pocas palabras, &lt;a href="http://www.raspberrypi.org/" title="Raspberry Pi"&gt;Raspberry Pi&lt;/a&gt; es un ordenador del tamaño de una
+tarjeta de crédito que puede reproducir vídeo en alta definición (HDMI)
+y cuesta, dependiendo del modelo, 25&amp;#36; sin &lt;em&gt;ethernet&lt;/em&gt; o 35&amp;#36; con
+&lt;em&gt;ethernet&lt;/em&gt; [1].&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Raspi Colour" src="https://karpoke.ignaciocano.com/images/Raspi_Colour_R-248x300.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Cuenta con un procesador ARM11 a 700Mhz, 256MB RAM, USB 2.0, conectores
+de …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 21 Jun 2012 13:47:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-06-21:/2012/06/21/raspberry-pi/</guid><category>arduino</category><category>debian</category><category>fedora</category><category>parted</category><category>raspberry pi</category><category>squeeze</category><category>tarjeta SD</category><category>ubuntu</category></item></channel></rss>

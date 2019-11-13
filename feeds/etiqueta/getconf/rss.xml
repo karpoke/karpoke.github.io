@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - getconf</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 18 Jan 2011 15:41:00 +0100</lastBuildDate><item><title>32 ó 64 bits</title><link>https://karpoke.ignaciocano.com/2011/01/18/32-o-64-bits/</link><description>&lt;p&gt;Para saber si el procesador es de 64 bits, ejecutamos el siguiente
+comando:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ grep flags /proc/cpuinfo | grep -Eo " lm " &amp;amp;&amp;amp; echo "64" || echo "32"
+32&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Otro comando que nos dirá si la arquitectura es de 32 ó 64 bits es &lt;code&gt;lshw&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ sudo lshw -C CPU | grep width
+width …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 18 Jan 2011 15:41:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-01-18:/2011/01/18/32-o-64-bits/</guid><category>arch</category><category>dpkg-architecture</category><category>flags</category><category>getconf</category><category>lm</category><category>uname</category><category>lshw</category></item></channel></rss>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - pdfposter</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 11 Dec 2010 02:52:00 +0100</lastBuildDate><item><title>Póster casero</title><link>https://karpoke.ignaciocano.com/2010/12/11/poster-casero/</link><description>&lt;p&gt;Si tenemos una imagen y queremos crear un póster impreso (y montado a
+base de folios) por nosotros mismos podemos utilizar un servicio como
+&lt;a href="http://www.hogargeek.com/posters-de-hagalo-usted-mismo-con-block-posters/" title="Block posters"&gt;Block posters&lt;/a&gt;. También podemos utilizar los comandos &lt;code&gt;convert&lt;/code&gt; y
+&lt;code&gt;pdfposter&lt;/code&gt; para conseguir lo mismo.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mapa del Software Libre - 03.02.2010 - René Mérou" src="https://karpoke.ignaciocano.com/images/Mapa-del-Software-Libre-03.02.2010-René-Mérou-300x211.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Primero creamos un PDF a partir de la imagen, en este caso …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 11 Dec 2010 02:52:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-12-11:/2010/12/11/poster-casero/</guid><category>convert</category><category>mapa del software libre</category><category>pdfposter</category><category>póster</category><category>ubuntu one</category></item></channel></rss>

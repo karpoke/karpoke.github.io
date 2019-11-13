@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - git</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 15 Jul 2012 17:31:00 +0200</lastBuildDate><item><title>A Visual Git Reference</title><link>https://karpoke.ignaciocano.com/2012/07/15/a-visual-git-reference/</link><description>&lt;blockquote&gt;
+&lt;p&gt;This page gives brief, visual reference for the most common commands in git.
+Once you know a bit about how git works, this site may solidify your
+understanding.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Mark Lodato | &lt;a href="http://marklodato.github.com/visual-git-guide/index-en.html" title="A Visual Git Reference"&gt;marklodato.github.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 15 Jul 2012 17:31:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-07-15:/2012/07/15/a-visual-git-reference/</guid><category>git</category><category>resumen</category><category>gráfico</category></item></channel></rss>

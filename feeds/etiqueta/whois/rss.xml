@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - whois</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 01 Jun 2014 12:57:00 +0200</lastBuildDate><item><title>Obtener el listado de rangos de IPs asociados a un dominio</title><link>https://karpoke.ignaciocano.com/2014/06/01/obtener-el-listado-de-rangos-de-ips-asociados-a-un-dominio/</link><description>&lt;p&gt;Si queremos obtener el listado de rangos de IPs que puedan estar
+asociadas a un dominio, por ejemplo para bloquearlo, podemos ejecutar:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ IP=$(dig +short www.example.com | grep -Eo '([0-9]{1,3}\.?){4}' | head -1)
+$ AS=$(whois $IP | awk '/OriginAS/{print $2}')
+$ test -n "$AS" &amp;amp;&amp;amp; whois -h whois …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 01 Jun 2014 12:57:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-06-01:/2014/06/01/obtener-el-listado-de-rangos-de-ips-asociados-a-un-dominio/</guid><category>dig</category><category>host</category><category>OriginAS</category><category>whois</category></item></channel></rss>

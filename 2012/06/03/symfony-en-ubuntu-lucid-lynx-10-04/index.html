@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nacho Cano" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="10.04, apache, csrf, framework, lampp, mvc, mysql, php, symfony, ubuntu lucid lynx, xss, admin, " />
+
+<meta property="og:title" content="Symfony en Ubuntu Lucid Lynx 10.04 "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2012/06/03/symfony-en-ubuntu-lucid-lynx-10-04/" />
+<meta property="og:description" content="Symfony es una framework MVC escrito en PHP para el desarrollo rápido de páginas web. Además, ofrece un conjunto de buenas prácticas para desarrollar páginas más seguras y con un coste de mantenimiento menor. Para que la instalación sea más segura, los ficheros de Symfony debería estar fuera del DocumentRoot …" />
+<meta property="og:site_name" content="Karpoke" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2012-06-03T03:59:00+02:00" />
+<meta name="twitter:title" content="Symfony en Ubuntu Lucid Lynx 10.04 ">
+<meta name="twitter:description" content="Symfony es una framework MVC escrito en PHP para el desarrollo rápido de páginas web. Además, ofrece un conjunto de buenas prácticas para desarrollar páginas más seguras y con un coste de mantenimiento menor. Para que la instalación sea más segura, los ficheros de Symfony debería estar fuera del DocumentRoot …">
+
+        <title>Symfony en Ubuntu Lucid Lynx 10.04  · Karpoke
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/admonition.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2012/06/03/symfony-en-ubuntu-lucid-lynx-10-04/">
+                Symfony en Ubuntu Lucid Lynx 10.04
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p><a href="http://www.symfony-project.org/" title="Symfony">Symfony</a> es una <em>framework</em> MVC escrito en PHP para el desarrollo
+rápido de páginas web. Además, ofrece un conjunto de buenas prácticas
+para desarrollar páginas más seguras y con un coste de mantenimiento
+menor.</p>
+<p>Para que la instalación sea más segura, los ficheros de Symfony debería
+estar fuera del <code>DocumentRoot</code>.</p>
+<h2>Requisitos</h2>
+<p>Symfony se basa en entorno LAMPP, por lo que suponemos que ya tenemos
+configurado Apache, MySQL y PHP versión 5.2.4 o superior. Para comprobar
+si todo está correctamente configurado y que cumplimos los
+requerimientos para Symfony, descargamos siguiente <em>script</em> y lo
+ejecutamos, pasando como parámetro la ruta al archivo <code>php.ini</code> que
+utiliza apache (por defecto, al ejecutarlo desde el terminal en lugar
+del navegador, utiliza otro archivo <code>php.ini</code>):</p>
+<p>```bash
+$ wget http://sf-to.org/1.4/check.php
+$ php --php-ini /etc/php5/apache2/php.ini check.php
+<strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong></strong>
+_                              _
+<em>  symfony requirements check  _
+</em>                              _
+<strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong></strong></p>
+<p>php.ini used by PHP: /etc/php5/apache2/php.ini</p>
+<p><strong> WARNING </strong>
+*  The PHP CLI can use a different php.ini file
+*  than the one used with your web server.
+*  If this is the case, please launch this
+*  utility from your web server.
+<strong> WARNING </strong></p>
+<p><strong> Mandatory requirements </strong></p>
+<p>OK        PHP version is at least 5.2.4 (5.3.2-1ubuntu4.15)</p>
+<p><strong> Optional checks </strong></p>
+<p>OK        PDO is installed
+  OK        PDO has some drivers installed: mysql, sqlite, sqlite2
+  OK        PHP-XML module is installed
+  OK        XSL module is installed
+  OK        The token_get_all() function is available
+  OK        The mb_strlen() function is available
+  OK        The iconv() function is available
+  OK        The utf8_decode() is available
+  OK        The posix_isatty() is available
+  OK        A PHP accelerator is installed
+  OK        php.ini has short_open_tag set to off
+  OK        php.ini has magic_quotes_gpc set to off
+  OK        php.ini has register_globals set to off
+  OK        php.ini has session.auto_start set to off
+  OK        PHP version is not 5.2.9
+```</p>
+<p>Corregimos los errores que nos dé, si es que ya sea editando la
+configuración de <code>php.ini</code> o instalando paquetes que nos pudieran faltar
+(como, por ejemplo, <code>php-xml-parser</code>, <code>php5-xsl</code> o <code>php-apc</code>).</p>
+<p>Si queremos, podemos copiar el archivo al <code>DocumentRoot</code> y abrirlo
+mediante el navegador, para estar seguros de que no hay ningún problema,
+y acto seguido lo borramos.</p>
+<h2>Instalación</h2>
+<p>Como hemos comentado al principio, colocaremos los ficheros de Symfony
+fuera del <code>DocumentRoot</code>. Crearemos el directorio para alojar los
+proyectos y, dentro de él, el directorio para el primer proyecto:</p>
+<p><code>bash
+$ mkdir -p /home/sfprojects/sfproject
+$ cd /home/sfprojects/sfproject</code></p>
+<p>Hay dos versiones principales de Symfony, la 1.4, versión estable con
+soporte hasta finales de este año, y la 2.0, que será la próxima versión
+principal. Utilizaremos la 1.4.</p>
+<p>A la hora de instalar Symfony, podemos hacerlo de forma global, para
+todo el sistema, o local, independiente para cada proyecto. La segunda
+es más recomendable, sobre todo si vamos a tener varios proyectos. De
+esta forma, la actualización de uno no afectará al resto.</p>
+<p>Se considera una buena práctica instalar Symfony en el directorio
+<code>lib/vendor</code> dentro del directorio raíz del proyecto, así que lo creamos
+primero:</p>
+<p><code>bash
+$ mkdir -p lib/vendor</code></p>
+<p>Instalaremos la versión estable actual de Symfony desde el repositorio
+subversion:</p>
+<p><code>bash
+$ svn checkout http://svn.symfony-project.com/tags/RELEASE_1_4_18 symfony</code></p>
+<p>Cuando salga una nueva versión, podremos actualizar cambiando
+simplemente la URL del repositorio. También podríamos utilizar la
+versión en desarrollo, con lo que incluiríamos las correcciones de
+errores con sólo actualizar la copia de trabajo.</p>
+<h2>Creación de un proyecto</h2>
+<p>Desde el directorio que habíamos creado para el proyecto,
+<code>/home/sfprojects/sfproject</code>, creamos el proyecto con Symfony, de nombre
+sfproject, mediante la tarea <code>generate:project</code>:</p>
+<p><code>bash
+$ cd /home/sfprojects/sfproject
+$ php lib/vendor/symfony/data/bin/symfony generate:project sfproject</code></p>
+<p>Esta tarea crea la estructura de directorios:</p>
+<p><code>bash
+apps/       Contiene las aplicaciones del proyecto
+cache/      Ficheros cacheados
+config/     Ficheros de configuración del proyecto
+data/       Ficheros con datos iniciales (fixtures)
+lib/        Bibliotecas y clases del proyecto
+log/        Ficheros de log
+plugins/    Plugins instalados
+test/       Ficheros con los tests unitarios y funcionales
+web/        El directorio raíz de la página web</code></p>
+<p>Cambiamos los permisos para los directorios <code>cache</code> y <code>log</code>. Estos son
+los únicos directorios en los que necesita escribir Symfony para
+comenzar:</p>
+<p><code>bash
+$ chmod 777 cache log</code></p>
+<p>La tarea, además, crea un acceso directo a
+<code>lib/vendor/symfony/data/bin/symfony</code> en el directorio del proyecto,
+para que sea más sencillo y rápido llamar al fichero.</p>
+<p>Para comprobar que la instalación es correcta, ejecutamos:</p>
+<p><code>bash
+$ ./symfony -V
+symfony version 1.4.18 (/home/sfproject/lib/vendor/symfony/lib)</code></p>
+<p>Nos aseguramos que en el archivo de configuración del proyecto,
+<code>config/ProjectConfiguration.class.php</code>, no hay una ruta absoluta sino
+relativa, con lo que podremos mover de lugar el directorio del proyecto
+sin que nada deje de funcionar:</p>
+<p><code>bash
+require_once dirname(__FILE__).'/../lib/vendor/symfony/lib/autoload/sfCoreAutoload.class.php';</code></p>
+<p>Podemos ver una lista de opciones que nos ofrece el comando <code>symfony</code>,
+ejecutándolo sin ningún parámetro.</p>
+<h2>Base de datos</h2>
+<p>Antes de continuar, crearemos una base de datos específica para este
+proyecto y un usuario con privilegios únicamente para esta base de
+datos. Por ejemplo, si utilizamos MySQL:</p>
+<p><code>bash
+$ mysql -uroot -p
+mysql&gt; CREATE DATABASE sfproject;
+mysql&gt; CREATE USER 'sfproject'@'localhost' IDENTIFIED BY 'password';
+mysql&gt; GRANT ALL PRIVILEGES ON sfproject.* TO 'sfproject'@'localhost';
+mysql&gt; FLUSH PRIVILEGES;</code></p>
+<p>Symfony puede trabajar con diferentes bases de datos gracias a PDO
+(extensión para la abstracción de acceso a los datos). Para trabajar con
+PDO puede utilizaz dos herramientas: Doctrine, por defecto cuando
+creamos un proyecto, y Propel.</p>
+<p>Para configurar la base de datos ejecutamos:</p>
+<p><code>bash
+$ ./symfony configure:database "mysql:host=localhost;dbname=sfproject" sfproject password</code></p>
+<p>Si no queremos escribir la contraseña en el terminal, para que no quede
+registrada en el historial, podemos omitirla y luego editar el fichero
+<code>config/databases.yml</code>. Una razón para tener el directorio del proyecto
+fuera del <code>DocumentRoot</code> es evitar que este archivo llegue a ser
+accesible.</p>
+<h2>Creación de una aplicación</h2>
+<p>Para crear la aplicación <em>frontend</em> utilizaremos la tarea
+<code>generate:app</code>, desde el directorio raíz del proyecto:</p>
+<p><code>bash
+$ ./symfony generate:app frontend</code></p>
+<p>Esta tarea crea la siguiente estructura dentro del directorio
+<code>apps/frontend</code>:</p>
+<p><code>bash
+config/    Contiene los ficheros de configuración de la aplicación
+lib/       Contiene las bibliotecas y las clases de la aplicación
+modules/   Contiene el código de la aplicación (MVC)
+templates/ Contiene las plantillas globales</code></p>
+<p>Por defecto, Symfony nos protege de dos de las vulnerabilidades más
+extendidas en la web: XSS, escapando el contenido mostrado, y CSRF,
+creando un código CSRF aleatorio.</p>
+<h2>Configuración del servidor</h2>
+<p>En el <code>DocumentRoot</code> sólo deberían estar los ficheros que deban poder
+ser accedidos por el servidor web, como imágenes, hojas de estilo y
+Javascripts.</p>
+<p>Creamos el fichero de configuración del sitio,
+<code>/etc/apache2/sites-available/sfproject.domain.tld</code>:</p>
+<p>```bash</p>
+<p>ServerName sfproject.domain.tld
+  DocumentRoot "/home/sfprojects/sfproject/web"
+  DirectoryIndex index.php</p>
+<pre><code>AllowOverride All
+Allow from All
+</code></pre>
+<p>Alias /sf /home/sfprojects/sfproject/lib/vendor/symfony/data/web/sf</p>
+<pre><code>AllowOverride All
+Allow from All
+</code></pre>
+<p>```</p>
+<p>Si no tenemos configurado el dominio sfproject.domain.tld, podemos crear
+un alias en el fichero <code>/etc/hosts</code>:</p>
+<p><code>bash
+127.0.0.1  sfproject.domain.tld</code></p>
+<p>El alias <code>sf</code> sirve para acceder a las imágenes, hojas de estilo y
+Javascripts de Symfony, necesarios para mostrar correctamente las
+páginas por defecto.</p>
+<p>Activamos el sitio y reiniciamos apache:</p>
+<p><code>bash
+$ sudo a2ensite sfproject.domain.tld
+$ sudo apache2ctl restart</code></p>
+<p>Si todo ha ido bien, introducimos
+<code>http://sfproject.domain.tld/index.php/</code> en el navegador y veremos el
+mensaje de bienvenido. Si tenemos activado <code>mod_rewrite</code> no será
+necesario poner <code>index.php</code>. Para acceder al entorno de desarrollo dela
+aplicación que hemos creado ponemos
+<code>http://sfproject.domain.tld/frontend_dev.php/</code>.</p>
+<h2>Entornos</h2>
+<p>Dentro del directorio <code>web/</code> hay dos ficheros PHP, <code>index.php</code> y
+<code>frontend_dev.php</code>. A estos ficheros se les llama <em>front controllers</em>.
+Todas las peticiones a la aplicación se hacen a través de ellos. Ambos
+apuntan a la misma aplicación, pero en diferentes entornos.</p>
+<p>Cuando se desarrolla una aplicación se necesitan varios entornos:</p>
+<ul>
+<li>desarrollo: utilizado por los programadores para añadir
+    características, arreglar fallos, etc</li>
+<li>test: utilizado para realizar los tests de forma automática</li>
+<li><em>staging</em>: utilizado por el cliente para probar la aplicación y
+    reportar fallos o características que falten</li>
+<li>producción: utilizado por los usuarios finales</li>
+</ul>
+<p>Cada entorno tiene características diferentes. El de desarrollo está
+enfocado a los programadores, la aplicación registra todo tipo de
+detalles para facilitar la depuración, se deshabilita la caché para que
+los cambios tengan efecto de forma inmediata, cuando ocurre un error,
+Symfony muestra información detallada, etc. En producción, la caché está
+activada, se personalizan los mensajes de error y se optimiza para
+mejorar la experiencia de usuario.</p>
+<h2>Referencias</h2>
+<p>» <a href="http://www.symfony-project.org/getting-started/1_4/en/" title="Symfony: getting started">Symfony: getting started</a></p>
+
+
+            
+            
+            
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2011/01/07/actualizando-ubuntu-a-la-ultima-distribucion-de-forma-remota/" title="Actualizando Ubuntu a la última distribución de forma remota">Actualizando Ubuntu a la última distribución de forma remota</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/06/14/usando-una-conexion-segura-en-el-panel-de-control-de-wordpress/" title="Usando una conexión segura en el panel de control de Wordpress">Usando una conexión segura en el panel de control de Wordpress</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/08/05/servicio-de-ssh-con-sistema-de-verificacion-en-dos-pasos-de-google-en-ubuntu-natty-narwhal/" title="Servicio de SSH con sistema de verificación en dos pasos de Google en Ubuntu Natty Narwhal">Servicio de SSH con sistema de verificación en dos pasos de Google en Ubuntu Natty Narwhal</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/04/12/apache2-y-mod_security-en-ubuntu-lucid-lynx-10-04/" title="Apache2 y mod_security en Ubuntu Lucid Lynx 10.04">Apache2 y mod_security en Ubuntu Lucid Lynx 10.04</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/05/10/owncloud-con-mysql-en-ubuntu-lucid-lynx-10-04/" title="ownCloud con MySQL en Ubuntu Lucid Lynx 10.04">ownCloud con MySQL en Ubuntu Lucid Lynx 10.04</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2012/06/01/crash-of-the-titans-science-visualization/" title="Previous: Crash of the Titans Science Visualization">Crash of the Titans Science Visualization</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2012/06/03/how-to-have-fun-programming/" title="Next: How to Have Fun Programming">How to Have Fun Programming</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2012-06-03T03:59:00+02:00">Jun 3, 2012</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#admin-ref">admin</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#1004-ref">10.04
+                    <span>6</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#apache-ref">apache
+                    <span>14</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#csrf-ref">csrf
+                    <span>3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#framework-ref">framework
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#lampp-ref">lampp
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#mvc-ref">mvc
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#mysql-ref">mysql
+                    <span>12</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#php-ref">php
+                    <span>7</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#symfony-ref">symfony
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ubuntu-lucid-lynx-ref">ubuntu lucid lynx
+                    <span>5</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#xss-ref">xss
+                    <span>2</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </div>
+        </section>
+</div>
+</article>
+                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2019 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - pastebin</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 21 Apr 2012 17:31:00 +0200</lastBuildDate><item><title>ZeroBin</title><link>https://karpoke.ignaciocano.com/2012/04/21/zerobin/</link><description>&lt;p&gt;ZeroBin es una aplicación web de código abierto que permite subir
+textos, al estilo &lt;a href="http://pastebin.com/" title="pastebin.com"&gt;pastebin.com&lt;/a&gt;, pero cifrados, de tal manera que
+nadie que no conozca la clave puede tener acceso, ni siquiera el
+servidor. Los datos se cifran y descifran en el navegador usando una
+clave AES de 256 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 21 Apr 2012 17:31:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-04-21:/2012/04/21/zerobin/</guid><category>cifrado</category><category>open source</category><category>pastebin</category><category>zerobin</category></item></channel></rss>

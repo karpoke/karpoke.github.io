@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - ixkeylog</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 22 Jul 2011 04:35:00 +0200</lastBuildDate><item><title>¿Un keylogger en Ubuntu?</title><link>https://karpoke.ignaciocano.com/2011/07/22/un-keylogger-en-ubuntu/</link><description>&lt;p&gt;El comando &lt;code&gt;xinput&lt;/code&gt; permite configurar y probar dispositivos de entrada
+para las XWindow. Podemos obtener un listado de los dispositivos de
+entrada:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ xinput list
+⎡ Virtual core pointer                      id=2    [master pointer  (3)]
+⎜   ↳ Virtual core XTEST pointer                id=4    [slave  pointer  (2)]
+⎜   ↳ SynPS/2 Synaptics TouchPad                id=15   [slave  pointer …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 22 Jul 2011 04:35:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-07-22:/2011/07/22/un-keylogger-en-ubuntu/</guid><category>apparmor</category><category>c</category><category>ixkeylog</category><category>keylogger</category><category>perl</category><category>selinux</category><category>ubuntu</category><category>xinput</category></item></channel></rss>

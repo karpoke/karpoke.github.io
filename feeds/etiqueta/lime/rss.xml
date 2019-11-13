@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - LiME</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 17 Sep 2016 14:54:00 +0200</lastBuildDate><item><title>Volcado de memoria #RAM en #Linux - #LiME</title><link>https://karpoke.ignaciocano.com/2016/09/17/volcado-de-memoria-ram-en-linux-lime/</link><description>&lt;blockquote&gt;
+&lt;p&gt;En primer lugar, igual que hice en la entrada anterior “Volcado de memoria
+RAM en Windows – OSForensics”, voy a recordar la importancia de las buenas
+prácticas, recordando la necesidad de conocer y seguir la &lt;a href="https://www.ietf.org/rfc/rfc3227.txt" title="Guidelines for Evidence Collection and Archiving"&gt;RFC 3227&lt;/a&gt;, que
+lleva por título “Guidelines for Evidence Collection and Archiving”,
+(Directrices para la recolección …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 17 Sep 2016 14:54:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-09-17:/2016/09/17/volcado-de-memoria-ram-en-linux-lime/</guid><category>volcado de memoria</category><category>análisis forense</category><category>recolección de evidencias</category><category>LiME</category></item></channel></rss>

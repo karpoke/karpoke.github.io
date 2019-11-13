@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - seguridad por oscuridad</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 20 Jun 2011 20:47:00 +0200</lastBuildDate><item><title>Identificando los plugins de WordPress instalados</title><link>https://karpoke.ignaciocano.com/2011/06/20/identificando-los-plugins-de-wordpress-instalados/</link><description>&lt;p&gt;Hay un &lt;em&gt;script&lt;/em&gt; para &lt;code&gt;nmap&lt;/code&gt;, &lt;a href="http://seclists.org/nmap-dev/2011/q1/att-806/http-wp-plugins.nse" title="http-wp-plugins"&gt;http-wp-plugins&lt;/a&gt;, que permite &lt;a href="http://blog.alexos.com.br/?p=2302" title="detectar los complementos instalados en WordPress"&gt;detectar
+los complementos instalados en WordPress&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Dicho &lt;em&gt;script&lt;/em&gt; intenta acceder a los directorios de los complementos en
+&lt;code&gt;wp-content/plugins/&lt;/code&gt; con la ayuda de un &lt;a href="http://seclists.org/nmap-dev/2011/q1/att-806/wp-plugins_lst_tar.gz" title="diccionario"&gt;diccionario&lt;/a&gt;. Si la
+respuesta no es un error 404 interpreta que el directorio, y por tanto
+el complemento …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 20 Jun 2011 20:47:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-06-20:/2011/06/20/identificando-los-plugins-de-wordpress-instalados/</guid><category>404</category><category>apache</category><category>escáner de vulnerabilidades</category><category>fingerprint</category><category>http-wp-plugins</category><category>nmap</category><category>plugin</category><category>script</category><category>seguridad por oscuridad</category><category>wordpress</category><category>wpfinger</category></item><item><title>Mejorando la seguridad de Apache con Varnish</title><link>https://karpoke.ignaciocano.com/2011/05/26/mejorando-la-seguridad-de-apache-con-varnish/</link><description>&lt;p&gt;&lt;a href="http://www.varnish-cache.org/docs/2.1/" title="Varnish"&gt;Varnish&lt;/a&gt; es un acelerador web, que puede ser utilizado tanto para
+cachear contenido estático de nuestro servidor, para balancear la carga
+o &lt;a href="http://www.howtoforge.com/putting-varnish-in-front-of-apache-on-ubuntu-debian" title="para incrementar la seguridad"&gt;para incrementar la seguridad&lt;/a&gt;, por ejemplo, bloqueando cierto tipo
+de peticiones u ocultando cierto tipo de información.&lt;/p&gt;
+&lt;p&gt;Se instala directamente de los repositorios:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ sudo aptitude install varnish …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 26 May 2011 19:39:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-05-26:/2011/05/26/mejorando-la-seguridad-de-apache-con-varnish/</guid><category>apache</category><category>cabeceras HTTP</category><category>seguridad por oscuridad</category><category>servidor http</category><category>varnish</category><category>w00tw00t</category></item><item><title>Ocultando cabeceras</title><link>https://karpoke.ignaciocano.com/2011/03/12/ocultando-cabeceras/</link><description>&lt;p&gt;Tras instalar Apache, tanto en las &lt;a href="https://karpoke.ignaciocano.com/2011/02/28/cabeceras-http-personalizadas-en-apache2/" title="cabeceras HTTP"&gt;cabeceras de la página&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ curl -I localhost
+HTTP/1.1 200 OK
+Date: Sat, 12 Mar 2011 11:55:12 GMT
+Server: Apache/2.2.16 (Ubuntu)
+Last-Modified: Sat, 02 Jan 2010 00:00:23 GMT
+ETag: "aa34-b1-47c232cbc0633"
+Accept-Ranges: bytes
+Content-Length: 177
+Vary …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 12 Mar 2011 14:26:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-12:/2011/03/12/ocultando-cabeceras/</guid><category>cabeceras HTTP</category><category>expose_php</category><category>php</category><category>seguridad por oscuridad</category><category>serversignature</category><category>servertokens</category></item></channel></rss>

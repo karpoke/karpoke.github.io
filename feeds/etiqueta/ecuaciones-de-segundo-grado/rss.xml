@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - ecuaciones de segundo grado</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 29 Mar 2011 18:54:00 +0200</lastBuildDate><item><title>LaTeX en Wordpress</title><link>https://karpoke.ignaciocano.com/2011/03/29/latex-en-wordpress/</link><description>&lt;p&gt;Descarga el &lt;a href="http://wordpress.org/extend/plugins/latex/" title="plugin de LaTeX para Wordpress"&gt;plugin de LaTeX para Wordpress&lt;/a&gt;. Luego,
+escribe:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;latex
+\large\begin{align*}
+ax^2+bx+c &amp;amp;= 0 \\
+x^2+\frac{b}{a}x+\frac{c}{a} &amp;amp;= 0 \\
+x^2+\frac{b}{a}x &amp;amp;= -\frac{c}{a} \\
+x^2+\frac{b}{a}x+\frac{b^2}{4a^2} &amp;amp;= \frac{b …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 29 Mar 2011 18:54:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-29:/2011/03/29/latex-en-wordpress/</guid><category>ecuaciones de segundo grado</category><category>latex</category><category>plugin</category><category>wordpress</category></item></channel></rss>

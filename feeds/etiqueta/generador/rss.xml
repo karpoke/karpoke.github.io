@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - generador</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 09 Jul 2012 20:07:00 +0200</lastBuildDate><item><title>Pitfalls in Random Number Generation</title><link>https://karpoke.ignaciocano.com/2012/07/09/pitfalls-in-random-number-generation/</link><description>&lt;blockquote&gt;
+&lt;p&gt;Random number generation is subtle. Random number generators contain
+deterministic algorithms designed to produce output that simulates
+non-deterministic behavior. It’s amazing that there are algorithms that do
+this well enough for many applications. But unless used carefully, random
+number generators can misbehave in mysterious ways.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;John D. Cook | &lt;a href="http://www.codeproject.com/Articles/28548/Pitfalls-in-Random-Number-Generation" title="Pitfalls in Random Number Generation"&gt;codeproject …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 09 Jul 2012 20:07:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-07-09:/2012/07/09/pitfalls-in-random-number-generation/</guid><category>números aleatorios</category><category>generador</category><category>distribución</category><category>bernoulli</category><category>binomial</category><category>exponencial</category><category>gamma</category><category>geométrica</category><category>normal</category><category>poisson</category><category>semilla</category></item><item><title>ls sin ls</title><link>https://karpoke.ignaciocano.com/2011/03/12/ls-sin-ls/</link><description>&lt;p&gt;En bash:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ for i in *; do echo $i; done&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ls" src="https://karpoke.ignaciocano.com/images/ls-300x232.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;em&gt;Fuente: &lt;a href="http://nfosolutions.com/" title="nfosolutions.com"&gt;nfosolutions.com&lt;/a&gt;&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;En &lt;a href="http://snippets.dzone.com/posts/show/2735" title="C"&gt;C&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;```c
+/&lt;em&gt;
+ *
+ * Esempio che scansiona una cartella stampando a video i file in essa
+ * contenuti.
+ &lt;/em&gt;/&lt;/p&gt;
+&lt;h1&gt;include&lt;/h1&gt;
+&lt;h1&gt;include&lt;/h1&gt;
+&lt;h1&gt;include&lt;/h1&gt;
+&lt;h1&gt;include&lt;/h1&gt;
+&lt;p&gt;int main(int argc, char &lt;em&gt;argv[])
+{
+    DIR &lt;/em&gt;dir;
+    struct dirent *drent;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;if(argc &amp;lt; 2)
+{
+    fprintf(stderr, "%s …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 12 Mar 2011 13:11:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-12:/2011/03/12/ls-sin-ls/</guid><category>c</category><category>closedir</category><category>ctypes</category><category>generador</category><category>listdir</category><category>opendir</category><category>python</category><category>yield</category></item><item><title>Mystery</title><link>https://karpoke.ignaciocano.com/2011/02/26/mystery/</link><description>&lt;p&gt;Casi parece que está escrito en chino, o mejor dicho en &lt;em&gt;brainfuck&lt;/em&gt;, o
+puede que no sea muy &lt;em&gt;&lt;a href="https://karpoke.ignaciocano.com/2011/02/26/python-zen/" title="zen"&gt;zen&lt;/a&gt;&lt;/em&gt;, pero no deja de ser &lt;em&gt;&lt;a href="http://blog.garlicsim.org/post/3504711416#comment-156082460" title="elegante"&gt;elegante&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;```python&lt;/p&gt;
+&lt;p&gt;def mystery(n):
+    a = list(range(n))
+    [[(yield i) for a[::i] in [([0]*n)[::i]]] for i in a[2:] if a[i …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 26 Feb 2011 00:49:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-26:/2011/02/26/mystery/</guid><category>generador</category><category>list comprehension</category><category>python</category><category>yield</category></item></channel></rss>

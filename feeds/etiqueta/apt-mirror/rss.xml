@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - apt-mirror</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 18 May 2014 21:48:00 +0200</lastBuildDate><item><title>Crear un repositorio espejo de Ubuntu</title><link>https://karpoke.ignaciocano.com/2014/05/18/crear-un-repositorio-espejo-de-ubuntu/</link><description>&lt;p&gt;Si tenemos un gran número de equipos con Ubuntu en nuestra LAN, nos
+puede interesar tener un espejo local del repositorio de paquetes de
+Ubuntu. Una diferencia entre esta opción y &lt;a href="https://karpoke.ignaciocano.com/2014/05/17/cache-de-paquetes-descargados-en-ubuntu-trusty-tahr/" title="Caché de paquetes descargados en Ubuntu Trusty Tahr"&gt;utilizar un &lt;em&gt;proxy/caché&lt;/em&gt; de
+paquetes&lt;/a&gt; es que, en el primer caso, ya tendremos todos los paquetes
+disponibles cuando …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 18 May 2014 21:48:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-05-18:/2014/05/18/crear-un-repositorio-espejo-de-ubuntu/</guid><category>apache2</category><category>apt</category><category>apt-mirror</category><category>repositorio espejo</category><category>ubuntu</category></item></channel></rss>

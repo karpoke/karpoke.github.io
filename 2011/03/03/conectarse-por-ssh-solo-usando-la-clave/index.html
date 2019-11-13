@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nacho Cano" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="authorized_keys, cambiar contraseña, clave pública, contraseña, fingerprint, generar claves ssh, id_rsa, id_rsa.pub, openssh, randomart, rsa, ssh, ssh-copy-id, ssh-keygen, admin, " />
+
+<meta property="og:title" content="Conectarse por SSH sólo usando la clave "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2011/03/03/conectarse-por-ssh-solo-usando-la-clave/" />
+<meta property="og:description" content="Conectarnos a nuestro servidor de SSH utilizando una clave RSA en lugar de una contraseña es más seguro, dado que la clave RSA será bastante más larga y difícil de comprometer que nuestra contraseña, y más cómodo, dado que ya no tendremos que escribir la contraseña para iniciar sesión. Configuración …" />
+<meta property="og:site_name" content="Karpoke" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2011-03-03T21:22:00+01:00" />
+<meta name="twitter:title" content="Conectarse por SSH sólo usando la clave ">
+<meta name="twitter:description" content="Conectarnos a nuestro servidor de SSH utilizando una clave RSA en lugar de una contraseña es más seguro, dado que la clave RSA será bastante más larga y difícil de comprometer que nuestra contraseña, y más cómodo, dado que ya no tendremos que escribir la contraseña para iniciar sesión. Configuración …">
+
+        <title>Conectarse por SSH sólo usando la clave  · Karpoke
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/admonition.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2011/03/03/conectarse-por-ssh-solo-usando-la-clave/">
+                Conectarse por SSH sólo usando la clave
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p>Conectarnos a nuestro servidor de SSH utilizando una clave RSA en lugar
+de una contraseña es más seguro, dado que la clave RSA será bastante más
+larga y difícil de comprometer que nuestra contraseña, y más cómodo,
+dado que ya no tendremos que escribir la contraseña para iniciar sesión.</p>
+<h2>Configuración</h2>
+<p>En el equipo local, creamos la clave. Cuando nos pida contraseña, le
+asignamos una, que nos será requerida cada vez que queramos usar dicha
+clave. Si estuviéramos creando las claves en el servidor la <a href="http://marc.info/?l=secure-shell&amp;m=91703263608458&amp;w=2" title="dejaríamos en blanco">dejaríamos
+en blanco</a>.</p>
+<p><code>bash
+$ ssh-keygen -b 4096 -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/username/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/username/.ssh/id_rsa.
+Your public key has been saved in /home/username/.ssh/id_rsa.pub.
+ The key fingerprint is:
+ b5:51:c4:64:51:d6:d5:98:38:a6:0d:f1:ae:25:10:fb username@host
+ The key's randomart image is:
+ +--[ RSA 4096]----+
+ |           ==*o+.|
+ |          =oO . .|
+ |        =.o* o   |
+ |    .    . oo    |
+ |   . o  S ..     |
+ |  E o  .  .      |
+ |     . . .       |
+ |      . .        |
+ |                 |
+ +-----------------+</code></p>
+<p>La copiamos al servidor:</p>
+<p>```bash
+$ ssh-copy-id username@remotehost
+username@remotehost's password:
+Now try logging into the machine, with "ssh 'username@remotehost'", and check in:</p>
+<p>.ssh/authorized_keys</p>
+<p>to make sure we haven't added extra keys that you weren't expecting.
+```</p>
+<p>Si tenemos SSH corriendo en un puerto distinto, deberemos incluirlo todo
+entre comillas simples, algo como:</p>
+<p><code>bash
+$ ssh-copy-id '-p1234 username@remotehost'</code></p>
+<p>Hacemos lo que nos sugiere, y nos conectamos al servidor para comprobar
+que en el fichero <code>~/.ssh/authorized_keys</code> están únicamente las claves
+que hemos autorizado nosotros:</p>
+<p><code>bash
+$ ssh username@remotehost</code></p>
+<p><img alt="OpenSSH" src="https://karpoke.ignaciocano.com/images/openssh.png" /></p>
+<p><em><small>Fuente: <a href="http://www.openssh.com/" title="openssh.com">openssh.com</a></small></em></p>
+<p>En el servidor, editamos el fichero <code>/etc/ssh/sshd_config</code> y nos
+aseguramos de que:</p>
+<p><code>bash
+PubkeyAuthentication yes
+PasswordAuthentication no
+AllowUsers username</code></p>
+<p>Reiniciamos el servicio <code>ssh</code> y listos:</p>
+<p><code>bash
+$ sudo service ssh restart</code></p>
+<p>Si nos intentamos conectar desde un ordenador el cual no contiene la
+clave, o con un usuario para el cual no está permitido el acceso:</p>
+<p><code>bash
+other@otherhost:~$ ssh user@remotehost
+Permission denied (publickey).</code></p>
+<h2>Cambiar o eliminar la frase de paso de la clave privada</h2>
+<p>Si habíamos introducido una contraseña para usar la clave al crearla y
+más tarde queremos cambiarla o eliminarla, por ejemplo, para conectarnos
+por <code>ssh</code> en un <em>script</em>:</p>
+<p><code>bash
+$ ssh-keygen -p -f ~/.ssh/id_rsa
+Enter old passphrase:
+Key has comment '/home/unsername/.ssh/id_rsa'
+Enter new passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved with the new passphrase.</code></p>
+<p>Si hemos dejado en blanco el campo para la nueva contraseña, ya no nos
+la pedirá al conectarnos.</p>
+<h2>Permitir que otro usuario se conecte usando sólo la clave</h2>
+<p>Para que nos podamos conectar al servidor de la misma manera pero desde
+otro equipo, deberemos seguir los mismos pasos descritos arriba, pero
+antes, deberemos volver a permitir la autenticación con contraseña, ya
+que de lo contrario el nuevo usuario no podrá copiar su clave al
+servidor.</p>
+<p>Nos conectamos al servidor con el usuario que con el que ya tenemos
+acceso y editamos el fichero <code>/etc/ssh/sshd_config</code>:</p>
+<p><code>bash
+PasswordAuthentication yes</code></p>
+<p>Si el nuevo usuario se conecta al servidor con un usuario distinto al de
+antes, deberemos añadirlo a la lista de usuarios permitidos:</p>
+<p><code>bash
+AllowUser username otherusername</code></p>
+<p>Reiniciamos el servicio:</p>
+<p><code>bash
+$ sudo service ssh restart</code></p>
+<p>En el nuevo equipo, seguimos los pasos descritos arriba para crear la
+clave y copiarla al servidor.</p>
+<p><code>bash
+$ ssh-keygen -b 4096 -t rsa</code></p>
+<p>Una vez copiada, podemos probar de conectarnos:</p>
+<p><code>bash
+$ ssh otherusername@remotehost
+$ ssh-copy-id otherusername@remotehost
+$ ssh otherusername@remotehost</code></p>
+<p>Si todo ha ido bien, y nos hemos conectado al servidor con el nuevo
+usuario, ya podemos deshabilitar la autenticación por contraseña, en el
+fichero <code>/etc/ssh/sshd_config</code>:</p>
+<p><code>bash
+PasswordAuthentication no</code></p>
+<p>Y volvemos a reiniciar el servicio:</p>
+<p><code>bash
+$ sudo service ssh restart</code></p>
+
+
+            
+            
+            
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2011/06/14/configurar-apache-para-servir-conexiones-seguras/" title="Configurar Apache para servir conexiones seguras">Configurar Apache para servir conexiones seguras</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/06/17/conectarse-por-ssh-utilizando-expect/" title="Conectarse por SSH utilizando expect">Conectarse por SSH utilizando expect</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/09/18/fwknop-single-packet-authorization-y-port-knocking/" title="fwknop: Single Packet Authorization y port knocking">fwknop: Single Packet Authorization y port knocking</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/07/24/conectar-a-un-servidor-ssh-desde-android-mediante-connectbot-utilizando-claves/" title="Conectar a un servidor SSH desde Android mediante ConnectBot utilizando claves">Conectar a un servidor SSH desde Android mediante ConnectBot utilizando claves</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2013/06/09/conectarse-por-ssh-utilizando-sshpass/" title="Conectarse por SSH utilizando sshpass">Conectarse por SSH utilizando sshpass</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2011/02/28/cabeceras-http-personalizadas-en-apache2/" title="Previous: Cabeceras HTTP personalizadas en Apache2">Cabeceras HTTP personalizadas en Apache2</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2011/03/04/recuperando-los-videos-flash-borrados-por-el-plugin-de-adobe/" title="Next: Recuperando los vídeos Flash borrados por el plugin de Adobe">Recuperando los vídeos Flash borrados por el plugin de Adobe</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2011-03-03T21:22:00+01:00">Mar 3, 2011</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#admin-ref">admin</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#authorized_keys-ref">authorized_keys
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#cambiar-contrasena-ref">cambiar contraseña
+                    <span>2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#clave-publica-ref">clave pública
+                    <span>5</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#contrasena-ref">contraseña
+                    <span>4</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#fingerprint-ref">fingerprint
+                    <span>3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#generar-claves-ssh-ref">generar claves ssh
+                    <span>2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#id_rsa-ref">id_rsa
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#id_rsapub-ref">id_rsa.pub
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#openssh-ref">openssh
+                    <span>4</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#randomart-ref">randomart
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#rsa-ref">rsa
+                    <span>5</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ssh-ref">ssh
+                    <span>24</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ssh-copy-id-ref">ssh-copy-id
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ssh-keygen-ref">ssh-keygen
+                    <span>1</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </div>
+        </section>
+</div>
+</article>
+                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2019 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

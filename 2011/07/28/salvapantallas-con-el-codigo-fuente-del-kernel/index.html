@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nacho Cano" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="aleatoriedad, código fuente, kernel, linux, phosphor, protector de pantalla, salvapantallas, script, sed, uname, admin, " />
+
+<meta property="og:title" content="Salvapantallas con el código fuente del kernel "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2011/07/28/salvapantallas-con-el-codigo-fuente-del-kernel/" />
+<meta property="og:description" content="Si queremos que cada vez que aparezca el salvapantallas, lo haga mostrando algunas líneas del código fuente del kernel por pantalla, sólo necesitamos configurar el salvapantallas phosphor. Lo primero es instalar el código fuente del kernel: bash $ sudo apt-get source linux-source-$(uname -r) El comando uname muestra información acerca del …" />
+<meta property="og:site_name" content="Karpoke" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2011-07-28T12:42:00+02:00" />
+<meta name="twitter:title" content="Salvapantallas con el código fuente del kernel ">
+<meta name="twitter:description" content="Si queremos que cada vez que aparezca el salvapantallas, lo haga mostrando algunas líneas del código fuente del kernel por pantalla, sólo necesitamos configurar el salvapantallas phosphor. Lo primero es instalar el código fuente del kernel: bash $ sudo apt-get source linux-source-$(uname -r) El comando uname muestra información acerca del …">
+
+        <title>Salvapantallas con el código fuente del kernel  · Karpoke
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/admonition.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2011/07/28/salvapantallas-con-el-codigo-fuente-del-kernel/">
+                Salvapantallas con el código fuente del kernel
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p>Si queremos que cada vez que aparezca el salvapantallas, lo haga
+mostrando algunas líneas del código fuente del <em>kernel</em> por pantalla,
+sólo necesitamos configurar el salvapantallas <code>phosphor</code>.</p>
+<p><img alt="Phosphor" src="https://karpoke.ignaciocano.com/images/phosphor-300x178.png" /></p>
+<p>Lo primero es instalar el código fuente del <code>kernel</code>:</p>
+<p><code>bash
+$ sudo apt-get source linux-source-$(uname -r)</code></p>
+<p>El comando <code>uname</code> muestra información acerca del sistema operativo
+instalado, la versión del kernel, la familia del procesador, el nombre
+de la máquina o la plataforma. En mi caso, uso un kernel PAE, porque
+tengo una Ubuntu de 32 bits y 4 GB de RAM, por lo que el comando
+anterior no me ha ido del todo bien:</p>
+<p><code>bash
+$ uname -r
+2.6.38-10-generic-pae</code></p>
+<p>Así que, en su lugar, he utilizado:</p>
+<p><code>bash
+$ sudo apt-get source linux-2.6.38</code></p>
+<p>Una vez descargado el código fuente del kernel, configuraremos
+<code>phosphor</code> para que muestre el contenido de algún fichero. Si no tenemos
+instalado <code>phosphor</code>, habrá que instalar el paquete
+<code>xscreensaver-data-extra</code>.</p>
+<p>El fichero de configuración de <code>phosphor</code> está en
+<code>/usr/share/applications/screensavers/phosphor.desktop</code>:</p>
+<p><code>bash
+[Desktop Entry]
+Name=Phosphor
+Exec=/usr/lib/xscreensaver/phosphor -root
+TryExec=/usr/lib/xscreensaver/phosphor
+Comment=Draws a simulation of an old terminal, with large pixels and long-sustain phosphor. On X11 systems, This program is also a fully-functional VT100 emulator! Written by Jamie Zawinski.
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=Screensaver;
+OnlyShowIn=GNOME;</code></p>
+<p>Para probarlo podemos ejecutar:</p>
+<p><code>bash
+$ /usr/lib/xscreensaver/phosphor -program fortune
+$ /usr/lib/xscreensaver/phosphor -scale 2 -delay 40000 -ticks 10 -geom '1680x1050' -program 'od -txC -w6 /dev/random'</code></p>
+<p>Podemos pasarle diferentes opciones, tales como el tipo, el tamaño o la
+escala de la fuente a utilizar, la velocidad a la que escribe, el
+programa del cual debe recoger el texto, etc.</p>
+<p>Crearemos un pequeño <em>script</em>, <a href="http://terminus.ignaciocano.com/wp-uploads/linked/random-lines-of-code.sh" title="random-lines-of-code.sh"><code>random-lines-of-code.sh</code></a>, que
+permita seleccionar un trozo <a href="https://karpoke.ignaciocano.com/2010/09/25/random-bash/" title="aleatorio">aleatorio</a> de un fichero aleatorio del
+código fuente del kernel;</p>
+<p>```bash
+function randint() {
+   cat /proc/interrupts | md5sum | sed -r 's/[a-f]//g; s/^0+//; s/.{3}$//'
+}</p>
+<h1>random file</h1>
+<p>f=$(ls /usr/src/linux-2.6.38/<em>/</em>.{c,h} | shuf -n1)</p>
+<h1>number of lines</h1>
+<p>declare -i nol=$(wc -l $f | awk '{print $1}')</p>
+<h1>choose a random first line</h1>
+<p>declare -i first=$( echo $(randint) % $nol | bc )</p>
+<h1>choose a random bunch of lines</h1>
+<p>declare -i offset=<span class="math">\(( echo $(randint) % \(\)</span>nol-$first) | bc )</p>
+<h1>first line doesn't start at 0</h1>
+<p>first=$(( first+1 ))</p>
+<h1>last line</h1>
+<p>declare -i last=$(( first+offset ))</p>
+<h1>show the lines of the file</h1>
+<p>cat <span class="math">\(f | sed -n ${first},\)</span>{last}p
+```</p>
+<p>Guardamos el <em>script</em>, le damos permisos de ejecución y modificamos el
+fichero de configuración de <code>phosphor</code> para que lo ejecute. Cambiamos la
+línea del <code>Exec</code>:</p>
+<p><code>bash
+Exec=/usr/lib/xscreensaver/phosphor -root -scale 2 -program '/home/user/random-lines-of-code.sh'</code></p>
+<p>En el menú <code>Sistema &gt; Preferencias &gt; Salvapantallas</code> seleccionamos
+<code>Phosphor</code>, y listos.</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+
+            
+            
+            
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2010/09/25/random-bash/" title="Random Bash">Random Bash</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/01/26/instalacion-de-un-nuevo-kernel-ppa-en-ubuntu/" title="Instalación de un nuevo kernel PPA en Ubuntu">Instalación de un nuevo kernel PPA en Ubuntu</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/05/27/interactive-map-of-linux-kernel/" title="Interactive map of Linux kernel">Interactive map of Linux kernel</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/07/27/saltar-a-una-entrada-aleatoria-en-wordpress/" title="Saltar a una entrada aleatoria en WordPress">Saltar a una entrada aleatoria en WordPress</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2014/07/27/conseguir-la-lista-actualizada-de-medios-aede-para-bloquearlos/" title="Conseguir la lista actualizada de medios AEDE para bloquearlos">Conseguir la lista actualizada de medios AEDE para bloquearlos</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2011/07/22/un-keylogger-en-ubuntu/" title="Previous: ¿Un keylogger en Ubuntu?">¿Un keylogger en Ubuntu?</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2011/07/30/endianness/" title="Next: Endianness">Endianness</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2011-07-28T12:42:00+02:00">Jul 28, 2011</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#admin-ref">admin</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#aleatoriedad-ref">aleatoriedad
+                    <span>3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#codigo-fuente-ref">código fuente
+                    <span>5</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#kernel-ref">kernel
+                    <span>6</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#linux-ref">linux
+                    <span>3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#phosphor-ref">phosphor
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#protector-de-pantalla-ref">protector de pantalla
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#salvapantallas-ref">salvapantallas
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#script-ref">script
+                    <span>27</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#sed-ref">sed
+                    <span>6</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#uname-ref">uname
+                    <span>2</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </div>
+        </section>
+</div>
+</article>
+                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2019 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

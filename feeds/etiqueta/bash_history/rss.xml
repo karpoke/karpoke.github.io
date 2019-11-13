@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - .bash_history</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 16 Mar 2012 14:21:00 +0100</lastBuildDate><item><title>Evitar el registro de comandos en el historial</title><link>https://karpoke.ignaciocano.com/2012/03/16/evitar-el-registro-de-comandos-en-el-historial/</link><description>&lt;p&gt;Por diferentes motivos, nos puede interesar que lo que escribamos en el
+terminal no quede registrado en el historial, por ejemplo, si
+necesitamos escribir una contraseña. Esto se puede conseguir de
+diferentes maneras. El historial cuenta con una copia en memoria,
+accesible mediante el comando &lt;code&gt;history&lt;/code&gt;, que se vuelca en …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 16 Mar 2012 14:21:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-03-16:/2012/03/16/evitar-el-registro-de-comandos-en-el-historial/</guid><category>.bash_history</category><category>HISTCONTROL</category><category>HISTFILE</category><category>HISTFILESIZE</category><category>HISTIGNORE</category><category>history</category><category>HISTSIZE</category><category>HISTTIMEFORMAT</category></item></channel></rss>

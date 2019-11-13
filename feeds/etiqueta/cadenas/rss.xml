@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - cadenas</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 07 Oct 2010 13:27:00 +0200</lastBuildDate><item><title>De aquí al 2038</title><link>https://karpoke.ignaciocano.com/2010/10/07/de-aqui-al-2038/</link><description>&lt;p&gt;Como bien dice el agente Smith, es cuestión de contrastar un poco.
+&lt;a href="http://rinzewind.org/archives/2010/10/07/5-viernes-5-sabados-5-domingos/" title="Octubres"&gt;Octubres&lt;/a&gt; con 5 viernes, 5 sábados y 5 domingos, de aquí al &lt;a href="http://es.wikipedia.org/wiki/Problema_del_a%C3%B1o_2038" title="2038"&gt;2038&lt;/a&gt;,
+si es que llegamos:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ for ((i=2011; i &amp;lt; 2039; i++)); do cal 10 $i; done |
+grep -B2 -A4  "             1  2  3"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bash
+    Octubre 2021 …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 07 Oct 2010 13:27:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-10-07:/2010/10/07/de-aqui-al-2038/</guid><category>cadenas</category><category>cal</category><category>y2k38</category></item></channel></rss>

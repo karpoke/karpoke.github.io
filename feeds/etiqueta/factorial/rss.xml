@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - factorial</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 18 May 2011 14:07:00 +0200</lastBuildDate><item><title>0!=1!</title><link>https://karpoke.ignaciocano.com/2011/05/18/0-factorial-igual-1-factorial/</link><description>&lt;div class="math"&gt;$$
+\large\begin{align*}
+n! &amp;amp;= n \cdot (n-1) \cdot (n-2) \cdots 3 \cdot 2 \cdot 1 \\
+n! &amp;amp;= n \cdot (n-1)! \\
+(n-1)! &amp;amp;= \frac{n!}{n}
+\end{align*}
+$$&lt;/div&gt;
+&lt;p&gt;Si &lt;a href="http://www.adonald.btinternet.co.uk/Factor/Zero.html" title="tomamos"&gt;tomamos&lt;/a&gt; &lt;span class="math"&gt;\(n=1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\large\begin{align*}
+(1-1)! &amp;amp;= \frac{1!}{1} \\
+0! &amp;amp;= 1
+\end{align*}
+$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak …&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 18 May 2011 14:07:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-05-18:/2011/05/18/0-factorial-igual-1-factorial/</guid><category>factorial</category><category>latex</category></item></channel></rss>

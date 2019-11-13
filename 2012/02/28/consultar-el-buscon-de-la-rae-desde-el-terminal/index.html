@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nacho Cano" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="autocompletado, buscón, cabeceras, complete, completion, curl, diccionario, dig, drae, elinks, host, html2text, iso-8859-1, links, lynx, nslookup, panhispánico, php5-cli, rae, script, time, useragent, utf8, dev, " />
+
+<meta property="og:title" content="Consultar el buscón de la RAE desde el terminal "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2012/02/28/consultar-el-buscon-de-la-rae-desde-el-terminal/" />
+<meta property="og:description" content="Al realizar consultas al buscón de la RAE desde el terminal, me iba muy lento. Ésta es una página que todavía usa marcos (wtf!), por lo que si queremos acceder directamente a la página con el resultado de la búsqueda deberemos utilizar una de las siguientes URLs: ~~Para el diccionario …" />
+<meta property="og:site_name" content="Karpoke" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2012-02-28T01:41:00+01:00" />
+<meta name="twitter:title" content="Consultar el buscón de la RAE desde el terminal ">
+<meta name="twitter:description" content="Al realizar consultas al buscón de la RAE desde el terminal, me iba muy lento. Ésta es una página que todavía usa marcos (wtf!), por lo que si queremos acceder directamente a la página con el resultado de la búsqueda deberemos utilizar una de las siguientes URLs: ~~Para el diccionario …">
+
+        <title>Consultar el buscón de la RAE desde el terminal  · Karpoke
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/admonition.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2012/02/28/consultar-el-buscon-de-la-rae-desde-el-terminal/">
+                Consultar el buscón de la RAE desde el terminal
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p>Al realizar consultas al <a href="http://buscon.rae.es/draeI/" title="buscón de la RAE">buscón de la RAE</a> desde el terminal, me iba
+muy lento. Ésta es una página que todavía usa marcos (wtf!), por lo que
+si queremos acceder directamente a la página con el resultado de la
+búsqueda deberemos utilizar una de las siguientes URLs:</p>
+<ul>
+<li>~~Para el <a href="http://buscon.rae.es/draeI/" title="drae">diccionario de la RAE</a>:
+    <code>http://buscon.rae.es/draeI/SrvltGUIBusUsual?origen=RAE&amp;TIPO_BUS=3&amp;LEMA=cederrón</code>~~</li>
+<li>~~Para el <a href="http://buscon.rae.es/dpdI/" title="dpd">diccionario panhispánico de dudas</a>:
+    <code>http://buscon.rae.es/dpdI/SrvltGUIBusDPD?origen=RAE&amp;lema=cederrón</code>~~</li>
+</ul>
+<hr />
+<h4>Actualización</h4>
+<p>La RAE ha cambiado la URL de búsqueda, pasando a ser:</p>
+<ul>
+<li>Para el buscón: <a href="http://www.rae.es/drae" title="buscón">buscón</a>:
+    <a href="http://www.rae.es/drae/srv/search?origen=RAE&amp;type=3&amp;val=buscador">http://www.rae.es/drae/srv/search?origen=RAE&amp;type=3&amp;val=buscador</a></li>
+<li>Para <a href="http://www.rae.es/dpd" title="el panhispánico de dudas">el panhispánico de dudas</a>:
+    <a href="http://www.rae.es/dpd/srv/search?origen=RAE&amp;key=terminal">http://www.rae.es/dpd/srv/search?origen=RAE&amp;key=terminal</a></li>
+</ul>
+<p>Además, también se ha cambiado la codificación de la URL de UTF-8 a
+ISO-8859-1, por lo que se deberá tener en cuenta para aquellas palabras
+que contengan caracteres donde ambas codificaciones son distintas, como
+las vocales con tilde o diéresis o la letra eñe.</p>
+<p>En el artículo, dejaré las referencias a las URLs antiguas para que
+quede un registro de cómo ha ido evolucionando el <em>script</em>.</p>
+<hr />
+<p>Para descargar y visualizar el contenido de una página desde el
+terminal lo podemos hacer de diferentes maneras, por ejemplo:</p>
+<p>$ curl -s "http://buscon.rae.es/draeI/SrvltGUIBusUsual?origen=RAE&amp;TIPO_BUS=3&amp;LEMA=cederrón"
+$ w3m -dump "http://buscon.rae.es/draeI/SrvltGUIBusUsual?origen=RAE&amp;TIPO_BUS=3&amp;LEMA=cederrón"
+$ lynx -dump "http://buscon.rae.es/draeI/SrvltGUIBusUsual?origen=RAE&amp;TIPO_BUS=3&amp;LEMA=cederrón"
+$ links -dump "http://buscon.rae.es/draeI/SrvltGUIBusUsual?origen=RAE&amp;TIPO_BUS=3&amp;LEMA=cederrón"
+$ elinks -dump "http://buscon.rae.es/draeI/SrvltGUIBusUsual?origen=RAE&amp;TIPO_BUS=3&amp;LEMA=cederrón"</p>
+<p>Pero con todas ellas me iba muy lento, incluso si sólo descargamos la
+cabecera:</p>
+<p>$ time curl -I -s "http://buscon.rae.es/draeI/SrvltGUIBusUsual?origen=RAE&amp;TIPO_BUS=3&amp;LEMA=cederrón"
+    HTTP/1.1 200 OK
+    Connection: close
+    Date: Mon, 27 Feb 2012 23:20:26 GMT
+    Server: Microsoft-IIS/6.0
+    Server: WebSphere Application Server/5.1
+    Content-Type: text/html
+    Content-Language: es-ES</p>
+<pre><code>real    0m38.410s
+user    0m0.008s
+sys 0m0.004s
+</code></pre>
+<p>No parece que sea un problema de <code>User Agent</code>, porque tanto si
+utilizamos <code>lynx</code> como si utilizamos <code>curl</code> podemos modificarlo (y usar,
+por ejemplo, el de Firefox o el de Internet Explorer) y la página sigue
+tardando en responder.</p>
+<p>$ curl -s --user-agent "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:10.0.2) Gecko/20100101 Firefox/10.0.2" "http://buscon.rae.es/draeI/SrvltGUIBusUsual?origen=RAE&amp;TIPO_BUS=3&amp;LEMA=cederrón"</p>
+<p>El problema parece estar en el tiempo que tarda en resolverse el
+dominio. Usando <code>nslookup</code> podemos ver que tras el dominio buscon.rae.es
+hay un balanceador:</p>
+<p>$ nslookup buscon.rae.es
+    Server:     208.67.222.222
+    Address:    208.67.222.222#53</p>
+<pre><code>Non-authoritative answer:
+buscon.rae.es   canonical name = buscon.balanceo.rae.es.
+Name:   buscon.balanceo.rae.es
+Address: 85.62.96.169
+</code></pre>
+<p>Podría ser que la primera vez que se hace una consulta en Firefox
+también tarde, y que las siguientes consultas sean instantáneas porque
+se guarde la IP, y sin embargo con <code>curl</code> estemos resolviendo la IP cada
+vez, pero tampoco podría asegurarlo dado no he hecho muchas más pruebas
+y lo siguiente me ha funcionado.</p>
+<p>Si utilizamos la IP en lugar del dominio,obtenemos una repuesta
+inmediata. Probad lo siguiente, si acaso con la IP que os devuelva
+<code>nslookup</code>:</p>
+<p>$ curl -s "http://85.62.96.169/draeI/SrvltGUIBusUsual?LEMA=cederrón&amp;origen=RAE&amp;TIPO_BUS=3"</p>
+<p>He probado con otros comandos en lugar de <code>nslookup</code>, como <code>host</code> o
+<code>dig</code>, pero con <code>nslookup</code> parece que se tarda menos en obtener la
+respuesta.</p>
+<p>El problema es que esta IP va cambiando, pero podemos utilizar
+<code>nslookup</code> en el <em>script</em>, cuyo resultado es instantáneo, y filtrar el
+resultado de <code>curl</code> tal como se ha comentado en este <a href="http://www.ubuntu-es.org/node/125850" title="foro de Ubuntu">foro de Ubuntu</a>:</p>
+<pre><code>#!/bin/bash -
+
+set -o nounset                              # Treat unset variables as an error
+
+WORD="$1"
+if [ -z "$WORD" ]; then
+    echo "Usage: ${0##*/} word"
+    exit 1
+fi
+
+CURL=/usr/bin/curl
+HTML2TEXT=/usr/bin/html2text
+NSLOOKUP=/usr/bin/nslookup
+
+for p in $CURL $HTML2TEXT $NSLOOKUP; do
+    if [ ! -x $p ]; then
+        echo "[+] $p not found. You must install it first."
+        exit 1
+    fi
+done
+
+DOMAIN=buscon.rae.es
+IP=$($NSLOOKUP $DOMAIN | tail -2 | head -1 | awk '{print $2}')
+URL="http://$IP/draeI/SrvltGUIBusUsual?LEMA=$WORD&amp;origen=RAE&amp;TIPO_BUS=3"
+
+RESET_TEXT='\e[0m'         # reset
+HIGHLIGHT_TEXT='\e[0;31m'  # red
+
+echo -e "[+] ${HIGHLIGHT_TEXT}${WORD}${RESET_TEXT} $URL\n"
+</code></pre>
+<p><span class="math">\(CURL -s "\)</span>URL" | $HTML2TEXT | head -n-2 | sed -e 's/[Ver_artículo_enmendado]/*\ /g'</p>
+<p>Aquí se puede descargar el <em>script</em> <code>rae.sh</code>.</p>
+<p>Por último, un ejemplo de uso, suponiendo que el <em>script</em> tiene permisos
+de ejecución y se encuentra en el directorio actual:</p>
+<p>$ ./rae.sh cederrón
+    [+] cederrón http://85.62.96.169/draeI/SrvltGUIBusUsual?LEMA=cederrón&amp;origen=RAE&amp;TIPO_BUS=3</p>
+<pre><code>cederrón.
+(De CD-ROM, y este sigla del ingl. CompactDiscRead-OnlyMemory).
+1. m.Inform. CD-ROM.
+</code></pre>
+<hr />
+<h4>Actualizado el 12 de marzo de 2012</h4>
+<p>He realizado unas pequeñas modificaciones en el <em>script</em>:</p>
+<ul>
+<li>ya no acepta únicamente una palabra, sino una lista de ellas. Por
+    ejemplo: <code>./rae.sh cederrón dvd disquete</code></li>
+<li>se puede utilizar el argumento <code>-p</code> para que busque también en el
+    panhispánico de dudas.</li>
+<li>he cambiado el uso de <code>curl</code> por <code>lynx</code>, así no hay necesidad de
+    parsear el resultado.</li>
+<li>he añadido autocompletado para las palabras. No están todas las que
+    son ni son todas las que están, pero es bastante útil en la mayoría
+    de las ocasiones.</li>
+</ul>
+<hr />
+<h4>Actualizado el 30 de abril de 2012</h4>
+<p>Ha habido cambios en la página de la RAE, de tal manera que usar la IP
+directamente en la URL ya no sirve; la página devuelve un error
+<code>400 Bad Request (Invalid Hostname)</code>. Una manera de resolver este
+inconveniente es añadir la IP y el dominio en el archivo <code>/etc/hosts</code>,
+para que podamos utilizar el dominio en la URL y no sea necesario
+resolver su IP:</p>
+<p>$ grep buscon.rae.es /etc/hosts
+    193.145.222.107 buscon.rae.es</p>
+<p>El <em>script</em> vuelve a funcionar como la seda, por ahora.</p>
+<hr />
+<h4>Actualizado el 3 de julio de 2012</h4>
+<p>Ha vuelto a haber cambios en la página de la RAE. El dominio ha
+cambiado, pasando a ser <code>lema.rae.es</code>, y las rutas relativas para el
+Diccionario de la RAE y el Panhispánico de dudas también han cambiado.
+Ahora son algo así:</p>
+<pre><code># DRAE: http://lema.rae.es/drae/srv/search?type=3&amp;val_aux=&amp;origen=RAE&amp;val=cederrón
+# DPD:  http://lema.rae.es/dpd/srv/search?origen=RAE&amp;key=cederrón
+</code></pre>
+<p>La IP sigue siendo la misma por lo que basta cambiar el dominio en el
+fichero <code>/etc/hosts</code>:</p>
+<p>$ grep lema.rae.es /etc/hosts
+    193.145.222.107 lema.rae.es</p>
+<p>Aunque lo bueno es que vuelve a funcionar el truco de poner la IP en
+lugar del dominio en la URL, y la respuesta es incluso más rápida :)</p>
+<hr />
+<h4>Actualizado el 7 de septiembre de 2012</h4>
+<p>Ha habido un nuevo cambio en la página del buscón de la RAE. Las nuevas
+URLs pasan a ser:</p>
+<ul>
+<li>Para el buscón: <a href="http://www.rae.es/drae">http://www.rae.es/drae</a></li>
+<li>Para el panhispánico de dudas: <a href="http://www.rae.es/dpd">http://www.rae.es/dpd</a></li>
+</ul>
+<p>Además, la URL se debe codificar en formato Western (ISO-8859-1). Se ven
+afectadas aquellas palabras que tengan vocales con tilde, la u con
+diéresis o la letra eñe. Una manera de cambiar la codificación de la
+palabra es utilizar las funciones <code>utf8_decode</code> y <code>urlencode</code> de PHP,
+por lo que deberemos tener instalado el paquete <code>php5-cli</code>:</p>
+<p>$ php -r 'echo urlencode(utf8_decode("áéíóúüñ"));'
+    %E1%E9%ED%F3%FA%FC%F1</p>
+<hr />
+<h2>Añadir autocompletado</h2>
+<p>Una de las características más útiles en la línea de comandos es el
+autocompletado. Empezamos a escribir un comando, un alias, un nombre de
+archivo o directorio, etc, y pulsamos el tabulador. Si sólo hay una
+opción posible cuyo prefijo coincida con lo que hemos escrito, ésta se
+completa <em>mágicamente</em>. Si hay más de una opción posible, no pasará
+nada, lo que nos indica que podemos pulsar el tabulador una vez más para
+que entonces nos muestre una lista de las opciones disponibles.</p>
+<p>Teniendo esto en cuenta, podríamos añadir autocompletado a nuestro
+<em>script</em> para que busque en el diccionario instalado en local. Realmente
+no es un diccionario, sino una lista de palabras en castellano ordenadas
+alfabéticamente que no tiene por qué ser completa. Para instalar este
+listado:</p>
+<p>$ sudo aptitude install wspanish</p>
+<p>El autocompletado se consigue mediante una función que especifica los
+resultados a mostrar, en función de diferentes factores. Por ejemplo, si
+estamos usando el comando <code>ping</code> es útil que autocomplete con los
+nombres de los <em>hosts</em> del fichero <code>/etc/hosts</code>, o si estamos matando un
+proceso, que utilice el PID de los procesos que hay en ejecución, si es
+con <code>kill</code>, o en los nombres de estos procesos, si es jhb <code>pkill</code>. Luego
+asociamos esta función con nuestro <em>script</em>. Crearemos un fichero que
+incluya dicha función, y luego la asocie a nuestro <em>script</em>. En Ubuntu,
+este fichero debe estar en <code>/etc/bash_completion.d/</code>.</p>
+<p>Crearemos esta asociación mediante el comando <code>complete</code>. Este comando
+nos permite, además, consultar y modificar estas asociaciones. Por
+ejemplo, para ver la lista de asociaciones actual ejecutamos:</p>
+<p>$ complete -p</p>
+<p>El fichero es algo así:</p>
+<pre><code>_foo()
+{
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="--help --verbose --version"
+
+    if [[ ${cur} == -* ]] ; then
+        COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+        return 0
+    fi
+}
+complete -F _foo foo
+</code></pre>
+<p><code>_foo</code> es la función que se encarga de crear la lista de opciones
+disponibles. En este caso, permite seleccionar entre tres opciones
+posibles, <code>--help</code>, <code>--verbose</code> y <code>--version</code>. Las variables <code>cur</code> y
+<code>prev</code> contienen el argumento anterior y el actual (o lo que llevamos
+escrito de él), y se pueden utilizar para crear reglas de asociación más
+complejas. Por último, el comando <code>compgen</code> selecciona las candidatas de
+entre el listado de opciones disponibles. En las referencias al final se
+puede encontrar información más detallada.</p>
+<p>En el fichero <code>/etc/bash_completion</code> se pueden encontrar algunas de las
+expansiones más comunes como, por ejemplo, obtener un listado de
+directorios en el directorio actual, señales, direcciones MAC,
+interfaces de red, <em>hosts</em>, PIDs, UIDs, GIDs, servicios, módulos,
+módulos instalados, grupos a los que pertenece un usuario, usuarios
+autorizados, grupos autorizados, <em>shells</em>, tipos de sistemas de
+ficheros, etc.</p>
+<p>Sin embargo, en nuestro caso hay algo que deberemos tener en cuenta a la
+hora de crear el listado de opciones, y es que estas opciones son
+palabras que pueden contener espacios, comillas o barras invertidas,
+que puede que <a href="http://stackoverflow.com/questions/1146098/properly-handling-spaces-and-quotes-in-bash-completion" title="Handling spaces and quotes in autocompletion">deban ser escapadas primero</a> para poder ser utilizadas.
+Utilizaremos el siguiente código el el fichero de autocompletado <code>rae</code>:</p>
+<p>```bash
+    # http://stackoverflow.com/a/1146716
+    _find_words()
+    {
+        search=<span class="math">\((eval echo "\)</span>cur" 2&gt;/dev/null || eval echo "<span class="math">\(cur'" 2&gt;/dev/null || eval echo "\)</span>cur\"" 2&gt;/dev/null || "")
+        grep -- "^$search" /usr/share/dict/spanish | sed -e "{" -e 's#\#\\#g' -e "s#'#\\'#g" -e 's#"#\\"#g' -e "}"
+    }</p>
+<pre><code>_words_complete()
+{
+    local IFS=$'\n'
+
+    COMPREPLY=()
+    local cur="${COMP_WORDS[COMP_CWORD]}"
+
+    COMPREPLY=( $( compgen -W "$(_find_words)" -- "$cur" ) )
+
+    local escaped_single_qoute="'\''"
+    local i=0
+    for entry in ${COMPREPLY[*]}
+    do
+        if [[ "${cur:0:1}" == "'" ]]
+        then
+            # started with single quote, escaping only other single quotes
+            # [']bla'bla"bla\bla bla --&gt; [']bla'\''bla"bla\bla bla
+            COMPREPLY[$i]="${entry//\'/${escaped_single_qoute}}"
+        elif [[ "${cur:0:1}" == "\"" ]]
+        then
+            # started with double quote, escaping all double quotes and all backslashes
+            # ["]bla'bla"bla\bla bla --&gt; ["]bla'bla\"bla\\bla bla
+            entry="${entry//\\/\\\\}"
+            COMPREPLY[$i]="${entry//\"/\\\"}"
+        else
+            # no quotes in front, escaping _everything_
+            # [ ]bla'bla"bla\bla bla --&gt; [ ]bla\'bla\"bla\\bla\ bla
+            entry="${entry//\\/\\\\}"
+            entry="${entry//\'/\'}"
+            entry="${entry//\"/\\\"}"
+            COMPREPLY[$i]="${entry// /\\ }"
+        fi
+        (( i++ ))
+    done
+}
+complete -F _words_complete rae.sh
+</code></pre>
+<p>```</p>
+<p>Hay que tener en cuenta que el <em>script</em> <code>rae.sh</code> debe ser accesible
+desde el <em>path</em> del sistema. Ahora, guardamos este fichero en
+<code>/etc/bash_completion.d/rae</code> y lo cargamos:</p>
+<pre><code>. /etc/bash_completion.d/rae
+</code></pre>
+<p>Ya podemos probarlo:</p>
+<p>$ rae.sh line[TAB][TAB]
+    lineal       lineamento   lineamiento  linear       linera       linero</p>
+<h2>Referencias</h2>
+<p>» <a href="http://duckduckgo.com/html?q=User%20Agent" title="DuckDuckGo » User Agent">DuckDuckGo » User Agent</a>
+» <a href="http://www.ubuntu-es.org/node/125850" title="foro de Ubuntu">Foro de Ubuntu-es</a>
+» <a href="http://www.gnu.org/software/bash/manual/bash.html#Programmable-Completion" title="Bash manual &gt; Programmable Completion">Bash manual &gt; Programmable Completion</a>
+» <a href="http://www.debian-administration.org/articles/316" title="An introduction to bash completion">An introduction to bash completion</a>
+» <a href="http://stackoverflow.com/questions/1146098/properly-handling-spaces-and-quotes-in-bash-completion" title="Handling spaces and quotes in autocompletion">Handling spaces and quotes in autocompletion</a></p>
+<pre><code>"diccionario de la RAE"
+
+"diccionario panhispánico de dudas"
+</code></pre>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+
+            
+            
+            
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2010/09/25/bash-dns-cache-snooping/" title="Bash DNS Cache Snooping">Bash DNS Cache Snooping</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2010/10/07/mostrando-las-cabeceras-http/" title="Mostrando las cabeceras HTTP">Mostrando las cabeceras HTTP</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/08/14/obteniendo-la-ip-publica-la-ip-privada-y-la-direccion-mac-en-bash/" title="Obteniendo la IP pública, la IP privada y la dirección MAC en Bash">Obteniendo la IP pública, la IP privada y la dirección MAC en Bash</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2014/06/01/obtener-el-listado-de-rangos-de-ips-asociados-a-un-dominio/" title="Obtener el listado de rangos de IPs asociados a un dominio">Obtener el listado de rangos de IPs asociados a un dominio</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2014/07/27/conseguir-la-lista-actualizada-de-medios-aede-para-bloquearlos/" title="Conseguir la lista actualizada de medios AEDE para bloquearlos">Conseguir la lista actualizada de medios AEDE para bloquearlos</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2012/02/09/reiniciar-el-router-desde-bash/" title="Previous: Reiniciar el router desde el terminal">Reiniciar el router desde el terminal</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2012/03/16/evitar-el-registro-de-comandos-en-el-historial/" title="Next: Evitar el registro de comandos en el historial">Evitar el registro de comandos en el historial</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2012-02-28T01:41:00+01:00">Feb 28, 2012</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#dev-ref">dev</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#autocompletado-ref">autocompletado
+                    <span>2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#buscon-ref">buscón
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#cabeceras-ref">cabeceras
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#complete-ref">complete
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#completion-ref">completion
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#curl-ref">curl
+                    <span>8</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#diccionario-ref">diccionario
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#dig-ref">dig
+                    <span>4</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#drae-ref">drae
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#elinks-ref">elinks
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#host-ref">host
+                    <span>2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#html2text-ref">html2text
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#iso-8859-1-ref">iso-8859-1
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#links-ref">links
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#lynx-ref">lynx
+                    <span>3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#nslookup-ref">nslookup
+                    <span>4</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#panhispanico-ref">panhispánico
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#php5-cli-ref">php5-cli
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#rae-ref">rae
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#script-ref">script
+                    <span>27</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#time-ref">time
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#useragent-ref">useragent
+                    <span>1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#utf8-ref">utf8
+                    <span>1</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </div>
+        </section>
+</div>
+</article>
+                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2019 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

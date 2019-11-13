@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - cabeceras SMTP</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 14 Jan 2012 13:50:00 +0100</lastBuildDate><item><title>Configurar sSMTP para enviar correo mediante GMail desde el terminal</title><link>https://karpoke.ignaciocano.com/2012/01/14/configurar-ssmtp-para-enviar-correo-mediante-gmail-desde-el-terminal/</link><description>&lt;p&gt;Con esta receta, podremos enviar correos electrónicos desde el terminal
+sin necesidad de tener instalado un servidor de correo, simplemente
+utilizando una cuenta de GMail y  sSMTP, que se encuentra en los
+repositorios. Esta opción puede estar bien para enviar correos desde un
+sistema que utilizamos sólo nosotros, pero no …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 14 Jan 2012 13:50:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-01-14:/2012/01/14/configurar-ssmtp-para-enviar-correo-mediante-gmail-desde-el-terminal/</guid><category>bsd-mailx</category><category>cabeceras SMTP</category><category>gmail</category><category>mail</category><category>sendmail</category><category>sSMTP</category></item></channel></rss>
