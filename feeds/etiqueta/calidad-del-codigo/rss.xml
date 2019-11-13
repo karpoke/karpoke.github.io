@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - calidad del código</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 23 Nov 2014 12:33:00 +0100</lastBuildDate><item><title>This is how we ZenPayroll: Our Development Workflow</title><link>https://karpoke.ignaciocano.com/2014/11/23/this-is-how-we-zenpayroll-our-development-workflow/</link><description>&lt;blockquote&gt;
-&lt;p&gt;A lot of engineers looking to join ZenPayroll are interested in
-hearing more about our development workflow. Put more simply, how do
-ZenPayrollers write software? The answer to that is constantly
-changing, as we’re always refining our workflows to fit our ever
-changing needs, but I’ll cover in …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 23 Nov 2014 12:33:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-11-23:/2014/11/23/this-is-how-we-zenpayroll-our-development-workflow/</guid><category>flujo de trabajo</category><category>calidad del código</category><category>revisión de código</category><category>programación en pareja</category><category>testeo</category><category>separación de entornos</category></item></channel></rss>

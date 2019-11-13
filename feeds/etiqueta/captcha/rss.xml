@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - captcha</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 18 Sep 2011 03:57:00 +0200</lastBuildDate><item><title>Descargar archivos de Megaupload desde el terminal con plowshare</title><link>https://karpoke.ignaciocano.com/2011/09/18/descargar-archivos-de-megaupload-desde-el-terminal-con-plowshare/</link><description>&lt;p&gt;&lt;a href="http://code.google.com/p/plowshare/" title="plowshare"&gt;plowshare&lt;/a&gt; es una herramienta diseñada para descargar y subir
-ficheros a los sitios de intercambio de ficheros más populares. También
-se pueden administrar directorios remotos y borrar enlaces.&lt;/p&gt;
-&lt;h2&gt;Instalación&lt;/h2&gt;
-&lt;p&gt;Primero, instalamos las dependencias:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo aptitude install curl recode imagemagick tesseract-ocr-eng spidermonkey-bin rhino perlmagick aview
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Podemos descargar el código fuente desde …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 18 Sep 2011 03:57:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-09-18:/2011/09/18/descargar-archivos-de-megaupload-desde-el-terminal-con-plowshare/</guid><category>captcha</category><category>descargas</category><category>megaupload</category><category>mega</category><category>plowdown</category><category>plowshare</category></item></channel></rss>

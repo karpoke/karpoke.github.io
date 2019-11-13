@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - bzr</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 21 Dec 2012 16:41:00 +0100</lastBuildDate><item><title>etckeeper, control de versiones del directorio /etc</title><link>https://karpoke.ignaciocano.com/2012/12/21/etckeeper-control-de-versiones-del-directorio-etc/</link><description>&lt;p&gt;&lt;code&gt;etckeeper&lt;/code&gt; permite utilizar una herramienta de control de versiones
-para registrar los cambios hechos en los ficheros del directorio &lt;code&gt;/etc&lt;/code&gt;.
-Se pueden utilizar varias herramientas de control de versiones, como
-Bazaar, Git, Mercurial o Darcs.&lt;/p&gt;
-&lt;p&gt;Aunque puede ser de gran ayuda tener un historial de los cambios en los
-ficheros …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 21 Dec 2012 16:41:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-12-21:/2012/12/21/etckeeper-control-de-versiones-del-directorio-etc/</guid><category>aptitude</category><category>bazaar</category><category>bzr</category><category>control de versiones</category><category>cvs</category><category>etc</category><category>etckeeper</category><category>rkhunter</category></item></channel></rss>

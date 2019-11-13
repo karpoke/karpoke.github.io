@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - webkit</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 06 Sep 2014 17:45:00 +0200</lastBuildDate><item><title>Compartiendo archivos en la nube desde el terminal</title><link>https://karpoke.ignaciocano.com/2014/09/06/compartiendo-archivos-en-la-nube-desde-el-terminal/</link><description>&lt;p&gt;Hay muchas maneras de compartir archivos, pero con &lt;a href="http://curl.io/" title="curl.io"&gt;curl.io&lt;/a&gt; podemos
-hacerlo directamente desde el terminal usando &lt;code&gt;curl&lt;/code&gt;, permitiéndonos
-archivos hasta 5 GB y durante 4 horas, tiempo tras el cual será
-eliminados.&lt;/p&gt;
-&lt;p&gt;Por ejemplo, para compartir el archivo &lt;code&gt;/tmp/test&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ curl -F "file=@/tmp/test" http://curl.io/send …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 06 Sep 2014 17:45:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-09-06:/2014/09/06/compartiendo-archivos-en-la-nube-desde-el-terminal/</guid><category>compartir</category><category>curl</category><category>gpg</category><category>phantomjs</category><category>webkit</category></item></channel></rss>

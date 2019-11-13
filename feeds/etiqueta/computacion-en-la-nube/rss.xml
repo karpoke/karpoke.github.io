@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - computación en la nube</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 07 Nov 2016 00:20:00 +0100</lastBuildDate><item><title>The open guide to Amazon Web Services</title><link>https://karpoke.ignaciocano.com/2016/11/07/the-open-guide-to-amazon-web-services/</link><description>&lt;blockquote&gt;
-&lt;p&gt;A lot of information on AWS is already written. Most people learn AWS by
-reading a blog or a “getting started guide” and referring to the standard
-AWS references. Nonetheless, trustworthy and practical information and
-recommendations aren’t easy to come by. AWS’s own documentation is a
-great but …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 07 Nov 2016 00:20:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-11-07:/2016/11/07/the-open-guide-to-amazon-web-services/</guid><category>AWS</category><category>servicio web</category><category>Amazon</category><category>EC2</category><category>S3</category><category>balanceadores de carga</category><category>EBS</category><category>IAM</category><category>computación en la nube</category><category>IaaS</category><category>infraestructura como servicio</category></item></channel></rss>

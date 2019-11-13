@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - gzip</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 30 Dec 2010 04:21:00 +0100</lastBuildDate><item><title>La infame actualización de WordPress en 15 segundos</title><link>https://karpoke.ignaciocano.com/2010/12/30/la-infame-actualizacion-de-wordpress-en-15-segundos/</link><description>&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Copia de respaldo de la base de datos&lt;/strong&gt;. Entre el flag &lt;code&gt;-u&lt;/code&gt; y el
-    nombre de usuario no debe haber ningún espacio. Ojo, se bloquearán
-    las tablas hasta que termine. Y otro ojo, no es muy recomendable
-    escribir la contraseña directamente en la línea de comandos. Si sólo
-    ponemos el …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 30 Dec 2010 04:21:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-12-30:/2010/12/30/la-infame-actualizacion-de-wordpress-en-15-segundos/</guid><category>actualización</category><category>copia de seguridad</category><category>gzip</category><category>mysqldump</category><category>tar</category><category>wordpress</category></item></channel></rss>

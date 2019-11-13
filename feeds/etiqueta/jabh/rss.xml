@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - jabh</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 28 Jul 2010 14:03:00 +0200</lastBuildDate><item><title>JABH - Just Another Bash Hacker</title><link>https://karpoke.ignaciocano.com/2010/07/28/jabh/</link><description>&lt;p&gt;Se le llama &lt;a href="http://en.wikipedia.org/wiki/Just_another_Perl_hacker" title="JAPH"&gt;JAPH&lt;/a&gt; a un programa en Perl que escribe "Just another
-Perl hacker,". JABH vendría a ser algo parecido, en Bash:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ s="Jaescunrhkso  ettBhr haa,";for y in {0..4};do for x in {0..4};do echo -n "${s:$((5*x+y)):1}";done;done
-Just another …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 28 Jul 2010 14:03:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-07-28:/2010/07/28/jabh/</guid><category>jabh</category><category>japh</category><category>just another bash hacker</category></item></channel></rss>

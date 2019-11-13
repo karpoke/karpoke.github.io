@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - mariadb</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 12 Jun 2012 14:37:00 +0200</lastBuildDate><item><title>CVE 2012-2122, saltándose la autenticación para acceder a MySQL y MariaDB</title><link>https://karpoke.ignaciocano.com/2012/06/12/cve-2012-2122-saltandose-la-autenticacion-para-acceder-a-mysql-y-mariadb/</link><description>&lt;p&gt;Un fallo descubierto en MariaDB, y que también afecta a MySQL, permite
-saltarse la autenticación para acceder a la base de datos utilizando
-cualquier usuario válido, incluido el root, sin importar la contraseña.
-Cada vez que un usuario se conecta se genera un &lt;em&gt;token&lt;/em&gt; SHA aleatorio y
-se compara con …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 12 Jun 2012 14:37:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-06-12:/2012/06/12/cve-2012-2122-saltandose-la-autenticacion-para-acceder-a-mysql-y-mariadb/</guid><category>autenticación</category><category>mariadb</category><category>mysql</category><category>vulnerabilidades</category></item></channel></rss>

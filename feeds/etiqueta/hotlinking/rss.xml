@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - hotlinking</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 16 Aug 2011 14:05:00 +0200</lastBuildDate><item><title>Evitando el hotlinking</title><link>https://karpoke.ignaciocano.com/2011/08/16/evitando-el-hotlinking/</link><description>&lt;p&gt;Si tenemos una página web que contiene imágenes, tarde o temprano,
-alguien terminará mostrándolas en otro sitio, enlazándolas directamente
-y utilizando nuestro ancho de banda. Vamos, lo que se conoce como
-&lt;em&gt;hotlinking&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;La siguiente &lt;a href="http://httpd.apache.org/docs/2.3/rewrite/access.html" title="técnica se basa en el valor de la variable HTTP_REFERER"&gt;técnica se basa en el valor de la variable
-&lt;code&gt;HTTP_REFERER&lt;/code&gt;&lt;/a&gt;, la cual es opcional, por lo …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 16 Aug 2011 14:05:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-08-16:/2011/08/16/evitando-el-hotlinking/</guid><category>apache</category><category>hotlinking</category><category>HTTP_REFERER</category><category>mod_rewrite</category></item></channel></rss>

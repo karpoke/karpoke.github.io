@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - rsync</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 11 May 2011 21:09:00 +0200</lastBuildDate><item><title>Copiar un directorio excluyendo los archivos de una clase</title><link>https://karpoke.ignaciocano.com/2011/05/11/copiar-un-directorio-excluyendo-los-archivos-de-una-clase/</link><description>&lt;p&gt;Si queremos copiar un directorio pero no queremos que se copien los
-archivos &lt;code&gt;.svn&lt;/code&gt;, o &lt;code&gt;.dropbox&lt;/code&gt;, podemos ejecutar:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ rsync -r --exclude=.dropbox /path/source/dir /path/destination
-&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 11 May 2011 21:09:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-05-11:/2011/05/11/copiar-un-directorio-excluyendo-los-archivos-de-una-clase/</guid><category>dropbox</category><category>rsync</category><category>svn</category></item></channel></rss>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - tcpdump-arm</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 20 Aug 2012 01:55:00 +0200</lastBuildDate><item><title>Analizando el tráfico de red en Android con tcpdump, netcat y Wireshark</title><link>https://karpoke.ignaciocano.com/2012/08/20/analizando-el-trafico-de-red-en-android-con-tcpdump-netcat-y-wireshark/</link><description>&lt;p&gt;Si necesitamos analizar el tráfico de red de nuestro Android, ya sea
-para depurar una aplicación o para ver qué uso de la red hacen las
-aplicaciones instaladas en el terminal, podemos recurrir a herramientas
-bien conocidas como &lt;code&gt;tcpdump&lt;/code&gt;, &lt;code&gt;netcat&lt;/code&gt; y Wireshark.&lt;/p&gt;
-&lt;h2&gt;Antes de empezar&lt;/h2&gt;
-&lt;p&gt;Antes de continuar, deberemos tener …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 20 Aug 2012 01:55:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-08-20:/2012/08/20/analizando-el-trafico-de-red-en-android-con-tcpdump-netcat-y-wireshark/</guid><category>adb</category><category>adb wifi</category><category>android</category><category>arm</category><category>http</category><category>nc</category><category>netcat</category><category>tcpdump</category><category>tcpdump-arm</category><category>tráfico de red</category><category>wireshark</category></item></channel></rss>

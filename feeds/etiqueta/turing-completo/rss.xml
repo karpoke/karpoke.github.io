@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - turing completo</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 22 Apr 2012 00:32:00 +0200</lastBuildDate><item><title>sed es Turing completo</title><link>https://karpoke.ignaciocano.com/2012/04/22/sed-es-turing-completo/</link><description>&lt;p&gt;¿Cómo puede ser un editor de flujo, una utilidad para el tratamiento de
-texto, un lenguaje Turing completo? &lt;code&gt;sed&lt;/code&gt; permite saltos condiciones e
-incondicionales y utiliza un &lt;em&gt;buffer&lt;/em&gt; temporal, lo que permite
-&lt;a href="http://www.catonmat.net/blog/proof-that-sed-is-turing-complete/" title="construir una máquina de Turing con él"&gt;construir una máquina de Turing con él&lt;/a&gt;, y cualquier lenguaje que
-pueda construir una máquina de Turing es …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 22 Apr 2012 00:32:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-04-22:/2012/04/22/sed-es-turing-completo/</guid><category>máquina de turing</category><category>sed</category><category>turing completo</category></item></channel></rss>

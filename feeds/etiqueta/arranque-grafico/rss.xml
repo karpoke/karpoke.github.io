@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - arranque gráfico</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 18 Jan 2011 06:55:00 +0100</lastBuildDate><item><title>Personalizando el arranque gráfico en Ubuntu Maverirk Meerkat</title><link>https://karpoke.ignaciocano.com/2011/01/18/personalizando-el-arranque-grafico-en-ubuntu-maverirk-meerkat/</link><description>&lt;p&gt;Tras arreglar un par de &lt;a href="https://karpoke.ignaciocano.com/2011/01/18/solucion-de-problemas-con-plymouth-y-ati-en-ubuntu-maverick-meerkat/" title="solución de problemas con plymouth y ati en ubuntu maverick meerkat"&gt;problemas que tenía con el arranque&lt;/a&gt;, ya que
-estamos, vamos a darle un toque distinto al asunto.&lt;/p&gt;
-&lt;h2&gt;Temas de Plymouth&lt;/h2&gt;
-&lt;p&gt;Instalamos algunos de los &lt;a href="http://sliceoflinux.com/2010/05/14/cambia-el-tema-plymouth-de-tu-ubuntu-10-04/" title="temas para Plymouth"&gt;temas para Plymouth&lt;/a&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo apt-get install plymouth-theme-{fade-in,glow,sabily,script,solar,spinfinity,text,ubuntu-logo,text}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Cambiamos por el que queramos …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 18 Jan 2011 06:55:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-01-18:/2011/01/18/personalizando-el-arranque-grafico-en-ubuntu-maverirk-meerkat/</guid><category>10.10</category><category>arranque gráfico</category><category>grub2 splash</category><category>plymouth themes</category><category>ubuntu maverick meerkat</category></item></channel></rss>

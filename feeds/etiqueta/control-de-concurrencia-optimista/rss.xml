@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - control de concurrencia optimista</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 05 Nov 2010 18:11:00 +0100</lastBuildDate><item><title>Control de concurrencia optimista en Django</title><link>https://karpoke.ignaciocano.com/2010/11/05/control-de-concurrencia-optimista-en-django/</link><description>&lt;p&gt;Si tenemos una aplicación multiusuario, podría darse el caso de que dos
-usuarios accediesen simultáneamente al mismo registro para editarlo. Si
-no controlamos este evento, sucederá que el primero que guarde, que no
-tiene porqué ser el primero que comenzó a editar, perderá los cambios, y
-lo que es peor …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 05 Nov 2010 18:11:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-11-05:/2010/11/05/control-de-concurrencia-optimista-en-django/</guid><category>condición de carrera</category><category>control de concurrencia optimista</category><category>django</category><category>métodos perezosos</category></item></channel></rss>

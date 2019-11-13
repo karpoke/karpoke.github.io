@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - 386</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 16 Dec 2012 13:41:00 +0100</lastBuildDate><item><title>Merge branch ’x86-nuke386-for-linus’</title><link>https://karpoke.ignaciocano.com/2012/12/16/merge-branch-x86-nuke386-for-linus/</link><description>&lt;blockquote&gt;
-&lt;p&gt;Pull ”Nuke 386-DX/SX support” from Ingo Molnar: ”This tree removes
-ancient-386-CPUs support and thus zaps quite a bit of complexity:&lt;/p&gt;
-&lt;p&gt;24 files changed, 56 insertions(+), 425 deletions(-)&lt;/p&gt;
-&lt;p&gt;... which complexity has plagued us with extra work whenever we wanted to
-change SMP primitives, for years.&lt;/p&gt;
-&lt;p&gt;Unfortunately there’s a nostalgic …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 16 Dec 2012 13:41:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-12-16:/2012/12/16/merge-branch-x86-nuke386-for-linus/</guid><category>Linux</category><category>386</category></item></channel></rss>
