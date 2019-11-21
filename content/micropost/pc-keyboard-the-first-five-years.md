@@ -16,7 +16,7 @@ Slug: pc-keyboard-the-first-five-years
 > and b) why there are so many seemingly odd vendor-specific modifications of
 > the standard layout.
 
-- OS/2 Museum | [opensource.com][]
+- OS/2 Museum | [os2museum.com][]
 
   [os2museum.com]: http://www.os2museum.com/wp/pc-keyboard-the-first-five-years/
     "PC Keyboard: The First Five Years"
