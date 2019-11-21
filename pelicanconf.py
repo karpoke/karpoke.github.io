@@ -131,7 +131,8 @@ PLUGIN_PATHS = [
     "./pelican-plugins",
 ]
 PLUGINS = [
-#    "gzip_cache",  # github already does it
+    # "gzip_cache",  # github already does it
+    "css-html-js-minify",
     "neighbors",
     "related_posts",
     "render_math",
@@ -147,8 +148,8 @@ SITE_LICENSE = (
     "2010-{} (cc) Contenido bajo licencia "
     "<a rel=\"license\" href=\"https://creativecommons.org/licenses/by-sa/3.0/es/\">"
     "Creative Commons Reconocimiento-CompartirIgual"
-    "</a>.").format(date.today().year
-)
+    "</a>."
+).format(date.today().year)
 
 # custom 404 created in github (content/pages/404.md)
 # https://help.github.com/en/articles/creating-a-custom-404-page-for-your-github-pages-site
