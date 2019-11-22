@@ -23,14 +23,14 @@ Añadimos el PPA oficial:
 
 ```bash
 $ echo "deb http://repository.spotify.com stable non-free" |
-  sudo tee /etc/apt/sources.list.d/spotify.list
+  sudo tee /etc/apt/sources.list.d/spotify.list
 ```
 
 Actualizamos e instalamos:
 
 ```bash
 $ sudo apt update
-# sudo apt install spotify-client
+$ sudo apt install spotify-client
 ```
 
 Referencias

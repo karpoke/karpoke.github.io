@@ -14,7 +14,7 @@ cache:
     - $HOME/.cache/pipenv  # PIPENV_CACHE_DIR
 
 install:
-  # pelican ghp-import Markdown typogrify beautifulsoup4 pyembed-markdown
+  # pelican ghp-import Markdown typogrify beautifulsoup4 pyembed-markdown css-html-js-minify
   - pip install pipenv
   - pipenv install
   - sudo apt-get install shellcheck
