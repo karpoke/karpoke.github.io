@@ -1,7 +1,7 @@
 Title: Linux VS open source UNIX
 Date: 2019-11-23 12:15
 Author: Nacho Cano
-Slug: 130-vim-essential-vim-commands.md
+Slug: linux-vs-open-source-unix
 
 > This is mainstream opinion. Linux is better than anything else and money is
 > poured in constantly, more than in other platforms. And aside this is not
