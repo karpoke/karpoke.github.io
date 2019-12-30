@@ -132,7 +132,6 @@ PLUGIN_PATHS = [
 ]
 PLUGINS = [
     # "gzip_cache",  # github already does it
-    "css-html-js-minify",
     "neighbors",
     "related_posts",
     "render_math",
