@@ -88,7 +88,7 @@ tenemos privilegios de administrador. Aún así, es difícil resistirse.
 2.  Ponemos la imagen de fondo:
     `gconftool-2 -t str --set /desktop/gnome/background/picture_filename /ruta/aboluta/a/la/imagen/david.jpg`
 
-- más sobre el ataque Hasselhoff en [el lado del mal][]
+» más sobre el ataque Hasselhoff en [el lado del mal][]
 
   [ataque David Hasselhof]: http://windowstips.wordpress.com/2008/06/08/el-caso-del-hacker-de-la-oficina/
     "ataque David Hasselhof"

@@ -149,8 +149,8 @@ añadimos:
 Referencias
 ------------
 
-- En el directorio público de mi cuenta de Dropbox tengo subidos varios [_ezines_ sobre GNU/Linux, software libre, programación y seguridad][].
-- En el directorio público de Ubuntu One tengo subidos varios [libros y artículos sobre GNU/Linux, software libre, programación y seguridad][].
+» En el directorio público de mi cuenta de Dropbox tengo subidos varios [_ezines_ sobre GNU/Linux, software libre, programación y seguridad][].
+» En el directorio público de Ubuntu One tengo subidos varios [libros y artículos sobre GNU/Linux, software libre, programación y seguridad][].
 
   [la versión 0.7.1]: http://www.dropbox.com/install?os=lnx
     "la versión 0.7.1"

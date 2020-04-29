@@ -45,7 +45,7 @@ Actualizamos `grub2`
 
     $ sudo update-grub2
 
-- imagen de [BlackMooon][]
+» imagen de [BlackMooon][]
 
   [problemas que tenía con el arranque]: {filename}/admin/solucion-de-problemas-con-plymouth-y-ati-en-ubuntu-maverick-meerkat.md
     "solución de problemas con plymouth y ati en ubuntu maverick meerkat"
