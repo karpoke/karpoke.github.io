@@ -170,7 +170,6 @@ bueno, con una licencia libre, que autoriza su redistribución.
   [dirección pública del directorio raíz]: http://ubuntuone.com/p/NoU/
     "dirección pública del directorio raíz"
   [política de privacidad]: http://one.ubuntu.com/privacy/
-    "política de privacidad"
     "ubuntu one privacy politcs"
-  [licencia de uso de Ubuntu One]: http://one.ubuntu.com/terms/ "tos"
+  [licencia de uso de Ubuntu One]: http://one.ubuntu.com/terms/
     "licencia de uso de Ubuntu One"

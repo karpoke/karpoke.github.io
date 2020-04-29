@@ -127,7 +127,6 @@ por
 Cuando reiniciemos ya estará solucionado.
 
   [actualizar a Maverick Meerkat]: {filename}/admin/actualizando-ubuntu-a-la-ultima-distribucion-de-forma-remota.md
-    "actualizar a Maverick Meerkat"
     "actualizar a maverick meerkat de forma remota"
   [funcionó con una ATI Radeon]: http://www.nosinmiubuntu.com/2010/10/solucion-para-el-plymouth-en-ubuntu.html
     "funcionó con una ATI Radeon"

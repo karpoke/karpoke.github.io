@@ -681,8 +681,8 @@ otras fuentes. Compartid por email con vuestros contactos¦
     "Así va a funcionar"
   [January 04, 2012]: http://twitter.com/#%21/kurioso/status/154528520171823105
     "January 04, 2012"
-  [1]: http://twitter.com/search?q=%23ComparteCultura "#ComparteCultura"
-    "1"
+  [1]: http://twitter.com/search?q=%23ComparteCultura
+    "#ComparteCultura"
   [January 09, 2012]: http://twitter.com/#%21/kurioso/status/156327907902500865
     "January 09, 2012"
   [proveedores de alojamiento fuera de España]: http://whois.domaintools.com/series.ly

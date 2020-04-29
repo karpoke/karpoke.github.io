@@ -34,7 +34,6 @@ Para la [decodificación de la URL][], podemos hacer uso de `sed`:
     http://www.google.com
 
   [son los únicos que se pueden utilizar]: http://tools.ietf.org/html/rfc3986#section-2.3
-    "son los únicos que se pueden utilizar"
     "rfc3986"
   [codificar la URL]: http://stackoverflow.com/questions/296536/urlencode-from-a-bash-script/298258#298258
     "codificar la URL"

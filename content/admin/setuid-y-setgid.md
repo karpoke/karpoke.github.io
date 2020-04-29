@@ -77,8 +77,7 @@ esta diferencia entre el `uid` del usuario y del propietario:
         return 0;
     }
 
-Vamos a probarlo. El código de este programa está en el archivo
-`printid.c`:
+Vamos a probarlo. El código de este programa está en el archivo `printid.c`:
 
     $ id -u
     1000

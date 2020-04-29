@@ -70,5 +70,4 @@ en `base64` referente a la imagen:
   [no es apropiado para URL]: http://es.wikipedia.org/wiki/Base64#Aplicaciones_en_URL
     "no es apropiado para URL"
   [codificaremos]: {filename}/dev/urlencode-y-urldecode.md
-    "codificaremos"
     "urlencode y urldecode"

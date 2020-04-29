@@ -16,9 +16,9 @@ los de [last.fm][], que añaden al `robots.txt` las siguientes líneas:
 
 » [barrapunto][]
 
-  [Skynet]: http://es.wikipedia.org/wiki/Skynet_(Terminator) "Skynet"
+  [Skynet]: http://es.wikipedia.org/wiki/Skynet_(Terminator)
     "Skynet"
-  [last.fm]: http://www.last.fm/robots.txt "last.fm/robots.txt"
+  [last.fm]: http://www.last.fm/robots.txt
     "last.fm"
   [barrapunto]: http://barrapunto.com/article.pl?sid=10/07/28/0910235
     "barrapunto"

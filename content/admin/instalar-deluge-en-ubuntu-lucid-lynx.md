@@ -99,7 +99,6 @@ Referencias
     "deluge-daemon"
   [tiene activado un cortafuegos]: {filename}/admin/detectando-intrusos-en-ubuntu-maverick-meerkat.md
     "tiene activado un cortafuegos"
-    "cortafuegos"
   [How to install Deluge (v1.2.x/v1.3.x) headless on Ubuntu Server]: http://www.havetheknowhow.com/Install-the-software/Install-Deluge-Headless.html
     "How to install Deluge (v1.2.x/v1.3.x) headless on Ubuntu Server"
   [Ubuntu Init Script]: http://dev.deluge-torrent.org/wiki/UserGuide/InitScript/Ubuntu

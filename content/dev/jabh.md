@@ -15,5 +15,5 @@ Otra versión, algo más críptica:
     $ s="Jaescunrhkso  ettBhr haa,";t=4;f(){ eval "for $1 in {0..$t};do eval $2;done;";};f x ';f y "echo -n \"'\''\${s:\$(((t+1)*y+x)):1}'\''\""'
     Just another Bash hacker,
 
-  [JAPH]: http://en.wikipedia.org/wiki/Just_another_Perl_hacker "JAPH"
+  [JAPH]: http://en.wikipedia.org/wiki/Just_another_Perl_hacker
     "JAPH"

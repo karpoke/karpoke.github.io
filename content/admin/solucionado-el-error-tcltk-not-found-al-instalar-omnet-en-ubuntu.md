@@ -103,10 +103,9 @@ ejecutando:
 
     $ ~/omnetpp-4.1/samples/rundemo
 
-  [OMNeT++]: http://www.omnetpp.org/ "omnet++"
+  [OMNeT++]: http://www.omnetpp.org/
     "OMNeT++"
   [código fuente]: http://www.omnetpp.org/omnetpp/doc_details/2217-omnet-41-source--ide-tgz
     "código fuente"
   [manual de instalación]: http://omnetpp.org/doc/omnetpp41/InstallGuide.pdf
-    "manual de instalación"
     "manual de instalación de omnet++"

@@ -226,8 +226,8 @@ fichero `/etc/services`.
 
   [securizar Ubuntu Maverick Meerkat]: http://dzulkifli.com/index.php?option=com_content&view=article&id=109:securing-maverick-meerkat&catid=35:ubuntu&Itemid=85
     "securizar Ubuntu Maverick Meerkat"
-  [1]: #servicios "servicios"
-    "1"
+  [1]: #servicios
+    "servicios"
   [evitar el aviso]: http://blogs.unbolt.net/index.php/brinley/2010/08/07/filesystem-devtmpfs-used-by-none-is-not-recognised-as-a-valid-filesystem
     "evitar el aviso"
   [recibir demasiados mensajes]: {filename}/admin/kernel-time-sync-status-change.md

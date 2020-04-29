@@ -56,7 +56,7 @@ inalienables.
 
 Los gobiernos van y vienen. La red resiste.
 
-  [La red resiste]: http://redresiste.net/ "la red resiste"
+  [La red resiste]: http://redresiste.net/
     "La red resiste"
   [manifiesto por los derechos fundamentales en Internet]: http://es.wikipedia.org/wiki/Manifiesto_%C2%ABEn_defensa_de_los_derechos_fundamentales_en_internet%C2%BB
     "manifiesto por los derechos fundamentales en Internet"
