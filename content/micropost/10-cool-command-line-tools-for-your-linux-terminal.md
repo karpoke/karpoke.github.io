@@ -8,7 +8,7 @@ Slug: 10-cool-command-line-tools-for-your-linux-terminal
 > about some free, open source, and exciting, text-based tools to help you do
 > more with boredom on the Command line.
 
-- Tecmint: Linux Howtos, Tutorials &amp; Guides | [tecmint.com][]
+» Tecmint: Linux Howtos, Tutorials &amp; Guides | [tecmint.com][]
 
   [tecmint.com]: https://www.tecmint.com/cool-linux-commandline-tools-for-terminal/
     "10 Cool Command Line Tools For Your Linux Terminal"

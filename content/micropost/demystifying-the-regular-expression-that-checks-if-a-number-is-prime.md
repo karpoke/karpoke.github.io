@@ -15,7 +15,7 @@ Slug: demystifying-the-regular-expression-that-checks-if-a-number-is-prime
 > Earth could a match for the .?|(..+?)\1+ regular expression tell that a
 > number is not prime (once it’s converted to its unary representation)?
 
-- iluxonchik | [iluxonchik.github.io][]
+» iluxonchik | [iluxonchik.github.io][]
 
   [iluxonchik.github.io]: https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/
     "Demystifying the regular expression that checks if a number is prime"

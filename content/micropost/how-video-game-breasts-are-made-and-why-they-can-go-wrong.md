@@ -16,7 +16,7 @@ Slug: how-video-game-breasts-are-made-and-why-they-can-go-wrong
 > games, and that gaming’s ocean of unrealistic breasts is what happens
 > when we have so few women developing games.
 
-- Patricia Hernandez | [kotaku.com][]
+» Patricia Hernandez | [kotaku.com][]
 
   [kotaku.com]: http://kotaku.com/how-video-game-breasts-are-made-and-why-they-can-go-so-1687753475
     "How Video Game Breasts Are Made (And Why They Can Go Wrong)"

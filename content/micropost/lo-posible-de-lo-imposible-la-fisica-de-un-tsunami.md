@@ -9,7 +9,7 @@ Slug: lo-posible-de-lo-imposible-la-fisica-de-un-tsunami
 > marea”, ya que no son las mareas la razón de su origen) en aguas poco
 > profundas.
 
-- Agatha | [eltercerprecog.blogspot.com.es][]
+» Agatha | [eltercerprecog.blogspot.com.es][]
 
   [eltercerprecog.blogspot.com.es]: http://eltercerprecog.blogspot.com.es/2014/12/lo-posible-de-lo-imposible-la-fisica-de.html
     "Lo posible de lo imposible: la física de un tsunami"

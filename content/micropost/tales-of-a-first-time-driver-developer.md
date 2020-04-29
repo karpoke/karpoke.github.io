@@ -34,7 +34,7 @@ Slug: tales-of-a-first-time-driver-developer
 > might reasonably be expected to have after jumping into driver
 > development for the first time.
 
-- Connor Classen Behan | [smallperturbation.com][]
+» Connor Classen Behan | [smallperturbation.com][]
 
   [smallperturbation.com]: http://www.smallperturbation.com/r128-exa
     "Tales Of A First Time Driver Developer"

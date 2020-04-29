@@ -10,7 +10,7 @@ Slug: 10-react-js-articles-every-web-developer-should-read
 > standard JavaScript library for developing front-end. That’s the reason many
 > programmers and developers are learning React or React JS.
 
-- Hacker Noon | [hackernoon.com][]
+» Hacker Noon | [hackernoon.com][]
 
   [hackernoon.com]: https://hackernoon.com/10-react-js-articles-every-web-developer-should-read-f5b745a348dc
     "10 React JS Articles Every Web Developer Should Read"

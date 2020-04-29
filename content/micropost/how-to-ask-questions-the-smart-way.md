@@ -24,7 +24,7 @@ Slug: how-to-ask-questions-the-smart-way
 > thought about otherwise.  Among hackers, ”Good question!” is a strong and
 > sincere compliment.
 
-- Eric Steven Raymond | [catb.org][]
+» Eric Steven Raymond | [catb.org][]
 
   [catb.org]: http://catb.org/esr/faqs/smart-questions.html
     "How To Ask Questions The Smart Way"

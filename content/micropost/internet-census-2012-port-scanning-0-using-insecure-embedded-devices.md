@@ -12,7 +12,7 @@ Slug: internet-census-2012-port-scanning-0-using-insecure-embedded-devices
 > DNS and SYN scans. We analyzed some of the data to get an estimation
 > of the IP address usage.
 
-- Carna Botnet | [internetcensus2012.bitbucket.org][]
+» Carna Botnet | [internetcensus2012.bitbucket.org][]
 
   [internetcensus2012.bitbucket.org]: http://internetcensus2012.bitbucket.org/paper.html
     "Internet Census 2012: Port scanning /0 using insecure embedded devices"

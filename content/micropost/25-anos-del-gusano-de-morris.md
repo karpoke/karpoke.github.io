@@ -9,7 +9,7 @@ Slug: 25-anos-del-gusano-de-morris
 > equipos sin validación. Además de los clásicos usuarios y contraseñas
 > débiles.
 
-- Alejandro Ramos | [securitybydefault.com][]
+» Alejandro Ramos | [securitybydefault.com][]
 
   [securitybydefault.com]: http://www.securitybydefault.com/2013/11/25-anos-del-gusano-morris.html
     "25 años del gusano de Morris"

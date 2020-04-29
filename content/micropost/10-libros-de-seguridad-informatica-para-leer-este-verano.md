@@ -13,7 +13,7 @@ Slug: 10-libros-de-seguridad-informatica-para-leer-este-verano
 > tufillo a carbón de chiringuito) de vuelta a la estantería cuando comienza
 > el nuevo curso escolar.
 
-- una-al-dia Hispasec | [unaaldia.hispasec.com][]
+» una-al-dia Hispasec | [unaaldia.hispasec.com][]
 
   [unaaldia.hispasec.com]: https://unaaldia.hispasec.com/2018/07/10-libros-de-seguridad-informatica-para.html
     "10 libros de seguridad informática para leer este verano"

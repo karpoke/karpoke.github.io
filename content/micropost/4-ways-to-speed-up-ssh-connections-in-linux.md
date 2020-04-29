@@ -8,7 +8,7 @@ Slug: 4-ways-to-speed-up-ssh-connections-in-linux
 > speeds, especially when it comes to session creation between the remote and
 > local machines.
 
-- Tecmint: Linux Howtos, Tutorials &amp; Guides | [tecmint.com][]
+» Tecmint: Linux Howtos, Tutorials &amp; Guides | [tecmint.com][]
 
   [tecmint.com]: https://www.tecmint.com/speed-up-ssh-connections-in-linux/
     "4 Ways to Speed Up SSH Connections in Linux"

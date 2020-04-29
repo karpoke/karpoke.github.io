@@ -19,7 +19,7 @@ Slug: superman-vs-hulk-the-fight
 
 [!embed](https://www.youtube.com/watch?v=pBbsvavno8I)
 
-- Michael Habjan | [youtube.com][]
+» Michael Habjan | [youtube.com][]
 
   [youtube.com]: https://www.youtube.com/user/mhabjan
     "Superman vs Hulk - The Fight"

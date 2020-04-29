@@ -11,7 +11,7 @@ Slug: lo-que-sucede-cuando-un-software-se-convierte-en-un-agujero-negro
 > veces en el siglo XX y es por eso que se cambió el foco a proyectos
 > ágiles.
 
-- Sergio Montoro | [lapastillaroja.net][]
+» Sergio Montoro | [lapastillaroja.net][]
 
   [lapastillaroja.net]: http://lapastillaroja.net/2015/11/agujero-negro/
     "Lo que sucede cuando un software se convierte en un agujero negro"

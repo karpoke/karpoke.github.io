@@ -10,7 +10,7 @@ Slug: gestion-de-raid-a-traves-de-mdadm
 > bajo los términos de la Licencia Pública General de GNU versión 2
 > (GNU/GPLv2).
 
-- Joel Barrios Dueñas | [alcancelibre.org][]
+» Joel Barrios Dueñas | [alcancelibre.org][]
 
   [alcancelibre.org]: http://www.alcancelibre.org/staticpages/index.php/como-mdadm
     "Gestión de RAID a través de MDADM"

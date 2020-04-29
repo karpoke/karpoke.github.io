@@ -19,7 +19,7 @@ Slug: highly-critical-ghost-allowing-code-execution-affects-most-linux-systems
 > to execute arbitrary code with the permissions of the user running the
 > application.
 
-- Dan Goodin | [arstechnica.com][]
+» Dan Goodin | [arstechnica.com][]
 
   [arstechnica.com]: http://arstechnica.com/security/2015/01/highly-critical-ghost-allowing-code-execution-affects-most-linux-systems/
     "Highly critical “Ghost” allowing code execution affects most Linux systems"

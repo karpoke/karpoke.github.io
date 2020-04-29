@@ -12,7 +12,7 @@ Slug: a-map-of-the-most-common-paths-for-all-32-chess-pieces
 > maps to io9, noting that each map represents condensed data from over
 > 2 million individual games of chess.
 
-- Ria Misra | [io9.com][]
+» Ria Misra | [io9.com][]
 
   [io9.com]: http://io9.com/a-map-of-the-most-common-paths-for-all-32-chess-pieces-1709011131
     "A Map Of The Most Common Paths For All 32 Chess Pieces"

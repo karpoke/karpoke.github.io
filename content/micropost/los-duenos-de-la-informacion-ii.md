@@ -14,7 +14,7 @@ Slug: los-duenos-de-la-informacion-ii
 > los movimientos empresariales en el sector, para poder mostraros un
 > nuevo gráfico, ampliado, corregido y actualizado.
 
-- Mendigo | [esmola.wordpress.com][]
+» Mendigo | [esmola.wordpress.com][]
 
   [esmola.wordpress.com]: http://esmola.wordpress.com/2012/07/09/los-duenos-de-la-informacion-ii/
     "Los dueños de la información II"

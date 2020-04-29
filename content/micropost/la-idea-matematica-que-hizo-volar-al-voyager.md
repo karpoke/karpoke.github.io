@@ -9,7 +9,7 @@ Slug: la-idea-matematica-que-hizo-volar-al-voyager
 > estudiante de doctorado que descubrió cómo catapultar sondas al
 > espacio.
 
-- Christopher Riley y Dallas Campbell | [bbc.co.uk][]
+» Christopher Riley y Dallas Campbell | [bbc.co.uk][]
 
   [bbc.co.uk]: http://www.bbc.co.uk/mundo/noticias/2012/10/121024_ciencia_matematicas_voyager_np.shtml
     "La idea matemática que hizo volar al Voyager"

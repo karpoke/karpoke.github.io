@@ -12,7 +12,7 @@ Slug: los-tres-monos-sabios-de-whatsapp
 > conversaciones, pero las apariencias engañan: detrás hay tradición,
 > misterio y un lejano mito oriental.
 
-- David G. Ortiz | [yorokobu.es][]
+» David G. Ortiz | [yorokobu.es][]
 
   [yorokobu.es]: http://www.yorokobu.es/three-wise-monkeys/
     "Los tres monos sabios de WhatsApp"

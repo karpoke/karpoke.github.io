@@ -21,7 +21,7 @@ Slug: decipher-mppe-by-breaking-ms-chap-v2
 >  Decipher MPPE by breaking MSCHAP-v2 : We decipher MPPE protocol with
 > the help of MSChap-v2;
 
-- Moxie Marlinspike | [esec-pentest.sogeti.com][]
+» Moxie Marlinspike | [esec-pentest.sogeti.com][]
 
   [esec-pentest.sogeti.com]: http://esec-pentest.sogeti.com/challenge-vpn-network/decipher-mppe-breaking-ms-chap-v2
     "Decipher MPPE by breaking MS-CHAP v2"

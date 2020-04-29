@@ -9,7 +9,7 @@ Slug: 10-killer-tools-for-the-admin-in-a-hurry
 > are drawn to the open source spirit of figuring out what works and sharing
 > it with everyone.
 
-- Opensource.com | [opensource.com][]
+» Opensource.com | [opensource.com][]
 
   [opensource.com]: https://opensource.com/article/18/7/tools-admin
     "10 killer tools for the admin in a hurry"

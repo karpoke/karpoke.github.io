@@ -12,7 +12,7 @@ Slug: logran-que-un-cuadricoptero-sea-capaz-de-lanzar-y-equilibrar-un-pendulo-in
 
 [!embed](https://www.youtube.com/watch?v=15DIidigArA)
 
-- Guillermo del Palacio | [alt1040.com][]
+» Guillermo del Palacio | [alt1040.com][]
 
   [alt1040.com]: http://alt1040.com/2013/02/cuadricoptero-lanza-equilibra-pendulo-invertido
     "Logran que un cuadricóptero sea capaz de lanzar y equilibrar un péndulo invertido"

@@ -18,7 +18,7 @@ Slug: an-open-letter-from-bunnie-author-of-hacking-the-xbox
 > own to face Microsoft.
 
 » [nostarch.com][]
-- bunnie | [bunniestudios.com][]
+» bunnie | [bunniestudios.com][]
 » [Hacking the XBox (PDF)][]
 
   [nostarch.com]: http://nostarch.com/xboxfree

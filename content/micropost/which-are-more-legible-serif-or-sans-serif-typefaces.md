@@ -17,7 +17,7 @@ Slug: which-are-more-legible-serif-or-sans-serif-typefaces
 > are sans serif typefaces less legible? To date, no one has managed to
 > provide a conclusive answer to this issue.
 
-- Alex Poole | [alexpoole.info][]
+» Alex Poole | [alexpoole.info][]
 
   [alexpoole.info]: http://alexpoole.info/blog/which-are-more-legible-serif-or-sans-serif-typefaces/
     "Which Are More Legible: Serif or Sans Serif Typefaces?"

@@ -21,7 +21,7 @@ Slug: the-basics-of-web-application-security
 > to introduce security concerns into the requirements intake processes, they
 > will still build systems and write code.
 
-- Cade Cairns and Daniel Somerfield | [martinfowler.com][]
+» Cade Cairns and Daniel Somerfield | [martinfowler.com][]
 
   [martinfowler.com]: http://martinfowler.com/articles/web-security-basics.html
     "The basics of web application security"

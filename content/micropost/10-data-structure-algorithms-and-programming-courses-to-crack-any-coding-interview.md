@@ -8,7 +8,7 @@ Slug: 10-data-structure-algorithms-and-programming-courses-to-crack-any-coding-i
 > It is, in fact, one of the hardest things in your life and you need to put
 > your best effort to find a job in your dream company.
 
-- Hacker Noon | [hackernoon.com][]
+» Hacker Noon | [hackernoon.com][]
 
   [hackernoon.com]: https://hackernoon.com/10-data-structure-algorithms-and-programming-courses-to-crack-any-coding-interview-e1c50b30b927
     "10 Data Structure, Algorithms, and Programming Courses to Crack Any Coding Interview"

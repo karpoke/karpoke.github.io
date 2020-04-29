@@ -18,7 +18,7 @@ Slug: so-you-want-to-be-a-security-expert
 > In general, though, I have three pieces of advice to anyone who wants
 > to learn computer security.
 
-- Bruce Schneier | [schneier.com][]
+» Bruce Schneier | [schneier.com][]
 
   [schneier.com]: https://www.schneier.com/blog/archives/2012/07/how_to_become_a_1.html
     "So You Want to Be a Security Expert"

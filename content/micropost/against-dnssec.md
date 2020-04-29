@@ -10,7 +10,7 @@ Slug: against-dnssec
 > attacks infeasible, so sites still need to adopt secure transports
 > like TLS. With TLS properly configured, DNSSEC adds nothing.
 
-- Thomas & Erin Ptacek | [sockpuppet.org][]
+» Thomas & Erin Ptacek | [sockpuppet.org][]
 
   [sockpuppet.org]: http://sockpuppet.org/blog/2015/01/15/against-dnssec/
     "Against DNSSEC"

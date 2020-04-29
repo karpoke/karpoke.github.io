@@ -10,7 +10,7 @@ Slug: does-bitrate-really-make-a-difference-in-my-music
 > matter. Here’s a bit of information on bitrate and how it applies to
 > our practical music listening experience.
 
-- Whitson Gordon | [lifehacker.com][]
+» Whitson Gordon | [lifehacker.com][]
 
   [lifehacker.com]: http://lifehacker.com/5810575/does-bitrate-really-make-a-difference-in-my-music
     "Does Bitrate Really Make a Difference In My Music?"

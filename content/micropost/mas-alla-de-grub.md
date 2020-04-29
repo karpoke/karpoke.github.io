@@ -13,7 +13,7 @@ Slug: mas-alla-de-grub.md
 > versiones anteriores de los cargadores de arranque. Pero ¿Hay vida más allá
 > de GRUB?
 
-- Más Linux | [maslinux.es][]
+» Más Linux | [maslinux.es][]
 
   [maslinux.es]: https://maslinux.es/mas-alla-de-grub/
     "Más allá de GRUB"

@@ -10,7 +10,7 @@ Slug: ten-simple-rules-for-the-open-development-of-scientific-software
 > experience of using software more positive, the following ten rules
 > are intended to serve as a guide for any computational scientist.
 
-- Andreas PrliÄ‡1, James B. Procter | [ploscompbiol.org][]
+» Andreas PrliÄ‡1, James B. Procter | [ploscompbiol.org][]
 
   [ploscompbiol.org]: http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1002802
     "Ten Simple Rules for the Open Development of Scientific Software"

@@ -16,7 +16,7 @@ Slug: sarah-harrison-no-poder-negar-la-verdad-es-lo-que-mas-les-aterra
 > en un ”extraordinario acto contra la libertad de prensa”. ”Y eso pasó
 > en un país occidental, pero era por la seguridad nacional”.
 
-- Silvia Font | [eldiario.es][]
+» Silvia Font | [eldiario.es][]
 
   [eldiario.es]: http://www.eldiario.es/turing/vigilancia_y_privacidad/Sarah-Harrison-poder-verdad-aterra_0_278922675.html
     "Sarah Harrison: "No poder negar la verdad es lo que más les aterra""

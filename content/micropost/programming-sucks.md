@@ -13,7 +13,7 @@ Slug: programming-sucks
 > we agree that stress and insanity are bad things? Awesome. Welcome to
 > programming.
 
-- Peter Welch | [stilldrinking.org][]
+» Peter Welch | [stilldrinking.org][]
 
   [stilldrinking.org]: http://stilldrinking.org/programming-sucks
     "Programming Sucks"

@@ -11,7 +11,7 @@ Slug: 10-oop-design-principles-every-programmer-should-know
 > Abstraction, Encapsulation, Polymorphism and Inheritance. But, at the same
 > time, it’s equally important to know object-oriented design principles.
 
-- Hacker Noon | [hackernoon.com][]
+» Hacker Noon | [hackernoon.com][]
 
   [hackernoon.com]: https://hackernoon.com/10-oop-design-principles-every-programmer-should-know-f187436caf65?source=rss----3a8144eabfe3---4
     "10 OOP Design Principles Every Programmer Should Know"

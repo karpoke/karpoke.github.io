@@ -14,7 +14,7 @@ Slug: happy-10th-birthday-ubuntu
 > it further with you. I’m based in the UK so we’re roughly in the same
 > timezone, just let me know when and what number to reach you on.
 
-- Scott James Remnant | [netsplit.com][]
+» Scott James Remnant | [netsplit.com][]
 
   [netsplit.com]: http://netsplit.com/happy-10th-birthday-ubuntu
     "Happy 10th Birthday, Ubuntu"

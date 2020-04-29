@@ -12,7 +12,7 @@ Slug: reverse-debugging-for-python
 > The PyPy team is pleased to give you ”RevPDB”, a reverse-debugger similar to
 > rr but for Python.
 
-- Armin Rigo | [morepypy.blogspot.com.es][]
+» Armin Rigo | [morepypy.blogspot.com.es][]
 
   [morepypy.blogspot.com.es]: https://morepypy.blogspot.com.es/2016/07/reverse-debugging-for-python.html
     "Reverse debugging for Python"

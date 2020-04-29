@@ -13,7 +13,7 @@ Slug: las-primeras-programadoras
 > programadoras y diseñadoras de los precursores de los ordenadores y
 > servidores que sustentan nuestro trabajo diario.
 
-- JJ Velasco | [blogthinkbig.com][]
+» JJ Velasco | [blogthinkbig.com][]
 
   [blogthinkbig.com]: http://blogthinkbig.com/las-primeras-programadoras/
     "Las primeras programadoras"

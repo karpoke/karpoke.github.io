@@ -11,7 +11,7 @@ Slug: this-is-how-we-zenpayroll-our-development-workflow
 > changing needs, but I’ll cover in some detail the way we do things
 > today.
 
-- Edward Kim | [engineering.zenpayroll.com][]
+» Edward Kim | [engineering.zenpayroll.com][]
 
   [engineering.zenpayroll.com]: http://engineering.zenpayroll.com/this-is-how-we-zenpayroll-our-development-workflow/
     "This is how we ZenPayroll: Our Development Workflow"

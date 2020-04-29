@@ -14,7 +14,7 @@ Related:
 >
 > Ver el proyecto en [github.com][].
 
-- Sergio De Luz | [redeszone.net][]
+» Sergio De Luz | [redeszone.net][]
 
   [github.com]: https://github.com/jlund/streisand
     "Streisand"

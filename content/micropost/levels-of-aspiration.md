@@ -16,7 +16,7 @@ Slug: levels-of-aspiration
 > of?” matter far more. Their aspirations are local, finding something
 > that (sorta) works, and getting paid.
 
-- David | [37signals.com][]
+» David | [37signals.com][]
 
   [37signals.com]: http://37signals.com/svn/posts/3200-levels-of-aspiration
     "Levels of aspiration"

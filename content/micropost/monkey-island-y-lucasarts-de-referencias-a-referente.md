@@ -16,7 +16,7 @@ Slug: monkey-island-y-lucasarts-de-referencias-a-referente
 > apenas dos líneas que se trata de –seguramente- la aventura gráfica
 > más famosa de LucasArts: Monkey Island.
 
-- blissy91 | [tuprincesaestaenotrocastillo.com][]
+» blissy91 | [tuprincesaestaenotrocastillo.com][]
 
   [tuprincesaestaenotrocastillo.com]: http://www.tuprincesaestaenotrocastillo.com/post/28045701319/monkey-island-y-lucasarts-de-referencias-a-referente
     "Monkey Island y LucasArts: de referencias a referente"

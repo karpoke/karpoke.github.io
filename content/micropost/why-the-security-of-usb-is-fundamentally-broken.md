@@ -18,7 +18,7 @@ Slug: why-the-security-of-usb-is-fundamentally-broken
 > nearly impossible to counter without banning the sharing of USB
 > devices or filling your port with superglue.
 
-- Andy Greenberg | [wired.com][]
+» Andy Greenberg | [wired.com][]
 
   [wired.com]: http://www.wired.com/2014/07/usb-security/
     "Why the Security of USB Is Fundamentally Broken"

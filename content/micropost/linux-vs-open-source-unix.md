@@ -10,7 +10,7 @@ Slug: linux-vs-open-source-unix
 > servers on this planet and many developers work on them, doesn’t make them
 > better than ‘X’. They are popular but that’s it.
 
-- Albert Valbuena | [adminbyaccident.com][]
+» Albert Valbuena | [adminbyaccident.com][]
 
   [adminbyaccident.com]: https://www.adminbyaccident.com/politics/linux-vs-open-source-unix/
     "Linux VS open source UNIX"

@@ -10,7 +10,7 @@ Slug: 8-python-packages-that-will-simplify-your-life-with-django
 > we're not kidding when we say these packages show up in almost every project
 > we work on.
 
-- Opensource.com | [opensource.com][]
+» Opensource.com | [opensource.com][]
 
   [opensource.com]: https://opensource.com/article/18/9/django-packages
     "8 Python packages that will simplify your life with Django"

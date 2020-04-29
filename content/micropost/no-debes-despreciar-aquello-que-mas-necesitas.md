@@ -10,7 +10,7 @@ Slug: no-debes-despreciar-aquello-que-mas-necesitas
 > el desprecio de la labor del programador frente a otros tipos de
 > tareas.
 
-- Jose María Arranz | [saveinformaticos.reeelab.com][]
+» Jose María Arranz | [saveinformaticos.reeelab.com][]
 
   [saveinformaticos.reeelab.com]: http://saveinformaticos.reeelab.com/2013/04/10/no-debes-despreciar-aquello-que-mas-necesitas/
     "No debes despreciar aquello que más necesitas"

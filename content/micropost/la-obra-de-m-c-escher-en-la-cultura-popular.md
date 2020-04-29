@@ -14,7 +14,7 @@ Slug: la-obra-de-m-c-escher-en-la-cultura-popular
 > aparición de los diseños del artista holandés (o inspirados en ellos)
 > en diversos campos.
 
-- Guillermo del Palacio | [alt1040.com][]
+» Guillermo del Palacio | [alt1040.com][]
 
   [alt1040.com]: http://alt1040.com/2013/03/escher-en-la-cultura-popular
     "La obra de M. C. Escher en la cultura popular"

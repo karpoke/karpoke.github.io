@@ -36,7 +36,7 @@ Slug: did-bill-gates-steal-the-heart-of-dos
 > inside MS-DOS for the fingerprints of CP/M, and settle the issue once
 > and for all.
 
-- Bob Zeidman | [spectrum.ieee.org][]
+» Bob Zeidman | [spectrum.ieee.org][]
 
   [spectrum.ieee.org]: http://spectrum.ieee.org/computing/software/did-bill-gates-steal-the-heart-of-dos/
     "Did Bill Gates Steal the Heart of DOS?"

@@ -8,7 +8,7 @@ Slug: como-trabajar-con-vhdl-usando-software-libre
 > hacer mis trabajos con software libre. Por esta razón, he decidido
 > compartir la siguiente guía.
 
-- pandacris | [usemoslinux.blogspot.com][]
+» pandacris | [usemoslinux.blogspot.com][]
 
   [usemoslinux.blogspot.com]: http://usemoslinux.blogspot.com/2012/12/como-trabajar-con-vhdl-usando-software.html
     "Cómo trabajar con vhdl usando software libre"

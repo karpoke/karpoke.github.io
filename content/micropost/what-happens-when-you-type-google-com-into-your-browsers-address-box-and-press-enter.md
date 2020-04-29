@@ -9,7 +9,7 @@ Slug: what-happens-when-you-type-google-com-into-your-browsers-address-box-and-p
 > There’s tons of details missing, just waiting for you to add them! So
 > send us a pull request, please!
 
-- Alex Gaynor | [github.com][]
+» Alex Gaynor | [github.com][]
 
   [github.com]: https://github.com/alex/what-happens-when
     "What happens when you type google.com into your browser's address box and press enter?"

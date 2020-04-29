@@ -20,7 +20,7 @@ Slug: el-algoritmo-de-dios
 > están vedadas al intelecto humano, sino que son numerosas y
 > prolíficas. Veamosló.
 
-- josejuan | [genbetadev.com][]
+» josejuan | [genbetadev.com][]
 
   [genbetadev.com]: http://www.genbetadev.com/trabajar-como-desarrollador/el-algoritmo-de-dios
     "El algoritmo de Dios"

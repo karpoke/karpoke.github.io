@@ -9,7 +9,7 @@ VAS A PERDER?? ]
 
 [!embed](https://www.youtube.com/watch?v=R0Gnec5UpGs)
 
-- anarko919 | [htcmania.com][]
+» anarko919 | [htcmania.com][]
 
   [htcmania.com]: http://www.htcmania.com/showthread.php?t=332730
     "ROM NaRkDrOiD IcX3 (4.0.3 LP8/LP9) para Samsung Galaxy S2"

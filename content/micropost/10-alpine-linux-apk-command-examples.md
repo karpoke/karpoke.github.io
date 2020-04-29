@@ -7,7 +7,7 @@ Slug: 10-alpine-linux-apk-command-examples
 > my simple guide that explains how to install, remove, query and manage
 > packages on an Alpine Linux.
 
-- nixCraft: Linux Tips, Hacks, Tutorials, And Ideas In Blog Format | [cyberciti.biz][]
+» nixCraft: Linux Tips, Hacks, Tutorials, And Ideas In Blog Format | [cyberciti.biz][]
 
   [cyberciti.biz]: https://www.cyberciti.biz/faq/10-alpine-linux-apk-command-examples/
     "10 Alpine Linux apk Command Examples"

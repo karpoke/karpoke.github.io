@@ -31,7 +31,7 @@ Slug: learn-vim-progressively
 > another editor in less than 3 days. In fact it will certainly take 2
 > weeks instead of 3 days.
 
-- Yann Esposito | [yannesposito.com][]
+» Yann Esposito | [yannesposito.com][]
 
   [yannesposito.com]: http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
     "Learn Vim Progressively"

@@ -20,7 +20,7 @@ Slug: undebt-how-we-refactored-3-million-lines-of-code
 > flowers and the technical debt that comes with them will continue to grow
 > unchecked.
 
-- Evan H. | [engineeringblog.yelp.com][]
+» Evan H. | [engineeringblog.yelp.com][]
 
   [engineeringblog.yelp.com]: https://engineeringblog.yelp.com/2016/08/undebt-how-we-refactored-3-million-lines-of-code.html
     "Undebt: how we refactored 3 million lines of code"

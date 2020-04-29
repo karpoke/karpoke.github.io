@@ -19,7 +19,7 @@ Slug: un-largo-segundo-en-el-cerebro
 > la unión de características. El cerebro lo integra todo y vemos un
 > auto rojo moverse.
 
-- Antonio Orbe | [alt1040.com][]
+» Antonio Orbe | [alt1040.com][]
 
   [alt1040.com]: http://alt1040.com/2012/07/largo-segundo-cerebro
     "Un largo segundo en el cerebro"

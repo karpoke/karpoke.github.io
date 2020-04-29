@@ -17,7 +17,7 @@ Slug: how-to-teach-endian
 > programmers assume external buffers cannot be larger than internal ones,
 > leading to buffer overflows.
 
-- Robert Graham | [erratasec.com][]
+» Robert Graham | [erratasec.com][]
 
   [erratasec.com]: http://blog.erratasec.com/2016/11/how-to-teach-endian.html
     "How to teach endian"

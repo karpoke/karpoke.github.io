@@ -12,7 +12,7 @@ Slug: aprovechan-un-fallo-y-le-sacan-980-000-dolares-a-varios-casinos
 > también, y nadie se dio cuenta, fueron una serie de sutiles errores de
 > código que tardaron siete años en ser descubiertos.
 
-- Rocío P. Benavente | [elconfidencial.com][]
+» Rocío P. Benavente | [elconfidencial.com][]
 
   [elconfidencial.com]: http://www.elconfidencial.com/tecnologia/2014-10-08/aprovechan-un-fallo-y-le-sacan-980-000-dolares-a-varios-casinos_230979/
     "Aprovechan un fallo y le sacan 980.000 dólares a varios casinos"

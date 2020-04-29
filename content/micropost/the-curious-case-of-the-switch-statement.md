@@ -11,7 +11,7 @@ Slug: the-curious-case-of-the-switch-statement
 > almost every variable being a single letter and labels forming their own
 > entire column on the left side. I guess that last bit came from FORTRAN.
 
-- Eevee | [eev.ee][]
+» Eevee | [eev.ee][]
 
   [eev.ee]: https://eev.ee/blog/2016/09/18/the-curious-case-of-the-switch-statement/
     "The curious case of the switch statement"

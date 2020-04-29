@@ -15,7 +15,7 @@ Slug: poodle-attacks-on-sslv3
 > SSL got encryption and authentication the wrong way around – it
 > authenticates before encrypting.
 
-- Adam Langley | [imperialviolet.org][]
+» Adam Langley | [imperialviolet.org][]
 
   [imperialviolet.org]: https://www.imperialviolet.org/2014/10/14/poodle.html
     "POODLE attacks on SSLv3"

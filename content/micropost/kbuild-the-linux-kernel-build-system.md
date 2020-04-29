@@ -13,7 +13,7 @@ Slug: kbuild-the-linux-kernel-build-system
 > layers and levels of indirection and because its build system allows
 > for creating highly customized kernel binary images.
 
-- Javier Martínez Canilles | [linuxjournal.com][]
+» Javier Martínez Canilles | [linuxjournal.com][]
 
   [linuxjournal.com]: http://www.linuxjournal.com/content/kbuild-linux-kernel-build-system
     "Kbuild: the Linux Kernel Build System"

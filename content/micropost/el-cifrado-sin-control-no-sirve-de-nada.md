@@ -13,7 +13,7 @@ Slug: el-cifrado-sin-control-no-sirve-de-nada
 > algoritmo de cifrado de turno, rellenar la firma del método y
 > almacenar la salida.
 
-- Joel Sevilleja | [securityartwork.es][]
+» Joel Sevilleja | [securityartwork.es][]
 
   [securityartwork.es]: http://www.securityartwork.es/2013/03/05/el-cifrado-sin-control-no-sirve-de-nada/
     "El cifrado sin control, no sirve de nada"

@@ -31,7 +31,7 @@ Slug: f2fs-introduce-flash-friendly-file-system
 > selecting allocation
 >  and cleaning algorithms.
 
-- Jaegeuk Kim | [lkml.org][]
+» Jaegeuk Kim | [lkml.org][]
 
   [lkml.org]: https://lkml.org/lkml/2012/10/5/205
     "f2fs: introduce flash-friendly file system"

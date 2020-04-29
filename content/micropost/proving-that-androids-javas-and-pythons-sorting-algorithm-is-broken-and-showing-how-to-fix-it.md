@@ -24,7 +24,7 @@ Slug: proving-that-androids-javas-and-pythons-sorting-algorithm-is-broken-and-sh
 > (interestingly, that bug appears already in the Python
 > implementation). This blog post shows how we did it.
 
-- Stijn de Gouw | [envisage-project.eu][]
+» Stijn de Gouw | [envisage-project.eu][]
 
   [envisage-project.eu]: http://envisage-project.eu/proving-android-java-and-python-sorting-algorithm-is-broken-and-how-to-fix-it/
     "Proving that Android’s, Java’s and Python’s sorting algorithm is broken (and showing how to fix it)"

@@ -9,7 +9,7 @@ Slug: este-es-el-hombre-que-terminara-por-destruir-silicon-valley
 > de la física están comenzando a imponerse sobre los pronósticos de
 > Moore.
 
-- David Pérez | [elconfidencial.com][]
+» David Pérez | [elconfidencial.com][]
 
   [elconfidencial.com]: http://www.elconfidencial.com/tecnologia/2013-11-16/este-es-el-hombre-que-terminara-por-destruir-silicon-valley_55203/
     "Este es el hombre que terminará por destruir Silicon Valley"

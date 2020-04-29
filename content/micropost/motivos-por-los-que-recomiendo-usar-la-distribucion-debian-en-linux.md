@@ -15,7 +15,7 @@ Slug: motivos-por-los-que-recomiendo-usar-la-distribucion-debian-en-linux
 > *  Filosofia de la distribución
 > *  La instalo una vez y me olvido para siempre
 
-- Joan | [geekland.eu][]
+» Joan | [geekland.eu][]
 
   [geekland.eu]: http://geekland.eu/motivos-para-debian-en-linux/
     "Motivos por los que recomiendo usar la distribución Debian en Linux"

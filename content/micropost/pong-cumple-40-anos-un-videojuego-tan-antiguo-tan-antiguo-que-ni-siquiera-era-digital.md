@@ -18,7 +18,7 @@ Slug: pong-cumple-40-anos-un-videojuego-tan-antiguo-tan-antiguo-que-ni-siquiera-
 > pasado a los anales de la informática y la industria del
 > entretenimiento.
 
-- Alvy | [rtve.es][]
+» Alvy | [rtve.es][]
 
   [rtve.es]: http://www.rtve.es/noticias/20121129/pong-cumple-40-anos-videojuego-tan-antiguo-tan-antiguo-ni-siquiera-era-digital/579025.shtml
     "Pong cumple 40 años: un videojuego tan antiguo, tan antiguo que ni siquiera era digital"

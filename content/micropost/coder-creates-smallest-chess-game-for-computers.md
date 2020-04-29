@@ -9,7 +9,7 @@ Slug: coder-creates-smallest-chess-game-for-computers
 > it smaller than 1K ZX Chess - a Sinclair ZX81 computer game, which
 > contained 672 bytes of code and had held the record for 33 years.
 
-- Leo Kelion | [bbc.com][]
+» Leo Kelion | [bbc.com][]
 
   [bbc.com]: http://www.bbc.com/news/technology-31028787
     "Coder creates smallest chess game for computers"

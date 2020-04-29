@@ -16,7 +16,7 @@ Slug: exigimos-la-retirada-de-la-ley-lassalle-nueva-reforma-de-la-ley-de-propied
 > de creadores y artistas que ven en la copia privada una actividad que
 > les beneficia y sin la cual, muchos no hubieran llegado a ser tales.
 
-- Stéphane M. Grueso | [steph.es][]
+» Stéphane M. Grueso | [steph.es][]
 
   [steph.es]: http://steph.es/blog/2013/03/exigimos-la-retirada-de-la-ley-lassalle-nueva-reforma-de-la-ley-de-propiedad-intelectual/
     "Exigimos la retirada de la Ley Lassalle (nueva reforma de la Ley de Propiedad Intelectual)"

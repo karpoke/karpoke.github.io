@@ -11,7 +11,7 @@ Slug: 3-paradojas-que-le-quitan-el-sueno-a-los-matematicos-y-filosofos
 > para la pregunta lógica de las cosas que crecen, un lado sostiene que el
 > barco sigue siendo el mismo, y el otro afirma que no.
 
-- bbc.com | [bbc.com][]
+» bbc.com | [bbc.com][]
 
   [bbc.com]: https://www.bbc.com/mundo/noticias-42570192
     "3 paradojas que le quitan el sueño a los matemáticos y filósofos"

@@ -18,7 +18,7 @@ Slug: 2012-what-a-year-for-linux
 
 [!embed](https://www.youtube.com/watch?v=Unfx2qCj6Ao)
 
-- TheLinuxFoundation | [youtube.com][]
+» TheLinuxFoundation | [youtube.com][]
 
   [linuxfoundation.org]: http://www.linuxfoundation.org
     "www.linuxfoundation.org"

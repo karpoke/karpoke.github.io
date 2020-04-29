@@ -8,7 +8,7 @@ Slug: programming-pearls-and-python-fails
 > I’ve found more modern hardware advances that puts conventional wisdom on
 > its head.
 
-- Franklin He | [medium.com][]
+» Franklin He | [medium.com][]
 
   [medium.com]: https://medium.com/@n0mad/programming-pearls-and-python-fails-c4fc2962c3ed#.h0k9913hy
     "Programming Pearls and Python fails"

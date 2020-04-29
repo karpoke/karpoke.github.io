@@ -12,7 +12,7 @@ Slug: quien-era-kurt-godel-el-hombre-que-caminaba-con-albert-einstein-y-al-que-c
 > Gödel, a menudo descrito como el más grande filósofo lógico desde
 > Aristóteles.
 
-- BBC Mundo | [bbc.com][]
+» BBC Mundo | [bbc.com][]
 
   [bbc.com]: https://www.bbc.com/mundo/noticias-43568588?ocid=socialflow_facebook
     "Quién era Kurt Gödel, el hombre que caminaba con Albert Einstein (y al que comparan con Aristóteles)"

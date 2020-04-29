@@ -17,7 +17,7 @@ Slug: a-flaw-in-the-design-part-i
 > essential nature — fast, open and frictionless — to deliver malicious
 > code along computer lines designed to carry harmless files or e-mails.
 
-- Craig Timberg | [washingtonpost.com][]
+» Craig Timberg | [washingtonpost.com][]
 
   [washingtonpost.com]: http://www.washingtonpost.com/sf/business/2015/05/30/net-of-insecurity-part-1/
     "A flaw in the design (Part I)"

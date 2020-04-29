@@ -10,7 +10,7 @@ Slug: como-lance-un-proyecto-rentable-sin-escribir-ni-una-linea-de-codigo
 > totalmente compatible con mis otros menesteres, como pegar los carteles de
 > nvivo.es.
 
-- txantxez | [txarly.com][]
+» txantxez | [txarly.com][]
 
   [txarly.com]: http://www.txarly.com/post/100678426714/como-lance-un-proyecto-rentable-sin-escribir-ni-una
     "Cómo lancé un proyecto rentable sin escribir ni una línea de código"

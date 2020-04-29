@@ -9,7 +9,7 @@ Slug: espana-y-el-software-que-fue
 > de ese periodo —tecnología punta de 1985, con 128 KB de RAM y una
 > inusual disquetera de tres pulgadas.
 
-- Roger Senserrich | [jotdown.es][]
+» Roger Senserrich | [jotdown.es][]
 
   [jotdown.es]: http://www.jotdown.es/2016/02/espana-software-fue/
     "España y el software que fue"

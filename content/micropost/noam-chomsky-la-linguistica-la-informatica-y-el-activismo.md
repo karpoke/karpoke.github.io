@@ -19,7 +19,7 @@ Slug: noam-chomsky-la-linguistica-la-informatica-y-el-activismo
 > y también John Backus adoptó sus reglas para describir la sintaxis de
 > Algol, origen de la notación Backus-Naur.
 
-- Fernando Cuartero | [hablandodeciencia.com][]
+» Fernando Cuartero | [hablandodeciencia.com][]
 
   [hablandodeciencia.com]: http://www.hablandodeciencia.com/articulos/2012/11/26/noam-chomsky-la-linguistica-la-informatica-y-la-sociedad/
     "Noam Chomsky. La lingüistica, la informática y el activismo"

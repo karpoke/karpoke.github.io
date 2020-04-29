@@ -10,7 +10,7 @@ Slug: every-time-travel-movie-ever-ranked
 > movies that where someone is frozen (or something) and then they wake
 > up in the future (so Mel Gibson’s Forever Young, Encino Man are OUT).
 
-- Meredith Woerner | [io9.com][]
+» Meredith Woerner | [io9.com][]
 
   [io9.com]: http://io9.com/every-time-travel-movie-ever-ranked-1682363164
     "Every Time Travel Movie Ever, Ranked"

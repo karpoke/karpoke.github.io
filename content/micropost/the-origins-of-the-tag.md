@@ -14,7 +14,7 @@ Slug: the-origins-of-the-tag
 > thought of blinking text, and talked about blinking this and that and
 > how absurd the whole thing would be.
 
-- Lou Montulli | [montulli.org][]
+» Lou Montulli | [montulli.org][]
 
   [montulli.org]: http://www.montulli.org/theoriginofthe%3Cblink%3Etag
     "The Origins of the  Tag"

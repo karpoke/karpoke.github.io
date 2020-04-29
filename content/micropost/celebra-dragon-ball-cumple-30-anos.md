@@ -8,7 +8,7 @@ Slug: celebra-dragon-ball-cumple-30-anos
 > publicara la historia de un pequeño niño que juntos a sus amigos
 > buscaban unas esferas mágicas que al reunirlas podrían pedir un deseo.
 
-- Ivonne Lara | [hipertextual.com][]
+» Ivonne Lara | [hipertextual.com][]
 
   [hipertextual.com]: http://hipertextual.com/2014/11/dragon-ball-cumple-30-anos
     "Celebra, Dragon Ball cumple 30 años"

@@ -13,7 +13,7 @@ Slug: open-letter-to-the-linux-world
 > transformer on steroids. It’s complicated, multi-faceted, opaque, and
 > supremely powerful.
 
-- Christopher Barry | [lkml.org][]
+» Christopher Barry | [lkml.org][]
 
   [lkml.org]: https://lkml.org/lkml/2014/8/12/459
     "Open letter to the Linux World"

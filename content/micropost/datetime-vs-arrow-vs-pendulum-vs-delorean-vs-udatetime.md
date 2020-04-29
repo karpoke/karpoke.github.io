@@ -15,7 +15,7 @@ Slug: datetime-vs-arrow-vs-pendulum-vs-delorean-vs-udatetime
 > + Instantiate object from timestamp in UTC
 > + Instantiate object from timestamp in local timezone
 
-- Simon Pirschel | [aboutsimon.com][]
+» Simon Pirschel | [aboutsimon.com][]
 
   [aboutsimon.com]: https://aboutsimon.com/blog/2016/08/04/datetime-vs-Arrow-vs-Pendulum-vs-Delorean-vs-udatetime.html
     "datetime vs Arrow vs Pendulum vs Delorean vs udatetime"

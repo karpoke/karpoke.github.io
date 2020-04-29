@@ -15,7 +15,7 @@ Slug: visualization-of-regular-expression-character-classes
 > Probably not. Therefore I created a visualization that illustrates
 > which part of the ASCII set each character class matches.
 
-- Peteris Krumins | [catonmat.net][]
+» Peteris Krumins | [catonmat.net][]
 
   [catonmat.net]: http://www.catonmat.net/blog/regex-char-classes/
     "Visualization of Regular Expression Character Classes"

@@ -12,7 +12,7 @@ Slug: 50-anos-de-la-ley-de-moore-quizas-la-ley-mas-incomprendida-de-la-tecnologi
 > Ley de Moore, un exponente de la tecnología que se ha ido cumpliendo
 > generación tras generación, pero con muchas dudas al respecto.
 
-- Pablo Espeso | [xataka.com][]
+» Pablo Espeso | [xataka.com][]
 
   [xataka.com]: http://www.xataka.com/componentes-de-pc/50-anos-de-la-ley-de-moore-la-quizas-ley-mas-incomprendida-de-la-tecnologia
     "50 años de la ley de Moore, quizás la "ley" más incomprendida de la tecnología"

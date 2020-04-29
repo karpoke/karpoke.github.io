@@ -9,7 +9,7 @@ Slug: cual-es-el-origen-de-hello-world
 > Introduction to the Programming Language B, en el cual introdujo por
 > primera vez el ejemplo del famoso “Hello World”
 
-- Nicolás Rivera | [hipertextual.com][]
+» Nicolás Rivera | [hipertextual.com][]
 
   [hipertextual.com]: http://hipertextual.com/2016/01/hello-world-origen
     "¿Cuál es el origen de “Hello world”?"

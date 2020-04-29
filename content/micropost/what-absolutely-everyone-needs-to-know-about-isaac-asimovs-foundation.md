@@ -20,7 +20,7 @@ Slug: what-absolutely-everyone-needs-to-know-about-isaac-asimovs-foundation
 > to explore a pivotal idea that we’ve been asking for centuries: Are
 > there laws of human history as immutable as the laws of physics?
 
-- Mark Strauss | [io9.com][]
+» Mark Strauss | [io9.com][]
 
   [io9.com]: http://io9.com/what-absolutely-everyone-needs-to-know-about-isaac-asim-1660230344
     "What Absolutely Everyone Needs To Know About Isaac Asimov's Foundation"

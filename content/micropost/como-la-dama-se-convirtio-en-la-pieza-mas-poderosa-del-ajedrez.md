@@ -8,7 +8,7 @@ Slug: como-la-dama-se-convirtio-en-la-pieza-mas-poderosa-del-ajedrez
 > es la historia de como la Dama del Ajedrez se convirtió en la pieza
 > más poderosa.
 
-- Gabriela González | [hipertextual.com][]
+» Gabriela González | [hipertextual.com][]
 
   [hipertextual.com]: http://hipertextual.com/2015/05/dama-del-ajedrez
     "Cómo la Dama se convirtió en la pieza más poderosa del Ajedrez"

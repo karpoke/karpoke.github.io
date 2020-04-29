@@ -16,7 +16,7 @@ Slug: bash-one-liners-explained-part-iii-all-about-redirections
 > and stderr, point to your terminal. The input is read from what you
 > type in the terminal and both outputs are sent to the terminal.
 
-- Peteris Krumins | [catonmat.net][]
+» Peteris Krumins | [catonmat.net][]
 
   [catonmat.net]: http://www.catonmat.net/blog/bash-one-liners-explained-part-three/
     "Bash One-Liners Explained, Part III: All about redirections"

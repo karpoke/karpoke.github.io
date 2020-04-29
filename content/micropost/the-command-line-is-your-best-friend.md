@@ -14,7 +14,7 @@ Slug: the-command-line-is-your-best-friend
 > It’s up to each person to find his or her best workflow. Some prefer
 > the GUI, while others enjoy the CLI.
 
-- Patkos Csaba | [net.tutsplus.com][]
+» Patkos Csaba | [net.tutsplus.com][]
 
   [net.tutsplus.com]: http://net.tutsplus.com/tutorials/tools-and-tips/the-command-line-is-your-best-friend/
     "The Command Line is Your Best Friend"

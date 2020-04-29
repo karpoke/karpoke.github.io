@@ -14,7 +14,7 @@ Slug: porque-robar-a-los-pequenos-es-mas-facil
 > si tras autenticarnos en la misma nos solicita todas las posiciones de
 > la tarjeta de coordenadas, en muchos casos las seguimos introduciendo.
 
-- @Mikel Gastesi | [segu-info.com.ar][]
+» @Mikel Gastesi | [segu-info.com.ar][]
 
   [segu-info.com.ar]: http://blog.segu-info.com.ar/2012/06/porque-robar-los-pequenos-es-mas-facil.html
     "Porque robar a los pequeños es más fácil"

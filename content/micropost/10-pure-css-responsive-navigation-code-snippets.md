@@ -10,7 +10,7 @@ Slug: 10-pure-css-responsive-navigation-code-snippets
 > tutorials to help with that. But I’m also a fan of using code snippets like
 > the ones I’ve collected for this article.
 
-- Speckyboy Design Magazine | [speckyboy.com][]
+» Speckyboy Design Magazine | [speckyboy.com][]
 
   [speckyboy.com]: https://speckyboy.com/pure-css-responsive-navigation/
     "10 Pure CSS Responsive Navigation Code Snippets"

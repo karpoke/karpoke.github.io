@@ -12,7 +12,7 @@ Slug: how-to-argue-on-the-internet-without-becoming-a-troll
 > happens, these tips will keep you knocking down opponents without
 > losing your cool or becoming a troll.
 
-- Jesse Nivens | [lifehacker.com][]
+» Jesse Nivens | [lifehacker.com][]
 
   [lifehacker.com]: http://lifehacker.com/5943083/how-to-argue-on-the-internet-without-becoming-a-troll
     "How to Argue on the Internet Without Becoming a Troll"

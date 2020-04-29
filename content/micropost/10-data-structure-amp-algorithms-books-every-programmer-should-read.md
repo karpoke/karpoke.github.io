@@ -9,7 +9,7 @@ Slug: 10-data-structure-amp-algorithms-books-every-programmer-should-read
 > programmer worth their salt should be able to convert them to code in their
 > programming language of choice.
 
-- Hacker Noon | [hackernoon.com][]
+» Hacker Noon | [hackernoon.com][]
 
   [hackernoon.com]: https://hackernoon.com/10-data-structure-algorithms-books-every-programmer-should-read-d50487313127?source=rss----3a8144eabfe3---4
     "10 Data Structure &amp; Algorithms Books Every Programmer Should Read"

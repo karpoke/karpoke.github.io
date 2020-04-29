@@ -10,6 +10,6 @@ Slug: la-polemica-systemd
 > SystemD es tan malo? Y si es tan malo, ¿porqué cada vez más distribuciones
 > lo están utilizando?
 
-- Amancio | [lignux.com][]
+» Amancio | [lignux.com][]
   [lignux.com]: https://lignux.com/la-polemica-systemd/
     "La polémica SystemD"

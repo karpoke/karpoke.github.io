@@ -10,7 +10,7 @@ Slug: 10-computadoras-clasicas-que-hicieron-historia
 > justicia el "padre de la ciencia de la computación"- formalizó los conceptos
 > de algoritmo y de máquina de Turing.
 
-- Foro de elhacker.net - Noticias | [foro.elhacker.net][]
+» Foro de elhacker.net - Noticias | [foro.elhacker.net][]
 
   [foro.elhacker.net]: https://foro.elhacker.net/noticias/10_computadoras_clasicas_que_hicieron_historia-t482814.0.html;msg2160532#msg2160532
     "10 computadoras clásicas que hicieron historia"

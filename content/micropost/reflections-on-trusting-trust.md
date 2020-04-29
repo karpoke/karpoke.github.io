@@ -13,7 +13,7 @@ Slug: reflections-on-trusting-trust
 > will be harder and harder to detect. A well installed microcode bug
 > will be almost impossible to detect.
 
-- Ken Thompson | [bell-labs.com][]
+» Ken Thompson | [bell-labs.com][]
 
   [bell-labs.com]: http://cm.bell-labs.com/who/ken/trust.html
     "Reflections on Trusting Trust"

@@ -11,7 +11,7 @@ Slug: el-codigo-asimov
 > sueles usar para darles color en sus noticieros, aún suelen provocar
 > ciertos temores.
 
-- Pablo Capanna | [pagina12.com.ar][]
+» Pablo Capanna | [pagina12.com.ar][]
 
   [pagina12.com.ar]: http://www.pagina12.com.ar/diario/suplementos/futuro/13-2816-2013-03-07.html
     "El código Asimov"

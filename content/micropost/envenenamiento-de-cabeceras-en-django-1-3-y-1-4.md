@@ -14,7 +14,7 @@ Slug: envenenamiento-de-cabeceras-en-django-1-3-y-1-4
 > reside en el parser del método django.http.HttpRequest.get_host(),
 > que extrae esta cabecera ”Host” incorrectamente.
 
-- Antonio Sánchez | [unaaldia.hispasec.com][]
+» Antonio Sánchez | [unaaldia.hispasec.com][]
 
   [unaaldia.hispasec.com]: http://unaaldia.hispasec.com/2012/10/envenenamiento-de-cabeceras-en-django.html
     "Envenenamiento de cabeceras en Django 1.3 y 1.4"

@@ -8,7 +8,7 @@ Slug: el-gobierno-de-espana-esta-librando-una-guerra-en-contra-del-internet-y-tu
 > legalizar medidas que atentan contra la libertad de expresión en
 > internet. En este caso, la víctima eres tú.
 
-- Eduardo Arcos | [alt1040.com][]
+» Eduardo Arcos | [alt1040.com][]
 
   [alt1040.com]: http://alt1040.com/2014/07/canon-aede-espana-vs-internet
     "El Gobierno de España está librando una guerra en contra del internet y tú eres la víctima"

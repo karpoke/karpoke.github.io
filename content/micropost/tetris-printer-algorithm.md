@@ -13,7 +13,7 @@ Slug: tetris-printer-algorithm
 
 [!embed](https://www.youtube.com/watch?v=PJkHwulsac4)
 
-- Michael Birken | [meatfighter.com][]
+» Michael Birken | [meatfighter.com][]
 
   [meatfighter.com]: http://meatfighter.com/tetrisprinteralgorithm/
     "Tetris Printer Algorithm"

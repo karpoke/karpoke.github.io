@@ -15,7 +15,7 @@ Slug: 10-colossal-old-computers-that-changed-history
 > scientists – as well as a visual demonstration of just how far we’ve
 > come.
 
-- Will | [bestcomputerscienceschools.net][]
+» Will | [bestcomputerscienceschools.net][]
 
   [bestcomputerscienceschools.net]: http://www.bestcomputerscienceschools.net/10-colossal-old-computers-that-changed-history/
     "10 Colossal Old Computers That Changed History"

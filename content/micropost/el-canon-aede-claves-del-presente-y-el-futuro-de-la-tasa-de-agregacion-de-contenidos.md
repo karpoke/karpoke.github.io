@@ -9,7 +9,7 @@ Slug: el-canon-aede-claves-del-presente-y-el-futuro-de-la-tasa-de-agregacion-de-
 > de Internet enlacen y distribuyan sus contenidos. Estos son los
 > aspectos clave a tener en cuenta sobre el denominado canon AEDE.
 
-- M.M. | [20minutos.es][]
+» M.M. | [20minutos.es][]
 
   [20minutos.es]: http://www.20minutos.es/noticia/2333392/0/claves-canon-aede/ley-lassalle/propiedad-intelectual/
     "El ’canon AEDE’: claves del presente y el futuro de la tasa de agregación de contenidos"

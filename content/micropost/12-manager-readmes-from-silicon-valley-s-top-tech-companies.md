@@ -11,7 +11,7 @@ Slug: 12-manager-readmes-from-silicon-valley-s-top-tech-companies
 > treasure trove of examples by Engineering Leaders from companies with some of
 > the best culture in tech.
 
-- Hacker Noon | [hackernoon.com][]
+» Hacker Noon | [hackernoon.com][]
 
   [hackernoon.com]: https://hackernoon.com/12-manager-readmes-from-silicon-valleys-top-tech-companies-26588a660afe
     "12 “Manager READMEs” from Silicon Valley’s Top Tech Companies"

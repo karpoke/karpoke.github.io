@@ -10,7 +10,7 @@ Slug: a-successful-git-branching-model
 > so thoroughly, until now. I won’t talk about any of the projects’
 > details, merely about the branching strategy and release management.
 
-- nvie | [nvie.com][]
+» nvie | [nvie.com][]
 
   [nvie.com]: http://nvie.com/posts/a-successful-git-branching-model/
     "A successful Git branching model"

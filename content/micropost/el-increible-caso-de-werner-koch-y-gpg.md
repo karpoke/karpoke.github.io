@@ -14,7 +14,7 @@ Slug: el-increible-caso-de-werner-koch-y-gpg
 > trabajo: vivía de la caridad, de las donaciones. ¿Suena duro? Es aún
 > peor.
 
-- J.Pomeyrol | [muylinux.com][]
+» J.Pomeyrol | [muylinux.com][]
 
   [muylinux.com]: http://www.muylinux.com/2015/02/07/el-increible-caso-de-werner-koch-y-gpg
     "El increíble caso de Werner Koch y GPG"

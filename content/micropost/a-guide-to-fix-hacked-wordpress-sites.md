@@ -8,7 +8,7 @@ Slug: a-guide-to-fix-hacked-wordpress-sites
 > clearing a WordPress hack, as well as ensuring post-hack actions are taken
 > using the free Sucuri plugin.
 
-- Alycia Mitchell | [sucuri.net][]
+» Alycia Mitchell | [sucuri.net][]
 
   [sucuri.net]: https://blog.sucuri.net/2016/09/guide-for-hacked-wordpress.html
     "A guide to fix hacked WordPress sites"

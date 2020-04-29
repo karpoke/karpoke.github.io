@@ -17,7 +17,7 @@ Slug: que-son-los-argumentos-universales
 > cine toma las constantes de dicho argumento y las desarrolla por múltiples
 > vías pero manteniendo siempre la estructura del relato original.
 
-- David Esteban Cubero | [cursosdeguion.com][]
+» David Esteban Cubero | [cursosdeguion.com][]
 
   [cursosdeguion.com]: https://cursosdeguion.com/29-los-argumentos-universales-1a-parte/
     "Los argumentos universales: en el cine sólo habría 21 argumentos posibles"

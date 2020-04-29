@@ -29,7 +29,7 @@ Slug: regular-expression-matching-can-be-simple-and-fast
 > concludes with a discussion of how theory might yet be converted into
 > practice in the real-world implementations.
 
-- Russ Cox | [swtch.com/\~rsc][]
+» Russ Cox | [swtch.com/\~rsc][]
 
   [swtch.com/\~rsc]: http://swtch.com/~rsc/regexp/regexp1.html
     "Regular Expression Matching Can Be Simple And Fast"

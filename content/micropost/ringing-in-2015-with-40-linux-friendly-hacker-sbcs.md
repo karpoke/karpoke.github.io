@@ -12,7 +12,7 @@ Slug: ringing-in-2015-with-40-linux-friendly-hacker-sbcs
 > as the demise of others, we have updated our list for this end-of-year
 > snapshot.
 
-- Eric Brown | [linuxgizmos.com][]
+» Eric Brown | [linuxgizmos.com][]
 
   [linuxgizmos.com]: http://linuxgizmos.com/ringing-in-2015-with-40-linux-friendly-hacker-sbcs/
     "Ringing in 2015 with 40 Linux-friendly hacker SBCs"

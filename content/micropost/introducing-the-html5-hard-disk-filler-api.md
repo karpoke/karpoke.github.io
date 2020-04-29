@@ -12,7 +12,7 @@ Slug: introducing-the-html5-hard-disk-filler-api
 > advised that browsers limit the total amount of storage space that
 > each origin could use.
 
-- Feross Aboukhadijeh | [feross.org][]
+» Feross Aboukhadijeh | [feross.org][]
 
   [feross.org]: http://feross.org/fill-disk/
     "Introducing the HTML5 Hard Disk Filler¢ API"

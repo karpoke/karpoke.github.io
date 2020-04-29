@@ -14,7 +14,7 @@ Slug: bios-based-rootkits
 > out. A year later I needed to do a term project for school, so I
 > decided to revisit BIOS hacking, and implement some of it myself.
 
-- Wesley Wineberg | [exfiltrated.com][]
+» Wesley Wineberg | [exfiltrated.com][]
 
   [exfiltrated.com]: http://www.exfiltrated.com/research.php#BIOS_Based_Rootkits
     "BIOS Based Rootkits"

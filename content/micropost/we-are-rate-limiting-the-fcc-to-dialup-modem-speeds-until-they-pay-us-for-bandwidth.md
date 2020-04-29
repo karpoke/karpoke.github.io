@@ -11,7 +11,7 @@ Slug: we-are-rate-limiting-the-fcc-to-dialup-modem-speeds-until-they-pay-us-for-
 > protecting us from the ”keep America’s internet slow and expensive
 > forever” lobby.
 
-- kyledrake | [neocities.org][]
+» kyledrake | [neocities.org][]
 
   [neocities.org]: http://neocities.org/blog/the-fcc-is-now-rate-limited
     "We are rate limiting the FCC to dialup modem speeds until they pay us for bandwidth"

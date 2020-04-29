@@ -9,7 +9,7 @@ Slug: 10-popular-websites-built-with-django
 > company or online service. It helps you engage with customers, promote your
 > business, increase sales and so on.
 
-- Hacker Noon | [hackernoon.com][]
+» Hacker Noon | [hackernoon.com][]
 
   [hackernoon.com]: https://hackernoon.com/10-popular-websites-built-with-django-906cc310aa0a
     "10 Popular Websites Built With Django"

@@ -17,7 +17,7 @@ Slug: brainfuck-beware-javascript-is-after-you
 > extending that concept to any javascript source would be really useful
 > for bypassing IDSs, IPSs and WAFs. So challange accepted!
 
-- Patricio Palladino | [patriciopalladino.com][]
+» Patricio Palladino | [patriciopalladino.com][]
 
   [patriciopalladino.com]: http://patriciopalladino.com/blog/2012/08/09/non-alphanumeric-javascript.html
     "Brainfuck beware: JavaScript is after you!"

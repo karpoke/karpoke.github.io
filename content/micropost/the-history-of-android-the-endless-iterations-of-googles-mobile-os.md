@@ -16,7 +16,7 @@ Related:
 > to be. For the first year of Android’s commercial existence, Google
 > was putting out a new version every two-and-a-half months.
 
-- Ron Amadeo | [arstechnica.com][]
+» Ron Amadeo | [arstechnica.com][]
 
   [arstechnica.com]: http://arstechnica.com/gadgets/2014/06/building-android-a-40000-word-history-of-googles-mobile-os/
     "The history of Android: The endless iterations of Google's mobile OS"

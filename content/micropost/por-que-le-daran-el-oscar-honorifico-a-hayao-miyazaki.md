@@ -10,7 +10,7 @@ Slug: por-que-le-daran-el-oscar-honorifico-a-hayao-miyazaki
 > mundo con sus historias_, con sus dibujos, con sus encantadores personajes,
 > en fin _porque es un grande_.
 
-- Ivonne Lara | [hipertextual.com][]
+» Ivonne Lara | [hipertextual.com][]
 
   [hipertextual.com]: http://hipertextual.com/2014/11/hayao-miyazaki-oscar-honorifico
     "¿Por qué le darán el Oscar Honorífico a Hayao Miyazaki?"

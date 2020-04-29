@@ -9,7 +9,7 @@ Slug: quake-on-an-oscilloscope-a-technical-report
 > like a great idea. It ticks all the marks that make me happy:
 > low-poly, realtime rendered and open source.
 
-- Pekka Väänänen | [lofibucket.com][]
+» Pekka Väänänen | [lofibucket.com][]
 
   [lofibucket.com]: http://www.lofibucket.com/articles/oscilloscope_quake.html
     "Quake on an oscilloscope: A technical report"

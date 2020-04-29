@@ -12,7 +12,7 @@ Slug: hype-driven-development
 > professional approach I call “Solid Software Engineering”. Learn more about
 > how it works and find out what you can do instead.
 
-- Marek Kirejczyk | [blog.daftcode.pl][]
+» Marek Kirejczyk | [blog.daftcode.pl][]
 
   [blog.daftcode.pl]: https://blog.daftcode.pl/hype-driven-development-3469fc2e9b22#.ybo0nxfmg
     "Hype Driven Development"

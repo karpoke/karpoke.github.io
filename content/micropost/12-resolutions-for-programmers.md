@@ -25,7 +25,7 @@ Slug: 12-resolutions-for-programmers
 > -   Learn new software.
 > -   Complete a personal project.
 
-- Matt Might | [matt.might.net][]
+» Matt Might | [matt.might.net][]
 
   [matt.might.net]: http://matt.might.net/articles/programmers-resolutions/
     "12 resolutions for programmers"

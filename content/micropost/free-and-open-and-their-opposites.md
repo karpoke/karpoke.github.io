@@ -11,7 +11,7 @@ Slug: free-and-open-and-their-opposites
 > Raymond published ”Goodbye, ’free software’; hello, ’open source’”, on
 > February 8, 1998
 
-- Doc Searls | [linuxjournal.com][]
+» Doc Searls | [linuxjournal.com][]
 
   [linuxjournal.com]: http://www.linuxjournal.com/content/free-and-openmdashand-their-opposites
     "Free and Openand Their Opposites"

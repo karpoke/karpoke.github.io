@@ -15,7 +15,7 @@ Slug: uncovering-android-master-key-that-makes-99-of-devices-vulnerable
 > can exploit the vulnerability for anything from data theft to creation
 > of a mobile botnet.
 
-- Jeff Forristal | [bluebox.com][]
+» Jeff Forristal | [bluebox.com][]
 
   [bluebox.com]: http://bluebox.com/corporate-blog/bluebox-uncovers-android-master-key/
     "Uncovering android master key that makes 99% of devices vulnerable"

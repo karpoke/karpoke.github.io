@@ -9,7 +9,7 @@ Slug: lista-de-paginas-recomendadas-para-aprender-ingles
 > pequeña descripción de lo que podéis encontrar en ella. Espero que os
 > resulte útil.
 
-- Alber | [eingleses.com][]
+» Alber | [eingleses.com][]
 
   [eingleses.com]: http://eingleses.com/2012/11/03/lista-de-paginas-recomendadas-para-aprender-ingles/
     "Lista de páginas recomendadas para aprender inglés"

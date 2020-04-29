@@ -20,7 +20,7 @@ Slug: los-10-errores-tipicos-de-una-pyme-en-materia-de-seguridad
 > identificar como los diez errores típicos de las PYMEs en materia de
 > seguridad y que marcan el camino a seguir estos próximos años.
 
-- Manuel Benet | [securityartwork.es][]
+» Manuel Benet | [securityartwork.es][]
 
   [securityartwork.es]: http://www.securityartwork.es/2013/05/29/los-10-errores-tipicos-de-una-pyme-en-materia-de-seguridad/
     "Los 10 errores típicos de una PYME en materia de seguridad"

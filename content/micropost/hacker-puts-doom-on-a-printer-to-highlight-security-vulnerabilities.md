@@ -8,7 +8,7 @@ Slug: hacker-puts-doom-on-a-printer-to-highlight-security-vulnerabilities
 > In 2014, it’s being used by ethical hackers to demonstrate security
 > vulnerabilities in connected devices.
 
-- Tom Fox-Brewster | [theguardian.com][]
+» Tom Fox-Brewster | [theguardian.com][]
 
   [theguardian.com]: http://www.theguardian.com/technology/2014/sep/15/hackers-doom-printer-canon-security
     "Hacker puts Doom on a printer to highlight security vulnerabilities"

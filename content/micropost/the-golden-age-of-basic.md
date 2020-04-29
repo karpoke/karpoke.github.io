@@ -11,7 +11,7 @@ Slug: the-golden-age-of-basic
 > created by chaining together as many IF¦ THEN GOTO statements as I had
 > patience for.
 
-- Stephen Cass | [spectrum.ieee.org][]
+» Stephen Cass | [spectrum.ieee.org][]
 
   [spectrum.ieee.org]: http://spectrum.ieee.org/tech-talk/computing/software/the-golden-age-of-basic
     "The Golden Age of Basic"

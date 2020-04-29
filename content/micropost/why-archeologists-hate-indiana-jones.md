@@ -11,7 +11,7 @@ Slug: why-archeologists-hate-indiana-jones
 > And that they might have a point. Because Jones isn’t an archeologist
 > at all.
 
-- Erik Vance | [lastwordonnothing.com][]
+» Erik Vance | [lastwordonnothing.com][]
 
   [lastwordonnothing.com]: http://www.lastwordonnothing.com/2014/09/09/why-archeologists-hate-indiana-jones/
     "Why Archeologists Hate Indiana Jones"

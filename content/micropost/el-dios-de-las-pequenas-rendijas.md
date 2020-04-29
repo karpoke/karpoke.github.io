@@ -11,7 +11,7 @@ Slug: el-dios-de-las-pequenas-rendijas
 > cualquier empresario: crecer sin límite sin que ninguno de tus errores
 > detenga tu prosperidad.
 
-- Javier Peláez | [aldea-irreductible.blogspot.com.es][]
+» Javier Peláez | [aldea-irreductible.blogspot.com.es][]
 
   [aldea-irreductible.blogspot.com.es]: http://aldea-irreductible.blogspot.com.es/2012/07/el-dios-de-las-pequenas-rendijas.html
     "El dios de las pequeñas rendijas"

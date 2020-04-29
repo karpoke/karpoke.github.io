@@ -10,7 +10,7 @@ Slug: ascii-chart
 > The ASA became the United States of America Standards Institute or
 > USASI and ultimately the American National Standards Institute.
 
-- Charles Torvalds | [askapache.com][]
+» Charles Torvalds | [askapache.com][]
 
   [askapache.com]: http://www.askapache.com/linux/ascii-codes-and-reference.html
     "ASCII Chart"

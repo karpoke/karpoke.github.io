@@ -14,7 +14,7 @@ Slug: el-gran-fraude-de-los-cosmeticos
 > creer a sus clientes que la eficacia de sus productos tiene una base
 > científica.
 
-- alberto | [principiamarsupia.com][]
+» alberto | [principiamarsupia.com][]
 
   [principiamarsupia.com]: http://www.principiamarsupia.com/2012/08/17/el-gran-fraude-de-los-cosmeticos/
     "El gran fraude de los cosméticos"

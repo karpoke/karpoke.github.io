@@ -9,7 +9,7 @@ Slug: 10-best-latex-editors-for-linux
 > write a plain text using LaTeX editors. Here, you will have to utilize LaTeX
 > commands in order to manage the content of the document.
 
-- It's FOSS | [itsfoss.com][]
+» It's FOSS | [itsfoss.com][]
 
   [itsfoss.com]: https://itsfoss.com/latex-editors-linux/
     "10 Best LaTeX Editors For Linux"

@@ -10,7 +10,7 @@ Slug: the-joel-test:-12-steps-to-better-code
 > team. The great part about it is that it takes about 3 minutes. With all the
 > time you save, you can go to medical school.
 
-- Joel Spolsky | [joelonsoftware.com][]
+» Joel Spolsky | [joelonsoftware.com][]
 
   [joelonsoftware.com]: http://www.joelonsoftware.com/articles/fog0000000043.html
     "The Joel Test: 12 Steps to Better Code"

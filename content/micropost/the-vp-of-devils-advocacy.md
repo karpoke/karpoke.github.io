@@ -8,7 +8,7 @@ Slug: the-vp-of-devils-advocacy
 > disagree. No matter how improbable it may seem, the tenth man has to
 > start thinking with the assumption that the other nine are wrong.
 
-- MG Siegler | [techcrunch.com][]
+» MG Siegler | [techcrunch.com][]
 
   [techcrunch.com]: http://techcrunch.com/2014/07/27/the-vp-of-devils-advocacy/
     "The VP of Devil's Advocacy"

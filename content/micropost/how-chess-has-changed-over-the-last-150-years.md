@@ -12,7 +12,7 @@ Slug: how-chess-has-changed-over-the-last-150-years
 > time, players of all calibers have diligently worked to find new and
 > better ways of winning.
 
-- George Dvorsky | [io9.com][]
+» George Dvorsky | [io9.com][]
 
   [io9.com]: http://io9.com/how-chess-has-changed-over-the-last-150-years-1707692642
     "How Chess Has Changed Over The Last 150 Years"

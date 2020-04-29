@@ -6,7 +6,7 @@ Slug: transistors-the-invention-that-changed-the-world
 
 [!embed](https://www.youtube.com/watch?v=OwS9aTE2Go4)
 
-- Real Engineering | [youtube.com][]
+» Real Engineering | [youtube.com][]
 
   [youtube.com]: https://www.youtube.com/watch?v=OwS9aTE2Go4
     "Transistors - The invention that changed the world"

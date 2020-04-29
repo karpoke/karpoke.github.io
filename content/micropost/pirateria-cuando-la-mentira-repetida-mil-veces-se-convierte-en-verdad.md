@@ -12,7 +12,7 @@ Slug: pirateria-cuando-la-mentira-repetida-mil-veces-se-convierte-en-verdad
 > juicio, sino que los jueces hayan sobreseído los casos al ver evidente
 > la ausencia de delito. Todo eso les da igual.
 
-- Carlos Otto | [hipertextual.com][]
+» Carlos Otto | [hipertextual.com][]
 
   [hipertextual.com]: http://hipertextual.com/2015/04/pirateria-argumentos
     "Piratería: cuando la mentira repetida mil veces se convierte en verdad"

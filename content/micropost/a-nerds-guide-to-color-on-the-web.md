@@ -8,7 +8,7 @@ Slug: a-nerds-guide-to-color-on-the-web
 > exception. Let’s delve into some of the technical details of color on the
 > web.
 
-- Sarah Drasner | [css-tricks.com][]
+» Sarah Drasner | [css-tricks.com][]
 
   [css-tricks.com]: https://css-tricks.com/nerds-guide-color-web/
     "A nerd’s guide to color on the web"

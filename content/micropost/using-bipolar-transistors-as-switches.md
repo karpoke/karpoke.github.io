@@ -17,7 +17,7 @@ Slug: using-bipolar-transistors-as-switches
 > to know the maximum load current for the device to be turned on and
 > the minimum HFE of the transistor.
 
-- Mike Martell | [rason.org][]
+» Mike Martell | [rason.org][]
 
   [rason.org]: http://www.rason.org/Projects/transwit/transwit.htm
     "Using Bipolar Transistors As Switches"

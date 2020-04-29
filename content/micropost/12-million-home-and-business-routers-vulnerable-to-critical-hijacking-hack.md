@@ -19,7 +19,7 @@ Slug: 12-million-home-and-business-routers-vulnerable-to-critical-hijacking-hack
 > to determine the ”fortune” of an HTTP request by manipulating cookies.
 > » Misfortune Cookie | [mis.fortunecook.ie][]
 
-- Dan Goodin | [arstechnica.com][]
+» Dan Goodin | [arstechnica.com][]
 
   [mis.fortunecook.ie]: http://mis.fortunecook.ie/
     "mis.fortunecook.ie"

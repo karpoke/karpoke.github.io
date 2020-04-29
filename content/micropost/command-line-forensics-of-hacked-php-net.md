@@ -11,7 +11,7 @@ Slug: command-line-forensics-of-hacked-php-net
 > safe and did all the analysis on a Linux machine with no Internet
 > connectivity.
 
-- Erik Hjelmvik | [netresec.com][]
+» Erik Hjelmvik | [netresec.com][]
 
   [netresec.com]: http://www.netresec.com/?page=Blog&month=2013-10&post=Command-line-Forensics-of-hacked-PHP-net
     "Command-line Forensics of hacked PHP.net"

@@ -14,7 +14,7 @@ Slug: bobina-de-tesla-reproduce-la-melodia-de-super-mario-bros
 
 [!embed](https://www.youtube.com/watch?v=1r_EgKLJFCs)
 
-- Jose | [abadiadigital.com][]
+» Jose | [abadiadigital.com][]
 
   [abadiadigital.com]: http://www.abadiadigital.com/bobina-de-tesla-reproduce-la-melodia-de-super-mario-bros/
     "Bobina de Tesla reproduce la melodía de Super Mario Bros"

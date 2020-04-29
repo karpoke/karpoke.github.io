@@ -14,7 +14,7 @@ Slug: recopilacion-de-relojes-matematicos
 > friki-matemáticos. Y de esos son los que vamos a ver a continuación,
 > de relojes matemáticos.
 
-- ^DiAmOnD^ | [gaussianos.com][]
+» ^DiAmOnD^ | [gaussianos.com][]
 
   [gaussianos.com]: http://gaussianos.com/curiosos-relojes-matematicos/
     "Recopilación de relojes matemáticos"

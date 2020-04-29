@@ -21,7 +21,7 @@ Slug: android-ios-tiempos-de-respuestas-y-por-que-nada-es-gratis-en-sistemas-inf
 > fundamentales de todo sistema operativo de propósito general:
 > eficiencia, equidad (fairness) y seguridad.
 
-- Ricardo Galli | [gallir.wordpress.com][]
+» Ricardo Galli | [gallir.wordpress.com][]
 
   [gallir.wordpress.com]: https://gallir.wordpress.com/2011/12/07/android-ios-tiempos-de-respuestas-y-por-que-nada-es-gratis-en-sistemas-informaticos/
     "Android, iOS, tiempos de respuestas y por qué nada es gratis en sistemas informáticos"

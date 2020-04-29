@@ -13,7 +13,7 @@ Slug: como-tu-traidor-cerebro-te-hace-gastar-dinero-en-los-juegos-freeplay
 > enormes virtudes y convirtiéndolo en una máquina sacacuartos del Lado
 > Oscuro.
 
-- Javier Elío | [elandroidelibre.com][]
+» Javier Elío | [elandroidelibre.com][]
 
   [elandroidelibre.com]: http://www.elandroidelibre.com/2015/05/como-tu-traidor-cerebro-te-hace-gastar-dinero-en-los-juegos-free-to-play.html
     "Cómo tu traidor cerebro te hace gastar dinero en los juegos freeplay"

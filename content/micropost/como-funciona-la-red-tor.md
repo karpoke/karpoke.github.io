@@ -9,7 +9,7 @@ Slug: como-funciona-la-red-tor
 > Unidos. La ideas es cambiar el modo de enrutado tradicional de
 > Internet para garantizar el anonimato y privacidad de los datos.
 
-- Guillermo Julián | [genbeta.com][]
+» Guillermo Julián | [genbeta.com][]
 
   [genbeta.com]: http://www.genbeta.com/seguridad/como-funciona-la-red-tor
     "¿Cómo funciona la red Tor?"

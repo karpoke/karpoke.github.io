@@ -12,7 +12,7 @@ Slug: run-time-profiling-with-cprofile
 >
 >     $ python -m cProfile -s cumulative mypythonscript.py
 
-- Alain Leufroy | [logilab.org][]
+» Alain Leufroy | [logilab.org][]
 
   [logilab.org]: http://www.logilab.org/blogentry/104898
     "Run time profiling with cProfile"

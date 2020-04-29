@@ -13,7 +13,7 @@ Slug: reborndb-the-next-generation-distributed-key-value-store
 > all data in memory, which limits the whole dataset size and lets us
 > save more data impossibly.
 
-- siddon tang | [highscalability.com][]
+» siddon tang | [highscalability.com][]
 
   [highscalability.com]: http://highscalability.com/blog/2015/7/8/reborndb-the-next-generation-distributed-key-value-store.html
     "RebornDB: The next generation distributed key-value store"

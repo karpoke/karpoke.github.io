@@ -18,7 +18,7 @@ Slug: whatsapp-is-using-imei-numbers-as-passwords
 >
 >     md5(strrev(’your-imei-goes-here’))
 
-- Sam Granger | [samgranger.com][]
+» Sam Granger | [samgranger.com][]
 
   [samgranger.com]: http://samgranger.com/whatsapp-is-using-imei-numbers-as-passwords/
     "WhatsApp is using IMEI numbers as passwords"

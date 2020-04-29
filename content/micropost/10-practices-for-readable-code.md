@@ -10,7 +10,7 @@ Slug: 10-practices-for-readable-code
 > the books I’ve read, it’s become apparent to me what matters most in code:
 > readability.
 
-- Jason McCreary | [jason.pureconcepts.net][]
+» Jason McCreary | [jason.pureconcepts.net][]
 
   [jason.pureconcepts.net]: http://jason.pureconcepts.net/2018/09/practices-write-readable-code-less-complex/
     "10 practices for readable code"

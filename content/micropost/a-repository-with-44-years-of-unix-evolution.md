@@ -17,7 +17,7 @@ Slug: a-repository-with-44-years-of-unix-evolution
 > empirical research in software engineering, information systems, and
 > software archaeology.
 
-- Diomidis Spinellis | [aueb.gr][]
+» Diomidis Spinellis | [aueb.gr][]
 
   [aueb.gr]: http://www.dmst.aueb.gr/dds/pubs/conf/2015-MSR-Unix-History/html/Spi15c.html
     "A repository with 44 years of Unix evolution"

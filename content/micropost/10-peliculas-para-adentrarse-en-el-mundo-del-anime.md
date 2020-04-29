@@ -10,7 +10,7 @@ Slug: 10-peliculas-para-adentrarse-en-el-mundo-del-anime
 > reinado por Studio Ghibli y su primer espada Hayao Miyazaki. Un universo sin
 > límites que cada año nos sorprende con auténticas joyas.
 
-- C'mon! Murcia | [cmonmurcia.com][]
+» C'mon! Murcia | [cmonmurcia.com][]
 
   [cmonmurcia.com]: https://cmonmurcia.com/10-peliculas-adentrarse-mundo-del-anime/
     "10 películas para adentrarse en el mundo del anime"

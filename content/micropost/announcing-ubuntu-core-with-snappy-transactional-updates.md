@@ -14,7 +14,7 @@ Slug: announcing-ubuntu-core-with-snappy-transactional-updates
 > mobile market. And today that same technology is coming to the cloud,
 > in the form of a new ”snappy” image called Ubuntu Core
 
-- Mark Shuttleworth | [markshuttleworth.com][]
+» Mark Shuttleworth | [markshuttleworth.com][]
 
   [markshuttleworth.com]: http://www.markshuttleworth.com/archives/1434
     "Announcing Ubuntu Core, with snappy transactional updates!"

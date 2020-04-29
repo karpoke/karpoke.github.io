@@ -14,7 +14,7 @@ Slug: http-the-protocol-every-web-developer-must-know-part-1
 > headers. In the follow-up article, we’ll review specific pieces of
 > HTTP – namely caching, connection handling and authentication.
 
-- Pavan Podila | [tutsplus.com][]
+» Pavan Podila | [tutsplus.com][]
 
   [tutsplus.com]: http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-1/
     "HTTP: The Protocol Every Web Developer Must Know – Part 1"

@@ -11,7 +11,7 @@ Slug: everything-you-need-to-know-about-the-shellshock-bash-bug
 > something definitive both for me to get to grips with the situation
 > and for others to dissect the hype from the true underlying risk.
 
-- Troy Hunt | [troyhunt.com][]
+» Troy Hunt | [troyhunt.com][]
 
   [troyhunt.com]: http://www.troyhunt.com/2014/09/everything-you-need-to-know-about.html
     "Everything you need to know about the Shellshock Bash bug"

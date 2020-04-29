@@ -11,7 +11,7 @@ Slug: imprescindibles-the-i-t-crowd
 > enredos, repleta de situaciones surrealistas que llegan a complicarse
 > hasta el delirio incluso en los breves minutos que dura cada episodio.
 
-- Emilio de Gorgot | [jotdown.es][]
+» Emilio de Gorgot | [jotdown.es][]
 
   [jotdown.es]: http://www.jotdown.es/2013/04/imprescindibles-the-i-t-crowd/
     "Imprescindibles: The I.T. Crowd"

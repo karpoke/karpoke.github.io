@@ -12,7 +12,7 @@ Slug: a-short-history-of-the-oreilly-animals
 > first two titles that were sold into bookstores, but Tim wasn’t
 > satisfied with the design.
 
-- Edie Freedman | [animals.oreilly.com][]
+» Edie Freedman | [animals.oreilly.com][]
 
   [animals.oreilly.com]: http://animals.oreilly.com/origin-of-species/
     "A Short History of the O'Reilly Animals"

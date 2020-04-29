@@ -190,8 +190,8 @@ Si queremos desinstalarlo, no tenemos más que:
 Referencias
 -----------
 
-- Anand Subramanian | [The Ultimate Guide to Compile and Install MiniDLNA on Ubuntu][]
-- Justin Maggard | [MiniDLNA (ReadyMedia)][]
+» Anand Subramanian | [The Ultimate Guide to Compile and Install MiniDLNA on Ubuntu][]
+» Justin Maggard | [MiniDLNA (ReadyMedia)][]
 
   [crear un paquete .deb con checkinstall]: {filename}/admin/crear-paquetes-deb-con-checkinstall.md
     "Crear paquetes .deb con checkinstall"

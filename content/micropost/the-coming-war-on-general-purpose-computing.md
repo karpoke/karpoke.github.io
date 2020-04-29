@@ -17,7 +17,7 @@ Slug: the-coming-war-on-general-purpose-computing
 > found it trivial to patch the software and bypass authentication.
 > People who took the software without paying for it were untouched.
 
-- Cory Doctorow | [boingboing.net][]
+» Cory Doctorow | [boingboing.net][]
 
   [boingboing.net]: http://boingboing.net/2012/01/10/lockdown.html
     "The coming war on general-purpose computing"

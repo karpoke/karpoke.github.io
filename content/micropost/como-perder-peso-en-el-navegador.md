@@ -16,7 +16,7 @@ Slug: como-perder-peso-en-el-navegador
 > ¡Eso es exactamente lo que hemos hecho! Y nosotros te guiaremos en
 > esta batalla para crear sitios incluso más rápidos.
 
-- Zeno Rocha | [browserdiet.com][]
+» Zeno Rocha | [browserdiet.com][]
 
   [browserdiet.com]: http://browserdiet.com/es/
     "Cómo perder peso (en el navegador)"

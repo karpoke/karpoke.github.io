@@ -11,7 +11,7 @@ Slug: 5-fatal-docker-gotcha-s-for-new-users
 > Especially for those migrating from physical servers, or virtualized
 > machines workload.
 
-- DEV Community | [dev.to][]
+» DEV Community | [dev.to][]
 
   [dev.to]: https://dev.to/uilicious/5-fatal-docker-gotchas----for-new-users-2o87
     "5 Fatal Docker Gotcha's 😱 - for new users"

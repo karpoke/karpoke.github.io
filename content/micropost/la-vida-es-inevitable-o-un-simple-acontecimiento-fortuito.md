@@ -22,7 +22,7 @@ Slug: la-vida-es-inevitable-o-un-simple-acontecimiento-fortuito
 > inteligentes: ellos pueden estar ahí fuera, pero eso nunca lo
 > sabremos. No obstante, esa respuesta no satisface a nadie.
 
-- Pedro Donaire | [bitnavegante.blogspot.com.es][]
+» Pedro Donaire | [bitnavegante.blogspot.com.es][]
 
   [bitnavegante.blogspot.com.es]: http://bitnavegante.blogspot.com.es/2012/06/la-vida-es-inevitable-o-un-simple.html
     "La vida, ¿es inevitable o un simple acontecimiento fortuito?"

@@ -9,7 +9,7 @@ Slug: everything-you-need-to-know-about-the-heartbleed-ssl-bug
 > dead? Is the sky falling? Well it’s bad, but not for everyone and
 > quite possibly not as bad as many are saying it is.
 
-- Troy Hunt | [troyhunt.com][]
+» Troy Hunt | [troyhunt.com][]
 
   [troyhunt.com]: http://www.troyhunt.com/2014/04/everything-you-need-to-know-about.html
     "Everything you need to know about the Heartbleed SSL bug"

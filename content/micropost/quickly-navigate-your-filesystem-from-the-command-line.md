@@ -11,7 +11,7 @@ Slug: quickly-navigate-your-filesystem-from-the-command-line
 > typing cd \~/some/very/deep/often-used/directory over and over again
 > does become cumbersome.
 
-- Jeroen Janssens | [jeroenjanssens.com][]
+» Jeroen Janssens | [jeroenjanssens.com][]
 
   [jeroenjanssens.com]: http://jeroenjanssens.com/2013/08/16/quickly-navigate-your-filesystem-from-the-command-line.html
     "Quickly navigate your filesystem from the command-line"

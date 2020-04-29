@@ -16,7 +16,7 @@ Slug: all-about-unicode-utf8-character-sets
 > question marks and odd accented characters sometimes show up in
 > databases and text files.
 
-- Paul Tero | [smashingmagazine.com][]
+» Paul Tero | [smashingmagazine.com][]
 
   [smashingmagazine.com]: http://coding.smashingmagazine.com/2012/06/06/all-about-unicode-utf8-character-sets/
     "All About Unicode, UTF8 & Character Sets"

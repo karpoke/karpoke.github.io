@@ -9,7 +9,7 @@ Slug: nsa-has-hidden-software-in-hard-drives-around-the-world
 > eavesdrop on the majority of the world’s computers, according to cyber
 > researchers and former operatives.
 
-- Joseph Menn | [businessinsider.com][]
+» Joseph Menn | [businessinsider.com][]
 
   [businessinsider.com]: http://www.businessinsider.com/r-russian-researchers-expose-breakthrough-us-spying-program-2015-2
     "NSA has hidden software in hard drives around the world"

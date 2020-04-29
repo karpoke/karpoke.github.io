@@ -12,7 +12,7 @@ Slug: how-to-become-a-hacker
 > culture, if you have contributed to it and other people in it know who
 > you are and call you a hacker, you’re a hacker.
 
-- Eric Steven Raymond | [catb.org][]
+» Eric Steven Raymond | [catb.org][]
 
   [catb.org]: http://www.catb.org/~esr/faqs/hacker-howto.html
     "How To Become A Hacker"

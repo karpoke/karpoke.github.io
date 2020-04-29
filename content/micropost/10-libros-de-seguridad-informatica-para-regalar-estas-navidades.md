@@ -14,7 +14,7 @@ Slug: 10-libros-de-seguridad-informatica-para-regalar-estas-navidades
 > en Hispasec es que el personal no le falte lectura, alimento para el
 > cerebro.
 
-- una-al-dia Hispasec | [unaaldia.hispasec.com][]
+» una-al-dia Hispasec | [unaaldia.hispasec.com][]
 
   [unaaldia.hispasec.com]: http://unaaldia.hispasec.com/2017/12/10-libros-de-seguridad-informatica-para.html
     "10 libros de seguridad informática para regalar estas navidades"

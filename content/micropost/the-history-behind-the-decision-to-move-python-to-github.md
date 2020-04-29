@@ -8,7 +8,7 @@ Slug: the-history-behind-the-decision-to-move-python-to-github
 > future development process and people said ”yes”(some literally),
 > hence this blog post.
 
-- Brett Cannon | [snarky.ca][]
+» Brett Cannon | [snarky.ca][]
 
   [snarky.ca]: http://www.snarky.ca/the-history-behind-the-decision-to-move-python-to-github
     "The history behind the decision to move Python to GitHub"

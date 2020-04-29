@@ -9,7 +9,7 @@ Slug: daft-punk-el-duo-frances-que-revoluciono-la-musica-electronica
 > tanto lo que han cambiado y es tanto lo que nos han sorprendido, que
 > su meta fue cumplida, revolucionaron la música electrónica.
 
-- Eduardo Marin | [hipertextual.com][]
+» Eduardo Marin | [hipertextual.com][]
 
   [hipertextual.com]: http://hipertextual.com/2014/11/daft-punk
     "Daft Punk, el dúo francés que revolucionó la música electrónica"

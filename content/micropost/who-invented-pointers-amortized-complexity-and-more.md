@@ -13,7 +13,7 @@ Slug: who-invented-pointers-amortized-complexity-and-more
 > often invented a concept and used it in a narrow way, while later it
 > was rediscovered and made a general notion.
 
-- Dick Lipton | [rjlipton.wordpress.com][]
+» Dick Lipton | [rjlipton.wordpress.com][]
 
   [rjlipton.wordpress.com]: http://rjlipton.wordpress.com/2014/08/26/who-invented-pointers-amortized-complexity-and-more/
     "Who invented pointers, amortized complexity, and more?"

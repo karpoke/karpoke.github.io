@@ -8,7 +8,7 @@ Slug: first-glimpse-into-the-soul-of-a-tamagotchi
 > memory space of the Tamagotchi, and output it over port A (which is
 > usually the Tamagotchi button input) via SPI.
 
-- Natalie Silvanovich | [kwartzlab.ca][]
+» Natalie Silvanovich | [kwartzlab.ca][]
 
   [kwartzlab.ca]: http://www.kwartzlab.ca/2013/05/first-glimpse-soul-tamagotchi/
     "First Glimpse into the Soul of a Tamagotchi"

@@ -13,7 +13,7 @@ Slug: early-digital-research-cpm-source-code
 > different personal computers. And if the applications were written in
 > PL/M, they could be ported as well.
 
-- David Laws | [computerhistory.org][]
+» David Laws | [computerhistory.org][]
 
   [computerhistory.org]: http://www.computerhistory.org/atchm/early-digital-research-cpm-source-code/
     "Early Digital Research CP/M Source Code"

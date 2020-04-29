@@ -20,7 +20,7 @@ Slug: introduction-to-text-manipulation-on-unix-based-systems
 > the variety of UNIX and UNIX-like systems available, command flags,
 > program behavior, and output differs between implementations.
 
-- Brad Yoes | [ibm.com][]
+» Brad Yoes | [ibm.com][]
 
   [ibm.com]: http://www.ibm.com/developerworks/aix/library/au-unixtext/index.html
     "Introduction to text manipulation on UNIX-based systems"

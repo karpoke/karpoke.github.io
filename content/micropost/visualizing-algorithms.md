@@ -14,7 +14,7 @@ Slug: visualizing-algorithms
 > intellect: we can use it to better understand these important abstract
 > processes, and perhaps other things, too.
 
-- Mike Bostock | [bost.ocks.org][]
+» Mike Bostock | [bost.ocks.org][]
 
   [bost.ocks.org]: http://bost.ocks.org/mike/algorithms/
     "Visualizing Algorithms"

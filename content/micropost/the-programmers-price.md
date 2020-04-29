@@ -17,7 +17,7 @@ Slug: the-programmers-price
 > friend’s coding skills by saying, ”Richard’s a 10xer. I’m, like,
 > barely an xer.”
 
-- Lizzie Widdicombe | [newy orker.com][]
+» Lizzie Widdicombe | [newy orker.com][]
 
   [newy orker.com]: http://www.newyorker.com/magazine/2014/11/24/programmers-price
     "The programmer's price"

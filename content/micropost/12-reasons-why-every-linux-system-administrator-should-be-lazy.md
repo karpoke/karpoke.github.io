@@ -20,7 +20,7 @@ Slug: 12-reasons-why-every-linux-system-administrator-should-be-lazy
 > that you can see, he always seem to be relaxed, and he don’t seem to
 > have any visible work, you can be assured that he is doing his job.
 
-- Ramesh Natarajan | [thegeekstuff.com][]
+» Ramesh Natarajan | [thegeekstuff.com][]
 
   [thegeekstuff.com]: http://www.thegeekstuff.com/2011/07/lazy-sysadmin/
     "12 Reasons Why Every Linux System Administrator Should be Lazy"

@@ -7,7 +7,7 @@ Slug: high-resolution-time
 > current time in sub-millisecond resolution and such that it is not
 > subject to system clock skew or adjustments.
 
-- Jatinder Mann | [w3.org][]
+» Jatinder Mann | [w3.org][]
 
   [w3.org]: http://www.w3.org/TR/2012/PR-hr-time-20121023/
     "High Resolution Time"

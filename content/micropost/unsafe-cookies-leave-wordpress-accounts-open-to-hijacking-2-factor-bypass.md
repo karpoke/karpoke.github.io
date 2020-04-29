@@ -16,7 +16,7 @@ Slug: unsafe-cookies-leave-wordpress-accounts-open-to-hijacking-2-factor-bypass
 > move by WordPress engineers to allow the cookie to be transmitted
 > unencrypted makes them susceptible to interception in many cases.
 
-- Dan Goodin | [arstechnica.com][]
+» Dan Goodin | [arstechnica.com][]
 
   [arstechnica.com]: http://arstechnica.com/security/2014/05/unsafe-cookies-leave-wordpress-accounts-open-to-hijacking-2-factor-bypass/
     "Unsafe cookies leave WordPress accounts open to hijacking, 2-factor bypass"

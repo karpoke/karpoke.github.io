@@ -12,7 +12,7 @@ Slug: how-we-teach-computers-to-understand-pictures
 
 [!embed](https://www.youtube.com/watch?v=40riCqvRoMs)
 
-- Fei Fei Li | [youtube.com][] | via [xombra.com][]
+» Fei Fei Li | [youtube.com][] | via [xombra.com][]
 
   [youtube.com]: https://www.youtube.com/watch?v=40riCqvRoMs
     "How We Teach Computers to Understand Pictures"

@@ -14,7 +14,7 @@ Slug: la-estetica-del-codigo-fuente-a-la-busqueda-del-arte-en-la-programacion
 > vez en cuatro grandes grupos que tradicionalmente, como muchas corrientes
 > artísticas, han coexistido de forma simultánea…
 
-- Carlos Benítez | [etnassoft.com][]
+» Carlos Benítez | [etnassoft.com][]
 
   [etnassoft.com]: http://www.etnassoft.com/2016/09/16/la-estetica-del-codigo-fuente-a-la-busqueda-del-arte-en-la-programacion/
     "La estética del código fuente: a la búsqueda del Arte en la Programación"
