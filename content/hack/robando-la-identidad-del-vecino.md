@@ -28,118 +28,88 @@ Blacksheep para Firefox en Ubuntu Maverick Meerkat
 
 Se requiere:
 
-```bash
-$ sudo aptitude install autoconf libpcap-dev xulrunner-dev libboost-dev libhal-dev
-```
+    $ sudo aptitude install autoconf libpcap-dev xulrunner-dev libboost-dev libhal-dev
 
 En Ubuntu no habrá problemas con la versión de `autoconf`, ya que es
 superior a la 2.61:
 
-```bash
-$ autoconf -V
-```
+    $ autoconf -V
 
-```bash
-autoconf (GNU Autoconf) 2.67
-```
+    autoconf (GNU Autoconf) 2.67
 
 Ni con la de `libpcap-dev`, ya que viene la 1.1.1-2:
 
-```bash
-$ aptitude show libpcap-dev
-```
+    $ aptitude show libpcap-dev
 
-```bash
-Paquete: libpcap-dev
-Estado: instalado
-Instalado automáticamente: no
-Versión: 1.1.1-2
-```
+    Paquete: libpcap-dev
+    Estado: instalado
+    Instalado automáticamente: no
+    Versión: 1.1.1-2
 
 Suponemos que vamos a trabajar en el directorio de usuario. Tenemos que
 compilar el _back-end_ de Firesheep. Lo primero será bajarnos el código
 de Firesheep:
 
-```bash
-$ git clone git://github.com/mickflemm/firesheep.git
-```
+    $ git clone git://github.com/mickflemm/firesheep.git
 
 Y ahora lo compilamos:
 
-```bash
-$ cd firesheep
-$ git submodule update --init
-$ ./autogen.sh --with-xulrunner-sdk=/usr/lib/xulrunner-devel-1.9.2.13/
-$ make
-```
+    $ cd firesheep
+    $ git submodule update --init
+    $ ./autogen.sh --with-xulrunner-sdk=/usr/lib/xulrunner-devel-1.9.2.13/
+    $ make
 
 Vamos a comprobar que el _backend_ funciona correctamente:
 
-```bash
-$ cd xpi/platform/Linux_x86-gcc3/
-$ sudo ./firesheep-backend --fix-permissions
-$ ./firesheep-backend --list-interfaces
-```
+    $ cd xpi/platform/Linux_x86-gcc3/
+    $ sudo ./firesheep-backend --fix-permissions
+    $ ./firesheep-backend --list-interfaces
 
 Nos devuelve algo como:
 
-```bash
-{"eth0":{"name":"Networking Interface","type":"ethernet"},
-"eth2":{"name":"WLAN Interface","type":"ethernet"},
-"lo":{"name":"Loopback device Interface","type":"ethernet"}}
-```
+    {"eth0":{"name":"Networking Interface","type":"ethernet"},
+    "eth2":{"name":"WLAN Interface","type":"ethernet"},
+    "lo":{"name":"Loopback device Interface","type":"ethernet"}}
 
 Para comprobar que podemos capturar paquetes ejecutamos:
 
-```bash
-$ ./firesheep-backend eth2 "tcp port 80"
-```
+    $ ./firesheep-backend eth2 "tcp port 80"
 
 Abrimos una página de internet, o en otra consola ejecutamos algo como:
 
-```bash
-$ wget http://www.zscaler.com/
-```
+    $ wget http://www.zscaler.com/
 
 Si todo va bien, nos empezará a devolver cosas como:
 
-```bash
-{"from":"192.168.0.32:49670",
-"to":"72.249.144.174:80",
-"method":"GET",
-"path":"/",
-"query":"",
-"host":"www.zscaler.com",
-"cookies":"",
-"userAgent":"Wget/1.12 (linux-gnu)"}
-```
+    {"from":"192.168.0.32:49670",
+    "to":"72.249.144.174:80",
+    "method":"GET",
+    "path":"/",
+    "query":"",
+    "host":"www.zscaler.com",
+    "cookies":"",
+    "userAgent":"Wget/1.12 (linux-gnu)"}
 
 Ahora vamos a incluir el _back-end_ en el complemento BlackSheep:
 
-```bash
-cd ~
-wget http://www.zscaler.com/research/plugins/firefox/blacksheep/blacksheep-latest.xpi
-mkdir blacksheep
-unzip blacksheep-latest.xpi -d blacksheep/
-cd blacksheep
-cp -r ../firesheep/xpi/platform/* platform/
-```
+    cd ~
+    wget http://www.zscaler.com/research/plugins/firefox/blacksheep/blacksheep-latest.xpi
+    mkdir blacksheep
+    unzip blacksheep-latest.xpi -d blacksheep/
+    cd blacksheep
+    cp -r ../firesheep/xpi/platform/* platform/
 
 Del archivo `install.rdf`, borraremos las líneas:
 
-```xml
-Darwin_x86-gcc3
-WINNT_x86-msvc
-em:updateURL="http://www.zscaler.com/research/plugins/firefox/blacksheep/update.rdf"
-```
+    Darwin_x86-gcc3
+    WINNT_x86-msvc
+    em:updateURL="http://www.zscaler.com/research/plugins/firefox/blacksheep/update.rdf"
 
 La última línea es para evitar las actualizaciones automáticas.
 
 Ahora ya podemos crear el `.xpi`:
 
-```bash
-$ zip blacksheep-latest-linux.xpi -r *
-```
+    $ zip blacksheep-latest-linux.xpi -r *
 
 Lo instalamos y reiniciamos Firefox. Nos pedirá permisos de
 administrador para poder ejecutar el complemento. Introducimos la
@@ -159,10 +129,8 @@ directorio [público][complemento].
 Después de instalarlo, será necesario darle permisos manualmente para
 que detecte las interfaces:
 
-```bash
-$ cd ~/.mozilla/firefox/ygqde9s7.default/extensions/firesheep@codebutler.com/platform/Linux_x86-gcc3/
-$ sudo ./firesheep-backend --fix-permissions
-```
+    $ cd ~/.mozilla/firefox/ygqde9s7.default/extensions/firesheep@codebutler.com/platform/Linux_x86-gcc3/
+    $ sudo ./firesheep-backend --fix-permissions
 
 ![Firesheep websites]({static}/images/firesheep-websites-300x227.png)
 

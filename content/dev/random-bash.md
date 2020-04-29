@@ -9,10 +9,8 @@ elegido aleatoriamente". _Donald E. Knuth_</cite>
 
 En Bash, podemos obtener números enteros [aleatorios][]:
 
-```bash
-$ echo $RANDOM
-20684
-```
+    $ echo $RANDOM
+    20684
 
 ![Random number]({static}/images/random_number-300x107.jpg)
 
@@ -24,30 +22,26 @@ sus propiedades especiales, aunque después lo inicialicemos.
 
 Podemos poner a prueba la calidad de esos números aleatorios:
 
-```bash
-$ a=()
-$ freq=10
-$ max=327680
-$ for ((i=0; i < $max; i++)); do
->    # progress bar
->    test $((i%($max/$freq))) -eq 0 && echo -n "."
->    j=$RANDOM
->    a[$j]=$((a[$j]+1))
-> done
-$ for ((i=0; i < $max/$freq; i++)); do
->    echo "$i: ${a[$i]}";
-> done | less
-```
+    $ a=()
+    $ freq=10
+    $ max=327680
+    $ for ((i=0; i < $max; i++)); do
+    >    # progress bar
+    >    test $((i%($max/$freq))) -eq 0 && echo -n "."
+    >    j=$RANDOM
+    >    a[$j]=$((a[$j]+1))
+    > done
+    $ for ((i=0; i < $max/$freq; i++)); do
+    >    echo "$i: ${a[$i]}";
+    > done | less
 
 Más números
 -----------
 
 Podemos obtener el módulo aleatorio de un número aleatorio.
 
-```bash
-$ echo $((RANDOM%RANDOM))
-4530
-```
+    $ echo $((RANDOM%RANDOM))
+    4530
 
 ¿Afectará de alguna manera realizar el módulo aleatorio sobre un número
 aleatorio como variable aleatoria?
@@ -59,32 +53,28 @@ y, por lo tanto, no afecta al resultado. Pero en el peor caso, el módulo
 será menor que el primer número, con lo que es mayor la probabilidad de
 obtener un número menor.
 
-```bash
-$ a=()
-$ freq=10
-$ max=327680
-$ for ((i=0; i < $max; i++)); do
->    # progress bar
->    test $((i%($max/$freq))) -eq 0 && echo -n "."
->    j=$((RANDOM%RANDOM))
->    a[$j]=$((a[$j]+1))
-> done
-$ for ((i=0; i < $max/$freq; i++)); do echo "$i: ${a[$i]}"; done
-```
+    $ a=()
+    $ freq=10
+    $ max=327680
+    $ for ((i=0; i < $max; i++)); do
+    >    # progress bar
+    >    test $((i%($max/$freq))) -eq 0 && echo -n "."
+    >    j=$((RANDOM%RANDOM))
+    >    a[$j]=$((a[$j]+1))
+    > done
+    $ for ((i=0; i < $max/$freq; i++)); do echo "$i: ${a[$i]}"; done
 
 Números aleatorios binarios, octales y hexadecimales:
 
-```bash
-$ b=2
-$ for ((i=0; i < RANDOM%RANDOM; i=i+RANDOM%b)); do echo -n $((i%b)); done
-000010001111101001010001111101001011111
-$ b=8
-$ for ((i=0; i < RANDOM%RANDOM; i=i+RANDOM%b)); do echo -n $((i%b)); done
-04743654506265435353610222054150
-$ a="01234566789ABCDEF"
-$ for ((i=0; i < RANDOM%RANDOM; i++ )); do echo -n ${a:$RANDOM%${#a}:1}; done
-0150633894AD8DEF81671B06694C6B5
-```
+    $ b=2
+    $ for ((i=0; i < RANDOM%RANDOM; i=i+RANDOM%b)); do echo -n $((i%b)); done
+    000010001111101001010001111101001011111
+    $ b=8
+    $ for ((i=0; i < RANDOM%RANDOM; i=i+RANDOM%b)); do echo -n $((i%b)); done
+    04743654506265435353610222054150
+    $ a="01234566789ABCDEF"
+    $ for ((i=0; i < RANDOM%RANDOM; i++ )); do echo -n ${a:$RANDOM%${#a}:1}; done
+    0150633894AD8DEF81671B06694C6B5
 
 Debemos tener en cuenta que si queremos utilizar estos números, el
 prefijo, en Bash, para los números binarios es `2#`, para los números
@@ -96,11 +86,9 @@ Y letras
 
 Podemos crear una secuencia de números y letras aleatoria:
 
-```bash
-$ a=$(echo $((echo -n {a..z}; echo -n {A..Z}; echo -n {0..9};) | sed 's/ //g'))
-$ for ((i=0; i < RANDOM%RANDOM; i++)); do echo -n ${a:$RANDOM%${#a}:1}; done
-3keV1cLFGdxO2S5nvJGzoq9EyZeryLjkVgP64Dn0z
-```
+    $ a=$(echo $((echo -n {a..z}; echo -n {A..Z}; echo -n {0..9};) | sed 's/ //g'))
+    $ for ((i=0; i < RANDOM%RANDOM; i++)); do echo -n ${a:$RANDOM%${#a}:1}; done
+    3keV1cLFGdxO2S5nvJGzoq9EyZeryLjkVgP64Dn0z
 
 Fuentes de aleatoriedad
 -----------------------
@@ -141,14 +129,12 @@ fuente de aleatoriedad.
 
 Cadenas de caracteres aleatorios:
 
-```bash
-$ strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 12 | tr -d '\n'; echo
-tUqWq9fqem9C1gKbTpCcVJg6DNvxMG
-$ < /dev/urandom tr -dc _a-zA-Z0-9 | head -c12
-1G0gNNXM3RkT
-$ dd if=/dev/random bs=1 count=5 2>/dev/null | xxd -ps
-3e3206ff95
-```
+    $ strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 12 | tr -d '\n'; echo
+    tUqWq9fqem9C1gKbTpCcVJg6DNvxMG
+    $ < /dev/urandom tr -dc _a-zA-Z0-9 | head -c12
+    1G0gNNXM3RkT
+    $ dd if=/dev/random bs=1 count=5 2>/dev/null | xxd -ps
+    3e3206ff95
 
 Generando entropía
 ------------------
@@ -157,24 +143,18 @@ Si la fuente de entropía no da abasto y necesitamos generar más entropía
 más rápido, por ejemplo, cuando creamos claves RSA muy largas, poner a
 trabajar el equipo podría servir. Algo como:
 
-```bash
-$ ls -lRh /
-$ find / -name \*
-```
+    $ ls -lRh /
+    $ find / -name \*
 
 Sin embargo, existe un programa que sirve para esto. `rng-tools` ayuda a
 [generar entropía][]. Una vez instalado desde los respositorios,
 modificamos el fichero `/etc/default/rng-tools` para que contenga:
 
-```bash
-HRNGDEVICE=/dev/urandom
-```
+    HRNGDEVICE=/dev/urandom
 
 Y reiniciamos el servicio:
 
-```bash
-$ sudo service rng-tools restart
-```
+    $ sudo service rng-tools restart
 
 Si ahora volvemos a crear una clave, notaremos que el tiempo necesario
 para conseguir la entropía necesaria es mucho menor.
@@ -184,10 +164,8 @@ para conseguir la entropía necesaria es mucho menor.
 #### Actualizado el 25 de septiembre de 2016
 
 Otro servicio que sirve para esto es `haveged`:
-```bash
-systemctl enable haveged
-systemctl start haveged
-```
+    systemctl enable haveged
+    systemctl start haveged
 
 * * * * *
 
@@ -200,125 +178,99 @@ Podemos instalar estos programas desde los repositorios.
 
 Para crear contraseñas.
 
-```bash
-$ makepasswd --char=12
-```
+    $ makepasswd --char=12
 
 ### mkpasswd
 
 Otro para crear contraseñas.
 
-```bash
-$ mkpasswd
-```
+    $ mkpasswd
 
 ### openssl
 
 Permite obtener una serie de bytes hexadecimales aleatorios; por cada
 byte hexadecimal se imprimen dos caracteres hexadecimales:
 
-```bash
-$ openssl rand -hex 16
-5666b2215534c6d4c3be4101219cd0b1
-```
+    $ openssl rand -hex 16
+    5666b2215534c6d4c3be4101219cd0b1
 
 También permite obtener caracteres en base64:
 
-```bash
-$ openssl rand -base64 12
-ymwU0wtOZ6wMgAfr
-```
+    $ openssl rand -base64 12
+    ymwU0wtOZ6wMgAfr
 
 ### pwgen
 
 Otro más para crear contraseñas
 
-```bash
-$ pwgen 12
-```
+    $ pwgen 12
 
 ### rand
 
 Trabaja con números y caracteres. Por ejemplo, podemos obtener números
 decimales aleatorios.
 
-```bash
-$ rand -f
-0.04691
-```
+    $ rand -f
+    0.04691
 
 No sólo letras y números
 ------------------------
 
 Podemos crear una dirección MAC aleatoria:
 
-```bash
-$ echo $(cat /proc/interrupts | md5sum | sed -r 's/^(.{10}).*$/00\1/; s/([0-9a-f]{2})/\1:/g; s/:$//;')
-00:6d:b6:2f:46:1d
-$ openssl rand -hex 6 | sed -r 's/^(.{10}).*$/00\1/; s/([0-9a-f]{2})/\1:/g; s/:$//;'
-00:8d:e6:98:ca:d2
-```
+    $ echo $(cat /proc/interrupts | md5sum | sed -r 's/^(.{10}).*$/00\1/; s/([0-9a-f]{2})/\1:/g; s/:$//;')
+    00:6d:b6:2f:46:1d
+    $ openssl rand -hex 6 | sed -r 's/^(.{10}).*$/00\1/; s/([0-9a-f]{2})/\1:/g; s/:$//;'
+    00:8d:e6:98:ca:d2
 
 Podemos crear un fichero o un directorio temporal, cuyo nombre es
 aleatorio:
 
-```bash
-$ mktemp
-/tmp/tmp.WBABktXDHZ
-$ mktemp -d
-/tmp/tmp.lHuPARC0YC
-```
+    $ mktemp
+    /tmp/tmp.WBABktXDHZ
+    $ mktemp -d
+    /tmp/tmp.lHuPARC0YC
 
 Podemos mostrar un fichero aleatorio:
 
-```bash
-$ find ~ -maxdepth 1 | shuf -n1 --random-source=/dev/random
-./bash_aliases
-```
+    $ find ~ -maxdepth 1 | shuf -n1 --random-source=/dev/random
+    ./bash_aliases
 
 Podemos poner una imagen de fondo de escritorio aleatoria en Gnome:
 
-```bash
-$ f=$(find ~/Imágenes/ | shuf -n1 | egrep 'gif|jpe?g|png')
-$ while test -n "$f"; do f=$(find ~/Imágenes/ | shuf -n1); done
-$ gconftool-2 -t str --set /desktop/gnome/background/picture_filename "$f"
-```
+    $ f=$(find ~/Imágenes/ | shuf -n1 | egrep 'gif|jpe?g|png')
+    $ while test -n "$f"; do f=$(find ~/Imágenes/ | shuf -n1); done
+    $ gconftool-2 -t str --set /desktop/gnome/background/picture_filename "$f"
 
 Podemos generar una contraseña [a partir de 4 palabras aleatorias][]:
 
-```bash
-$ printf '%s %s %s %s' $(\grep -v "'" /usr/share/dict/american-english | shuf -n 4 | tr '[:upper:]' '[:lower:]')
-meters haven backtracking subordinates
-```
+    $ printf '%s %s %s %s' $(\grep -v "'" /usr/share/dict/american-english | shuf -n 4 | tr '[:upper:]' '[:lower:]')
+    meters haven backtracking subordinates
 
 Podemos mostrar una línea aleatoria de un fichero:
 
-```bash
-$ shuf -n1 /etc/passwd
-```
+    $ shuf -n1 /etc/passwd
 
 O también podemos mostrar un número de líneas aleatorio de un archivo
 aleatorio del código fuente de Linux:
 
-```bash
-$ f=$(find /usr/src/linux-source-2.6.32 -type f -name \* | shuf -n1)
-$ n=$(wc -l $f | awk '{print $1}')
-$ cat $f | sed -n $((RANDOM%n)),$((RANDOM%n))p
+    $ f=$(find /usr/src/linux-source-2.6.32 -type f -name \* | shuf -n1)
+    $ n=$(wc -l $f | awk '{print $1}')
+    $ cat $f | sed -n $((RANDOM%n)),$((RANDOM%n))p
 
-        if (!zalloc_cpumask_var(&vec->mask, gfp))
-            goto cleanup;
+            if (!zalloc_cpumask_var(&vec->mask, gfp))
+                goto cleanup;
+        }
+
+        for_each_possible_cpu(i)
+            cp->cpu_to_pri[i] = CPUPRI_INVALID;
+        return 0;
+
+    cleanup:
+        for (i--; i >= 0; i--)
+            free_cpumask_var(cp->pri_to_cpu[i].mask);
+        return -ENOMEM;
     }
-
-    for_each_possible_cpu(i)
-        cp->cpu_to_pri[i] = CPUPRI_INVALID;
-    return 0;
-
-cleanup:
-    for (i--; i >= 0; i--)
-        free_cpumask_var(cp->pri_to_cpu[i].mask);
-    return -ENOMEM;
-}
-```
 
 Internet
 --------
@@ -328,47 +280,34 @@ en nuestra vida cotidiana:
 
 Obtener una excusa de BOFH aleatoria:
 
-```bash
-$ telnet towel.blinkenlights.nl 666
-=== The BOFH Excuse Server ===
-
-We didn't pay the Internet bill and it's been cut off.
-```
+    $ telnet towel.blinkenlights.nl 666
+    === The BOFH Excuse Server ===
+    We didn't pay the Internet bill and it's been cut off.
 
 Obtener un hecho aleatorio:
 
-```bash
-$ curl -s http://randomfunfacts.com | grep -Eo ".*" | sed -r 's/([^< ]+)<\/i>< \/strong>/\1/'
-Donkeys kill more people annually than plane crashes.
-```
+    $ curl -s http://randomfunfacts.com | grep -Eo ".*" | sed -r 's/([^< ]+)<\/i>< \/strong>/\1/'
+    Donkeys kill more people annually than plane crashes.
 
 Obtener un mensaje aleatorio para un _commit_:
 
-```bash
-$ curl -s http://whatthecommit.com | grep "" | sed -r 's/([^$]+)$/\1/'
-Fucking egotistical bastard. adds expandtab to vimrc
-```
+    $ curl -s http://whatthecommit.com | grep "" | sed -r 's/([^$]+)$/\1/'
+    Fucking egotistical bastard. adds expandtab to vimrc
 
 Obtener una [frase de Futurama][] aleatoria desde Slashdot:
 
-```bash
-$ curl -Is slashdot.org | sed -n '5p' | sed 's/^X-//'
-Bender: I'm one of those lazy, homeless bums I've been hearing about.
-```
+    $ curl -Is slashdot.org | sed -n '5p' | sed 's/^X-//'
+    Bender: I'm one of those lazy, homeless bums I've been hearing about.
 
 Obtener una [excusa de programador][] aleatoria:
 
-```bash
-curl -s https://api.githunt.io/programmingexcuses
-```
+    curl -s https://api.githunt.io/programmingexcuses
 
 Además de números y letras, también podemos obtener números de lotería,
 imágenes, secuencias, fechas, horas, coordenadas geográficas, música,
 testimonios... todo aleatorio en [random.org][]
 
-```bash
-$ curl -s "https://www.random.org/passwords/?num=1&len=8&format=html&rnd=new"
-```
+    $ curl -s "https://www.random.org/passwords/?num=1&len=8&format=html&rnd=new"
 
 - Imágenes: [xkcd][], [dilbert][]
 - Comandos relacionados con la aleatoriedad en [commandlinefu][]

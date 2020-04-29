@@ -16,18 +16,14 @@ herramientas de la suite `imagemagick`, en particular, `composite`.
 
 Primero, creamos una imagen con cada mitad de la imagen original:
 
-```bash
-$ convert diferencias.jpg -crop 50%x100% out.png
-```
+    $ convert diferencias.jpg -crop 50%x100% out.png
 
 Esto crea dos ficheros, `out-0.png` y `out-0.png`, uno con la mitad
 izquierda y otro con la mitad izquierda.
 
 Vamos a obtener las diferencias:
 
-```bash
-$ composite out-0.png out-1.png -compose difference diferencias-out.png
-```
+    $ composite out-0.png out-1.png -compose difference diferencias-out.png
 
 ![diferencias out]({static}/images/diferencias-out-193x300.png)
 

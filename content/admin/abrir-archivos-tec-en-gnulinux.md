@@ -12,11 +12,9 @@ contiene archivos cuya extensión es `.tec`.
 Echando un vistazo al contenido de estos archivos con `hexer`, parece
 ser que se trata de un archivo JFIF:
 
-```bash
- 00000000:  ff d9 66 b3 00 00 ff d8  ff e0 00 10 4a 46 49 46  ..f.........JFIF
- 00000010:  00 01 01 00 00 01 00 01  00 00 ff db 00 43 00 05  .............C..
- 00000020:  03 04 04 04 03 05 04 04  04 05 05 05 06 07 0c 08  ................
-```
+    00000000:  ff d9 66 b3 00 00 ff d8  ff e0 00 10 4a 46 49 46  ..f.........JFIF
+    00000010:  00 01 01 00 00 01 00 01  00 00 ff db 00 43 00 05  .............C..
+    00000020:  03 04 04 04 03 05 04 04  04 05 05 05 06 07 0c 08  ................
 
 Por el nombre del directorio y por el tamaño de las fotos, menos de
 100K, parece que [deben ser imágenes en miniatura][].
@@ -33,11 +31,9 @@ archivo a archivo es algo impensable, sobre todo si tenemos un gran
 número de ellas. Utilizando `dd` podemos conseguir [eliminar los 6
 primeros _bytes_][eliminar los 6 primeros bytes] de todas las imágenes:
 
-```bash
-$ for f in *.tec; do
-     dd bs=6 skip=1 if=$f of=$f.jfif
-  done
-```
+    $ for f in *.tec; do
+    dd bs=6 skip=1 if=$f of=$f.jfif
+    done
 
 Aunque en este caso no eliminamos el último _byte_, los archivos creados
 se pueden abrir sin problemas.

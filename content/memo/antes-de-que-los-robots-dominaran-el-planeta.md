@@ -8,11 +8,9 @@ Si [Skynet][] no tomó conciencia de sí mismo el 29 de agosto de 1997,
 seguro que fue gracias a que existen desarrolladores precavidos, como
 los de [last.fm][], que añaden al `robots.txt` las siguientes líneas:
 
-```bash
-Disallow: /harming/humans
-Disallow: /ignoring/human/orders
-Disallow: /harm/to/self
-```
+    Disallow: /harming/humans
+    Disallow: /ignoring/human/orders
+    Disallow: /harm/to/self
 
 ![Terminator Arm]({static}/images/terminator_sideshow_endo_arm-208x300.jpg)
 

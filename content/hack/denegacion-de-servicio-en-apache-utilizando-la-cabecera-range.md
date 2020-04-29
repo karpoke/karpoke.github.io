@@ -19,29 +19,25 @@ vulnerable y, si es el caso, explotar dicha vulnerabilidad.
 
 Para comprobar si un servidor es vulnerable, podemos ejecutar:
 
-```bash
-$ telnet 127.0.0.1 80
-HEAD / HTTP/1.1
-Host: 127.0.0.1
-Range: bytes=0-5
-Accept-Encoding: gzip
-Connection: close
-```
+    $ telnet 127.0.0.1 80
+    HEAD / HTTP/1.1
+    Host: 127.0.0.1
+    Range: bytes=0-5
+    Accept-Encoding: gzip
+    Connection: close
 
 Si la respuesta es un código `206 Partial Content` el servidor es
 vulnerable:
 
-```bash
-HTTP/1.1 206 Partial Content
-Date: Wed, 31 Aug 2011 11:52:13 GMT
-Server: Apache/2.2.17 (Ubuntu)
-Vary: Accept-Encoding
-Content-Encoding: gzip
-Content-Range: bytes 0-5/20
-Content-Length: 6
-Connection: close
-Content-Type: text/html;charset=UTF-8
-```
+    HTTP/1.1 206 Partial Content
+    Date: Wed, 31 Aug 2011 11:52:13 GMT
+    Server: Apache/2.2.17 (Ubuntu)
+    Vary: Accept-Encoding
+    Content-Encoding: gzip
+    Content-Range: bytes 0-5/20
+    Content-Length: 6
+    Connection: close
+    Content-Type: text/html;charset=UTF-8
 
 Protección
 ----------
@@ -52,23 +48,17 @@ siguientes medidas de protección.
 -   Podemos [deshabilitar la cabecera `Range`][deshabilitar la cabecera Range] mediante la directiva
     `RequestHeader`, usando el módulo `mod_headers`:
 
-    ```bash
-     RequestHeader unset Range
-    ```
+        RequestHeader unset Range
 
 » [Limitar el número de intervalos][] mediante `mod_rewrite`:
 
-    ```bash
-     RewriteEngine On
+        RewriteEngine On
     RewriteCond %{HTTP:Range} ([0-9]_-[0-9]_)(\s*,\s*[0-9]_-[0-9]_)+
     RewriteRule .* - [NS,L,F]
-    ```
 
 » [Deshabilitar el módulo `mod_deflate`][Deshabilitar el módulo mod_deflate]:
 
-    ```bash
-$ sudo a2dismod deflate
-    ```
+        $ sudo a2dismod deflate
 
   [vulnerabilidad descubierta por _kingcope_]: http://issues.apache.org/bugzilla/show_bug.cgi?id=51714
     "vulnerabilidad descubierta por _kingcope_"

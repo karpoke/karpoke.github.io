@@ -6,12 +6,10 @@ Slug: visualization-of-regular-expression-character-classes
 > We all know the regular expression character classes, right? There are
 > 12 standard classes:
 >
-> ```bash
-> [:alnum:]  [:digit:]  [:punct:]
-> [:alpha:]  [:graph:]  [:space:]
-> [:blank:]  [:lower:]  [:upper:]
-> [:cntrl:]  [:print:]  [:xdigit:]
-> ```
+>     [:alnum:]  [:digit:]  [:punct:]
+>     [:alpha:]  [:graph:]  [:space:]
+>     [:blank:]  [:lower:]  [:upper:]
+>     [:cntrl:]  [:print:]  [:xdigit:]
 >
 > But have you seen a visual representation of what these classes match?
 > Probably not. Therefore I created a visualization that illustrates

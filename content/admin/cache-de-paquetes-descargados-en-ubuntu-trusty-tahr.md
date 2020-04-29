@@ -24,44 +24,34 @@ instalado, editaremos el fichero `/etc/services` para añadir los puertos
 que utiliza (esto no será útil cuando, por ejemplo, analicemos el
 tráfico de red):
 
-```bash
-# Local services
-apt-cacher-ng   3142/tcp
-apt-cacher-ng   3142/udp
-```
+    # Local services
+    apt-cacher-ng   3142/tcp
+    apt-cacher-ng   3142/udp
 
 Para arrancar el servicio:
 
-```bash
-$ sudo service apt-cacher-ng start
-```
+    $ sudo service apt-cacher-ng start
 
 Si tenemos un cortafuegos activo, deberemos abrir dicho puerto. Por
 ejemplo, si usamos `ufw`:
 
-```bash
-$ sudo ufw allow from 192.168.0.0/24 to any port 3142
-```
+    $ sudo ufw allow from 192.168.0.0/24 to any port 3142
 
 Podemos importar los paquetes que ya tengamos descargados. Tal como
 sugiere la documentación en la página de mantenimiento, creamos el
 directorio `_import`, añadimos un enlace simbólico a la caché de
 paquetes de `apt` y pulsamos en el botón de importar:
 
-```bash
-$ cd /var/cache/apt-cacher-ng/
-$ sudo mkdir _import
-$ sudo chown apt-cacher-ng:apt-cacher-ng _import/
-$ cd _import/
-$ sudo ln -s /var/cache/apt/archives
-```
+    $ cd /var/cache/apt-cacher-ng/
+    $ sudo mkdir _import
+    $ sudo chown apt-cacher-ng:apt-cacher-ng _import/
+    $ cd _import/
+    $ sudo ln -s /var/cache/apt/archives
 
 Ahora sólo queda pulsar en el botón de Importar, o visitar el siguiente
 enlace:
 
-```bash
-$ w3m "http://192.168.0.50:3142/acng-report.html?abortOnErrors=aOe&doImport=Start+Import&calcSize=cs&asNeeded=an#bottom"
-```
+    $ w3m "http://192.168.0.50:3142/acng-report.html?abortOnErrors=aOe&doImport=Start+Import&calcSize=cs&asNeeded=an#bottom"
 
 Clientes
 --------
@@ -70,18 +60,14 @@ En los clientes, lo único que hay que hacer es añadir un archivo de
 configuración para apt, por ejemplo `/etc/apt/apt.conf.d/02proxy` que
 apunte al servidor:
 
-```bash
-Acquire::http::Proxy "http://192.168.0.50:3142";
-```
+    Acquire::http::Proxy "http://192.168.0.50:3142";
 
 192.168.0.50 es la IP del servidor, aunque también podríamos poner un
 nombre de dominio.
 
 Sólo queda actualizar los paquetes:
 
-```bash
-$ sudo aptitude update
-```
+    $ sudo aptitude update
 
 Mantenimiento
 -------------

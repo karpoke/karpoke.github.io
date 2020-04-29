@@ -29,17 +29,13 @@ rendimiento. Esto [dependerá][] de:
 Para configurar el complemento, deberemos crear el fichero de configuración
 `mms.cfg`. Ejecutamos:
 
-```bash
-$ sudo mkdir /etc/adobe
-$ echo "OverrideGPUValidation=true" | sudo tee /etc/adobe/mms.cfg
-```
+    $ sudo mkdir /etc/adobe
+    $ echo "OverrideGPUValidation=true" | sudo tee /etc/adobe/mms.cfg
 
 También podemos configurarlo como preferencias de usuario:
 
-```bash
-$ mkdir ~/adobe
-$ echo "OverrideGPUValidation=true" >> ~/.adobe/mms.cfg
-```
+    $ mkdir ~/adobe
+    $ echo "OverrideGPUValidation=true" >> ~/.adobe/mms.cfg
 
   [Usemos Linux]: http://usemoslinux.blogspot.com/2011/01/como-evitar-que-flash-arruine-tu.html
     "Usemos Linux"

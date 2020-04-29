@@ -9,15 +9,11 @@ Si queremos [seguir las actualizaciones de una página de Facebook][], no
 tenemos más que copiar el ID de la página y sustituirlo en la siguiente
 URL, en este caso en formato Atom 1.0:
 
-```bash
-http://www.facebook.com/feeds/page.php?format=atom10&id=xxxxxxxxxxxx
-```
+    http://www.facebook.com/feeds/page.php?format=atom10&id=xxxxxxxxxxxx
 
 O la siguiente, para usar el formato RSS 2.0:
 
-```bash
-http://www.facebook.com/feeds/page.php?format=rss20&id=xxxxxxxxxxxx
-```
+    http://www.facebook.com/feeds/page.php?format=rss20&id=xxxxxxxxxxxx
 
 Por ejemplo, para añadir el RSS de la página de Amstrad ESP,
 [http://www.facebook.com/pages/Amstrad-ESP/__72227918057__][], no

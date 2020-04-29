@@ -21,11 +21,9 @@ cualquier administrador).
 A continuación, añadimos las siguientes líneas al fichero
 `~/.ssh/config`:
 
-```bash
-Host *
-  ControlPath ~/.ssh/master-%l-%r@%h:%p
-  ControlMaster auto
-```
+    Host *
+    ControlPath ~/.ssh/master-%l-%r@%h:%p
+    ControlMaster auto
 
 -   `Host *` especifica que se aplica a cualquier máquina remota,
 -   `ControlMaster auto` especifica que se reutilice una conexión
@@ -43,23 +41,17 @@ Comparación de tiempos
 
 Para la primera conexión:
 
-```bash
-$ time ssh user@remote exit
-
-real    0m1.217s
-user    0m0.012s
-sys     0m0.004s
-```
+    $ time ssh user@remote exit
+    real    0m1.217s
+    user    0m0.012s
+    sys     0m0.004s
 
 Para las siguientes conexiones:
 
-```bash
-$ time ssh user@remote exit
-
-real    0m0.168s
-user    0m0.008s
-sys     0m0.012s
-```
+    $ time ssh user@remote exit
+    real    0m0.168s
+    user    0m0.008s
+    sys     0m0.012s
 
 La diferencia es notable. Para evitar que nos pida la contraseña y tener
 que introducirla manualmente, podemos utilizar el [inicio de sesión por
@@ -79,9 +71,7 @@ Ademá, dado que se reutiliza la conexión maestra, si queremos
 conectarnos utilizando diferentes parámetros deberemos crear una
 conexión nueva, utilizando el argumento `-S none`:
 
-```bash
-$ ssh -S none -X user@remote
-```
+    $ ssh -S none -X user@remote
 
 Ficheros de `socket`
 --------------------
@@ -90,10 +80,8 @@ Si no finalizamos la conexión correctamente, es posible que el fichero
 de _socket_ no se elimine correctamente, lo que puede provocar que no
 nos permita volver a conectarnos:
 
-```bash
-Control socket connect(/home/user/.ssh/master-remote-local@example.net:1234): Connection refused
-ControlSocket /home/user/.ssh/master-remote-local@example.net:1234 already exists
-```
+    Control socket connect(/home/user/.ssh/master-remote-local@example.net:1234): Connection refused
+    ControlSocket /home/user/.ssh/master-remote-local@example.net:1234 already exists
 
 Simplemente debemos eliminar estos ficheros para solucionarlo.
 

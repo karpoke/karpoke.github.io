@@ -73,24 +73,18 @@ Una vez que tengamos la imagen, procederemos a instalarla en la tarjeta
 SD [9]. El proceso es sencillo. Por ejemplo, para instalar debian,
 después de haber descargado la imagen, comprobamos que es correcta:
 
-```bash
-$ sha1sum ~/debian6-19-04-2012.zip
-1852df83a11ee7083ca0e5f3fb41f93ecc59b1c8  debian6-19-04-2012.zip
-```
+    $ sha1sum ~/debian6-19-04-2012.zip
+    1852df83a11ee7083ca0e5f3fb41f93ecc59b1c8  debian6-19-04-2012.zip
 
 Extraemos la imagen:
 
-```bash
-$ unzip debian6-19-04-2012.zip
-```
+    $ unzip debian6-19-04-2012.zip
 
 Montamos la tarjeta, si no está montada ya, y anotamos qué nombre tiene
 el dispositivo:
 
-```bash
-$ df | grep mmc
-/dev/mmcblk0p1            7871488        32    7871456   1% /media/FC30-3DA9
-```
+    $ df | grep mmc
+    /dev/mmcblk0p1            7871488        32    7871456   1% /media/FC30-3DA9
 
 En este caso el sufijo `p1` indica que está montada la primera
 partición, pero nosotros queremos la ruta a la tarjeta, no sólo una
@@ -101,18 +95,14 @@ partición y el nombre del dispositivo `sdd`.
 
 Desmontamos la tarjeta SD:
 
-```bash
-$ umount /media/FC30-3DA9
-```
+    $ umount /media/FC30-3DA9
 
 Volcamos la imagen en la tarjeta SD:
 
-```bash
-$ dd bs=1M if=debian6-19-04-2012/debian6-19-04-2012.img of=/dev/mmcblk0
-1859+1 registros leídos
-1859+1 registros escritos
-1950000000 bytes (2,0 GB) copiados, 151,45 s, 12,9 MB/s
-```
+    $ dd bs=1M if=debian6-19-04-2012/debian6-19-04-2012.img of=/dev/mmcblk0
+    1859+1 registros leídos
+    1859+1 registros escritos
+    1950000000 bytes (2,0 GB) copiados, 151,45 s, 12,9 MB/s
 
 <a name="aprovechando-todo-el-espacio-de-la-tarjeta-sd"></a>
 
@@ -127,21 +117,19 @@ desde el terminal de la Ubuntu.
 
 Utilizaremos `parted` con la tarjeta, de 8 GB, aún desmontada:
 
-```bash
-$ sudo parted /dev/mmcblk0
-(parted) unit chs
-(parted) print
-Modelo: SD 00000 (sd/mmc)
-Disco /dev/mmcblk0: 123119,3,31
-Tamaño de sector (lógico/físico): 512B/512B
-Geometría cilindro,cabeza,sector de BIOS: 123120,4,32. Cada cilindro es 65,5kB.
-Tabla de particiones. msdos
+    $ sudo parted /dev/mmcblk0
+    (parted) unit chs
+    (parted) print
+    Modelo: SD 00000 (sd/mmc)
+    Disco /dev/mmcblk0: 123119,3,31
+    Tamaño de sector (lógico/físico): 512B/512B
+    Geometría cilindro,cabeza,sector de BIOS: 123120,4,32. Cada cilindro es 65,5kB.
+    Tabla de particiones. msdos
 
-Numero  Inicio     Fin         Tipo     Sistema de archivos  Banderas
- 1      16,0,0     1215,3,31   primary  fat32                lba
- 2      1232,0,0   26671,3,31  primary  ext4
- 3      26688,0,0  29743,3,31  primary  linux-swap(v1)
-```
+    Numero  Inicio     Fin         Tipo     Sistema de archivos  Banderas
+     1      16,0,0     1215,3,31   primary  fat32                lba
+     2      1232,0,0   26671,3,31  primary  ext4
+     3      26688,0,0  29743,3,31  primary  linux-swap(v1)
 
 Aquí vemos las particiones que se han creado tras el volcado de la
 imagen, y que no se usa el espacio desde el cilindro 29743 hasta el
@@ -156,30 +144,22 @@ Para mover la partición de `swap`, primero debemos calcular el número de
 cilindro a partir del cual la vamos a poner. Para calcular este número
 utilizamos la siguiente fórmula:
 
-```bash
-inicio = (máximo - (final partición 3 - inicio partición 3) - 1
-```
+    inicio = (máximo - (final partición 3 - inicio partición 3) - 1
 
 Por ejemplo:
 
-```bash
-inicio = (123119 - ( 29743 - 26688)) - 1 = 120063
-```
+    inicio = (123119 - ( 29743 - 26688)) - 1 = 120063
 
 Seguimos con `parted` y la movemos:
 
-```bash
-(parted) move 3 120063,0,0
-```
+    (parted) move 3 120063,0,0
 
 Ahora ampliaremos el tamaño de la partición de `root`, sin que perdamos
 los datos en ella:
 
-```bash
-(parted) rm 2
-(parted) mkpart primary 1232,0,0 120062,3,31
-(parted) quit
-```
+    (parted) rm 2
+    (parted) mkpart primary 1232,0,0 120062,3,31
+    (parted) quit
 
 El inicio de la partición de `root` es el mismo que ya tenía y el último
 es justo antes del de la partición de _swap_.
@@ -187,27 +167,23 @@ es justo antes del de la partición de _swap_.
 Ya podemos limpiar y redimensionar la partición con `e2fsck` (como es la
 segunda añadimos `p2`):
 
-```bash
-$ sudo e2fsck -f /dev/mmcblk0p2 # (permitimos añadir lost-and-found)
-e2fsck 1.42 (29-Nov-2011)
-Paso 1: Verificando nodos-i, bloques y tamaños
-Paso 2: Verificando la estructura de directorios
-Paso 3: Revisando la conectividad de directorios
-No se encontró /lost+found.  Crear? si
+    $ sudo e2fsck -f /dev/mmcblk0p2 # (permitimos añadir lost-and-found)
+    e2fsck 1.42 (29-Nov-2011)
+    Paso 1: Verificando nodos-i, bloques y tamaños
+    Paso 2: Verificando la estructura de directorios
+    Paso 3: Revisando la conectividad de directorios
+    No se encontró /lost+found.  Crear? si
 
-Paso 4: Revisando las cuentas de referencia
-Paso 5: Revisando el resumen de información de grupos
+    Paso 4: Revisando las cuentas de referencia
+    Paso 5: Revisando el resumen de información de grupos
 
-/dev/mmcblk0p2: __*** EL SISTEMA DE FICHEROS FUE MODIFICADO ***__
-/dev/mmcblk0p2: 59389/101920 files (0.0% non-contiguous), 310435/407040 blocks
-```
+    /dev/mmcblk0p2: __*** EL SISTEMA DE FICHEROS FUE MODIFICADO ***__
+    /dev/mmcblk0p2: 59389/101920 files (0.0% non-contiguous), 310435/407040 blocks
 
-```bash
-$ sudo resize2fs /dev/mmcblk0p2
-resize2fs 1.42 (29-Nov-2011)
-Resizing the filesystem on /dev/mmcblk0p2 to 1901296 (4k) blocks.
-The filesystem on /dev/mmcblk0p2 is now 1901296 blocks long.
-```
+    $ sudo resize2fs /dev/mmcblk0p2
+    resize2fs 1.42 (29-Nov-2011)
+    Resizing the filesystem on /dev/mmcblk0p2 to 1901296 (4k) blocks.
+    The filesystem on /dev/mmcblk0p2 is now 1901296 blocks long.
 
 Sacamos la tarjeta y la introducimos en Raspberry Pi. El usuario por
 defecto es __pi** y la contraseña **raspberry__. Esto será lo primero
@@ -227,49 +203,37 @@ Ejecutamos el comando `passwd` e introducimos la nueva contraseña.
 
 Lo siguiente, actualizar el sistema:
 
-```bash
-pi@raspberrypi:~$ sudo apt-get install aptitude
-pi@raspberrypi:~$ sudo aptitude update && sudo aptitude safe-upgrade
-```
+    pi@raspberrypi:~$ sudo apt-get install aptitude
+    pi@raspberrypi:~$ sudo aptitude update && sudo aptitude safe-upgrade
 
 Si nuestro teclado no es inglés, podemos configurarlo para nuestro
 idioma ejecutando:
 
-```bash
-pi@raspberrypi:~$ sudo dpkg-reconfigure keyboard-configuration
-```
+    pi@raspberrypi:~$ sudo dpkg-reconfigure keyboard-configuration
 
 Y para que los cambios tengan efecto:
 
-```bash
-pi@raspberrypi:~$ sudo setupcon
-```
+    pi@raspberrypi:~$ sudo setupcon
 
 Instalamos algunos paquetes "básicos":
 
-```bash
-pi@raspberrypi:~$ sudo aptitude install byobu htop locate vim vlc
-```
+    pi@raspberrypi:~$ sudo aptitude install byobu htop locate vim vlc
 
 Añadimos algunos _alias_, por ejemplo:
 
-```bash
-pi@raspberry:~$ cat > .bash_aliases << EOF
-alias api="sudo aptitude install"
-alias apu="sudo aptitude update"
-alias apg="sudo aptitude safe-upgrade"
-alias ..="cd .."
-alias vim="vim.tiny"
-EOF
-```
+    pi@raspberry:~$ cat > .bash_aliases << EOF
+    alias api="sudo aptitude install"
+    alias apu="sudo aptitude update"
+    alias apg="sudo aptitude safe-upgrade"
+    alias ..="cd .."
+    alias vim="vim.tiny"
+    EOF
 
 Si queremos acceder mediante SSH, ya viene con un _script_ que se
 encarga de arrancar el servidor SSH al inicio. Lo único que tenemos que
 hacer es renombrar el fichero `boot_enable_ssh.rc`:
 
-```bash
-pi@raspberry:~$ sudo mv /boot/boot_enable_ssh.rc /boot/boot.rc
-```
+    pi@raspberry:~$ sudo mv /boot/boot_enable_ssh.rc /boot/boot.rc
 
 Por defecto, la configuración de SSH es demasiado permisiva. Podemos
 endurecerla, por ejemplo, cambiando el número de puerto en el que
@@ -278,9 +242,7 @@ que el usuario `root` pueda iniciar sesión (`PermitRootLogin no`), etc.
 
 Reiniciamos el servicio para que los cambios tengan efecto:
 
-```bash
-pi@raspberry:~$ sudo service ssh restart
-```
+    pi@raspberry:~$ sudo service ssh restart
 
 Antes de cerrar la sesión SSH que tenemos abierta, deberíamos comprobar
 que podemos acceder de forma remota tras aplicar los cambios, ya que, de
@@ -292,27 +254,21 @@ Por último, si nos vamos a conectar de forma remota, lo mejor sería
 asignarle una IP estática. Editamos el fichero `/etc/network/interfaces`
 y modificamos la configuración de la tarjeta:
 
-```bash
-auto eth0
-iface eth0 inet static
-   address 192.168.1.51
-   netmaks 255.255.255.0
-   gateway 192.168.1.1
-   broadcast 192.168.1.255
-   network 192.168.1.0
-```
+    auto eth0
+    iface eth0 inet static
+        address 192.168.1.51
+        netmaks 255.255.255.0
+        gateway 192.168.1.1
+        broadcast 192.168.1.255
+        network 192.168.1.0
 
 Reiniciamos el servicio para que los cambios tengan efecto:
 
-```bash
-pi@raspberry:~$ sudo service networking restart
-```
+    pi@raspberry:~$ sudo service networking restart
 
 Si queremos arrancar el entorno gráfico LXDE:
 
-```bash
-pi@raspberrypi:~$ startx
-```
+    pi@raspberrypi:~$ startx
 
 <a name="conexion-inalambrica-con-una-antena-wifi-usb"></a>
 
@@ -324,98 +280,76 @@ configurar.
 
 Conectamos la antena y comprobamos que la reconoce:
 
-```bash
-pi@raspberrypi:~$ lsusb
-Bus 001 Device 004: ID 0ace:1211 ZyDAS ZD1211 802.11g
-```
+    pi@raspberrypi:~$ lsusb
+    Bus 001 Device 004: ID 0ace:1211 ZyDAS ZD1211 802.11g
 
 El controlador para esta antena no es libre, así que para instalarlo
 deberemos activar los repositorios `non-free`. Editamos el fichero
 `/etc/apt/sources.list` y la añadimos, para que quede:
 
-```bash
-deb http://ftp.uk.debian.org/debian/ squeeze main non-free
-```
+    deb http://ftp.uk.debian.org/debian/ squeeze main non-free
 
 Actualizamos los repositorios:
 
-```bash
-pi@raspberrypi:~$ sudo aptitude update
-```
+    pi@raspberrypi:~$ sudo aptitude update
 
 Instalamos el controlador:
 
-```bash
-pi@raspberrypi:~$ sudo aptitude install zd1211-firmware
-```
+    pi@raspberrypi:~$ sudo aptitude install zd1211-firmware
 
 Si el siguiente comando nos funciona, sólo quedará configurar la
 conexión:
 
-```bash
-pi@raspberrypi:~$ sudo iwlist wlan0 scan
-```
+    pi@raspberrypi:~$ sudo iwlist wlan0 scan
 
 ### Conexión WPA2
 
 Si queremos configurar la conexión inalámbrica a una red cifrada con
 WPA2, lo primero será asegurarnos de que tenemos el paquete necesario:
 
-```bash
-pi@raspberrypi:~$ sudo aptitude install wpasupplicant
-```
+    pi@raspberrypi:~$ sudo aptitude install wpasupplicant
 
 Creamos el fichero con el nombre de la red y la contraseña:
 
-```bash
-pi@raspberrypi:~$ wpa_passphrase MYESSID mypassphrase | sudo tee /etc/wpa_supplicant/wpa_supplicant.conf
-pi@raspberrypi:~$ sudo chmod 600 /etc/wpa_supplicant/wpa_supplicant.conf
-```
+    pi@raspberrypi:~$ wpa_passphrase MYESSID mypassphrase | sudo tee /etc/wpa_supplicant/wpa_supplicant.conf
+    pi@raspberrypi:~$ sudo chmod 600 /etc/wpa_supplicant/wpa_supplicant.conf
 
 Editamos el fichero para añadirle los siguientes campos:
 
-```bash
-network {
-   ssid="MYSSID"
-   #psk="mypassphrase"
-   psk=ce4d0c6d7585a8432e2205c2b8d2ec5439dab5d9185f4b6f4c41d4120eb36161
-   proto=RSN # "RSN" para WPA2, "WPA" para WPA
-   key_mgmt=WPA-PSK
-   pairwise=CCMP TKIP # CCMP==AES
-   group=CCMP TKIP
-}
-```
+    network {
+       ssid="MYSSID"
+       #psk="mypassphrase"
+       psk=ce4d0c6d7585a8432e2205c2b8d2ec5439dab5d9185f4b6f4c41d4120eb36161
+       proto=RSN # "RSN" para WPA2, "WPA" para WPA
+       key_mgmt=WPA-PSK
+       pairwise=CCMP TKIP # CCMP==AES
+       group=CCMP TKIP
+    }
 
 Editamos el fichero de configuración de la red,
 `/etc/network/interfaces`, y le asignamos una IP estática, por ejemplo:
 
-```bash
-auto wlan0
-iface wlan0 inet static
-   address 192.168.1.51
-   gateway 192.168.1.1
-   broadcast 192.168.1.255
-   network 192.168.1.0
-   wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-```
+    auto wlan0
+    iface wlan0 inet static
+        address 192.168.1.51
+        gateway 192.168.1.1
+        broadcast 192.168.1.255
+        network 192.168.1.0
+        wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 
 Sólo queda reiniciar la red:
 
-```bash
-pi@raspberrypi:~$ sudo service networking restart
-```
+    pi@raspberrypi:~$ sudo service networking restart
 
 Aunque todo parecía ir bien, al final no logro que establecer la
 conexión. Mirando en los _logs_ he podido encontrar:
 
-```bash
-pi@raspberrypi:~$ dmesg | grep zd1211rw
-zd1211rw 1-1.2:1.0: phy0
-usbcore: registered new interface driver zd1211rw
-zd1211rw 1-1.2:1.0: firmware version 4605
-zd1211rw 1-1.2:1.0: zd1211 chip 0ace:1211 v4330 high 00-02-e3 RF2959_RF pa0 g----
-zd1211rw 1-1.2:1.0: TX-stall detected, reseting device...
-```
+    pi@raspberrypi:~$ dmesg | grep zd1211rw
+    zd1211rw 1-1.2:1.0: phy0
+    usbcore: registered new interface driver zd1211rw
+    zd1211rw 1-1.2:1.0: firmware version 4605
+    zd1211rw 1-1.2:1.0: zd1211 chip 0ace:1211 v4330 high 00-02-e3 RF2959_RF pa0 g----
+    zd1211rw 1-1.2:1.0: TX-stall detected, reseting device...
 
 Parece ser que ese _TX-stall detected_ es debido a que [la Raspberry Pi
 no aporta suficiente potencia para la antena WIFI][], por lo que la

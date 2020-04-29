@@ -28,9 +28,7 @@ manera que nuestra contraseña no quede registrada en ningún fichero de
 _log_ (como sí quedaría si pusíeramos el comando directamente en el
 `crontab`):
 
-```bash
-/usr/sbin/inadyn -u user -p pass --iterations 1 --dyndns_system custom@dyndns.org -a terminus.ignaciocano.com -a anacreonte.homelinux.com
-```
+    /usr/sbin/inadyn -u user -p pass --iterations 1 --dyndns_system custom@dyndns.org -a terminus.ignaciocano.com -a anacreonte.homelinux.com
 
 Podemos añadir tantos subdominios como queramos, o tengamos, precedidos
 del argumento `-a`.

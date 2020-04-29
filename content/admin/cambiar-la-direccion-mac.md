@@ -17,29 +17,23 @@ lista de las MAC autorizadas para conectarse.
 
 Para conocer la MAC de nuestras interfaces de red:
 
-```bash
-$ ifconfig  | grep -E "([0-9a-f]{2}:){5}[0-9a-f]{2}"
-eth0      Link encap:Ethernet  direcciónHW 00:3c:72:26:3a:22
-eth2      Link encap:Ethernet  direcciónHW 00:50:cb:d9:07:79
-```
+    $ ifconfig  | grep -E "([0-9a-f]{2}:){5}[0-9a-f]{2}"
+    eth0      Link encap:Ethernet  direcciónHW 00:3c:72:26:3a:22
+    eth2      Link encap:Ethernet  direcciónHW 00:50:cb:d9:07:79
 
 Para cambiar la MAC de la interfaz `eth0`, por ejemplo:
 
-```bash
-$ sudo ifconfig eth0 down
-$ sudo ifconfig eth0 hw ether 00:00:de:ad:de:ad
-$ sudo ifconfig eth0 up
-```
+    $ sudo ifconfig eth0 down
+    $ sudo ifconfig eth0 hw ether 00:00:de:ad:de:ad
+    $ sudo ifconfig eth0 up
 
 En principio, podemos asignar la dirección MAC que queramos, mientras
 sean números [hexadecimales][], con la salvedad de que, posiblemente,
 necesitaremos que [tenga un identificador válido][]. Aún así, podríamos
 asignar una MAC [aleatoria][]:
 
-```bash
-$ echo $(cat /proc/interrupts | md5sum | sed -r 's/^(.{10}).*$/00\1/; s/([0-9a-f]{2})/\1:/g; s/:$//;')
-00:19:a9:58:2b:14
-```
+    $ echo $(cat /proc/interrupts | md5sum | sed -r 's/^(.{10}).*$/00\1/; s/([0-9a-f]{2})/\1:/g; s/:$//;')
+    00:19:a9:58:2b:14
 
 * * * * *
 
@@ -49,18 +43,14 @@ Utilizando el comando `ip`, el cual vino a [sustituir a ifconfig][],
 también podemos consultar las interfaces de red:
 
 </p>
-```bash
-$ ip addr show
-$ ip link show
-```
+    $ ip addr show
+    $ ip link show
 
 Y cambiar la dirección MAC de la que nos interese:
 
-```bash
-$ sudo ip link set dev wlan1 down
-$ sudo ip link set dev wlan1 address 00:19:a9:58:2b:14
-$ sudo ip link set dev wlan1 up
-```
+    $ sudo ip link set dev wlan1 down
+    $ sudo ip link set dev wlan1 address 00:19:a9:58:2b:14
+    $ sudo ip link set dev wlan1 up
 
 * * * * *
 
@@ -72,29 +62,21 @@ maneras. Por ejemplo:
 
 Poner la MAC que queramos, de la misma manera que el comando anterior:
 
-```bash
-$ sudo macchanger -m 00:50:cb:d9:07:79 eth2
-```
+    $ sudo macchanger -m 00:50:cb:d9:07:79 eth2
 
 Cambiar la MAC sin cambiar la información del vendedor, es decir, los
 tres primeros bytes:
 
-```bash
-$ sudo macchanger -e eth2
-Current MAC: 00:50:cb:b4:98:16 (Jetter)
-```
+    $ sudo macchanger -e eth2
+    Current MAC: 00:50:cb:b4:98:16 (Jetter)
 
 De manera aleatoria:
 
-```bash
-$ sudo macchanger -r
-```
+    $ sudo macchanger -r
 
 Mostrar un listado de vendedores:
 
-```bash
-$ macchanger -l
-```
+    $ macchanger -l
 
 Filtrado de MAC
 ---------------
@@ -107,9 +89,7 @@ obtener la MAC a través de las propiedades de la interfaz de red en el
 administrador de redes del panel de control, o ejecutando en una
 consola:
 
-```bash
-C:> ipconfig /all
-```
+    C:> ipconfig /all
 
 Si es una conexión inalámbrica, podemos obtener alguna MAC válida de
 algún equipo que esté conectado a la red, utilizando algún programa como

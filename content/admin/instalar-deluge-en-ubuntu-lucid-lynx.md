@@ -14,40 +14,30 @@ Instalación
 
 Podemos instalar `deluge` y su interfaz web desde los repositorios:
 
-```bash
-$ sudo aptitude install deluged deluge-webui
-```
+    $ sudo aptitude install deluged deluge-webui
 
 Crearemos el usuario "deluge" para ejecutar este servicio:
 
-```bash
-$ sudo adduser --disabled-password --system --home /var/lib/deluge --gecos "SamRo Deluge server" --group deluge
-```
+    $ sudo adduser --disabled-password --system --home /var/lib/deluge --gecos "SamRo Deluge server" --group deluge
 
 Creamos el _script_ `/etc/default/deluge-daemon`:
 
-```bash
-# Configuration for /etc/init.d/deluge-daemon
-# The init.d script will only run if this variable non-empty.
-DELUGED_USER="deluge"
-# Should we run at startup?
-RUN_AT_STARTUP="YES"
-```
+    # Configuration for /etc/init.d/deluge-daemon
+    # The init.d script will only run if this variable non-empty.
+    DELUGED_USER="deluge"
+    # Should we run at startup?
+    RUN_AT_STARTUP="YES"
 
 Copiamos el _script_ [`deluge-daemon`][deluge-daemon]
 a `/etc/init.d` y nos aseguramos de que tenga permisos de ejecución.
 
 Configuramos el _script_ para ejecutarse al inicio:
 
-```bash
-$ sudo update-rc.d deluge-daemon defaults
-```
+    $ sudo update-rc.d deluge-daemon defaults
 
 Lo ejecutamos, para no tener que esperar al próximo reinicio:
 
-```bash
-$ sudo invoke-rc.d deluge-daemon start
-```
+    $ sudo invoke-rc.d deluge-daemon start
 
 Ya podemos acceder a la interfaz web: http://localhost:8112. La
 contraseña por defecto es "deluge". Nada más iniciar sesión deberíamos
@@ -60,9 +50,7 @@ un cortafuegos][] deberemos permitir el acceso para poder acceder a la
 interfaz web. Por ejemplo, si usamos `ufw` y queremos que pueda acceder
 cualquier equipo dentro de la misma red deberíamos añadir la regla:
 
-```bash
-$ sudo ufw allow proto tcp from 192.168.1.0/24 to any port 8112
-```
+    $ sudo ufw allow proto tcp from 192.168.1.0/24 to any port 8112
 
 _Logging_
 ---------
@@ -70,42 +58,34 @@ _Logging_
 Si queremos que se recojan mensajes de _log_, deberemos crear los
 siguientes directorios para el usuario `deluge`:
 
-```bash
-$ sudo mkdir -p /var/log/deluge/daemon
-$ sudo mkdir -p /var/log/deluge/web
-$ sudo chmod -R 755 /var/log/deluge
-$ sudo chown -R deluge /var/log/deluge
-```
+    $ sudo mkdir -p /var/log/deluge/daemon
+    $ sudo mkdir -p /var/log/deluge/web
+    $ sudo chmod -R 755 /var/log/deluge
+    $ sudo chown -R deluge /var/log/deluge
 
 Modificamos las opciones del _script_ `/etc/init.d/deluge-daemon` para
 que contenga las líneas:
 
-```bash
-DAEMON1_ARGS="-d -L warning -l /var/log/deluge/daemon/warning.log"             # Consult `man deluged` for more options
-DAEMON2_ARGS="-L warning -l /var/log/deluge/web/warning.log"
-```
+    DAEMON1_ARGS="-d -L warning -l /var/log/deluge/daemon/warning.log"             # Consult `man deluged` for more options
+    DAEMON2_ARGS="-L warning -l /var/log/deluge/web/warning.log"
 
 Y reiniciamos el servicio:
 
-```bash
-$ sudo invoke-rc.d deluge-daemon restart
-```
+    $ sudo invoke-rc.d deluge-daemon restart
 
 Para rotar los ficheros de _log_:
 
-```bash
-sudo cat > /etc/logrotate.d/deluge << EOF
-/var/log/deluge/_/_.log {
-        weekly
-        missingok
-        rotate 7
-        compress
-        notifempty
-        copytruncate
-        create 600
-}
-EOF
-```
+    sudo cat > /etc/logrotate.d/deluge << EOF
+    /var/log/deluge/_/_.log {
+            weekly
+            missingok
+            rotate 7
+            compress
+            notifempty
+            copytruncate
+            create 600
+    }
+    EOF
 
 Referencias
 -----------

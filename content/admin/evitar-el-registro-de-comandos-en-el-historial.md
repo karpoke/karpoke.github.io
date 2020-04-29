@@ -42,9 +42,7 @@ ignorar duplicados) en nuestro archivo de configuración `~/.bashrc`.
 Si sólo queremos que sea efectivo para la sesión actual podemos
 modificar el valor de la variable en el terminal.
 
-```bash
-HISTCONTROL=ignoreboth
-```
+    HISTCONTROL=ignoreboth
 
 Tamaño del historial
 --------------------
@@ -53,9 +51,7 @@ Otra opción es poner modificar el valor de la variable `HISTSIZE`, que
 contiene el tamaño del historial en memoria. Por ejemplo, le asignamos
 un valor de 0 a la variable:
 
-```bash
-HISTSIZE=0
-```
+    HISTSIZE=0
 
 Asignarle un valor vacío parece que provoca que sólo se guarde el último
 comando introducido y eliminar la variable con `unset` tampoco funciona,

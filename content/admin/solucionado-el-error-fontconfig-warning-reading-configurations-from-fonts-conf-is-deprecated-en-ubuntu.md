@@ -8,19 +8,15 @@ En Ubuntu, si tenemos el archivo de configuración `~./fonts.conf` y
 lanzamos una aplicación que lo utilice, es posible que nos aparezca un
 error como el siguiente:
 
-```bash
-Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 9: reading configurations from ~/.fonts.conf is deprecated.
-```
+    Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 9: reading configurations from ~/.fonts.conf is deprecated.
 
 El motivo, [tal como apunta Githlar en este foro][], es que
 `~/.fonts.conf` será eliminado en el futuro. La solución pasa por mover
 el fichero a su nuevo emplazamiento (es posible que necesitemos primero
 crear el directorio destino):
 
-```bash
-$ mkdir -p .config/fontconfig
-$ mv -i ~/.fonts.conf ~/.config/fontconfig/fonts.conf
-```
+    $ mkdir -p .config/fontconfig
+    $ mv -i ~/.fonts.conf ~/.config/fontconfig/fonts.conf
 
 Referencias
 -----------

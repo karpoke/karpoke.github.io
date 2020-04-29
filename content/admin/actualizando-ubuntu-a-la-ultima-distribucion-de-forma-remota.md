@@ -6,16 +6,12 @@ Slug: actualizando-ubuntu-a-la-ultima-distribucion-de-forma-remota
 
 Instalamos el paquete `update-manager`, si es que no lo teníamos:
 
-```bash
-$ sudo aptitude install update-manager
-```
+    $ sudo aptitude install update-manager
 
 Comprobamos que el fichero `/etc/update-manager/release-upgrades`
 contiene:
 
-```bash
-Prompt=normal
-```
+    Prompt=normal
 
 Si contiene `Prompt=lts` sólo nos actualizará si hay una [LTS][] nueva.
 Si contiene `Prompt=never`... no actualizará nada.
@@ -24,9 +20,7 @@ Si contiene `Prompt=never`... no actualizará nada.
 
 Y ejecutamos el comando `do-release-upgrade`:
 
-```bash
-$ sudo do-release-upgrade
-```
+    $ sudo do-release-upgrade
 
 » [ubuntugeek][]
 

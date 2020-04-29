@@ -9,23 +9,17 @@ Slug: intercambio-de-los-valores-de-dos-variables
 En algunos lenguajes, intercambiar el valor de la variable `a` por el de
 la variable `b` implica, explícitamente, utilizar una variable temporal:
 
-```bash
-t = a;
-a = b;
-b = t;
-```
+    t = a;
+    a = b;
+    b = t;
 
 En Python:
 
-```python
-a, b = b, a
-```
+    a, b = b, a
 
 Pero esperen, aún hay más:
 
-```python
-a, b, c, d = d, c, b, a
-```
+    a, b, c, d = d, c, b, a
 
 * * * * *
 
@@ -33,15 +27,11 @@ a, b, c, d = d, c, b, a
 
 En [Bash][]:
 
-```bash
-$ read a b c <<< $(echo $c $b $a)
-```
+    $ read a b c <<< $(echo $c $b $a)
 
 [Otra manera][]:
 
-```bash
-$ read a b c <<(echo $c $b $a)
-```
+    $ read a b c <<(echo $c $b $a)
 
 * * * * *
 
@@ -49,24 +39,21 @@ $ read a b c <<(echo $c $b $a)
 
 Si los valores son numéricos, podemos recurrir a sumas y restas:
 
-```python
-In [1]: a, b = 3, 5
-In [2]: a = a + b
-In [3]: b = a - b
-In [4]: a = a - b
-In [5]: a, b
-Out[5]: (5, 3)
-```
+    In [1]: a, b = 3, 5
+    In [2]: a = a + b
+    In [3]: b = a - b
+    In [4]: a = a - b
+    In [5]: a, b
+    Out[5]: (5, 3)
 
 O multiplicaciones y divisiones:
-```python
-In [1]: a, b = 3.2, 5.7
-In [2]: a = a * b
-In [3]: b = a / b
-In [4]: a = a / b
-In [5]: a, b
-Out[5]: (5.7, 3.2)
-```
+
+    In [1]: a, b = 3.2, 5.7
+    In [2]: a = a * b
+    In [3]: b = a / b
+    In [4]: a = a / b
+    In [5]: a, b
+    Out[5]: (5.7, 3.2)
 
 * * * * *
 

@@ -42,9 +42,7 @@ Basta crear un fichero HTML con enlaces relativos a los ficheros que
 queramos ofrecer. Se podría crear un [listado][] con el comando
 </code>`tree`:
 
-```bash
-$ tree -C --charset utf8 --dirsfirst -F -H . -o tree.html
-```
+    $ tree -C --charset utf8 --dirsfirst -F -H . -o tree.html
 
 Sin embargo, esto tiene un problema, y es que si se pulsa en el enlace
 de un directorio, obtenemos como resultado que el archivo no existe, ya
@@ -96,24 +94,20 @@ ubuntuone-index.py
 
 Se utiliza exactamente igual que el _script_ para Dropbox:
 
-```bash
-Usage: ubuntuone-index.py [options] directory
+    Usage: ubuntuone-index.py [options] directory
 
-Options:
-  -h, --help            Show help message and exit.
-  -V, --version         print version information
-  -R, --recursive       Include subdirectories (disabled by default).
-  -T, --template file   Use HTML file as template.
+    Options:
+      -h, --help            Show help message and exit.
+      -V, --version         print version information
+      -R, --recursive       Include subdirectories (disabled by default).
+      -T, --template file   Use HTML file as template.
 
-ATTENTION:
-  Script will overwrite any existing index.html file(s)!
-```
+    ATTENTION:
+      Script will overwrite any existing index.html file(s)!
 
 Por ejemplo:
 
-```bash
-$ ubuntuone-index.py -R "~/Ubuntu One/pub"
-```
+    $ ubuntuone-index.py -R "~/Ubuntu One/pub"
 
 Descarga el _script_ [ubuntuone-index.py][publicar directorios en Ubuntu
 One].

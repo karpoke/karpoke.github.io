@@ -13,26 +13,22 @@ un dominio, éste es eliminado.
 
 Para conocer qué servidores DNS hay bajo un dominio:
 
-```bash
-$ nslookup -type=ns google.com
-```
+    $ nslookup -type=ns google.com
 
-```bash
-Server:     192.168.1.1
-Address:    192.168.1.1#53
+    Server:     192.168.1.1
+    Address:    192.168.1.1#53
 
-Non-authoritative answer:
-google.com  nameserver = ns2.google.com.
-google.com  nameserver = ns1.google.com.
-google.com  nameserver = ns4.google.com.
-google.com  nameserver = ns3.google.com.
+    Non-authoritative answer:
+    google.com  nameserver = ns2.google.com.
+    google.com  nameserver = ns1.google.com.
+    google.com  nameserver = ns4.google.com.
+    google.com  nameserver = ns3.google.com.
 
-Authoritative answers can be found from:
-ns4.google.com  internet address = 216.239.38.10
-ns1.google.com  internet address = 216.239.32.10
-ns3.google.com  internet address = 216.239.36.10
-ns2.google.com  internet address = 216.239.34.10
-```
+    Authoritative answers can be found from:
+    ns4.google.com  internet address = 216.239.38.10
+    ns1.google.com  internet address = 216.239.32.10
+    ns3.google.com  internet address = 216.239.36.10
+    ns2.google.com  internet address = 216.239.34.10
 
 Del resultado, nos interesará los que vienen identificados como
 _nameserver_, por ejemplo, `ns1.google.com`.
@@ -41,58 +37,44 @@ Para saber si algún usuario que realiza las peticiones de resolución de
 nombres a este DNS ha visitado una página concreta, por ejemplo
 `yahoo.com`:
 
-```bash
-$ nslookup -type=a -norecurse yahoo.com ns1.google.com
-```
+    $ nslookup -type=a -norecurse yahoo.com ns1.google.com
 
-```bash
-Server:     ns3.google.com
-Address:    216.239.36.10#53
-
-** server can’t find yahoo.es: REFUSED
-```
+    Server:     ns3.google.com
+    Address:    216.239.36.10#53
+    ** server can’t find yahoo.es: REFUSED
 
 En este caso, Google bloquea este tipo de peticiones. Probemos con el
 servidor DNS de otro dominio:
 
-```bash
-$ nslookup -type=a -norecurse yahoo.com ns1.renfe.es
-```
+    $ nslookup -type=a -norecurse yahoo.com ns1.renfe.es
 
-```bash
-Server:     ns1.renfe.es
-Address:    213.144.33.254#53
-
-Non-authoritative answer:
-_*_ Can’t find yahoo.com: No answer
-```
+    Server:     ns1.renfe.es
+    Address:    213.144.33.254#53
+    Non-authoritative answer:
+    _*_ Can’t find yahoo.com: No answer
 
 Este servidor sí ha respondido: nadie ha visitado `yahoo.com`, al menos
 en el tiempo de caducidad de una entrada en la caché del servidor DNS.
 Hacemos una prueba más:
 
-```bash
-$ nslookup -type=a -norecurse google.com ns1.renfe.es
-```
+    $ nslookup -type=a -norecurse google.com ns1.renfe.es
 
-```bash
-Server:     ns1.renfe.es
-Address:    213.144.33.254#53
+    Server:     ns1.renfe.es
+    Address:    213.144.33.254#53
 
-Non-authoritative answer:
-Name:   google.com
-Address: 74.125.39.106
-Name:   google.com
-Address: 74.125.39.147
-Name:   google.com
-Address: 74.125.39.99
-Name:   google.com
-Address: 74.125.39.103
-Name:   google.com
-Address: 74.125.39.104
-Name:   google.com
-Address: 74.125.39.105
-```
+    Non-authoritative answer:
+    Name:   google.com
+    Address: 74.125.39.106
+    Name:   google.com
+    Address: 74.125.39.147
+    Name:   google.com
+    Address: 74.125.39.99
+    Name:   google.com
+    Address: 74.125.39.103
+    Name:   google.com
+    Address: 74.125.39.104
+    Name:   google.com
+    Address: 74.125.39.105
 
 Ahora sí, vemos que `google.com` sí ha sido visitado.
 
@@ -101,27 +83,23 @@ script `dns-cache-snooping.sh`. Primero, supongamos que tenemos un
 fichero con una [lista de páginas][] a comprobar. La metemos en una
 lista:
 
-```bash
-$ urls=()
-$ f="sites.txt"
-$ if [ -r $f ]; then
->     while read line; do
->         urls+=( $line )
->     done > "$f"
-> fi
-```
+    $ urls=()
+    $ f="sites.txt"
+    $ if [ -r $f ]; then
+    >     while read line; do
+    >         urls+=( $line )
+    >     done > "$f"
+    > fi
 
 Recorrermos la lista realizando las peticiones y mostrando el resultado
 en verde o rojo, según si ha sido encontrada la página en la caché o no:
 
-```bash
-$ ns=ns1.renfe.es
-$ for url in ${urls[*]}; do
->     if [ -n "$(nslookup -type=a -norecurse $url $ns | grep 'Name:')" ]; then
->         echo $url
->     fi
-> done
-```
+    $ ns=ns1.renfe.es
+    $ for url in ${urls[*]}; do
+    >     if [ -n "$(nslookup -type=a -norecurse $url $ns | grep 'Name:')" ]; then
+    >         echo $url
+    >     fi
+    > done
 
 - Inspirado en un artículo de [El maligno][]
 - Más información: [DNS Cache Snooping][]

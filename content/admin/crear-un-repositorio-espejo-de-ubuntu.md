@@ -26,38 +26,34 @@ optásemos sólo por incluir el "main", se queda en 10 GB.
 
 Luego, lo ejecutamos:
 
-```bash
-$ sudo apt-mirror
+    $ sudo apt-mirror
 
-Downloading 162 index files using 20 threads...
-Begin time: Sat May 17 12:31:22 2014
-[20]... [19]... [18]... [17]... [16]... [15]... [14]... [13]... [12]... [11]... [10]... [9]... [8]... [7]... [6]... [5]... [4]... [3]... [2]... [1]... [0]...
-End time: Sat May 17 12:32:02 2014
+    Downloading 162 index files using 20 threads...
+    Begin time: Sat May 17 12:31:22 2014
+    [20]... [19]... [18]... [17]... [16]... [15]... [14]... [13]... [12]... [11]... [10]... [9]... [8]... [7]... [6]... [5]... [4]... [3]... [2]... [1]... [0]...
+    End time: Sat May 17 12:32:02 2014
 
-Processing tranlation indexes: [TTT]
+    Processing tranlation indexes: [TTT]
 
-Downloading 185 translation files using 20 threads...
-Begin time: Sat May 17 12:32:02 2014
-[20]... [19]... [18]... [17]... [16]... [15]... [14]... [13]... [12]... [11]... [10]... [9]... [8]... [7]... [6]... [5]... [4]... [3]... [2]... [1]... [0]...
-End time: Sat May 17 12:33:13 2014
+    Downloading 185 translation files using 20 threads...
+    Begin time: Sat May 17 12:32:02 2014
+    [20]... [19]... [18]... [17]... [16]... [15]... [14]... [13]... [12]... [11]... [10]... [9]... [8]... [7]... [6]... [5]... [4]... [3]... [2]... [1]... [0]...
+    End time: Sat May 17 12:33:13 2014
 
-Processing indexes: [SSSPPP]
+    Processing indexes: [SSSPPP]
 
-110.1 GiB will be downloaded into archive.
-Downloading 111238 archive files using 20 threads...
-Begin time: Sat May 17 12:33:28 2014
-[20]...
-```
+    110.1 GiB will be downloaded into archive.
+    Downloading 111238 archive files using 20 threads...
+    Begin time: Sat May 17 12:33:28 2014
+    [20]...
 
 ### Actualizar el repositorio local
 
 Para mantener el repositorio actualizado, bastará editar el fichero de
 configuración del `cron` para que se ejecute periódicamente:
 
-```bash
-$ sudo vim /etc/cron.d/apt-mirror
-0 4 * * * apt-mirror /usr/bin/apt-mirror > /var/spool/apt-mirror/var/cron.log
-```
+    $ sudo vim /etc/cron.d/apt-mirror
+    0 4 * * * apt-mirror /usr/bin/apt-mirror > /var/spool/apt-mirror/var/cron.log
 
 ### Actualizaciones del propio servidor
 
@@ -65,10 +61,8 @@ Si queremos que el propio servidor utilice el espejo local, deberemos
 cambiar las fuentes del `/etc/apt/sources.list` para que, en lugar de
 consultar el repositorio remoto, consulte el fichero local. Algo, así:
 
-```bash
-#deb http://archive.ubuntu.com/ubuntu/ trusty main universe
-deb file:/var/spool/apt-mirror/mirror/archive.ubuntu.com/ubuntu trusty main universe
-```
+    #deb http://archive.ubuntu.com/ubuntu/ trusty main universe
+    deb file:/var/spool/apt-mirror/mirror/archive.ubuntu.com/ubuntu trusty main universe
 
 ### Configurar el servidor web
 
@@ -77,26 +71,22 @@ clientes a través del servidor web. En este caso, crearemos un nuevo
 _host_ virtual para Apache2, por ejemplo,
 `/etc/apache2/sites-available/deb.example.com.conf`:
 
-```bash
-ServerName deb.example.com
-DocumentRoot /var/spool/apt-mirror/mirror/archive.ubuntu.com
+    ServerName deb.example.com
+    DocumentRoot /var/spool/apt-mirror/mirror/archive.ubuntu.com
 
-Options Indexes FollowSymLinks MultiViews
-AllowOverride Limit Options FileInfo Indexes
-Require all granted
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride Limit Options FileInfo Indexes
+    Require all granted
 
-ErrorLog ${APACHE_LOG_DIR}/deb.example.com-error.log
-CustomLog ${APACHE_LOG_DIR}/deb.example.com-access.log combined
+    ErrorLog ${APACHE_LOG_DIR}/deb.example.com-error.log
+    CustomLog ${APACHE_LOG_DIR}/deb.example.com-access.log combined
 
-# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
-```
+    # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 
 Lo activamos y reiniciamos apache:
 
-```bash
-$ sudo a2ensite deb.example.com.conf
-$ sudo apache2ctl configtest && sudo apache2ctl graceful
-```
+    $ sudo a2ensite deb.example.com.conf
+    $ sudo apache2ctl configtest && sudo apache2ctl graceful
 
 Si todo ha ido bien, veremos dos directorios listados en la URL
 http://deb.example.com/ubuntu/.
@@ -107,24 +97,18 @@ Para que el resto de equipos comiencen a utilizar el repositorio local,
 deberemos editar el fichero de fuentes (`/etc/apt/sources.list`) y
 sustituir las que había por las del repositorio que acabamos de crear:
 
-```bash
-#deb http://archive.ubuntu.com/ubuntu/ trusty main universe
-deb http://deb.example.com/ubuntu/ trusty main universe
-```
+    #deb http://archive.ubuntu.com/ubuntu/ trusty main universe
+    deb http://deb.example.com/ubuntu/ trusty main universe
 
 Como comentario, las fuentes relativas a actualizaciones de seguridad
 las dejaría como está, para que se sigan descargando desde los
 repositorios originales:
 
-```bash
-deb http://security.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
-```
+    deb http://security.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
 
 Sólo resta actualizar la lista de paquetes disponibles:
 
-```bash
-$ sudo aptitude update
-```
+    $ sudo aptitude update
 
 Referencias
 -----------

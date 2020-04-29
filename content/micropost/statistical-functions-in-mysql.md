@@ -10,9 +10,7 @@ Slug: statistical-functions-in-mysql
 > bringing in a handful of aggregate functions that can be useful for a
 > statistical analysis. The best known of this type are certainly:
 >
-> ```bash
-> COUNT(x), SUM(x), AVG(x), MIN(x), MAX(x), STD(x)
-> ```
+>     COUNT(x), SUM(x), AVG(x), MIN(x), MAX(x), STD(x)
 >
 > In addition, there are a number of statistical evaluations which are
 > also worthwhile - if not even more interesting and meaningful, but

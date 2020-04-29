@@ -67,20 +67,18 @@ Configurar Nginx para que cualquier subdominio apunte a un directorio
 concreto es sencillo. Creamos un fichero de configuración para el
 dominio `/etc/nginx/sites-available/sub.ignaciocano.com`:
 
-```bash
-server {
-    listen 80;
-    server_name
-        sub.ignaciocano.com
-        ~^([^.]+)\.sub\.ignaciocano\.com
-        ;
-    access_log /var/log/nginx/access.sub.ignaciocano.com.log;
-    if ($host ~* ^([^.]+)\.sub\.ignaciocano\.com$) {
-        set $subdomain $1;
+    server {
+        listen 80;
+        server_name
+            sub.ignaciocano.com
+            ~^([^.]+)\.sub\.ignaciocano\.com
+            ;
+        access_log /var/log/nginx/access.sub.ignaciocano.com.log;
+        if ($host ~* ^([^.]+)\.sub\.ignaciocano\.com$) {
+            set $subdomain $1;
+        }
+        root /home/projects/subdomains/$subdomain/;
     }
-    root /home/projects/subdomains/$subdomain/;
-}
-```
 
 Sólo resta activar el sitio y reiniciar el servidor.
 
@@ -89,24 +87,18 @@ Sólo resta activar el sitio y reiniciar el servidor.
 Hacer lo propio en Apache es también sencillo. Podemos utilizar
 `mod_rewrite`:
 
-```bash
-ServerName sub.ignaciocano.com
-ServerAlias *.sub.ignaciocano.com
-
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^([^\.]+)\.sub\.ignaciocano\.com
-RewriteCond /home/projects/subdomains/%1 -d
-RewriteRule ^(.*) /%1/$1 [L]
-```
+    ServerName sub.ignaciocano.com
+    ServerAlias *.sub.ignaciocano.com
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^([^\.]+)\.sub\.ignaciocano\.com
+    RewriteCond /home/projects/subdomains/%1 -d
+    RewriteRule ^(.*) /%1/$1 [L]
 
 O bien [`vhost_alias`][vhost_alias], el cual lo simplifica aún más:
 
-```bash
-ServerName sub.ignaciocano.com
-ServerAlias *.sub.ignaciocano.com
-
-VirtualDocumentRoot /home/projects/subdomains/%1
-```
+    ServerName sub.ignaciocano.com
+    ServerAlias *.sub.ignaciocano.com
+    VirtualDocumentRoot /home/projects/subdomains/%1
 
 * * * * *
 
@@ -124,27 +116,22 @@ para estos subdominios de un subdominio][], o de lo contrario el
 navegador nos avisará de que el dominio no coincide con el del
 certificado:
 
-> Matching is performed using the matching rules specified by
->  [RFC2459]. If more than one identity of a given type is present in
->  the certificate (e.g., more than one dNSName name, a match in any
-> one
->  of the set is considered acceptable.) Names may contain the wildcard
->  character \* which is considered to match any single domain name
->  component or component fragment. E.g., \*.a.com matches foo.a.com
-> but
->  not bar.foo.a.com. f\*.com matches foo.com but not bar.com.
+    Matching is performed using the matching rules specified by
+    [RFC2459]. If more than one identity of a given type is present in
+    the certificate (e.g., more than one dNSName name, a match in any one
+    of the set is considered acceptable.) Names may contain the wildcard
+    character \* which is considered to match any single domain name
+    component or component fragment. E.g., \*.a.com matches foo.a.com
+    but not bar.foo.a.com. f\*.com matches foo.com but not bar.com.
 
 Por último, no estaría demás [forzar el uso de HTTPS][] para estos
 subdominios:
 
-```bash
-ServerName sub.ignaciocano.com
-ServerAlias *.sub.ignaciocano.com
-
-RewriteEngine on
-ReWriteCond %{SERVER_PORT} !^443$
-RewriteRule ^/(.*) https://%{HTTP_HOST}/$1 [NC,R,L]
-```
+    ServerName sub.ignaciocano.com
+    ServerAlias *.sub.ignaciocano.com
+    RewriteEngine on
+    ReWriteCond %{SERVER_PORT} !^443$
+    RewriteRule ^/(.*) https://%{HTTP_HOST}/$1 [NC,R,L]
 
 * * * * *
 

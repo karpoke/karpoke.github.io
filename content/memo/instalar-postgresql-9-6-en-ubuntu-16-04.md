@@ -9,24 +9,18 @@ es la 9.5. Si queremos instalar la 9.6, podemos recurrrir al PPA oficial.
 
 Importamos la clave:
 
-```bash
-$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc |
-  sudo apt-key add -
-```
+    $ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc |
+    sudo apt-key add -
 
 Añadimos el PPA:
 
-```bash
-$ echo "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main" |
-  sudo tee /etc/apt/sources.list.d/postgresql.list
-```
+    $ echo "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main" |
+    sudo tee /etc/apt/sources.list.d/postgresql.list
 
 Actualizamos e instalamos:
 
-```bash
-$ sudo apt update
-$ sudo apt install postgresql-9.6 postgresql-contrib
-```
+    $ sudo apt update
+    $ sudo apt install postgresql-9.6 postgresql-contrib
 
 Referencias
 -----------

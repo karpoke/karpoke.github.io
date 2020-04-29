@@ -30,11 +30,9 @@ las herramientas necesarias.
 Supongamos que tenemos los paquetes en el directorio `/var/local/deb`.
 Para crear el listado de paquetes ejecutamos:
 
-```bash
-$ cd /var/local/deb
-$ sudo su
-# dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz
-```
+    $ cd /var/local/deb
+    $ sudo su
+    # dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz
 
 Deberemos ejecutar ese comando cada vez que añadamos o eliminemos un
 nuevo paquete.
@@ -42,16 +40,12 @@ nuevo paquete.
 El siguiente paso es actualizar el fichero de fuentes
 `/etc/apt/sources.list`, añadiendo la línea:
 
-```bash
-deb file:/var/local/deb ./
-```
+    deb file:/var/local/deb ./
 
 Una vez actualizada la lista de paquetes disponibles, ya podremos
 instalarlos normalmente:
 
-```bash
-$ sudo aptitude update
-```
+    $ sudo aptitude update
 
 CD ROM
 ------
@@ -59,9 +53,7 @@ CD ROM
 Ya no es algo tan común, pero si necesitamos grabar los paquetes en un
 CD, basta ejecutar el siguiente comando para tener ese CD como fuente:
 
-```bash
-$ sudo apt-cdrom add
-```
+    $ sudo apt-cdrom add
 
   [crear paquetes .deb mediante checkinstall]: {filename}/admin/crear-paquetes-deb-con-checkinstall.md
     "Crear paquetes .deb con checkinstall"

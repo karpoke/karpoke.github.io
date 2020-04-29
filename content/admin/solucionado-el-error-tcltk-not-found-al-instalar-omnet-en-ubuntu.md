@@ -21,39 +21,29 @@ alternativos (Java, C\#), integración con bases de datos, etc.
 Para instalarlo en Ubuntu, nos bajamos el [código fuente][] y lo
 descomprimimos, por ejemplo, en nuestro directorio personal:
 
-```bash
-$ tar xvfz 2217-omnet-41-source--ide-tgz -C ~
-```
+    $ tar xvfz 2217-omnet-41-source--ide-tgz -C ~
 
 Instalamos los paquetes necesarios:
 
-```bash
-$ sudo aptitude install build-essential gcc g++ bison flex perl tcl-dev tk-dev blt
-libxml2-dev zlib1g-dev openjdk-6-jre doxygen graphviz openmpi-bin
-libopenmpi-dev libpcap-dev
-```
+    $ sudo aptitude install build-essential gcc g++ bison flex perl tcl-dev tk-dev blt
+    libxml2-dev zlib1g-dev openjdk-6-jre doxygen graphviz openmpi-bin
+    libopenmpi-dev libpcap-dev
 
 Ejecutamos las siguientes líneas y también las añadimos a nuestro
 `~/.bashrc`:
 
-```bash
-# omnet++4.1
-export PATH=$PATH:$HOME/omnetpp-4.1/bin
-export TCL_LIBRARY=/usr/share/tcltk/tcl8.4
-```
+    # omnet++4.1
+    export PATH=$PATH:$HOME/omnetpp-4.1/bin
+    export TCL_LIBRARY=/usr/share/tcltk/tcl8.4
 
 Ya podemos proceder con la instalación:
 
-```bash
-$ ./configure
-```
+    $ ./configure
 
 Si al ejecutar este comando termina con el siguiente error:
 
-```bash
-checking for Tcl/Tk with CFLAGS="-I/usr/include/tcl8.4 -fwritable-strings" LIBS="-L/usr/share/tcltk -ltk8.4 -ltcl8.4"... no
-configure: error: Tcl/Tk not found, needed for all GUI parts. Version 8.4.0+ and devel package required. Check config.log for more info!
-```
+    checking for Tcl/Tk with CFLAGS="-I/usr/include/tcl8.4 -fwritable-strings" LIBS="-L/usr/share/tcltk -ltk8.4 -ltcl8.4"... no
+    configure: error: Tcl/Tk not found, needed for all GUI parts. Version 8.4.0+ and devel package required. Check config.log for more info!
 
 se debe a que no encuentra las librerías Tcl/Tk. Para solucionarlo,
 deberemos modificar el archivo de configuración
@@ -63,10 +53,8 @@ librerías Tcl/Tk en Ubuntu no se encuentran por defecto donde el
 programa espera. Así que editamos ese fichero, y allí donde nos sugiere
 que modifiquemos estas variables, añadimos las siguientes líneas:
 
-```bash
-TK_CFLAGS="-I/usr/include/tcl8.4 -I/usr/include/tk8.4"
-TK_LIBS="-L/usr/share/tcltk/tcl8.4 -L/usr/share/tcltk/tk8.4 -ltk8.4 -ltcl8.4"
-```
+    TK_CFLAGS="-I/usr/include/tcl8.4 -I/usr/include/tk8.4"
+    TK_LIBS="-L/usr/share/tcltk/tcl8.4 -L/usr/share/tcltk/tk8.4 -ltk8.4 -ltcl8.4"
 
 * * * * *
 
@@ -89,41 +77,31 @@ añadir `-lX11`, aunque esto último no me hizo falta.
 
 Ahora ya podemos ejecutar el comando:
 
-```bash
-$ ./configure
-```
+    $ ./configure
 
 Y compilar con el `make`, pero aprovechando que tengo un procesador con
 dos núcleos y que el programa puede optimizarse para el número de
 núcleos, le pasaremos el argumento `-j`:
 
-```bash
-$ make -j2
-```
+    $ make -j2
 
 Si modificamos algún parámetro de `configure.user`, deberemos hacer una
 limpieza y volver a compilar:
 
-```bash
-$ make cleanall
-$ make -j2
-```
+    $ make cleanall
+    $ make -j2
 
 Si queremos ejecutar el programa sin entorno gráfico, por ejemplo, si lo
 vamos a utilizar a través de una sesión remota por `ssh`, y queremos
 decirle que que no tenga en cuenta las librerías Tcl/Tk a la hora de
 compilar, usaremos el siguiente comando:
 
-```bash
-$ NO_TCL=yes ./configure
-```
+    $ NO_TCL=yes ./configure
 
 Podemos ver y probar algunos de los ejemplos que trae el programa
 ejecutando:
 
-```bash
-$ ~/omnetpp-4.1/samples/rundemo
-```
+    $ ~/omnetpp-4.1/samples/rundemo
 
   [OMNeT++]: http://www.omnetpp.org/ "omnet++"
     "OMNeT++"

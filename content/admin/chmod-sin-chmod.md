@@ -18,15 +18,11 @@ de ejecución y tampoco podía usar `/bin/chmod`. Por suerte, ya había alguien
 que se había imaginado un [escenario sin `chmod`][escenario sin chmod] y había
 recopilado toda una serie de alternativas. Ésta es la que yo usé:
 
-```bash
-$ /lib/ld-linux.so.2 ~/chmod +x ~/rm
-```
+    $ /lib/ld-linux.so.2 ~/chmod +x ~/rm
 
 En 64 bits, el comando sería ligeramente diferente:
 
-```bash
-$ /lib64/ld-linux-x86-64.so.2 /bin/chmod +x /bin/chmod
-```
+    $ /lib64/ld-linux-x86-64.so.2 /bin/chmod +x /bin/chmod
 
   [escenario sin chmod]: http://www.slideshare.net/cog/chmod-x-chmod
     "escenario sin chmod"

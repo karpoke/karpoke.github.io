@@ -7,10 +7,7 @@ Slug: cabeceras-http-personalizadas-en-apache2
 Podemos modificar las cabeceras que devuelve el Apache usando el módulo
 `mod_headers`. Por ejemplo, añadiendo a nuestro _virtualhost_:
 
-```bash
-
-Header set X-MyHeader "It took %D microseconds to serve this page."
-```
+    Header set X-MyHeader "It took %D microseconds to serve this page."
 
 Se pueden modificar tanto las cabeceras que van a ser enviadas, con la
 directiva `Header`, como las que vienen con una petición, con la
@@ -27,35 +24,27 @@ directiva `RequestHeader`. Las acciones que se pueden llevar a cabo son:
 
 Este es el resultado:
 
-```bash
-$ curl -I localhost
-```
+    $ curl -I localhost
 
-```bash
-HTTP/1.1 200 OK
-Date: Mon, 28 Feb 2011 18:01:45 GMT
-Server: Apache/2.2.14 (Ubuntu)
-X-Powered-By: PHP/5.3.2-1ubuntu4.7
-X-MyHeader: It took D=632 microsecons to serve this page.
-Vary: Accept-Encoding
-Content-Type: text/html
-```
+    HTTP/1.1 200 OK
+    Date: Mon, 28 Feb 2011 18:01:45 GMT
+    Server: Apache/2.2.14 (Ubuntu)
+    X-Powered-By: PHP/5.3.2-1ubuntu4.7
+    X-MyHeader: It took D=632 microsecons to serve this page.
+    Vary: Accept-Encoding
+    Content-Type: text/html
 
 Hay algunas páginas web que incluyen [cabeceras no estándar][], como la
 mostrada arriba, tales como:
 
-```bash
-$ curl -I http://ww.barrapunto.com
-...
-X-Bender: Hey Fry, I’m steering with my ass!
-```
+    $ curl -I http://ww.barrapunto.com
+    ...
+    X-Bender: Hey Fry, I’m steering with my ass!
 
-```bash
-$ curl -I wordpress.com
-...
-X-hacker: If you’re reading this, you should visit automattic.com/jobs and apply to join the fun, mention this header.
-X-nananana: Batcache
-```
+    $ curl -I wordpress.com
+    ...
+    X-hacker: If you’re reading this, you should visit automattic.com/jobs and apply to join the fun, mention this header.
+    X-nananana: Batcache
 
 * * * * *
 
@@ -65,12 +54,7 @@ Una cabecera que nos puede resultar interesante añadir es la de
 `X-Robots-Tag`, por ejemplo para [evitar que los buscadores indexen el
 contenido del fichero robots.txt][]:
 
-```bash
-
-
     Header set X-Robots-Tag "noindex"
-
-```
 
 En esta página, podemos encontrar [las especificaciones de esta
 cabecera][].

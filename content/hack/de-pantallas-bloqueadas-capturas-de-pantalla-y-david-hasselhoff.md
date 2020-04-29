@@ -25,9 +25,7 @@ Esto no significa que no se pueda realizar, y no hablo de recurrir a
 métodos como un escritorio remoto o una máquina virtual, sino desde la
 consola:
 
-```bash
-$ sleep 5; import -window root screenshot.png
-```
+    $ sleep 5; import -window root screenshot.png
 
 Tras escribir estos comandos en una consola, tendremos 5 segundos para
 que se realice una captura de pantalla, con el comando `import`, y que
@@ -47,9 +45,7 @@ inicializar la variable de entorno `DISPLAY`, cambiar previamente al
 terminal gráfico, `/dev/tty7`, con el comando `chvt`, más o menos lo que
 haríamos con la combinación de teclas `Ctrl+Alt+F7` si fuese en local:
 
-```bash
-$ chvt 7; sleep 5; DISPLAY=:0.0 import -window root screenshot.png
-```
+    $ chvt 7; sleep 5; DISPLAY=:0.0 import -window root screenshot.png
 
 Ventana de desbloqueo
 ---------------------
@@ -68,14 +64,9 @@ incorrecta. Utilizaremos este campo para mostrar inicialmente el aviso
 disuasorio. Para esto, modificamos la propiedad `label` del objeto con
 el `id=auth-status-label`:
 
-```xml
 
-por
-
-```xml
    AVISO: Terminal protegida contra ataques 'Hasselhoff'.
    En caso de ser detectado, se tomarán represalias.
-```
 
 ![Lock Screen Aviso]({static}/images/lock-screen-aviso1-300x108.png)
 

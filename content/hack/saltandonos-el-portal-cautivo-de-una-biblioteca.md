@@ -28,15 +28,12 @@ permitido el tráfico DNS, nos conectamos a la red (sin pasar por la
 pasarela web) y comprobamos si resuelve el dominio que apunta a nuestro
 equipo remoto.
 
-```bash
-$ nslookup mydomain.com
-Server:     10.28.28.28
-Address:    10.28.28.28#53
-
-Non-authoritative answer:
-Name:   mydomain.com
-Address: 1.2.3.4
-```
+    $ nslookup mydomain.com
+    Server:     10.28.28.28
+    Address:    10.28.28.28#53
+    Non-authoritative answer:
+    Name:   mydomain.com
+    Address: 1.2.3.4
 
 Si no tenemos un dominio pero sabemos la IP, utilizaremos la IP en su
 lugar. Si no obtenemos respuesta, difícilmente vamos a poder
@@ -47,9 +44,7 @@ TCP.
 
 Crearemos un [_proxy_ SOCKS][]. Por ejemplo, ejecutamos:
 
-```bash
-$ ssh -p53 -D 8080 mydomain.com
-```
+    $ ssh -p53 -D 8080 mydomain.com
 
 Si no conecta es que el puerto TCP está filtrado. Todavía podríamos
 probar con un túnel DNS o encontrar algún fallo en la pasarela del

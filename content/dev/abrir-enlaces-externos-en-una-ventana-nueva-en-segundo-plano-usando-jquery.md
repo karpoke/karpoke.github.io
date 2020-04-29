@@ -27,20 +27,16 @@ alternativas. Podemos utilizar el atributo `rel="external"` o asignarles
 una clase, y luego utilizar un selector jQuery para seleccionarlos. Algo
 así:
 
-```bash
-$('a[class="targetclass"]')
-```
+    $('a[class="targetclass"]')
 
 Otra forma es [aplicar un filtro][] para seleccionar sólo los enlaces
 cuya dirección no contenga nuestro dominio.
 
-```javascript
-$('a').filter(function() {
-    return this.hostname &&
-        this.hostname !== location.hostname &&
-        this.hostname.indexOf('.'+location.hostname) == -1;
-})
-```
+    $('a').filter(function() {
+        return this.hostname &&
+            this.hostname !== location.hostname &&
+            this.hostname.indexOf('.'+location.hostname) == -1;
+    })
 
 Este filtro dejaría fuera enlaces cuya ruta contenga nuestro dominio,
 algo como `http://example.com/must/see/www.mydomain.com`, aunque lo peor
@@ -50,35 +46,29 @@ Una vez que hemos seleccionado los enlaces que queremos, para abrir el
 enlace en una ventana en segundo plano, obligamos a que el foco se pase
 a la ventana padre:
 
-```javascript
-window.open(url);
-window.focus();
-```
+    window.open(url);
+    window.focus();
 
 Otra forma es que la ventana hija pierda el foco:
 
-```javascript
-var win = window.open(url);
-win.blur();
-```
+    var win = window.open(url);
+    win.blur();
 
 Todo junto, utilizando la función `$` de jQuery, que permite ejecutar el
 código cuando la página haya cargado:
 
-```javascript
-$(function() {
-$('a').filter(function() {
-        return this.hostname &&
-            this.hostname !== location.hostname &&
-            this.hostname.indexOf('.'+location.hostname) == -1;
-      }).click(function() {
-        var win = window.open(this.href);
-        win.blur();
-        window.focus();
-        return false;
+    $(function() {
+    $('a').filter(function() {
+            return this.hostname &&
+                this.hostname !== location.hostname &&
+                this.hostname.indexOf('.'+location.hostname) == -1;
+          }).click(function() {
+            var win = window.open(this.href);
+            win.blur();
+            window.focus();
+            return false;
+        });
     });
-});
-```
 
   [En Firefox es necesario modificar un parámetro]: http://stackoverflow.com/questions/2533305/window-focus-self-focus-not-working-in-firefox/2533335#2533335
     "En Firefox es necesario modificar un parámetro"

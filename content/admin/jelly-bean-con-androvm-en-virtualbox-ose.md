@@ -20,10 +20,8 @@ versiones, pero ésta es la más completa), y el reproductor para nuestra
 plataforma, por ejemplo __Linux 32-bit__, que emplearemos si queremos
 utilizar la aceleración hardware OpenGL.
 
-```bash
-$ wget http://androvm.org/Download/androVM_vbox86tp_4.1.1_r4-20121119-gapps-houdini-flash.ova
-$ wget http://androvm.org/Download/AndroVMplayer-linux32-20121106.tgz
-```
+    $ wget http://androvm.org/Download/androVM_vbox86tp_4.1.1_r4-20121119-gapps-houdini-flash.ova
+    $ wget http://androvm.org/Download/AndroVMplayer-linux32-20121106.tgz
 
 Configuración de VirtualBox OSE
 -------------------------------
@@ -55,11 +53,9 @@ mostrar la máquina virtual y gestionar sus eventos. Reiniciamos la
 máquina virtual y mientras tanto, ejecutamos este archivo que puede
 tomar tres parámetros: ancho, alto y densidad.
 
-```bash
-$ tar xvzf AndroVMplayer-linux32-20121106.tgz
-$ cd AndroVMplayer
-$ ./AndroVMplayer 1024 600 160
-```
+    $ tar xvzf AndroVMplayer-linux32-20121106.tgz
+    $ cd AndroVMplayer
+    $ ./AndroVMplayer 1024 600 160
 
 Referencias
 -----------

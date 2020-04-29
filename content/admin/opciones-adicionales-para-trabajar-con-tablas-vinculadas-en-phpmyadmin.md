@@ -46,11 +46,9 @@ tenemos un ejemplo de lo necesario. Posiblemente, ya tengamos creadas
 algunas de las tablas que ahí aparecen, si lanzamos el _script_ sólo nos
 creará las que no existan:
 
-```bash
-$ cp /usr/share/doc/phpmyadmin/examples/create_tables.sql.gz .
-$ gunzip create_tables.sql.gz
-$ mysql -uroot -p < create_tables.sql
-```
+    $ cp /usr/share/doc/phpmyadmin/examples/create_tables.sql.gz .
+    $ gunzip create_tables.sql.gz
+    $ mysql -uroot -p < create_tables.sql
 
 Si necesitásemos [recuperar la contraseña de MySQL][] o tuviéramos
 problemas [importando los datos][] podemos echarle un ojo a estos
@@ -59,25 +57,23 @@ enlaces.
 En particular, lo que nos interesa es lo referente a la tabla
 `pma_tracking`, y esto es lo que ejecuta el _script_ anterior:
 
-```bash
---
--- Table structure for table `pma_tracking`
---
+    --
+    -- Table structure for table `pma_tracking`
+    --
 
-CREATE TABLE IF NOT EXISTS `pma_tracking` (
-  `db_name` varchar(64) collate utf8_bin NOT NULL,
-  `table_name` varchar(64) collate utf8_bin NOT NULL,
-  `version` int(10) unsigned NOT NULL,
-  `date_created` datetime NOT NULL,
-  `date_updated` datetime NOT NULL,
-  `schema_snapshot` text collate utf8_bin NOT NULL,
-  `schema_sql` text collate utf8_bin,
-  `data_sql` text collate utf8_bin,
-  `tracking` set('UPDATE','REPLACE','INSERT','DELETE','TRUNCATE','CREATE DATABASE','ALTER DATABASE','DROP DATABASE','CREATE TABLE','ALTER TABLE','RENAME TABLE','DROP TABLE','CREATE INDEX','DROP INDEX','CREATE VIEW','ALTER VIEW','DROP VIEW') collate utf8_bin default NULL,
-  `tracking_active` int(1) unsigned NOT NULL default '1',
-  PRIMARY KEY  (`db_name`,`table_name`,`version`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin ROW_FORMAT=COMPACT;
-```
+    CREATE TABLE IF NOT EXISTS `pma_tracking` (
+      `db_name` varchar(64) collate utf8_bin NOT NULL,
+      `table_name` varchar(64) collate utf8_bin NOT NULL,
+      `version` int(10) unsigned NOT NULL,
+      `date_created` datetime NOT NULL,
+      `date_updated` datetime NOT NULL,
+      `schema_snapshot` text collate utf8_bin NOT NULL,
+      `schema_sql` text collate utf8_bin,
+      `data_sql` text collate utf8_bin,
+      `tracking` set('UPDATE','REPLACE','INSERT','DELETE','TRUNCATE','CREATE DATABASE','ALTER DATABASE','DROP DATABASE','CREATE TABLE','ALTER TABLE','RENAME TABLE','DROP TABLE','CREATE INDEX','DROP INDEX','CREATE VIEW','ALTER VIEW','DROP VIEW') collate utf8_bin default NULL,
+      `tracking_active` int(1) unsigned NOT NULL default '1',
+      PRIMARY KEY  (`db_name`,`table_name`,`version`)
+    ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin ROW_FORMAT=COMPACT;
 
 Configurar phpMyAdmin
 ---------------------
@@ -87,37 +83,33 @@ los parámetros que necesita phpMyAdmin. En Ubuntu, editamos el archivo
 `/etc/phpmyadmin/config.inc.php`, y nos aseguramos de que aparecen las
 siguientes líneas:
 
-```bash
-/_ Optional: User for advanced features _/
-$cfg['Servers'][$i]['controluser'] = $dbuser;
-$cfg['Servers'][$i]['controlpass'] = $dbpass;
+    /_ Optional: User for advanced features _/
+    $cfg['Servers'][$i]['controluser'] = $dbuser;
+    $cfg['Servers'][$i]['controlpass'] = $dbpass;
 
-/_ Optional: Advanced phpMyAdmin features _/
-$cfg['Servers'][$i]['pmadb'] = $dbname;
-$cfg['Servers'][$i]['bookmarktable'] = 'pma_bookmark';
-$cfg['Servers'][$i]['relation'] = 'pma_relation';
-$cfg['Servers'][$i]['table_info'] = 'pma_table_info';
-$cfg['Servers'][$i]['table_coords'] = 'pma_table_coords';
-$cfg['Servers'][$i]['pdf_pages'] = 'pma_pdf_pages';
-$cfg['Servers'][$i]['column_info'] = 'pma_column_info';
-$cfg['Servers'][$i]['history'] = 'pma_history';
-$cfg['Servers'][$i]['designer_coords'] = 'pma_designer_coords';
-```
+    /_ Optional: Advanced phpMyAdmin features _/
+    $cfg['Servers'][$i]['pmadb'] = $dbname;
+    $cfg['Servers'][$i]['bookmarktable'] = 'pma_bookmark';
+    $cfg['Servers'][$i]['relation'] = 'pma_relation';
+    $cfg['Servers'][$i]['table_info'] = 'pma_table_info';
+    $cfg['Servers'][$i]['table_coords'] = 'pma_table_coords';
+    $cfg['Servers'][$i]['pdf_pages'] = 'pma_pdf_pages';
+    $cfg['Servers'][$i]['column_info'] = 'pma_column_info';
+    $cfg['Servers'][$i]['history'] = 'pma_history';
+    $cfg['Servers'][$i]['designer_coords'] = 'pma_designer_coords';
 
 Los valores de `controluser`, `controlpass` y `pmadb` se toman del
 archivo `/etc/phpmyadmin/config-db.php`.
 
 A continuación de las líneas anteriores, añadimos:
 
-```bash
-/_ Optional: Tracking features _/
-$cfg['Servers'][$i]['tracking'] = 'pma_tracking';
-$cfg['Servers'][$i]['tracking_default_statements'] = 'CREATE TABLE,ALTER TABLE,DROP TABLE,RENAME TABLE,CREATE INDEX,DROP INDEX,INSERT,UPDATE,DELETE,TRUNCATE,REPLACE,CREATE VIEW,ALTER VIEW,DROP VIEW,CREATE DATABASE,ALTER DATABASE,DROP DATABASE';
-$cfg['Servers'][$i]['tracking_version_auto_create'] = TRUE;
-$cfg['Servers'][$i]['tracking_version_drop_view'] = TRUE;
-$cfg['Servers'][$i]['tracking_version_drop_table'] = TRUE;
-$cfg['Servers'][$i]['tracking_version_drop_database'] = TRUE;
-```
+    /_ Optional: Tracking features _/
+    $cfg['Servers'][$i]['tracking'] = 'pma_tracking';
+    $cfg['Servers'][$i]['tracking_default_statements'] = 'CREATE TABLE,ALTER TABLE,DROP TABLE,RENAME TABLE,CREATE INDEX,DROP INDEX,INSERT,UPDATE,DELETE,TRUNCATE,REPLACE,CREATE VIEW,ALTER VIEW,DROP VIEW,CREATE DATABASE,ALTER DATABASE,DROP DATABASE';
+    $cfg['Servers'][$i]['tracking_version_auto_create'] = TRUE;
+    $cfg['Servers'][$i]['tracking_version_drop_view'] = TRUE;
+    $cfg['Servers'][$i]['tracking_version_drop_table'] = TRUE;
+    $cfg['Servers'][$i]['tracking_version_drop_database'] = TRUE;
 
 Y ya está. No es necesario reiniciar el servidor, pero es posible que
 necesitemos borrar las _cookies_ del navegador para que no volvamos a

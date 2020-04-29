@@ -8,12 +8,10 @@ Tras instalar `logcheck`, un programa que escanea los ficheros de _log_
 del sistema en busca de "líneas interesantes", comencé a recibir
 demasiados avisos del tipo:
 
-```bash
-Jan  7 02:04:38 terminus ntpd[1117]: kernel time sync status change 6001
+    Jan  7 02:04:38 terminus ntpd[1117]: kernel time sync status change 6001
     "1117"
-Jan  7 02:21:44 terminus ntpd[1117]: kernel time sync status change 2001
+    Jan  7 02:21:44 terminus ntpd[1117]: kernel time sync status change 2001
     "1117"
-```
 
 [Estos cambios son debidos][] a que `ntp` cambia [dinámicamente][] entre
 los modo `FLL` y el `PLL`, lo que le permite tener en cuenta la latencia
@@ -27,17 +25,13 @@ fichero `/etc/logcheck/ignore.d.server/ntp` (si el modo en que trabaja
 
 Cambiaremos:
 
-```bash
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: kernel time sync (disabled|enabled) [0-9]+$
+    ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: kernel time sync (disabled|enabled) [0-9]+$
     " :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\"
-```
 
 por:
 
-```bash
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: kernel time sync (disabled|enabled|status change) [0-9]+$
+    ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\]: kernel time sync (disabled|enabled|status change) [0-9]+$
     " :0-9]{11} [._[:alnum:]-]+ ntpd\[[0-9]+\"
-```
 
   [Estos cambios son debidos]: http://lists.freebsd.org/pipermail/freebsd-stable/2005-April/013404.html
     "Estos cambios son debidos"

@@ -13,16 +13,12 @@ Instalación
 
 Primero, instalamos las dependencias:
 
-```bash
-$ sudo aptitude install curl recode imagemagick tesseract-ocr-eng spidermonkey-bin rhino perlmagick aview
-```
+    $ sudo aptitude install curl recode imagemagick tesseract-ocr-eng spidermonkey-bin rhino perlmagick aview
 
 Podemos descargar el código fuente desde el repositorio Git y compilarlo:
 
-```bash
-$ git clone https://github.com/mcrapet/plowshare.git
-$ cd plowshare
-```
+    $ git clone https://github.com/mcrapet/plowshare.git
+    $ cd plowshare
 
 Podemos instalarlo mediante `sudo make install`, o si no tenemos privilegios de
 root, podemos sobreescribir el prefijo `/usr` con
@@ -30,37 +26,27 @@ root, podemos sobreescribir el prefijo `/usr` con
 
 También podemos crear un paquete `.deb`:
 
-```bash
-$ sudo checkinstall
-```
+    $ sudo checkinstall
 
 Instalamos los módulos externos mediante la herramienta para gestionar dichos
 módulos:
 
-```bash
-$ plowmod --install
-```
+    $ plowmod --install
 
 Más adelante podremos actualizarlos ejecutando:
 
-```bash
-$ plowmod --update
-```
+    $ plowmod --update
 
 Descargando
 -----------
 
 Para descargar un enlace de zippyshare, por ejemplo, escribimos:
 
-```bash
-$ plowdown http://www43.zippyshare.com/v/laVpgPTS/file.html
-```
+    $ plowdown http://www43.zippyshare.com/v/laVpgPTS/file.html
 
 También podemos pasarle un fichero que contenga los enlaces:
 
-```bash
-$ plowdown links.txt
-```
+    $ plowdown links.txt
 
 Si queremos que modifique el fichero para que comente los enlaces que se han
 descargado correctamente, no tenemos más que pasarle el argumento `-m`.

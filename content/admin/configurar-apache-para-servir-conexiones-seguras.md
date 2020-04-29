@@ -20,18 +20,14 @@ Crear las claves de cifrado
 Vamos a generar un par de claves RSA triple DES de 2048 bits en el
 directorio `/etc/ssl`:
 
-```bash
-$ cd /etc/ssl
-$ sudo openssl genrsa -des3 -out server.key 2048
-```
+    $ cd /etc/ssl
+    $ sudo openssl genrsa -des3 -out server.key 2048
 
 Nos pedirá una contraseña y al terminar nos habrá creado la clave
 `server.key` que será la que utilizará Apache. Le cambiamos los
 permisos:
 
-```bash
-$ sudo chmod 700 server.key
-```
+    $ sudo chmod 700 server.key
 
 y guardamos una copia en un lugar seguro. Si pensamos utilizar más de un
 `VirtualHost` podría ser interesante utilizar el dominio para el nombre
@@ -41,23 +37,19 @@ Cada vez que se inicie Apache nos pedirá la contraseña que acabamos de
 dar. Si [no queremos que nos vuelva a pedir la contraseña][], ejecutamos
 lo siguiente, y utilizamos la nueva clave obtenida:
 
-```bash
-$ sudo openssl rsa -in server.key -out new.server.key
-```
+    $ sudo openssl rsa -in server.key -out new.server.key
 
 Nuestra clave necesita estar avalada por _alguien_, por lo que creamos
 una petición de firmado de nuestra clave. Que no se nos pase poner la
 dirección de nuestra web en `Common Name`.
 
-```bash
-$ sudo openssl req -new -key server.key -out server.csr
-Country Name (2 letter code) [AU]:ES
-State or Province Name (full name) [Some-State]:IB
-Locality Name (eg, city) []:Palma de Mallorca
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:Terminus
-Common Name (eg, YOUR name) []:terminus.ignaciocano.com
-Email Address []:karpoke@spamme.com
-```
+    $ sudo openssl req -new -key server.key -out server.csr
+    Country Name (2 letter code) [AU]:ES
+    State or Province Name (full name) [Some-State]:IB
+    Locality Name (eg, city) []:Palma de Mallorca
+    Organization Name (eg, company) [Internet Widgits Pty Ltd]:Terminus
+    Common Name (eg, YOUR name) []:terminus.ignaciocano.com
+    Email Address []:karpoke@spamme.com
 
 * * * * *
 
@@ -66,17 +58,13 @@ Email Address []:karpoke@spamme.com
 Podemos usar la opción `-subj` para pasarle esta información
 directamente al comando `openssl`:
 
-```bash
-$ sudo openssl req -new -key server.key -out server.csr -subj '/C=ES/ST=IB/L=Palma de Mallorca/O=Terminus/CN=terminus.ignaciocano.com/emailAddress=karpoke@spamme.com'
-```
+    $ sudo openssl req -new -key server.key -out server.csr -subj '/C=ES/ST=IB/L=Palma de Mallorca/O=Terminus/CN=terminus.ignaciocano.com/emailAddress=karpoke@spamme.com'
 
 También podemos consultar esta información del fichero de petición con
 la opción `-subject`:
 
-```bash
-$ openssl req -in server.csr -noout -subject
-subject=/C=ES/ST=IB/L=Palma de Mallorca/O=Terminus/CN=terminus.ignaciocano.com/emailAddress=karpoke@spamme.com
-```
+    $ openssl req -in server.csr -noout -subject
+    subject=/C=ES/ST=IB/L=Palma de Mallorca/O=Terminus/CN=terminus.ignaciocano.com/emailAddress=karpoke@spamme.com
 
 * * * * *
 
@@ -99,31 +87,27 @@ autofirmarla, o crear una autoridad certificadora (CA) y firmarla.
 Crearemos un certificado autofirmado, `server.crt`, con una validez de
 un año:
 
-```bash
-$ sudo openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
-Country Name (2 letter code) [AU]:ES
-State or Province Name (full name) [Some-State]:IB
-Locality Name (eg, city) []:Palma de Mallorca
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:Terminus
-Common Name (eg, YOUR name) []:terminus.ignaciocano.com
-Email Address []:karpoke@spamme.com
-```
+    $ sudo openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+    Country Name (2 letter code) [AU]:ES
+    State or Province Name (full name) [Some-State]:IB
+    Locality Name (eg, city) []:Palma de Mallorca
+    Organization Name (eg, company) [Internet Widgits Pty Ltd]:Terminus
+    Common Name (eg, YOUR name) []:terminus.ignaciocano.com
+    Email Address []:karpoke@spamme.com
 
 ### Crear una autoridad certificadora y firmar el certificado
 
 En lugar de autofirmar el certificado, podemos crear una autoridad
 certificadora utilizando un pequeño _script_ incluido con `openssl`.
 
-```bash
-$ sudo /usr/lib/ssl/misc/CA.sh -newca
-Country Name (2 letter code) [AU]:ES
-State or Province Name (full name) [Some-State]:IB
-Locality Name (eg, city) []:Palma de Mallorca
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:Terminus CA
-Organizational Unit Name (eg, section) []:
-Common Name (eg, YOUR name) []:terminus.ignaciocano.com
-Email Address []:karpoke@spamme.com
-```
+    $ sudo /usr/lib/ssl/misc/CA.sh -newca
+    Country Name (2 letter code) [AU]:ES
+    State or Province Name (full name) [Some-State]:IB
+    Locality Name (eg, city) []:Palma de Mallorca
+    Organization Name (eg, company) [Internet Widgits Pty Ltd]:Terminus CA
+    Organizational Unit Name (eg, section) []:
+    Common Name (eg, YOUR name) []:terminus.ignaciocano.com
+    Email Address []:karpoke@spamme.com
 
 Nos pedirá una contraseña para el certificado de nuestra CA. Una vez que
 termine, se habrá creado el directorio `/etc/ssl/demoCA`, que contiene
@@ -132,29 +116,21 @@ el certificado de nuestra CA.
 Algunos programas tienen problemas con los certificados que no son DER,
 por lo que convertiremos el nuestro:
 
-```bash
-$ sudo openssl x509 -in demoCA/cacert.pem -out demoCA/cacert.der -outform DER
-```
+    $ sudo openssl x509 -in demoCA/cacert.pem -out demoCA/cacert.der -outform DER
 
 Renombramos el fichero del certificado, ya que así lo exige el script
 que utilizaremos para firmar:
 
-```bash
-$ sudo mv server.csr newreq.pem
-```
+    $ sudo mv server.csr newreq.pem
 
 Y firmamos el certificado. Nos pedirá la contraseña que le dimos al
 certificado de la CA y nos pedirá confirmación para firmar la petición:
 
-```bash
-$ sudo /usr/lib/ssl/misc/CA.sh -signreq
-```
+    $ sudo /usr/lib/ssl/misc/CA.sh -signreq
 
 Volvemos a renombrar el certificado firmado:
 
-```bash
-$ sudo mv newcert.pem server.crt
-```
+    $ sudo mv newcert.pem server.crt
 
 Configurar Apache para que use el certificado
 ---------------------------------------------
@@ -162,26 +138,20 @@ Configurar Apache para que use el certificado
 Movemos el certificado y la clave del servidor a los siguientes
 directorios:
 
-```bash
-$ sudo mv server.crt /etc/ssl/certs/
-$ sudo mv server.key /etc/ssl/private/
-```
+    $ sudo mv server.crt /etc/ssl/certs/
+    $ sudo mv server.key /etc/ssl/private/
 
 Activamos el módulo `mod_ssl` de Apache:
 
-```bash
-$ sudo a2enmod ssl
-```
+    $ sudo a2enmod ssl
 
 Editamos la configuración del sitio por defecto para `SSL`, en el
 fichero `/etc/apache2/sites-available/default-ssl` para que incluya:
 
-```bash
-SSLEngine on
-SSLOptions +FakeBasicAuth +ExportCertData +StrictRequire
-SSLCertificateFile /etc/ssl/certs/server.crt
-SSLCertificateKeyFile /etc/ssl/private/server.key
-```
+    SSLEngine on
+    SSLOptions +FakeBasicAuth +ExportCertData +StrictRequire
+    SSLCertificateFile /etc/ssl/certs/server.crt
+    SSLCertificateKeyFile /etc/ssl/private/server.key
 
 El significado de las `SSLOptions` es el siguiente:
 
@@ -194,9 +164,7 @@ El significado de las `SSLOptions` es el siguiente:
 
 Activamos la configuración para que el sitio use `SSL`:
 
-```bash
-$ sudo a2ensite default-ssl
-```
+    $ sudo a2ensite default-ssl
 
 Escuchando en el puerto 443
 ---------------------------
@@ -215,9 +183,7 @@ puerto 443, el puerto bien definido para HTTPS, por lo que en el fichero
 
 Sólo queda reiniciar el servicio:
 
-```bash
-$ sudo apache2ctl graceful 
-```
+    $ sudo apache2ctl graceful
 
 Y asegurarnos de que la NAT del _router_ está configurada correctamente,
 si es que la usamos, o de que [el cortafuegos deja pasar las
@@ -233,41 +199,29 @@ Primero, generamos, de nuevo, una petición de certificación de un año,
 tal como hicimos al crear el certificado. El nombre del fichero debe ser
 `newreq.pem`:
 
-```bash
-$ sudo openssl req -new -key /etc/ssl/private/server.key -out /etc/ssl/newreq.pem
-```
+    $ sudo openssl req -new -key /etc/ssl/private/server.key -out /etc/ssl/newreq.pem
 
 Firmamos el certificado:
 
-```bash
-$ sudo /usr/lib/ssl/misc/CA.sh -signreq
-```
+    $ sudo /usr/lib/ssl/misc/CA.sh -signreq
 
 Renombramos el certificado firmado y lo movemos al directorio correspondiente:
 
-```bash
-$ sudo mv /etc/ssl/{newcert.pem,certs/server.crt}
-```
+    $ sudo mv /etc/ssl/{newcert.pem,certs/server.crt}
 
 Y ya sólo queda reiniciar Apache.
 
-```bash
-$ sudo apache2ctl graceful 
-```
+    $ sudo apache2ctl graceful
 
 Podemos [comprobar las fechas de validez del certificado][] ejecutando:
 
-```bash
-$ sudo openssl x509 -noout -dates -in /etc/ssl/certs/server.crt
-notBefore=Mar 24 11:52:07 2013 GMT
-notAfter=Mar 24 11:52:07 2014 GMT
-```
+    $ sudo openssl x509 -noout -dates -in /etc/ssl/certs/server.crt
+    notBefore=Mar 24 11:52:07 2013 GMT
+    notAfter=Mar 24 11:52:07 2014 GMT
 
 O podemos obtenerlo directamente del servidor web:
 
-```bash
-$ openssl s_client -showcerts -connect terminus.ignaciocano.com:443
-```
+    $ openssl s_client -showcerts -connect terminus.ignaciocano.com:443
 
 * * * * *
 
@@ -280,30 +234,24 @@ nuevamente el comando `openssl`.
 Siguiendo los criterios del artículo enlazado, comprobamos que no dé
 soporte a SSL v2, ya que se puede considerar obsoleto:
 
-```bash
-$ openssl s_client -ssl2 -connect localhost:443
-CONNECTED(00000003)
-19609:error:1407F0E5:SSL routines:SSL2_WRITE:ssl handshake failure:s2_pkt.c:428
-```
+    $ openssl s_client -ssl2 -connect localhost:443
+    CONNECTED(00000003)
+    19609:error:1407F0E5:SSL routines:SSL2_WRITE:ssl handshake failure:s2_pkt.c:428
 
 Vemos que no cumplimos con la validación extendida en el certificado,
 pero es que hemos usado nuestra propia autoridad certificadora.
 
 Comprobamos que la longitud de la clave es la mínima aceptable:
 
-```bash
-$ openssl s_client -connect localhost:443
-Server public key is 2048 bit
-```
+    $ openssl s_client -connect localhost:443
+    Server public key is 2048 bit
 
 Por último, comprobamos que no admita algoritmos débiles, cuya longitud
 de clave sea de 56 ó 64 bits:
 
-```bash
-$ openssl s_client  -cipher LOW:EXP -connect localhost:443
-CONNECTED(00000003)
-1433:error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure:s23_clnt.c:596:
-```
+    $ openssl s_client  -cipher LOW:EXP -connect localhost:443
+    CONNECTED(00000003)
+    1433:error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure:s23_clnt.c:596:
 
 * * * * *
 
@@ -316,10 +264,8 @@ Si nos aparece que nuestro certificado es vulnerable al ataque BEAST,
 podemos mitigarlo utilizando las siguientes directivas en la
 configuración de Apache:
 
-```bash
-SSLHonorCipherOrder On
-SSLCipherSuite ECDHE-RSA-AES128-SHA256:AES128-GCM-SHA256:RC4:HIGH:!MD5:!aNULL:!EDH
-```
+    SSLHonorCipherOrder On
+    SSLCipherSuite ECDHE-RSA-AES128-SHA256:AES128-GCM-SHA256:RC4:HIGH:!MD5:!aNULL:!EDH
 
 Más información:
 - ivanr [Mitigating the BEAST attack on TLS][]
@@ -332,33 +278,23 @@ Más información:
 Dado que SHA1 va quedando obsoleto, es conveniente ir actualizando el
 certificado. Creamos la petición de firmado del certificado:
 
-```bash
-$ sudo openssl req -new -sha256 -key /etc/ssl/private/server.key -out /etc/ssl/newreq.pem
-```
+    $ sudo openssl req -new -sha256 -key /etc/ssl/private/server.key -out /etc/ssl/newreq.pem
 
 Confirmamos la información de la petición:
 
-```bash
-$ sudo openssl req -in /etc/ssl/newreq.pem -text -noout
-```
+    $ sudo openssl req -in /etc/ssl/newreq.pem -text -noout
 
 Firmamos la petición:
 
-```bash
-$ sudo /usr/lib/ssl/misc/CA.sh -signreq
-```
+    $ sudo /usr/lib/ssl/misc/CA.sh -signreq
 
 Movemos el certificado al directorio correspondiente:
 
-```bash
-$ sudo mv /etc/ssl/{newcert.pem,certs/server.crt}
-```
+    $ sudo mv /etc/ssl/{newcert.pem,certs/server.crt}
 
 Reiniciamos `apache`:
 
-```bash
-$ sudo apache2ctl restart
-```
+    $ sudo apache2ctl restart
 
 * * * * *
 

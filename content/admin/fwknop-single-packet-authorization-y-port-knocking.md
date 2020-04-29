@@ -46,17 +46,13 @@ Instalación de `fwknop` en Ubuntu
 
 Instalamos `fwknop-server` y `libpcap` en el servidor:
 
-```bash
-$ sudo aptitude install fwknop-server libpcap-dev
-```
+    $ sudo aptitude install fwknop-server libpcap-dev
 
 Nos hará unas preguntas:
 
-```bash
-Configure fwknop to protect the SSH port? Yes
-Sniffing interface: eth0
-Encryption key to use: __********__
-```
+    Configure fwknop to protect the SSH port? Yes
+    Sniffing interface: eth0
+    Encryption key to use: __********__
 
 ### Utilizando claves GPG
 
@@ -66,176 +62,145 @@ AES. Si queremos utilizar cifrado asimétrico, podemos utilizar GnuPG.
 Para crear las claves GnuPG, lo hacemos directamente como el usuario
 `root`, no con `sudo`:
 
-```bash
-$ sudo su
-# gpg --gen-key
-- RSA y RSA    # RSA para firmar y cifrar
-- 2048 bits    # longitud de la clave
-- 1y           # la clave caducará en un año
-```
+    $ sudo su
+    # gpg --gen-key
+    - RSA y RSA    # RSA para firmar y cifrar
+    - 2048 bits    # longitud de la clave
+    - 1y           # la clave caducará en un año
 
 Cuando terminen de crearse el par de claves, mostrará algo como lo
 siguiente:
 
-```bash
-pub   2048R/4A064F2A 2011-09-17 [[caduca: 2012-09-16]]
-      Huella de clave = 0CCD D9F5 1F77 E316 2B2B  0062 0C6E B0E6 4A06 4F2A
-uid                  Server
-sub   2048R/38F4A4A8 2011-09-17 [[caduca: 2012-09-16]]
-```
+    pub   2048R/4A064F2A 2011-09-17 [[caduca: 2012-09-16]]
+    Huella de clave = 0CCD D9F5 1F77 E316 2B2B  0062 0C6E B0E6 4A06 4F2A
+    uid                  Server
+    sub   2048R/38F4A4A8 2011-09-17 [[caduca: 2012-09-16]]
 
 Exportamos la clave a un fichero:
 
-```bash
-# gpg -a --export 4A064F2A > fwknop-server.asc
-```
+    # gpg -a --export 4A064F2A > fwknop-server.asc
 
 ### Generando entropía
 
 Si nos aparece el mensaje:
 
-```bash
-Es necesario generar muchos bytes aleatorios. Es una buena idea realizar
-alguna otra tarea (trabajar en otra ventana/consola, mover el ratón, usar
-la red y los discos) durante la generación de números primos. Esto da al
-generador de números aleatorios mayor oportunidad de recoger suficiente
-entropía.
+    Es necesario generar muchos bytes aleatorios. Es una buena idea realizar
+    alguna otra tarea (trabajar en otra ventana/consola, mover el ratón, usar
+    la red y los discos) durante la generación de números primos. Esto da al
+    generador de números aleatorios mayor oportunidad de recoger suficiente
+    entropía.
 
-No hay suficientes bytes aleatorios disponibles. Por favor, haga algún
-otro trabajo para que el sistema pueda recolectar más entropía
-(se necesitan 92 bytes más).
-```
+    No hay suficientes bytes aleatorios disponibles. Por favor, haga algún
+    otro trabajo para que el sistema pueda recolectar más entropía
+    (se necesitan 92 bytes más).
 
 Poniendo a trabajar el servidor podría servir para crear entropía. Algo
 como:
 
-```bash
-# ls -lRh /
-# find / -name \*
-```
+    # ls -lRh /
+    # find / -name \*
 
 El paquete `rng-tools` ayuda a [generar entropía][]. Una vez instalado
 desde los respositorios, modificamos el fichero `/etc/default/rng-tools`
 para que contenga:
 
-```bash
-HRNGDEVICE=/dev/urandom
-```
+    HRNGDEVICE=/dev/urandom
 
 Y reiniciamos el servicio:
 
-```bash
-$ sudo service rng-tools restart
-```
+    $ sudo service rng-tools restart
 
 ### En el cliente
 
 Si vamos a utilizar cifrado asimétrico, también deberemos generar el par
 de claves en el cliente:
 
-```bash
-$ gpg --gen-key
-
-pub   2048R/723B172D 2011-09-17 [[caduca: 2012-09-16]]
-      Huella de clave = 7EB6 CFC6 6617 6354 A2A1  2BBF FD15 D606 723B 172D
-uid                  Client
-sub   2048R/3482560E 2011-09-17 [[caduca: 2012-09-16]]
-```
+    $ gpg --gen-key
+    pub   2048R/723B172D 2011-09-17 [[caduca: 2012-09-16]]
+    Huella de clave = 7EB6 CFC6 6617 6354 A2A1  2BBF FD15 D606 723B 172D
+    uid                  Client
+    sub   2048R/3482560E 2011-09-17 [[caduca: 2012-09-16]]
 
 Exportamos la clave:
 
-```bash
-$ gpg -a --export 723B172D > fwknop-client.asc
-```
+    $ gpg -a --export 723B172D > fwknop-client.asc
 
 Copiamos la clave que hemos exportado en el servidor al cliente, para
 firmar la clave del cliente con la del servidor.
 
-```bash
-$ scp remotehost:~/fwknop-server.asc .
-```
+    $ scp remotehost:~/fwknop-server.asc .
 
 Importamos la clave del servidor:
 
-```bash
-$ gpg --import fwknop-server.asc
-gpg: clave 4A064F2A: clave pública "Server " importada
-gpg: Cantidad total procesada: 1
-gpg:               importadas: 1  (RSA: 1)
-```
+    $ gpg --import fwknop-server.asc
+    gpg: clave 4A064F2A: clave pública "Server " importada
+    gpg: Cantidad total procesada: 1
+    gpg:               importadas: 1  (RSA: 1)
 
 Y la firmamos con la nuestra. Nos pedirá la contraseña:
 
-```bash
-$ gpg --sign-key server@localhost
-pub  2048R/4A064F2A  creado: 2011-09-17  [caduca: 2012-09-16]  uso: SC
-                     confianza: desconocido   validez: desconocido
-sub  2048R/38F4A4A8  creado: 2011-09-17  [caduca: 2012-09-16]  uso: E
-desconocido (1). Server
+    $ gpg --sign-key server@localhost
+    pub  2048R/4A064F2A  creado: 2011-09-17  [caduca: 2012-09-16]  uso: SC
+                         confianza: desconocido   validez: desconocido
+    sub  2048R/38F4A4A8  creado: 2011-09-17  [caduca: 2012-09-16]  uso: E
+    desconocido (1). Server
 
 
-pub  2048R/4A064F2A  creado: 2011-09-17  [caduca: 2012-09-16]  uso: SC
-                     confianza: desconocido   validez: desconocido
- Huella de clave primaria: 0CCD D9F5 1F77 E316 2B2B  0062 0C6E B0E6 4A06 4F2A
+    pub  2048R/4A064F2A  creado: 2011-09-17  [caduca: 2012-09-16]  uso: SC
+                         confianza: desconocido   validez: desconocido
+     Huella de clave primaria: 0CCD D9F5 1F77 E316 2B2B  0062 0C6E B0E6 4A06 4F2A
 
-     Server
+         Server
 
-Esta clave expirará el 2012-09-16.
-¿Está realmente seguro de querer firmar esta clave
-con su clave: "Client " (723B172D)?
+    Esta clave expirará el 2012-09-16.
+    ¿Está realmente seguro de querer firmar esta clave
+    con su clave: "Client " (723B172D)?
 
-¿Firmar de verdad? (s/N) s
+    ¿Firmar de verdad? (s/N) s
 
-Necesita una frase contraseña para desbloquear la clave secreta
-del usuario: "Client "
-clave RSA de 2048 bits, ID 723B172D, creada el 2011-09-17
-```
+    Necesita una frase contraseña para desbloquear la clave secreta
+    del usuario: "Client "
+    clave RSA de 2048 bits, ID 723B172D, creada el 2011-09-17
 
 Ahora lo haremos a la inversa. Copiamos nuestra clave (cliente) al
 servidor, para poder firmarla después con la del servidor.
 
-```bash
-$ scp fwknop-client.asc remotehost:~
-```
+    $ scp fwknop-client.asc remotehost:~
 
 ### `fwknop` con claves GPG
 
 Estando en el servidor, y habiendo copiado la clave desde el cliente, la
 importamos. Una vez más, nos pedirá la contraseña:
 
-```bash
-# gpg --import fwknop-client.asc
-gpg: clave 723B172D: clave pública "Client " importada
-gpg: Cantidad total procesada: 1
-gpg:               importadas: 1  (RSA: 1)
-```
+    # gpg --import fwknop-client.asc
+    gpg: clave 723B172D: clave pública "Client " importada
+    gpg: Cantidad total procesada: 1
+    gpg:               importadas: 1  (RSA: 1)
 
 Firmamos la clave del cliente con la del servidor:
 
-```bash
-# gpg --sign-key client@localhost
-pub  2048R/723B172D  creado: 2011-09-17  [caduca: 2012-09-16]  uso: SC
-                     confianza: desconocido   validez: desconocido
-sub  2048R/3482560E  creado: 2011-09-17  [caduca: 2012-09-16]  uso: E
-desconocido (1). Client
+    # gpg --sign-key client@localhost
+    pub  2048R/723B172D  creado: 2011-09-17  [caduca: 2012-09-16]  uso: SC
+                         confianza: desconocido   validez: desconocido
+    sub  2048R/3482560E  creado: 2011-09-17  [caduca: 2012-09-16]  uso: E
+    desconocido (1). Client
 
 
-pub  2048R/723B172D  creado: 2011-09-17  [caduca: 2012-09-16]  uso: SC
-                     confianza: desconocido   validez: desconocido
- Huella de clave primaria: 7EB6 CFC6 6617 6354 A2A1  2BBF FD15 D606 723B 172D
+    pub  2048R/723B172D  creado: 2011-09-17  [caduca: 2012-09-16]  uso: SC
+                         confianza: desconocido   validez: desconocido
+     Huella de clave primaria: 7EB6 CFC6 6617 6354 A2A1  2BBF FD15 D606 723B 172D
 
-     Client
+         Client
 
-Esta clave expirará el 2012-09-16.
-¿Está realmente seguro de querer firmar esta clave
-con su clave: "Server " (4A064F2A)?
+    Esta clave expirará el 2012-09-16.
+    ¿Está realmente seguro de querer firmar esta clave
+    con su clave: "Server " (4A064F2A)?
 
-¿Firmar de verdad? (s/N) s
+    ¿Firmar de verdad? (s/N) s
 
-Necesita una frase contraseña para desbloquear la clave secreta
-del usuario: "Server "
-clave RSA de 2048 bits, ID 4A064F2A, creada el 2011-09-17
-```
+    Necesita una frase contraseña para desbloquear la clave secreta
+    del usuario: "Server "
+    clave RSA de 2048 bits, ID 4A064F2A, creada el 2011-09-17
 
 #### gpg: el agente gpg no esta disponible en esta sesión
 
@@ -245,80 +210,66 @@ de paso para la clave privada cada vez que la queramos utilizar en la
 misma sesión. Si no queremos que nos vuelva a salir ese aviso, o si no
 lo vamos a usar, podemos desinstalarlo:
 
-```bash
-$ sudo aptitude purge gnupg-agent
-```
+    $ sudo aptitude purge gnupg-agent
 
 Ahora sólo queda modificar la configuración de acceso en el fichero
 `/etc/fwknop/access.conf`:
 
-```bash
-SOURCE: ANY;
-OPEN_PORTS: tcp/22;
-DATA_COLLECT_MODE: PCAP;
-# si no queremos utilizar cifrado simétrico, comentamos la siguiente línea
-#KEY: myPassword
-GPG_HOME_DIR: /root/.gnupg;
-GPG_DECRYPT_ID: 4A064F2A;
-GPG_DECRYPT_PW: password para la clave;
-GPG_REMOTE_ID: 723B172D;
-FW_ACCESS_TIMEOUT: 30;
-```
+    SOURCE: ANY;
+    OPEN_PORTS: tcp/22;
+    DATA_COLLECT_MODE: PCAP;
+    # si no queremos utilizar cifrado simétrico, comentamos la siguiente línea
+    #KEY: myPassword
+    GPG_HOME_DIR: /root/.gnupg;
+    GPG_DECRYPT_ID: 4A064F2A;
+    GPG_DECRYPT_PW: password para la clave;
+    GPG_REMOTE_ID: 723B172D;
+    FW_ACCESS_TIMEOUT: 30;
 
 Y reiniciamos el servicio:
 
-```bash
-$ sudo service fwknop-service restart
-```
+    $ sudo service fwknop-service restart
 
 ### Otra vez al cliente
 
 Instalamos `fwknop-client` en el cliente:
 
-```bash
-$ sudo aptitude install fwknop-client
-```
+    $ sudo aptitude install fwknop-client
 
 Ya podemos probar a conectarnos. Primero, probamos la conexión por
 cifrado simétrico:
 
-```bash
-$ fwknop -A 'tcp/22' -s -D 192.168.0.30
+    $ fwknop -A 'tcp/22' -s -D 192.168.0.30
 
-[+] Starting fwknop client (SPA mode)...
-[+] Enter an encryption key. This key must match a key in the file
-    /etc/fwknop/access.conf on the remote system.
+    [+] Starting fwknop client (SPA mode)...
+    [+] Enter an encryption key. This key must match a key in the file
+        /etc/fwknop/access.conf on the remote system.
 
-Encryption Key:
+    Encryption Key:
 
-[+] Building encrypted Single Packet Authorization (SPA) message...
-[+] Packet fields:
+    [+] Building encrypted Single Packet Authorization (SPA) message...
+    [+] Packet fields:
 
-        Random data:    8324045518684247
-        Username:       karpoke
-        Timestamp:      1316296897
-        Version:        1.9.12
-        Type:           1   (access mode)
-        Access:         0.0.0.0,tcp/22
-        SHA256 digest:  Lk3XUmw7PUd3OEOAb7mzb1kB+0CTTNzDyMrNdYK0YVo
+            Random data:    8324045518684247
+            Username:       karpoke
+            Timestamp:      1316296897
+            Version:        1.9.12
+            Type:           1   (access mode)
+            Access:         0.0.0.0,tcp/22
+            SHA256 digest:  Lk3XUmw7PUd3OEOAb7mzb1kB+0CTTNzDyMrNdYK0YVo
 
-[+] Sending 182 byte message to 192.168.0.30 over udp/62201...
-```
+    [+] Sending 182 byte message to 192.168.0.30 over udp/62201...
 
 En el servidor, en los ficheros de log, por ejemplo en
 `/var/log/messages`, veremos algo como:
 
-```bash
-Sep 18 00:01:37 server fwknopd: received valid Rijndael encrypted packet from: 192.168.0.100, remote user: karpoke, client version: 1.9.12 (SOURCE line num: 26)
-Sep 18 00:01:37 server fwknopd: add FWKNOP_INPUT 192.168.0.100 -> 0.0.0.0/0(tcp/22) ACCEPT rule 30 sec
-Sep 18 00:02:08 server fwknop(knoptm): removed iptables FWKNOP_INPUT ACCEPT rule for 192.168.0.100 -> 0.0.0.0/0(tcp/22), 30 sec timeout exceeded
-```
+    Sep 18 00:01:37 server fwknopd: received valid Rijndael encrypted packet from: 192.168.0.100, remote user: karpoke, client version: 1.9.12 (SOURCE line num: 26)
+    Sep 18 00:01:37 server fwknopd: add FWKNOP_INPUT 192.168.0.100 -> 0.0.0.0/0(tcp/22) ACCEPT rule 30 sec
+    Sep 18 00:02:08 server fwknop(knoptm): removed iptables FWKNOP_INPUT ACCEPT rule for 192.168.0.100 -> 0.0.0.0/0(tcp/22), 30 sec timeout exceeded
 
 Si queremos utilizar la autenticación mediante la clave GPG:
 
-```bash
-$ fwknop -A 'tcp/22' -s -D 192.168.0.30 --gpg-recip 4A064F2A --gpg-sign 723B172D
-```
+    $ fwknop -A 'tcp/22' -s -D 192.168.0.30 --gpg-recip 4A064F2A --gpg-sign 723B172D
 
 Para conectarnos desde fuera de la red, debemos utilizar el argumento `-w`.
 Con este flag, el comando realiza una petición a `whatismyip.com` y
@@ -326,15 +277,11 @@ utiliza esa IP. De lo contrario, estaríamos enviado nuestra IP interna y
 sería esa IP la que se utilizaría para crear la regla en el cortafuegos
 del servidor:
 
-```bash
-$ fwknop -A 'tcp/22' -s -w -D 192.168.0.30 --gpg-recip 4A064F2A --gpg-sign 723B172D
-```
+    $ fwknop -A 'tcp/22' -s -w -D 192.168.0.30 --gpg-recip 4A064F2A --gpg-sign 723B172D
 
 O podemos enviar la IP mediante el argumento `-a`:
 
-```bash
-$ fwknop -A 'tcp/22' -s -a 1.2.3.4 -D 192.168.0.30 --gpg-recip 4A064F2A --gpg-sign 723B172D
-```
+    $ fwknop -A 'tcp/22' -s -a 1.2.3.4 -D 192.168.0.30 --gpg-recip 4A064F2A --gpg-sign 723B172D
 
 El cortafuegos
 --------------
@@ -344,9 +291,7 @@ el puerto. Si sucede que la conexión se corta cuando `fwknop` elimina la
 regla, podemos añadir una nueva regla que mantenga las conexiones que ya
 estuvieran establecidas:
 
-```bash
-$ sudo iptables -A INPUT -p tcp -i eth0 -m state --state ESTABLISHED, RELATED -j ACCEPT
-```
+    $ sudo iptables -A INPUT -p tcp -i eth0 -m state --state ESTABLISHED, RELATED -j ACCEPT
 
 Más información
 ---------------

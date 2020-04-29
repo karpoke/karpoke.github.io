@@ -10,11 +10,9 @@ Slug: el-extrano-caso-de-la-funcion-negada-en-javascript
 >
 > En concreto, se trata de la siguiente pieza de código:
 >
-> ```javascript
-> !function() {
->   // My awesome code...
-> }();
-> ```
+>     !function() {
+>         // My awesome code...
+>     }();
 >
 > ¿Qué es exactamente esta función negada? ¿Cómo y porqué funciona?
 > Echemos un vistazo a las tripas de Javascript¦

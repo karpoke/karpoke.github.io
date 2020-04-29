@@ -25,46 +25,44 @@ ejecutamos, pasando como parámetro la ruta al archivo `php.ini` que
 utiliza apache (por defecto, al ejecutarlo desde el terminal en lugar
 del navegador, utiliza otro archivo `php.ini`):
 
-```bash
-$ wget http://sf-to.org/1.4/check.php
-$ php --php-ini /etc/php5/apache2/php.ini check.php
-__****************************__
-_                              _
-_  symfony requirements check  _
-_                              _
-__****************************__
+    $ wget http://sf-to.org/1.4/check.php
+    $ php --php-ini /etc/php5/apache2/php.ini check.php
+    __****************************__
+    _                              _
+    _  symfony requirements check  _
+    _                              _
+    __****************************__
 
-php.ini used by PHP: /etc/php5/apache2/php.ini
+    php.ini used by PHP: /etc/php5/apache2/php.ini
 
-__ WARNING __
-*  The PHP CLI can use a different php.ini file
-*  than the one used with your web server.
-*  If this is the case, please launch this
-*  utility from your web server.
-__ WARNING __
+    __ WARNING __
+    *  The PHP CLI can use a different php.ini file
+    *  than the one used with your web server.
+    *  If this is the case, please launch this
+    *  utility from your web server.
+    __ WARNING __
 
-__ Mandatory requirements __
+    __ Mandatory requirements __
 
-  OK        PHP version is at least 5.2.4 (5.3.2-1ubuntu4.15)
+      OK        PHP version is at least 5.2.4 (5.3.2-1ubuntu4.15)
 
-__ Optional checks __
+    __ Optional checks __
 
-  OK        PDO is installed
-  OK        PDO has some drivers installed: mysql, sqlite, sqlite2
-  OK        PHP-XML module is installed
-  OK        XSL module is installed
-  OK        The token_get_all() function is available
-  OK        The mb_strlen() function is available
-  OK        The iconv() function is available
-  OK        The utf8_decode() is available
-  OK        The posix_isatty() is available
-  OK        A PHP accelerator is installed
-  OK        php.ini has short_open_tag set to off
-  OK        php.ini has magic_quotes_gpc set to off
-  OK        php.ini has register_globals set to off
-  OK        php.ini has session.auto_start set to off
-  OK        PHP version is not 5.2.9
-```
+      OK        PDO is installed
+      OK        PDO has some drivers installed: mysql, sqlite, sqlite2
+      OK        PHP-XML module is installed
+      OK        XSL module is installed
+      OK        The token_get_all() function is available
+      OK        The mb_strlen() function is available
+      OK        The iconv() function is available
+      OK        The utf8_decode() is available
+      OK        The posix_isatty() is available
+      OK        A PHP accelerator is installed
+      OK        php.ini has short_open_tag set to off
+      OK        php.ini has magic_quotes_gpc set to off
+      OK        php.ini has register_globals set to off
+      OK        php.ini has session.auto_start set to off
+      OK        PHP version is not 5.2.9
 
 Corregimos los errores que nos dé, si es que ya sea editando la
 configuración de `php.ini` o instalando paquetes que nos pudieran faltar
@@ -81,10 +79,8 @@ Como hemos comentado al principio, colocaremos los ficheros de Symfony
 fuera del `DocumentRoot`. Crearemos el directorio para alojar los
 proyectos y, dentro de él, el directorio para el primer proyecto:
 
-```bash
-$ mkdir -p /home/sfprojects/sfproject
-$ cd /home/sfprojects/sfproject
-```
+    $ mkdir -p /home/sfprojects/sfproject
+    $ cd /home/sfprojects/sfproject
 
 Hay dos versiones principales de Symfony, la 1.4, versión estable con
 soporte hasta finales de este año, y la 2.0, que será la próxima versión
@@ -99,16 +95,12 @@ Se considera una buena práctica instalar Symfony en el directorio
 `lib/vendor` dentro del directorio raíz del proyecto, así que lo creamos
 primero:
 
-```bash
-$ mkdir -p lib/vendor
-```
+    $ mkdir -p lib/vendor
 
 Instalaremos la versión estable actual de Symfony desde el repositorio
 subversion:
 
-```bash
-$ svn checkout http://svn.symfony-project.com/tags/RELEASE_1_4_18 symfony
-```
+    $ svn checkout http://svn.symfony-project.com/tags/RELEASE_1_4_18 symfony
 
 Cuando salga una nueva versión, podremos actualizar cambiando
 simplemente la URL del repositorio. También podríamos utilizar la
@@ -122,32 +114,26 @@ Desde el directorio que habíamos creado para el proyecto,
 `/home/sfprojects/sfproject`, creamos el proyecto con Symfony, de nombre
 sfproject, mediante la tarea `generate:project`:
 
-```bash
-$ cd /home/sfprojects/sfproject
-$ php lib/vendor/symfony/data/bin/symfony generate:project sfproject
-```
+    $ cd /home/sfprojects/sfproject
+    $ php lib/vendor/symfony/data/bin/symfony generate:project sfproject
 
 Esta tarea crea la estructura de directorios:
 
-```bash
-apps/       Contiene las aplicaciones del proyecto
-cache/      Ficheros cacheados
-config/     Ficheros de configuración del proyecto
-data/       Ficheros con datos iniciales (fixtures)
-lib/        Bibliotecas y clases del proyecto
-log/        Ficheros de log
-plugins/    Plugins instalados
-test/       Ficheros con los tests unitarios y funcionales
-web/        El directorio raíz de la página web
-```
+    apps/       Contiene las aplicaciones del proyecto
+    cache/      Ficheros cacheados
+    config/     Ficheros de configuración del proyecto
+    data/       Ficheros con datos iniciales (fixtures)
+    lib/        Bibliotecas y clases del proyecto
+    log/        Ficheros de log
+    plugins/    Plugins instalados
+    test/       Ficheros con los tests unitarios y funcionales
+    web/        El directorio raíz de la página web
 
 Cambiamos los permisos para los directorios `cache` y `log`. Estos son
 los únicos directorios en los que necesita escribir Symfony para
 comenzar:
 
-```bash
-$ chmod 777 cache log
-```
+    $ chmod 777 cache log
 
 La tarea, además, crea un acceso directo a
 `lib/vendor/symfony/data/bin/symfony` en el directorio del proyecto,
@@ -155,19 +141,15 @@ para que sea más sencillo y rápido llamar al fichero.
 
 Para comprobar que la instalación es correcta, ejecutamos:
 
-```bash
-$ ./symfony -V
-symfony version 1.4.18 (/home/sfproject/lib/vendor/symfony/lib)
-```
+    $ ./symfony -V
+    symfony version 1.4.18 (/home/sfproject/lib/vendor/symfony/lib)
 
 Nos aseguramos que en el archivo de configuración del proyecto,
 `config/ProjectConfiguration.class.php`, no hay una ruta absoluta sino
 relativa, con lo que podremos mover de lugar el directorio del proyecto
 sin que nada deje de funcionar:
 
-```bash
-require_once dirname(__FILE__).'/../lib/vendor/symfony/lib/autoload/sfCoreAutoload.class.php';
-```
+    require_once dirname(__FILE__).'/../lib/vendor/symfony/lib/autoload/sfCoreAutoload.class.php';
 
 Podemos ver una lista de opciones que nos ofrece el comando `symfony`,
 ejecutándolo sin ningún parámetro.
@@ -179,13 +161,11 @@ Antes de continuar, crearemos una base de datos específica para este
 proyecto y un usuario con privilegios únicamente para esta base de
 datos. Por ejemplo, si utilizamos MySQL:
 
-```bash
-$ mysql -uroot -p
-mysql> CREATE DATABASE sfproject;
-mysql> CREATE USER 'sfproject'@'localhost' IDENTIFIED BY 'password';
-mysql> GRANT ALL PRIVILEGES ON sfproject.* TO 'sfproject'@'localhost';
-mysql> FLUSH PRIVILEGES;
-```
+    $ mysql -uroot -p
+    mysql> CREATE DATABASE sfproject;
+    mysql> CREATE USER 'sfproject'@'localhost' IDENTIFIED BY 'password';
+    mysql> GRANT ALL PRIVILEGES ON sfproject.* TO 'sfproject'@'localhost';
+    mysql> FLUSH PRIVILEGES;
 
 Symfony puede trabajar con diferentes bases de datos gracias a PDO
 (extensión para la abstracción de acceso a los datos). Para trabajar con
@@ -194,9 +174,7 @@ creamos un proyecto, y Propel.
 
 Para configurar la base de datos ejecutamos:
 
-```bash
-$ ./symfony configure:database "mysql:host=localhost;dbname=sfproject" sfproject password
-```
+    $ ./symfony configure:database "mysql:host=localhost;dbname=sfproject" sfproject password
 
 Si no queremos escribir la contraseña en el terminal, para que no quede
 registrada en el historial, podemos omitirla y luego editar el fichero
@@ -210,19 +188,15 @@ Creación de una aplicación
 Para crear la aplicación _frontend_ utilizaremos la tarea
 `generate:app`, desde el directorio raíz del proyecto:
 
-```bash
-$ ./symfony generate:app frontend
-```
+    $ ./symfony generate:app frontend
 
 Esta tarea crea la siguiente estructura dentro del directorio
 `apps/frontend`:
 
-```bash
-config/    Contiene los ficheros de configuración de la aplicación
-lib/       Contiene las bibliotecas y las clases de la aplicación
-modules/   Contiene el código de la aplicación (MVC)
-templates/ Contiene las plantillas globales
-```
+    config/    Contiene los ficheros de configuración de la aplicación
+    lib/       Contiene las bibliotecas y las clases de la aplicación
+    modules/   Contiene el código de la aplicación (MVC)
+    templates/ Contiene las plantillas globales
 
 Por defecto, Symfony nos protege de dos de las vulnerabilidades más
 extendidas en la web: XSS, escapando el contenido mostrado, y CSRF,
@@ -238,29 +212,24 @@ Javascripts.
 Creamos el fichero de configuración del sitio,
 `/etc/apache2/sites-available/sfproject.domain.tld`:
 
-```bash
 
-  ServerName sfproject.domain.tld
-  DocumentRoot "/home/sfprojects/sfproject/web"
-  DirectoryIndex index.php
-
-    AllowOverride All
-    Allow from All
-
-
-  Alias /sf /home/sfprojects/sfproject/lib/vendor/symfony/data/web/sf
+    ServerName sfproject.domain.tld
+    DocumentRoot "/home/sfprojects/sfproject/web"
+    DirectoryIndex index.php
 
     AllowOverride All
     Allow from All
 
-```
+    Alias /sf /home/sfprojects/sfproject/lib/vendor/symfony/data/web/sf
+
+    AllowOverride All
+    Allow from All
+
 
 Si no tenemos configurado el dominio sfproject.domain.tld, podemos crear
 un alias en el fichero `/etc/hosts`:
 
-```bash
-127.0.0.1  sfproject.domain.tld
-```
+    127.0.0.1  sfproject.domain.tld
 
 El alias `sf` sirve para acceder a las imágenes, hojas de estilo y
 Javascripts de Symfony, necesarios para mostrar correctamente las
@@ -268,10 +237,8 @@ páginas por defecto.
 
 Activamos el sitio y reiniciamos apache:
 
-```bash
-$ sudo a2ensite sfproject.domain.tld
-$ sudo apache2ctl restart
-```
+    $ sudo a2ensite sfproject.domain.tld
+    $ sudo apache2ctl restart
 
 Si todo ha ido bien, introducimos
 `http://sfproject.domain.tld/index.php/` en el navegador y veremos el

@@ -12,22 +12,16 @@ actualicen.
 
 Para ver qué aplicaciones hay en la lista:
 
-```bash
-$ gsettings get com.canonical.Unity.Panel systray-whitelist
-['JavaEmbeddedFrame', 'Mumble', 'Wine', 'Skype', 'hp-systray', 'scp-dbus-service']
-```
+    $ gsettings get com.canonical.Unity.Panel systray-whitelist
+    ['JavaEmbeddedFrame', 'Mumble', 'Wine', 'Skype', 'hp-systray', 'scp-dbus-service']
 
 Para añadir una aplicación, por ejemplo, `dropbox`:
 
-```bash
-$ gsettings get com.canonical.Unity.Panel systray-whitelist ['JavaEmbeddedFrame', 'Mumble', 'Wine', 'Skype', 'hp-systray', 'scp-dbus-service', 'dropbox']
-```
+    $ gsettings get com.canonical.Unity.Panel systray-whitelist ['JavaEmbeddedFrame', 'Mumble', 'Wine', 'Skype', 'hp-systray', 'scp-dbus-service', 'dropbox']
 
 Para volver a los valores originales:
 
-```bash
-$ gsettings reset com.canonical.Unity.Panel systray-whitelist
-```
+    $ gsettings reset com.canonical.Unity.Panel systray-whitelist
 
 * * * * *
 
@@ -37,19 +31,15 @@ El truco sigue funcionando en Ubuntu Oneiric Ocelot (11.10). Si queremos
 que el icono de Dropbox aparezca sin tener que cerrar la sesión, podemos
 matar el proceso y volverlo a arrancar:
 
-```bash
-$ killall dropbox
-$ /usr/bin/dropbox
-```
+    $ killall dropbox
+    $ /usr/bin/dropbox
 
 Si estamos [utilizando múltiples cuentas de Dropbox][], podemos hacer lo
 mismo, pero lanzando el _script_, en lugar del comando `dropbox`
 directamente:
 
-```bash
-$ killall dropbox
-$ MultipleDropboxInstances.sh
-```
+    $ killall dropbox
+    $ MultipleDropboxInstances.sh
 
 * * * * *
 

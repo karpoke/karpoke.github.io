@@ -38,9 +38,7 @@ el fichero, ya que no es necesario reiniciar el demonio.
 
 Para nuestro caso, la regla sería:
 
-```bash
-KERNEL=="sd[b-d]1", ACTION=="add", RUN+="/home/karpoke/usb-dumping.sh %k"
-```
+    KERNEL=="sd[b-d]1", ACTION=="add", RUN+="/home/karpoke/usb-dumping.sh %k"
 
 donde
 
@@ -71,11 +69,9 @@ como ejecutable y contenga el _shebang_ en la primera línea, ya que
 `udev` no lo ejecutará en un terminal ni en una consola. Podría ser algo
 tan sencillo como:
 
-```bash
-#!/bin/sh
-devname="$1" # p.ej: sdb1
-dd if=/dev/$devname of=/tmp/$devname.dd &
-```
+    #!/bin/sh
+    devname="$1" # p.ej: sdb1
+    dd if=/dev/$devname of=/tmp/$devname.dd &
 
 Debemos utilizar el `&` para asegurarnos de que la ejecución del
 _script_ continúa en segundo plano. La ventaja de usar `dd` es que no
@@ -89,10 +85,8 @@ con el tiempo que eso puede conllevar. *[haciendo pruebas, me ha tardado
 Para recuperar la información del archivo volcado, deberemos montarlo en
 un directorio:
 
-```bash
-$ mkdir ~/usb_fs
-$ sudo mount -o loop,ro,noexec,nodev /tmp/sdb1.dd ~/usb_fs
-```
+    $ mkdir ~/usb_fs
+    $ sudo mount -o loop,ro,noexec,nodev /tmp/sdb1.dd ~/usb_fs
 
 La opción `noexec` para el `mount` es importante, ya que no nos gustaría
 que ese USB estuviera infectado y programado para ejecutar algún tipo de
@@ -109,23 +103,19 @@ copia.
 Hay que tener en cuenta que no podemos utilizar `cp` directamente con
 `/dev/sdb1`, sino que primero deberemos montar el dispositivo.
 
-```bash
-#!/bin/sh
-devname="$1" # p.ej: sdb1
-mkdir /mnt/$devname
-mount /dev/$devname /mnt/$devname
-cp -fr /mnt/$devname /tmp &
-```
+    #!/bin/sh
+    devname="$1" # p.ej: sdb1
+    mkdir /mnt/$devname
+    mount /dev/$devname /mnt/$devname
+    cp -fr /mnt/$devname /tmp &
 
 Sin embargo, esto tiene otro problema, y es que al haber montado el
 dispositivo, Ubuntu no lo vuelve a montar y, por tanto, no se muestra al
 usuario. Podríamos abrir el directorio en un ventana de Gnome con algo
 como:
 
-```bash
-export DISPLAY=:0.0
-nautilus /mnt/$devname
-```
+    export DISPLAY=:0.0
+    nautilus /mnt/$devname
 
 Por otro lado, si lo hacemos así, el directorio de montaje no se llamará
 como el nombre del volumen del USB, cosa que podría llamar la atención
@@ -135,16 +125,12 @@ Además, deberíamos asegurarnos de eliminar el directorio recién creado y
 desmontar el dispositivo cuando éste se extraiga. Esto lo podríamos
 hacer con otra regla en nuestro fichero de reglas para `udev`:
 
-```bash
-KERNEL=="sd?1", ACTION=="remove", RUN+="/home/karpoke/usb-dumping-umount.sh '%k'"
-```
+    KERNEL=="sd?1", ACTION=="remove", RUN+="/home/karpoke/usb-dumping-umount.sh '%k'"
 
 y en este _script_ para demontar la unidad tendríamos algo como:
 
-```bash
-umount /dev/$devname
-rm -fr /mnt/$devname
-```
+    umount /dev/$devname
+    rm -fr /mnt/$devname
 
 ¿Y si pudiéramos matar el proceso de copia del primer _script_ desde
 este último _script_, con un `pkill`, por ejemplo? No sirve, ya que este

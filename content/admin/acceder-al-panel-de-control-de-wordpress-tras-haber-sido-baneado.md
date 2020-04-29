@@ -18,18 +18,16 @@ _baneados_.
 Si tenemos acceso por `ssh` al servidor donde se encuentra la base de datos,
 podemos hacer lo siguiente para desbanearnos:
 
-```bash
-$ mysql -u wordpress -p wordpress
-mysql> select * from wp_lockdowns;
-+-------------+---------+---------------------+---------------------+--------------+
-| lockdown_ID | user_id | lockdown_date       | release_date        | lockdown_IP  |
-+-------------+---------+---------------------+---------------------+--------------+
-|           1 |       1 | 2011-04-19 18:58:05 | 2011-04-19 19:58:05 | 80.58.0.33 |
-+-------------+---------+---------------------+---------------------+--------------+
-1 row in set (0.00 sec)
-mysql> delete from wp_lockdowns where lockdown_ID=1;
-Query OK, 1 row affected (0.00 sec)
-```
+    $ mysql -u wordpress -p wordpress
+    mysql> select * from wp_lockdowns;
+    +-------------+---------+---------------------+---------------------+--------------+
+    | lockdown_ID | user_id | lockdown_date       | release_date        | lockdown_IP  |
+    +-------------+---------+---------------------+---------------------+--------------+
+    |           1 |       1 | 2011-04-19 18:58:05 | 2011-04-19 19:58:05 | 80.58.0.33 |
+    +-------------+---------+---------------------+---------------------+--------------+
+    1 row in set (0.00 sec)
+    mysql> delete from wp_lockdowns where lockdown_ID=1;
+    Query OK, 1 row affected (0.00 sec)
 
   [fail2ban para ssh]: {filename}/admin/detectando-intrusos-en-ubuntu-maverick-meerkat.md
     "detectando intrusos en ubuntu maverick meerkat"

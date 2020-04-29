@@ -27,18 +27,14 @@ fallos.
 Para instalar la aplicación, sólo tenemos que descargar el archivo y
 descomprimirlo en un directorio accesible por nuestro servidor web:
 
-```bash
-$ mkdir zerobin
-$ cd zerobin
-$ wget http://sebsauvage.net/files/zerobin_0.15_alpha.zip
-$ unzip zerobin_0.15_alpha.zip
-```
+    $ mkdir zerobin
+    $ cd zerobin
+    $ wget http://sebsauvage.net/files/zerobin_0.15_alpha.zip
+    $ unzip zerobin_0.15_alpha.zip
 
 Le asignamos el propietario y los permisos necesarios. Por ejemplo:
 
-```bash
-$ sudo chown -R www-data:www-data zerobin
-```
+    $ sudo chown -R www-data:www-data zerobin
 
 Un ejemplo de uso lo tenemos en [anonpaste.tk/][].
 

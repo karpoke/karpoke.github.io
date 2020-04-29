@@ -38,9 +38,7 @@ livecd de la misma versión que tengamos instalada y copiaremos el
 directorio `/var/lib/dpkg`, en este caso, [Ubuntu Server 14.04.1 de 32
 bits][]:
 
-```bash
-$ wget http://releases.ubuntu.com/14.04/ubuntu-14.04.1-server-i386.iso
-```
+    $ wget http://releases.ubuntu.com/14.04/ubuntu-14.04.1-server-i386.iso
 
 Podemos utilizar `unetbootin` para instalar la distribución en un USB, o
 como en este caso, ejecutar una máquina virtual con `virtualbox` y
@@ -51,34 +49,28 @@ Desde la consola de rescate, copiaremos el contenido del directorio
 `/var/lib` a la máquina en la que hemos sufrido el percance, cuya IP
 pongamos que sea 192.168.1.100:
 
-```bash
-(virtualbox)$ cd /tmp
-(virtualbox)$ tar -cf lib.tar /var/lib
-(virtualbox)$ cat lib.tar | nc 192.168.1.100 9090
-```
+    (virtualbox)$ cd /tmp
+    (virtualbox)$ tar -cf lib.tar /var/lib
+    (virtualbox)$ cat lib.tar | nc 192.168.1.100 9090
 
 En la máquina a reparar debemos ejecutar:
 
-```bash
-$ mkdir /tmp/recover
-$ cd /tmp/recover
-$ sudo ufw allow proto tcp from 192.168.50.0/24 to any port 9090
-$ nc -l 9090 | tar x
-$ sudo ufw delete allow proto tcp from 192.168.50.0/24 to any port 9090
-$ sudo chown -R root:root var/lib
-$ sudo mv var/lib /var
-```
+    $ mkdir /tmp/recover
+    $ cd /tmp/recover
+    $ sudo ufw allow proto tcp from 192.168.50.0/24 to any port 9090
+    $ nc -l 9090 | tar x
+    $ sudo ufw delete allow proto tcp from 192.168.50.0/24 to any port 9090
+    $ sudo chown -R root:root var/lib
+    $ sudo mv var/lib /var
 
 Si todo ha ido bien, deríamos poder ejecutar algunos comandos:
 
-```bash
-$ sudo dpkg --audit
-$ sudo apt-get update
-$ sudo apt-get check
-$ sudo dpkg --configure -a
-$ sudo apt-get install -f
-$ sudo apt-get upgrade
-```
+    $ sudo dpkg --audit
+    $ sudo apt-get update
+    $ sudo apt-get check
+    $ sudo dpkg --configure -a
+    $ sudo apt-get install -f
+    $ sudo apt-get upgrade
 
 Reinstalar todos los programas
 ------------------------------
@@ -89,33 +81,25 @@ la información de los paquetes instalados en
 `/var/log/apt.log` para [reinstalar los últimos paquetes][] añadidos o
 eliminados:
 
-```bash
-$ /var/tmp/packages0.list
-$ sudo apt-get --reinstall install `cat /var/tmp/packages0.list`
-```
+    $ /var/tmp/packages0.list
+    $ sudo apt-get --reinstall install `cat /var/tmp/packages0.list`
 
 Es posible que algunos paquetes den error debido a alguna depedencia que
 no está correctamente instalada, pero conforme se van reinstalando
 todos, deberían quedar todos correctamente instalados. Ej:
 
-```bash
-E: Couldn't configure pre-depend dpkg:i386 for mountall:i386, probably a dependency cycle.
-```
+    E: Couldn't configure pre-depend dpkg:i386 for mountall:i386, probably a dependency cycle.
 
 También iremos viendo avisos como el siguiente, especialmente de
 aquellos paquetes que necesitaremos reinstalar:
 
-```bash
-dpkg: aviso: falta el fichero de lista de ficheros del paquete `python-lxml', se supondrá que el paquete no tiene ningún fichero actualmente instalado
-```
+    dpkg: aviso: falta el fichero de lista de ficheros del paquete `python-lxml', se supondrá que el paquete no tiene ningún fichero actualmente instalado
 
 Una vez que termine, nos aseguramos que [los ficheros base quedaron bien
 instalados][]:
 
-```bash
-$ sudo apt-get download base-files
-$ sudo apt-get install --reinstall base-files
-```
+    $ sudo apt-get download base-files
+    $ sudo apt-get install --reinstall base-files
 
 Recuperar MySQL
 ---------------
@@ -124,9 +108,7 @@ MySQL guarda los ficheros de la base de datos en `/var/lib/mysql/`. Si
 tuviéramos una copia, recuperar la base de datos sería tan sencillo como
 ejecutar:
 
-```bash
-$ mysql -uroot -p < mysql_backup.sql
-```
+    $ mysql -uroot -p < mysql_backup.sql
 
   [las bases de datos MySQL]: http://dev.mysql.com/doc/refman/4.1/en/installation-layouts.html
     "las bases de datos MySQL"

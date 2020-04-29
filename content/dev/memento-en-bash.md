@@ -36,25 +36,19 @@ Podemos conseguir esto añadiendo un alias para el comando `cd` que,
 además de cambiar de directorio, busque si hay notas y las muestre. Los
 alias se definen en el fichero `~/.bash_aliases`:
 
-```bash
-alias cd='source /home/user/scripts/memento.sh'
-```
+    alias cd='source /home/user/scripts/memento.sh'
 
 El código del _script_ `memento.sh` que nos permite hacer esto es:
 
-```bash
-MSGFILE=".msg"
-\cd "$@"
-if [ -r "$MSGFILE" ]; then
-        awk "\$0!~/^#/{ print '>>>',\$0 }" $MSGFILE
-fi
-```
+    MSGFILE=".msg"
+    \cd "$@"
+    if [ -r "$MSGFILE" ]; then
+    awk "\$0!~/^#/{ print '>>>',\$0 }" $MSGFILE
+    fi
 
 Para dejar una nota en un directorio:
 
-```bash
-$ echo "Lorem ipsus dolor sit amet" >> .msg
-```
+    $ echo "Lorem ipsus dolor sit amet" >> .msg
 
 * * * * *
 
@@ -66,30 +60,22 @@ ocultos que hay en el directorio. El _script_ debe estar en el PATH del
 sistema, o podemos especificar la ruta hasta él, y permisos de
 ejecución.
 
-```bash
-$ memento.sh "Lorem ipsum dolor sit amet"
-```
+    $ memento.sh "Lorem ipsum dolor sit amet"
 
 * * * * *
 
 Cuando visitemos dicho directorio:
 
-```bash
-$ cd
-19 hidden files and directories found.
->>> Lorem ipsum dolor sit amet
-```
+    $ cd
+    19 hidden files and directories found.
+    >>> Lorem ipsum dolor sit amet
 
 Como colofón, comentar que si queremos ver cuáles son esos ficheros y
 directorios ocultos podemos ejecutar:
 
-```bash
-$ ls -d .* | sed 1,2d
-```
+    $ ls -d .* | sed 1,2d
 
 Mejor aún, podemos crear un alias:
 
-```bash
-$ alias vh='ls -d .* | sed 1,2d'
-```
+    $ alias vh='ls -d .* | sed 1,2d'
 

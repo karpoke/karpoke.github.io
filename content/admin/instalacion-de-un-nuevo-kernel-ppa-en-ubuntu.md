@@ -25,20 +25,16 @@ descargamos los paquetes.
 -   linux-headers-generic-pae_i386
 -   linux-image-generic-pae_i386
 
-```bash
-$ mkdir ~/Downloads/kernel-v3.2.1-precise
-$ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.2.1-precise/linux-headers-3.2.1-030201_3.2.1-030201.201201121644_all.deb
-$ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.2.1-precise/linux-headers-3.2.1-030201-generic-pae_3.2.1-030201.201201121644_i386.deb
-$ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.2.1-precise/linux-image-3.2.1-030201-generic-pae_3.2.1-030201.201201121644_i386.deb
-```
+    $ mkdir ~/Downloads/kernel-v3.2.1-precise
+    $ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.2.1-precise/linux-headers-3.2.1-030201_3.2.1-030201.201201121644_all.deb
+    $ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.2.1-precise/linux-headers-3.2.1-030201-generic-pae_3.2.1-030201.201201121644_i386.deb
+    $ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.2.1-precise/linux-image-3.2.1-030201-generic-pae_3.2.1-030201.201201121644_i386.deb
 
 Los instalamos en ese mismo orden:
 
-```bash
-$ sudo dpkg -i linux-headers-3.2.1-030201_3.2.1-030201.201201121644_all.deb
-$ sudo dpkg -i linux-headers-3.2.1-030201-generic-pae_3.2.1-030201.201201121644_i386.deb
-$ sudo dpkg -i linux-image-3.2.1-030201-generic-pae_3.2.1-030201.201201121644_i386.deb
-```
+    $ sudo dpkg -i linux-headers-3.2.1-030201_3.2.1-030201.201201121644_all.deb
+    $ sudo dpkg -i linux-headers-3.2.1-030201-generic-pae_3.2.1-030201.201201121644_i386.deb
+    $ sudo dpkg -i linux-image-3.2.1-030201-generic-pae_3.2.1-030201.201201121644_i386.deb
 
 Sólo queda reiniciar para poder probar el nuevo kernel.
 
@@ -52,16 +48,14 @@ versión, la descarga y, si así lo queremos, la instala.
 
 Un ejemplo:
 
-```bash
-$ install-new-kernel.sh
-[+] Checking 'http://kernel.ubuntu.com/~kernel-ppa/mainline/' for a new version...
-[+] New version 3.2.11 available.
-[+] Checking 'http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.2.11-precise/' for packages...
-[+] Downloading 'linux-headers-3.2.11-030211_3.2.11-030211.201203131335_all.deb'...
-[+] Downloading 'linux-headers-3.2.11-030211-generic-pae_3.2.11-030211.201203131335_i386.deb'...
-[+] Downloading 'linux-image-3.2.11-030211-generic-pae_3.2.11-030211.201203131335_i386.deb'...
-[+] Do you want to install them now? (y/n) y
-```
+    $ install-new-kernel.sh
+    [+] Checking 'http://kernel.ubuntu.com/~kernel-ppa/mainline/' for a new version...
+    [+] New version 3.2.11 available.
+    [+] Checking 'http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.2.11-precise/' for packages...
+    [+] Downloading 'linux-headers-3.2.11-030211_3.2.11-030211.201203131335_all.deb'...
+    [+] Downloading 'linux-headers-3.2.11-030211-generic-pae_3.2.11-030211.201203131335_i386.deb'...
+    [+] Downloading 'linux-image-3.2.11-030211-generic-pae_3.2.11-030211.201203131335_i386.deb'...
+    [+] Do you want to install them now? (y/n) y
 
 * * * * *
 

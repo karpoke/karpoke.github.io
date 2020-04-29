@@ -20,17 +20,15 @@ centrar en saber cuando entran, cuando salen y qué están haciendo.
 Con `w` podemos saber que usuarios están conectados ahora mismo y que
 procesos están ejecutando.
 
-```bash
-$ w
- 11:54:16 up  4:04,  3 users,  load average: 0,34, 0,12, 0,12
-USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT
-karpoke  tty1                      08:58    9.00s  0.62s  0.50s -bash
-karpoke  tty7     :0               07:51    3:04m  7:08   0.28s gnome-session --session=2d-gnome
-karpoke  pts/0    :0.0             07:51   54.00s  1.18s  0.69s ssh 192.168.50.2
-karpoke  pts/1    :0.0             08:14    0.00s  1.67s  0.00s w
-karpoke  pts/2    192.168.50.10:S. 08:27    0.00s  0.53s  0.00s /bin/bash
-karpoke  pts/3    192.168.50.10:S. 08:42    3:19   0.28s  0.28s /bin/bash
-```
+    $ w
+     11:54:16 up  4:04,  3 users,  load average: 0,34, 0,12, 0,12
+    USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT
+    karpoke  tty1                      08:58    9.00s  0.62s  0.50s -bash
+    karpoke  tty7     :0               07:51    3:04m  7:08   0.28s gnome-session --session=2d-gnome
+    karpoke  pts/0    :0.0             07:51   54.00s  1.18s  0.69s ssh 192.168.50.2
+    karpoke  pts/1    :0.0             08:14    0.00s  1.67s  0.00s w
+    karpoke  pts/2    192.168.50.10:S. 08:27    0.00s  0.53s  0.00s /bin/bash
+    karpoke  pts/3    192.168.50.10:S. 08:42    3:19   0.28s  0.28s /bin/bash
 
 En la cabecera muestra la hora actual, el tiempo que lleva encendida la
 máquina, el número de usuarios en el sistema y la carga media del último
@@ -72,9 +70,7 @@ Podemos [iniciar otra sesión gráfica][] ejecutando en un terminal,
 debemos ir a un terminal en modo texto libre, por ejemplo, `tty1`,
 pulsando `Ctrl+Alt+F1`, iniciamos sesión, y ejecutamos:
 
-```bash
-$ startx -- :1 # importante: hay un espacio antes y después de los dos guiones
-```
+    $ startx -- :1 # importante: hay un espacio antes y después de los dos guiones
 
 Para acceder a esta nueva sesión gráfica, pulsamos `Ctrl+Alt+F8`.
 
@@ -82,9 +78,7 @@ Sólo puede haber una sesión gráfica por terminal, por lo que si
 quisiéramos una más, deberíamos ir `tty2`, pulsando `Ctrl+Alt+F2`, y
 ejecutar:
 
-```bash
-$ startx -- :2
-```
+    $ startx -- :2
 
 Para acceder a esta sesión gráfica, pulsamos `Ctrl+Alt+F9`.
 
@@ -93,21 +87,19 @@ Para acceder a esta sesión gráfica, pulsamos `Ctrl+Alt+F9`.
 
 Con `who` también podemos saber quién está conectado.
 
-```bash
-$ who -a
-           Sistema de arranque 2011-07-27 07:50
-           `run-level' 2 2011-07-27 07:50
-LOGIN      tty4         2011-07-27 07:50              1250 id=4
-LOGIN      tty5         2011-07-27 07:50              1254 id=5
-LOGIN      tty2         2011-07-27 07:50              1288 id=2
-LOGIN      tty3         2011-07-27 07:50              1289 id=3
-LOGIN      tty6         2011-07-27 07:50              1291 id=6
-karpoke  - tty1         2011-07-27 11:58 00:19       14171
-karpoke  + tty7         2011-07-27 07:51  antig       3723 (:0)
-karpoke  + pts/0        2011-07-27 07:51 00:01        5965 (:0.0)
-karpoke  + pts/1        2011-07-27 08:14   .          5965 (:0.0)
-           pts/2        2011-07-27 11:07                 0 id=/2    term=0 salida=0
-```
+    $ who -a
+               Sistema de arranque 2011-07-27 07:50
+               `run-level' 2 2011-07-27 07:50
+    LOGIN      tty4         2011-07-27 07:50              1250 id=4
+    LOGIN      tty5         2011-07-27 07:50              1254 id=5
+    LOGIN      tty2         2011-07-27 07:50              1288 id=2
+    LOGIN      tty3         2011-07-27 07:50              1289 id=3
+    LOGIN      tty6         2011-07-27 07:50              1291 id=6
+    karpoke  - tty1         2011-07-27 11:58 00:19       14171
+    karpoke  + tty7         2011-07-27 07:51  antig       3723 (:0)
+    karpoke  + pts/0        2011-07-27 07:51 00:01        5965 (:0.0)
+    karpoke  + pts/1        2011-07-27 08:14   .          5965 (:0.0)
+               pts/2        2011-07-27 11:07                 0 id=/2    term=0 salida=0
 
 Nos muestra la fecha y hora del último arranque del sistema y el nivel
 de ejecución. Después, en la primera columna, muestra los procesos de
@@ -120,11 +112,9 @@ correspondiente.
 El comando tiene varias opciones para mostrar esta información por
 partes, por ejemplo, el número de usuarios conectados:
 
-```bash
-$ who -q
-karpoke karpoke karpoke karpoke
-# usuarios=4
-```
+    $ who -q
+    karpoke karpoke karpoke karpoke
+    # usuarios=4
 
 `whoami`
 --------
@@ -132,26 +122,20 @@ karpoke karpoke karpoke karpoke
 Con `whoami` podemos saber, [única y exclusivamente][], cual es nuestro
 usuario:
 
-```bash
-$ whoami
-karpoke
-```
+    $ whoami
+    karpoke
 
 Es equivalente a ejecutar:
 
-```bash
-$ id -un
-```
+    $ id -un
 
 `id`
 ----
 
 `id` muestra información de los identificadores de usuarios y grupos:
 
-```bash
-$ id
-uid=1000(user) gid=1000(user) grupos=1000(user),4(adm),7(lp),20(dialout),24(cdrom),29(audio),44(video),46(plugdev),103(fuse),104(lpadmin),112(netdev),115(admin),120(sambashare)
-```
+    $ id
+    uid=1000(user) gid=1000(user) grupos=1000(user),4(adm),7(lp),20(dialout),24(cdrom),29(audio),44(video),46(plugdev),103(fuse),104(lpadmin),112(netdev),115(admin),120(sambashare)
 
 Tiene varios argumentos que permiten mostrar sólo cierta información y de
 diferentes maneras.
@@ -169,92 +153,80 @@ SIGINT o SIGKILL, a dichos procesos.
 Soporta el uso de complementos, hasta 3, que amplíen la información acerca
 del sistema, de un usuario o de un proceso.
 
-```bash
-$ whowatch
-3 users: (2 local, 0 telnet, 0 ssh, 1 other)             load: 0.06, 0.08, 0.31
-
-(gdm-session-w karpoke   tty7   :0                  -
-(init)         karpoke   pts/0  :0.0                -
-(init)         karpoke   pts/1  :0.0                -
-
-[F1]Help [F9]Menu [ENT]proc all[t]ree [i]dle/cmd [c]md [d]etails [s]ysinfo
-```
+    $ whowatch
+    3 users: (2 local, 0 telnet, 0 ssh, 1 other)             load: 0.06, 0.08, 0.31
+    (gdm-session-w karpoke   tty7   :0                  -
+    (init)         karpoke   pts/0  :0.0                -
+    (init)         karpoke   pts/1  :0.0                -
+    [F1]Help [F9]Menu [ENT]proc all[t]ree [i]dle/cmd [c]md [d]etails [s]ysinfo
 
 Pulsando Intro en el usuario conectado que queramos nos muestra
 información de los procesos que está ejecutando:
 
-```bash
-3 users: (2 local, 0 telnet, 0 ssh, 1 other)             load: 0.03, 0.07, 0.30
-(init)         karpoke   pts/1  :0.0
- 6056   - gnome-terminal
- 6105    |- bash
- 3135    | `- ssh 192.168.50.10
- 6062    |- gnome-pty-helper
- 2982    `- bash
- 3845 R    `- whowatch
+    3 users: (2 local, 0 telnet, 0 ssh, 1 other)             load: 0.03, 0.07, 0.30
+    (init)         karpoke   pts/1  :0.0
+     6056   - gnome-terminal
+     6105    |- bash
+     3135    | `- ssh 192.168.50.10
+     6062    |- gnome-pty-helper
+     2982    `- bash
+     3845 R    `- whowatch
 
-[ENT]users [c]md all[t]ree [d]etails [o]wner [s]ysinfo sig[l]ist ^[K]ILL
-```
+    [ENT]users [c]md all[t]ree [d]etails [o]wner [s]ysinfo sig[l]ist ^[K]ILL
 
 Podemos ver detalles de un proceso concreto:
 
-```bash
-              
-              START: Mon Aug  1 09:11:00 2011                   
-              EXE: /usr/bin/ssh                                 
-              ROOT: /                                           
-              CWD: /home/karpoke                                
-                                                                
-              STATUS:                                           
-              Uid:    1000    1000    1000    1000              
-              Gid:    1000    1000    1000    1000              
-              FDSize: 256                                       
-              Groups: 4 7 20 24 29 44 46 103 104 112 115 120 100
-              VmPeak:     7460 kB                               
-              VmSize:     7460 kB                               
-              VmLck:         0 kB                               
-               < - -> [a]up, [z]down '
-```
+    
+    START: Mon Aug  1 09:11:00 2011                   
+    EXE: /usr/bin/ssh                                 
+    ROOT: /                                           
+    CWD: /home/karpoke                                
+                                                      
+    STATUS:                                           
+    Uid:    1000    1000    1000    1000              
+    Gid:    1000    1000    1000    1000              
+    FDSize: 256                                       
+    Groups: 4 7 20 24 29 44 46 103 104 112 115 120 100
+    VmPeak:     7460 kB                               
+    VmSize:     7460 kB                               
+    VmLck:         0 kB                               
+     < - -> [a]up, [z]down '
 
 Y enviarle una señal:
 
-```bash
-               PID 3135 - choose signal and press 'y' to send 
-              ->1  HUP Hangup detected on controlling terminal  
-                2  INT Interrupt from keyboard                  
-                3  QUIT Quit from keyboard                      
-                4  ILL Illegal Instruction                      
-                6  ABRT Abort signal from abort(3)              
-                8  FPE Floating point exception                 
-                9  KILL Kill signal                             
-                11  SEGV Invalid memory reference               
-                13  PIPE Broken pipe: write to pipe with no read
-                14  ALRM Timer signal from alarm(2)             
-                15  TERM Termination signal                     
-                                                                
-                                                                
-               < - -> [a]up, [z]down '
-```
+     PID 3135 - choose signal and press 'y' to send 
+    ->1  HUP Hangup detected on controlling terminal  
+      2  INT Interrupt from keyboard                  
+      3  QUIT Quit from keyboard                      
+      4  ILL Illegal Instruction                      
+      6  ABRT Abort signal from abort(3)              
+      8  FPE Floating point exception                 
+      9  KILL Kill signal                             
+      11  SEGV Invalid memory reference               
+      13  PIPE Broken pipe: write to pipe with no read
+      14  ALRM Timer signal from alarm(2)             
+      15  TERM Termination signal                     
+                                                      
+                                                      
+     < - -> [a]up, [z]down '
 
 También podemos consultar información del sistema:
 
-```bash
-              
-              BOOT TIME: Mon Aug  1 08:30:18 2011               
-              CPU: 3.6% user 2.1% sys 1.0% nice 93.2% idle      
-              MEMORY:                                           
-              MemTotal:        4081788 kB                       
-              MemFree:          436656 kB                       
-              Buffers:          530624 kB                       
-              Cached:          1825612 kB                       
-              SwapCached:            0 kB                       
-              Active:          1777952 kB                       
-              Inactive:        1396896 kB                       
-              Active(anon):     709296 kB                       
-              Inactive(anon):   115352 kB                       
-              Active(file):    1068656 kB                       |
-               < - -> [a]up, [z]down '
-```
+    
+    BOOT TIME: Mon Aug  1 08:30:18 2011               
+    CPU: 3.6% user 2.1% sys 1.0% nice 93.2% idle      
+    MEMORY:                                           
+    MemTotal:        4081788 kB                       
+    MemFree:          436656 kB                       
+    Buffers:          530624 kB                       
+    Cached:          1825612 kB                       
+    SwapCached:            0 kB                       
+    Active:          1777952 kB                       
+    Inactive:        1396896 kB                       
+    Active(anon):     709296 kB                       
+    Inactive(anon):   115352 kB                       
+    Active(file):    1068656 kB                       |
+     < - -> [a]up, [z]down '
 
 `finger`
 --------
@@ -265,23 +237,19 @@ conectado y si tiene permisos de escritura, la hora de inicio de sesión,
 tiempo que ha estado ocioso, información de contacto, si tiene correo y
 cuando fue la última vez que lo consultó, etc.
 
-```bash
-$ finger
-Login     Name       Tty      Idle  Login Time   Office     Office Phone
-karpoke   karpoke    tty7       26  Aug  1 08:31 (:0)
-karpoke   karpoke    pts/0          Aug  1 08:32 (:0.0)
-```
+    $ finger
+    Login     Name       Tty      Idle  Login Time   Office     Office Phone
+    karpoke   karpoke    tty7       26  Aug  1 08:31 (:0)
+    karpoke   karpoke    pts/0          Aug  1 08:32 (:0.0)
 
-```bash
-$ finger karpoke
-Login: karpoke                  Name: karpoke
-Directory: /home/karpoke                Shell: /bin/bash
-On since Mon Aug  1 08:31 (CEST) on tty7 from :0
-    27 minutes 18 seconds idle
-On since Mon Aug  1 08:32 (CEST) on pts/0 from :0.0
-Mail last read Sat Jul 30 14:40 2011 (CEST)
-No Plan.
-```
+    $ finger karpoke
+    Login: karpoke                  Name: karpoke
+    Directory: /home/karpoke                Shell: /bin/bash
+    On since Mon Aug  1 08:31 (CEST) on tty7 from :0
+        27 minutes 18 seconds idle
+    On since Mon Aug  1 08:32 (CEST) on pts/0 from :0.0
+    Mail last read Sat Jul 30 14:40 2011 (CEST)
+    No Plan.
 
 Antiguamente, se podía acceder a la información de un usuario de forma
 remota. Hoy en día, el servicio de `finger` no suele utilizarse, por lo
@@ -299,22 +267,16 @@ usuario a ninguna petición remota.
 información en el fichero `/var/log/wtmp`. La información se limpia a
 principios de cada mes.
 
-```bash
-$ last
-karpoke  pts/1        192.168.50.10     Mon Aug  1 09:11   still logged in
-
-wtmp begins Mon Aug  1 09:11:04 2011
-```
+    $ last
+    karpoke  pts/1        192.168.50.10     Mon Aug  1 09:11   still logged in
+    wtmp begins Mon Aug  1 09:11:04 2011
 
 Cuando tengamos muchas entradas, una opción interesante sería mostrar el
 listado en orden inverso:
 
-```bash
-$ last | tac
-wtmp begins Mon Aug  1 09:11:04 2011
-
-karpoke  pts/1        192.168.50.10     Mon Aug  1 09:11   still logged in
-```
+    $ last | tac
+    wtmp begins Mon Aug  1 09:11:04 2011
+    karpoke  pts/1        192.168.50.10     Mon Aug  1 09:11   still logged in
 
 `lastlog`
 ---------
@@ -323,12 +285,10 @@ karpoke  pts/1        192.168.50.10     Mon Aug  1 09:11   still logged in
 especificar un rango de fechas o un usuario concreto. El orden es el
 mismo en el que aparecen en `/etc/passwd`.
 
-```bash
-$ lastlog -t 1000
-Username         Port     From             Latest
-root             tty2                      dom nov  1 13:40:34 +0100 2009
-karpoke          pts/1    192.168.50.10    lun ago  1 09:11:04 +0200 2011
-```
+    $ lastlog -t 1000
+    Username         Port     From             Latest
+    root             tty2                      dom nov  1 13:40:34 +0100 2009
+    karpoke          pts/1    192.168.50.10    lun ago  1 09:11:04 +0200 2011
 
 El contenido lo lee del fichero binario `/var/log/lastlog`.
 
@@ -339,24 +299,18 @@ El contenido lo lee del fichero binario `/var/log/lastlog`.
 `/var/log/wtmp`. Permite múltiples opciones, como el tiempo total por
 día o por usuario. También muestra el total global.
 
-```bash
-$ ac -d
-Today   total        0.24
-```
+    $ ac -d
+    Today   total        0.24
 
-```bash
-$ ac -p
+    $ ac -p
     karpoke                              0.25
     total        0.25
-```
 
 El tiempo se expresa en horas en formato decimal, pero podemos
 [convertirlo fácilmente a sexagesimal][]:
 
-```bash
-$ ac -d | awk '{h=int($NF); m=($NF-h)*60; s=int((m-int(m))*60); m=int(m); print $0" = "h"h "m"m "s"s "}'
-Today   total        0.31 = 0h 18m 36s
-```
+    $ ac -d | awk '{h=int($NF); m=($NF-h)*60; s=int((m-int(m))*60); m=int(m); print $0" = "h"h "m"m "s"s "}'
+    Today   total        0.31 = 0h 18m 36s
 
   [usuarios están conectados al sistema]: {filename}/admin/la-guardiana-de-la-puerta.md
     "recibir un aviso cuando un usuario se conecta"

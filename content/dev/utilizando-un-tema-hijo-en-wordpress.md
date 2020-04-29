@@ -31,7 +31,6 @@ Para tener un tema hijo funcionando, lo único que tenemos que hacer es:
     `twentytwelve-child`
 2.  Añadimos el fichero `style.css` en el directorio recién creado:
 
-    ```php
     /*
     Theme Name:     Twenty Twelve Child
     Theme URI:      http://example.com/
@@ -41,14 +40,11 @@ Para tener un tema hijo funcionando, lo único que tenemos que hacer es:
     Template:       twentytwelve
     Version:        0.1.0
     */
-    ```
 
-    Si sólo queremos hacer pequeñas modificaciones, podemos importar la
-    hoja de estilo del tema padre y añadir los cambios a continuación:
+Si sólo queremos hacer pequeñas modificaciones, podemos importar la
+hoja de estilo del tema padre y añadir los cambios a continuación:
 
-    ```php
     @import url("../twentytwelve/style.css");
-    ```
 
 3.  Activamos el tema desde el panel de administración
 

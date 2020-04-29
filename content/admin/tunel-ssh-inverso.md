@@ -23,21 +23,17 @@ El siguiente comando abre un túnel inverso desde el equipo C al servidor
 B, de tal manera que en el servidor B en el puerto 8000 se podrá iniciar
 una conexión que será redirigida al servidor SSH del equipo C:
 
-```bash
-remoteC$ ssh -f -N -R 8000:localhost:22 userB@remoteB    # remoteC:22    --->    remoteB:8000
-hostA$   ssh userB@remoteB
-remoteB$ ssh -p8000 userC@localhost
-```
+    remoteC$ ssh -f -N -R 8000:localhost:22 userB@remoteB    # remoteC:22    --->    remoteB:8000
+    hostA$   ssh userB@remoteB
+    remoteB$ ssh -p8000 userC@localhost
 
 Estas dos últimas acciones se pueden combinar en una sola si utilizamos
 el argumento `-t` para utilizar el servidor SSH de B como servidor
 intermedio para acceder a C (a través de la redirección en el propio
 servidor B):
 
-```bash
-remoteC$ ssh -f -N -R 8000:localhost:22 userB@remoteB    # remoteC:22    --->    remoteB:8000
-hostA$   ssh -t userB@remoteB ssh -p8000 localhost
-```
+    remoteC$ ssh -f -N -R 8000:localhost:22 userB@remoteB    # remoteC:22    --->    remoteB:8000
+    hostA$   ssh -t userB@remoteB ssh -p8000 localhost
 
 Otra forma es abrir un túnel desde nuestro equipo creando una
 redirección local al puerto del servidor B en el cual se ha creado,
@@ -45,20 +41,16 @@ previamente, el túnel inverso al equipo remoto C. De esta forma bastará
 conectarnos a nuestro propio equipo para tener acceso al equipo remoto
 C:
 
-```bash
-remoteC$ ssh -f -N -R 8000:localhost:22 userB@remoteB    # remoteC:22    --->    remoteB:8000
-hostA$   ssh -f -N -L 8001:localhost:8000 userB@remoteB    # remoteB:8000  --->    hostA:8001
-hostA$   ssh -p8000 userC@localhost
-```
+    remoteC$ ssh -f -N -R 8000:localhost:22 userB@remoteB    # remoteC:22    --->    remoteB:8000
+    hostA$   ssh -f -N -L 8001:localhost:8000 userB@remoteB    # remoteB:8000  --->    hostA:8001
+    hostA$   ssh -p8000 userC@localhost
 
 Sería mejor que los usuarios para conectarnos al servidor B desde el
 equipo remoto C y desde el nuestro fuesen distintos:
 
-```bash
-remoteC$ ssh -f -N -R 8000:localhost:22 user_1B@remoteB  # remoteC:22    --->    remoteB:8000
-hostA$   ssh -f -N -L 8001:localhost:8000 user_2B@remoteB  # hostA:8001    < --    remoteB:8000
-hostA$   ssh -p8000 userC@localhost
-```
+    remoteC$ ssh -f -N -R 8000:localhost:22 user_1B@remoteB  # remoteC:22    --->    remoteB:8000
+    hostA$   ssh -f -N -L 8001:localhost:8000 user_2B@remoteB  # hostA:8001    < --    remoteB:8000
+    hostA$   ssh -p8000 userC@localhost
 
 Como último comentario, si vamos a utilizar este sistema para
 administrar equipos remotos, quizá sería interesante utilizar algún

@@ -39,12 +39,10 @@ hacer Django por nosotros.
 
 El siguiente ejemplo, proporcionado por Andrei Savu, muestra la idea:
 
-```python
-updated = Entry.objects.filter(Q(id=e.id) && Q(version=e.version))
-         .update(updated_field=new_value, version=e.version+1)
-if not updated:
-    raise ConcurrentModificationException()
-```
+    updated = Entry.objects.filter(Q(id=e.id) && Q(version=e.version))
+             .update(updated_field=new_value, version=e.version+1)
+    if not updated:
+        raise ConcurrentModificationException()
 
 La operación se realiza de forma atómica, ya que `filter` es un [método
 _perezoso_][], es decir, no implica un operación de base de datos
@@ -54,14 +52,12 @@ inmediatamente.
 para comprobar si el registro ha sido modificado justo antes de
 guardarlo (en lugar de filtrar y actualizar):
 
-```python
-def save(self):
-    if(self.id):
-        foo = Foo.objects.get(pk=self.id)
-        if(foo.timestamp > self.timestamp):
-            raise Exception, "trying to save outdated Foo"
-    super(Foo, self).save()
-```
+    def save(self):
+        if(self.id):
+            foo = Foo.objects.get(pk=self.id)
+            if(foo.timestamp > self.timestamp):
+                raise Exception, "trying to save outdated Foo"
+        super(Foo, self).save()
 
 Sin embargo, esta solución presenta un problema de condición de carrera.
 La operación de consultar el último valor y la operación de guardar no

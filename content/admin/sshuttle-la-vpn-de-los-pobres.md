@@ -11,15 +11,11 @@ disponible tanto en los repositorios como en GitHub.
 
 Su uso es sencillo. Para establecer la conexión:
 
-```bash
-$ sshuttle --D --pidfile=/tmp/sshuttle.pid -r user@server:1234 --dns 0/0
-```
+    $ sshuttle --D --pidfile=/tmp/sshuttle.pid -r user@server:1234 --dns 0/0
 
 Para terminarla:
 
-```bash
-$ kill $(cat /tmp/sshuttle.pid)
-```
+    $ kill $(cat /tmp/sshuttle.pid)
 
   [shuttle]: https://github.com/apenwarr/sshuttle
     "shuttle"

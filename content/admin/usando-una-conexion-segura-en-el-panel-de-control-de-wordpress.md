@@ -8,16 +8,12 @@ Si tenemos [instalado un WordPress][] y queremos [iniciar sesión a
 través de una conexión segura][], deberemos modificar el fichero
 `/usr/share/wordpress/wp-config.php` y añadir:
 
-```php
-define('FORCE_SSL_LOGIN', true);
-```
+    define('FORCE_SSL_LOGIN', true);
 
 Si queremos que se use la conexión segura en todo el panel de control,
 en lugar de lo anterior, añadiremos:
 
-```php
-define('FORCE_SSL_ADMIN', true);
-```
+    define('FORCE_SSL_ADMIN', true);
 
 Para que esto funcione, es necesario que [Apache esté configurado para
 servir conexiones seguras][].

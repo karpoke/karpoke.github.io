@@ -18,10 +18,8 @@ qué idiomas queremos conservar][]:
 
 Después de instalarlo, lo ejecutamos:
 
-```bash
-$ sudo localepurge
-Total disk space freed by localepurge: 26552 KiB
-```
+    $ sudo localepurge
+    Total disk space freed by localepurge: 26552 KiB
 
 Cada vez que instalemos un nuevo paquete de los respositorios se
 ejecutará automáticamente, por lo que no tendremos que volver a
@@ -37,23 +35,17 @@ directamente, evitar descargarlas. Editamos el fichero
 `/etc/apt/apt.conf.d/99Translations`, y añadimos lo que necesitemos, por
 ejemplo:
 
-```bash
-Acquire::Languages:: "es";
-Acquire::Languages:: "es_ES";
-```
+    Acquire::Languages:: "es";
+    Acquire::Languages:: "es_ES";
 
 O, mejor aún, si no queremos bajar ninguna traducción:
 
-```bash
-Acquire::Languages:: "none";
-```
+    Acquire::Languages:: "none";
 
 Podemos ver la configuración con el comando `apt-config`:
 
-```bash
-$ apt-config dump | grep Lang
-Acquire::Languages "";
-```
+    $ apt-config dump | grep Lang
+    Acquire::Languages "";
 
 A partir de ahora, las actualizaciones deberían ir algo más rápidas.
 

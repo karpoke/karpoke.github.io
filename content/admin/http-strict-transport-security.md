@@ -32,17 +32,13 @@ introducir la siguiente línea allí [donde configuramos la conexión
 SSL][]. Por ejemplo, tras el `DocumentRoot` del `VirtualHost` seguro por
 defecto en el archivo `/etc/apache2/sites-enabled/default-ssl`:
 
-```bash
-Header add Strict-Transport-Security "max-age=15768000"
-```
+    Header add Strict-Transport-Security "max-age=15768000"
 
 El atributo `max-age` especifica el tiempo durante el cual las
 conexiones seguras serán obligatorias. También se puede añadir el
 atributo `includeSubDomains` para incluir todos los subdominios:
 
-```bash
-Header add Strict-Transport-Security "max-age=15768000; includeSubDomains"
-```
+    Header add Strict-Transport-Security "max-age=15768000; includeSubDomains"
 
 WordPress, por ejemplo, tiene una directiva para conseguir que la
 [conexión al panel de control se haga a través de una conexión
@@ -50,13 +46,11 @@ segura][]. Pero es posible que en otros casos sigamos necesitando una
 redirección hacia la versión segura de la página, que podemos conseguir
 mediante `mod_rewrite`:
 
-```bash
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{HTTPS} off
-  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-</IfModule>
-```
+    <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+    </IfModule>
 
   [HTTP Strict Transport Security]: http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
     "HTTP Strict Transport Security"

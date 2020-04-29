@@ -125,9 +125,7 @@ Una solución es añadir el dominio en el archivo `/etc/hosts`. Por
 ejemplo, si nuestro dominio es domain.tld y el servidor web tiene la ip
 192.168.50.100, en `/etc/hosts` añadiremos:
 
-```bash
-domain.tld 192.168.50.100
-```
+    domain.tld 192.168.50.100
 
 ### Red inalámbrica
 

@@ -17,10 +17,8 @@ Para comprobar hacia dónde apunta un enlaces cortos podemos:
 -   utilizar un servicio como [urlxray][]
 -   utilizar el comando `curl`:
 
-```bash
-$ curl -sI http://goo.gl/GPb7Z | grep Location
-Location: http://terminus.homelinux.com/k/
-```
+    $ curl -sI http://goo.gl/GPb7Z | grep Location
+    Location: http://terminus.homelinux.com/k/
 
 -   utilizar un complemento para [Firefox][]
 

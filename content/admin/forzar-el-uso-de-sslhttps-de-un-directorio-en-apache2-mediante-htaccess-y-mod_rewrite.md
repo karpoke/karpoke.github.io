@@ -11,24 +11,18 @@ realice mediante una conexión segura, suponiendo que ya tenemos
 configurado el servidor de forma adecuada, basta incluir en ese
 directorio un fichero `.htaccess` que contenga:
 
-```bash
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-```
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
 Así, si por ejemplo, queremos que la ruta `http://localhost/secure/` se
 acceda de forma segura, suponiendo que el `DocumentRoot` apunta a
 `/var/www`:
 
-```bash
-$ pwd
-/var/www/secure
-```
+    $ pwd
+    /var/www/secure
 
-```bash
-$ cat .htaccess
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-```
+    $ cat .htaccess
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}

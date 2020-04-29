@@ -7,9 +7,7 @@ Related: the-name-of-the-game
 
 _[Inception][]_ en C:
 
-```bash
-$ git clone https://github.com/karthick18/inception.git
-```
+    $ git clone https://github.com/karthick18/inception.git
 
 ![inception]({static}/images/inception-300x203.png)
 

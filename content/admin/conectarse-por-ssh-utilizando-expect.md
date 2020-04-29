@@ -33,47 +33,41 @@ conectarnos.
 El siguiente _script_ [muestra cómo podemos conectarnos][] utilizando el
 usuario y la contraseña escritos en el propio _script_:
 
-```bash
-#!/usr/bin/env expect
-# http://ubuntuforums.org/showpost.php?p=5433300&postcount=5
+    #!/usr/bin/env expect
+    # http://ubuntuforums.org/showpost.php?p=5433300&postcount=5
 
-#trap sigwinch and pass it to the child we spawned
-trap {
- set rows [stty rows]
- set cols [stty columns]
- stty rows $rows columns $cols < $spawn_out(slave,name)
-} WINCH
+    #trap sigwinch and pass it to the child we spawned
+    trap {
+     set rows [stty rows]
+     set cols [stty columns]
+     stty rows $rows columns $cols < $spawn_out(slave,name)
+    } WINCH
 
-set username yourUserNameHere
-set pass yourPasswordHere
-set host theIpAddressToConnectTo
+    set username yourUserNameHere
+    set pass yourPasswordHere
+    set host theIpAddressToConnectTo
 
-spawn ssh ${username}@${host}
+    spawn ssh ${username}@${host}
 
-expect -re "password:"
-send "${pass}\r"
+    expect -re "password:"
+    send "${pass}\r"
 
-expect -re "$"
+    expect -re "$"
 
-# now interact with the session
-interact
-```
+    # now interact with the session
+    interact
 
 Podríamos modificar el _script_ para que nos pida los parámetros, y
 pasárselos como argumentos desde el terminal. Deberíamos cambiar las
 líneas dónde se definen dichas variables por:
 
-```bash
-set username [lrange $argv 0 0]
-set pass [lrange $argv 1 1]
-set host [lrange $argv 2 2]
-```
+    set username [lrange $argv 0 0]
+    set pass [lrange $argv 1 1]
+    set host [lrange $argv 2 2]
 
 Y desde el terminal, lo invocaríamos mediante:
 
-```bash
-$ ./sshlogin.ssh username pass host
-```
+    $ ./sshlogin.ssh username pass host
 
 Conectarse a un servidor SSH, ejecutar un comando y salir
 ---------------------------------------------------------
@@ -82,33 +76,29 @@ Otra opción es que nos queramos [conectar para ejecutar un comando][],
 ver el resultado y salir. Un sencillo _script_ que nos permite hacer
 esto es el siguiente:
 
-```bash
-#!/usr/bin/expect -f
-# http://bash.cyberciti.biz/security/expect-ssh-login-script/
-set user [lrange $argv 0 0]
-set ip_or_domain [lrange $argv 1 1]
-set password [lrange $argv 2 2]
-set scriptname [lrange $argv 3 3]
-set arg1 [lrange $argv 4 4]
-set timeout -1
-# now connect to remote UNIX box (ip_or_domain) with given script to execute
-spawn ssh $user@$ip_or_domain $scriptname $arg1
+    #!/usr/bin/expect -f
+    # http://bash.cyberciti.biz/security/expect-ssh-login-script/
+    set user [lrange $argv 0 0]
+    set ip_or_domain [lrange $argv 1 1]
+    set password [lrange $argv 2 2]
+    set scriptname [lrange $argv 3 3]
+    set arg1 [lrange $argv 4 4]
+    set timeout -1
+    # now connect to remote UNIX box (ip_or_domain) with given script to execute
+    spawn ssh $user@$ip_or_domain $scriptname $arg1
 
-match_max 100000
-# Look for passwod prompt
-expect "*?assword:*"
-# Send password aka $password
-send -- "$password\r"
-# send blank line (\r) to make sure we get back to gui
-send -- "\r"
-expect eof
-```
+    match_max 100000
+    # Look for passwod prompt
+    expect "*?assword:*"
+    # Send password aka $password
+    send -- "$password\r"
+    # send blank line (\r) to make sure we get back to gui
+    send -- "\r"
+    expect eof
 
 Para ejecutarlo:
 
-```bash
-$ ./sshlogin.exp user host pass who
-```
+    $ ./sshlogin.exp user host pass who
 
 La principal diferente entre estos dos _scripts_ es que, después de
 enviar la contraseña, uno espera a que se muestre el _prompt_ para
@@ -121,17 +111,15 @@ Utilizar `expect` en el terminal
 También podríamos ejecutar `expect` directamente en el terminal de la
 siguiente manera:
 
-```bash
-$ expect -c "
-   set password pass
-   spawn ssh user@host who
-   match_max 100000
-   expect \"_?assword:_\"
-   send -- \"${password}\r\"
-   send -- \"\r\"
-   expect eof
-"
-```
+    $ expect -c "
+       set password pass
+       spawn ssh user@host who
+       match_max 100000
+       expect \"_?assword:_\"
+       send -- \"${password}\r\"
+       send -- \"\r\"
+       expect eof
+    "
 
   [conectarse utilizando la clave]: {filename}/admin/conectarse-por-ssh-solo-usando-la-clave.md
     "conectarse por ssh usando sólo la clave"
