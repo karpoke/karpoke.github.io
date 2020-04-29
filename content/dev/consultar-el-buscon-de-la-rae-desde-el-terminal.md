@@ -359,9 +359,9 @@ Referencias
 
   [buscón de la RAE]: http://buscon.rae.es/draeI/
     "buscón de la RAE"
-  [diccionario de la RAE]: http://buscon.rae.es/draeI/ "drae"
+  [diccionario de la RAE]: http://buscon.rae.es/draeI/
     "diccionario de la RAE"
-  [diccionario panhispánico de dudas]: http://buscon.rae.es/dpdI/ "dpd"
+  [diccionario panhispánico de dudas]: http://buscon.rae.es/dpdI/
     "diccionario panhispánico de dudas"
   [buscón]: http://www.rae.es/drae
     "buscón"

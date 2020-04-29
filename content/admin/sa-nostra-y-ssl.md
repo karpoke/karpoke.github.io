@@ -47,4 +47,3 @@ Puntuación final: Aprobado
 
   [SbD]: http://www.securitybydefault.com/2010/10/bancos-y-ssl-quien-aprueba.html
     "SbD"
-    "SbD"

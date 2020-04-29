@@ -24,5 +24,4 @@ Slug: ethernet-cumple-40-anos-bob-metcalfe
 » Pilar Bernat | [zonamovilidad.es][]
 
   [zonamovilidad.es]: http://www.zonamovilidad.es/noticia/5873/Reportajes/Ethernet-cumple-40-anos:-Bob-Metcalfe-En-el-Silicon-Valley-se-suponia-que-tenias-que-inventar-algo-innovar-y-ese-espiritu-se-mantiene.html
-    "zonamovilidad.es"
     "Ethernet cumple 40 años: Bob Metcalfe"

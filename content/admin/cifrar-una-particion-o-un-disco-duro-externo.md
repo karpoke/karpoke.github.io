@@ -132,5 +132,4 @@ permisos del directorio para que tengamos permisos de escritura:
   [un disco duro externo y queremos cifrarlo]: http://conocimientoabierto.es/traducir-automaticamente-ficheros-po/207/
     "un disco duro externo y queremos cifrarlo"
   [aleatorio]: {filename}/dev/random-bash.md
-    "aleatorio"
     "random bash"

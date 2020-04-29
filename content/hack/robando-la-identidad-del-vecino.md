@@ -137,28 +137,23 @@ que detecte las interfaces:
 El menú de Firesheep es accesible a través del panel lateral: *Ver /
 Panel lateral / Firesheep* o `Ctrl+Shft+s`.
 
-  [Firesheep]: http://codebutler.com/firesheep "firesheep"
+  [Firesheep]: http://codebutler.com/firesheep
     "Firesheep"
   [robar la identidad]: http://alt1040.com/2010/10/firesheep-facebook-google-twitter-windows-live-wordpress-google
     "robar la identidad"
   [Dropbox]: {filename}/admin/como-publicar-directorios-en-ubuntu-one-y-dropbox.md
-    "Dropbox"
     "cómo publicar directorios en ubuntu one y dropbox"
   [Facebook]: {filename}/hack/senoras-que-se-ponen-un-nombre-falso-en-facebook-pero-usan-su-direccion-de-correo-personal.md
-    "Facebook"
     "señoras que se ponen un nombre falso en facebook pero usan su dirección de correo personal"
   [Google]: {filename}/hack/csrf-en-las-busquedas-de-google.md
-    "Google"
     "csrf en las búsquedas de google"
   [Wordpress]: {filename}/admin/la-infame-actualizacion-de-wordpress-en-15-segundos.md
-    "Wordpress"
     "la infame actualización de wordpress en 15 segundos"
   [evitarlo]: http://alt1040.com/2010/11/como-protegerse-de-firesheep
     "evitarlo"
   [HTTPS-everywhere]: http://www.eff.org/https-everywhere
     "HTTPS-everywhere"
-    "https everywhere"
-  [Blacksheep]: http://www.zscaler.com/blacksheep.html "blacksheep"
+  [Blacksheep]: http://www.zscaler.com/blacksheep.html
     "Blacksheep"
   [recompilamos la extensión]: http://research.zscaler.com/2010/11/blacksheep-for-linux.html
     "recompilamos la extensión"
