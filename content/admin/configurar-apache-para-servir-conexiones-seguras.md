@@ -268,8 +268,9 @@ configuración de Apache:
     SSLCipherSuite ECDHE-RSA-AES128-SHA256:AES128-GCM-SHA256:RC4:HIGH:!MD5:!aNULL:!EDH
 
 Más información:
-- ivanr [Mitigating the BEAST attack on TLS][]
-- ivanr [RC4 in TLS is Broken: Now What?][]
+
+» ivanr [Mitigating the BEAST attack on TLS][]
+» ivanr [RC4 in TLS is Broken: Now What?][]
 
 * * * * *
 

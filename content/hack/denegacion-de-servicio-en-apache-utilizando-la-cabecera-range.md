@@ -45,18 +45,18 @@ Protección
 Si tenemos un servidor vulnerable, podemos adoptar alguna de las
 siguientes medidas de protección.
 
--   Podemos [deshabilitar la cabecera `Range`][deshabilitar la cabecera Range] mediante la directiva
+- Podemos [deshabilitar la cabecera `Range`][deshabilitar la cabecera Range] mediante la directiva
     `RequestHeader`, usando el módulo `mod_headers`:
 
         RequestHeader unset Range
 
-» [Limitar el número de intervalos][] mediante `mod_rewrite`:
+- [Limitar el número de intervalos][] mediante `mod_rewrite`:
 
         RewriteEngine On
     RewriteCond %{HTTP:Range} ([0-9]_-[0-9]_)(\s*,\s*[0-9]_-[0-9]_)+
     RewriteRule .* - [NS,L,F]
 
-» [Deshabilitar el módulo `mod_deflate`][Deshabilitar el módulo mod_deflate]:
+- [Deshabilitar el módulo `mod_deflate`][Deshabilitar el módulo mod_deflate]:
 
         $ sudo a2dismod deflate
 

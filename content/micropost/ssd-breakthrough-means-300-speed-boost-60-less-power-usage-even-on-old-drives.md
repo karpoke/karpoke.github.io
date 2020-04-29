@@ -11,7 +11,7 @@ Slug: ssd-breakthrough-means-300-speed-boost-60-less-power-usage-even-on-old-dri
 > whilst the old area is formatted. This eventually causes fragmented data and
 > lowers the drive’s life and performance over time.
 
-- James Walker [neowin.net][]
+» James Walker [neowin.net][]
 
   [neowin.net]: http://www.neowin.net/news/ssd-breakthrough-means-300-speed-boost-60-less-power-usage-even-on-old-drives
     "SSD breakthrough means 300% speed boost, 60% less power usage... even on old drives"

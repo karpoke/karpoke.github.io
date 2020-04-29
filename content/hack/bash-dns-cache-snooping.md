@@ -101,8 +101,8 @@ en verde o rojo, según si ha sido encontrada la página en la caché o no:
     >     fi
     > done
 
-- Inspirado en un artículo de [El maligno][]
-- Más información: [DNS Cache Snooping][]
+» Inspirado en un artículo de [El maligno][]
+» Más información: [DNS Cache Snooping][]
 
   [lista de páginas]: http://terminus.ignaciocano.com/wp-uploads/linked/sites.txt
     "lista de páginas"

@@ -296,7 +296,7 @@ estuvieran establecidas:
 Más información
 ---------------
 
-- `fwknop`
+» `fwknop`
 » [Single Packet Authorization][]
 » [Single Packet Authorization in Ubuntu][]
 » [GPG Howto][]
