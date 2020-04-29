@@ -15,27 +15,23 @@ complementos para [WordPress][].
 
 Los siguientes comandos nos facilitan descargar la lista de dominios:
 
-```bash
-$ lynx -dump http://www.aede.es/publica/Periodicos_Asociados.asp |
-  \grep -Eo "http://[^/\"]+" |
-  \grep -v aede.es |
-  sort |
-  uniq |
-  awk "{gsub(/http:\/\//, \"\"); print; gsub(/www\./, \"\"); print; }" |
-  sed 's/^/127.0.0.1  /'
-```
+    $ lynx -dump http://www.aede.es/publica/Periodicos_Asociados.asp |
+    \grep -Eo "http://[^/\"]+" |
+    \grep -v aede.es |
+    sort |
+    uniq |
+    awk "{gsub(/http:\/\//, \"\"); print; gsub(/www\./, \"\"); print; }" |
+    sed 's/^/127.0.0.1  /'
 
 Una alternativa a `lynx` sería utilizar el comando `curl`:
 
-```bash
-$ curl -so- http://www.aede.es/publica/Periodicos_Asociados.asp |
-  \grep -Eo "http://[^/\"]+" |
-  \grep -v aede.es |
-  sort |
-  uniq |
-  awk "{gsub(/http:\/\//, \"\"); print; gsub(/www\./, \"\"); print; }" |
-  sed 's/^/127.0.0.1  /'
-```
+    $ curl -so- http://www.aede.es/publica/Periodicos_Asociados.asp |
+    \grep -Eo "http://[^/\"]+" |
+    \grep -v aede.es |
+    sort |
+    uniq |
+    awk "{gsub(/http:\/\//, \"\"); print; gsub(/www\./, \"\"); print; }" |
+    sed 's/^/127.0.0.1  /'
 
 Para que la lista sea más completa, también se podrían añadir los
 dominios alternativos (.com, .es, etc) o dominios de otras páginas de

@@ -25,31 +25,23 @@ introduciendo uno o varios puntos en el nombre de usuario, por ejemplo,
 
 Creamos el directorio para la nueva cuenta:
 
-```bash
-$ mkdir ~/.dropbox2
-```
+    $ mkdir ~/.dropbox2
 
 Lanzamos la instalación en este directorio:
 
-```bash
-$ HOME=~/.dropbox2 /usr/bin/dropbox start -i
-```
+    $ HOME=~/.dropbox2 /usr/bin/dropbox start -i
 
 Sin embargo, en Ubuntu Maverick Meerkat da el siguiente error:
 
-```bash
-Starting Dropbox...Traceback (most recent call last):
-  File "/usr/bin/dropbox", line 259, in handle_ok
+    Starting Dropbox...Traceback (most recent call last):
+    File "/usr/bin/dropbox", line 259, in handle_ok
     self.dont_show_again_align.hide()
-AttributeError: 'DownloadDialog' object has no attribute 'dont_show_again_align'
-```
+    AttributeError: 'DownloadDialog' object has no attribute 'dont_show_again_align'
 
 Vamos a ver que pasa si comentamos la línea 259 en el fichero
 `/usr/bin/dropbox`:
 
-```bash
-#self.dont_show_again_align.hide()
-```
+    #self.dont_show_again_align.hide()
 
 * * * * *
 
@@ -78,72 +70,63 @@ Desactivamos el autoarranque de la cuenta de Dropbox que ya teníamos.
 Para tenerlo todo un poco más ordenado, vamos a mover las credenciales
 de la cuenta que ya teníamos al directorio `~/.dropbox1`:
 
-```bash
-$ cd ~
-$ mkdir .dropbox1
-$ mv .dropbox .dropbox-dist Dropbox .dropbox1
-$ ln -s .Xauthority .dropbox
-$ ln -s .Xauthority .dropbox2
-```
+    $ cd ~
+    $ mkdir .dropbox1
+    $ mv .dropbox .dropbox-dist Dropbox .dropbox1
+    $ ln -s .Xauthority .dropbox
+    $ ln -s .Xauthority .dropbox2
 
 Nos debería quedar así:
 
-```bash
-$ ls -lan .dropbox1
-total 28
-drwxr-xr-x   5 1000 1000  4096 2011-03-30 14:13 .
-drwxr-xr-x 157 1000 1000 12288 2011-03-30 14:16 ..
-drwxr-xr-x   3 1000 1000  4096 2011-03-30 13:45 .dropbox
-drwxr-xr-x   6 1000 1000  4096 2011-03-30 13:02 Dropbox
-drwxr-xr-x   4 1000 1000  4096 2010-10-28 11:43 .dropbox-dist
-lrwxrwxrwx   1 1000 1000    14 2011-03-30 14:13 .Xauthority -> ../.Xauthority
-$ ls -lan .dropbox2
-total 28
-drwxr-xr-x   5 1000 1000  4096 2011-03-30 14:13 .
-drwxr-xr-x 157 1000 1000 12288 2011-03-30 14:16 ..
-drwxr-xr-x   3 1000 1000  4096 2011-03-30 13:46 .dropbox
-drwxr-xr-x   5 1000 1000  4096 2011-03-30 13:36 Dropbox
-drwxr-xr-x   5 1000 1000  4096 2011-03-30 13:33 .dropbox-dist
-lrwxrwxrwx   1 1000 1000    14 2011-03-30 14:13 .Xauthority -> ../.Xauthority
-```
+    $ ls -lan .dropbox1
+    total 28
+    drwxr-xr-x   5 1000 1000  4096 2011-03-30 14:13 .
+    drwxr-xr-x 157 1000 1000 12288 2011-03-30 14:16 ..
+    drwxr-xr-x   3 1000 1000  4096 2011-03-30 13:45 .dropbox
+    drwxr-xr-x   6 1000 1000  4096 2011-03-30 13:02 Dropbox
+    drwxr-xr-x   4 1000 1000  4096 2010-10-28 11:43 .dropbox-dist
+    lrwxrwxrwx   1 1000 1000    14 2011-03-30 14:13 .Xauthority -> ../.Xauthority
+
+    $ ls -lan .dropbox2
+    total 28
+    drwxr-xr-x   5 1000 1000  4096 2011-03-30 14:13 .
+    drwxr-xr-x 157 1000 1000 12288 2011-03-30 14:16 ..
+    drwxr-xr-x   3 1000 1000  4096 2011-03-30 13:46 .dropbox
+    drwxr-xr-x   5 1000 1000  4096 2011-03-30 13:36 Dropbox
+    drwxr-xr-x   5 1000 1000  4096 2011-03-30 13:33 .dropbox-dist
+    lrwxrwxrwx   1 1000 1000    14 2011-03-30 14:13 .Xauthority -> ../.Xauthority
 
 El siguiente _script_, `MultipleDropboxInstances.sh`, se encarga de
 lanzar una instancia de Dropbox por cada cuenta que tengamos instalada:
 
-```bash
-#!/bin/bash
+    #!/bin/bash
 
-#__***************************__
-# Multiple dropbox instances
-#__***************************__
+    #__***************************__
+    # Multiple dropbox instances
+    #__***************************__
 
-dropboxes=".dropbox .dropbox2"
+    dropboxes=".dropbox .dropbox2"
 
-for dropbox in $dropboxes
-do
-    HOME=/home/$USER
-    if ! [ -d $HOME/$dropbox ];then
-        mkdir $HOME/$dropbox 2> /dev/null
-        ln -s $HOME/.Xauthority $HOME/$dropbox/ 2> /dev/null
-    fi
+    for dropbox in $dropboxes
+    do
+        HOME=/home/$USER
+        if ! [ -d $HOME/$dropbox ];then
+            mkdir $HOME/$dropbox 2> /dev/null
+            ln -s $HOME/.Xauthority $HOME/$dropbox/ 2> /dev/null
+        fi
 
-    HOME=$HOME/$dropbox /usr/bin/dropbox start -i 2> /dev/null &
-done
-```
+        HOME=$HOME/$dropbox /usr/bin/dropbox start -i 2> /dev/null &
+    done
 
 Le damos permisos de ejecución:
 
-```bash
-$ chmod +x MultipleDropboxInstances.sh
-```
+    $ chmod +x MultipleDropboxInstances.sh
 
 Lo ejecutamos:
 
-```bash
-$ ./MultipleDropboxInstances.sh
-Starting Dropbox...Starting Dropbox...Done!
-Done!
-```
+    $ ./MultipleDropboxInstances.sh
+    Starting Dropbox...Starting Dropbox...Done!
+    Done!
 
 En la barra superior nos aparecerán dos iconos de Dropbox, uno por cada
 cuenta. Si utilizamos Unity y no nos aparece, podemos recurrir a un
@@ -161,9 +144,7 @@ necesario recurrir al truco mencionado.
 Para que se ejecute cada vez al inicio, en el fichero `/etc/rc.local`,
 añadimos:
 
-```bash
-su username /home/username/MultipleDropboxInstances.sh
-```
+    su username /home/username/MultipleDropboxInstances.sh
 
 Referencias
 ------------

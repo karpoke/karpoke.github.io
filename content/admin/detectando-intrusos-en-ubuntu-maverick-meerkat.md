@@ -17,37 +17,28 @@ ufw
 `ufw` es una forma sencilla de manejar un cortafuegos. Nada más
 instalarlo, lo habilitamos:
 
-```bash
-$ sudo ufw enable
-```
+    $ sudo ufw enable
 
 Damos de alta los servicios^[1][]^ que queremos que estén disponibles:
 
-```bash
-$ sudo ufw allow http
-$ sudo ufw allow https
-$ sudo ufw allow 1234
-```
+    $ sudo ufw allow http
+    $ sudo ufw allow https
+    $ sudo ufw allow 1234
 
 Si queremos deshacer alguna de estas acciones, por ejemplo, eliminar la
 regla para el puerto 1234:
 
-```bash
-$ sudo ufw delete 1234
-```
+    $ sudo ufw delete 1234
 
 Comprobamos el estado:
 
-```bash
-$ sudo ufw status
+    $ sudo ufw status
     Estado: activo
-
     Hasta                      AcciónDesde
     -----                      ------------------------
     80                         ALLOW       Anywhere
     443                        ALLOW       Anywhere
-    1234                       ALLOW       Anywhere
-````
+    1234                       ALLOW       Anywhere`
 
 fail2ban
 --------
@@ -60,46 +51,40 @@ de poder poner un correo electrónico al cual nos lleguen los avisos,
 está la configuración para cada servicio que queramos controlar. Por
 ejemplo:
 
-```bash
-[ssh]
-enabled = true
-port    = 1234
-filter  = sshd
-logpath  = /var/log/auth.log
-maxretry = 3
+    [ssh]
+    enabled = true
+    port    = 1234
+    filter  = sshd
+    logpath  = /var/log/auth.log
+    maxretry = 3
 
-[apache]
-enabled = true
-port    = http,https
-filter  = apache-auth
-logpath = /var/log/apache*/*error.log
-maxretry = 3
-```
+    [apache]
+    enabled = true
+    port    = http,https
+    filter  = apache-auth
+    logpath = /var/log/apache*/*error.log
+    maxretry = 3
 
 En el fichero también vienen configuración para Apache, varios
 servidores de FTP, de correo y DNS.
 
 Para controlar el estado ejecutamos el cliente, por ejemplo:
 
-```bash
-$ sudo fail2ban-client status
+    $ sudo fail2ban-client status
     Status
     |- Number of jail:      2
     `- Jail list:           apache, ssh
-```
 
-```bash
-$ sudo fail2ban-client status ssh
-    Status for the jail: ssh
-    |- filter
-    |  |- File list:        /var/log/auth.log
-    |  |- Currently failed: 0
-    |  `- Total failed:     3
-    `- action
-       |- Currently banned: 0
-       |  `- IP list:
-       `- Total banned:     0
-```
+    $ sudo fail2ban-client status ssh
+        Status for the jail: ssh
+        |- filter
+        |  |- File list:        /var/log/auth.log
+        |  |- Currently failed: 0
+        |  `- Total failed:     3
+        `- action
+           |- Currently banned: 0
+           |  `- IP list:
+           `- Total banned:     0
 
 denyhosts
 ---------
@@ -118,40 +103,38 @@ intrusión y tráfico sospechos. Se pueden configurar incontables
 parámetros en `/etc/psad/psad.conf`. Para comprobar el estado
 ejecutamos:
 
-```bash
-$ sudo psad -S
-    [+] psadwatchd (pid: 18853)  %CPU: 0.0  %MEM: 0.0
-        Running since: Mon Mar  7 19:34:09 2011
+    $ sudo psad -S
+        [+] psadwatchd (pid: 18853)  %CPU: 0.0  %MEM: 0.0
+            Running since: Mon Mar  7 19:34:09 2011
 
-    [+] psad (pid: 18851)  %CPU: 0.0  %MEM: 0.4
-        Running since: Mon Mar  7 19:34:09 2011
-        Command line arguments: [none specified]
-        Alert email address(es): karpoke@localhost
+        [+] psad (pid: 18851)  %CPU: 0.0  %MEM: 0.4
+            Running since: Mon Mar  7 19:34:09 2011
+            Command line arguments: [none specified]
+            Alert email address(es): karpoke@localhost
 
-    [+] Version: psad v2.1.5
+        [+] Version: psad v2.1.5
 
-    [+] Top 50 signature matches:
-            [NONE]
+        [+] Top 50 signature matches:
+                [NONE]
 
-    [+] Top 25 attackers:
-            [NONE]
+        [+] Top 25 attackers:
+                [NONE]
 
-    [+] Top 20 scanned ports:
-            [NONE]
+        [+] Top 20 scanned ports:
+                [NONE]
 
-    [+] iptables log prefix counters:
-            [NONE]
+        [+] iptables log prefix counters:
+                [NONE]
 
-        Total packet counters: tcp: 0, udp: 0, icmp: 0
+            Total packet counters: tcp: 0, udp: 0, icmp: 0
 
-    [+] IP Status Detail:
-            [NONE]
+        [+] IP Status Detail:
+                [NONE]
 
-        Total scan sources: 0
-        Total scan destinations: 0
+            Total scan sources: 0
+            Total scan destinations: 0
 
-    [+] These results are available in: /var/log/psad/status.out
-```
+        [+] These results are available in: /var/log/psad/status.out
 
 
 Tiger
@@ -160,65 +143,59 @@ Tiger
 `Tiger` es una herramienta de detección de intrusiones. Para ejecutarlo
 (Ojo! el análisis es bastante intenso en términos de CPU):
 
-```bash
-$ sudo tiger
-    Configuring...
+    $ sudo tiger
+        Configuring...
 
-    Will try to check using config for 'i686' running Linux 2.6.32-28-generic...
-    --CONFIG-- [con005c] Using configuration files for Linux 2.6.32-28-generic. Using
-               configuration files for generic Linux 2.
-    Tiger security scripts *** 3.2.2, 2007.08.28.00.00 *__
-    20:38> Beginning security report for terminus.
-    20:38> Starting file systems scans in background...
-    20:38> Checking password files...
-    20:38> Checking group files...
-    20:38> Checking user accounts...
-    20:40> Checking .rhosts files...
-    20:40> Checking .netrc files...
-    20:40> Checking ttytab, securetty, and login configuration files...
-    20:40> Checking PATH settings...
-    20:40> Checking anonymous ftp setup...
-    20:40> Checking mail aliases...
-    20:40> Checking cron entries...
-    20:40> Checking 'inetd' configuration...
-    20:40> Checking 'tcpd' configuration...
-    20:40> Checking 'services' configuration...
-    20:40> Checking NFS export entries...
-    20:40> Checking permissions and ownership of system files...
-    --CONFIG-- [con010c] Filesystem 'devtmpfs' used by 'none' is not recognised as a valid filesystem
-    20:40> Checking for indications of break-in...
-    --CONFIG-- [con010c] Filesystem 'devtmpfs' used by 'none' is not recognised as a valid filesystem
-    20:40> Performing rootkit checks...
-    20:41> Performing system specific checks...
-    20:44> Performing root directory checks...
-    20:44> Checking for secure backup devices...
-    20:44> Checking for the presence of log files...
-    20:44> Checking for the setting of user's umask...
-    20:44> Checking for listening processes...
-    20:44> Checking SSHD's configuration...
-    20:44> Checking the printers control file...
-    20:44> Checking ftpusers configuration...
-    20:44> Checking NTP configuration...
-    20:44> Waiting for filesystems scans to complete...
-    20:44> Filesystems scans completed...
-    20:44> Performing check of embedded pathnames...
-    20:45> Security report completed for terminus.
-    Security report is in `/var/log/tiger/security.report.terminus.110307-20:38'.
-```
+        Will try to check using config for 'i686' running Linux 2.6.32-28-generic...
+        --CONFIG-- [con005c] Using configuration files for Linux 2.6.32-28-generic. Using
+                   configuration files for generic Linux 2.
+        Tiger security scripts *** 3.2.2, 2007.08.28.00.00 *__
+        20:38> Beginning security report for terminus.
+        20:38> Starting file systems scans in background...
+        20:38> Checking password files...
+        20:38> Checking group files...
+        20:38> Checking user accounts...
+        20:40> Checking .rhosts files...
+        20:40> Checking .netrc files...
+        20:40> Checking ttytab, securetty, and login configuration files...
+        20:40> Checking PATH settings...
+        20:40> Checking anonymous ftp setup...
+        20:40> Checking mail aliases...
+        20:40> Checking cron entries...
+        20:40> Checking 'inetd' configuration...
+        20:40> Checking 'tcpd' configuration...
+        20:40> Checking 'services' configuration...
+        20:40> Checking NFS export entries...
+        20:40> Checking permissions and ownership of system files...
+        --CONFIG-- [con010c] Filesystem 'devtmpfs' used by 'none' is not recognised as a valid filesystem
+        20:40> Checking for indications of break-in...
+        --CONFIG-- [con010c] Filesystem 'devtmpfs' used by 'none' is not recognised as a valid filesystem
+        20:40> Performing rootkit checks...
+        20:41> Performing system specific checks...
+        20:44> Performing root directory checks...
+        20:44> Checking for secure backup devices...
+        20:44> Checking for the presence of log files...
+        20:44> Checking for the setting of user's umask...
+        20:44> Checking for listening processes...
+        20:44> Checking SSHD's configuration...
+        20:44> Checking the printers control file...
+        20:44> Checking ftpusers configuration...
+        20:44> Checking NTP configuration...
+        20:44> Waiting for filesystems scans to complete...
+        20:44> Filesystems scans completed...
+        20:44> Performing check of embedded pathnames...
+        20:45> Security report completed for terminus.
+        Security report is in `/var/log/tiger/security.report.terminus.110307-20:38'.
 
 Para [evitar el aviso][]:
 
-```bash
     –CONFIG– [con010c] Filesystem 'devtmpfs' used by 'none' is not recognised as a valid filesystem
-```
 
 editamos el fichero de configuración, `/etc/tiger/tigerrc`, y añadimos
 el sitema de ficheros `devtmpfs` como válido. Para esto buscamos la
 clave `Tiger_FSScan_Local` y la modificamos:
 
-```bash
-Tiger_FSScan_Local='devtmpfs'
-```
+    Tiger_FSScan_Local='devtmpfs'
 
 logwatch
 --------
@@ -229,15 +206,11 @@ configurar el correo al que envía los reportes dándole un valor a la
 variable de entorno `MAILTO`. Añadimos la siguiente línea al fichero
 `/etc/bash.bashrc`:
 
-```bash
-MAILTO=user@localhost
-```
+    MAILTO=user@localhost
 
 Para probar el funcionamiento ejecutamos:
 
-```bash
-$ /usr/sbin/logwatch --debug 10
-```
+    $ /usr/sbin/logwatch --debug 10
 
 logcheck
 --------

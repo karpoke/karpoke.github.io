@@ -22,28 +22,24 @@ comprueba el valor de la variable DEBUG).
 Por ejemplo, si no queremos mostrar la barra para diferentes URLs, hasta
 la versión 1.0, podemos hacer lo siguiente:
 
-```python
-def show_toolbar(request):
-    for url in DEBUG_TOOLBAR_CONFIG["IGNORE_URIS"]:
-        if re.search(url, request.path):
-            return False
-    return True
+    def show_toolbar(request):
+        for url in DEBUG_TOOLBAR_CONFIG["IGNORE_URIS"]:
+            if re.search(url, request.path):
+                return False
+        return True
 
-DEBUG_TOOLBAR_CONFIG = {
-    'IGNORE_URIS': (
-        '^/admin',
-        '^/rosetta',
-    ),
-    'SHOW_TOOLBAR_CALLBACK': show_toolbar,
-}
-```
+    DEBUG_TOOLBAR_CONFIG = {
+        'IGNORE_URIS': (
+            '^/admin',
+            '^/rosetta',
+        ),
+        'SHOW_TOOLBAR_CALLBACK': show_toolbar,
+    }
 
 [A partir de la versión 1.0][], el nombre de la función se debe
 especificar como una ruta separada por puntos:
 
-```bash
     'SHOW_TOOLBAR_CALLBACK': 'projectname.settings.show_toolbar',
-```
 
   [django-debug-toolbar]: http://github.com/django-debug-toolbar/django-debug-toolbar
     "django-debug-toolbar"

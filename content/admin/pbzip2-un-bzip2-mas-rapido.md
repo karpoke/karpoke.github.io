@@ -13,16 +13,12 @@ Instalación
 
 En Ubuntu se encuentra disponible en los repositorios:
 
-```bash
-$ sudo aptitude install pbzip2
-```
+    $ sudo aptitude install pbzip2
 
 Su uso es idéntico al de `bzip2`, por lo que podemos añadir un _alias_ a
 `~/.bash_aliases`:
 
-```bash
-alias bzip2=pbzip2
-```
+    alias bzip2=pbzip2
 
 Referencias
 -----------

@@ -8,11 +8,9 @@ Related: obteniendo-la-ip-publica-la-ip-privada-y-la-direccion-mac-en-bash,encon
 Si queremos obtener el listado de rangos de IPs que puedan estar
 asociadas a un dominio, por ejemplo para bloquearlo, podemos ejecutar:
 
-```bash
-$ IP=$(dig +short www.example.com | grep -Eo '([0-9]{1,3}\.?){4}' | head -1)
-$ AS=$(whois $IP | awk '/OriginAS/{print $2}')
-$ test -n "$AS" && whois -h whois.radb.net '!g'$AS | tr -d "\n" | tr " " "\n" | sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4
-```
+    $ IP=$(dig +short www.example.com | grep -Eo '([0-9]{1,3}\.?){4}' | head -1)
+    $ AS=$(whois $IP | awk '/OriginAS/{print $2}')
+    $ test -n "$AS" && whois -h whois.radb.net '!g'$AS | tr -d "\n" | tr " " "\n" | sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4
 
 En la primera línea, obtenemos la IP asociada al dominio. En la segunda,
 obtenemos el registro _origin_, el cual utilizamos en la tercera línea
@@ -22,9 +20,7 @@ por línea.
 Esto nos da el listado de IPs v4, si queremos las IPs v6, podemos
 modificar ligeramente la tercera línea:
 
-```bash
-$ whois -h whois.radb.net -- "-i origin $AS" | awk '/^route6:/{print $2}'
-```
+    $ whois -h whois.radb.net -- "-i origin $AS" | awk '/^route6:/{print $2}'
 
 Referencias
 -----------

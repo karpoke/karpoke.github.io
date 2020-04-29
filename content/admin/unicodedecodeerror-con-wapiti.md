@@ -21,30 +21,28 @@ repositorios es la 1.1.6, por lo que es posible que nos encontremos el
 siguiente error al escanear páginas que contengan [caracteres no
 ASCII][]. Por ejemplo:
 
-```bash
-$ wapiti http://127.0.0.1/ -v 1 -m GET_XSS -u
-Wapiti-1.1.6 (wapiti.sourceforge.net)
-Traceback (most recent call last):
-  File "/usr/bin/wapiti", line 943, in
-    wap.browse()
-  File "/usr/bin/wapiti", line 123, in browse
-    self.myls.go()
-  File "/usr/share/wapiti/lswww.py", line 396, in go
-    if self.browse(lien):
-  File "/usr/share/wapiti/lswww.py", line 207, in browse
-    p.feed(htmlSource)
-  File "/usr/lib/python2.7/HTMLParser.py", line 108, in feed
-    self.goahead(0)
-  File "/usr/lib/python2.7/HTMLParser.py", line 148, in goahead
-    k = self.parse_starttag(i)
-  File "/usr/lib/python2.7/HTMLParser.py", line 252, in parse_starttag
-    attrvalue = self.unescape(attrvalue)
-  File "/usr/lib/python2.7/HTMLParser.py", line 393, in unescape
-    return re.sub(r"&(#?[xX]?(?:[0-9a-fA-F]+|\w{1,8}));", replaceEntities, s)
-  File "/usr/lib/python2.7/re.py", line 151, in sub
-    return _compile(pattern, flags).sub(repl, string, count)
-UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 0: ordinal not in range(128)
-```
+    $ wapiti http://127.0.0.1/ -v 1 -m GET_XSS -u
+    Wapiti-1.1.6 (wapiti.sourceforge.net)
+    Traceback (most recent call last):
+      File "/usr/bin/wapiti", line 943, in
+        wap.browse()
+      File "/usr/bin/wapiti", line 123, in browse
+        self.myls.go()
+      File "/usr/share/wapiti/lswww.py", line 396, in go
+        if self.browse(lien):
+      File "/usr/share/wapiti/lswww.py", line 207, in browse
+        p.feed(htmlSource)
+      File "/usr/lib/python2.7/HTMLParser.py", line 108, in feed
+        self.goahead(0)
+      File "/usr/lib/python2.7/HTMLParser.py", line 148, in goahead
+        k = self.parse_starttag(i)
+      File "/usr/lib/python2.7/HTMLParser.py", line 252, in parse_starttag
+        attrvalue = self.unescape(attrvalue)
+      File "/usr/lib/python2.7/HTMLParser.py", line 393, in unescape
+        return re.sub(r"&(#?[xX]?(?:[0-9a-fA-F]+|\w{1,8}));", replaceEntities, s)
+      File "/usr/lib/python2.7/re.py", line 151, in sub
+        return _compile(pattern, flags).sub(repl, string, count)
+    UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 0: ordinal not in range(128)
 
 Parece ser que este error está [solucionado en la versión en
 desarrollo][], por lo que lo mejor sería [probar la última versión][].
@@ -52,15 +50,11 @@ desarrollo][], por lo que lo mejor sería [probar la última versión][].
 Aún así, podemos evitarlo modificando el fichero
 `vim /usr/share/wapiti/lswww.py`, y cambiando las ocurrencias de:
 
-```python
-p.feed(htmlSource)
-```
+    p.feed(htmlSource)
 
 por:
 
-```python
-p.feed(htmlSource.decode("utf-8", "replace"))
-```
+    p.feed(htmlSource.decode("utf-8", "replace"))
 
   [Wapiti]: http://wapiti.sourceforge.net/
     "Wapiti"

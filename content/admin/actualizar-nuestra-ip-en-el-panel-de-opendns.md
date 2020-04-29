@@ -12,18 +12,16 @@ la IP registrada en dicho servicio cada vez que [cambie nuestra IP].
 Para ello, lo único que necesitamos es editar el fichero de configuración en
 `/etc/ddclient.conf`:
 
-```bash
-##
-## OpenDNS.com account-configuration
-##
-use=web, web=myip.dnsomatic.com
-ssl=yes
-server=updates.opendns.com
-protocol=dyndns2
-login=username@example.com
-password=opendns_password
-opendns_network_label
-```
+    ##
+    ## OpenDNS.com account-configuration
+    ##
+    use=web, web=myip.dnsomatic.com
+    ssl=yes
+    server=updates.opendns.com
+    protocol=dyndns2
+    login=username@example.com
+    password=opendns_password
+    opendns_network_label
 
 Los espacios en el nombre dado a la red se deben sustituir por guiones bajos
 "_" y si la contraseña contiene caracteres especiales, se debe encerrar entre
@@ -41,54 +39,39 @@ será exactamente igual:
 
 Esto genera el siguiente archivo de configuración:
 
-```bash
-protocol=dyndns2
-use=if, if=eth0
-server=updates.opendns.com
-login=username@example.com
-password=opendns_password
-opendns_network_label
-```
+    protocol=dyndns2
+    use=if, if=eth0
+    server=updates.opendns.com
+    login=username@example.com
+    password=opendns_password
+    opendns_network_label
 
 Para especificar que la IP la coja de un servicio externo en lugar de una
 interfaz de red, tendremos que cambiar:
 
-```bash
-use=if, if=eth0
-```
+    use=if, if=eth0
 
 por:
 
-```bash
-use=web, web=myip.dnsomatic.com
-```
+    use=web, web=myip.dnsomatic.com
 
 y añadimos que use `ssl`:
 
-```bash
-ssl=yes
-```
+    ssl=yes
 
 Probamos la configuración:
 
-```bash
-sudo ddclient -daemon=0 -debug -verbose -noquiet
-```
+    sudo ddclient -daemon=0 -debug -verbose -noquiet
 
 Para que se ejecute al inicio:
 
-```bash
-sudo /sbin/chkconfig ddclient on
-```
+    sudo /sbin/chkconfig ddclient on
 
 Para lanzarlo:
 
-```bash
-sudo /sbin/service ddclient start
-```
+    sudo /sbin/service ddclient start
 
   [OpenDNS Home]: https://signup.opendns.com/homefree/
     "OpenDNS Home"
   [cambie nuestra IP]: https://support.opendns.com/hc/en-us/articles/227987727-Linux-IP-Updater-for-Dynamic-Networks
     "Linux IP Updater"
-

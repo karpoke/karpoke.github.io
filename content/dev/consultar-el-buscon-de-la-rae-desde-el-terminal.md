@@ -293,51 +293,49 @@ palabras que pueden contener espacios, comillas o barras invertidas,
 que puede que [deban ser escapadas primero][] para poder ser utilizadas.
 Utilizaremos el siguiente código el el fichero de autocompletado `rae`:
 
-```bash
-    # http://stackoverflow.com/a/1146716
-    _find_words()
-    {
-        search=$(eval echo "$cur" 2>/dev/null || eval echo "$cur'" 2>/dev/null || eval echo "$cur\"" 2>/dev/null || "")
-        grep -- "^$search" /usr/share/dict/spanish | sed -e "{" -e 's#\\#\\\\#g' -e "s#'#\\\'#g" -e 's#"#\\\"#g' -e "}"
-    }
+        # http://stackoverflow.com/a/1146716
+        _find_words()
+        {
+            search=$(eval echo "$cur" 2>/dev/null || eval echo "$cur'" 2>/dev/null || eval echo "$cur\"" 2>/dev/null || "")
+            grep -- "^$search" /usr/share/dict/spanish | sed -e "{" -e 's#\\#\\\\#g' -e "s#'#\\\'#g" -e 's#"#\\\"#g' -e "}"
+        }
 
-    _words_complete()
-    {
-        local IFS=$'\n'
+        _words_complete()
+        {
+            local IFS=$'\n'
 
-        COMPREPLY=()
-        local cur="${COMP_WORDS[COMP_CWORD]}"
+            COMPREPLY=()
+            local cur="${COMP_WORDS[COMP_CWORD]}"
 
-        COMPREPLY=( $( compgen -W "$(_find_words)" -- "$cur" ) )
+            COMPREPLY=( $( compgen -W "$(_find_words)" -- "$cur" ) )
 
-        local escaped_single_qoute="'\''"
-        local i=0
-        for entry in ${COMPREPLY[*]}
-        do
-            if [[ "${cur:0:1}" == "'" ]]
-            then
-                # started with single quote, escaping only other single quotes
-                # [']bla'bla"bla\bla bla --> [']bla'\''bla"bla\bla bla
-                COMPREPLY[$i]="${entry//\'/${escaped_single_qoute}}"
-            elif [[ "${cur:0:1}" == "\"" ]]
-            then
-                # started with double quote, escaping all double quotes and all backslashes
-                # ["]bla'bla"bla\bla bla --> ["]bla'bla\"bla\\bla bla
-                entry="${entry//\\/\\\\}"
-                COMPREPLY[$i]="${entry//\"/\\\"}"
-            else
-                # no quotes in front, escaping _everything_
-                # [ ]bla'bla"bla\bla bla --> [ ]bla\'bla\"bla\\bla\ bla
-                entry="${entry//\\/\\\\}"
-                entry="${entry//\'/\'}"
-                entry="${entry//\"/\\\"}"
-                COMPREPLY[$i]="${entry// /\\ }"
-            fi
-            (( i++ ))
-        done
-    }
-    complete -F _words_complete rae.sh
-```
+            local escaped_single_qoute="'\''"
+            local i=0
+            for entry in ${COMPREPLY[*]}
+            do
+                if [[ "${cur:0:1}" == "'" ]]
+                then
+                    # started with single quote, escaping only other single quotes
+                    # [']bla'bla"bla\bla bla --> [']bla'\''bla"bla\bla bla
+                    COMPREPLY[$i]="${entry//\'/${escaped_single_qoute}}"
+                elif [[ "${cur:0:1}" == "\"" ]]
+                then
+                    # started with double quote, escaping all double quotes and all backslashes
+                    # ["]bla'bla"bla\bla bla --> ["]bla'bla\"bla\\bla bla
+                    entry="${entry//\\/\\\\}"
+                    COMPREPLY[$i]="${entry//\"/\\\"}"
+                else
+                    # no quotes in front, escaping _everything_
+                    # [ ]bla'bla"bla\bla bla --> [ ]bla\'bla\"bla\\bla\ bla
+                    entry="${entry//\\/\\\\}"
+                    entry="${entry//\'/\'}"
+                    entry="${entry//\"/\\\"}"
+                    COMPREPLY[$i]="${entry// /\\ }"
+                fi
+                (( i++ ))
+            done
+        }
+        complete -F _words_complete rae.sh
 
 Hay que tener en cuenta que el _script_ `rae.sh` debe ser accesible
 desde el _path_ del sistema. Ahora, guardamos este fichero en

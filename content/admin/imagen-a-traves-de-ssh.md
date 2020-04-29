@@ -33,17 +33,13 @@ entorno `DISPLAY`. Para que el servidor SSH permita el reenvío X11,
 deberemos asegurarnos de que en el archivo de configuración
 `/etc/ssh/sshd_config` aparece lo siguiente:
 
-```bash
-X11Forwarding yes
-```
+    X11Forwarding yes
 
 Si no estuviera, lo añadimos y reiniciamos el servicio. Ahora,
 iniciaremos una conexión SSH desde el cliente, utilizando el argumento `-X`
 de `ssh`:
 
-```bash
-$ ssh -C -X user@remotehost
-```
+    $ ssh -C -X user@remotehost
 
 El argumento `-X` permite reenviar el terminal gráfico. Se debe utilizar
 con cuidado, tal como lo indican en la página del manual. Un usuario del
@@ -59,9 +55,7 @@ cabo los controles ni se aplican estas restricciones.
 Cuando ejecutemos una aplicación con interfaz gráfica, ésta se abrirá en
 nuestro equipo.
 
-```bash
-remotehost$ xeyes &
-```
+    remotehost$ xeyes &
 
 <a name="aplicaciones-remotas-a-servidor-remoto"></a>
 
@@ -74,9 +68,7 @@ es necesario recurrir al reenvío X11. Lo único que hay que hacer, una
 vez iniciada la sesión en el equipo remoto, es modificar el valor de la
 variable de entorno `DISPLAY`:
 
-```bash
-remotehost$ export DISPLAY=:0
-```
+    remotehost$ export DISPLAY=:0
 
 Cuando lancemos una aplicación con interfaz gráfica instalada en el
 equipo remoto, ésta se abrirá en el servidor gráfico del equipo remoto.
@@ -84,9 +76,7 @@ equipo remoto, ésta se abrirá en el servidor gráfico del equipo remoto.
 En lugar de exportar la variable, podemos definirla únicamente para una
 aplicación en concreto:
 
-```bash
-$ DISPLAY=:0 xterm
-```
+    $ DISPLAY=:0 xterm
 
 <a name="aplicaciones-locales-a-servidor-remoto"></a>
 
@@ -102,17 +92,13 @@ Primero, establecemos un túnel inverso entre nuestro equipo y el equipo
 remoto. Esto quiere decir que se creará una redirección en el puerto
 8000 del equipo remoto al servidor SSH de nuestro equipo.
 
-```bash
-$ ssh -R 8000:localhost:22 remoteuser@remotehost
-```
+    $ ssh -R 8000:localhost:22 remoteuser@remotehost
 
 Una vez iniciada esta conexión, modificaremos el valor de la variable
 `DISPLAY` y nos conectaremos al puerto local 8000 que redirige a nuestro
 equipo:
 
-```bash
-remotehost$ DISPLAY=:0 ssh -C -X -p8000 user@localhost
-```
+    remotehost$ DISPLAY=:0 ssh -C -X -p8000 user@localhost
 
 Cuando hayamos iniciado sesión en nuestro equipo será como tener otro
 terminal abierto, sólo que las aplicaciones que ejecutemos en éste se
@@ -129,25 +115,19 @@ Obtener una captura del escritorio remoto
 Si lo que queremos es hacer una captura del escritorio del equipo
 remoto, podemos utilizar el comando `import`:
 
-```bash
-$ ssh -C user@remotehost "DISPLAY=:0.0 import -window root -format png -" | display -format png -
-```
+    $ ssh -C user@remotehost "DISPLAY=:0.0 import -window root -format png -" | display -format png -
 
 En lugar de visualizarla directamente, podríamos guardarla en el equipo
 remoto y luego copiar las capturas con `scp`.
 
 Otro comando sería `scrot`, disponible en los repositorios:
 
-```bash
-$ ssh -C user@remotehost "DISPLAY=:0.0 scrot -z - | display -
-```
+    $ ssh -C user@remotehost "DISPLAY=:0.0 scrot -z - | display -
 
 Si está puesto el [protector de pantalla][], por ejemplo, si la captura
 sale en negro, deberemos matar el proceso para poder ver el escritorio.
 
-```bash
-$ ssh user@remotehost "pkill gnome-screensaver"
-```
+    $ ssh user@remotehost "pkill gnome-screensaver"
 
 <a name="captura-escritorio-local-a-servidor-remoto"></a>
 
@@ -156,18 +136,14 @@ Mostrar una captura de nuestro escritorio en el equipo remoto
 
 El caso contrario al anterior.
 
-```bash
-$ import -window root -format png - | ssh -C user@remotehost "DISPLAY=:0.0 display -format png -"
-```
+    $ import -window root -format png - | ssh -C user@remotehost "DISPLAY=:0.0 display -format png -"
 
 Otra forma sería guardar la captura en un fichero, enviarlo y luego
 abrir una aplicación en el equipo remoto:
 
-```bash
-$ import -window root -format png screenshot.png
-$ scp screenshot.png user@remotehost:~
-$ ssh user@remotehost "DISPLAY=:0 eog screenshot.png"
-```
+    $ import -window root -format png screenshot.png
+    $ scp screenshot.png user@remotehost:~
+    $ ssh user@remotehost "DISPLAY=:0 eog screenshot.png"
 
 <a name="imagen-servidor-remoto-a-local"></a>
 
@@ -177,9 +153,7 @@ Mostrar imágenes del equipo remoto
 De la misma forma que realizamos una captura, podemos enviarnos una
 imagen y visualizarla directamente:
 
-```bash
-$ ssh -C user@remotehost "cat screenshot.png" | display -format png -
-```
+    $ ssh -C user@remotehost "cat screenshot.png" | display -format png -
 
 <a name="imagen-local-a-servidor-remoto"></a>
 
@@ -189,9 +163,7 @@ Mostrar imágenes de nuestro equipo en el equipo remoto
 Podemos conseguir que se habrá una aplicación remota que muestre una
 imagen de nuestro equipo:
 
-```bash
-$ cat screenshot.png | ssh -C user@remotehost "DISPLAY=:0 display -format png -"
-```
+    $ cat screenshot.png | ssh -C user@remotehost "DISPLAY=:0 display -format png -"
 
   [aplicaciones remotas que se muestren en nuestro equipo]: #aplicaciones-remotas-a-servidor-local
     "aplicaciones remotas que se muestren en nuestro equipo"

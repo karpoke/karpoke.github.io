@@ -7,56 +7,44 @@ Slug: 32-o-64-bits
 Para saber si el procesador es de 64 bits, ejecutamos el siguiente
 comando:
 
-```bash
-$ grep flags /proc/cpuinfo | grep -Eo " lm " && echo "64" || echo "32"
-32
-```
+    $ grep flags /proc/cpuinfo | grep -Eo " lm " && echo "64" || echo "32"
+    32
 
 Otro comando que nos dirá si la arquitectura es de 32 ó 64 bits es `lshw`:
 
-```bash
-$ sudo lshw -C CPU | grep width
-width: 32 bits
-```
+    $ sudo lshw -C CPU | grep width
+    width: 32 bits
 
 Para saber si el sistema operativo es de 32 ó 64 bits ejecutamos el
 siguiente comando:
 
-```bash
-$ getconf LONG_BIT
-32
-```
+    $ getconf LONG_BIT
+    32
 
-```bash
-$ uname -m
-i686
-```
+    $ uname -m
+    i686
 
-```bash
-$ arch  # es lo mismo que la anterior
-i6868
-```
+    $ arch  # es lo mismo que la anterior
+    i6868
 
 Otro comando útil es `dpkg-architecture`:
 
-```bash
-$ dpkg-architecture
-DEB_BUILD_ARCH=i386
-DEB_BUILD_ARCH_BITS=32
-DEB_BUILD_ARCH_CPU=i386
-DEB_BUILD_ARCH_ENDIAN=little
-DEB_BUILD_ARCH_OS=linux
-DEB_BUILD_GNU_CPU=i686
-DEB_BUILD_GNU_SYSTEM=linux-gnu
-DEB_BUILD_GNU_TYPE=i686-linux-gnu
-DEB_BUILD_MULTIARCH=i386-linux-gnu
-DEB_HOST_ARCH=i386
-DEB_HOST_ARCH_BITS=32
-DEB_HOST_ARCH_CPU=i386
-DEB_HOST_ARCH_ENDIAN=little
-DEB_HOST_ARCH_OS=linux
-DEB_HOST_GNU_CPU=i686
-DEB_HOST_GNU_SYSTEM=linux-gnu
-DEB_HOST_GNU_TYPE=i686-linux-gnu
-DEB_HOST_MULTIARCH=i386-linux-gnu
-```
+    $ dpkg-architecture
+    DEB_BUILD_ARCH=i386
+    DEB_BUILD_ARCH_BITS=32
+    DEB_BUILD_ARCH_CPU=i386
+    DEB_BUILD_ARCH_ENDIAN=little
+    DEB_BUILD_ARCH_OS=linux
+    DEB_BUILD_GNU_CPU=i686
+    DEB_BUILD_GNU_SYSTEM=linux-gnu
+    DEB_BUILD_GNU_TYPE=i686-linux-gnu
+    DEB_BUILD_MULTIARCH=i386-linux-gnu
+    DEB_HOST_ARCH=i386
+    DEB_HOST_ARCH_BITS=32
+    DEB_HOST_ARCH_CPU=i386
+    DEB_HOST_ARCH_ENDIAN=little
+    DEB_HOST_ARCH_OS=linux
+    DEB_HOST_GNU_CPU=i686
+    DEB_HOST_GNU_SYSTEM=linux-gnu
+    DEB_HOST_GNU_TYPE=i686-linux-gnu
+    DEB_HOST_MULTIARCH=i386-linux-gnu

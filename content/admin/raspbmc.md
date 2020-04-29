@@ -27,42 +27,38 @@ Instalación
 La instalación es muy sencilla, ya que existe un _script_ que nos
 simplifica el proceso. Lo descargamos:
 
-```bash
-$ wget http://svn.stmlabs.com/svn/raspbmc/testing/installers/python/install.py
-```
+    $ wget http://svn.stmlabs.com/svn/raspbmc/testing/installers/python/install.py
 
 Introducimos la tarjeta SD y nos aseguramos de que esté desmontada antes
 de lanzar el _script_. Deberemos saber el nombre de dispositivo que
 tiene la tarjeta SD, en este caso `/dev/mmcblk0`:
 
-```bash
-$ sudo python install-raspbmc.py
-Raspbmc installer for Linux and Mac OS X
-http://raspbmc.com
-----------------------------------------
-Please ensure you've inserted your SD card, and press Enter to continue.
+    $ sudo python install-raspbmc.py
+    Raspbmc installer for Linux and Mac OS X
+    http://raspbmc.com
+    ----------------------------------------
+    Please ensure you've inserted your SD card, and press Enter to continue.
 
-Enter the 'Disk' you would like imaged, from the following list:
-
-
-Enter your choice here (e.g. 'mmcblk0' or 'sdd'): mmcblk0
-It is your own responsibility to ensure there is no data loss! Please backup your system before imaging
-Are you sure you want to install Raspbmc to '/dev/mmcblk0'? [y/N] y
-Downloading, please be patient...
-Downloaded 49.52 of 49.52 MiB (100.00%)
-
-Please wait while Raspbmc is installed to your SD card...
-(This may take some time and no progress will be reported until it has finished.)
-0+5852 registros leídos
-0+5852 registros escritos
-198000640 bytes (198 MB) copiados, 21,7791 s, 9,1 MB/s
-Installation complete.
-Finalising SD card, please wait...
+    Enter the 'Disk' you would like imaged, from the following list:
 
 
-Raspbmc is now ready to finish setup on your Pi, please insert the
-SD card with an active internet connection
-```
+    Enter your choice here (e.g. 'mmcblk0' or 'sdd'): mmcblk0
+    It is your own responsibility to ensure there is no data loss! Please backup your system before imaging
+    Are you sure you want to install Raspbmc to '/dev/mmcblk0'? [y/N] y
+    Downloading, please be patient...
+    Downloaded 49.52 of 49.52 MiB (100.00%)
+
+    Please wait while Raspbmc is installed to your SD card...
+    (This may take some time and no progress will be reported until it has finished.)
+    0+5852 registros leídos
+    0+5852 registros escritos
+    198000640 bytes (198 MB) copiados, 21,7791 s, 9,1 MB/s
+    Installation complete.
+    Finalising SD card, please wait...
+
+
+    Raspbmc is now ready to finish setup on your Pi, please insert the
+    SD card with an active internet connection
 
 Tras insertar la tarjeta SD en la Raspberry Pi y reiniciar, continuará
 la instalación y configuración del sistema. En particular, no tendremos
@@ -116,32 +112,24 @@ asistente:
 También podemos hacerlo a mano con `iptables`. Si estamos seguros de que
 no utilizamos ninguna otra regla en la NAT, la podemos limpiar:
 
-```bash
-$ sudo iptables -F -t nat
-```
+    $ sudo iptables -F -t nat
 
 Ahora deberemos crear una regla para indicar la otra interfaz que hará
 de puente, en este caso `wlan1`:
 
-```bash
-$ sudo iptables --table nat --append POSTROUTING --out-interface wlan1 -j MASQUERADE
-```
+    $ sudo iptables --table nat --append POSTROUTING --out-interface wlan1 -j MASQUERADE
 
 Y por último, activamos la redirección IP:
 
-```bash
-$ sudo sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
-```
+    $ sudo sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
 
 Si optamos por el método manual, y queremos que se ejecute cada vez que
 arranca el portátil (algo que puede no ser necesario), añadimos al final
 del fichero `/etc/rc.local`:
 
-```bash
-iptables -F -t nat
-iptables --table nat --append POSTROUTING --out-interface wlan1 -j MASQUERADE
-echo 1 > /proc/sys/net/ipv4/ip_forward
-```
+    iptables -F -t nat
+    iptables --table nat --append POSTROUTING --out-interface wlan1 -j MASQUERADE
+    echo 1 > /proc/sys/net/ipv4/ip_forward
 
 Con esto el portátil ya está configurado, ahora sólo queda configurar la
 Rasperry Pi para que tenga IP estática de la misma red que tenemos en la

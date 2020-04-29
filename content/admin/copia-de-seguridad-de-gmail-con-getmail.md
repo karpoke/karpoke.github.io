@@ -47,9 +47,7 @@ Realizar el backup
 
 Instalamos `getmail`:
 
-```bash
-$ sudo aptitude install getmail4
-```
+    $ sudo aptitude install getmail4
 
 [Activamos POP3 en GMail][]. Vamos a *Configuración del correo >
 Reenvío y POP > Activar POP para todo el correo*.
@@ -60,43 +58,35 @@ Reenvío y POP > Activar POP para todo el correo*.
 
 Creamos el directorio de configuración de `getmail`:
 
-```bash
-$ mkdir ~/.getmail
-```
+    $ mkdir ~/.getmail
 
 Y creamos el fichero `~/.getmail/getmail.gmail`:
 
-```bash
-[retriever]
-type = SimplePOP3SSLRetriever
-server = pop.gmail.com
-username = bob@gmail.com
-password = mypass
+    [retriever]
+    type = SimplePOP3SSLRetriever
+    server = pop.gmail.com
+    username = bob@gmail.com
+    password = mypass
 
-[destination]
-type = Maildir
-path = ~/gmail-archive/
+    [destination]
+    type = Maildir
+    path = ~/gmail-archive/
 
-[options]
-# print messages about each action (verbose = 2)
-# Other options:
-# 0 prints only warnings and errors
-# 1 prints messages about retrieving and deleting messages only
-verbose = 2provocado por un cambio en las lib
-message_log = ~/.getmail/gmail.log
-```
+    [options]
+    # print messages about each action (verbose = 2)
+    # Other options:
+    # 0 prints only warnings and errors
+    # 1 prints messages about retrieving and deleting messages only
+    verbose = 2provocado por un cambio en las lib
+    message_log = ~/.getmail/gmail.log
 
 Creamos los directorios donde se guardará el correo descargado:
 
-```bash
-$ mkdir -p ~/gmail-archive/{cur,new,tmp}
-```
+    $ mkdir -p ~/gmail-archive/{cur,new,tmp}
 
 Ya podemos empezar con la copia `getmail`:
 
-```bash
-$ getmail -r ~/.getmail/getmail.gmail
-```
+    $ getmail -r ~/.getmail/getmail.gmail
 
 El correo se bajará en tandas de pocos cientos, dado que GMail sólo
 permite descargar eso cada vez, por lo que deberemos repetir la
@@ -109,9 +99,7 @@ operación unas cuantas veces.
 Desde hace un tiempo, cuando voy a realizar la descarga de nuevos
 correos, empiezo a recibir errores del tipo:
 
-```bash
     Retrieval error: server for SimplePOP3SSLRetriever:bob@gmail.com@pop.gmail.com:995 is broken; offered message GmailId3af2edcdc36d18d2 but failed to provide it.  Please notify the administrator of the server.  Skipping message...
-```
 
 Al parece, se debe a un [fallo][] que ha sido corregido a partir de la
 versión 4.48.0.

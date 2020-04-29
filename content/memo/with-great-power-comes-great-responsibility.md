@@ -6,14 +6,11 @@ Slug: with-great-power-comes-great-responsibility
 
 Cuando ejecutamos `sudo` por primera vez nos dice:
 
-```bash
-We trust you have received the usual lecture from the local System
-Administrator. It usually boils down to these three things:
-
+    We trust you have received the usual lecture from the local System
+    Administrator. It usually boils down to these three things:
     #1) Respect the privacy of others.
     #2) Think before you type.
     #3) With great power comes great responsibility.
-```
 
 Trust... _my ass_:
 

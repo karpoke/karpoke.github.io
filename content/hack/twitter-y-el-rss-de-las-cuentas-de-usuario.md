@@ -19,11 +19,7 @@ Si ponemos esa URL en un navegador, nos redirecciona a la URL con el
 _shebang_, pero si la descargamos, podemos ver que ahí están definidos
 los enlaces a los RSS de los _tweets_ del usuario y de sus favoritos:
 
-```bash
-$ curl -s http://twitter.com/DragonJAR | grep link.*rss+xml
-
-
-```
+    $ curl -s http://twitter.com/DragonJAR | grep link.*rss+xml
 
   [ocultando la posibilidad de seguir una cuenta a través de RSS]: http://www.genbeta.com/sindicacion/facebook-y-twitter-eliminan-silenciosamente-sus-canales-de-suscripcion-rss#
     "ocultando la posibilidad de seguir una cuenta a través de RSS"

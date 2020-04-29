@@ -16,19 +16,15 @@ además de tener en cuenta otros sistemas de seguridad, como la
 
 Su uso es sencillo:
 
-```bash
-$ sshpass -p password ssh example.com
-```
+    $ sshpass -p password ssh example.com
 
 El hecho de que la contraseña se escriba directamente en el terminal,
 además de que es posible que [quede escrita en el historial][], podría
 hacer que fuese visible al ejecutar otro usuario el comando `ps`. Sin
 embargo, `sshpass` se encarga de sustituir la contraseña por zetas:
 
-```bash
-$ ps a | grep sshpass
-18998 pts/6    S+     0:00 sshpass -p zzzzzzzz ssh example.com
-```
+    $ ps a | grep sshpass
+    18998 pts/6    S+     0:00 sshpass -p zzzzzzzz ssh example.com
 
 Referencias
 -----------

@@ -31,22 +31,18 @@ tarjeta SD o nombres que siguen una pauta concreta.
 
 Un ejemplo del resultado de la [prueba de concepto][1] es el siguiente:
 
-```javascript
-Array
-(
-    [filename0] => L3Byb2MvdmVyc2lvbg==
-    [data0] => TGludXggdmVyc2lvbiAyLjYuMzIuMjEtZzZjNTVlZTQgKGh0Yy1rZXJuZWxAYW5kMTgtMikgKGdjYyB2ZXJzaW9uIDQuNC4wIChHQ0MpICkgIzEgUFJFRU1QVCBUaHUgRGVjIDIgMTY6NTk6MjcgQ1NUIDIwMTAK
-)
-```
+    Array
+    (
+        [filename0] => L3Byb2MvdmVyc2lvbg==
+        [data0] => TGludXggdmVyc2lvbiAyLjYuMzIuMjEtZzZjNTVlZTQgKGh0Yy1rZXJuZWxAYW5kMTgtMikgKGdjYyB2ZXJzaW9uIDQuNC4wIChHQ0MpICkgIzEgUFJFRU1QVCBUaHUgRGVjIDIgMTY6NTk6MjcgQ1NUIDIwMTAK
+    )
 
 El contenido está en base 64. Si lo decodificamos:
 
-```bash
-$ base64 -d <<< "L3Byb2MvdmVyc2lvbg=="
-/proc/version
-$ base64 -d <<< "TGludXggdmVyc2lvbiAyLjYuMzIuMjEtZzZjNTVlZTQgKGh0Yy1rZXJuZWxAYW5kMTgtMikgKGdjYyB2ZXJzaW9uIDQuNC4wIChHQ0MpICkgIzEgUFJFRU1QVCBUaHUgRGVjIDIgMTY6NTk6MjcgQ1NUIDIwMTAK"
-Linux version 2.6.32.21-g6c55ee4 (htc-kernel@and18-2) (gcc version 4.4.0 (GCC) ) #1 PREEMPT Thu Dec 2 16:59:27 CST 2010
-```
+    $ base64 -d <<< "L3Byb2MvdmVyc2lvbg=="
+    /proc/version
+    $ base64 -d <<< "TGludXggdmVyc2lvbiAyLjYuMzIuMjEtZzZjNTVlZTQgKGh0Yy1rZXJuZWxAYW5kMTgtMikgKGdjYyB2ZXJzaW9uIDQuNC4wIChHQ0MpICkgIzEgUFJFRU1QVCBUaHUgRGVjIDIgMTY6NTk6MjcgQ1NUIDIwMTAK"
+    Linux version 2.6.32.21-g6c55ee4 (htc-kernel@and18-2) (gcc version 4.4.0 (GCC) ) #1 PREEMPT Thu Dec 2 16:59:27 CST 2010
 
 Referencias
 -----------

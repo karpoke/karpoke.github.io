@@ -20,9 +20,7 @@ necesidad de utilizar contraseñas, lo primero será que éste esté
 [configurado para aceptar claves][]. En particular, en el fichero
 `/etc/ssh/sshd_config`, debemos tener la directiva:
 
-```bash
-PubkeyAuthentication yes
-```
+    PubkeyAuthentication yes
 
 Si queremos importar una clave para ser utilizada por ConnectBot, lo
 único que tendremos que hacer es guardarla en la raíz de la tarjeta de
@@ -53,9 +51,7 @@ Luego, nos conectamos al servidor normalmente, mediante usuario y
 contraseña, y añadimos la clave mediante el siguiente comando (aquí
 pegamos la clave pública que habíamos copiado):
 
-```bash
-username@remote:~$ echo "ssh-rsa AAAA.....(resto de la clave)" >> .ssh/authorized_keys
-```
+    username@remote:~$ echo "ssh-rsa AAAA.....(resto de la clave)" >> .ssh/authorized_keys
 
 La próxima vez que nos conectemos mediante ConnectBot ya no
 necesitaremos utilizar usuario ni contraseña. Si no hemos seleccionado
@@ -73,9 +69,7 @@ servidor, lo único que tenemos que hacer es borrarla del fichero
 `~/.ssh/authorized_keys`. Una sencilla forma de hacerlo es mediante el
 nombre que hemos utilizado para la clave:
 
-```bash
-username@remote:~$ sed -i '/keyname$/d' ~/.ssh/authorized_keys
-```
+    username@remote:~$ sed -i '/keyname$/d' ~/.ssh/authorized_keys
 
 Referencias
 -----------

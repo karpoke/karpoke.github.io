@@ -24,10 +24,8 @@ Instalamos la librería `libcrypto++9` desde los repositorios y, a
 continuación, [descargamos el paquete][], en este caso para Ubuntu
 Trusty Tahr 14.04 32 bits, y lo instalamos:
 
-```bash
-$ wget https://mega.nz/linux/MEGAsync/xUbuntu_14.04/i386/megasync-xUbuntu_14.04_i386.deb
-$ sudo dpkg -i megasync-xUbuntu_14.04_i386.deb
-```
+    $ wget https://mega.nz/linux/MEGAsync/xUbuntu_14.04/i386/megasync-xUbuntu_14.04_i386.deb
+    $ sudo dpkg -i megasync-xUbuntu_14.04_i386.deb
 
 * * * * *
 
@@ -35,28 +33,21 @@ $ sudo dpkg -i megasync-xUbuntu_14.04_i386.deb
 
 Si al realizar la actualización del sistema nos aparece el error:
 
-```bash
-W: Se produjo un error durante la verificación de las firmas. El repositorio no está actualizado y se utilizarán los ficheros de índice antiguos. El error GPG es: http://mega.nz ./ Release: Las firmas siguientes no se pudieron verificar porque su llave pública no está disponible: NO_PUBKEY AC025B14069B6221
-
-W: Fallo al renombrar http://mega.nz/linux/MEGAsync/xUbuntu_14.10/./Release:
-W: Algunos archivos de índice fallaron al descargar. Se han ignorado, o se han utilizado unos antiguos en su lugar
-```
+    W: Se produjo un error durante la verificación de las firmas. El repositorio no está actualizado y se utilizarán los ficheros de índice antiguos. El error GPG es: http://mega.nz ./ Release: Las firmas siguientes no se pudieron verificar porque su llave pública no está disponible: NO_PUBKEY AC025B14069B6221
+    W: Fallo al renombrar http://mega.nz/linux/MEGAsync/xUbuntu_14.10/./Release:
+    W: Algunos archivos de índice fallaron al descargar. Se han ignorado, o se han utilizado unos antiguos en su lugar
 
 Comprobamos si está disponible la clave:
 
-```bash
-$ gpg --keyserver keyserver.ubuntu.com --recv-keys AC025B14069B6221
-gpg: solicitando clave 069B6221 de hkp servidor keyserver.ubuntu.com
-gpg: clave 069B6221: «MEGAsync OBS Project » sin cambios
-gpg: Cantidad total procesada: 1
-gpg:              sin cambios: 1
-```
+    $ gpg --keyserver keyserver.ubuntu.com --recv-keys AC025B14069B6221
+    gpg: solicitando clave 069B6221 de hkp servidor keyserver.ubuntu.com
+    gpg: clave 069B6221: «MEGAsync OBS Project » sin cambios
+    gpg: Cantidad total procesada: 1
+    gpg:              sin cambios: 1
 
 Y la actualizamos:
 
-```bash
-$ sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com AC025B14069B6221
-```
+    $ sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com AC025B14069B6221
 
 Ahora ya podremos actualizar normalmente.
 
@@ -78,10 +69,8 @@ desde Quantal.
 Lo que haremos esta vez será bajar una de las [compilaciones ya
 preparadas][]:
 
-```bash
-$ wget http://megatools.megous.com/builds/megatools-1.9.94.tar.gz
-$ wget http://megatools.megous.com/builds/megatools-1.9.94.tar.gz.asc
-```
+    $ wget http://megatools.megous.com/builds/megatools-1.9.94.tar.gz
+    $ wget http://megatools.megous.com/builds/megatools-1.9.94.tar.gz.asc
 
 * * * * *
 
@@ -90,37 +79,31 @@ $ wget http://megatools.megous.com/builds/megatools-1.9.94.tar.gz.asc
 Lo había dado por hecho, pero no está demás comentar que es altamente
 recomendable que comprobemos la firma:
 
-```bash
-$ gpg --verify megatools-1.9.94.tar.gz.asc
-gpg: Signature made vie 02 ene 2015 08:43:50 CET using DSA key ID A7BB2AC1
-gpg: Can’t check signature: public key not found
-```
+    $ gpg --verify megatools-1.9.94.tar.gz.asc
+    gpg: Signature made vie 02 ene 2015 08:43:50 CET using DSA key ID A7BB2AC1
+    gpg: Can’t check signature: public key not found
 
 En este caso, aún no la tenemos, así que la buscamos, y tras confirmar
 que corresponde al [creador del paquete][megatools], la instalamos:
 
-```bash
-$ gpg --search-keys A7BB2AC1
-gpg: searching for "A7BB2AC1" from hkp server keys.gnupg.net
-(1) Ondrej Jirman
-      1024 bit DSA key A7BB2AC1, created: 2003-08-24
-Keys 1-1 of 1 for "A7BB2AC1".  Enter number(s), N)ext, or Q)uit > 1
-gpg: requesting key A7BB2AC1 from hkp server keys.gnupg.net
-gpg: key A7BB2AC1: public key "Ondrej Jirman " imported
-gpg: Total number processed: 1
-gpg:               imported: 1
-```
+    $ gpg --search-keys A7BB2AC1
+    gpg: searching for "A7BB2AC1" from hkp server keys.gnupg.net
+    (1) Ondrej Jirman
+          1024 bit DSA key A7BB2AC1, created: 2003-08-24
+    Keys 1-1 of 1 for "A7BB2AC1".  Enter number(s), N)ext, or Q)uit > 1
+    gpg: requesting key A7BB2AC1 from hkp server keys.gnupg.net
+    gpg: key A7BB2AC1: public key "Ondrej Jirman " imported
+    gpg: Total number processed: 1
+    gpg:               imported: 1
 
 Volvemos a comprobar la firma:
 
-```bash
-$ gpg --verify megatools-1.9.94.tar.gz.asc
-gpg: Signature made vie 02 ene 2015 08:43:50 CET using DSA key ID A7BB2AC1
-gpg: Good signature from "Ondrej Jirman "
-gpg: WARNING: This key is not certified with a trusted signature!
-gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: D79E 2F84 317E 26CE 8EFD  A605 BF23 1000 A7BB 2AC1
-```
+    $ gpg --verify megatools-1.9.94.tar.gz.asc
+    gpg: Signature made vie 02 ene 2015 08:43:50 CET using DSA key ID A7BB2AC1
+    gpg: Good signature from "Ondrej Jirman "
+    gpg: WARNING: This key is not certified with a trusted signature!
+    gpg:          There is no indication that the signature belongs to the owner.
+    Primary key fingerprint: D79E 2F84 317E 26CE 8EFD  A605 BF23 1000 A7BB 2AC1
 
 La criticidad del aviso dependerá de la confianza que pongamos en la
 clave pública. Lo ideal sería que hubiéramos recibido la clave
@@ -133,27 +116,21 @@ procedemos confiadamente.
 
 Descomprimimos el paquete:
 
-```bash
-$ tar xzvf megatools-1.9.94.tar.gz
-$ cd megatools-1.9.94
-```
+    $ tar xzvf megatools-1.9.94.tar.gz
+    $ cd megatools-1.9.94
 
 Instalamos las dependencias:
 
-```bash
-$ sudo aptitude install build-essential libglib2.0-dev libssl-dev libgirepository1.0-dev libcurl4-gnutls-dev glib-networking
-```
+    $ sudo aptitude install build-essential libglib2.0-dev libssl-dev libgirepository1.0-dev libcurl4-gnutls-dev glib-networking
 
 He probado `libcurl4-gnutls-dev` en lugar de `libcurl4-openssl-dev` y
 parece que no hay problemas.
 
 Instalamos:
 
-```bash
-$ ./configure
-$ make
-$ sudo make install  # o sudo checkisntall
-```
+    $ ./configure
+    $ make
+    $ sudo make install  # o sudo checkisntall
 
 Uso
 ---
@@ -166,88 +143,68 @@ con el comando `megareg`.
 Si nos aparece un error como el siguiente:
 
 </p>
-```bash
-megareg: error while loading shared libraries: libmega.so.0: cannot open shared object file: No such file or directory
-```
+    megareg: error while loading shared libraries: libmega.so.0: cannot open shared object file: No such file or directory
 
 es que las librerías no están preparadas para utilizarse. Lo resolvemos
 ejecutando:
 
-```bash
-$ sudo ldconfig
-```
+    $ sudo ldconfig
 
 * * * * *
 
 Comandos disponibles:
 
-```bash
-  megareg      Register and verify a new mega account
-  megadf       Show your cloud storage space usage/quota
-  megals       List all remote files
-  megamkdir    Create remote directory
-  megarm       Remove remote file or directory
-  megamv       Move and rename remote files
-  megaput      Upload individual files
-  megaget      Download individual files
-  megadl       Download file from a "public" Mega link
-               (doesn't require login)
-  megastream   Streaming download of a file
-               (can be used to preview videos or music)
-  megasync     Upload or download a directory tree
-  megafs       Mount remote filesystem locally.
-```
+      megareg      Register and verify a new mega account
+      megadf       Show your cloud storage space usage/quota
+      megals       List all remote files
+      megamkdir    Create remote directory
+      megarm       Remove remote file or directory
+      megamv       Move and rename remote files
+      megaput      Upload individual files
+      megaget      Download individual files
+      megadl       Download file from a "public" Mega link
+                   (doesn't require login)
+      megastream   Streaming download of a file
+                   (can be used to preview videos or music)
+      megasync     Upload or download a directory tree
+      megafs       Mount remote filesystem locally.
 
 Por ejemplo, para comprobar el espacio disponible:
 
-```bash
-$ megadf -u john@example.com -p password
-Total: 53687091200
-Used:  0
-Free:  53687091200
-```
+    $ megadf -u john@example.com -p password
+    Total: 53687091200
+    Used:  0
+    Free:  53687091200
 
 Para no tener que escribir el usuario y la contraseña en la terminal,
 podemos crear el siguiente archivo de configuración (ver `man megarc`):
 
-```bash
-$ cat ~/.megarc
-[Login]
-Username = john@example.com
-Password = password
-```
+    $ cat ~/.megarc
+    [Login]
+    Username = john@example.com
+    Password = password
 
 Creamos un directorio remoto:
 
-```bash
-$ megamkdir /Root/test  # el prefijo /Root es necesario. ver `man megatools`
-```
+    $ megamkdir /Root/test  # el prefijo /Root es necesario. ver `man megatools`
 
 Subir un archivo:
 
-```bash
-$ megaput file.txt   # se sube a /Root
-$ megaput --path /Root/test file.txt
-```
+    $ megaput file.txt   # se sube a /Root
+    $ megaput --path /Root/test file.txt
 
 Subir varios archivos en [paralelo][]:
 
-```bash
-$ ls file*.txt | xargs -n1 -P4 megaput
-```
+    $ ls file*.txt | xargs -n1 -P4 megaput
 
 Para sincronizar el directorio `/home/user/mega` con el directorio que
 acabamos de crear, podemos subir el directorio:
 
-```bash
-$ megasync -l /home/user/mega -r /Root/test
-```
+    $ megasync -l /home/user/mega -r /Root/test
 
 O descargarlo:
 
-```bash
-$ megasync -l /home/user/mega -r /Root/test --download
-```
+    $ megasync -l /home/user/mega -r /Root/test --download
 
 Si habíamos eliminado algún fichero y no se descarga, podemos limpiar la
 caché utilizando el argumento `--reload`.
@@ -257,9 +214,7 @@ eliminado a través de otro canal, por ejemplo accediendo a través del
 navegador, no se borrarán en nuestro servidor local. Para remediarlo,
 podemos consultar los ficheros que no están en el servidor y borrarlos:
 
-```bash
-$ megasync --reload -n -l /home/user/mega -r /Root/test 2>/dev/null | sed 's|F /Root/test|/home/user/mega|' | xargs -0 rm
-```
+    $ megasync --reload -n -l /home/user/mega -r /Root/test 2>/dev/null | sed 's|F /Root/test|/home/user/mega|' | xargs -0 rm
 
 Cifrado del directorio
 ----------------------

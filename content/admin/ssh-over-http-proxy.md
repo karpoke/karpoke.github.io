@@ -38,21 +38,15 @@ maligno que nos obligan a usar,
 mediante `corkscrew` -está en los repositorios-. Editamos el fichero
 `~/.ssh/config`, y añadimos:
 
-```bash
-ProxyCommand /usr/local/bin/corkscrew proxy.evil.com 80 %h %p
-```
+    ProxyCommand /usr/local/bin/corkscrew proxy.evil.com 80 %h %p
 
 En lugar de `corkscrew`, podríamos utilizar `proxytunnel`:
 
-```bash
-ProxyCommand proxytunnel -v -p proxy.evil.com:80 -r remotehost:443 -d %h:%p -H "User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)\n"
-```
+    ProxyCommand proxytunnel -v -p proxy.evil.com:80 -r remotehost:443 -d %h:%p -H "User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)\n"
 
 Ahora ya podemos crear el _proxy_ SOCKS desde nuestra máquina local:
 
-```bash
-$ ssh -f -N -D 1080 user@remotehost
-```
+    $ ssh -f -N -D 1080 user@remotehost
 
 Si no estamos obligados a utilizar un _proxy_, no hace falta que
 editemos el fichero `~/.ssh/config`, y el _proxy_ SOCKS se crea
@@ -62,10 +56,8 @@ Sólo queda configurar alguna aplicación, por ejemplo Firefox. Vamos al
 `Menú Editar > Preferencias > Avanzado > Red > Configuración de la conexión > Configuración manual del proxy`
 y ponemos:
 
-```bash
-Servidor SOCKS: localhost
-Puerto:         1080
-```
+    Servidor SOCKS: localhost
+    Puerto:         1080
 
 Y listos.
 
@@ -77,9 +69,7 @@ máquina remota, vamos a configurar Apache para que haga de _proxy_ HTTP.
 
 Activamos el módulo:
 
-```bash
-$ sudo a2enmod proxy_http
-```
+    $ sudo a2enmod proxy_http
 
 Podemos realizar la configuración a nivel de módulo o de VirtualHost.
 Tener un _proxy_ HTTP que redirija peticiones, mediante la directiva
@@ -94,16 +84,13 @@ Limitaremos el acceso para sólo permitirlo desde la propia máquina o
 desde una conexión SSH. Editamos el fichero
 `/etc/apache2/mods-enabled/proxy.conf`:
 
-```bash
-Listen 889
-ProxyRequests On
-AllowCONNECT 22
-ProxyVia On
-
-Order deny,allow
-Deny from all
-Allow from 127.0.0.1
-```
+    Listen 889
+    ProxyRequests On
+    AllowCONNECT 22
+    ProxyVia On
+    Order deny,allow
+    Deny from all
+    Allow from 127.0.0.1
 
 Por un lado, el _proxy_ no está escucha en el puerto por defecto, el
 8080, sino que lo hace en el 889. Además, este puerto no está abierto ni
@@ -121,38 +108,28 @@ Ahora ya podemos crear el túnel desde nuestra máquina; redirigiremos el
 puerto remoto 889 a nuestro puerto local 8080, realizando la conexión
 por SSH en el puerto remoto 443:
 
-```bash
-$ ssh -L 8080:localhost:889 user@server.at.home -p 443
-```
+    $ ssh -L 8080:localhost:889 user@server.at.home -p 443
 
 Igual que en el caso anterior, si tenemos que utilizar de forma
 obligatoria el _proxy_ maligno, editamos el fichero `~/.ssh/config`:
 
-```bash
-ProxyCommand /usr/local/bin/corkscrew proxy.evil.com 80 %h %p
-```
+    ProxyCommand /usr/local/bin/corkscrew proxy.evil.com 80 %h %p
 
 Para configurar Firefox, vamos al
 Menú Editar > Preferencias > Avanzado > Red > Configuración de la conexión > Configuración manual del _proxy_
 y ponemos:
 
-```bash
-HTTP Proxy: localhost (Usar este servidor proxy para todos los protocolos)
-Puerto:     8080
-```
+    HTTP Proxy: localhost (Usar este servidor proxy para todos los protocolos)
+    Puerto:     8080
 
 Si queremos configurar que se use el _proxy_ desde el terminal, en
 aquellos programas que utilizan la variable de entorno `HTTP_PROXY`:
 
-```bash
-$ export HTTP_PROXY='http://localhost:8080/'
-```
+    $ export HTTP_PROXY='http://localhost:8080/'
 
 Y para quitarlo:
 
-```bash
-$ export HTTP_PROXY=''
-```
+    $ export HTTP_PROXY=''
 
 Tanto desde Firefox como desde el terminal, podríamos haber puesto la
 IP, o el nombre, de un equipo remoto que tenga abierto un _proxy_ HTTP.
@@ -171,18 +148,14 @@ nuestra máquina remota, ejecutamos el servidor, redirigiendo el puerto
 80 al 22. En este caso, si ya teníamos instalado Varnish, deberemos
 utilizar otro puerto, y abrirlo en el firewall.
 
-```bash
-$ hts -F localhost:22 80
-```
+    $ hts -F localhost:22 80
 
 En nuestra máquina local ejecutaremos el cliente, que redirige el puerto
 local 8080 al puerto remoto 80, que a su vez es redirigido al puerto 22
 remoto, utilizando el _proxy_ maligno obligatorio de la red a la que nos
 conectamos:
 
-```bash
-$ htc -P proxy.evil.com:80 -F 8080 remotehost:80
-```
+    $ htc -P proxy.evil.com:80 -F 8080 remotehost:80
 
 Referencias
 -----------

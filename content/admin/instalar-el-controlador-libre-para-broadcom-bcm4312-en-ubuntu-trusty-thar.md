@@ -11,13 +11,11 @@ controlador libre es sencillo. Antes que nada, necesitamos saber qué
 chipset tiene, el identificador y qué módulo carga el kernel (si es que
 tenemos algún controlador en uso):
 
-```bash
-$ lspci -vvnn | grep -A 9 Network
-04:00.0 Network controller [0280]: Broadcom Corporation BCM4312 802.11b/g LP-PHY [14e4:4315] (rev 01)
-        Subsystem: Dell Wireless 1397 WLAN Mini-Card [1028:000c]
-        Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
-        Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- SERR-
-```
+    $ lspci -vvnn | grep -A 9 Network
+    04:00.0 Network controller [0280]: Broadcom Corporation BCM4312 802.11b/g LP-PHY [14e4:4315] (rev 01)
+    Subsystem: Dell Wireless 1397 WLAN Mini-Card [1028:000c]
+    Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+    Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- SERR-
 
 -   **Chipset:** BCM4312
 -   **PCI ID:** 14e4:4315
@@ -28,9 +26,7 @@ Instalamos el paquete necesario (si no tenemos conexión, deberemos
 conectarnos por cable o bien descargarlo desde otro equipo; más
 información en el enlace al final):
 
-```bash
-$ sudo aptitude install firmware-b43-installer
-```
+    $ sudo aptitude install firmware-b43-installer
 
 Al cabo de unos segundos, ya deberíamos poder usar la red inalámbrica.
 
@@ -39,9 +35,7 @@ Al cabo de unos segundos, ya deberíamos poder usar la red inalámbrica.
 Si nos encontramos con que no tenermina de conectar y en los logs
 aparece algo como:
 
-```bash
-[  123.456789] wlan0: deauthenticating from 00:00:00:11:22:33 by local choice (reason=3)
-```
+    [  123.456789] wlan0: deauthenticating from 00:00:00:11:22:33 by local choice (reason=3)
 
 podría ser debido a que el controlador que estábamos usando [no se ha
 descargado correctamente][]. En principio, tras reiniciar ya no

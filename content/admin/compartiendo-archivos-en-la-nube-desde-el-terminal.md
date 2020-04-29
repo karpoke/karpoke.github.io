@@ -11,35 +11,23 @@ eliminados.
 
 Por ejemplo, para compartir el archivo `/tmp/test`:
 
-```bash
-$ curl -F "file=@/tmp/test" http://curl.io/send/nzdqxcmf
-
-
-File successfully received.
-
-You can download test from this url:
-
-http://curl.io/get/nzdqxcmf/90571b24cf847434a171d41cb2043d6a561cb85b
-```
+    $ curl -F "file=@/tmp/test" http://curl.io/send/nzdqxcmf
+    File successfully received.
+    You can download test from this url:
+    http://curl.io/get/nzdqxcmf/90571b24cf847434a171d41cb2043d6a561cb85b
 
 Para recuperarlo:
 
-```bash
-$ curl -o test http://curl.io/get/nzdqxcmf/90571b24cf847434a171d41cb2043d6a561cb85b
-```
+    $ curl -o test http://curl.io/get/nzdqxcmf/90571b24cf847434a171d41cb2043d6a561cb85b
 
 Tal como nos sugieren en su web, también podemos enviarlo cifrado con
 `gpg`:
 
-```bash
-$ gpg -c "/tmp/test" && curl -F "file=@/tmp/test.gpg" http://curl.io/send/nzdqxcmf
-```
+    $ gpg -c "/tmp/test" && curl -F "file=@/tmp/test.gpg" http://curl.io/send/nzdqxcmf
 
 Para recuperarlo y descifrarlo:
 
-```bash
-curl http://curl.io/get/nzdqxcmf/90571b24cf847434a171d41cb2043d6a561cb85b | gpg -o test
-```
+    curl http://curl.io/get/nzdqxcmf/90571b24cf847434a171d41cb2043d6a561cb85b | gpg -o test
 
 Absolutamente todo desde el terminal
 ------------------------------------
@@ -54,29 +42,25 @@ cualquier cosa, aunque sí parece que se pueden reutilizar URLs válidas).
 Afortunadamente, podemos utilizar [phantomjs][]. Mediante el siguiente
 _script_, `curlio.js`, podremos obtener una URL de envío válida:
 
-```javascript
-var page  = require('webpage').create(),
-  address = "http://curl.io";
+    var page  = require('webpage').create(),
+      address = "http://curl.io";
 
-page.open(address, function(status) {
-  if (status !== 'success') {
-    console.log('Error loading address');
-  } else {
-    var url = page.evaluate(function() {
-      return document.getElementsByClassName('command')[0].innerHTML.replace(/^.*/, "");
+    page.open(address, function(status) {
+      if (status !== 'success') {
+        console.log('Error loading address');
+      } else {
+        var url = page.evaluate(function() {
+          return document.getElementsByClassName('command')[0].innerHTML.replace(/^.*/, "");
+        });
+        console.log(url);
+      }
+      phantom.exit();
     });
-    console.log(url);
-  }
-  phantom.exit();
-});
-```
 
 Un ejemplo de uso:
 
-```bash
-$ phantomjs curlio.js
-http://curl.io/send/fgmnwl2e
-```
+    $ phantomjs curlio.js
+    http://curl.io/send/fgmnwl2e
 
   [curl.io]: http://curl.io/
     "curl.io"

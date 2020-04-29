@@ -20,100 +20,94 @@ principio, no es posible apagarlo, sólo reiniciarlo.
 El siguiente _script_, `router.sh`, permite ejecutar un comando en el
 _router_ utilizando `expect`:
 
-```bash
-#!/usr/bin/expect -f
-set timeout 20
-set username "admin"
-set password "admin"
-set ip "192.168.1.1"
+    #!/usr/bin/expect -f
+    set timeout 20
+    set username "admin"
+    set password "admin"
+    set ip "192.168.1.1"
 
-# Read command as arg to this script
-set cmd [lindex $argv 0]
+    # Read command as arg to this script
+    set cmd [lindex $argv 0]
 
-spawn telnet $ip
+    spawn telnet $ip
 
-expect "Login:"
-send -- "$username\r"
-expect "Password:"
-send -- "$password\r"
+    expect "Login:"
+    send -- "$username\r"
+    expect "Password:"
+    send -- "$password\r"
 
-expect " > "
-send -- "$cmd\r"
+    expect " > "
+    send -- "$cmd\r"
 
-expect " > "
-send -- "^D"
-```
+    expect " > "
+    send -- "^D"
 
 Para reiniciarlo, ejecutamos:
 
-```bash
-$ router.sh reboot
-```
+    $ router.sh reboot
 
 Para obtener un listado de comandos disponibles, en este caso en un
 Comtrend:
 
-```bash
-$ router.sh help
-spawn telnet 192.168.1.1
-Trying 192.168.1.1...
-Connected to 192.168.1.1.
-Escape character is '^]'.
-BCM96328 Broadband Router
-Login: admin
-Password:
- > help
-?
-help
-logout
-exit
-quit
-reboot
-adsl
-xdslctl
-xtm
-brctl
-cat
-loglevel
-logdest
-virtualserver
-ddns
-df
-dumpcfg
-dumpmdm
-meminfo
-psp
-kill
-dnsproxy
-syslog
-echo
-ifconfig
-ping
-ps
-pwd
-sntp
-sysinfo
-tftp
-wlctl
-arp
-defaultgateway
-dhcpserver
-dns
-lan
-lanhosts
-passwd
-ppp
-restoredefault
-route
-save
-swversion
-cfgupdate
-swupdate
-exitOnIdle
-wan
-build
-version
-```
+    $ router.sh help
+    spawn telnet 192.168.1.1
+    Trying 192.168.1.1...
+    Connected to 192.168.1.1.
+    Escape character is '^]'.
+    BCM96328 Broadband Router
+    Login: admin
+    Password:
+     > help
+    ?
+    help
+    logout
+    exit
+    quit
+    reboot
+    adsl
+    xdslctl
+    xtm
+    brctl
+    cat
+    loglevel
+    logdest
+    virtualserver
+    ddns
+    df
+    dumpcfg
+    dumpmdm
+    meminfo
+    psp
+    kill
+    dnsproxy
+    syslog
+    echo
+    ifconfig
+    ping
+    ps
+    pwd
+    sntp
+    sysinfo
+    tftp
+    wlctl
+    arp
+    defaultgateway
+    dhcpserver
+    dns
+    lan
+    lanhosts
+    passwd
+    ppp
+    restoredefault
+    route
+    save
+    swversion
+    cfgupdate
+    swupdate
+    exitOnIdle
+    wan
+    build
+    version
 
 Mejorando el _script_
 ---------------------
@@ -133,20 +127,18 @@ de aceptar y cancelar. La IP del _router_ se obtiene de la salida del
 comando `route`. Una vez que se haya reiniciado el _router_, nos
 aparecerá una ventana mostrándonos la nueva IP.
 
-```bash
-action=$(yad
-   --title "Router Reboot"
-   --image=gnome-shutdown
-   --form
-   --field=Username
-   --field=Password:H
-   --field=Gateway
-   --separator=" "
-   --button="gtk-ok:0"
-   --button="gtk-cancel:1"
-$username $password $gateway)
-ret=$?
-```
+    action=$(yad
+       --title "Router Reboot"
+       --image=gnome-shutdown
+       --form
+       --field=Username
+       --field=Password:H
+       --field=Gateway
+       --separator=" "
+       --button="gtk-ok:0"
+       --button="gtk-cancel:1"
+    $username $password $gateway)
+    ret=$?
 
 ![Router reboot]({static}/images/router-reboot-300x179.png)
 
@@ -155,12 +147,10 @@ variables `$username`, `$password` y `$gateway` separados por un
 espacio, y `$ret` contendrá el valor del botón pulsado, 0 para aceptar y
 1 para cancelar.
 
-```bash
-$ echo $action
-admin admin 192.168.1.1
-$ echo $ret
-0
-```
+    $ echo $action
+    admin admin 192.168.1.1
+    $ echo $ret
+    0
 
 Enlace al _script_ `router-reboot`.
 
@@ -175,30 +165,28 @@ cambio es mucho más rápido que esperar a que reinicie.
 He encontrado el siguiente _script_ en un [foro de Banda Ancha][] para
 llevar a cabo la renovación de la IP:
 
-```bash
-#!/bin/sh
+    #!/bin/sh
 
-# vr3025u
-IFACE=ppp1.1
+    # vr3025u
+    IFACE=ppp1.1
 
-# vr3025un
-#IFACE=ppp1
+    # vr3025un
+    #IFACE=ppp1
 
-USER=admin
-PASS=admin
-IP=192.168.1.1
+    USER=admin
+    PASS=admin
+    IP=192.168.1.1
 
-( sleep 3
-  echo $USER
-  sleep 1
-  echo $PASS
-  sleep 1
-  echo ppp config $IFACE down
-  sleep 5
-  echo ppp config $IFACE up
-  sleep 1
-  echo exit ) | telnet $IP
-```
+    ( sleep 3
+      echo $USER
+      sleep 1
+      echo $PASS
+      sleep 1
+      echo ppp config $IFACE down
+      sleep 5
+      echo ppp config $IFACE up
+      sleep 1
+      echo exit ) | telnet $IP
 
 * * * * *
 

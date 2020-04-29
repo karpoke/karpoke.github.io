@@ -14,18 +14,14 @@ Instalación
 
 Instalamos las dependencias:
 
-```bash
-$ sudo aptitude install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions
-```
+    $ sudo aptitude install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions
 
 Descargamos el paquete para Ubuntu y lo instalamos:
 
-```bash
-$ wget http://downloads.sourceforge.net/webadmin/webmin_1.580_all.deb
-$ md5sum webmin_1.580_all.deb
-093c720a988125a536fa9fda16080fe6
-$ sudo dpkg -i webmin_1.580_all.deb
-```
+    $ wget http://downloads.sourceforge.net/webadmin/webmin_1.580_all.deb
+    $ md5sum webmin_1.580_all.deb
+    093c720a988125a536fa9fda16080fe6
+    $ sudo dpkg -i webmin_1.580_all.deb
 
 Para usar Webmin, accedemos al servidor en el puerto 10000. El usuario y
 la contraseña son los mismos que utilizamos para iniciar sesión en el
@@ -35,9 +31,7 @@ Si fuese el caso, activamos la regla en el cortafuegos. Por ejemplo, si
 usamos `ufw` y queremos permitir el acceso únicamente desde la misma
 red:
 
-```bash
-$ sudo ufw allow proto tcp from 192.168.50.0/24 to any port 10000
-```
+    $ sudo ufw allow proto tcp from 192.168.50.0/24 to any port 10000
 
   [Webmin]: http://www.webmin.com/
     "Webmin"

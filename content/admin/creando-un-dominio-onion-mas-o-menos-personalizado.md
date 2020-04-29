@@ -18,21 +18,17 @@ requisitos es [Shallot][].
 Descarga y compilación
 ----------------------
 
-```bash
-$ git clone https://github.com/katmagic/Shallot.git
-$ cd Shallot
-$ ./configure
-$ make
-```
+    $ git clone https://github.com/katmagic/Shallot.git
+    $ cd Shallot
+    $ ./configure
+    $ make
 
 Uso
 ---
 
 Su uso es sencillo:
 
-```bash
-$ ./shallot ^test
-```
+    $ ./shallot ^test
 
 Rendimiento
 -----------

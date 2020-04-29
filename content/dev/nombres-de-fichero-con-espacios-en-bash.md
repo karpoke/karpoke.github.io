@@ -7,26 +7,20 @@ Slug: nombres-de-fichero-con-espacios-en-bash
 Si queremos recorrer un directorio y hacer algo con cada fichero o
 subdirectorio contenido en él, podemos ejecutar algo como:
 
-```bash
-$ for f in *; do
-     echo "$f";
-  done
-```
+    $ for f in *; do
+    echo "$f";
+    done
 
 En lugar de utilizar un `for`, también podríamos usar el comando `find`
 con el parámetro `exec`:
 
-```bash
-$ find . -maxdepth 1 \( -name '*' ! -name '.' \) -exec echo {} \;
-```
+    $ find . -maxdepth 1 \( -name '*' ! -name '.' \) -exec echo {} \;
 
 O en lugar del `exec` con un `while`:
 
-```bash
-$ find . -maxdepth 1 \( -name '*' ! -name '.' \) | while read f; do
-     echo "$f";
-  done
-```
+    $ find . -maxdepth 1 \( -name '*' ! -name '.' \) | while read f; do
+    echo "$f";
+    done
 
 Un par de cosas:
 
@@ -41,8 +35,6 @@ Un par de cosas:
 También podríamos usar el comando `ls` con el argumento `-b`, que escapa
 los espacios:
 
-```bash
-$ ls -b * | while read f; do
-     echo "$f";
-  done
-```
+    $ ls -b * | while read f; do
+    echo "$f";
+    done

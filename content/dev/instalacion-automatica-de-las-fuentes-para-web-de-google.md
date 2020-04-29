@@ -23,38 +23,34 @@ este directorio para borrarlas.
 
 Para descargar el _script_ e instalar las fuentes, ejecutamos:
 
-```bash
-$ wget http://webupd8.googlecode.com/files/install-google-fonts
-$ chmod +x install-google-fonts
-$ ./install-google-fonts
-```
+    $ wget http://webupd8.googlecode.com/files/install-google-fonts
+    $ chmod +x install-google-fonts
+    $ ./install-google-fonts
 
 Éste es el contenido del _script_:
 
-```bash
-# Original author: Michalis Georgiou
-# Modified by Andrew http://www.webupd8.org
+    # Original author: Michalis Georgiou
+    # Modified by Andrew http://www.webupd8.org
 
-sudo apt-get install mercurial
+    sudo apt-get install mercurial
 
-_hgroot="https://googlefontdirectory.googlecode.com/hg/"
-_hgrepo="googlefontdirectory"
+    _hgroot="https://googlefontdirectory.googlecode.com/hg/"
+    _hgrepo="googlefontdirectory"
 
-echo "Connecting to Mercurial server...."
-if [ -d $_hgrepo ] ; then
-    cd $_hgrepo
-    hg pull -u || return 1
-    echo "The local files have been updated."
-    cd ..
-else
-    hg clone $_hgroot $_hgrepo || return 1
-fi
-echo "Mercurial checkout done or server timeout"
-sudo mkdir -p /usr/share/fonts/truetype/google-fonts/
-find $PWD/$_hgrepo/ -name "*.ttf" -exec sudo install -m644 {} /usr/share/fonts/truetype/google-fonts/ \; || return 1
-fc-cache -f > /dev/null
-echo "done."
-```
+    echo "Connecting to Mercurial server...."
+    if [ -d $_hgrepo ] ; then
+        cd $_hgrepo
+        hg pull -u || return 1
+        echo "The local files have been updated."
+        cd ..
+    else
+        hg clone $_hgroot $_hgrepo || return 1
+    fi
+    echo "Mercurial checkout done or server timeout"
+    sudo mkdir -p /usr/share/fonts/truetype/google-fonts/
+    find $PWD/$_hgrepo/ -name "*.ttf" -exec sudo install -m644 {} /usr/share/fonts/truetype/google-fonts/ \; || return 1
+    fc-cache -f > /dev/null
+    echo "done."
 
 El _script_ también crea el directorio `googlefontdirectory` en el
 directorio desde el cual lo hayamos lanzado. Ahí se encuentra el

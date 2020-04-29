@@ -28,23 +28,17 @@ es libre, deberemos habilitar los repositorios `non-free` editando el
 fichero `/etc/apt/sources.list`:
 
 
-```bash
-deb http://ftp.debian.org/debian stable main non-free
-deb http://ftp.debian.org/debian/ squeeze-updates main non-free
-deb http://security.debian.org/ squeeze/updates main non-free
-```
+    deb http://ftp.debian.org/debian stable main non-free
+    deb http://ftp.debian.org/debian/ squeeze-updates main non-free
+    deb http://security.debian.org/ squeeze/updates main non-free
 
 Actualizamos los repositorios:
 
-```bash
-$ sudo aptitude update
-```
+    $ sudo aptitude update
 
 Instalamos el controlador `zd1211-firmware`:
 
-```bash
-$ sudo aptitude install zd1211-firmware
-```
+    $ sudo aptitude install zd1211-firmware
 
 Los siguientes paquetes puede que no sean estrictamente necesarios, pero
 si queremos ejecutar comandos como `lsusb`, `iwconfig`, `iwlist`,
@@ -52,38 +46,34 @@ si queremos ejecutar comandos como `lsusb`, `iwconfig`, `iwlist`,
 lo he instalado porque he estado probando la conexión antes de hacerlo a
 través de Network Manager. Para instalarlos:
 
-```bash
-$ sudo aptitude install usbutils wireless-tools wpasupplicant
-```
+    $ sudo aptitude install usbutils wireless-tools wpasupplicant
 
 Vamos al directorio `/etc/NetworkManager/system-connections`, o lo
 creamos si no existía, y creamos el fichero `wlan0`:
 
-```bash
-[connection]
-id=wlan0
-uuid=11111111-1111-1111-1111-111111111111
-type=802-11-wireless
-autoconnect=true
-timestamp=0
+    [connection]
+    id=wlan0
+    uuid=11111111-1111-1111-1111-111111111111
+    type=802-11-wireless
+    autoconnect=true
+    timestamp=0
 
-[802-11-wireless]
-ssid=77;89;83;83;73;68;
-mode=infrastructure
-security=802-11-wireless-security
+    [802-11-wireless]
+    ssid=77;89;83;83;73;68;
+    mode=infrastructure
+    security=802-11-wireless-security
 
-[802-11-wireless-security]
-key-mgmt=wpa-psk
-psk=very long long password
+    [802-11-wireless-security]
+    key-mgmt=wpa-psk
+    psk=very long long password
 
-[ipv4]
-method=manual
-dns=208.67.222.222;208.67.220.220;
-addresses1=192.168.50.2;24;192.168.50.1;
+    [ipv4]
+    method=manual
+    dns=208.67.222.222;208.67.220.220;
+    addresses1=192.168.50.2;24;192.168.50.1;
 
-[ipv6]
-method=ignore
-```
+    [ipv6]
+    method=ignore
 
 El fichero es bastante explicativo. De esta manera se configura una
 conexión con cifrado WPA2 e IP fija. A destacar:
@@ -106,49 +96,39 @@ conexión con cifrado WPA2 e IP fija. A destacar:
 Si en lugar de IP fija queremos usar DHCP, sustituimos la sección
 `[ipv4]` por:
 
-```bash
-[ipv4]
-method=auto
-dhcp-client-id=xbmc
-dhcp-hostname=xbmc
-```
+    [ipv4]
+    method=auto
+    dhcp-client-id=xbmc
+    dhcp-hostname=xbmc
 
 Una vez que hemos terminado de editar el fichero, le cambiamos los
 permisos:
 
-```bash
-$ sudo chmod 600 /etc/NetworkManager/system-connections/wlan0
-```
+    $ sudo chmod 600 /etc/NetworkManager/system-connections/wlan0
 
 Esto es importante, porque si el fichero no tiene las restricciones de
 usuario y permisos, Network Manager lo ignorará.
 
 Mediante el siguiente comando levantamos la conexión:
 
-```bash
-$ nmcli con up id wlan0
-```
+    $ nmcli con up id wlan0
 
 Eso, o reiniciamos la Raspberry Pi.
 
 Como curiosidad, podemos [consultar el UUID][] de las conexiones activas
 ejecutando:
 
-```bash
-$ nmcli con status
-NAME                      UUID                                   DEVICES    SCOPE    DEFAULT  VPN
-wlan0                     11111111-1111-1111-1111-111111111111   wlan0      system   yes      no
-```
+    $ nmcli con status
+    NAME                      UUID                                   DEVICES    SCOPE    DEFAULT  VPN
+    wlan0                     11111111-1111-1111-1111-111111111111   wlan0      system   yes      no
 
 O listar todas las conexiones con:
 
-```bash
-$ nmcli con list
-NAME                      UUID                                   TYPE              SCOPE    TIMESTAMP-REAL
-wlan0                     11111111-1111-1111-1111-111111111111   802-11-wireless   system   Tue Jul  2 21:08:07 2012
-Auto eth0                 9ab5123b-s912-5215-cad2-b98fe521592d   802-3-ethernet    system   Mon Jul  2 20:48:03 2012
-NAME                      UUID                                   TYPE              SCOPE    TIMESTAMP-REAL
-```
+    $ nmcli con list
+    NAME                      UUID                                   TYPE              SCOPE    TIMESTAMP-REAL
+    wlan0                     11111111-1111-1111-1111-111111111111   802-11-wireless   system   Tue Jul  2 21:08:07 2012
+    Auto eth0                 9ab5123b-s912-5215-cad2-b98fe521592d   802-3-ethernet    system   Mon Jul  2 20:48:03 2012
+    NAME                      UUID                                   TYPE              SCOPE    TIMESTAMP-REAL
 
 Referencias
 -----------

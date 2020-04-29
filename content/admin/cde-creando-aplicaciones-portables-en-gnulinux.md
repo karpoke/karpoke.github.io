@@ -15,11 +15,9 @@ Instalación
 
 Si queremos instalar la última versión en desarrollo:
 
-```bash
-$ git clone git://github.com/pgbovine/CDE.git
-$ cd CDE
-$ make
-```
+    $ git clone git://github.com/pgbovine/CDE.git
+    $ cd CDE
+    $ make
 
 Una vez que termine de compilar, tendremos el programa ejecutable,
 `cde`.
@@ -31,9 +29,7 @@ Si queremos crear un versión portable, sólo tenemos que llamar al
 ejecutable que hemos creado pasándole como parámetro el nombre del
 programa. Por ejemplo, para crear una versión portable de `gimp`:
 
-```bash
-$ ~/CDE/cde gimp
-```
+    $ ~/CDE/cde gimp
 
 Esto creará el directorio `cde-package`, que será el que podamos copiar
 a otro equipo, y que contiene la versión portable de `gimp`: `gimp.cde`.
@@ -41,13 +37,11 @@ a otro equipo, y que contiene la versión portable de `gimp`: `gimp.cde`.
 Podemos crear un repositorio con las aplicaciones que prefiramos,
 simplemente ejecutando `cde` desde el mismo directorio.
 
-```bash
-$ mkdir portable
-$ cd portable
-$ ~/CDE/cde gimp
-$ ~/CDE/cde lowriter
-$ ~/CDE/cde firefox
-```
+    $ mkdir portable
+    $ cd portable
+    $ ~/CDE/cde gimp
+    $ ~/CDE/cde lowriter
+    $ ~/CDE/cde firefox
 
 Referencias
 -----------

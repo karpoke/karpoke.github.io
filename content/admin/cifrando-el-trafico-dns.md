@@ -18,85 +18,67 @@ Instalación
 Para instalarlo, basta que nos decarguemos el paquete con el código
 fuente:
 
-```bash
-$ wget http://download.dnscrypt.org/dnscrypt-proxy/dnscrypt-proxy-1.2.0.tar.bz2
-$ wget http://download.dnscrypt.org/dnscrypt-proxy/dnscrypt-proxy-1.2.0.tar.bz2.sig
-```
+    $ wget http://download.dnscrypt.org/dnscrypt-proxy/dnscrypt-proxy-1.2.0.tar.bz2
+    $ wget http://download.dnscrypt.org/dnscrypt-proxy/dnscrypt-proxy-1.2.0.tar.bz2.sig
 
 Comprobamos el paquete:
 
-```bash
-$ gpg --verify dnscrypt-proxy-1.2.0.tar.bz2.sig dnscrypt-proxy-1.2.0.tar.bz2
-gpg: Firmado el vie 12 oct 2012 01:28:27 CEST usando clave DSA ID 1CDEA439
-gpg: Imposible comprobar la firma: Clave pública no encontrada
-```
+    $ gpg --verify dnscrypt-proxy-1.2.0.tar.bz2.sig dnscrypt-proxy-1.2.0.tar.bz2
+    gpg: Firmado el vie 12 oct 2012 01:28:27 CEST usando clave DSA ID 1CDEA439
+    gpg: Imposible comprobar la firma: Clave pública no encontrada
 
 Para poder comprobar la firma, buscamos la clave y la añadimos:
 
-```bash
-$ gpg --search-keys 1CDEA439
-gpg: buscando ;`1CDEA439;' de hkp servidor keys.gnupg.net
-(1) Jedi/Sector One
-    Frank DENIS (Jedi/Sector One)
-    Frank DENIS (Jedi/Sector One) <0daydigestATpureftpd.org>
-      1024 bit DSA key 1CDEA439, creado: 2002-03-10
-Keys 1-1 of 1 for "1CDEA439".  Introduzca número(s), O)tro, o F)in > 1
-gpg: solicitando clave 1CDEA439 de hkp servidor keys.gnupg.net
-gpg: clave 1CDEA439: clave pública "Jedi/Sector One " importada
-```
+    $ gpg --search-keys 1CDEA439
+    gpg: buscando ;`1CDEA439;' de hkp servidor keys.gnupg.net
+    (1) Jedi/Sector One
+        Frank DENIS (Jedi/Sector One)
+        Frank DENIS (Jedi/Sector One) <0daydigestATpureftpd.org>
+          1024 bit DSA key 1CDEA439, creado: 2002-03-10
+    Keys 1-1 of 1 for "1CDEA439".  Introduzca número(s), O)tro, o F)in > 1
+    gpg: solicitando clave 1CDEA439 de hkp servidor keys.gnupg.net
+    gpg: clave 1CDEA439: clave pública "Jedi/Sector One " importada
 
 Ahora volvemos a realizar la comprobación:
 
-```bash
-$ gpg --verify dnscrypt-proxy-1.2.0.tar.bz2.sig dnscrypt-proxy-1.2.0.tar.bz2
-gpg: Firmado el vie 12 oct 2012 01:28:27 CEST usando clave DSA ID 1CDEA439
-gpg: Firma correcta de ;`Jedi/Sector One ;'
-gpg:                 alias ;`Frank DENIS (Jedi/Sector One) ;'
-gpg:                 alias ;`Frank DENIS (Jedi/Sector One) <0daydigestATpureftpd.org>;'
-gpg: AVISO: ¡Esta clave no está certificada por una firma de confianza!
-gpg:          No hay indicios de que la firma pertenezca al propietario.
-Huellas dactilares de la clave primaria: 89F7 B830 0E87 E03C 52B0  5289 926B C517 1CDE A439
-```
+    $ gpg --verify dnscrypt-proxy-1.2.0.tar.bz2.sig dnscrypt-proxy-1.2.0.tar.bz2
+    gpg: Firmado el vie 12 oct 2012 01:28:27 CEST usando clave DSA ID 1CDEA439
+    gpg: Firma correcta de ;`Jedi/Sector One ;'
+    gpg:                 alias ;`Frank DENIS (Jedi/Sector One) ;'
+    gpg:                 alias ;`Frank DENIS (Jedi/Sector One) <0daydigestATpureftpd.org>;'
+    gpg: AVISO: ¡Esta clave no está certificada por una firma de confianza!
+    gpg:          No hay indicios de que la firma pertenezca al propietario.
+    Huellas dactilares de la clave primaria: 89F7 B830 0E87 E03C 52B0  5289 926B C517 1CDE A439
 
 Descomprimimos el paquete y lo compilamos:
 
-```bash
-$ tar xvjf dnscrypt-proxy-1.2.0.tar.bz2
-$ cd dnscrypt-proxy-1.2.0
-$ ./configure
-$ make -j2
-```
+    $ tar xvjf dnscrypt-proxy-1.2.0.tar.bz2
+    $ cd dnscrypt-proxy-1.2.0
+    $ ./configure
+    $ make -j2
 
 Antes de instalarlo podemos realizar algunos tests:
 
-```bash
-$ cd src/libnacl
-$ make -j2 test
-$ cd ../..
-```
+    $ cd src/libnacl
+    $ make -j2 test
+    $ cd ../..
 
 Lo instalamos:
 
-```bash
-$ sudo make install
-```
+    $ sudo make install
 
 Uso
 ---
 
 La forma más sencilla de utilizarlo es ejecutar:
 
-```bash
-$ sudo dnscrypt-proxy --daemonize
-```
+    $ sudo dnscrypt-proxy --daemonize
 
 Acto seguido modificamos la dirección IP del servidor DNS en los
 parámetros de la conexión. Podemos editar el fichero `/etc/resolv.con` y
 poner:
 
-```bash
-nameserver 127.0.0.1
-```
+    nameserver 127.0.0.1
 
 Si vemos un aviso dentro del fichero que nos dice que los cambios no
 serán permanentes, y queremos que lo sean, deberemos modificar la IP del
@@ -105,68 +87,58 @@ sistema.
 
 Probamos que el servicio funciona:
 
-```bash
-$ dig opendns.com
+    $ dig opendns.com
 
-; <<>> DiG 9.8.1-P1 <<>> opendns.com
-;; global options: +cmd
-;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 630
-;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+    ; <<>> DiG 9.8.1-P1 <<>> opendns.com
+    ;; global options: +cmd
+    ;; Got answer:
+    ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 630
+    ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
 
-;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 8192
-;; QUESTION SECTION:
-;opendns.com.           IN  A
+    ;; OPT PSEUDOSECTION:
+    ; EDNS: version: 0, flags:; udp: 8192
+    ;; QUESTION SECTION:
+    ;opendns.com.           IN  A
 
-;; ANSWER SECTION:
-opendns.com.        30  IN  A   67.215.92.211
+    ;; ANSWER SECTION:
+    opendns.com.        30  IN  A   67.215.92.211
 
-;; Query time: 91 msec
-;; SERVER: 127.0.0.1#53(127.0.0.1)
-;; WHEN: Thu Jan 17 17:35:51 2013
-;; MSG SIZE  rcvd: 56
-```
+    ;; Query time: 91 msec
+    ;; SERVER: 127.0.0.1#53(127.0.0.1)
+    ;; WHEN: Thu Jan 17 17:35:51 2013
+    ;; MSG SIZE  rcvd: 56
 
-```bash
-$ nslookup opendns.com
-Server:     127.0.0.1
-Address:    127.0.0.1#53
+    $ nslookup opendns.com
+    Server:     127.0.0.1
+    Address:    127.0.0.1#53
+    Non-authoritative answer:
+    Name:   opendns.com
+    Address: 67.215.92.211
 
-Non-authoritative answer:
-Name:   opendns.com
-Address: 67.215.92.211
-```
+    $ nslookup opendns.com localhost
+    Server:     localhost
+    Address:    127.0.0.1#53
+    Non-authoritative answer:
+    Name:   opendns.com
+    Address: 67.215.92.211
 
-```bash
-$ nslookup opendns.com localhost
-Server:     localhost
-Address:    127.0.0.1#53
+    $ drill opendns.com
+    ;; ->>HEADER<<- opcode: QUERY, rcode: NOERROR, id: 31633
+    ;; flags: qr rd ra ; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+    ;; QUESTION SECTION:
+    ;; opendns.com. IN  A
 
-Non-authoritative answer:
-Name:   opendns.com
-Address: 67.215.92.211
-```
+    ;; ANSWER SECTION:
+    opendns.com.    23  IN  A   67.215.92.211
 
-```bash
-$ drill opendns.com
-;; ->>HEADER<<- opcode: QUERY, rcode: NOERROR, id: 31633
-;; flags: qr rd ra ; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
-;; QUESTION SECTION:
-;; opendns.com. IN  A
+    ;; AUTHORITY SECTION:
 
-;; ANSWER SECTION:
-opendns.com.    23  IN  A   67.215.92.211
+    ;; ADDITIONAL SECTION:
 
-;; AUTHORITY SECTION:
-
-;; ADDITIONAL SECTION:
-
-;; Query time: 76 msec
-;; SERVER: 127.0.0.1
-;; WHEN: Thu Jan 17 18:43:31 2013
-;; MSG SIZE  rcvd: 45
-```
+    ;; Query time: 76 msec
+    ;; SERVER: 127.0.0.1
+    ;; WHEN: Thu Jan 17 18:43:31 2013
+    ;; MSG SIZE  rcvd: 45
 
 `unbound`: caché DNS
 --------------------
@@ -180,33 +152,27 @@ Una vez instalado, necesitaremos hacer dos cambios.
 
 Primero, ejecutar DNSCrypt en otro puerto, por ejemplo el 40:
 
-```bash
-$ sudo dnscrypt-proxy --daemonize --local-address=127.0.0.1:40
-```
+    $ sudo dnscrypt-proxy --daemonize --local-address=127.0.0.1:40
 
 Y segundo, configuramos `unbound` para que las consultas sean
 redirigidas a través de `dnscrypt-proxy` en ese puerto. Añadimos al
 archivo de configuración `/etc/unbound/unbound.conf`:
 
-```bash
-username: "unbound"
-directory: "/etc/unbound"
-use-syslog: yes
-do-not-query-localhost: no
+    username: "unbound"
+    directory: "/etc/unbound"
+    use-syslog: yes
+    do-not-query-localhost: no
 
-forward-zone:
-  name: "."
-  forward-addr: 127.0.0.1@40
-```
+    forward-zone:
+      name: "."
+      forward-addr: 127.0.0.1@40
 
 Comprobamos que la caché funciona correctamente haciendo dos consultas
 seguidas al mismo dominio, veremos que la segunda vez tarda 0 ms:
 
-```bash
-$ dig opendns.com
-...
-;; Query time: 0 msec
-```
+    $ dig opendns.com
+    ...
+    ;; Query time: 0 msec
 
 * * * * *
 
@@ -218,20 +184,16 @@ más:
 [ClouDNS][] es un proveedor australiano que admite el cifrado de DNS
 para conectarse a sus servidores. Ejecutamos `dnscrypt-proxy`:
 
-```bash
-$ sudo dnscrypt-proxy -d -a 127.0.0.1:40 -r 113.20.6.2:443
-$ sudo dnscrypt-proxy -d -a 127.0.0.2:41 -r 113.20.8.17:443
-```
+    $ sudo dnscrypt-proxy -d -a 127.0.0.1:40 -r 113.20.6.2:443
+    $ sudo dnscrypt-proxy -d -a 127.0.0.2:41 -r 113.20.8.17:443
 
 Configuración de `unbound`:
 
-```bash
-do-not-query-localhost: no
-forward-zone:
-        name: "."
-        forward-addr: 127.0.0.1@40
-        forward-addr: 127.0.0.2@41
-```
+    do-not-query-localhost: no
+    forward-zone:
+    name: "."
+    forward-addr: 127.0.0.1@40
+    forward-addr: 127.0.0.2@41
 
 Por otro lado, [OpenNIC project][] nos dice los servidores DNS abiertos
 y seguros más cercanos.
@@ -254,15 +216,11 @@ libsodium y dnscrypt].
 que [OpenDNS aún no lo soporta][], por lo que deberemos comentar la
 siguiente línea en el fichero `/etc/unbound/unbound.conf`:
 
-```bash
     auto-trust-anchor-file: "/var/lib/unbound/root.key"
-```
 
 Sólo queda reiniciar el servicio:
 
-```bash
-$ sudo service unbound restart
-```
+    $ sudo service unbound restart
 
 Referencias
 -----------

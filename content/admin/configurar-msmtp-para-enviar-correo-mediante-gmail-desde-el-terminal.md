@@ -17,29 +17,25 @@ Instalamos `mstmp-mta`
 Instalamos el paquete `msmtp-mta` desde los repositorios y editamos el
 fichero de configuración `~/.msmtprc`:
 
-```bash
-defaults
-logfile ~/msmtp.log
+    defaults
+    logfile ~/msmtp.log
 
-account gmail
-auth on
-host smtp.gmail.com
-from example@gmail.com
-auth on
-tls on
-tls_trust_file /usr/share/ca-certificates/mozilla/Equifax_Secure_CA.crt
-user example@gmail.com
-password secret
-port 587
+    account gmail
+    auth on
+    host smtp.gmail.com
+    from example@gmail.com
+    auth on
+    tls on
+    tls_trust_file /usr/share/ca-certificates/mozilla/Equifax_Secure_CA.crt
+    user example@gmail.com
+    password secret
+    port 587
 
-account default : gmail
-```
+    account default : gmail
 
 Le cambiamos los permisos:
 
-```bash
-$ chmod 600 ~/.msmtprc
-```
+    $ chmod 600 ~/.msmtprc
 
 Instalamos `mailx`
 ------------------
@@ -50,9 +46,7 @@ nombre pero del paquete `heirloom-mailx`.)
 
 Ya podemos probarlo:
 
-```bash
-echo Lorem impsum dolor | mail -s Subject to@example.com
-```
+    echo Lorem impsum dolor | mail -s Subject to@example.com
 
 Referencias
 -----------

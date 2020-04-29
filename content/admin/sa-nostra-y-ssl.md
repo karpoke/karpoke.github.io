@@ -14,9 +14,7 @@ Verificación SSLv2
 
 Comando:
 
-```bash
-$ openssl s_client -ssl2 -connect linea.sanostra.es:443
-```
+    $ openssl s_client -ssl2 -connect linea.sanostra.es:443
 
 Bien: no da soporte
 
@@ -31,9 +29,7 @@ Longitud de la clave RSA del certificado
 
 Comando:
 
-```bash
-$ openssl s_client -connect linea.sanostra.es:443
-```
+    $ openssl s_client -connect linea.sanostra.es:443
 
 Mal: La clave es de 1024 bits.
 
@@ -42,9 +38,7 @@ Soporte de algoritmos débiles
 
 Comando:
 
-```bash
-$ openssl s_client  -cipher LOW:EXP -connect linea.sanostra.es:443
-```
+    $ openssl s_client  -cipher LOW:EXP -connect linea.sanostra.es:443
 
 Bien: No admite algoritmos 'débiles', cuya longitud de clave sea de 56 ó
 64 bits.

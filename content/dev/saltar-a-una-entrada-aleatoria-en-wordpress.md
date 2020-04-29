@@ -8,17 +8,15 @@ Si queremos añadir un enlace que nos permita saltar a una entrada
 aleatoria de un blog en WordPress, basta crear un archivo que contenga
 lo siguiente:
 
-```php
-<?php
-require('wp-blog-header.php');
-query_posts(array('orderby' => 'rand', 'showposts' => 1));
-if (have_posts()) : the_post();
-$url = get_permalink($post->id);
-        header("Location: " . $url);
-endif;
-wp_reset_query();
-?>
-```
+    <?php
+    require('wp-blog-header.php');
+    query_posts(array('orderby' => 'rand', 'showposts' => 1));
+    if (have_posts()) : the_post();
+    $url = get_permalink($post->id);
+            header("Location: " . $url);
+    endif;
+    wp_reset_query();
+    ?>
 
 Guardamos el archivo en una ruta accesible, por ejemplo en la raíz del
 blog.
@@ -37,11 +35,9 @@ categorías, etiquetas, páginas o archivos. Si queremos que el enlace al
 _script_ sea del mismo tipo, podemos añadir las siguientes líneas al
 fichero `.htaccess` de la raíz del sitio:
 
-```bash
-RewriteEngine On
-RewriteBase /blog/
-RewriteRule ^salta/$ salta.php
-```
+    RewriteEngine On
+    RewriteBase /blog/
+    RewriteRule ^salta/$ salta.php
 
 * * * * *
 

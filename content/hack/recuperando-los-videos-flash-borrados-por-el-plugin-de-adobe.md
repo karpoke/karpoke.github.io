@@ -11,11 +11,9 @@ copiar el vídeo simplemente copiando el archivo `/tmp/FlashXXXX`.
 crea un enlace simbólico al controlador del archivo con el nombre del
 archivo borrado:
 
-```bash
-$ for h in $(find /proc/_/fd -ilname "/tmp/Flash_" 2>/dev/null); do
->    ln -s "$h" $(readlink "$h" | cut -d' ' -f1);
-> done
-```
+    $ for h in $(find /proc/_/fd -ilname "/tmp/Flash_" 2>/dev/null); do
+    >    ln -s "$h" $(readlink "$h" | cut -d' ' -f1);
+    > done
 
 ![Youtbe targeted]({static}/images/youtube-targeted-298x300.jpg)
 
@@ -24,30 +22,22 @@ Fire][].
 
 Con `find` podemos encontrar estos archivos borrados:
 
-```bash
-$ find /proc/_/fd -ilname "/tmp/Flash_" 2>/dev/null
-/proc/21204/fd/36
-```
+    $ find /proc/_/fd -ilname "/tmp/Flash_" 2>/dev/null
+    /proc/21204/fd/36
 
 y con `readlink` podemos saber el nombre que tenían.
 
-```bash
-$ readlink /proc/21204/fd/36
-/tmp/FlashXX3Jmbxp (deleted)
-```
+    $ readlink /proc/21204/fd/36
+    /tmp/FlashXX3Jmbxp (deleted)
 
 Tras ejecutar el comando, tendremos un enlace como el siguiente:
 
-```bash
-$ ls -nl /tmp/Flash*
-lrwxrwxrwx 1 1000 1000 17 2011-03-04 17:42 FlashXX3Jmbxp -> /proc/21204/fd/36
-```
+    $ ls -nl /tmp/Flash*
+    lrwxrwxrwx 1 1000 1000 17 2011-03-04 17:42 FlashXX3Jmbxp -> /proc/21204/fd/36
 
 Para copiarlo basta hacer:
 
-```bash
-$ cp /tmp/FlashXX3Jmbxp ~/it-crowd-fire.flv
-```
+    $ cp /tmp/FlashXX3Jmbxp ~/it-crowd-fire.flv
 
 * * * * *
 
@@ -64,15 +54,13 @@ En Firefox, la caché se encuentra en
 Para encontrar los archivos que sean vídeos Flash, podemos ejecutar algo
 como esto para encontrarlos:
 
-```bash
-$ find . -type f -exec file {} \; | grep -i flash | grep -iv compressed | awk -F: '{print $1}'
-./2/2F/929B0d01
-./E/B3/307B6d01
-./C/B5/E5137d01
-./3/86/C1069d01
-./D/7B/DFE3Dd01
-./F/42/414E2d01
-```
+    $ find . -type f -exec file {} \; | grep -i flash | grep -iv compressed | awk -F: '{print $1}'
+    ./2/2F/929B0d01
+    ./E/B3/307B6d01
+    ./C/B5/E5137d01
+    ./3/86/C1069d01
+    ./D/7B/DFE3Dd01
+    ./F/42/414E2d01
 
 Excluyo los archivos _compressed_ porque no he podido abrirlos con
 ningún programa. Al intentarlo, devolvía un error de

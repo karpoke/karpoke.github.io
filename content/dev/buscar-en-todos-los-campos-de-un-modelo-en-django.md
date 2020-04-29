@@ -9,12 +9,10 @@ Una acción típica que se va a repetir en, prácticamente, cada listado
 que mostremos, es la de añadir un buscador [1]. Un buscador típico
 incluirá un pequeño formulario en la misma página de listado:
 
-```html
-<form method="get" action="">
-    <input type="text" name="q" value="{{ q }}" />
-    <input type="submit" value="Search" />
-</form>
-```
+    <form method="get" action="">
+        <input type="text" name="q" value="{{ q }}" />
+        <input type="submit" value="Search" />
+    </form>
 
 Nos interesaría no tener que ir copiando y pengando este código en cada
 listado. Aunque sea un código que no vaya a cambiar, viola el principio
@@ -23,13 +21,11 @@ de DRY.
 Una mejor solución pasa por crear un _templatetag_, en el fichero
 `my_tags.py` dentro del directorio `templatetags`:
 
-```python
-@register.inclusion_tag('search_form.html', takes_context=True)
-def display_search_form(context):
-    return {
-        'q': context['q'],
-    }
-```
+    @register.inclusion_tag('search_form.html', takes_context=True)
+    def display_search_form(context):
+        return {
+            'q': context['q'],
+        }
 
 `search_forml.html` es la plantilla HTML que contiene el formulario
 mostrado arriba. Mediante el decorador `register.inclusion_tag`
@@ -38,23 +34,17 @@ contexto, que contiene la búsqueda.
 
 Y luego, en la plantilla del listado, incluimos el _templatetag_
 
-```python
-{% load my_tags %}
-```
+    {% load my_tags %}
 
 Allá donde queramos que aparezca el buscador incluiremos lo siguiente:
 
-```python
-{% display_search_form %}
-```
+    {% display_search_form %}
 
 Sólo queda ver el contenido de la vista que muestra el listado. En
 particular, deberemos recoger la variable `q` que nos puede llegar por
 `GET`. Algo así:
 
-```python
-q = request.GET.get("q", "")
-```
+    q = request.GET.get("q", "")
 
 Antes de modificar la consulta para filtrar los resultados que
 concuerden con nuestra búsqueda, hay diferentes aspectos que deberíamos
@@ -81,18 +71,16 @@ proporcionada. Nos basaremos en este método para extender la búsqueda a
 todos los campos del modelo y los campos de los modelos referenciados
 por las claves foráneas de éste.
 
-```python
-def get_full_query(query_string, model):
-    """ Returns a query to search in every field of the given model """
-    fields = []
-    for f in model._meta.fields:
-        if not f.rel:
-            fields.append(f.name)
-        else:
-            rel_fields = [ "%s__%s" % (f.name, fr.name) for fr in f.rel.to._meta.fields if not fr.rel ]
-            fields.extend(rel_fields)
-    return get_query(query_string, fields)
-```
+    def get_full_query(query_string, model):
+        """ Returns a query to search in every field of the given model """
+        fields = []
+        for f in model._meta.fields:
+            if not f.rel:
+                fields.append(f.name)
+            else:
+                rel_fields = [ "%s__%s" % (f.name, fr.name) for fr in f.rel.to._meta.fields if not fr.rel ]
+                fields.extend(rel_fields)
+        return get_query(query_string, fields)
 
 `model._meta.fields` devuelve, como su nombre indica, un listado con los
 campos del modelo. Cada campo tiene, entre otros, los atributos `name`,
@@ -101,23 +89,19 @@ contiene el modelo al que hace referencia.
 
 En la vista del listado tendremos:
 
-```python
-queryset = MyTable._default_manager.all() # [2]
-if q:
-    query = get_full_query(q, MyTable)
-    queryset = queryset.filter(query)
-```
+    queryset = MyTable._default_manager.all() # [2]
+    if q:
+        query = get_full_query(q, MyTable)
+        queryset = queryset.filter(query)
 
 Este `queryset` contiene el listado que le pasamos a la plantilla:
 
-```python
-return render_to_response("my_list.html",
-    {
-        "object_list": queryset,
-        "q": q,
-    },
-    context_instance=RequestContext(request))
-```
+    return render_to_response("my_list.html",
+        {
+            "object_list": queryset,
+            "q": q,
+        },
+        context_instance=RequestContext(request))
 
 » [1] Existen aplicaciones para realizar búsquedas, como [haystack][]
     o `django-sphinx`.

@@ -12,21 +12,15 @@ Temas de Plymouth
 
 Instalamos algunos de los [temas para Plymouth][]:
 
-```bash
-$ sudo apt-get install plymouth-theme-{fade-in,glow,sabily,script,solar,spinfinity,text,ubuntu-logo,text}
-```
+    $ sudo apt-get install plymouth-theme-{fade-in,glow,sabily,script,solar,spinfinity,text,ubuntu-logo,text}
 
 Cambiamos por el que queramos:
 
-```bash
-$ sudo update-alternatives --config default.plymouth
-```
+    $ sudo update-alternatives --config default.plymouth
 
 Y actualizamos el `initramfs`:
 
-```bash
-$ sudo update-initramfs -u
-```
+    $ sudo update-initramfs -u
 
 Cuando reiciniemos habremos cambiado el tema de Playmouth.
 
@@ -36,9 +30,7 @@ Splashscreen de Grub2
 Editamos el archivo `/etc/grub.d/05_debian_theme`, y modificamos la
 línea:
 
-```bash
-WALLPAPER="/usr/share/images/desktop-base/moreblue-orbit-grub.png"
-```
+    WALLPAPER="/usr/share/images/desktop-base/moreblue-orbit-grub.png"
 
 para que apunte a la ruta de la imagen que queramos.
 
@@ -51,9 +43,7 @@ pantalla del menú de Grub2, y que está espeficada en el archivo
 
 Actualizamos `grub2`
 
-```bash
-$ sudo update-grub2
-```
+    $ sudo update-grub2
 
 - imagen de [BlackMooon][]
 

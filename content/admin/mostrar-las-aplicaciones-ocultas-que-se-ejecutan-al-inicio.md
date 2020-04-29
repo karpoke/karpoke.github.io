@@ -13,16 +13,12 @@ se pueden desactivar a golpe de ratón.
 Si queremos que [estas aplicaciones se muestren][] y así poder
 desactivarlas mediante la interfaz gráfica, ejecutamos:
 
-```bash
-$ sudo sed -i 's/NoDisplay=true/NoDisplay=false/' /etc/xdg/autostart/*
-```
+    $ sudo sed -i 's/NoDisplay=true/NoDisplay=false/' /etc/xdg/autostart/*
 
 Si además queremos que [cada vez que instalamos un programa se ejecute
 este comando][], podemos incluirlo en el archivo `/etc/apt.conf`:
 
-```bash
-sed -i 's/NoDisplay=true/NoDisplay=false/' /etc/xdg/autostart/*
-```
+    sed -i 's/NoDisplay=true/NoDisplay=false/' /etc/xdg/autostart/*
 
 Referencias
 -----------

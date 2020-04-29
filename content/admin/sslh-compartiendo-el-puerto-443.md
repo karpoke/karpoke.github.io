@@ -40,9 +40,7 @@ Instalación desde los respositorios de Ubuntu Lucid Lynx
 Lo podemos instalar desde los respositorios. Es Ubuntu Lucid Lynx está la
 versión 1.6i-4:
 
-```bash
-$ sudo aptitude install sslh
-```
+    $ sudo aptitude install sslh
 
 Al principio, se encuentra desactivado, para obligarnos a leer la
 documentación. Después de echarle un ojo a la página del `man`, podemos
@@ -64,26 +62,20 @@ Instalación desde el código fuente
 Ahora mismo van por la versión 1.9, así que en lugar de instalarlo desde los
 repositorios, lo haremos desde el código fuente:
 
-```bash
-$ wget http://www.rutschle.net/tech/sslh-1.9.tar.gz
-$ tar xzvf sslh-1.9.tar.gz
-$ cd sslh-1.9/
-```
+    $ wget http://www.rutschle.net/tech/sslh-1.9.tar.gz
+    $ tar xzvf sslh-1.9.tar.gz
+    $ cd sslh-1.9/
 
 Si queremos compilar con la opción de que se comprueben las listas de acceso,
 deberemos realizar un par de acciones previas al `make install`:
 
-```bash
-$ sudo aptitude install libwrap0{,-dev} tcpd
-$ sed -i 's/USELIBWRAP=./USELIBWRAP=1/' Makefile
-```
+    $ sudo aptitude install libwrap0{,-dev} tcpd
+    $ sed -i 's/USELIBWRAP=./USELIBWRAP=1/' Makefile
 
 Ahora ya podemos pasar a la instalación:
 
-```bash
-$ sudo make install
-$ sudo make install-debian
-```
+    $ sudo make install
+    $ sudo make install-debian
 
 Editamos el fichero `/etc/default/sslh` para configurar las interfaces.  Para
 evitar que haya cualquier tipo de colisión entre `openssh`, `apache2` y `sslh`,
@@ -111,17 +103,13 @@ ejemplo en `/etc/apache2/sites-available/default-ssl`.
 
 Ahora, reiniciamos ambos servicios:
 
-```bash
-$ sudo service sslh start
-$ sudo service apache2 restart
-```
+    $ sudo service sslh start
+    $ sudo service apache2 restart
 
 Ya podemos probarlo.
 
-```bash
-$ w3m https://mydomain.com
-$ ssh -p443 mydomain.com
-```
+    $ w3m https://mydomain.com
+    $ ssh -p443 mydomain.com
 
 En los _logs_, `/var/log/syslog`, podremos ver algo como:
 
@@ -136,9 +124,7 @@ Si tenemos instalado [`logcheck`][logcheck] y [no queremos que nos lleguen
 estos avisos][] cada vez, podemos crear el archivo
 `/etc/logcheck/ignore.d.server/sslh` e incluir la siguiente línea:
 
-```bash
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sslh\[[[:digit:]]+\]: connection from [:.[:xdigit:]]+ forwarded to SS(L|H)$
-```
+    ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sslh\[[[:digit:]]+\]: connection from [:.[:xdigit:]]+ forwarded to SS(L|H)$
 
 ¿Y el cortafuegos?
 ------------------
@@ -146,15 +132,11 @@ estos avisos][] cada vez, podemos crear el archivo
 Si, por ejemplo, utilizamos [`ufw`][logcheck], podemos modificar la [regla para
 permitir las conexiones][] al puerto 22 únicamente desde la propia LAN:
 
-```bash
-$ sudo ufw allow proto tcp from 192.168.50.0/24 to any port 22
-```
+    $ sudo ufw allow proto tcp from 192.168.50.0/24 to any port 22
 
 También podemos borrar la regla antigua:
 
-```bash
-$ sudo ufw delete allow tcp/22
-```
+    $ sudo ufw delete allow tcp/22
 
   [ya tenemos un servidor web]: http://dischord.org/blog/2010/08/25/multiplexing-ssh-and-ssl/
     "ya tenemos un servidor web"

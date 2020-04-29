@@ -10,9 +10,7 @@ Slug: run-time-profiling-with-cprofile
 > The cProfile module is the recommended module. To execute your program
 > under the control of the cProfile module, a simple form is:
 >
-> ```bash
-> $ python -m cProfile -s cumulative mypythonscript.py
-> ```
+>     $ python -m cProfile -s cumulative mypythonscript.py
 
 - Alain Leufroy | [logilab.org][]
 

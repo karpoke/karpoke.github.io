@@ -26,19 +26,17 @@ Comprobación en C
 Una posible forma de comprobar qué sistema utilizamos [mediante un
 programa en C][] es con el siguiente código:
 
-```c
-#include
-int main(int argc, char **argv)
-{
-   int i = 1;
-   char *p = (char *) &i;
-   if ( p[0] == 1 )
-        printf("Little Endian\n");
-   else
-        printf("Big Endian\n");
-   return 0;
-}
-```
+    #include
+    int main(int argc, char **argv)
+    {
+       int i = 1;
+       char *p = (char *) &i;
+       if ( p[0] == 1 )
+            printf("Little Endian\n");
+       else
+            printf("Big Endian\n");
+       return 0;
+    }
 
 Se obtiene la dirección de memoria de un entero, con un espacio de
 almacenamiento de al menos 16 bits, cuyo valor es 1. Leemos el primer
@@ -53,32 +51,25 @@ octal en sistemas _little-endian_ es 000111, mientras que en sistemas
 _big-endian_ es 0444000. Basta comprobar el último carácter para conocer
 el tipo de sistema. Si es 1 es que utilizamos _little-endian_:
 
-```bash
-$ echo -n I | od -to2 | head -n1 | cut -f2 -d" " | cut -c6
-1
-```
+    $ echo -n I | od -to2 | head -n1 | cut -f2 -d" " | cut -c6
+    1
 
 También podemos utilizar [`awk`][awk]:
 
-```bash
-$ awk 'BEGIN {c="I"; printf "%c",c}' | od | head -n1 | cut -f2 -d" " | cut -c6
-1
-```
+    $ awk 'BEGIN {c="I"; printf "%c",c}' | od | head -n1 | cut -f2 -d" " | cut -c6
+    1
 
 Comprobación en Python
 ----------------------
 
 Utilizando el método [`pack`][pack]:
 
-```bash
-$ python -c "from struct import pack;print(int(pack('@h',1)==pack('
-Consultando la propiedad byteorder:
-
-$ python -c "import sys;print sys.byteorder"
-little
-$ python -c "import sys;print(0 if sys.byteorder=='big' else 1)"
-1
-```
+    $ python -c "from struct import pack;print(int(pack('@h',1)==pack('
+    Consultando la propiedad byteorder:
+    $ python -c "import sys;print sys.byteorder"
+    little
+    $ python -c "import sys;print(0 if sys.byteorder=='big' else 1)"
+    1
 
 Comprobación en Perl
 --------------------
@@ -86,19 +77,14 @@ Comprobación en Perl
 El resultado haciendo [la comprobación en Perl][] es [1234 para
 _little-endian_][].
 
-```bash
-$ perl -MConfig -e 'print "$Config{byteorder}\n";'
-1234
-```
+    $ perl -MConfig -e 'print "$Config{byteorder}\n";'
+    1234
 
 También se puede utilizar la función [`pack`][1]:
 
-```bash
-$ perl -MConfig -e 'print pack("L", 1) ne pack("N", 1);'
-1
-```
+    $ perl -MConfig -e 'print pack("L", 1) ne pack("N", 1);'
+    1
 
-</h>
 
   [Endianicidad]: http://secure.wikimedia.org/wikipedia/es/wiki/Endianness
     "Endianicidad"

@@ -21,52 +21,38 @@ pasos.
 
 Instalamos las dependencias, incluyendo algunas opcionales:
 
-```bash
-$ sudo aptitude install apache2 php5 php-pear php-xml-parser php5-json zip php5-gd php5-sqlite sqlite php5-mysql id3v2 curl libcurl3 libcurl4-openssl-dev php5-curl
-```
+    $ sudo aptitude install apache2 php5 php-pear php-xml-parser php5-json zip php5-gd php5-sqlite sqlite php5-mysql id3v2 curl libcurl3 libcurl4-openssl-dev php5-curl
 
 Descargamos la última versión estable, en estos momentos 3.0.3:
 
-```bash
-$ wget http://owncloud.org/releases/owncloud-3.0.3.tar.bz2
-```
+    $ wget http://owncloud.org/releases/owncloud-3.0.3.tar.bz2
 
 Comprobamos el MD5:
 
-```bash
-$ md5sum owncloud-3.0.3.tar.bz2
-01300ca8b8be549af166f568fef8538f  owncloud-3.0.3.tar.bz2
-$ wget -qO - http://owncloud.org/releases/owncloud-3.0.3.tar.bz2.md5
-01300ca8b8be549af166f568fef8538f  owncloud-3.0.3.tar.bz2
-```
+    $ md5sum owncloud-3.0.3.tar.bz2
+    01300ca8b8be549af166f568fef8538f  owncloud-3.0.3.tar.bz2
+    $ wget -qO - http://owncloud.org/releases/owncloud-3.0.3.tar.bz2.md5
+    01300ca8b8be549af166f568fef8538f  owncloud-3.0.3.tar.bz2
 
 Descomprimimos el fichero:
 
-```bash
-$ tar -xjf owncloud-3.0.3.tar.bz2
-```
+    $ tar -xjf owncloud-3.0.3.tar.bz2
 
 Lo movemos al `DocumentRoot`:
 
-```bash
-$ sudo mv owncloud /var/www/
-```
+    $ sudo mv owncloud /var/www/
 
 Le cambiamos el propietario a los ficheros:
 
-```bash
-$ sudo chown -R www-data:www-data /var/www/owncloud
-```
+    $ sudo chown -R www-data:www-data /var/www/owncloud
 
 Creamos la base de datos y el usuario en MySQL:
 
-```bash
-$ mysql -uroot -p
-mysql> CREATE DATABASE owncloud;
-mysql> CREATE USER 'owncloud'@'localhost' IDENTIFIED BY 'password';
-mysql> GRANT ALL PRIVILEGES ON owncloud.* TO 'owncloud'@'localhost';
-mysql> FLUSH PRIVILEGES;
-```
+    $ mysql -uroot -p
+    mysql> CREATE DATABASE owncloud;
+    mysql> CREATE USER 'owncloud'@'localhost' IDENTIFIED BY 'password';
+    mysql> GRANT ALL PRIVILEGES ON owncloud.* TO 'owncloud'@'localhost';
+    mysql> FLUSH PRIVILEGES;
 
 Nos aseguramos de tener habilitado `.htaccess` en Apache. Basta
 comprobar que en el fichero de configuración del sitio, la directiva
@@ -75,17 +61,13 @@ comprobar que en el fichero de configuración del sitio, la directiva
 También deberán estar instalados y activados los módulos `mod_headers`,
 `mod_rewrite` y `mod_env` en Apache:
 
-```bash
-$ sudo a2enmod headers
-$ sudo a2enmod rewrite
-$ sudo a2enmod env
-```
+    $ sudo a2enmod headers
+    $ sudo a2enmod rewrite
+    $ sudo a2enmod env
 
 Reiniciamos Apache:
 
-```bash
-$ sudo apache2ctl restart
-```
+    $ sudo apache2ctl restart
 
 Ya podemos acceder al panel de administración de ownCloud en
 `http://localhost/owncloud`. Creamos el usuario administrador y
@@ -118,15 +100,11 @@ directorio que esté fuera del `DocumentRoot`, conservando los permisos
 que tenía, y acto seguido modificamos el fichero de configuración
 `owncloud/config/config.php`:
 
-```bash
-"datadirectory" => '/new/path/to/data',
-```
+    "datadirectory" => '/new/path/to/data',
 
 Sólo queda reiniciar el servidor para que los cambios tengan efecto:
 
-```bash
-$ sudo apache2ctl restart
-```
+    $ sudo apache2ctl restart
 
 * * * * *
 
@@ -148,13 +126,10 @@ Si queremos obligar a que el acceso a ownCloud se haga [a través de una
 conexión segura][], podemos editar el fichero `.htaccess` del directorio
 `/var/www/owncloud` para que contenga:
 
-```bash
-
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-RewriteRule .* - [env=HTTP_AUTHORIZATION:%{HTTP:Authorization},last]
-```
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+    RewriteRule .* - [env=HTTP_AUTHORIZATION:%{HTTP:Authorization},last]
 
 Actualizaciones
 ---------------
@@ -175,43 +150,31 @@ arrastrando los ficheros, visor de ficheros ODF y muchas más.
 Para actualizar, simplemente descargamos la versión y la descomprimimos
 en el mismo directorio de instalación:
 
-```bash
-$ wget http://owncloud.org/releases/owncloud-4.0.0.tar.bz2
-```
+    $ wget http://owncloud.org/releases/owncloud-4.0.0.tar.bz2
 
 Comprobamos el MD5:
 
-```bash
-$ md5sum owncloud-4.0.0.tar.bz2
-440837c2b4908a2ec06f96978d6b7525  owncloud-4.0.0.tar.bz2
-$ wget -qO - http://owncloud.org/releases/owncloud-4.0.0.tar.bz2.md5
-440837c2b4908a2ec06f96978d6b7525  owncloud-4.0.0.tar.bz2
-```
+    $ md5sum owncloud-4.0.0.tar.bz2
+    440837c2b4908a2ec06f96978d6b7525  owncloud-4.0.0.tar.bz2
+    $ wget -qO - http://owncloud.org/releases/owncloud-4.0.0.tar.bz2.md5
+    440837c2b4908a2ec06f96978d6b7525  owncloud-4.0.0.tar.bz2
 
 Descomprimimos el fichero:
 
-```bash
-$ tar -xjf owncloud-4.0.0.tar.bz2
-```
+    $ tar -xjf owncloud-4.0.0.tar.bz2
 
 Le cambiamos el propietario a los ficheros:
 
-```bash
-$ sudo chown -R www-data:www-data owncloud
-```
+    $ sudo chown -R www-data:www-data owncloud
 
 Lo copiamos al `DocumentRoot`:
 
-```bash
-$ cd owncloud
-$ sudo cp -r * /var/www/owncloud/
-```
+    $ cd owncloud
+    $ sudo cp -r * /var/www/owncloud/
 
 Reiniciamos el Apache:
 
-```bash
-$ sudo apache2ctl restart
-```
+    $ sudo apache2ctl restart
 
 Al iniciar sesión como administrador se lleva a cabo la actualización.
 
@@ -232,12 +195,10 @@ muestra permite mover los archivos de sitio desde la aplicación.
 
 Para instalarlo:
 
-```bash
-$ wget http://apps.owncloud.com/CONTENT/content-files/150271-files_mv.0.21.tgz
-$ tar xvzf 150271-files_mv.0.21.tgz
-$ sudo mv files_mv/ /var/www/owncloud/apps/
-$ sudo chown  -R www-data:www-data /var/www/owncloud/apps/
-```
+    $ wget http://apps.owncloud.com/CONTENT/content-files/150271-files_mv.0.21.tgz
+    $ tar xvzf 150271-files_mv.0.21.tgz
+    $ sudo mv files_mv/ /var/www/owncloud/apps/
+    $ sudo chown  -R www-data:www-data /var/www/owncloud/apps/
 
 Ahora deberemos activar la aplicación desde el panel de administración
 de ownCloud.
@@ -254,22 +215,20 @@ Después de haber descomprimido, movido y cambiado el propietario de la
 aplicación, creamos el fichero `/var/www/owncloud/refresh_apps.php`, tal
 como sugiere _sshambar_:
 
-```php
-<?php
-$RUNTIME_NOAPPS = TRUE; //no apps, yet
+    <?php
+    $RUNTIME_NOAPPS = TRUE; //no apps, yet
 
-require_once('lib/base.php');
+    require_once('lib/base.php');
 
-// Setup required :
-$not_installed = !OC_Config::getValue('installed', false);
-if($not_installed) {
-header("Location: ".OC::$WEBROOT.'/');
-exit();
-}
-OC_Installer::installShippedApps();
-echo(json_encode('Apps updated!'));
-?>
-```
+    // Setup required :
+    $not_installed = !OC_Config::getValue('installed', false);
+    if($not_installed) {
+    header("Location: ".OC::$WEBROOT.'/');
+    exit();
+    }
+    OC_Installer::installShippedApps();
+    echo(json_encode('Apps updated!'));
+    ?>
 
 Accedemos al fichero desde el navegador mediante
 `http://localhost/owncloud/refresh_apps.php`, y creará las entradas en
@@ -282,10 +241,8 @@ de forma directa y me ha funcionado, pero no estoy seguro de que esto
 funcione en todos los casos ni de que no entrañe ningún tipo de riesgo.
 Así es como he logrado instalar File Move:
 
-```bash
-$ mysql -uowncloud -p owncloud
-mysql> update oc_appconfig set configvalue="yes" where appid="storage_charts-v2.0" and configkey="enabled";
-```
+    $ mysql -uowncloud -p owncloud
+    mysql> update oc_appconfig set configvalue="yes" where appid="storage_charts-v2.0" and configkey="enabled";
 
 Sin embargo, con la aplicación Storage Chart v2, que muestra el espacio
 utilizado por nuestros ficheros en la nuestra nube, lo anterior no me ha

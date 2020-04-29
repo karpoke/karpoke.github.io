@@ -7,6 +7,4 @@ Slug: copiar-un-directorio-excluyendo-los-archivos-de-una-clase
 Si queremos copiar un directorio pero no queremos que se copien los
 archivos `.svn`, o `.dropbox`, podemos ejecutar:
 
-```bash
-$ rsync -r --exclude=.dropbox /path/source/dir /path/destination
-```
+    $ rsync -r --exclude=.dropbox /path/source/dir /path/destination

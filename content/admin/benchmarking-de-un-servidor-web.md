@@ -13,53 +13,51 @@ El comando es `ab`, de _Apache Benchmarking_, y permite multitud de
 opciones, entre ellas el número de peticiones concurrentes, con el
 argumento `-c`, y la duración de la prueba, con el argumento `-t`:
 
-```bash
-$ ab -c 5 -t 60 http://ip-del-servidor
-This is ApacheBench, Version 2.3
-Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
-Licensed to The Apache Software Foundation, http://www.apache.org/
+    $ ab -c 5 -t 60 http://ip-del-servidor
+    This is ApacheBench, Version 2.3
+    Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+    Licensed to The Apache Software Foundation, http://www.apache.org/
 
-Benchmarking terminus (be patient)
-Finished 1337 requests
+    Benchmarking terminus (be patient)
+    Finished 1337 requests
 
 
-Server Software:        Incognito
-Server Hostname:        terminus
-Server Port:            80
+    Server Software:        Incognito
+    Server Hostname:        terminus
+    Server Port:            80
 
-Document Path:          /
-Document Length:        73260 bytes
+    Document Path:          /
+    Document Length:        73260 bytes
 
-Concurrency Level:      5
-Time taken for tests:   60.012 seconds
-Complete requests:      1337
-Failed requests:        0
-Write errors:           0
-Total transferred:      98456145 bytes
-HTML transferred:       98020320 bytes
-Requests per second:    22.28 [#/sec] (mean)
-Time per request:       224.428 [ms] (mean)
-Time per request:       44.886 [ms] (mean, across all concurrent requests)
-Transfer rate:          1602.16 [Kbytes/sec] received
+    Concurrency Level:      5
+    Time taken for tests:   60.012 seconds
+    Complete requests:      1337
+    Failed requests:        0
+    Write errors:           0
+    Total transferred:      98456145 bytes
+    HTML transferred:       98020320 bytes
+    Requests per second:    22.28 [#/sec] (mean)
+    Time per request:       224.428 [ms] (mean)
+    Time per request:       44.886 [ms] (mean, across all concurrent requests)
+    Transfer rate:          1602.16 [Kbytes/sec] received
 
-Connection Times (ms)
-              min  mean[+/-sd] median   max
-Connect:        4   16  12.0     14     261
-Processing:   104  208 122.8    180    3679
-Waiting:        6   23  93.5     16    3273
-Total:        115  224 124.1    196    3688
+    Connection Times (ms)
+                  min  mean[+/-sd] median   max
+    Connect:        4   16  12.0     14     261
+    Processing:   104  208 122.8    180    3679
+    Waiting:        6   23  93.5     16    3273
+    Total:        115  224 124.1    196    3688
 
-Percentage of the requests served within a certain time (ms)
-  50%    196
-  66%    228
-  75%    250
-  80%    270
-  90%    324
-  95%    406
-  98%    466
-  99%    474
- 100%   3688 (longest request)
-```
+    Percentage of the requests served within a certain time (ms)
+      50%    196
+      66%    228
+      75%    250
+      80%    270
+      90%    324
+      95%    406
+      98%    466
+      99%    474
+     100%   3688 (longest request)
 
 En este caso, vemos que el servidor soporta algo más de 22 peticiones
 por segundo. Es el [viejo servidor][] que aloja esta página, además de

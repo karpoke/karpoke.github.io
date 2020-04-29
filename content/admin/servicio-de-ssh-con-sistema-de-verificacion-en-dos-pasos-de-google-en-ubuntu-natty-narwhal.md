@@ -56,86 +56,66 @@ Instalación
 
 Instalamos, previamente, los paquetes necesarios:
 
-```bash
-$ sudo aptitude install libpam0g-dev libpam-devperm mercurial
-```
+    $ sudo aptitude install libpam0g-dev libpam-devperm mercurial
 
 [Descargamos][] el módulo PAM:
 
-```bash
-$ hg clone https://code.google.com/p/google-authenticator/
-```
+    $ hg clone https://code.google.com/p/google-authenticator/
 
 Realizando la instalación en una Ubuntu Lucid Lynx (10.04) me aparecía
 el siguiente error:
 
-```bash
-abort: repository [svn]https://zxing.googlecode.com/svn/trunk/ not found!
-```
+    abort: repository [svn]https://zxing.googlecode.com/svn/trunk/ not found!
 
 Parece ser que es porque tiene una [versión de `mercurial` un poco
 vieja][versión de mercurial un poco vieja].
 
-```bash
-$ hg --version
-Mercurial Distributed SCM (version 1.4.3)
-```
+    $ hg --version
+    Mercurial Distributed SCM (version 1.4.3)
 
 Deberemos instalar una versión de `mercurial` más nueva de la que está
 en los repositorios de Lucid, o descargar el código en otro sitio y
 copiarlo. Con la versión de `mercurial` en Ubuntu Natty Narwhal no tuve
 problemas:
 
-```bash
-$ hg --version
-Mercurial Distributed SCM (version 1.7.5)
-```
+    $ hg --version
+    Mercurial Distributed SCM (version 1.7.5)
 
 Si lo hemos bajado en otra máquina, no hace falta que copiemos el
 repositorio entero, únicamente el directorio `libpam`:
 
-```bash
-user@otherhost:~$ scp -r google-authentication/libpam/ user@host:~
-```
+    user@otherhost:~$ scp -r google-authentication/libpam/ user@host:~
 
 Una vez hecho este paso, lo compilamos en la máquina que lo queremos
 instalar, y lo instalamos:
 
-```bash
-$ cd libpam/
-$ make
-```
+    $ cd libpam/
+    $ make
 
 Como inciso, comentar que, ya que estaba, también lo iba a instalar en
 una Ubuntu Natty Narwhal, y me dio el siguiente error:
 
-```bash
-google-authenticator.o: In function `displayQRCode':
-/home/karpoke/hg-read-only/google-authenticator/libpam/google-authenticator.c:154: undefined reference to `dlopen'
-/home/karpoke/hg-read-only/google-authenticator/libpam/google-authenticator.c:166: undefined reference to `dlsym'
-/home/karpoke/hg-read-only/google-authenticator/libpam/google-authenticator.c:168: undefined reference to `dlsym'
-/home/karpoke/hg-read-only/google-authenticator/libpam/google-authenticator.c:253: undefined reference to `dlclose'
-/home/karpoke/hg-read-only/google-authenticator/libpam/google-authenticator.c:156: undefined reference to `dlopen'
-```
+    google-authenticator.o: In function `displayQRCode':
+    /home/karpoke/hg-read-only/google-authenticator/libpam/google-authenticator.c:154: undefined reference to `dlopen'
+    /home/karpoke/hg-read-only/google-authenticator/libpam/google-authenticator.c:166: undefined reference to `dlsym'
+    /home/karpoke/hg-read-only/google-authenticator/libpam/google-authenticator.c:168: undefined reference to `dlsym'
+    /home/karpoke/hg-read-only/google-authenticator/libpam/google-authenticator.c:253: undefined reference to `dlclose'
+    /home/karpoke/hg-read-only/google-authenticator/libpam/google-authenticator.c:156: undefined reference to `dlopen'
 
 El problema parece ser que el `Makefile` [no encuentra la librería
 `libdl`][no encuentra la librería libdl]—la busca en `/usr/lib/libdl.so`—.
 La solución pasa por buscarla nosotros mismos y modificar dicho fichero:
 
-```bash
-$ find /usr/lib -name libdl.so
-/usr/lib/i386-linux-gnu/libdl.so
-$ sed -i 's|/usr/lib/libdl.so|/usr/lib/i386-linux-gnu/libdl.so|g' Makefile
-$ make
-```
+    $ find /usr/lib -name libdl.so
+    /usr/lib/i386-linux-gnu/libdl.so
+    $ sed -i 's|/usr/lib/libdl.so|/usr/lib/i386-linux-gnu/libdl.so|g' Makefile
+    $ make
 
 Lo instalamos, por fin:
 
-```bash
-$ sudo make install
-$ cp pam_google_authenticator.so /lib/security
-$ cp google-authenticator /usr/local/bin
-```
+    $ sudo make install
+    $ cp pam_google_authenticator.so /lib/security
+    $ cp google-authenticator /usr/local/bin
 
 Configurar el servicio de SSH
 -----------------------------
@@ -143,44 +123,40 @@ Configurar el servicio de SSH
 Ahora debemos añadir el módulo recién instalado al final del fichero
 `/etc/pam.d/sshd` ^[1][]^:
 
-```bash
-# Google 2FA
-auth required pam_google_authenticator.so
-```
+    # Google 2FA
+    auth required pam_google_authenticator.so
 
 Ejecutamos el siguiente comando __con cada usuario__ con el que queremos
 utilizar el 2FA, lo cual nos creará una clave secreta en el directorio
 de usuario:
 
-```bash
-$ google-authenticator
-https://www.google.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth://totp/user@server%3Fsecret%3DSAEP64T5VZAVWAFB
-Your new secret key is: SAEP64T5VZAVWAFB
-Your verification code is 376046
-Your emergency scratch codes are:
-  67868696
-  26247332
-  54815527
-  54336661
-  71083816
+    $ google-authenticator
+    https://www.google.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth://totp/user@server%3Fsecret%3DSAEP64T5VZAVWAFB
+    Your new secret key is: SAEP64T5VZAVWAFB
+    Your verification code is 376046
+    Your emergency scratch codes are:
+      67868696
+      26247332
+      54815527
+      54336661
+      71083816
 
-Do you want me to update your "~/.google_authenticator" file (y/n) y
+    Do you want me to update your "~/.google_authenticator" file (y/n) y
 
-Do you want to disallow multiple uses of the same authentication
-token? This restricts you to one login about every 30s, but it increases
-your chances to notice or even prevent man-in-the-middle attacks (y/n) y
+    Do you want to disallow multiple uses of the same authentication
+    token? This restricts you to one login about every 30s, but it increases
+    your chances to notice or even prevent man-in-the-middle attacks (y/n) y
 
-By default, tokens are good for 30 seconds and in order to compensate for
-possible time-skew between the client and the server, we allow an extra
-token before and after the current time. If you experience problems with poor
-time synchronization, you can increase the window from its default
-size of 1:30min to about 4min. Do you want to do so (y/n) n
+    By default, tokens are good for 30 seconds and in order to compensate for
+    possible time-skew between the client and the server, we allow an extra
+    token before and after the current time. If you experience problems with poor
+    time synchronization, you can increase the window from its default
+    size of 1:30min to about 4min. Do you want to do so (y/n) n
 
-If the computer that you are logging into isn't hardened against brute-force
-login attempts, you can enable rate-limiting for the authentication module.
-By default, this limits attackers to no more than 3 login attempts every 30s.
-Do you want to enable rate-limiting (y/n) y
-```
+    If the computer that you are logging into isn't hardened against brute-force
+    login attempts, you can enable rate-limiting for the authentication module.
+    By default, this limits attackers to no more than 3 login attempts every 30s.
+    Do you want to enable rate-limiting (y/n) y
 
 Deberemos guardar esos códigos celosamente, ya que si perdemos el móvil,
 esa será la única manera de poder iniciar sesión de forma remota.
@@ -194,11 +170,9 @@ nombre.
 También podemos [leer el código desde el terminal para ver lo que
 contiene][]:
 
-```bash
-$ wget -O qrcode.png 'https://www.google.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth://totp/user@server%3Fsecret%3DSAEP64T5VZAVWAFB'
-$ qrdecode qrcode.png
-otpauth://totp/user@server?secret=SAEP64T5VZAVWAFB
-```
+    $ wget -O qrcode.png 'https://www.google.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth://totp/user@server%3Fsecret%3DSAEP64T5VZAVWAFB'
+    $ qrdecode qrcode.png
+    otpauth://totp/user@server?secret=SAEP64T5VZAVWAFB
 
 Es importante que el servidor tenga instalado un servicio de NTP para
 actualizar la hora de forma precisa. Si tenemos problemas con esto,
@@ -208,10 +182,8 @@ deberíamos permitir un tamaño de ventana más abierto, tal como sugería
 También necesitaremos editar el fichero de configuración de `ssh`,
 `/etc/ssh/sshd_config`, para que contenga:
 
-```bash
-ChallengeResponseAuthentication yes
-UsePAM yes
-```
+    ChallengeResponseAuthentication yes
+    UsePAM yes
 
 Si usamos las directivas `AllowUsers` o `AllowGroups` debemos acordarnos
 de incluir a cada usuario.
@@ -223,11 +195,9 @@ quedaríamos sin poder acceder a la máquina. Si tenemos las [conexiones
 por SSH compartidas][], no bastará con abrir un nuevo terminal,
 deberemos conectarnos desde otro usuario o en otra máquina.
 
-```bash
-$ ssh user@host
-Password:
-Verification code:
-```
+    $ ssh user@host
+    Password:
+    Verification code:
 
 La contraseña es la misma que teníamos y el código de verificación es el
 que nos aparezca en el móvil.
@@ -250,19 +220,15 @@ y preferimos omitirlo en [conexiones desde la misma LAN][], deberemos
 hacer lo siguiente. Creamos el fichero `/etc/security/access-local.conf`
 y ponemos:
 
-```bash
-+ : ALL : 192.168.50.0/24
-+ : ALL : LOCAL
-- : ALL : ALL
-```
+    + : ALL : 192.168.50.0/24
+    + : ALL : LOCAL
+    - : ALL : ALL
 
 Modificamos el fichero `/etc/pam.d/sshd` para añadir la siguiente línea
 justo antes de la que ya habíamos añadido, quedando así:
 
-```bash
-auth [success=1 default=ignore] pam_access.so accessfile=/etc/security/access-local.conf
-auth required                   pam_google_authenticator.so
-```
+    auth [success=1 default=ignore] pam_access.so accessfile=/etc/security/access-local.conf
+    auth required                   pam_google_authenticator.so
 
 Ahora ya podemos reiniciar el servicio `SSH`, y para las conexiones
 locales o desde la red 192.168.50.0/24 bastará con proporcionar la
@@ -274,12 +240,10 @@ Para evitar que determinados usuarios usen este sistema de
 autenticación, podemos incluir una línea como la siguiente, al principio
 del fichero `/etc/security/access-local.conf`, quedando así:
 
-```bash
-+ : username : ALL
-+ : ALL : 192.168.50.0/24
-+ : ALL : LOCAL
-- : ALL : ALL
-```
+    + : username : ALL
+    + : ALL : 192.168.50.0/24
+    + : ALL : LOCAL
+    - : ALL : ALL
 
 Deberemos reiniciar el servicio SSH para que los cambios tengan efecto.
 
@@ -290,11 +254,9 @@ En lugar de ir añadiendo usuarios al fichero
 al fichero `/etc/pam.d/sshd`, justo antes de los cambios que habíamos
 acabado de añadir en este fichero, quedando así:
 
-```bash
-auth sufficient                 pam_succeed_if.so user ingroup nonotp
-auth [success=1 default=ignore] pam_access.so accessfile=/etc/security/access-local.conf
-auth required                   pam_google_authenticator.so
-```
+    auth sufficient                 pam_succeed_if.so user ingroup nonotp
+    auth [success=1 default=ignore] pam_access.so accessfile=/etc/security/access-local.conf
+    auth required                   pam_google_authenticator.so
 
 Los usuarios que pertenezcan al grupo `nonotp` no utilizarán este tipo
 de autenticación.
@@ -340,33 +302,29 @@ El proceso de obtención de una clave es el siguiente:
 
 En Python:
 
-```python
-def get_hotp_token(secret, intervals_no):
-    key = base64.b32decode(secret)
-    msg = struct.pack(">Q", intervals_no)
-    h = hmac.new(key, msg, hashlib.sha1).digest()
-    o = ord(h[19]) & 15
-    h = (struct.unpack(">I", h[o:o+4])[0] & 0x7fffffff) % 1000000492246
-    return h
+    def get_hotp_token(secret, intervals_no):
+        key = base64.b32decode(secret)
+        msg = struct.pack(">Q", intervals_no)
+        h = hmac.new(key, msg, hashlib.sha1).digest()
+        o = ord(h[19]) & 15
+        h = (struct.unpack(">I", h[o:o+4])[0] & 0x7fffffff) % 1000000492246
+        return h
 
-def get_totp_token(secret):
-    return get_hotp_token(secret, intervals_no=int(time.time())//30)
-print get_totp_token('SAEP64T5VZAVWAFB')
-492246
-```
+    def get_totp_token(secret):
+        return get_hotp_token(secret, intervals_no=int(time.time())//30)
+    print get_totp_token('SAEP64T5VZAVWAFB')
+    492246
 
 Un ejemplo de uso del módulo:
 
-```bash
-$ git clone https://github.com/tadeck/onetimepass
-$ ipython
-In [1]: import onetimepass as otp
-In [2]: my_secret = 'SAEP64T5VZAVWAFB'
-In [3]: otp.get_totp(my_secret)
-Out[3]: 453001
-In [4]: otp.valid_totp(453001, my_secret)
-Out[4]: True
-```
+    $ git clone https://github.com/tadeck/onetimepass
+    $ ipython
+    In [1]: import onetimepass as otp
+    In [2]: my_secret = 'SAEP64T5VZAVWAFB'
+    In [3]: otp.get_totp(my_secret)
+    Out[3]: 453001
+    In [4]: otp.valid_totp(453001, my_secret)
+    Out[4]: True
 
 * * * * *
 

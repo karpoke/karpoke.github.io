@@ -12,9 +12,7 @@ sólo necesitamos configurar el salvapantallas `phosphor`.
 
 Lo primero es instalar el código fuente del `kernel`:
 
-```bash
-$ sudo apt-get source linux-source-$(uname -r)
-```
+    $ sudo apt-get source linux-source-$(uname -r)
 
 El comando `uname` muestra información acerca del sistema operativo
 instalado, la versión del kernel, la familia del procesador, el nombre
@@ -22,16 +20,12 @@ de la máquina o la plataforma. En mi caso, uso un kernel PAE, porque
 tengo una Ubuntu de 32 bits y 4 GB de RAM, por lo que el comando
 anterior no me ha ido del todo bien:
 
-```bash
-$ uname -r
-2.6.38-10-generic-pae
-```
+    $ uname -r
+    2.6.38-10-generic-pae
 
 Así que, en su lugar, he utilizado:
 
-```bash
-$ sudo apt-get source linux-2.6.38
-```
+    $ sudo apt-get source linux-2.6.38
 
 Una vez descargado el código fuente del kernel, configuraremos
 `phosphor` para que muestre el contenido de algún fichero. Si no tenemos
@@ -41,25 +35,21 @@ instalado `phosphor`, habrá que instalar el paquete
 El fichero de configuración de `phosphor` está en
 `/usr/share/applications/screensavers/phosphor.desktop`:
 
-```bash
-[Desktop Entry]
-Name=Phosphor
-Exec=/usr/lib/xscreensaver/phosphor -root
-TryExec=/usr/lib/xscreensaver/phosphor
-Comment=Draws a simulation of an old terminal, with large pixels and long-sustain phosphor. On X11 systems, This program is also a fully-functional VT100 emulator! Written by Jamie Zawinski.
-StartupNotify=false
-Terminal=false
-Type=Application
-Categories=Screensaver;
-OnlyShowIn=GNOME;
-```
+    [Desktop Entry]
+    Name=Phosphor
+    Exec=/usr/lib/xscreensaver/phosphor -root
+    TryExec=/usr/lib/xscreensaver/phosphor
+    Comment=Draws a simulation of an old terminal, with large pixels and long-sustain phosphor. On X11 systems, This program is also a fully-functional VT100 emulator! Written by Jamie Zawinski.
+    StartupNotify=false
+    Terminal=false
+    Type=Application
+    Categories=Screensaver;
+    OnlyShowIn=GNOME;
 
 Para probarlo podemos ejecutar:
 
-```bash
-$ /usr/lib/xscreensaver/phosphor -program fortune
-$ /usr/lib/xscreensaver/phosphor -scale 2 -delay 40000 -ticks 10 -geom '1680x1050' -program 'od -txC -w6 /dev/random'
-```
+    $ /usr/lib/xscreensaver/phosphor -program fortune
+    $ /usr/lib/xscreensaver/phosphor -scale 2 -delay 40000 -ticks 10 -geom '1680x1050' -program 'od -txC -w6 /dev/random'
 
 Podemos pasarle diferentes opciones, tales como el tipo, el tamaño o la
 escala de la fuente a utilizar, la velocidad a la que escribe, el
@@ -69,40 +59,36 @@ Crearemos un pequeño _script_, [`random-lines-of-code.sh`][random-lines-of-code
 permita seleccionar un trozo [aleatorio][] de un fichero aleatorio del
 código fuente del kernel;
 
-```bash
-function randint() {
-   cat /proc/interrupts | md5sum | sed -r 's/[a-f]//g; s/^0+//; s/.{3}$//'
-}
+    function randint() {
+       cat /proc/interrupts | md5sum | sed -r 's/[a-f]//g; s/^0+//; s/.{3}$//'
+    }
 
-# random file
-f=$(ls /usr/src/linux-2.6.38/_/_.{c,h} | shuf -n1)
+    # random file
+    f=$(ls /usr/src/linux-2.6.38/_/_.{c,h} | shuf -n1)
 
-# number of lines
-declare -i nol=$(wc -l $f | awk '{print $1}')
+    # number of lines
+    declare -i nol=$(wc -l $f | awk '{print $1}')
 
-# choose a random first line
-declare -i first=$( echo $(randint) % $nol | bc )
+    # choose a random first line
+    declare -i first=$( echo $(randint) % $nol | bc )
 
-# choose a random bunch of lines
-declare -i offset=$( echo $(randint) % \($nol-$first\) | bc )
+    # choose a random bunch of lines
+    declare -i offset=$( echo $(randint) % \($nol-$first\) | bc )
 
-# first line doesn't start at 0
-first=$(( first+1 ))
+    # first line doesn't start at 0
+    first=$(( first+1 ))
 
-# last line
-declare -i last=$(( first+offset ))
+    # last line
+    declare -i last=$(( first+offset ))
 
-# show the lines of the file
-cat $f | sed -n ${first},${last}p
-```
+    # show the lines of the file
+    cat $f | sed -n ${first},${last}p
 
 Guardamos el _script_, le damos permisos de ejecución y modificamos el
 fichero de configuración de `phosphor` para que lo ejecute. Cambiamos la
 línea del `Exec`:
 
-```bash
-Exec=/usr/lib/xscreensaver/phosphor -root -scale 2 -program '/home/user/random-lines-of-code.sh'
-```
+    Exec=/usr/lib/xscreensaver/phosphor -root -scale 2 -program '/home/user/random-lines-of-code.sh'
 
 En el menú `Sistema > Preferencias > Salvapantallas` seleccionamos
 `Phosphor`, y listos.

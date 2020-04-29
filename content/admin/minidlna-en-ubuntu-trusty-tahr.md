@@ -21,77 +21,57 @@ Compilación
 Antes de compilarlo, nos aseguramos de que tenemos las herramientas
 necesarias instaladas:
 
-```bash
-$ sudo aptitude install autoconf g++ subversion linux-source linux-headers-`uname -r` build-essential tofrodos git-core subversion dos2unix make gcc automake cmake checkinstall git-core dpkg-dev fakeroot pbuilder dh-make debhelper devscripts patchutils quilt git-buildpackage pristine-tar git yasm checkinstall cvs mercurial
-```
+    $ sudo aptitude install autoconf g++ subversion linux-source linux-headers-`uname -r` build-essential tofrodos git-core subversion dos2unix make gcc automake cmake checkinstall git-core dpkg-dev fakeroot pbuilder dh-make debhelper devscripts patchutils quilt git-buildpackage pristine-tar git yasm checkinstall cvs mercurial
 
 También nos aseguraremos de que tenemos las dependencias instaladas:
 
-```bash
-$ sudo aptitude install libexif12 libexif-dev libjpeg8-dev libjpeg-dev libjpeg-turbo8 libjpeg-turbo8-dev libid3tag0 libid3tag0-dev libflac8 libflac-dev libvorbis0a libvorbisenc2 libvorbisfile3 libvorbis-dev libsqlite3-0 libsqlite3-dev libavformat54 libavformat-dev
-```
+    $ sudo aptitude install libexif12 libexif-dev libjpeg8-dev libjpeg-dev libjpeg-turbo8 libjpeg-turbo8-dev libid3tag0 libid3tag0-dev libflac8 libflac-dev libvorbis0a libvorbisenc2 libvorbisfile3 libvorbis-dev libsqlite3-0 libsqlite3-dev libavformat54 libavformat-dev
 
 Descargamos el código fuente y lo compilamos:
 
-```bash
-$ git clone git://git.code.sf.net/p/minidlna/git minidlna-git
-$ cd minidlna-git
-$ ./autogen.sh
-$ ./configure
-$ make
-```
+    $ git clone git://git.code.sf.net/p/minidlna/git minidlna-git
+    $ cd minidlna-git
+    $ ./autogen.sh
+    $ ./configure
+    $ make
 
 Ahora podemos, o bien instalarlo directamente:
 
-```bash
-$ sudo make install
-```
+    $ sudo make install
 
 o bien [crear un paquete `.deb` con `checkinstall`][crear un paquete .deb con checkinstall]:
 
-```bash
-$ sudo checkinstall
-```
+    $ sudo checkinstall
 
 Configuración
 -------------
 
 Creamos el directorio donde guardaremos la configuración:
 
-```bash
-$ mkdir ~/.minidlna
-```
+    $ mkdir ~/.minidlna
 
 Partiremos del fichero de configuración que viene en el código:
 
-```bash
-$ cp minidlna.conf ~/.minidlna/minidlna.conf
-```
+    $ cp minidlna.conf ~/.minidlna/minidlna.conf
 
 En el fichero de configuración, deberemos especificar con qué usuario se
 debe ejecutar el servicio, qué directorio contiene los archivos
 multimedia y dónde deberá guardar la base de datos que utiliza:
 
-```bash
-user=user
-media_dir=/media/share
-db_dir=/home/user/.minidlna
-```
+    user=user
+    media_dir=/media/share
+    db_dir=/home/user/.minidlna
 
 Ejecución
 ---------
 
 Para lanzar el servicio:
 
-```bash
-$ /usr/local/sbin/minidlnad -f ~/.minidlna/minidlna.conf
-```
+    $ /usr/local/sbin/minidlnad -f ~/.minidlna/minidlna.conf
 
 Si vemos que necesitamos que reindexe los contenidos:
 
-```bash
-$ /usr/local/sbin/minidlnad -R -f ~/.minidlna/minidlna.conf
-```
+    $ /usr/local/sbin/minidlnad -R -f ~/.minidlna/minidlna.conf
 
 Cortafuegos
 -----------
@@ -101,10 +81,8 @@ defecto el 8200, sea accesible. También [el puerto UDP 1900][]. Por
 ejemplo, si queremos permitir únicamente el acceso dentro de la propia
 LAN y usamos `ufw`:
 
-```bash
-$ sudo ufw allow proto tcp from 192.168.50.0/24 to any port 8200
-$ sudo ufw allow proto udp from 192.168.50.0/24 to any port 1900
-```
+    $ sudo ufw allow proto tcp from 192.168.50.0/24 to any port 8200
+    $ sudo ufw allow proto udp from 192.168.50.0/24 to any port 1900
 
 Clientes
 --------
@@ -124,72 +102,67 @@ Ejecución al inicio
 Si queremos que el servicio arranque al inicio, podemos utilizar el
 siguiente _script_:
 
-```bash
-#!/bin/sh
-# Mini DLNA
-### BEGIN INIT INFO
-# Provides:          scriptname
-# Required-Start:    $remote_fs $syslog
-# Required-Stop:     $remote_fs $syslog
-# Default-Start:     2 3 4 5
-# Default-Stop:      0 1 6
-# Short-Description: Start daemon at boot time
-# Description:       Enable service provided by daemon.
-### END INIT INFO
+    #!/bin/sh
+    # Mini DLNA
+    ### BEGIN INIT INFO
+    # Provides:          scriptname
+    # Required-Start:    $remote_fs $syslog
+    # Required-Stop:     $remote_fs $syslog
+    # Default-Start:     2 3 4 5
+    # Default-Stop:      0 1 6
+    # Short-Description: Start daemon at boot time
+    # Description:       Enable service provided by daemon.
+    ### END INIT INFO
 
-case "$1" in
-'start')
+    case "$1" in
+    'start')
+            /usr/local/sbin/minidlnad -f /home/user/.minidlna/minidlna.conf
+        echo Started
+            ;;
+    'stop')
+        PID=`/bin/pidof minidlnad`
+        if [ ${PID} ]; then sudo kill -SIGTERM ${PID}
+        else echo Already Stopped
+        fi
+            ;;
+    'restart')
+        PID=`/bin/pidof minidlnad`
+        if [ ${PID} ]; then sudo kill -SIGTERM ${PID}
+        fi
         /usr/local/sbin/minidlnad -f /home/user/.minidlna/minidlna.conf
-    echo Started
+        echo Restarted
         ;;
-'stop')
-    PID=`/bin/pidof minidlnad`
-    if [ ${PID} ]; then sudo kill -SIGTERM ${PID}
-    else echo Already Stopped
-    fi
+    'status')
+        PID=`/bin/pidof minidlnad`
+        if [ ${PID} ]; then echo Running. Process ${PID}
+        else echo Stopped
+        fi
         ;;
-'restart')
-    PID=`/bin/pidof minidlnad`
-    if [ ${PID} ]; then sudo kill -SIGTERM ${PID}
-    fi
-    /usr/local/sbin/minidlnad -f /home/user/.minidlna/minidlna.conf
-    echo Restarted
-    ;;
-'status')
-    PID=`/bin/pidof minidlnad`
-    if [ ${PID} ]; then echo Running. Process ${PID}
-    else echo Stopped
-    fi
-    ;;
-'rescan')
-    PID=`/bin/pidof minidlnad`
-    if [ ${PID} ]; then sudo kill -SIGTERM ${PID}
-    fi
-    /usr/local/sbin/minidlnad -R -f /home/user/.minidlna/minidlna.conf
-    echo Rescanning
-    ;;
-*)
-        echo "Usage: $0 { start | stop | restart | status | rescan }"
+    'rescan')
+        PID=`/bin/pidof minidlnad`
+        if [ ${PID} ]; then sudo kill -SIGTERM ${PID}
+        fi
+        /usr/local/sbin/minidlnad -R -f /home/user/.minidlna/minidlna.conf
+        echo Rescanning
         ;;
-esac
-exit 0
-```
+    *)
+            echo "Usage: $0 { start | stop | restart | status | rescan }"
+            ;;
+    esac
+    exit 0
 
 Lo guardamos en `/etc/init.d/minidlna` y configuramos el arranque:
 
-```bash
-$ sudo chmod +x /etc/init.d/minidlna
-$ sudo update-rc.d minidlna defaults
- Adding system startup for /etc/init.d/minidlna ...
-   /etc/rc0.d/K20minidlna -> ../init.d/minidlna
-   /etc/rc1.d/K20minidlna -> ../init.d/minidlna
-   /etc/rc6.d/K20minidlna -> ../init.d/minidlna
-   /etc/rc2.d/S20minidlna -> ../init.d/minidlna
-   /etc/rc3.d/S20minidlna -> ../init.d/minidlna
-   /etc/rc4.d/S20minidlna -> ../init.d/minidlna
-   /etc/rc5.d/S20minidlna -> ../init.d/minidlna
-
-```
+    $ sudo chmod +x /etc/init.d/minidlna
+    $ sudo update-rc.d minidlna defaults
+     Adding system startup for /etc/init.d/minidlna ...
+       /etc/rc0.d/K20minidlna -> ../init.d/minidlna
+       /etc/rc1.d/K20minidlna -> ../init.d/minidlna
+       /etc/rc6.d/K20minidlna -> ../init.d/minidlna
+       /etc/rc2.d/S20minidlna -> ../init.d/minidlna
+       /etc/rc3.d/S20minidlna -> ../init.d/minidlna
+       /etc/rc4.d/S20minidlna -> ../init.d/minidlna
+       /etc/rc5.d/S20minidlna -> ../init.d/minidlna
 
 Actualizaciones
 ---------------
@@ -197,26 +170,22 @@ Actualizaciones
 Cuando haya actualizaciones del código, podemos repetir el proceso de
 compilación:
 
-```bash
-$ cd minidlna-git
-$ make distclean
-$ git pull
-$ ./configure
-$ make
-$ sudo checkinstall
-```
+    $ cd minidlna-git
+    $ make distclean
+    $ git pull
+    $ ./configure
+    $ make
+    $ sudo checkinstall
 
 Desinstalación
 --------------
 
 Si queremos desinstalarlo, no tenemos más que:
 
-```bash
-$ sudo aptitude purge minidlna
-$ sudo update-rc.d -f minidlna remove
-$ sudo rm /etc/init.d/minidlna
-$ sudo rm -r /home/user/.minidlna
-```
+    $ sudo aptitude purge minidlna
+    $ sudo update-rc.d -f minidlna remove
+    $ sudo rm /etc/init.d/minidlna
+    $ sudo rm -r /home/user/.minidlna
 
 Referencias
 -----------

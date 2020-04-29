@@ -19,29 +19,27 @@ Ahora vamos a instalar el complemento. Descargamos la última versión
 estable, en estos momentos la 2.1.5, y la descomprimimos en el
 directorio `~/.vim`:
 
-```bash
-$ wget "www.vim.org/scripts/download_script.php?src_id=16490" -O vimpress-stable_2.1.5.zip
-$ unzip vimpress-stable_2.1.5.zip -d ~/.vim
-```
+    $ wget "www.vim.org/scripts/download_script.php?src_id=16490" -O vimpress-stable_2.1.5.zip
+    $ unzip vimpress-stable_2.1.5.zip -d ~/.vim
 
 Añadimos al fichero de configuración de `vim`, `~/.vimrc`:
 
-```bash
-let VIMPRESS = [{'username': 'user',
-                 'password': 'pass',
-                 'blog_url': 'http://your-first-blog.com/'
-                },
-                {'username': 'user',
-                 'blog_url': 'http://your-second-blog.com/'
-                }]
-```
+    let VIMPRESS = [
+        {
+            'username': 'user',
+            'password': 'pass',
+            'blog_url': 'http://your-first-blog.com/'
+        }, {
+            'username': 'user',
+            'blog_url': 'http://your-second-blog.com/'
+        }
+    ]
 
 Uso
 ---
 
 Algunos comandos que muestran cómo utilizar el complemento:
 
-```bash
     :BlogList             -  Los 30 últimos artículos.
     :BlogList post 100    -  100 últimos artículos.
     :BlogList page        -  Las 30 últimas páginas.
@@ -59,7 +57,6 @@ Algunos comandos que muestran cómo utilizar el complemento:
     :BlogOpen http://your-first-blog.com/archives/679
     :BlogOpen http://your-second-blog.com/?p=679
     :BlogOpen http://your-third-blog.com/with-your-custom-permalink
-```
 
 Para que funcione, además de instalar el complemento deberemos activar el
 servicio XML-RPC para publicar de forma remota. Para activarlo vamos a
@@ -110,7 +107,7 @@ Listado ordenado:
 
 > > `> > cita anidada`
 
-``` ``code`` ```
+        code
 
 Referencias
 -----------

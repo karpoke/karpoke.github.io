@@ -29,13 +29,11 @@ una imagen de la siguiente manera:
      onload="logged_in('lig','Sí')"
      onerror="logged_in('lig','No')" />
 
-```html
-<img
-    src="https://mail.google.com/mail/photos/static/AD34hIhNx1pdsCxEpo6LavSR8dYSmSi0KTM1pGxAjRio47pofmE9RH7bxPwelO8tlvpX3sbYkNfXT7HDAZJM_uf5qU2cvDJzlAWxu7-jaBPbDXAjVL8YGpI"
-    onload="logged_in_gmail()"
-    onerror="not_logged_in_gmail()"
-/>
-```
+    <img
+        src="https://mail.google.com/mail/photos/static/AD34hIhNx1pdsCxEpo6LavSR8dYSmSi0KTM1pGxAjRio47pofmE9RH7bxPwelO8tlvpX3sbYkNfXT7HDAZJM_uf5qU2cvDJzlAWxu7-jaBPbDXAjVL8YGpI"
+        onload="logged_in_gmail()"
+        onerror="not_logged_in_gmail()"
+    />
 
 El `src` de la imagen hace referencia a la imagen del perfil de Mark, si
 no hemos iniciado sesión en GMail, la dirección del `src` no devolverá
@@ -68,21 +66,19 @@ el `src` devuelve un `200 OK`, incluso si el contenido devuelto no es
 código Javascript. Si el código es 404, 403, 406 o 500, se ejecuta el
 `onerror`.
 
-<script type="text/javascript"
-        src="https://twitter.com/settings/accounts/update?authenticity_token=xxx"
-        onload="logged_in('lit', 'Si')"
-        onerror="logged_in('lit', 'No')"
-        async="async">
-</script>
+    <script type="text/javascript"
+            src="https://twitter.com/settings/accounts/update?authenticity_token=xxx"
+            onload="logged_in('lit', 'Si')"
+            onerror="logged_in('lit', 'No')"
+            async="async">
+    </script>
 
-```html
-<script type="text/javascript"
-        src="https://twitter.com/settings/accounts/update?authenticity_token=xxx"
-        onload="not_logged_in_twitter()"
-        onerror="logged_in_twitter()"
-        async="async">
-</script>
-```
+    <script type="text/javascript"
+            src="https://twitter.com/settings/accounts/update?authenticity_token=xxx"
+            onload="not_logged_in_twitter()"
+            onerror="logged_in_twitter()"
+            async="async">
+    </script>
 
 En este caso, Twitter redirige a la página de _login_ si el usuario no
 está conectado, pero devuelve una página de error si el usuario está
@@ -104,21 +100,19 @@ En el caso de Facebook también recuriremos a una etiqueta `script`, y en
 el `src` podemos poner la URL de un perfil que sólo sea visible si el
 usuario está conectado, por ejemplo el de Mike.
 
-<script type="text/javascript"
-        src="https://www.facebook.com/imike3"
-        onload="logged_in('lif','Sí')"
-        onerror="logged_in('lif','No')"
-        async="async">
-</script>
+    <script type="text/javascript"
+            src="https://www.facebook.com/imike3"
+            onload="logged_in('lif','Sí')"
+            onerror="logged_in('lif','No')"
+            async="async">
+    </script>
 
-```html
-<script type="text/javascript"
-        src="https://www.facebook.com/imike3"
-        onload="logged_in_to_facebook()"
-        onerror="not_logged_in_to_facebook()"
-        async="async"
-></script>
-```
+    <script type="text/javascript"
+            src="https://www.facebook.com/imike3"
+            onload="logged_in_to_facebook()"
+            onerror="not_logged_in_to_facebook()"
+            async="async"
+    ></script>
 
 En algunas ocasiones, parece que Facebook añade algún tipo de
 [comprobación de seguridad][], como añadir un _captcha_, antes de
@@ -139,17 +133,15 @@ sabemos que va a visitar la web, podemos comprobar si ha iniciado sesión
 en el panel de administración de Wordpress que sabemos que tiene
 instalado en algún dominio concreto:
 
-<img src="http://www.example.org/wp-admin/images/toggle.gif"
-     onload="alert('Logged-In')"
-     onerror="alert('Not Logged-in')"
-/>
-```html
-<img src="http://www.example.org/wp-admin/images/toggle.gif"
-     onload="alert('Logged-In')"
-     onerror="alert('Not Logged-in')"
-/>
-/>
-```
+    <img src="http://www.example.org/wp-admin/images/toggle.gif"
+         onload="alert('Logged-In')"
+         onerror="alert('Not Logged-in')"
+    />
+
+    <img src="http://www.example.org/wp-admin/images/toggle.gif"
+         onload="alert('Logged-In')"
+         onerror="alert('Not Logged-in')"
+    />
 
 Aunque ya no funciona, ya que esa imagen ya no existe, y el resto de
 imágenes utilizadas en el administrador pueden ser visualizadas sin

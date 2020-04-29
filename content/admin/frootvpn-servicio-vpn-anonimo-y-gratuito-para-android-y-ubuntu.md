@@ -43,25 +43,19 @@ disponible en los repositorios.
 
 Descargarmaos el fichero de configuración desde su página:
 
-```bash
-$ wget https://www.frootvpn.com/files/frootvpn.ovpn
-$ sudo mv frootvpn.ovpn /etc/openvpn/
-```
+    $ wget https://www.frootvpn.com/files/frootvpn.ovpn
+    $ sudo mv frootvpn.ovpn /etc/openvpn/
 
 Y nos conectamos simplemente ejecutando:
 
-```bash
-$ sudo openvpn --config /etc/openvpn/frootvpn.ovpn
-```
+    $ sudo openvpn --config /etc/openvpn/frootvpn.ovpn
 
 Si tuviéramos problemas al conectar a alguna web, añadir la siguiente
 línea en el fichero `/etc/resolv.conf` (o en
 `/etc/resolvconf/resolv.conf.d/base` si usamos `resolvconf`) podría
 servir:
 
-```bash
-nameserver 80.67.0.2
-```
+    nameserver 80.67.0.2
 
 ### Configurar FrootVPN con Network Manager
 
@@ -76,11 +70,9 @@ Para que nos funcione la conexión desde `NetworkManager`, primero
 creamos el fichero `/etc/openvpn/frootvpn.crt` y en él copiamos los
 certificados que están contenidos en `frootvpn.ovpn`:
 
-```bash
-$ sudo su
-# cp /etc/openvpn/frootvpn.{ovpn,crt}
-# sed -n '/-----BEGIN/,/-----END/p' /etc/openvpn/frootvpn.crt | sponge /etc/openvpn/frootvpn.crt
-```
+    $ sudo su
+    # cp /etc/openvpn/frootvpn.{ovpn,crt}
+    # sed -n '/-----BEGIN/,/-----END/p' /etc/openvpn/frootvpn.crt | sponge /etc/openvpn/frootvpn.crt
 
 Después, vamos al menú de gestión de redes > Conexiones VPN >
 Configurar VPN > Añadir > Importar una configuración VPN guardada, y

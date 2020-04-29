@@ -25,10 +25,8 @@ Podemos descargarnos el código desde su web, desde su repositorio de
 versiones o desde el repositorio de paquetes de la distribución. Para
 descargarlo desde el repositorio de Ubuntu:
 
-```bash
-$ sudo aptitude install libxml2 libxml2-dev libxml2-utils libaprutil1 libaprutil1-dev
-$ sudo aptitude install libapache-mod-security
-```
+    $ sudo aptitude install libxml2 libxml2-dev libxml2-utils libaprutil1 libaprutil1-dev
+    $ sudo aptitude install libapache-mod-security
 
 La versión que se instala es la 2.5.11-1. Aunque la última versión
 estable en su web es la 2.6.2, esta vez utilizaremos la del repositorio
@@ -36,15 +34,11 @@ de Ubuntu.
 
 Para activar el módulo:
 
-```bash
-$ sudo a2enmod mod-security
-```
+    $ sudo a2enmod mod-security
 
 Y reiniciamos Apache:
 
-```bash
-$ sudo apache2ctl restart
-```
+    $ sudo apache2ctl restart
 
 ### Configuración inicial
 
@@ -52,15 +46,11 @@ Podemos crear un archivo donde configuremos algunas directivas en
 `/etc/apache2/conf.d/modsecurity.conf`. Por ejemplo, donde se encuentra
 el fichero de _log_:
 
-```bash
-SecAuditLog /var/log/apache2/mod-security.log
-```
+    SecAuditLog /var/log/apache2/mod-security.log
 
 Reiniciamos Apache para que los cambios tengan efecto:
 
-```bash
-$ sudo apache2ctl restart
-```
+    $ sudo apache2ctl restart
 
 Reglas OWASP
 ------------
@@ -69,13 +59,11 @@ Descargamos la última versión de las reglas (2.2.4) y lo descomprimimos
 en el directorio `/etc/apache2`. Para evitar problemas, las
 descargaremos en el directorio `/etc/apache2`:
 
-```bash
-$ cd /etc/apache2
-$ sudo wget http://downloads.sourceforge.net/project/mod-security/modsecurity-crs/0-CURRENT/modsecurity-crs_2.2.4.tar.gz
-$ sudo tar xvzf modsecurity-crs_2.2.4.tar.gz
-$ sudo chown -R root:root modsecurity-crs_2.2.4
-$ sudo mv modsecurity-crs_2.2.4 modsecurity-crs
-```
+    $ cd /etc/apache2
+    $ sudo wget http://downloads.sourceforge.net/project/mod-security/modsecurity-crs/0-CURRENT/modsecurity-crs_2.2.4.tar.gz
+    $ sudo tar xvzf modsecurity-crs_2.2.4.tar.gz
+    $ sudo chown -R root:root modsecurity-crs_2.2.4
+    $ sudo mv modsecurity-crs_2.2.4 modsecurity-crs
 
 Hay cinco directorios de reglas con diferentes tipos de regla:
 
@@ -90,25 +78,18 @@ Hay cinco directorios de reglas con diferentes tipos de regla:
 Empezaremos con la configuración básica que viene de ejemplo. Copiamos
 el archivo de configuración:
 
-```bash
-$ cd /etc/apache2/modsecurity-crs
-$ sudo cp modsecurity_crs_10_config.conf.example modsecurity_crs_10_config.conf
-```
+    $ cd /etc/apache2/modsecurity-crs
+    $ sudo cp modsecurity_crs_10_config.conf.example modsecurity_crs_10_config.conf
 
 Para que se tengan en cuenta las reglas, añadiremos al final del fichero
 `/etc/apache2/apache2.conf`:
 
-```bash
-
     Include modsecurity-crs/modsecurity_crs_10_config.conf
     Include modsecurity-crs/base_rules/*.conf
-```
 
 Deberemos reiniciar Apache.
 
-```bash
-$ sudo apache2ctl restart
-```
+    $ sudo apache2ctl restart
 
 #### Error creating rule: Unknown variable: REQBODY_ERROR
 
@@ -119,10 +100,8 @@ fichero
 `modsecurity-crs/base_rules/modsecurity_crs_20_protocol_violations.conf`,
 para que se solucione el error:
 
-```bash
-$ cd /etc/apache2/modsecurity-crs/base_rules
-$ sudo sed -i 's/^SecRule REQBODY_ERROR/SecRule REQBODY_PROCESSOR_ERROR/' modsecurity_crs_20_protocol_violations.conf
-```
+    $ cd /etc/apache2/modsecurity-crs/base_rules
+    $ sudo sed -i 's/^SecRule REQBODY_ERROR/SecRule REQBODY_PROCESSOR_ERROR/' modsecurity_crs_20_protocol_violations.conf
 
 ### Más reglas
 
@@ -134,44 +113,33 @@ de cada regla.
 Primero, modificaremos el archivo `/etc/apache2/apache2.conf` para que
 contenga:
 
-```bash
-
     Include modsecurity-crs/modsecurity_crs_10_config.conf
     Include modsecurity-crs/activated_rules/*.conf
-```
 
 Por ejemplo, para incluir las reglas básicas:
 
-```bash
-$ cd /etc/apache2/modsecurity-crs/activated-rules
-$ for f in $(ls /etc/apache2/modsecurity-crs/base_rules); do
-     sudo ln -s ../base_rules/$f $f
-  done
-```
+    $ cd /etc/apache2/modsecurity-crs/activated-rules
+    $ for f in $(ls /etc/apache2/modsecurity-crs/base_rules); do
+    sudo ln -s ../base_rules/$f $f
+    done
 
 Para incluir las reglas de _spam_:
 
-```bash
-$ cd /etc/apache2/modsecurity-crs/activated_rules
-$ for f in $(ls /etc/apache2/modsecurity-crs/optional_rules | grep comment_spam); do
-     sudo ln -s ../optional_rules/$f $f
-  done
-```
+    $ cd /etc/apache2/modsecurity-crs/activated_rules
+    $ for f in $(ls /etc/apache2/modsecurity-crs/optional_rules | grep comment_spam); do
+    sudo ln -s ../optional_rules/$f $f
+    done
 
 Para incluir todas las reglas opcionales:
 
-```bash
-$ cd /etc/apache2/modsecurity-crs/activated_rules
-$ for f in $(ls /etc/apache2/modsecurity-crs/optional_rules); do
-     sudo ln -s ../optional_rules/$f $f
-  done
-```
+    $ cd /etc/apache2/modsecurity-crs/activated_rules
+    $ for f in $(ls /etc/apache2/modsecurity-crs/optional_rules); do
+    sudo ln -s ../optional_rules/$f $f
+    done
 
 Reiniciamos Apache:
 
-```bash
-$ sudo apache2ctl restart
-```
+    $ sudo apache2ctl restart
 
 ### Actualización de las reglas
 
@@ -179,43 +147,39 @@ Si ya tenemos las reglas instaladas y queremos comprobar si hay
 actualizaciones, en el directorio `modsecurity-crs/util` hay un _script_
 que facilita el proceso. Para comprobar si hay reglas nuevas:
 
-```bash
-$ ./rules-updater.pl -rhttps://www.modsecurity.org/autoupdate/repository/ -l
-Could not load GnuPG module - cannot verify ruleset signatures
+    $ ./rules-updater.pl -rhttps://www.modsecurity.org/autoupdate/repository/ -l
+    Could not load GnuPG module - cannot verify ruleset signatures
 
-Repository: https://www.modsecurity.org/autoupdate/repository
+    Repository: https://www.modsecurity.org/autoupdate/repository
 
-modsecurity-crs {
-          2.0.0: modsecurity-crs_2.0.0.zip
-          2.0.1: modsecurity-crs_2.0.1.zip
-          2.0.2: modsecurity-crs_2.0.2.zip
-          2.0.3: modsecurity-crs_2.0.3.zip
-          2.0.4: modsecurity-crs_2.0.4.zip
-          2.0.5: modsecurity-crs_2.0.5.zip
-          2.0.6: modsecurity-crs_2.0.6.zip
-          2.0.7: modsecurity-crs_2.0.7.zip
-          2.0.8: modsecurity-crs_2.0.8.zip
-          2.0.9: modsecurity-crs_2.0.9.zip
-         2.0.10: modsecurity-crs_2.0.10.zip
-          2.1.0: modsecurity-crs_2.1.0.zip
-          2.1.1: modsecurity-crs_2.1.1.zip
-          2.1.2: modsecurity-crs_2.1.2.zip
-          2.2.0: modsecurity-crs_2.2.0.zip
-          2.2.1: modsecurity-crs_2.2.1.zip
-          2.2.2: modsecurity-crs_2.2.2.zip
-          2.2.3: modsecurity-crs_2.2.3.zip
-          2.2.4: modsecurity-crs_2.2.4.zip
-}
-```
+    modsecurity-crs {
+              2.0.0: modsecurity-crs_2.0.0.zip
+              2.0.1: modsecurity-crs_2.0.1.zip
+              2.0.2: modsecurity-crs_2.0.2.zip
+              2.0.3: modsecurity-crs_2.0.3.zip
+              2.0.4: modsecurity-crs_2.0.4.zip
+              2.0.5: modsecurity-crs_2.0.5.zip
+              2.0.6: modsecurity-crs_2.0.6.zip
+              2.0.7: modsecurity-crs_2.0.7.zip
+              2.0.8: modsecurity-crs_2.0.8.zip
+              2.0.9: modsecurity-crs_2.0.9.zip
+             2.0.10: modsecurity-crs_2.0.10.zip
+              2.1.0: modsecurity-crs_2.1.0.zip
+              2.1.1: modsecurity-crs_2.1.1.zip
+              2.1.2: modsecurity-crs_2.1.2.zip
+              2.2.0: modsecurity-crs_2.2.0.zip
+              2.2.1: modsecurity-crs_2.2.1.zip
+              2.2.2: modsecurity-crs_2.2.2.zip
+              2.2.3: modsecurity-crs_2.2.3.zip
+              2.2.4: modsecurity-crs_2.2.4.zip
+    }
 
 Para actualizar a la última versión, primero crearemos un directorio
 donde se van a descargar y después las descargamos:
 
-```bash
-$ cd /tmp
-$ mkdir crs
-$ ./rules-updater.pl -rhttp://www.modsecurity.org/autoupdate/repository/ -pcrs -Smodsecurity-crs
-```
+    $ cd /tmp
+    $ mkdir crs
+    $ ./rules-updater.pl -rhttp://www.modsecurity.org/autoupdate/repository/ -pcrs -Smodsecurity-crs
 
 Esto nos descarga el fichero con las últimas reglas, en este caso
 `modsecurity-crs_2.2.4.zip`.
@@ -227,47 +191,38 @@ Esto nos descarga el fichero con las últimas reglas, en este caso
 Parece ser que, actualmente, al intentar actualizar las reglas, nos
 encontremos con un error 404:
 
-```bash
-$ sudo ./rules-updater.pl -rhttp://www.modsecurity.org/autoupdate/repository/ -pcrs -Smodsecurity-crs
-Could not load GnuPG module - cannot verify ruleset signatures
-Fetching: modsecurity-crs/modsecurity-crs_2.2.5.zip ...
-Failed to retrieve ruleset modsecurity-crs/modsecurity-crs_2.2.5.zip: 404 Not Found
-```
+    $ sudo ./rules-updater.pl -rhttp://www.modsecurity.org/autoupdate/repository/ -pcrs -Smodsecurity-crs
+    Could not load GnuPG module - cannot verify ruleset signatures
+    Fetching: modsecurity-crs/modsecurity-crs_2.2.5.zip ...
+    Failed to retrieve ruleset modsecurity-crs/modsecurity-crs_2.2.5.zip: 404 Not Found
 
 Podemos encontrar el fichero de reglas para la última versión de
 `mod_security`, la 2.2.7, en el [repostorio en GitHub][]. Pero si
 queremos descargar una versión anterior, podemos recurrir al paquete
 [modsecurity-crs en Launchpad][].
 
-```bash
-$ wget https://launchpad.net/ubuntu/+archive/primary/+files/modsecurity-crs_2.2.5.orig.tar.gz
-$ md5sum modsecurity-crs_2.2.5.orig.tar.gz
-aaeaa1124e8efc39eeb064fb47cfc0aa  modsecurity-crs_2.2.5.orig.tar.gz
-$ tar xvzf modsecurity-crs_2.2.5.orig.tar.gz
-$ sudo cp -R modsecurity-crs_2.2.5 /etc/apache2/
-$ sudo rm /etc/apache2/modsecurity-crs
-$ cd /etc/apache2
-$ sudo ln -s modsecurity-crs_2.2.5 modsecurity-crs
-```
+    $ wget https://launchpad.net/ubuntu/+archive/primary/+files/modsecurity-crs_2.2.5.orig.tar.gz
+    $ md5sum modsecurity-crs_2.2.5.orig.tar.gz
+    aaeaa1124e8efc39eeb064fb47cfc0aa  modsecurity-crs_2.2.5.orig.tar.gz
+    $ tar xvzf modsecurity-crs_2.2.5.orig.tar.gz
+    $ sudo cp -R modsecurity-crs_2.2.5 /etc/apache2/
+    $ sudo rm /etc/apache2/modsecurity-crs
+    $ cd /etc/apache2
+    $ sudo ln -s modsecurity-crs_2.2.5 modsecurity-crs
 
 Después de copiarlo al directorio de apache, deberemos crear un fichero
 de configuración, por ejemplo a partir del fichero de ejemplo que viene
 tal como hicimos al instalarlo sólo que ahora tiene un nombre diferente,
 y reiniciar apache para que los cambios tengan efecto:
 
-```bash
-$ cd /etc/apache2/modsecurity-crs
-$ sudo cp modsecurity_crs_10_setup.conf.example modsecurity_crs_10_setup.conf
-```
+    $ cd /etc/apache2/modsecurity-crs
+    $ sudo cp modsecurity_crs_10_setup.conf.example modsecurity_crs_10_setup.conf
 
 Si utilizamos la nueva nomenclatura para el fichero, deberemos
 actualizar el fichero `/etc/apache2/apache2.conf`:
 
-```bash
-
     Include modsecurity-crs/modsecurity_crs_10_setup.conf
     Include modsecurity-crs/base_rules/*.conf
-```
 
 Una vez más, deberemos reiniciar Apache.
 
@@ -277,9 +232,7 @@ Una vez más, deberemos reiniciar Apache.
 
 Si nos aparece este error, es que nos faltan módulos:
 
-```bash
-$ sudo aptitude install libcrypt-ssleay-perl libio-socket-ssl-perl
-```
+    $ sudo aptitude install libcrypt-ssleay-perl libio-socket-ssl-perl
 
 <h2servertokens < h2>
 
@@ -289,31 +242,23 @@ Mediante `mod_security` se puede cambiar el valor de la cabecera
 Lo primero será asegurarnos de que en el fichero
 `/etc/apache2/conf.d/security` contiene el valor:
 
-```bash
-ServerTokens Full
-```
+    ServerTokens Full
 
 Añadimos al fichero `/etc/apache2/conf.d/modsecurity.conf`:
 
-```bash
-SecServerSignature "incognito"
-```
+    SecServerSignature "incognito"
 
 Desactivamos y volvemos a activar el módulo, para que se cree el enlace
 simbólico a nuestro archivo de configuración, y reiniciamos Apache:
 
-```bash
-$ sudo a2dismod mod-security
-$ sudo a2enmod mod-security
-$ sudo apache2ctl restart
-```
+    $ sudo a2dismod mod-security
+    $ sudo a2enmod mod-security
+    $ sudo apache2ctl restart
 
 Ya podemos comprobar cómo la cabecera `Server` ha cambiado:
 
-```bash
-$ curl -sI localhost/k/ | grep ^Server
-Server: incognito
-```
+    $ curl -sI localhost/k/ | grep ^Server
+    Server: incognito
 
 Referencias
 -----------

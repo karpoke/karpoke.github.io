@@ -6,9 +6,7 @@ Slug: solucionado-el-error-error-error-running-non-shared-postrotate-script-for-
 
 Si nos encontramos con el siguiente error:
 
-```bash
-error: error running non-shared postrotate script for /var/log/samba/log.nmbd of '/var/log/samba/log.nmbd '
-```
+    error: error running non-shared postrotate script for /var/log/samba/log.nmbd of '/var/log/samba/log.nmbd '
 
 En Ubuntu 12.04.2, con la versión de `samba` 3.6.3, podría producirse
 cuando el [_script_ de `logrotate` para `samba`][script de logrotate para samba]
@@ -17,10 +15,8 @@ Necesita un pequeño cambio en los comandos utilizados en la directiva `postrota
 deberemos cambiar `reload` por `reload --quiet`, quedando finalmente así
 las respectivas líneas en el fichero `/etc/logrorate.d/samba`:
 
-```bash
-reload --quiet smbd 2>/dev/null
-reload --quiet nmbd 2>/dev/null
-```
+    reload --quiet smbd 2>/dev/null
+    reload --quiet nmbd 2>/dev/null
 
   [script de logrotate para samba]: http://dev-eole.ac-dijon.fr/issues/4524
     "script de logrotate para samba"

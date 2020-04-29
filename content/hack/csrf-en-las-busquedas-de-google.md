@@ -20,9 +20,7 @@ página. Por ejemplo:
 
 <img src="http://www.google.es/search?q=%22terminus.ignaciocano.com%22" border="0" height="0" width="0">
 
-```html
-<img src="http://www.google.es/search?q=%22terminus.ignaciocano.com%22" border="0" height="0" width="0">
-```
+    <img src="http://www.google.es/search?q=%22terminus.ignaciocano.com%22" border="0" height="0" width="0">
 
   [histórico de búsquedas de Google]: http://google.com/history
     "histórico de búsquedas de Google"

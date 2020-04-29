@@ -14,28 +14,26 @@ _hash_ de la contraseña de Obama:
 Podemos utilizar el _script_ [findmyhash.py][] para ver si encuentra la
 contraseña asociada a ese _hash_:
 
-```bash
-$ python findmyhash.py md5 -h "6289c5975815012768aefbf9a8d2fd3e" -g
+    $ python findmyhash.py md5 -h "6289c5975815012768aefbf9a8d2fd3e" -g
 
-Cracking hash: 6289c5975815012768aefbf9a8d2fd3e
+    Cracking hash: 6289c5975815012768aefbf9a8d2fd3e
 
-Analyzing with joomlaaa (http://joomlaaa.com)...
-... hash not found in joomlaaa
+    Analyzing with joomlaaa (http://joomlaaa.com)...
+    ... hash not found in joomlaaa
 
-Analyzing with md5-lookup (http://md5-lookup.com)...
-... hash not found in md5-lookup
+    Analyzing with md5-lookup (http://md5-lookup.com)...
+    ... hash not found in md5-lookup
 
-Analyzing with md5.com.cn (http://md5.com.cn)...
+    Analyzing with md5.com.cn (http://md5.com.cn)...
 
-__*** HASH CRACKED!! ***__
-The original string is: 80412999
+    __*** HASH CRACKED!! ***__
+    The original string is: 80412999
 
 
-The following hashes were cracked:
-----------------------------------
+    The following hashes were cracked:
+    ----------------------------------
 
-6289c5975815012768aefbf9a8d2fd3e -> 80412999
-```
+    6289c5975815012768aefbf9a8d2fd3e -> 80412999
 
 Via [segu-info.com.ar][]
 

@@ -17,9 +17,7 @@ superior al 2.6.36 con soporte a grupos de tareas.
 Para saber los procesos que están asociados a una terminal podemos
 ejecutar:
 
-```bash
-$ ps -e | grep -v ?
-```
+    $ ps -e | grep -v ?
 
 (Los procesos que tienen un interrogante no están asociados a ninguna
 terminal.)
@@ -28,55 +26,41 @@ Para aplicar el parche, en Ubuntu:
 
 -   editamos el archivo `/etc/rc.local` y añadimos, antes del `exit 0`:
 
-    ```bash
-$ mkdir -p /dev/cgroup/cpu
-$ mount -t cgroup cgroup /dev/cgroup/cpu -o cpu
-$ mkdir -m 0777 /dev/cgroup/cpu/user
-$ echo "/usr/local/sbin/cgroup_clean" > /dev/cgroup/cpu/release_agent
-    ```
+        $ mkdir -p /dev/cgroup/cpu
+    $ mount -t cgroup cgroup /dev/cgroup/cpu -o cpu
+    $ mkdir -m 0777 /dev/cgroup/cpu/user
+    $ echo "/usr/local/sbin/cgroup_clean" > /dev/cgroup/cpu/release_agent
 
 -   lo hacemos ejecutable, por si acaso no lo estuviera ya:
 
-    ```bash
-$ sudo chmod +x /etc/rc.local
-    ```
+        $ sudo chmod +x /etc/rc.local
 
 -   editamos nuestro `~/.bashrc` y añadimos:
 
-    ```bash
-     if [ "$PS1" ]; then
-       mkdir -p -m 0700 /dev/cgroup/cpu/user/$$
-       echo $$ > /dev/cgroup/cpu/user/$$/tasks
-       echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
+        if [ "$PS1" ]; then
+    mkdir -p -m 0700 /dev/cgroup/cpu/user/$$
+    echo $$ > /dev/cgroup/cpu/user/$$/tasks
+    echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
     fi
-    ```
 
 -   creamos el archivo `/usr/local/sbin/cgroup_clean` y añadimos:
 
-    ```bash
-     #!/bin/sh
+        #!/bin/sh
     if [ "$*" != "/user" ]; then
-       rmdir /dev/cgroup/cpu/$*
+    rmdir /dev/cgroup/cpu/$*
     fi
-    ```
 
 -   le damos permisos de ejecución:
 
-    ```bash
-$ sudo chmod +x /usr/local/sbin/cgroup_clean
-    ```
+        $ sudo chmod +x /usr/local/sbin/cgroup_clean
 
 -   y, por último, ejecutamos el _script_:
 
-    ```bash
-$ sudo /etc/rc.local
-    ```
+        $ sudo /etc/rc.local
 
 -   o reiciniamos:
 
-    ```bash
-$ sudo reboot
-    ```
+        $ sudo reboot
 
   [parche de 200 líneas]: http://lkml.org/lkml/2010/10/19/123
     "parche de 200 líneas"

@@ -8,6 +8,4 @@ Si nos encontramos un formulario web lleno de asteriscos, podemos
 obtener lo que hay realmente escrito pegando lo siguiente en la barra de
 direcciones:
 
-```javascript
-javascript:(function(){var s,F,j,f,i; s = ""; F = document.forms; for(j=0; j < f.length; ++j) { f = F[j]; for (i=0; i < f.length; ++i) { if (f[i].type.toLowerCase() == "password") s += f[i].value + " "; } } if (s) alert("Passwords in forms on this page: " + s); else alert("There are no passwords in forms on this page.");})();
-```
+    javascript:(function(){var s,F,j,f,i; s = ""; F = document.forms; for(j=0; j < f.length; ++j) { f = F[j]; for (i=0; i < f.length; ++i) { if (f[i].type.toLowerCase() == "password") s += f[i].value + " "; } } if (s) alert("Passwords in forms on this page: " + s); else alert("There are no passwords in forms on this page.");})();

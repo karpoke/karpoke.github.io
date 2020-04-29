@@ -37,10 +37,8 @@ Entre estos parámetros se encuentran:
 -   `snd_hda_intel/parameters/power_save`, especifica el número de
     segundos tras los cuales el [módulo de sonido][] se deshabilita.
 
-    ```bash
-$ cat /sys/module/snd_hda_intel/parameters/power_save
+        $ cat /sys/module/snd_hda_intel/parameters/power_save
     0
-    ```
 
   [consumo de la batería se había disparado]: http://www.phoronix.com/scan.php?page=article&item=linux_mobile_uffda#=1
     "consumo de la batería se había disparado"

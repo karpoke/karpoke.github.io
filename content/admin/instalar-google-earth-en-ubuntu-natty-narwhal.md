@@ -13,24 +13,18 @@ de su página—además de que, ahora mismo, baja el fichero
 
 [Bajamos el paquete estable][] y lo instalamos:
 
-```bash
-$ wget https://dl-ssl.google.com/linux/direct/google-earth-stable_current_i386.deb
-$ sudo dpkg -i google-earth-stable_current_i386.deb
-```
+    $ wget https://dl-ssl.google.com/linux/direct/google-earth-stable_current_i386.deb
+    $ sudo dpkg -i google-earth-stable_current_i386.deb
 
 
 Es posible que necesitemos el paquete `lsb-core`:
 
-```bash
-$ sudo aptitude install lsb-core
-```
+    $ sudo aptitude install lsb-core
 
 Si las fuentes de la interfaz gráfica se ven realmente mal, instalamos
 las fuentes de Microsoft (ADV).
 
-```bash
-$ sudo aptitude install ttf-mscorefonts-installer
-```
+    $ sudo aptitude install ttf-mscorefonts-installer
 
 Deberemos cerrar la sesión de usuario y volver a entrar para que los
 cambios en las fuentes tengan efecto.

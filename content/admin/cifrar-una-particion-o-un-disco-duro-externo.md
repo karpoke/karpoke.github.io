@@ -21,16 +21,12 @@ ser suficiente. Además, si está montado, lo desmontamos.
 Vamos a comprobar que el disco no tiene errores. Primero, averiguamos el
 tamaño de bloque:
 
-```bash
-$ sudo tune2fs -l /dev/sdb1 | grep -i 'Block size'
-Block size:               4096
-```
+    $ sudo tune2fs -l /dev/sdb1 | grep -i 'Block size'
+    Block size:               4096
 
 Lanzamos el comando `badblocks` para comprobar los errores:
 
-```bash
-$ sudo badblocks -s -w /dev/sdb1 -b 4096
-```
+    $ sudo badblocks -s -w /dev/sdb1 -b 4096
 
 Este comando se dedica a escribir una serie de patrones en el disco y
 después leerlos para asegurarse de que no hay problemas, y por este
@@ -42,57 +38,43 @@ El siguiente paso es llenar el disco de datos aleatorios para protegerse
 de ataques criptográficos. El siguiente comando realiza 3 pasadas sobre
 el disco:
 
-```bash
-$ sudo shred -n 3 -v /dev/sdb1
-```
+    $ sudo shred -n 3 -v /dev/sdb1
 
 El número de pasadas dependerá de la paranoia de cada uno. En lugar de
 `shred`, que toma los datos pseudoaleatorios de `/dev/urandom`,
 podríamos utilizar `dd`, que es realmente aleatorio ya que los toma de
 `/dev/random`, y también tarda más:
 
-```bash
-$ sudo dd if=/dev/random of=/dev/sdb1 bs=4096
-```
+    $ sudo dd if=/dev/random of=/dev/sdb1 bs=4096
 
 Cifrado
 -------
 
 Ya estamos listos para cifrar la partición:
 
-```bash
-$ sudo cryptsetup --verify-passphrase -c aes -h sha256 -y -s 256 luksFormat /dev/sdb1
-```
+    $ sudo cryptsetup --verify-passphrase -c aes -h sha256 -y -s 256 luksFormat /dev/sdb1
 
 Las opciones pasadas indican que pida la contraseña dos veces, un
 cifrado AES con clave de 256 bits y algoritmo SHA-256. Si nos da el
 error:
 
-```bash
-Check kernel for support for the aes-cbc-plain cipher spec and verify that /dev/sdb6 contains at least 258 sectors
-```
+    Check kernel for support for the aes-cbc-plain cipher spec and verify that /dev/sdb6 contains at least 258 sectors
 
 es que debemos cargar el módulo `dm-crypt`:
 
-```bash
-$ sudo modprobe dm-crypt
-```
+    $ sudo modprobe dm-crypt
 
 Para que se cargue cada vez que arranque el sistema, nos aseguramos de
 que el fichero `/etc/modules` contiene la línea:
 
-```bash
-dm-crypt
-```
+    dm-crypt
 
 Particionado
 ------------
 
 Para montar la interfaz al disco cifrado ejecutamos:
 
-```bash
-$ sudo cryptsetup luksOpen /dev/sdb1 crypthd
-```
+    $ sudo cryptsetup luksOpen /dev/sdb1 crypthd
 
 Esto no es lo mismo que montar el disco. Este comando crea un
 dispositivo que hará de interfaz al disco cifrado y que se encuentra en
@@ -100,9 +82,7 @@ dispositivo que hará de interfaz al disco cifrado y que se encuentra en
 
 Formateamos:
 
-```bash
-$ sudo mkfs.ext4 -L crypthd -m 1 /dev/mapper/cryptd
-```
+    $ sudo mkfs.ext4 -L crypthd -m 1 /dev/mapper/cryptd
 
 Con el argumento `-L` especificamos la etiqueta para la unidad, con lo que
 al montarlo automáticamente se utilizará este nombre. El argumento `-m` es
@@ -110,9 +90,7 @@ el tanto por cierto de espacio reservado para el administrador.
 
 Para desmontar la interfaz:
 
-```bash
-$ sudo cryptsetup luksClose /dev/mapper/crypthd
-```
+    $ sudo cryptsetup luksClose /dev/mapper/crypthd
 
 Montando y desmontando
 ----------------------
@@ -123,18 +101,14 @@ Para usar el disco, primero hay que montar la interfaz y luego el disco.
 Suponemos que el directorio `/media/crypthd` ya ha sido creado. También
 cambiaremos los permisos para que pueda ser usado por nuestro usuario:
 
-```bash
-$ sudo cryptsetup luksOpen /dev/sdb1 crypthd
-$ sudo mount /dev/mapper/crypthd /media/crypthd
-$ sudo chown -R $USER:$USER /media/crypthd
-```
+    $ sudo cryptsetup luksOpen /dev/sdb1 crypthd
+    $ sudo mount /dev/mapper/crypthd /media/crypthd
+    $ sudo chown -R $USER:$USER /media/crypthd
 
 Para desmontar el disco hay que hacerlo en el orden inverso:
 
-```bash
-$ sudo umount /media/crypthd
-$ sudo cryptsetup luksClose /dev/mapper/crypthd
-```
+    $ sudo umount /media/crypthd
+    $ sudo cryptsetup luksClose /dev/mapper/crypthd
 
 ### En el escritorio
 
@@ -152,10 +126,8 @@ la correcta, lo montará en el directorio esperado.
 La primera vez que lo montemos de esta manera, habrá que modificar los
 permisos del directorio para que tengamos permisos de escritura:
 
-```bash
-$ sudo chmod 775 /media/crypthd
-$ sudo chgrp adm /media/crypthd
-```
+    $ sudo chmod 775 /media/crypthd
+    $ sudo chgrp adm /media/crypthd
 
   [un disco duro externo y queremos cifrarlo]: http://conocimientoabierto.es/traducir-automaticamente-ficheros-po/207/
     "un disco duro externo y queremos cifrarlo"

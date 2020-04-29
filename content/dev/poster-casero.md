@@ -14,15 +14,11 @@ base de folios) por nosotros mismos podemos utilizar un servicio como
 Primero creamos un PDF a partir de la imagen, en este caso del [mapa del
 software libre][]:
 
-```bash
-$ convert mapa-del-software-libre.png mapa-del-software-libre.pdf
-```
+    $ convert mapa-del-software-libre.png mapa-del-software-libre.pdf
 
 Ahora ya podemos crear el póster:
 
-```bash
-$ pdfposter -mA4 -pA0 mapa-del-software-libre.pdf poster-del-mapa-del-software-libre.pdf
-```
+    $ pdfposter -mA4 -pA0 mapa-del-software-libre.pdf poster-del-mapa-del-software-libre.pdf
 
 El argumento `-m` indica el tamaño del medio en que se va a imprimir, en
 este caso el tamaño es A4. El argumento `-p` indica el tamaño deseado, en
