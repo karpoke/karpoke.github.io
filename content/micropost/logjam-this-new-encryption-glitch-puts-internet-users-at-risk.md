@@ -14,7 +14,7 @@ Slug: logjam-this-new-encryption-glitch-puts-internet-users-at-risk
 > encrypted connections between a user and a Web or email server to use
 > extremely weaker 512-bit keys which can be easily decrypted.
 
-- Mohit Kumar | [thehackernews.com][]
+» Mohit Kumar | [thehackernews.com][]
 
   [thehackernews.com]: http://thehackernews.com/2015/05/logjan-ssl-vulnerability.html
     "LogJam — This new encryption glitch puts Internet users at risk"

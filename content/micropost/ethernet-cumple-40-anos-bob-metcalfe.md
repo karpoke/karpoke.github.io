@@ -21,7 +21,7 @@ Slug: ethernet-cumple-40-anos-bob-metcalfe
 > MIT (Instituto de Tecnología de Masachussets). Su nombre: Robert
 > Metcalfe.
 
-- Pilar Bernat | [zonamovilidad.es][]
+» Pilar Bernat | [zonamovilidad.es][]
 
   [zonamovilidad.es]: http://www.zonamovilidad.es/noticia/5873/Reportajes/Ethernet-cumple-40-anos:-Bob-Metcalfe-En-el-Silicon-Valley-se-suponia-que-tenias-que-inventar-algo-innovar-y-ese-espiritu-se-mantiene.html
     "zonamovilidad.es"

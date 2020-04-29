@@ -16,7 +16,7 @@ Slug: notes-from-the-development-of-xkcds-pixels
 > (coordinate systems!) for a while, so I ended up making some classic
 > mistakes – hopefully you can avoid repeating them. :)
 
-- Max | [chromakode.com][]
+» Max | [chromakode.com][]
 
   [chromakode.com]: http://chromakode.com/post/notes-on-xkcd-pixels
     "Notes from the development of xkcd's "Pixels""

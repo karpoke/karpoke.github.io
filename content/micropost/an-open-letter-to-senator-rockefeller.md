@@ -20,7 +20,7 @@ Slug: an-open-letter-to-senator-rockefeller
 > network. This has allowed me to hack (in tests) into Fortune 500
 > companies, even those that follow the very best of ”best practice”.
 
-- Robert David Graham | [erratasec.blogspot.com][]
+» Robert David Graham | [erratasec.blogspot.com][]
 
   [erratasec.blogspot.com]: http://erratasec.blogspot.com/2012/09/an-open-letter-to-senator-john-d.html
     "An open letter to Senator Rockefeller"

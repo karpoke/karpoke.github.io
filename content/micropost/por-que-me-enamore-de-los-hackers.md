@@ -12,7 +12,7 @@ Slug: por-que-me-enamore-de-los-hackers
 > hablan día sí día también los medios y la policía, poniéndoles la
 > etiqueta de ”hacker”?
 
-- @merce | [grn.es][]
+» @merce | [grn.es][]
 
   [grn.es]: http://ww2.grn.es/merce/literature/lovehackers.html%20¿Que%20por%20qué%20me%20enamoré%20de%20los%20hackers?
     "Por qué me enamoré de los hackers"

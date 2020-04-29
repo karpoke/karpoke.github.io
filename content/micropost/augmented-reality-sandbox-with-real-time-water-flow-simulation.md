@@ -11,7 +11,7 @@ Slug: augmented-reality-sandbox-with-real-time-water-flow-simulation
 
 [!embed](https://www.youtube.com/watch?v=j9JXtTj0mzE)
 
-- @okreylos | [youtube.com][]
+» @okreylos | [youtube.com][]
 
   [youtube.com]: https://www.youtube.com/watch?v=j9JXtTj0mzE
     "Augmented reality sandbox with real-time water flow simulation"

@@ -16,7 +16,7 @@ Slug: una-disputa-en-torno-al-spam-genera-el-mayor-ataque-ddos-registrado-en-int
 > DDOS normal puede suponer un tráfico de 10 Gbps, y éste ha llegado a
 > picos de 300 Gbps, el más importante que se conoce públicamente.
 
-- F.Manuel | [genbeta.com][]
+» F.Manuel | [genbeta.com][]
 
   [genbeta.com]: http://www.genbeta.com/seguridad/una-disputa-en-torno-al-spam-genera-el-mayor-ataque-ddos-registrado-en-internet
     "Una disputa en torno al spam genera el mayor ataque DDOS registrado en Internet"

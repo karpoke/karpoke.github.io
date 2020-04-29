@@ -12,7 +12,7 @@ Slug: por-que-tu-camara-no-importa
 > similar, pero que carece de todo el impacto y la emoción del original
 > que creyeron copiar?
 
-- Ken Rockwell | [kenrockwell.com][]
+» Ken Rockwell | [kenrockwell.com][]
 
   [kenrockwell.com]: http://www.kenrockwell.com/tech/notcamera-es.htm
     "Por Que Tu Cámara No Importa"

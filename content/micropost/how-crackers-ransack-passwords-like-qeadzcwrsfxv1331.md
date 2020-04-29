@@ -16,7 +16,7 @@ Slug: how-crackers-ransack-passwords-like-qeadzcwrsfxv1331
 > eye opening because they show how quickly even long passwords with
 > letters, numbers, and symbols can be discovered.
 
-- Dan Goodin | [arstechnica.com][]
+» Dan Goodin | [arstechnica.com][]
 
   [arstechnica.com]: http://arstechnica.com/security/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/
     "How crackers ransack passwords like 'qeadzcwrsfxv1331'"

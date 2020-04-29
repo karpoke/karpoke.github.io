@@ -20,7 +20,7 @@ Slug: por-que-no-utilizo-metricas
 > a ver qué razonamientos hay detrás del uso de métricas y por qué, a lo mejor
 > a ti, sí que te resultan útiles.
 
-- Juan María Hernández | [blog.koalite.com][]
+» Juan María Hernández | [blog.koalite.com][]
 
   [blog.koalite.com]: http://blog.koalite.com/2016/09/por-que-no-utilizo-metricas/
     "Por qué no utilizo métricas"

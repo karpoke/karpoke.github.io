@@ -11,7 +11,7 @@ Slug: trs-drawbot
 > free software to turn line graphics into sound files that make almost
 > any audio device into an on-the-go robot controller.
 
-- Sean Michael Tragan and Mikal Hart | [TRS Drawbot][]
+» Sean Michael Tragan and Mikal Hart | [TRS Drawbot][]
 
   [TRS Drawbot]: http://makezine.com/projects/trs-drawbot/
     "TRS Drawbot"

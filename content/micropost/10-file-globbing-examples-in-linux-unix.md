@@ -7,7 +7,7 @@ Slug: 10-file-globbing-examples-in-linux-unix
 > UNIX/Linux shell to represent multiple filenames by using special characters
 > called wildcards with a single file name.
 
-- http://feeds.feedburner.com/TheLinuxJuggernaut | [linuxnix.com][]
+» http://feeds.feedburner.com/TheLinuxJuggernaut | [linuxnix.com][]
 
   [linuxnix.com]: https://www.linuxnix.com/10-file-globbing-examples-linux-unix/
     "10 File Globbing examples in Linux/Unix"

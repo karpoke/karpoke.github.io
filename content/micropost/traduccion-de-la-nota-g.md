@@ -25,7 +25,7 @@ Slug: traduccion-de-la-nota-g
 > influencias colaterales, aparte de los objetivos principal y
 > secundario obtenidos.
 
-- Gabriel Rodríguez Alberich | [notage.org][]
+» Gabriel Rodríguez Alberich | [notage.org][]
 
   [notage.org]: http://notage.org/
     "Traducción de la Nota G"

@@ -8,7 +8,7 @@ Slug: the-art-of-computer-typography
 > the story of Donald E. Knuth and his unexpected contributions to
 > typography.
 
-- @Jason Z. | [37signals.com][]
+» @Jason Z. | [37signals.com][]
 
   [37signals.com]: https://37signals.com/svn/posts/3183-the-art-of-computer-typography
     "The Art of Computer Typography"

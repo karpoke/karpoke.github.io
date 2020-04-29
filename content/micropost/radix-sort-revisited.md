@@ -21,7 +21,7 @@ Slug: radix-sort-revisited
 >  - it uses temporal coherence
 >  - it supports sorting on multiple keys
 
-- Pierre Terdiman | [codercorner.com][]
+» Pierre Terdiman | [codercorner.com][]
 
   [codercorner.com]: http://codercorner.com/RadixSortRevisited.htm
     "Radix Sort Revisited"

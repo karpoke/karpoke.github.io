@@ -10,7 +10,7 @@ Slug: how-we-made-editing-wikipedia-twice-as-fast
 > far-reaching benefits of this change that will go beyond the recent
 > performance gains.
 
-- Ori Livneh | [blog.wikimedia.org][]
+» Ori Livneh | [blog.wikimedia.org][]
 
   [blog.wikimedia.org]: https://blog.wikimedia.org/2014/12/29/how-we-made-editing-wikipedia-twice-as-fast/
     "How we made editing Wikipedia twice as fast"

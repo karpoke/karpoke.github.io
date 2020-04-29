@@ -12,7 +12,7 @@ Slug: no-nobel-for-the-father-of-the-led
 > among them; his objection is that his 1962 invention has never been
 > singled out for recognition by the academy.
 
-- Rachel Courtland | [ieee.org][]
+» Rachel Courtland | [ieee.org][]
 
   [ieee.org]: http://spectrum.ieee.org/tech-talk/semiconductors/devices/no-nobel-for-the-father-of-the-led
     "No Nobel for the Father of the LED"

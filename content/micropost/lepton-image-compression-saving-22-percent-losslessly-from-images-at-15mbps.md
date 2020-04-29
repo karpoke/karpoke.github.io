@@ -11,7 +11,7 @@ Slug: lepton-image-compression-saving-22-percent-losslessly-from-images-at-15mbp
 > second and decodes them back to the original bits at 15 megabytes per second,
 > securely, deterministically, and in under 24 megabytes of memory.
 
-- Daniel Reiter Horn | [dropbox.com][]
+» Daniel Reiter Horn | [dropbox.com][]
 
   [dropbox.com]: https://blogs.dropbox.com/tech/2016/07/lepton-image-compression-saving-22-losslessly-from-images-at-15mbs/
     "Lepton image compression: saving 22% losslessly from images at 15MB/s"

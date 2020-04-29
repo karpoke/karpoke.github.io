@@ -9,7 +9,7 @@ Slug: como-hackear-un-ordenador-con-la-radio-del-movil
 > bytes por segundo, suficientes para obtener una contraseña en ocho
 > segundos, según aseguran los investigadores.
 
-- Sergio Ferrer | [elconfidencial.com][]
+» Sergio Ferrer | [elconfidencial.com][]
 
   [elconfidencial.com]: http://www.elconfidencial.com/tecnologia/2014-11-03/como-hackear-un-ordenador-con-la-radio-del-movil_434775/
     "Cómo 'hackear' un ordenador con la radio del móvil"

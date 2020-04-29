@@ -9,7 +9,7 @@ Slug: bash-prompts
 > the username, the hostname, and the current working directory, along
 > with a \$ sigil for regular users, and a \# for root.
 
-- Tom Ryder | [blog.sanctum.geek.nz][]
+» Tom Ryder | [blog.sanctum.geek.nz][]
 
   [blog.sanctum.geek.nz]: http://blog.sanctum.geek.nz/bash-prompts/
     "Bash prompts"

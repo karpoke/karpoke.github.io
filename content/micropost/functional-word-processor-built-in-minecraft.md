@@ -13,7 +13,7 @@ Slug: functional-word-processor-built-in-minecraft
 > attend classes, use the washroom, and interact with people and things
 > that had curves.
 
-- Lee Mathews | [geek.com][]
+» Lee Mathews | [geek.com][]
 
   [geek.com]: http://www.geek.com/games/functional-word-processor-built-in-minecraft-1613216/
     "Functional word processor built in Minecraft"

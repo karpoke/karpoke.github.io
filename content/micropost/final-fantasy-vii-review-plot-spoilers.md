@@ -7,7 +7,7 @@ Slug: final-fantasy-vii-review-plot-spoilers
 
 [!embed](https://www.youtube.com/watch?v=veEn0k5u5Ko)
 
-- IsanWilshireIII | [youtube.com][]
+» IsanWilshireIII | [youtube.com][]
 
   [youtube.com]: https://www.youtube.com/watch?v=veEn0k5u5Ko
     "Final Fantasy VII Review (Plot Spoilers)"

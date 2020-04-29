@@ -8,7 +8,7 @@ Slug: 10-free-color-palettes-from-10-famous-paintings
 > painters almost always possess a keen understanding of color that is
 > truly impressive when you stop to appreciate it.
 
-- Joshua Johnson | [designshack.net][]
+» Joshua Johnson | [designshack.net][]
 
   [designshack.net]: http://designshack.net/articles/inspiration/10-free-color-palettes-from-10-famous-paintings/
     "10 Free Color Palettes From 10 Famous Paintings"

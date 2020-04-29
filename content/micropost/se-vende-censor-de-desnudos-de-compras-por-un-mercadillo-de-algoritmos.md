@@ -12,7 +12,7 @@ Slug: se-vende-censor-de-desnudos-de-compras-por-un-mercadillo-de-algoritmos
 >
 > [algorithmia.com][]
 
-- Cristina Sánchez | [yorokobu.com][]
+» Cristina Sánchez | [yorokobu.com][]
 
   [algorithmia.com]: https://algorithmia.com/
     "algorithmia.com"

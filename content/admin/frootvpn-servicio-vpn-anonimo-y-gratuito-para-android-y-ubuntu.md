@@ -91,7 +91,7 @@ Referencias
 -----------
 
 » [frootvpn.com][FrootVPN]
-- Ernesto | [Which VPN services take your anonymity seriously? 2014 edition][]
+» Ernesto | [Which VPN services take your anonymity seriously? 2014 edition][]
 » [PPTP vs L2TP/IPSEC vs OpenVPN][]
 
   [FrootVPN]: https://www.frootvpn.com/

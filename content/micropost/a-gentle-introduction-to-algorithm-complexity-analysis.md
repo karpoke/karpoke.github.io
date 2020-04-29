@@ -22,7 +22,7 @@ Slug: a-gentle-introduction-to-algorithm-complexity-analysis
 > should be able to understand all the common terms computer scientists
 > use such as ”big O”, ”asymptotic behavior” and ”worst-case analysis”.
 
-- Dionysis "dionyziz" Zindros | [discrete.gr][]
+» Dionysis "dionyziz" Zindros | [discrete.gr][]
 
   [discrete.gr]: http://discrete.gr/complexity/
     "A Gentle Introduction to Algorithm Complexity Analysis"

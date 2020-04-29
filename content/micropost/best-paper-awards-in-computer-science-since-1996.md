@@ -13,7 +13,7 @@ Slug: best-paper-awards-in-computer-science-since-1996
 > but not ”best student paper” (e.g. NIPS) or ”best 10-year old paper”
 > (e.g. POPL)
 
-- Jeff Huang | [jeffhuang.com][]
+» Jeff Huang | [jeffhuang.com][]
 
   [jeffhuang.com]: http://jeffhuang.com/best_paper_awards.html
     "Best Paper Awards in Computer Science (since 1996)"

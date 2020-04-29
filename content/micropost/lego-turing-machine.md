@@ -17,7 +17,7 @@ Slug: lego-turing-machine
 
 <iframe src="http://player.vimeo.com/video/44202270" width="500" height="213" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-- @ecalpemos | [vimeo.com][]
+» @ecalpemos | [vimeo.com][]
 
   [vimeo.com]: http://vimeo.com/44202270
     "LEGO Turing Machine"

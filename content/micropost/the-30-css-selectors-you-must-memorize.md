@@ -9,7 +9,7 @@ Slug: the-30-css-selectors-you-must-memorize
 > part of the CSS3 spec, and are, consequently, only available in modern
 > browsers, you owe it to yourself to commit these to memory.
 
-- Jeffrey Way | [tutsplus.com][]
+» Jeffrey Way | [tutsplus.com][]
 
   [tutsplus.com]: http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/
     "The 30 CSS Selectors you Must Memorize"

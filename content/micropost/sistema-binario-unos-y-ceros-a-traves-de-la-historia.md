@@ -10,7 +10,7 @@ Slug: sistema-binario-unos-y-ceros-a-traves-de-la-historia
 > Shannon y su idea de utilizar el álgebra de Boole para simplificar los
 > circuitos. Una historia apasionante hasta llegar a nuestro smartphone.
 
-- David G. Ortiz | [blogthinkbig.com][]
+» David G. Ortiz | [blogthinkbig.com][]
 
   [blogthinkbig.com]: http://blogthinkbig.com/sistema-binario/
     "Sistema binario: unos y ceros a través de la historia"

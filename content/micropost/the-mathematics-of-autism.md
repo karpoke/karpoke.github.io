@@ -22,7 +22,7 @@ Slug: the-mathematics-of-autism
 > association of Asperger’s syndrome and autism with computer technology
 > and math in the article The Geek Syndrome by Steve Silberman.
 
-- John F. McGowan | [math-blog.com][]
+» John F. McGowan | [math-blog.com][]
 
   [math-blog.com]: http://math-blog.com/2012/07/09/the-mathematics-of-autism/
     "The Mathematics of Autism"

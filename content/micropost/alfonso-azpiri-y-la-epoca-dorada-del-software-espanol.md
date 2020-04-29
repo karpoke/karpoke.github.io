@@ -11,7 +11,7 @@ Slug: alfonso-azpiri-y-la-epoca-dorada-del-software-espanol
 > de los mejores, más adictivos y complicados videojuegos de la historia
 > del entretenimiento digital.
 
-- Jonathan Préstamo Rodríguez | [teknoplof.com][]
+» Jonathan Préstamo Rodríguez | [teknoplof.com][]
 
   [teknoplof.com]: http://www.teknoplof.com/2010/09/29/alfonso-azpiri-y-la-epoca-dorada-del-software-espanol/
     "Alfonso Azpiri y la época dorada del software español"

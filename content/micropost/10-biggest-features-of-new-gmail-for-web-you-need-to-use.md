@@ -10,7 +10,7 @@ Slug: 10-biggest-features-of-new-gmail-for-web-you-need-to-use
 > that are neat but many of them are minor ones. So let’s take a look at the
 > ones that are actually useful.
 
-- Fossbytes | [fossbytes.com][]
+» Fossbytes | [fossbytes.com][]
 
   [fossbytes.com]: https://fossbytes.com/new-gmail-features-web/
     "10 Biggest Features Of New Gmail For Web You Need To Use"

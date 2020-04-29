@@ -10,7 +10,7 @@ Slug: 5-open-source-tools-for-container-security
 > Let’s look at five such tools. Anchore, Clair, Dagda, OpenSCAP and Sysdig
 > Falco.
 
-- Opensource.com | [opensource.com][]
+» Opensource.com | [opensource.com][]
 
   [opensource.com]: https://opensource.com/article/18/8/tools-container-security
     "5 open source tools for container security"

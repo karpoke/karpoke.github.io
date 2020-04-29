@@ -14,7 +14,7 @@ Slug: reverse-engineering-a-furby
 > they had a present for me. And that’s how I started reverse engineering a
 > Furby.
 
-- Michael Coppola | [poppopret.org][]
+» Michael Coppola | [poppopret.org][]
 
   [poppopret.org]: http://poppopret.org/2013/12/18/reverse-engineering-a-furby/
     "Reverse Engineering a Furby"

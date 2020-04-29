@@ -14,7 +14,7 @@ Slug: history-of-the-browser-user-agent-string
 > frames, and so came ”user agent sniffing” and to ”Mozilla” webmasters
 > sent frames, but to other browsers they sent not frames.
 
-- Aaron Andersen | [webaim.org][]
+» Aaron Andersen | [webaim.org][]
 
   [webaim.org]: http://webaim.org/blog/user-agent-string-history/
     "History of the browser user-agent string"

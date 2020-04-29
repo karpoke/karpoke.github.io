@@ -12,7 +12,7 @@ Slug: 10-best-android-news-app-templates
 > to find a template that’s right for you from among these ten best Android
 > news app templates available at CodeCanyon.
 
-- Nettuts+ | [code.tutsplus.com][]
+» Nettuts+ | [code.tutsplus.com][]
 
   [code.tutsplus.com]: https://code.tutsplus.com/articles/best-android-news-app-templates--cms-31510
     "10 Best Android News App Templates"

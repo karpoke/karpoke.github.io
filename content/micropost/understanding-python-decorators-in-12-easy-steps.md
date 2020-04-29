@@ -21,7 +21,7 @@ Slug: understanding-python-decorators-in-12-easy-steps
 > knowledge but this will probably be most helpful to people who have at
 > least a casual working exposure to Python.
 
-- Simeon Franklin | [simeonfranklin.com][]
+» Simeon Franklin | [simeonfranklin.com][]
 
   [simeonfranklin.com]: http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/
     "Understanding Python Decorators in 12 Easy Steps!"

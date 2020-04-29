@@ -11,7 +11,7 @@ Slug: stage-by-stage-boot-process-of-linux-in-detail
 > specific. You can also download linux boot process pdf version for
 > future reference.
 
-- Raghu | [expertslogin.com][]
+» Raghu | [expertslogin.com][]
 
   [expertslogin.com]: http://www.expertslogin.com/booting/boot-process-of-linux-in-detail/
     "Stage By Stage Boot Process Of Linux In Detail"

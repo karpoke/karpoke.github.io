@@ -9,7 +9,7 @@ Slug: keyboard-rubiks-cube
 
 [!embed](https://www.youtube.com/watch?v=eeOCuVbDmQk)
 
-- Miguel Alonso | [youtube.com][]
+» Miguel Alonso | [youtube.com][]
 
   [youtube.com]: https://www.youtube.com/watch?v=eeOCuVbDmQk
     "Keyboard rubik's cube"

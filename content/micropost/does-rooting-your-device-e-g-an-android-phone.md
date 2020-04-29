@@ -9,7 +9,7 @@ Slug: does-rooting-your-device-void-your-statutory-warranty
 > long as you have bought the device as a consumer in the European
 > Union.
 
-- Matija Å uklje, Carlo Piana | [fsfe.org][] | Ismael Callejas
+» Matija Å uklje, Carlo Piana | [fsfe.org][] | Ismael Callejas
 [elandroidelibre.com][]
 
   [fsfe.org]: http://fsfe.org/freesoftware/legal/flashingdevices.en.html

@@ -15,7 +15,7 @@ Slug: 100-diagrams-that-changed-the-world
 > Tim Berners-Lee’s flowchart for a ”mesh” information management
 > system, the original blueprint for the world wide web.
 
-- Maria Popova | [brainpickings.org][]
+» Maria Popova | [brainpickings.org][]
 
   [brainpickings.org]: http://www.brainpickings.org/index.php/2012/12/21/100-diagrams-that-changed-the-world/
     "100 Diagrams That Changed the World"

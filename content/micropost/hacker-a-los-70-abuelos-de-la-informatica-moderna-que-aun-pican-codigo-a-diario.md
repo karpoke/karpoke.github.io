@@ -11,7 +11,7 @@ Slug: hacker-a-los-70-abuelos-de-la-informatica-moderna-que-aun-pican-codigo-a-d
 > tarde, en 1985, como una extensión gráfica del sistema operativo
 > MS-DOS.
 
-- David G. Ortiz | [yorokobu.es][]
+» David G. Ortiz | [yorokobu.es][]
 
   [yorokobu.es]: http://www.yorokobu.es/abuelos-informaticos/
     "Hacker a los 70: abuelos de la informática moderna que aún pican código a diario"

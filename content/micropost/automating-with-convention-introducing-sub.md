@@ -19,7 +19,7 @@ Slug: automating-with-convention-introducing-sub
 > Eventually Sam laid down a foundation of bash scripts and directories
 > borrowed from rbenv, and dubbed it ”37”.
 
-- Nick | [37signals.com][]
+» Nick | [37signals.com][]
 
   [37signals.com]: https://37signals.com/svn/posts/3264-automating-with-convention-introducing-sub
     "Automating with convention: Introducing sub"

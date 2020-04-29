@@ -10,7 +10,7 @@ Slug: godzilla
 > sin duda, el rey de todo ese paraíso es un enorme lagarto, dinosaurio,
 > dragón o lo que sea. Por supuesto, me refiero a Godzilla.
 
-- Arturo Quirantes | [naukas.com][]
+» Arturo Quirantes | [naukas.com][]
 
   [naukas.com]: http://naukas.com/2013/03/09/godzilla/
     "Godzilla"

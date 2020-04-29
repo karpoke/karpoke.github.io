@@ -14,7 +14,7 @@ Slug: propiedad-intelectual-preguntas-frecuentes-sobre-la-ley-lasalle
 > del original que has comprado la hagas por tus propios medios, si la
 > haces ”con asistencia de terceros”, será ilícita.
 
-- David Bravo | [eldiario.es][]
+» David Bravo | [eldiario.es][]
 
   [eldiario.es]: http://www.eldiario.es/zonacritica/Propiedad-Intelectual-Preguntas-Frecuentes-Lasalle_6_112048800.html
     "Propiedad intelectual: Preguntas frecuentes sobre la Ley Lasalle"

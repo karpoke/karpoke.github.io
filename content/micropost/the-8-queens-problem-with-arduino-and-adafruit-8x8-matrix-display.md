@@ -10,7 +10,7 @@ Slug: the-8-queens-problem-with-arduino-and-adafruit-8x8-matrix-display
 > A solution to the 8 Queen problem is where 8 queens are placed on a
 > chess board so that no queen can take any other queen.
 
-- @stormingrobots | [youtube.com][]
+» @stormingrobots | [youtube.com][]
 
   [youtube.com]: https://www.youtube.com/watch?v=5a2xIh6xgo4
     "The 8 Queens Problem with Arduino and Adafruit 8x8 Matrix display"

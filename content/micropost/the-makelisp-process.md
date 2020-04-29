@@ -11,7 +11,7 @@ Slug: the-makelisp-process
 > language that is powerful enough to be self-hosting, meaning it will
 > be able to run a mal interpreter written in mal itself.
 
-- kanaka | [github.com][]
+» kanaka | [github.com][]
 
   [github.com]: https://github.com/kanaka/mal/blob/master/process/guide.md
     "The MakeLisp Process"

@@ -16,7 +16,7 @@ Slug: 10-futurama-jokes-that-will-make-you-smarter
 > Banach-Tarski paradox and the premise of three-dimensional characters
 > entering two-dimensional space.
 
-- Lauren Davis | [io9.com][]
+» Lauren Davis | [io9.com][]
 
   [io9.com]: http://io9.com/10-futurama-jokes-that-will-make-you-smarter-1676659998
     "10 Futurama jokes that will make you smarter"

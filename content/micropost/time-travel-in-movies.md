@@ -5,7 +5,7 @@ Slug: time-travel-in-movies
 
 ![Time travel in movies][]
 
-- mr. dalliard | [mr-dalliard.tumblr.com][]
+» mr. dalliard | [mr-dalliard.tumblr.com][]
 
   [Time travel in movies]: {static}/images/tumblr_mkzuf92pKY1snzjk8o1_500.png
     "Time travel in movies"

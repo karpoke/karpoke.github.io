@@ -18,7 +18,7 @@ Slug: prince-of-persia-code-review
 » [Part II : Bootloader][]
 » [Part III : Code explained][]
 
-- Jordan Mechner | [fabiensanglard.net][Part I : Introduction]
+» Jordan Mechner | [fabiensanglard.net][Part I : Introduction]
 
   [Part I : Introduction]: http://fabiensanglard.net/prince_of_persia/index.php
     "Part I : Introduction"

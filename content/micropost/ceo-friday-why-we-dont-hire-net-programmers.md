@@ -14,7 +14,7 @@ Slug: ceo-friday-why-we-dont-hire-net-programmers
 >
 > Everything, that is, but .NET.
 
-- David Barrett | [expensify.com][]
+» David Barrett | [expensify.com][]
 
   [expensify.com]: http://blog.expensify.com/2011/03/25/ceo-friday-why-we-dont-hire-net-programmers/
     "CEO Friday: Why we don't hire .NET programmers"

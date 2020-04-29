@@ -9,7 +9,7 @@ Slug: 10-awesome-security-tips-for-python-enthusiasts
 > Else's Problem --you have enough to deal with. But there is a major benefit
 > to incorporating security consciousness into your workflow.
 
-- DEV Community | [dev.to][]
+» DEV Community | [dev.to][]
 
   [dev.to]: https://dev.to/hayleydenb/10-awesome-security-tips-for-python-enthusiasts-3729
     "10 Awesome Security Tips for Python Enthusiasts"

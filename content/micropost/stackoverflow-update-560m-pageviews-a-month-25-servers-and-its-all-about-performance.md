@@ -11,7 +11,7 @@ Slug: stackoverflow-update-560m-pageviews-a-month-25-servers-and-its-all-about-p
 > balancing, caching, databases, searching, and utility functions. All
 > with a relative handful of employees. Now that’s quality engineering.
 
-- Todd Hoff | [highscalability.com][]
+» Todd Hoff | [highscalability.com][]
 
   [highscalability.com]: http://highscalability.com/blog/2014/7/21/stackoverflow-update-560m-pageviews-a-month-25-servers-and-i.html
     "StackOverflow Update: 560M Pageviews A Month, 25 Servers, And It's All About Performance"

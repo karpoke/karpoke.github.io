@@ -8,7 +8,7 @@ Slug: computadoras-imprescindibles
 > primer programa de ordenador en su mente, simulando una máquina que
 > nunca existió. La informática nació dentro del cerebro de una mujer.
 
-- txipi | [blog.txipinet.com][]
+» txipi | [blog.txipinet.com][]
 
   [blog.txipinet.com]: http://blog.txipinet.com/2015/02/28/computadoras-imprescindibles/
     "Computadoras imprescindibles"

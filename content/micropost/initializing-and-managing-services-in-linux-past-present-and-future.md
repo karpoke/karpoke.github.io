@@ -17,7 +17,7 @@ Slug: initializing-and-managing-services-in-linux-past-present-and-future
 > attention to how things work in systemd, as this seems to be the
 > popular choice at the moment for several of the largest distributions.
 
-- Jonas Gorauskas | [linuxjournal.com][]
+» Jonas Gorauskas | [linuxjournal.com][]
 
   [linuxjournal.com]: http://www.linuxjournal.com/content/initializing-and-managing-services-linux-past-present-and-future
     "Initializing and Managing Services in Linux: Past, Present and Future"

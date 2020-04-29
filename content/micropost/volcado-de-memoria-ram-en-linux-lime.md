@@ -18,7 +18,7 @@ Slug: volcado-de-memoria-ram-en-linux-lime
 > la adquisición de la memoria volátil de sistemas Linux y dispositivos basados
 > en Linux, como Android, y que trabaja a nivel de kernel.
 
-- @_N4rr34n6_ | [fwhibbit.blogpost.com.es][]
+» @_N4rr34n6_ | [fwhibbit.blogpost.com.es][]
 
   [LiME]: https://github.com/504ensicsLabs/LiME
     "Linux Memory Extractor - LiME"

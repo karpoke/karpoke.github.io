@@ -15,7 +15,7 @@ Slug: las-claves-del-nuevo-canon-digital-a-las-universidades-a-quien-afecta-y-a-
 > necesidad. ”Si se paga por las fotocopias, cómo no se va a pagar por
 > las copias digitales”, aduce.
 
-- Ángel Calleja | [20minutos.es][]
+» Ángel Calleja | [20minutos.es][]
 
   [20minutos.es]: http://www.20minutos.es/noticia/1764537/0/claves/canon-digital/universidades/
     "Las claves del nuevo canon digital a las universidades: ¿a quién afecta y a quién beneficia?"

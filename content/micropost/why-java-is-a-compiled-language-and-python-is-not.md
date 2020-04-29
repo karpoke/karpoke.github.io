@@ -13,7 +13,7 @@ Slug: why-java-is-a-compiled-language-and-python-is-not
 > > In Java, bytecode is a first class object. In Python it’s an
 > > internal implementation detail.
 
-- Chris Siebenmann | [utcc.utoronto.ca][]
+» Chris Siebenmann | [utcc.utoronto.ca][]
 
   [utcc.utoronto.ca]: http://utcc.utoronto.ca/~cks/space/blog/programming/WhyJavaIsCompiled
     "Why Java is a compiled language and Python is not"

@@ -10,7 +10,7 @@ Slug: mechanical-lego-display-is-another-level-of-awesomeness
 > creator’s video is titled, “Everything is awesome”. Well, this build
 > certainly is!
 
-- Gergo Vas | [kotaku.com][]
+» Gergo Vas | [kotaku.com][]
 
   [kotaku.com]: http://kotaku.com/mechanical-lego-display-is-another-level-of-awesomeness-1699666287
     "Mechanical LEGO Display Is Another Level Of Awesomeness"

@@ -14,7 +14,7 @@ Slug: solving-unicode-problems-in-python-2-7
 > wall when they want to handle data that contains characters outside the ASCII
 > character set.
 
-- Derek Dohler | [azavea.com][]
+» Derek Dohler | [azavea.com][]
 
   [azavea.com]: http://www.azavea.com/blogs/labs/2014/03/solving-unicode-problems-in-python-2-7/
     "Solving Unicode Problems in Python 2.7"

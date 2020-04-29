@@ -25,7 +25,7 @@ Slug: debian-and-i
 > open source software as well. In short, my introduction to free
 > software was also my introduction to Debian.
 
-- Bruce Byfield | [linux-magazine.com][]
+» Bruce Byfield | [linux-magazine.com][]
 
   [linux-magazine.com]: http://www.linux-magazine.com/Online/Blogs/Off-the-Beat-Bruce-Byfield-s-Blog/Debian-and-I
     "Debian and I"

@@ -11,7 +11,7 @@ Slug: extracting-the-superfish-certificate
 > in illegal access devices under the proposed revisions to the CFAA, so
 > get it now before they change the law.
 
-- Robert Graham | [blog.erratasec.com][]
+» Robert Graham | [blog.erratasec.com][]
 
   [blog.erratasec.com]: http://blog.erratasec.com/2015/02/extracting-superfish-certificate.html
     "Extracting the SuperFish certificate"

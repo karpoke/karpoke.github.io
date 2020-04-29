@@ -30,7 +30,7 @@ Slug: gnu-make-in-detail-for-beginners
 > outputs. The Makefile contains a collection of rules, macros, variable
 > assignments, etc. (’Makefile’ or ’makefile’ are both acceptable.)
 
-- Sarath Lakshman | [linuxforu.com][]
+» Sarath Lakshman | [linuxforu.com][]
 
   [linuxforu.com]: http://www.linuxforu.com/2012/06/gnu-make-in-detail-for-beginners/
     "GNU Make in Detail for Beginners"

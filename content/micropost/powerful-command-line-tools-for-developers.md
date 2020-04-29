@@ -11,7 +11,7 @@ Slug: powerful-command-line-tools-for-developers
 > different ways. Here we cover six particularly powerful and versatile
 > tools which can help make your life a little bit easier.
 
-- Ben Dowling | [smashingmagazine.com][]
+» Ben Dowling | [smashingmagazine.com][]
 
   [smashingmagazine.com]: http://coding.smashingmagazine.com/2012/10/29/powerful-command-line-tools-developers/
     "Powerful Command Line Tools For Developers"

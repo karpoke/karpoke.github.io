@@ -12,7 +12,7 @@ Slug: hsts-super-cookies
 > browsers treat it differently from cookies. It is only by intentional
 > misapplication that HSTS can be exploited to track users.
 
-- Sam Greenhalgh | [radicalresearch.co.uk][]
+» Sam Greenhalgh | [radicalresearch.co.uk][]
 
   [radicalresearch.co.uk]: http://www.radicalresearch.co.uk/lab/hstssupercookies
     "HSTS Super Cookies"

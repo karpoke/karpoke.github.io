@@ -10,7 +10,7 @@ Slug: 10-basic-tips-on-working-fast-in-unix-or-linux-terminal
 > shared some UNIX command practices I follow to work fast, quick, or
 > efficiently in Linux.
 
-- Hacker Noon | [hackernoon.com][]
+» Hacker Noon | [hackernoon.com][]
 
   [hackernoon.com]: https://hackernoon.com/10-basic-tips-on-working-fast-in-unix-or-linux-terminal-5746ae42d277
     "10 Basic Tips on Working Fast in UNIX or Linux Terminal"

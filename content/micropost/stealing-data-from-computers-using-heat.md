@@ -23,7 +23,7 @@ Slug: stealing-data-from-computers-using-heat
 > on desktops alongside Internet-connected ones so that workers can
 > easily access both.
 
-- Kim Zetter | [wired.com][]
+» Kim Zetter | [wired.com][]
 
   [wired.com]: http://www.wired.com/2015/03/stealing-data-computers-using-heat/
     "Stealing Data From Computers Using Heat"

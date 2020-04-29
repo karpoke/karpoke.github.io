@@ -36,7 +36,7 @@ Slug: the-geek-syndrome
 > teachers and other figures of authority, partly because the subtle
 > cues that define societal hierarchies are invisible to them.
 
-- Steve Silberman | [wired.com][]
+» Steve Silberman | [wired.com][]
 
   [wired.com]: http://www.wired.com/wired/archive/9.12/aspergers_pr.html
     "The Geek Syndrome"

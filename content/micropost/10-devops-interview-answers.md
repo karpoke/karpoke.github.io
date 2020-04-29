@@ -9,7 +9,7 @@ Slug: 10-devops-interview-answers
 > questions, so in case you were, or are now, a candidate, that list could
 > help you prepare for interviews.
 
-- Logz.io | [logz.io][]
+» Logz.io | [logz.io][]
 
   [logz.io]: https://logz.io/blog/community/10-devops-interview-answers/
     "10 DevOps Interview Answers"

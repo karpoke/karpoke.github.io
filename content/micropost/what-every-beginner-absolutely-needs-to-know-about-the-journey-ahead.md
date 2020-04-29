@@ -10,7 +10,7 @@ Slug: what-every-beginner-absolutely-needs-to-know-about-the-journey-ahead
 > Dvorak keyboard layout. He picked up Linux, dabbled in Lisp and coded
 > in Python while living on the command line for more than half a year.
 
-- Erik Trautman | [vikingcodeschool.com][]
+» Erik Trautman | [vikingcodeschool.com][]
 
   [vikingcodeschool.com]: http://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard
     "What every beginner absolutely needs to know about the journey ahead"

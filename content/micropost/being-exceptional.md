@@ -13,7 +13,7 @@ Slug: being-exceptional
 > something goes wrong is acronymically called EAFP (”easier to ask for
 > forgiveness than permission”).
 
-- Brendan Scott | [python4kids.wordpress.com][]
+» Brendan Scott | [python4kids.wordpress.com][]
 
   [python4kids.wordpress.com]: http://python4kids.wordpress.com/2012/05/29/being-exceptional/
     "Being exceptional"

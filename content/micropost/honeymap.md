@@ -8,7 +8,7 @@ Slug: honeymap
 > markers on the map represent attackers, yellow markers are targets
 > (honeypot sensors).
 
-- Florian Weingarte and Mark Schloesser | [HoneyMap][] / [honeynet.org][]
+» Florian Weingarte and Mark Schloesser | [HoneyMap][] / [honeynet.org][]
 
   [HoneyMap]: http://map.honeycloud.net/
     "HoneyMap"

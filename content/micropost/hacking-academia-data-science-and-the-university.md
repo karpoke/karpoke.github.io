@@ -17,7 +17,7 @@ Slug: hacking-academia-data-science-and-the-university
 > translates to little hope for academic career advancement. » Jake
 > Vanderplas | [The Big Data Brain Drain: Why Science is in Trouble][]
 
-- Jake Vanderplas | [jakevdp.github.io][]
+» Jake Vanderplas | [jakevdp.github.io][]
 
   [The Big Data Brain Drain: Why Science is in Trouble]: http://jakevdp.github.io/blog/2013/10/26/big-data-brain-drain/
     "The Big Data Brain Drain: Why Science is in Trouble"

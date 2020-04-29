@@ -10,7 +10,7 @@ Slug: las-matematicas-explican-por-que-no-puedes-ganar-al-tetris-hagas-lo-que-ha
 > enfrentó su software al Tetris, sin embargo, Murphy se encontró con
 > que no había victoria posible.
 
-- R. Pérez | [elconfidencial.com][]
+» R. Pérez | [elconfidencial.com][]
 
   [elconfidencial.com]: http://www.elconfidencial.com/tecnologia/2015-05-02/las-matematicas-explican-por-que-no-puedes-ganar-al-tetris-hagas-lo-que-hagas_786085/
     "Las matemáticas explican por qué no puedes ganar al Tetris hagas lo que hagas"

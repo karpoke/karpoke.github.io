@@ -14,7 +14,7 @@ Slug: un-ejercito-de-frikis-contra-telefonica
 > 80 y 90 no había grupo de hackers que no contase entre sus filas con
 > uno o más buenos ’phreakers’.
 
-- Mercé Molist | [elmundo.es][]
+» Mercé Molist | [elmundo.es][]
 
   [elmundo.es]: http://www.elmundo.es/tecnologia/2014/01/06/52b92be1268e3ea9648b4573.html
     "Un ejército de 'frikis' contra Telefónica"

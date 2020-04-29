@@ -14,7 +14,7 @@ Slug: python-ecosystem-an-introduction
 > development for our interns, trainees and experienced developers who
 > shift to Python from other platforms.
 
-- Mir Nazim | [mirnazim.org][]
+» Mir Nazim | [mirnazim.org][]
 
   [mirnazim.org]: http://mirnazim.org/writings/python-ecosystem-introduction/
     "Python Ecosystem - An Introduction"

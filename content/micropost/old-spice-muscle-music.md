@@ -8,7 +8,7 @@ Slug: old-spice-muscle-music
 
 <iframe src="http://player.vimeo.com/video/47875656" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-- Terry Crews | [vimeo.com][]
+» Terry Crews | [vimeo.com][]
 
   [vimeo.com]: http://vimeo.com/47875656
     "Old Spice Muscle Music"

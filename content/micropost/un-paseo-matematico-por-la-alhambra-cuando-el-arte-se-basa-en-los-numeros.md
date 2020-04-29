@@ -14,7 +14,7 @@ Slug: un-paseo-matematico-por-la-alhambra-cuando-el-arte-se-basa-en-los-numeros
 > está elevado R/2 por encima del eje de impostas, y el arco exterior elevado
 > un R/5.
 
-- Xataka | [xataka.com][]
+» Xataka | [xataka.com][]
 
   [xataka.com]: https://www.xataka.com/especiales/paseo-matematico-alhambra-cuando-arte-se-basa-numeros
     "Un paseo matemático por la Alhambra: cuando el arte se basa en los números"

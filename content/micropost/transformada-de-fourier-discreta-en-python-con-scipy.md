@@ -10,7 +10,7 @@ Slug: transformada-de-fourier-discreta-en-python-con-scipy
 > resulta útil en otras áreas como en la resolución de ecuaciones
 > diferenciales o en el tratamiento de imágenes.
 
-- Juanlu001 | [pybonacci.wordpress.com][]
+» Juanlu001 | [pybonacci.wordpress.com][]
 
   [pybonacci.wordpress.com]: https://pybonacci.wordpress.com/2012/09/29/transformada-de-fourier-discreta-en-python-con-scipy/
     "Transformada de Fourier discreta en Python con SciPy"

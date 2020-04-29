@@ -14,7 +14,7 @@ Slug: the-open-source-technology-behind-twitter
 > month’s LinuxCon, August 29 through 31, in San Diego, CA. His topic:
 > The open source technology behind a Tweet.
 
-- Jason Hibbets | [opensource.com][]
+» Jason Hibbets | [opensource.com][]
 
   [opensource.com]: http://opensource.com/business/12/8/open-source-technology-behind-twitter
     "The open source technology behind Twitter"

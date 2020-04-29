@@ -10,7 +10,7 @@ Slug: editor-wars-the-revenge-of-vim
 > consider myself a Vim master, but I’m going to write this overwrought
 > essay praising it (using Vim, naturally).
 
-- Elliot Williams | [hackaday.com][]
+» Elliot Williams | [hackaday.com][]
 
   [hackaday.com]: http://hackaday.com/2016/08/08/editor-wars-the-revenge-of-vim/
     "Editor wars: the revenge of vim"

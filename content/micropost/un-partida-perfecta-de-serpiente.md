@@ -10,7 +10,7 @@ Slug: una-partida-perfecta-de-serpiente
 
 [![Hosted by imgur](http://i.imgur.com/dAtcCfH.gif)[1]
 
-- Angel Jimenez de Luis | [gizmodo.com][]
+» Angel Jimenez de Luis | [gizmodo.com][]
 
   [1]: http://i.imgur.com/dAtcCfH
     "Un partida 'perfecta' de Serpiente"

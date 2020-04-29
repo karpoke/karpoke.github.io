@@ -13,7 +13,7 @@ Slug: lukes-change-an-inside-job
 
 [!embed](https://www.youtube.com/watch?v=2dvv-Yib1Xg)
 
-- Graham Putnam | [youtube.com][]
+» Graham Putnam | [youtube.com][]
 
   [youtube.com]: https://www.youtube.com/watch?v=2dvv-Yib1Xg
     "Luke's Change: an Inside Job"

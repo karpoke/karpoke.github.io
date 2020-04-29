@@ -10,7 +10,7 @@ Slug: 10-lessons-from-10-years-of-aws-part-1
 > embraced the cloud, and in particular AWS. This two-part blog post is an
 > attempt to share that experience with you. Hope you enjoy!
 
-- Hacker Noon | [hackernoon.com][]
+» Hacker Noon | [hackernoon.com][]
 
   [hackernoon.com]: https://medium.com/@adhorn/10-lessons-from-10-years-of-aws-part-1-258b56703fcf
     "10 Lessons from 10 Years of AWS (part 1)"

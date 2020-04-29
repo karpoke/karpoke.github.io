@@ -11,7 +11,7 @@ Slug: scaling-lessons-learned-at-dropbox
 > engineering project ;-). If people find this useful, I’ll try to come
 > up with more tips and write a part 2.
 
-- Rajiv Eranki | [eranki.tumblr.com][]
+» Rajiv Eranki | [eranki.tumblr.com][]
 
   [eranki.tumblr.com]: http://eranki.tumblr.com/post/27076431887/scaling-lessons-learned-at-dropbox-part-1
     "Scaling lessons learned at Dropbox"

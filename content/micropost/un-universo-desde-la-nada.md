@@ -10,7 +10,7 @@ Slug: un-universo-desde-la-nada
 
 [!embed](https://www.youtube.com/watch?v=Fs_MwYZHm7g)
 
-- @polibioinexistente | [youtube.com][]
+» @polibioinexistente | [youtube.com][]
 
   [youtube.com]: https://www.youtube.com/watch?v=Fs_MwYZHm7g
     "Un universo desde la nada"

@@ -15,7 +15,7 @@ Slug: seeing-through-walls-with-a-wireless-router
 > direction”even through a one-foot-thick brick wall. Because the device
 > itself doesn’t emit any radio waves, it can’t be detected.
 
-- David Hambling | [popsci.com][]
+» David Hambling | [popsci.com][]
 
   [popsci.com]: http://www.popsci.com/technology/article/2012-07/seeing-through-walls-wireless-router
     "Seeing Through Walls With a Wireless Router"

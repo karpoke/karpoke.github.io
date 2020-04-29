@@ -19,9 +19,9 @@ Slug: cuanto-cuesta-hacer-un-ping-todas-las-direcciones-de-internet
 > las direcciones de Internet? ¿Sería viable? ¿Cuánto nos costaría?
 > ¿Recursos técnicos? ¿Recursos físicos? ¿Tiempo? ¿Dinero?
 
-- Dami  Soler [securityartwork.es][], | [securityartwork.es][1]
+» Dami  Soler [securityartwork.es][], | [securityartwork.es][1]
 » [xkcd.com][]
-- Suhas Mathur | [suhasmathur.com][]
+» Suhas Mathur | [suhasmathur.com][]
 
   [securityartwork.es]: http://www.securityartwork.es/2013/01/21/cuanto-cuesta-hacer-un-ping-todas-las-direcciones-de-internet-12/
     "securityartwork.es"

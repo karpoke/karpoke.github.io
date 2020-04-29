@@ -20,7 +20,7 @@ Slug: m-c-escher-metamorphose
 
 [!embed](https://www.youtube.com/watch?v=tjboEi8p4o4)
 
-- @stanchinsky | [youtube.com][]
+» @stanchinsky | [youtube.com][]
 
   [youtube.com]: https://www.youtube.com/watch?v=tjboEi8p4o4
     "M.C. Escher - Metamorphose"

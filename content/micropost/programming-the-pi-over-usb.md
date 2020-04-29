@@ -11,7 +11,7 @@ Slug: programming-the-pi-over-usb
 
 [!embed](https://www.youtube.com/watch?v=4gLzJGrkfVw)
 
-- Te Co Ed | [youtube.com][] | via [raspberrypi.org][]
+» Te Co Ed | [youtube.com][] | via [raspberrypi.org][]
 
   [youtube.com]: https://www.youtube.com/watch?v=4gLzJGrkfVw
     "Programming the Pi over USB"

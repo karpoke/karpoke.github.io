@@ -27,7 +27,7 @@ Slug: golden-axe-desvelando-todos-sus-secretos
 > maximo de puntuacion posible en el juego ya que considero que dichas
 > estrategias a dia de hoy ya han sido superadas (aunque no publicadas).
 
-- @ZIDEVS | [elotrolado.net][]
+» @ZIDEVS | [elotrolado.net][]
 
   [elotrolado.net]: http://www.elotrolado.net/hilo_golden-axe-desvelando-todos-sus-secretos_1633048
     "Golden Axe - Desvelando todos sus secretos"

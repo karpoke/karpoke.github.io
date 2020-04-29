@@ -14,7 +14,7 @@ Slug: the-tty-demystified
 > point of view ” is a twisty little mess of special cases. To
 > understand how this came to be, we have to go back in time.
 
-- Linus …kesson | [linusakesson.net][]
+» Linus …kesson | [linusakesson.net][]
 
   [linusakesson.net]: http://www.linusakesson.net/programming/tty/index.php
     "The TTY demystified"

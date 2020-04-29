@@ -9,7 +9,7 @@ Slug: why-print-became-a-function-in-python-3
 > print as an expression, unlike the print statement which can only be
 > used as a statement.
 
-- Brett Cannon | [snarky.ca][]
+» Brett Cannon | [snarky.ca][]
 
   [snarky.ca]: http://www.snarky.ca/why-print-became-a-function-in-python-3
     "Why ‘print’ became a function in Python 3"

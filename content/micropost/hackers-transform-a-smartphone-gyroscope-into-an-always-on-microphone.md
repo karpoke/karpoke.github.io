@@ -13,7 +13,7 @@ Slug: hackers-transform-a-smartphone-gyroscope-into-an-always-on-microphone
 > up air vibrations from sounds, and many Android devices can do it in
 > the 80 to 250 hertz range -- exactly the frequency of a human voice.
 
-- Steve Dent | [engadget.com][]
+» Steve Dent | [engadget.com][]
 
   [engadget.com]: http://www.engadget.com/2014/08/15/gyrophone-eavesdropping-hack/
     "Hackers transform a smartphone gyroscope into an always-on microphone"

@@ -9,7 +9,7 @@ Slug: 10-lessons-from-10-years-of-aws-part-2
 > of the blog post. Hope you enjoy as-well! Please do not hesitate to give
 > feedback, share your own stories or simply like :)
 
-- Hacker Noon | [hackernoon.com][]
+» Hacker Noon | [hackernoon.com][]
 
   [hackernoon.com]: https://hackernoon.com/10-lessons-from-10-years-of-aws-part-2-5dd92b533870
     "10 Lessons from 10 Years of AWS (part 2)"

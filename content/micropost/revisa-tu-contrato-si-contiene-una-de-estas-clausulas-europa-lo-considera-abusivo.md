@@ -15,7 +15,7 @@ Slug: revisa-tu-contrato-si-contiene-una-de-estas-clausulas-europa-lo-considera-
 > -   supresión u obstaculización del ejercicio de acciones judiciales o
 >     de recursos.
 
-- Ruth Ugalde | [lainformacion.com][]
+» Ruth Ugalde | [lainformacion.com][]
 
   [lainformacion.com]: http://noticias.lainformacion.com/economia-negocios-y-finanzas/servicios-bancarios/revisa-tu-contrato-si-contiene-una-de-estas-clausulas-europa-lo-considera-abusivo_cW8mODyncLHot7mipeFUC4/
     "Revisa tu contrato: si contiene una de estas cláusulas, Europa lo considera abusivo"

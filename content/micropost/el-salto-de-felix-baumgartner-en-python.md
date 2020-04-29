@@ -17,7 +17,7 @@ Slug: el-salto-de-felix-baumgartner-en-python
 > con la realidad. Tómese esto en cuenta a la hora de valorar los
 > resultados.
 
-- Juanlu001 | [pybonacci.wordpress.com][]
+» Juanlu001 | [pybonacci.wordpress.com][]
 
   [pybonacci.wordpress.com]: https://pybonacci.wordpress.com/2012/10/15/el-salto-de-felix-baumgartner-en-python/
     "El salto de Felix Baumgartner en Python"

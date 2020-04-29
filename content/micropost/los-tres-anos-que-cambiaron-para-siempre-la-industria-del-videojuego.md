@@ -13,7 +13,7 @@ Slug: los-tres-anos-que-cambiaron-para-siempre-la-industria-del-videojuego
 > videojuegos en dos dimensiones pasaron de dominar la industria (y ser casi
 > el único camino viable en ella) a prácticamente desaparecer por completo.
 
-- Javier Ortizá | [malavida.com][]
+» Javier Ortizá | [malavida.com][]
 
   [malavida.com]: http://www.malavida.com/es/analisis/los-tres-anos-que-cambiaron-para-siempre-la-industria-del-videojuego-006216
     "Los tres años que cambiaron para siempre la industria del videojuego"

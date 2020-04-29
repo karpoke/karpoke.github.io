@@ -11,7 +11,7 @@ Slug: hacking-my-vagina
 > immediately use in my everyday life. It also happens to be a sex toy.
 >  In other words, I wanted to hack something I actually use: my vagina.
 
-- Beth | [scanlime.org][]
+» Beth | [scanlime.org][]
 
   [scanlime.org]: http://scanlime.org/2012/11/hacking-my-vagina/
     "Hacking my vagina"

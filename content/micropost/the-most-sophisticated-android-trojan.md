@@ -14,7 +14,7 @@ Slug: the-most-sophisticated-android-trojan
 > in the console. Now, Kaspersky Lab’s products detect this malicious
 > program as Backdoor.AndroidOS.Obad.a
 
-- Roman Unuchek | [securelist.com][]
+» Roman Unuchek | [securelist.com][]
 
   [securelist.com]: https://www.securelist.com/en/blog/8106/The_most_sophisticated_Android_Trojan
     "The most sophisticated Android Trojan"

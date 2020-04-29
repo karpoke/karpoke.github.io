@@ -16,7 +16,7 @@ Slug: diez-comandos-de-adb-que-deberias-conocer
 > ”avanzada” y completa. Vamos a ver cómo se hace y algunos comandos
 > básicos.
 
-- Aitor Santana | [elandroidelibre.com][]
+» Aitor Santana | [elandroidelibre.com][]
 
   [elandroidelibre.com]: http://www.elandroidelibre.com/2013/02/diez-comandos-de-adb-que-deberias-conocer.html
     "Diez comandos de ADB que deberías conocer"

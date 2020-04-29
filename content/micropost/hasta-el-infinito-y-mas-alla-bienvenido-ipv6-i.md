@@ -13,7 +13,7 @@ Slug: hasta-el-infinito-y-mas-alla-bienvenido-ipv6-i
 > direcciones posibles, este número es muy difícil de imaginar, o de manejar,
 > ya que el ser humano no esta acostumbrado a números de tal magnitud.
 
-- Jesús Largo | [securityartwork.es]
+» Jesús Largo | [securityartwork.es]
 
   [securityartwork.es]: http://www.securityartwork.es/2016/11/25/infinito-mas-alla-bienvenido-ipv6-i/
     "Hasta el infinito y más allá. Bienvenido IPv6 (I)"

@@ -10,7 +10,7 @@ Slug: attack-of-the-week-freak-or-factoring-the-nsa-for-fun-and-profit
 > ’export-grade’ RSA. These attacks are real and exploitable against a
 > shocking number of websites -- including government websites.
 
-- Matthew Green | [blog.cryptographyengineering.com][]
+» Matthew Green | [blog.cryptographyengineering.com][]
 
   [blog.cryptographyengineering.com]: http://blog.cryptographyengineering.com/2015/03/attack-of-week-freak-or-factoring-nsa.html
     "Attack of the week: FREAK (or 'factoring the NSA for fun and profit')"

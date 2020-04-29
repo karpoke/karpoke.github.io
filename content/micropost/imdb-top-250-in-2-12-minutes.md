@@ -14,7 +14,7 @@ Slug: imdb-top-250-in-2-12-minutes
 
 [!embed](https://www.youtube.com/watch?v=U0x9HtYgVqA)
 
-- Jonathan Keogh | [youtube.com][]
+» Jonathan Keogh | [youtube.com][]
 
   [youtube.com]: https://www.youtube.com/watch?v=U0x9HtYgVqA
     "IMDB Top 250 in 2 1/2 Minutes"

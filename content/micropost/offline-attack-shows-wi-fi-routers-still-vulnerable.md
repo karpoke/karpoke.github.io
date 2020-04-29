@@ -13,7 +13,7 @@ Slug: offline-attack-shows-wi-fi-routers-still-vulnerable
 > Protected Setup][] » [Hands-on: hacking WiFi Protected Setup with
 > Reaver\< /a>][]
 
-- Robert Lemos | [arstechnica.com/a>][]
+» Robert Lemos | [arstechnica.com/a>][]
 
   [Offline bruteforce attack on WiFi Protected Setup]: http://www.slideshare.net/0xcite/offline-bruteforce-attack-on-wifi-protected-setup
     "Offline bruteforce attack on WiFi Protected Setup"

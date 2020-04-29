@@ -20,7 +20,7 @@ Slug: cosmo-the-hacker-god-who-fell-to-earth
 > charged with. It’s tough to narrow it down; he freely admits to
 > participation in a wide array of crimes.
 
-- Mat Honan | [wired.com][]
+» Mat Honan | [wired.com][]
 
   [wired.com]: http://www.wired.com/gadgetlab/2012/09/cosmo-the-god-who-fell-to-earth/all/
     "Cosmo, the Hacker 'God' Who Fell to Earth"

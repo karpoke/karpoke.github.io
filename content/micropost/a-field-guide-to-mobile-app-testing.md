@@ -13,7 +13,7 @@ Slug: a-field-guide-to-mobile-app-testing
 > The intention here is to highlight their thought processes and to show
 > the coverage and depth that testers often go to.
 
-- Rosie Sherry | [smashingmagazine.com][]
+» Rosie Sherry | [smashingmagazine.com][]
 
   [smashingmagazine.com]: http://mobile.smashingmagazine.com/2012/10/22/a-guide-to-mobile-app-testing/
     "A Field Guide To Mobile App Testing"

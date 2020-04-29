@@ -16,7 +16,7 @@ Slug: how-dropbox-securely-stores-your-passwords
 > CPU can generate millions of SHA256 hashes per second. Specialized GPU
 > clusters allow for calculating hashes at a rate of billions per second.
 
-- Devdatta Akhawe | [blogs.dropbox.com][]
+» Devdatta Akhawe | [blogs.dropbox.com][]
 
   [blogs.dropbox.com]: https://blogs.dropbox.com/tech/2016/09/how-dropbox-securely-stores-your-passwords/
     "How Dropbox securely stores your passwords"

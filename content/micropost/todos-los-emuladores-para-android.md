@@ -13,7 +13,7 @@ Slug: todos-los-emuladores-para-android
 > tan pocos. Pero tranquilos que hoy os traemos una recopilación de
 > todos los emuladores actuales a los que se puede jugar en Android
 
-- Adrian | [elandroidelibre.com][]
+» Adrian | [elandroidelibre.com][]
 
   [elandroidelibre.com]: http://www.elandroidelibre.com/2012/07/todos-los-emuladores-para-android.html
     "Todos los emuladores para Android"

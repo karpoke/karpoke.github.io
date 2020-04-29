@@ -13,7 +13,7 @@ Slug: the-scope-of-index-variables-in-pythons-for-loops
 > > assigned to at all by the loop.
 > > </p>
 
-- Eli Bendersky | [eli.thegreenplace.net][]
+» Eli Bendersky | [eli.thegreenplace.net][]
 
   [eli.thegreenplace.net]: http://eli.thegreenplace.net/2015/the-scope-of-index-variables-in-pythons-for-loops/
     "The scope of index variables in Python's for loops"

@@ -17,7 +17,7 @@ Slug: music-theory-for-nerds
 > music using, well, musical notation, which doesn’t make any sense if you
 > don’t know why it’s like that in the first place.
 
-- Lexy Munroe | [eev.ee][]
+» Lexy Munroe | [eev.ee][]
 
   [eev.ee]: https://eev.ee/blog/2016/09/15/music-theory-for-nerds/
     "Music theory for nerds"

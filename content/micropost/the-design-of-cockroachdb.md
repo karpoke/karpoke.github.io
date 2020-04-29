@@ -11,7 +11,7 @@ Slug: the-design-of-cockroachdb
 > (one binary) with minimal configuration and no required external
 > dependencies.
 
-- Spencer Kimball | [github.com][]
+» Spencer Kimball | [github.com][]
 
   [github.com]: https://github.com/cockroachdb/cockroach/blob/develop/docs/design.md
     "The design of CockroachDB"

@@ -10,7 +10,7 @@ Slug: how-to-c-in-2016
 > everybody has a different set of things they believe about C based on
 > the year(s) they first started learning.
 
-- Matt | [matt.sh][]
+» Matt | [matt.sh][]
 
   [matt.sh]: https://matt.sh/howto-c
     "How to C in 2016"

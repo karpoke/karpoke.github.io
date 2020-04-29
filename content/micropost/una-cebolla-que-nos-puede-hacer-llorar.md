@@ -21,7 +21,7 @@ Slug: una-cebolla-que-nos-puede-hacer-llorar
 > bibliotecas y de pinacotecas ya que son entidades culturales y las
 > administraciones públicas tienen que poder cobrar por los datos.
 
-- Fernando Acero | [fernando-acero.livejournal.com][]
+» Fernando Acero | [fernando-acero.livejournal.com][]
 
   [fernando-acero.livejournal.com]: http://fernando-acero.livejournal.com/87876.html
     "Una cebolla que nos puede hacer llorar"

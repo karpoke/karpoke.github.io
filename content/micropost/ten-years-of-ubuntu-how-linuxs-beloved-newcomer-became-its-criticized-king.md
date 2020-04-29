@@ -15,7 +15,7 @@ Slug: ten-years-of-ubuntu-how-linuxs-beloved-newcomer-became-its-criticized-king
 > Ubuntu is poised to launch a mobile version that may well send those
 > numbers skyrocketing again.
 
-- Scott Gilbertson | [arstechnica.com][]
+» Scott Gilbertson | [arstechnica.com][]
 
   [arstechnica.com]: http://arstechnica.com/information-technology/2014/10/ten-years-of-ubuntu-how-linuxs-beloved-newcomer-became-its-criticized-king/
     "Ten years of Ubuntu: how Linux’s beloved newcomer became its criticized king"

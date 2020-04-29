@@ -19,7 +19,7 @@ Slug: indian-developers-redesigning-linux-kernel-with-oop-c-support
 > almost same as original. MOOL features a device driver framework to
 > write drivers in C++ and insert them as loadable kernel modules.”
 
-- Michael Larabel | [phoronix.com][]
+» Michael Larabel | [phoronix.com][]
 
   [phoronix.com]: http://www.phoronix.com/scan.php?page=news_item&px=MTgwMzQ
     "Indian Developers Redesigning Linux Kernel With OOP, C++ Support"

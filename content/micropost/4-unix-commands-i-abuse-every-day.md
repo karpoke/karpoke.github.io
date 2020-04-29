@@ -7,7 +7,7 @@ Slug: 4-unix-commands-i-abuse-every-day
 > certain Unix commands for purposes other than they are intended. Yes,
 > I abuse Unix commands.
 
-- Tom Limoncelli | [everythingsysadmin.com][]
+» Tom Limoncelli | [everythingsysadmin.com][]
 
   [everythingsysadmin.com]: http://everythingsysadmin.com/2012/09/unorthodoxunix.html
     "4 unix commands I abuse every day"

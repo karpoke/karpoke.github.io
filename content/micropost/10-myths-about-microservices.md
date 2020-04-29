@@ -10,7 +10,7 @@ Slug: 10-myths-about-microservices
 > every person in that organization has their own definition of what a
 > Microservice is.
 
-- Hacker Noon | [hackernoon.com][]
+» Hacker Noon | [hackernoon.com][]
 
   [hackernoon.com]: https://hackernoon.com/10-myths-about-microservices-aadd06782260
     "10 Myths About Microservices"

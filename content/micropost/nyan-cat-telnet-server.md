@@ -10,7 +10,7 @@ Slug: nyan-cat-telnet-server
 >
 > `telnet miku.acm.uiuc.edu`
 
-- Kevin Lange | [miku.acm.uiuc.edu][]
+» Kevin Lange | [miku.acm.uiuc.edu][]
 
   [miku.acm.uiuc.edu]: http://miku.acm.uiuc.edu/
     "Nyan Cat Telnet Server"

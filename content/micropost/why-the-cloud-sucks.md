@@ -10,7 +10,7 @@ Slug: why-the-cloud-sucks
 > things you depend on disappear, etc. And no company will ever take
 > responsibility. It’s rare to ever get told what really happened.
 
-- Steve Wozniak | [gizmodo.com][]
+» Steve Wozniak | [gizmodo.com][]
 
   [gizmodo.com]: http://gizmodo.com/5932161/why-the-cloud-sucks
     "Why the Cloud Sucks"

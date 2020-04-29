@@ -14,7 +14,7 @@ Slug: una-abadia-con-muros-de-plata
 > culto tanto para aquellos que pudieron catarla en su día como para
 > aquellos que la han descubierto con unos años de retraso.
 
-- Jaume Esteve | [elmundo.es][]
+» Jaume Esteve | [elmundo.es][]
 
   [elmundo.es]: http://www.elmundo.es/elmundo/2012/11/08/navegante/1352376785.html
     "Una abadía con muros de plata"

@@ -13,7 +13,7 @@ Slug: la-historia-del-sistema-operativo-unix-y-los-ordenadores-de-la-epoca-narra
 
 [!embed](https://www.youtube.com/watch?v=_2NI6t2r_Hs)
 
-- Microsiervos | [microsiervos.com][]
+» Microsiervos | [microsiervos.com][]
 
   [microsiervos.com]: https://www.microsiervos.com/archivo/ordenadores/historia-sistema-operativo-unix-rob-pike.html
     "La historia del sistema operativo Unix y los ordenadores de la época narrada por Rob Pike"

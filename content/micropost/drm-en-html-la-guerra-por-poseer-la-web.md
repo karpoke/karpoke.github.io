@@ -11,7 +11,7 @@ Slug: drm-en-html-la-guerra-por-poseer-la-web
 > (tecnológicamente hablando): ”si no ponemos las ayudas necesarias para
 > usar DRM [en la Web], la gente simplemente regresará a usar Flash”.
 
-- Alan Lazalde | [eldiario.es][]
+» Alan Lazalde | [eldiario.es][]
 
   [eldiario.es]: http://www.eldiario.es/turing/HTML-Web-DRM-HTML5_0_114788596.html
     "DRM en HTML: la guerra por poseer la Web"

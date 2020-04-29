@@ -16,7 +16,7 @@ Slug: make-a-raspberry-pi-into-a-anonymizing-tor-proxy
 > automatically route any web browsing from your computer through the
 > anonymizing Tor network.
 
-- Ladyada | [adafruit.com][]
+» Ladyada | [adafruit.com][]
 
   [adafruit.com]: http://learn.adafruit.com/onion-pi?view=all
     "Make a Raspberry Pi into a Anonymizing Tor Proxy!"

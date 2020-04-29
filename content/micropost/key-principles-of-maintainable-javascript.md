@@ -21,7 +21,7 @@ Slug: key-principles-of-maintainable-javascript
 > validation, led JavaScript to, incorrectly, be viewed as a terrible
 > language.
 
-- Jonathan Creamer | [net.tutsplus.com][]
+» Jonathan Creamer | [net.tutsplus.com][]
 
   [net.tutsplus.com]: http://net.tutsplus.com/tutorials/javascript-ajax/principles-of-maintainable-javascript/
     "Key Principles of Maintainable JavaScript"

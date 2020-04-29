@@ -22,7 +22,7 @@ Slug: well-actually
 > You can identify this behavior because the person interrupting usually
 > starts with the phrase ”Well, actually...”.
 
-- Miguel de Icaza | [tirania.org][]
+» Miguel de Icaza | [tirania.org][]
 
   [tirania.org]: http://tirania.org/blog/archive/2011/Feb-17.html
     "Well, Actually"

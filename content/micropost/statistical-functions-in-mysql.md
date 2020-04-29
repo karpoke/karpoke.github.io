@@ -26,7 +26,7 @@ Slug: statistical-functions-in-mysql
 > some of the calculations. You can check out the source of the UDF on
 > Github:
 
-- Robert Eisele | [xarg.org][]
+» Robert Eisele | [xarg.org][]
 
   [xarg.org]: http://www.xarg.org/2012/07/statistical-functions-in-mysql/
     "Statistical functions in MySQL"

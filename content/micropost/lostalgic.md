@@ -22,7 +22,7 @@ Slug: lostalgic
 > This project is dedicated to the Lost writers, to the open culture
 > and, in particular, to the community that built Lostpedia.
 
-- Santiago Ortiz | [intuitionanalytics.com][]
+» Santiago Ortiz | [intuitionanalytics.com][]
 
   [intuitionanalytics.com]: http://intuitionanalytics.com/other/lostalgic/
     "Lostalgic"

@@ -10,7 +10,7 @@ Slug: desarrollan-el-primer-transistor-biologico
 > final necesario para la construcción de computadoras biológicas que
 > funcionen dentro de las células vivas.
 
-- Miguel Jorge | [alt1040.com][]
+» Miguel Jorge | [alt1040.com][]
 
   [alt1040.com]: http://alt1040.com/2013/04/primer-transistor-biologico
     "Desarrollan el primer transistor biológico"

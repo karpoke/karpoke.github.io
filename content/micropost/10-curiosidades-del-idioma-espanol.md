@@ -9,7 +9,7 @@ Slug: 10-curiosidades-del-idioma-espanol
 > explicamos 10 curiosidades del idioma español que quizá no conocías. 10
 > curiosidades del idioma español 1. ¿Español o castellano?
 
-- Supercurioso | [supercurioso.com][]
+» Supercurioso | [supercurioso.com][]
 
   [supercurioso.com]: https://supercurioso.com/curiosidades-del-idioma-espanol/
     "10 curiosidades del idioma español"

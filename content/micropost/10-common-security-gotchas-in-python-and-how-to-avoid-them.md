@@ -10,7 +10,7 @@ Slug: 10-common-security-gotchas-in-python-and-how-to-avoid-them
 > practices for writing hardened applications. Yet, when I’ve spoken to many
 > Python developers they simply aren’t aware of them.
 
-- Hacker Noon | [hackernoon.com][]
+» Hacker Noon | [hackernoon.com][]
 
   [hackernoon.com]: https://hackernoon.com/10-common-security-gotchas-in-python-and-how-to-avoid-them-e19fbe265e03
     "10 common security gotchas in Python and how to avoid them"

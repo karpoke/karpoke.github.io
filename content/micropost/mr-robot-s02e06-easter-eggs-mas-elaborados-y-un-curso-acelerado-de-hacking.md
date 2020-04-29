@@ -14,7 +14,7 @@ Slug: mr-robot-s02e06-easter-eggs-mas-elaborados-y-un-curso-acelerado-de-hacking
 > si estás dispuesto a conocer algún que otro detalle del episodio Mr. Robot
 > S02E06.
 
-- Josep Albors | [welivesecurity.com][]
+» Josep Albors | [welivesecurity.com][]
 
   [welivesecurity.com]: http://www.welivesecurity.com/la-es/2016/08/19/mr-robot-s02e06-curso-acelerado/
     "Mr. Robot S02E06: easter eggs más elaborados y un curso acelerado de hacking"

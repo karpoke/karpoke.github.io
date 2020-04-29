@@ -16,7 +16,7 @@ Related:
 >   3. Challenge the solution.
 >   4. Refine and repeat.
 
-- Haki Benita | [medium.com][]
+» Haki Benita | [medium.com][]
 
   [medium.com]: https://medium.com/@hakibenita/bullet-proofing-django-models-c080739be4e#.pqtppqgoj
     "Bullet proofing Django models"

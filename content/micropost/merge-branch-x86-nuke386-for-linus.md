@@ -17,7 +17,7 @@ Slug: merge-branch-x86-nuke386-for-linus
 >
 > I’m not sentimental. Good riddance.
 
-- Linus Torvalds | [git.kernel.org][]
+» Linus Torvalds | [git.kernel.org][]
 
   [git.kernel.org]: http://git.kernel.org/?p=linux/kernel/git/torvalds/linux.git;a=commit;h=743aa456c1834f76982af44e8b71d1a0b2a82e21
     "Merge branch 'x86-nuke386-for-linus'"

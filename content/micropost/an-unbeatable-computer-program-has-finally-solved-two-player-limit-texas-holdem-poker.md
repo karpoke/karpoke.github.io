@@ -12,7 +12,7 @@ Slug: an-unbeatable-computer-program-has-finally-solved-two-player-limit-texas-h
 > no matter how the game starts out, the computer will win or break even
 > in the long run — making it essentially unbeatable. » [Cepheus][]
 
-- Arielle Duhaime-Ross | [theverge.com][]
+» Arielle Duhaime-Ross | [theverge.com][]
 
   [Cepheus]: http://poker.srv.ualberta.ca/
     "Cepheus"

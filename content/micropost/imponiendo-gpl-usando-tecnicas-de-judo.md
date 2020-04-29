@@ -36,7 +36,7 @@ Slug: imponiendo-gpl-usando-tecnicas-de-judo
 > y lo devuelve con la misma fuerza. Por lo tanto el copyleft es siempre
 > tan fuerte como el copyright. ”
 
-- Traducción | [elbauldelprogramador.com][] | Original [h-online.com][]
+» Traducción | [elbauldelprogramador.com][] | Original [h-online.com][]
 
   [elbauldelprogramador.com]: http://www.elbauldelprogramador.com/opensource/imponiendo-gpl-usando-tecnicas-de-judo/
     "elbauldelprogramador.com"

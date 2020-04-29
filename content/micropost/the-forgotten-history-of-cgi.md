@@ -12,7 +12,7 @@ Slug: the-forgotten-history-of-cgi
 > to one another. A distant castle might appear to be larger than one in
 > the foreground simply because it was considered more important.
 
-- Ron Miller | [io9.com][]
+» Ron Miller | [io9.com][]
 
   [io9.com]: http://io9.com/the-forgotten-history-of-cgi-1536941205
     "The Forgotten History Of CGI"

@@ -9,7 +9,7 @@ Slug: monta-tu-propio-dns-dinamico
 > ninguno totalmente gratuito. La buena noticia es que, bajo ciertas
 > circunstancias, podemos montarlo nosotros mismos.
 
-- Roberto Suárez Soto | [linuxtecnico.es][]
+» Roberto Suárez Soto | [linuxtecnico.es][]
 
   [linuxtecnico.es]: http://www.linuxtecnico.es/2012/05/monta-tu-propio-dns-dinamico.html
     "Monta tu propio DNS dinámico"

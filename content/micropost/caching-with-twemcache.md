@@ -25,7 +25,7 @@ Slug: caching-with-twemcache
 > observability related features. The following sections will provide
 > more details on why we did this and what those new features are.
 
-- Chris Aniszczyk | [engineering.twitter.com][]
+» Chris Aniszczyk | [engineering.twitter.com][]
 
   [engineering.twitter.com]: http://engineering.twitter.com/2012/07/caching-with-twemcache.html
     "Caching with Twemcache"

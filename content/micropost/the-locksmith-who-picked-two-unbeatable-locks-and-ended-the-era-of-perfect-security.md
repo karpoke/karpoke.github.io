@@ -13,7 +13,7 @@ Slug: the-locksmith-who-picked-two-unbeatable-locks-and-ended-the-era-of-perfect
 > tremendous leaps forward in security technology, we have never been
 > able to get perfect security back.
 
-- 99% Invisible | [slate.com][]
+» 99% Invisible | [slate.com][]
 
   [slate.com]: http://www.slate.com/blogs/the_eye/2015/04/15/a_history_of_lockpicking_from_99_percent_invisible_and_roman_mars.html
     "The Locksmith Who Picked Two “Unbeatable” Locks and Ended the Era of “Perfect Security”"

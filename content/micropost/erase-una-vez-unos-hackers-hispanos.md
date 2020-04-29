@@ -11,7 +11,7 @@ Slug: erase-una-vez-unos-hackers-hispanos
 > parezca mentira, en España esa historia es apasionante. »
 > [hackstory.es][]
 
-- Pablo Romero | [elmundo.es][]
+» Pablo Romero | [elmundo.es][]
 
   [hackstory.es]: http://hackstory.es/
     "hackstory.es"

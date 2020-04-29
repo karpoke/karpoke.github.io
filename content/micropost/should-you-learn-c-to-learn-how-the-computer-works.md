@@ -13,7 +13,7 @@ Slug: should-you-learn-c-to-learn-how-the-computer-works
 > * Understanding the context means that learning C for this reason may still
 >   be a good idea for you, depending on your objectives.
 
-- Steve Klabnik | [steveklabnik.com][]
+» Steve Klabnik | [steveklabnik.com][]
 
   [steveklabnik.com]: https://words.steveklabnik.com/should-you-learn-c-to-learn-how-the-computer-works
     "Should you learn C to “learn how the computer works”?"

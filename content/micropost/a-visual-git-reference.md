@@ -8,7 +8,7 @@ Slug: a-visual-git-reference
 > Once you know a bit about how git works, this site may solidify your
 > understanding.
 
-- Mark Lodato | [marklodato.github.com][]
+» Mark Lodato | [marklodato.github.com][]
 
   [marklodato.github.com]: http://marklodato.github.com/visual-git-guide/index-en.html
     "A Visual Git Reference"

@@ -32,7 +32,7 @@ Slug: como-montar-una-mini-consola-con-raspberry-pi
 
 Hay una buena colleción de ROMs en [nicoblog.org][].
 
-- Manz | [emezeta.com][]
+» Manz | [emezeta.com][]
 
   [emezeta.com]: http://www.emezeta.com/articulos/como-montar-una-mini-consola-con-raspberry-pi
     "Cómo montar una mini consola con Raspberry Pi"

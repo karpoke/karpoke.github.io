@@ -21,7 +21,7 @@ Related:
 > 7. Respect component boundaries
 > 8. Integrate external styles loosely
 
-- Jarno Rantanen | [github.com][] | via [css-tricks.com][]
+» Jarno Rantanen | [github.com][] | via [css-tricks.com][]
 
   [github.com]: https://github.com/jareware/css-architecture/blob/master/README.md
     "8 simple rules for a robust, scalable CSS architecture"

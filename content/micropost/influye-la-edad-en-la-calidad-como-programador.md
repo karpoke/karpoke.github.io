@@ -7,7 +7,7 @@ Slug: influye-la-edad-en-la-calidad-como-programador
 > para alcanzar el nivel de experto, pero una vez llegado a él, ¿cuál es
 > la evolución? ¿Se mantiene? ¿Continúa mejorando? ¿Retrocede?
 
-- Juan Palacio | [navegapolis.com][]
+» Juan Palacio | [navegapolis.com][]
 
   [navegapolis.com]: http://navegapolis.com/index.php/93-programadores-y-edad
     "¿Influye la edad en la calidad como programador?"

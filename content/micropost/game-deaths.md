@@ -10,7 +10,7 @@ Slug: game-deaths
 
 [!embed](https://www.youtube.com/watch?v=gJ6APKIjFQY)
 
-- Rob Beschizza | [boingboing.net][]
+» Rob Beschizza | [boingboing.net][]
 
   [boingboing.net]: http://boingboing.net/2011/03/25/classic-arcade-game-1.html
     "Game deaths"

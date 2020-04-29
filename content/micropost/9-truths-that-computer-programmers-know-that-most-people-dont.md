@@ -10,7 +10,7 @@ Slug: 9-truths-that-computer-programmers-know-that-most-people-dont
 > where no one is up and no one is calling or trying to talk to us. It’s
 > a great time to program, and think.
 
-- Macleod Sawyer | [macleodsawyer.com][]
+» Macleod Sawyer | [macleodsawyer.com][]
 
   [macleodsawyer.com]: http://macleodsawyer.com/2015/03/06/nine-truths-computer-programmers-know-that-most-people-dont/
     "9 truths that computer programmers know that most people don't."

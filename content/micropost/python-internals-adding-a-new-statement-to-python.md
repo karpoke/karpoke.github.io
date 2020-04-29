@@ -11,7 +11,7 @@ Slug: python-internals-adding-a-new-statement-to-python
 > All the coding for this article was done against the cutting-edge Py3k
 > branch in the Python Mercurial repository mirror.
 
-- Eli Bendersky | [eli.thegreenplace.net][]
+» Eli Bendersky | [eli.thegreenplace.net][]
 
   [eli.thegreenplace.net]: http://eli.thegreenplace.net/2010/06/30/python-internals-adding-a-new-statement-to-python/
     "Python internals: adding a new statement to Python"

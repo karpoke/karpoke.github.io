@@ -9,7 +9,7 @@ Slug: 10-free-css-tooltip-snippets-to-save-time-on-your-web-projects
 > designers. If you’re looking for CSS tooltips, then this collection should
 > have something for you.
 
-- Speckyboy Design Magazine | [speckyboy.com][]
+» Speckyboy Design Magazine | [speckyboy.com][]
 
   [speckyboy.com]: https://speckyboy.com/free-css-tooltip-snippets/
     "10 Free CSS Tooltip Snippets To Save Time On Your Web Projects"

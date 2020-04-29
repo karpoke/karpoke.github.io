@@ -15,7 +15,7 @@ Slug: how-linux-is-built
 
 [!embed](https://www.youtube.com/watch?v=yVpbFMhOAwE)
 
-- @TheLinuxFoundation | [youtube.com][]
+» @TheLinuxFoundation | [youtube.com][]
 
   [youtube.com]: https://www.youtube.com/watch?v=yVpbFMhOAwE
     "How Linux is Built"

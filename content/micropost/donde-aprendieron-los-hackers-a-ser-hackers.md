@@ -9,7 +9,7 @@ Slug: donde-aprendieron-los-hackers-a-ser-hackers
 > ordenadores y, en general, la tecnología. » [II][] » [III][] » [IV][]
 > » [V][] » [VI][] » [VII][]
 
-- Mercé Molist | [elmundo.es][]
+» Mercé Molist | [elmundo.es][]
 
   [II]: http://www.elmundo.es/tecnologia/2014/10/25/5449e3e5ca474136598b456c.html
     "II"

@@ -15,7 +15,7 @@ Slug: meterpretear-una-apk
 > Vamos a realizar un sencillo proceso de Ingeniería inversa en android, pero
 > bastante sencillo.
 
-- Fare9 | [estacion-informatica.com][]
+» Fare9 | [estacion-informatica.com][]
 
   [estacion-informatica.com]: http://www.estacion-informatica.com/2016/08/meterpretear-una-apk.html
       "Meterpretear una apk"

@@ -15,7 +15,7 @@ Slug: i-wont-hire-people-who-use-poor-grammar-heres-why
 > programming, the devil’s in the details. In fact, when it comes to my
 > whole business, details are everything.
 
-- Kyle Wiens | [blogs.hbr.org][]
+» Kyle Wiens | [blogs.hbr.org][]
 
   [blogs.hbr.org]: http://blogs.hbr.org/cs/2012/07/i_wont_hire_people_who_use_poo.html
     "I won’t hire people who use poor grammar. here’s why."

@@ -15,7 +15,7 @@ Slug: how-two-volunteers-built-the-raspberry-pis-operating-system
 > Linux software packages. And it was all accomplished by two
 > volunteers.
 
-- Jon Brodkin | [arstechnica.com][]
+» Jon Brodkin | [arstechnica.com][]
 
   [arstechnica.com]: http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/
     "How two volunteers built the Raspberry Pi's operating system"

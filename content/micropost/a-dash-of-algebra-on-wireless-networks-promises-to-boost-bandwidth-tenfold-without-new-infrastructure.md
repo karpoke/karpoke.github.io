@@ -15,7 +15,7 @@ Slug: a-dash-of-algebra-on-wireless-networks-promises-to-boost-bandwidth-tenfold
 > benefit from this technology,” says Sheau Ng, vice president for
 > research and development at NBC Universal.
 
-- David Talbot | [technologyreview.com][]
+» David Talbot | [technologyreview.com][]
 
   [technologyreview.com]: http://www.technologyreview.com/news/429722/a-bandwidth-breakthrough/
     "A dash of algebra on wireless networks promises to boost bandwidth tenfold, without new infrastructure"

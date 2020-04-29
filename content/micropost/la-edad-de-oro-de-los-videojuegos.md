@@ -12,7 +12,7 @@ Slug: la-edad-de-oro-de-los-videojuegos
 
 [!embed](https://www.youtube.com/watch?v=OQb0OCux5V4)
 
-- Litos NET | [youtube.com][]
+» Litos NET | [youtube.com][]
 
   [youtube.com]: https://www.youtube.com/watch?v=OQb0OCux5V4
     "La edad de Oro de los videojuegos"

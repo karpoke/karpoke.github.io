@@ -10,7 +10,7 @@ Slug: 10-cosas-de-google-que-aun-no-conoces
 > recopilar 10 curiosidades de Google que seguro no conoces o nunca
 > escuchaste.
 
-- Wwwhat's new? | [wwwhatsnew.com][]
+» Wwwhat's new? | [wwwhatsnew.com][]
 
   [wwwhatsnew.com]: https://wwwhatsnew.com/2018/08/05/10-cosas-de-google-que-aun-no-conoces/
     "10 cosas de Google que aún no conoces"

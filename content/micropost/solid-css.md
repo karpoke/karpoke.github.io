@@ -24,7 +24,7 @@ Slug: solid-css
 > detailed examples. I also think we should understand the idea and not
 > be tied to a specific implementation.
 
-- Miller Medeiros | [millermedeiros.com][]
+» Miller Medeiros | [millermedeiros.com][]
 
   [millermedeiros.com]: http://blog.millermedeiros.com/solid-css/
     "SOLID CSS"

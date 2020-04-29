@@ -8,7 +8,7 @@ Slug: 130-vim-essential-vim-commands.md
 > free and open-source and is one of the most popular code editors. It can be
 > downloaded on Vim official site.
 
-- Jean-Baptiste Jung | [catswhocode.com][]
+» Jean-Baptiste Jung | [catswhocode.com][]
 
   [catswhocode.com]: https://catswhocode.com/vim-commands/
     "130+ Essential Vim Commands"

@@ -24,7 +24,7 @@ Slug: new-release-under-development-suggestions-requested
 >  everything), and I’d like to get some feedback before I add the
 > ”fancy” stuff.
 
-- Ian A Murdock | [comp.os.linux.development][]
+» Ian A Murdock | [comp.os.linux.development][]
 
   [comp.os.linux.development]: https://groups.google.com/forum/?fromgroups#!msg/comp.os.linux.development/Md3Modzg5TU/xty88y5OLaMJ[1-25]
     "New release under development; suggestions requested"

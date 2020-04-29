@@ -10,7 +10,7 @@ Slug: 4-open-source-monitoring-tools
 > there are many levels for observing a system. Metrics aggregation is
 > primarily time-series data, and that’s what we’ll discuss in this article.
 
-- Opensource.com | [opensource.com][]
+» Opensource.com | [opensource.com][]
 
   [opensource.com]: https://opensource.com/article/18/8/open-source-monitoring-tools
     "4 open source monitoring tools"

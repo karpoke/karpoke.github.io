@@ -16,7 +16,7 @@ Slug: el-principio-de-exclusion-explicado-con-urinarios
 > pasillos de promociones fraudulentas para liberarse de su agüita amarilla y,
 > si había suerte, saldrían con una hipoteca de por vida.
 
-- El zombi de Schrödinger | [cuantozombi.com][]
+» El zombi de Schrödinger | [cuantozombi.com][]
 
   [cuantozombi.com]: http://cuantozombi.com/2013/03/17/el-principio-de-exclusion-explicado-con-urinarios/
     "El principio de exclusión explicado con urinarios"

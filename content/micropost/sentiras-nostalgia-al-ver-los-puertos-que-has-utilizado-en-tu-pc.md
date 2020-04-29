@@ -11,7 +11,7 @@ Slug: sentiras-nostalgia-al-ver-los-puertos-que-has-utilizado-en-tu-pc
 
 ![Sentirás nostalgia al ver los puertos que has utilizado en tu PC][]
 
-- Alberto García | [adslzone.net][]
+» Alberto García | [adslzone.net][]
 
   [Sentirás nostalgia al ver los puertos que has utilizado en tu PC]: {static}/images/puertos.jpg
     "Sentirás nostalgia al ver los puertos que has utilizado en tu PC"

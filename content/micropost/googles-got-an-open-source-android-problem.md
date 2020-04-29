@@ -14,7 +14,7 @@ Slug: googles-got-an-open-source-android-problem
 > mobile OS. Unfortunately, according to new ABI Research data, it’s only going
 > to get worse.
 
-- Matt Asay | [readwrite.com][]
+» Matt Asay | [readwrite.com][]
 
   [readwrite.com]: http://readwrite.com/2014/08/14/google-android-open-soure
     "Google's Got an Open Source Android Problem"

@@ -8,7 +8,7 @@ Slug: 10-best-kodi-repositories-for-downloading-popular-addons-2019-list
 > manner. Now, to watch the content from different sources, you would need a
 > centralized media player and this is where Kodi comes into the picture.
 
-- Fossbytes | [fossbytes.com][]
+» Fossbytes | [fossbytes.com][]
 
   [fossbytes.com]: https://fossbytes.com/10-best-kodi-repositories-2019-list/
     "10 Best Kodi Repositories For Downloading Popular Addons | 2019 List"

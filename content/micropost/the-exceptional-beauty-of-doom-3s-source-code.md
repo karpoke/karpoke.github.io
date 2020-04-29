@@ -18,7 +18,7 @@ Slug: the-exceptional-beauty-of-doom-3s-source-code
 >     reading code. If you need to comment something to make it
 >     understandable it should probably be rewritten.
 
-- Shawn McGrath | [kotaku.com][]
+» Shawn McGrath | [kotaku.com][]
 
   [kotaku.com]: http://kotaku.com/5975610/the-exceptional-beauty-of-doom-3s-source-code
     "The Exceptional Beauty of Doom 3's Source Code"

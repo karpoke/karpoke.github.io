@@ -14,7 +14,7 @@ Slug: 11-ways-to-track-your-moves-when-using-a-web-browser
 > techniques how tracking is done and how the user can prevent (some of)
 > it
 
-- Johannes B. Ullrich | [isc.sans.edu][]
+» Johannes B. Ullrich | [isc.sans.edu][]
 
   [isc.sans.edu]: https://isc.sans.edu/diary/11+Ways+To+Track+Your+Moves+When+Using+a+Web+Browser/19369
     "11 Ways To Track Your Moves When Using a Web Browser"

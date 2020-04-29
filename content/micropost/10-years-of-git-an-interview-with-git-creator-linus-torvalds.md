@@ -12,7 +12,7 @@ Slug: 10-years-of-git-an-interview-with-git-creator-linus-torvalds
 > thousands of projects and has ushered in a new level of social coding
 > among programmers.
 
-- Jennifer Cloer | [linux.com][]
+» Jennifer Cloer | [linux.com][]
 
   [linux.com]: http://www.linux.com/news/featured-blogs/185-jennifer-cloer/821541-10-years-of-git-an-interview-with-git-creator-linus-torvalds
     "10 Years of Git: An Interview with Git Creator Linus Torvalds"

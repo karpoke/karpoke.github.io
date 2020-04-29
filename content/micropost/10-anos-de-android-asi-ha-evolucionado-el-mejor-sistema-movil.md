@@ -10,7 +10,7 @@ Slug: 10-anos-de-android-asi-ha-evolucionado-el-mejor-sistema-movil
 > antes de 2008, en una época en la que los reyes del sector eran Symbian y
 > BlackBerry.
 
-- El Androide Libre | [elandroidelibre.elespanol.com][]
+» El Androide Libre | [elandroidelibre.elespanol.com][]
 
   [elandroidelibre.elespanol.com]: https://elandroidelibre.elespanol.com/2018/09/android-decimo-aniversario.html
     "10 años de Android: así ha evolucionado el mejor sistema móvil"

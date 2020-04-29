@@ -20,7 +20,7 @@ Slug: how-high-can-you-get
 
 [!embed](https://www.youtube.com/watch?v=UmkhXdSC62w)
 
-- Don Hodges | [donhodges.com][]
+» Don Hodges | [donhodges.com][]
 
   [donhodges.com]: http://www.donhodges.com/how_high_can_you_get.htm
     "How High Can You Get?"

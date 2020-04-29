@@ -11,7 +11,7 @@ Slug: el-caso-de-aaron-swartz
 > del Gobierno de USA de perseguirlo y hacer un ejemplo con su caso lo
 > llevaron a suicidarse.
 
-- mariano | [uberbin.net][]
+» mariano | [uberbin.net][]
 
   [uberbin.net]: http://www.uberbin.net/archivos/derechos/el-caso-de-aaron-swartz.php
     "EL CASO DE AARON SWARTZ"

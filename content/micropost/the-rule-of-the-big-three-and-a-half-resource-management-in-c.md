@@ -12,7 +12,7 @@ Slug: the-rule-of-the-big-three-and-a-half-resource-management-in-c
 > delinquent in their programming) C got a reputation in some quarters
 > for being an unsafe, memory-leaking language.
 
-- Glennan Carnie | [blog.feabhas.com][]
+» Glennan Carnie | [blog.feabhas.com][]
 
   [blog.feabhas.com]: https://blog.feabhas.com/2014/12/the-rule-of-the-big-three-and-a-half-resource-management-in-c/
     "The Rule of The Big Three (and a half) – Resource Management in C++"

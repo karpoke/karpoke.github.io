@@ -10,7 +10,7 @@ Slug: pitfalls-in-random-number-generation
 > this well enough for many applications. But unless used carefully, random
 > number generators can misbehave in mysterious ways.
 
-- John D. Cook | [codeproject.com][]
+» John D. Cook | [codeproject.com][]
 
   [codeproject.com]: http://www.codeproject.com/Articles/28548/Pitfalls-in-Random-Number-Generation
     "Pitfalls in Random Number Generation"

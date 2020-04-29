@@ -20,7 +20,7 @@ Slug: the-complete-wildfire-index-roots-off-guidesromskernelsradiosruurecoveries
 >  Themes List
 >  Misc tweaks / hacks
 
-- 3xeno | [xda-developers.com][]
+» 3xeno | [xda-developers.com][]
 
   [xda-developers.com]: http://forum.xda-developers.com/showthread.php?t=1029318
     "The Complete Wildfire Index (Root/S-OFF Guides/ROMs/Kernels/Radios/RUU/Recoveries/Themes)"

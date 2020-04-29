@@ -14,7 +14,7 @@ Slug: the-8085s-register-file-reverse-engineered
 > register operations use the unexpected but efficient data path of
 > going through the ALU.
 
-- Ken Shirriff | [righto.com][]
+» Ken Shirriff | [righto.com][]
 
   [righto.com]: http://www.righto.com/2013/03/register-file-8085.html
     "The 8085's register file reverse engineered"

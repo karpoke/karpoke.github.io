@@ -11,7 +11,7 @@ Slug: que-son-los-cypherpunks-y-por-que-son-tan-importanes-en-la-lucha-por-la-pr
 > cuando se añadieron ordenadores y redes a la mezcla para los años 90 del
 > siglo pasado, entonces aparecieron los cyberpunks.
 
-- Sergio Agudo | [genbeta.com][]
+» Sergio Agudo | [genbeta.com][]
 
   [genbeta.com]: http://www.genbeta.com/a-fondo/que-son-los-cypherpunks-y-por-que-son-tan-importanes-en-la-lucha-por-la-privacidad
     "Qué son los cypherpunks y por qué son tan importanes en la lucha por la privacidad"

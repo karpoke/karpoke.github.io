@@ -9,7 +9,7 @@ Slug: the-man-who-made-tetris
 > captivated these members of intelligentsia. After all, here was a game
 > constructed of pristine shapes taken straight from Platonic idealism.
 
-- Jagger Gravning | [motherboard.vice.com][]
+» Jagger Gravning | [motherboard.vice.com][]
 
   [motherboard.vice.com]: http://motherboard.vice.com/read/the-man-who-made-tetris
     "The Man Who Made 'Tetris'"

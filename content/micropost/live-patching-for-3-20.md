@@ -12,7 +12,7 @@ Slug: live-patching-for-3-20
 > knowing about each other), and announced first versions roughly at the
 > same time.
 
-- Jiri Kosina | [lkml.org][]
+» Jiri Kosina | [lkml.org][]
 
   [lkml.org]: https://lkml.org/lkml/2015/2/9/534
     "Live patching for 3.20"

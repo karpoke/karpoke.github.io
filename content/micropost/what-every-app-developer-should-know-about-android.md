@@ -13,7 +13,7 @@ Slug: what-every-app-developer-should-know-about-android
 > well as the status of Android hardware and software from a developer’s
 > point of view.
 
-- Ville-Veikko Helppi | [smashingmagazine.com][]
+» Ville-Veikko Helppi | [smashingmagazine.com][]
 
   [smashingmagazine.com]: http://www.smashingmagazine.com/2014/10/02/what-every-app-developer-should-know-about-android/
     "What Every App Developer Should Know About Android"

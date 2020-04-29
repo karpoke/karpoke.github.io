@@ -27,7 +27,7 @@ Slug: the-web-architecture-of-the-internet-map
 > alternatives can be found, but I am not confident that it will bring
 > much of a benefit.
 
-- irriss | [codeproject.com][]
+» irriss | [codeproject.com][]
 
   [codeproject.com]: http://www.codeproject.com/Articles/435301/The-web-architecture-of-The-Internet-map
     "The web architecture of The Internet map"

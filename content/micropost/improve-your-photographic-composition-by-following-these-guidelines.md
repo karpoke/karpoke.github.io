@@ -11,7 +11,7 @@ Slug: improve-your-photographic-composition-by-following-these-guidelines
 > compositions. I find that I usually have one or more of these guidelines in
 > the back of my mind as I’m setting up a shot.
 
-- Barry O Carroll | [bocphotography.com][]
+» Barry O Carroll | [bocphotography.com][]
 
   [bocphotography.com]: http://www.bocphotography.com/guide-composition-photography-20-tips/
     "Improve your photographic composition by following these guidelines"

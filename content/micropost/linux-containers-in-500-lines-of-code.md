@@ -15,7 +15,7 @@ Relatd:
 > exposure: you should restrict everything you can. But I think it’s important
 > to know which permissions are categorically unsafe!
 
-- Lizzie Dixon | [blog.lizzie.io][]
+» Lizzie Dixon | [blog.lizzie.io][]
 
   [blog.lizzie.io]: https://blog.lizzie.io/linux-containers-in-500-loc.html
     "Linux containers in 500 lines of code"

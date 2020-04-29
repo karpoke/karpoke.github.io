@@ -9,7 +9,7 @@ Slug: you-get-descarga-contenido-multimedia-utilizando-la-terminal
 > Facebook, Twitter, Vimeo y mucho más. Actualmente tiene unos 80 sitios web
 > compatibles.
 
-- Ubunlog | [ubunlog.com][]
+» Ubunlog | [ubunlog.com][]
 
   [ubunlog.com]: https://ubunlog.com/you-get-descarga-contenido-multimedia/
     "You-Get, descarga contenido multimedia utilizando la terminal"

@@ -10,7 +10,7 @@ Slug: savvy-imgur-user-builds-working-1kb-hard-drive-inside-vanilla-minecraft
 > data collection room, indicator lights and ”bit” emulators. Watch and
 > learn. » [reddit.com][] » | [imgur.com][]
 
-- Steven Norris | [gearburn.com][]
+» Steven Norris | [gearburn.com][]
 
   [reddit.com]: http://reddit.com/r/Minecraft/comments/2e0ghk/fully_functional_1kb_hard_drive_in_vanilla/
     "reddit.com"

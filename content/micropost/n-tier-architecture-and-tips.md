@@ -17,7 +17,7 @@ Slug: n-tier-architecture-and-tips
 > article are based on the assumption that a team has a full control
 > over all layers of the N-Tier architecture.
 
-- W. HU | [codeproject.com][]
+» W. HU | [codeproject.com][]
 
   [codeproject.com]: http://www.codeproject.com/Articles/430014/N-Tier-Architecture-And-Tips
     "N-Tier Architecture And Tips"

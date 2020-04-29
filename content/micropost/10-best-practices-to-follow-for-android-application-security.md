@@ -9,7 +9,7 @@ Slug: 10-best-practices-to-follow-for-android-application-security
 > already have an app in the market, it’s essential to secure your
 > application, your information, and your user’s information. Here’s why?
 
-- Open Source For You | [opensourceforu.com][]
+» Open Source For You | [opensourceforu.com][]
 
   [opensourceforu.com]: http://opensourceforu.com/2018/02/10-best-practices-follow-android-application-security/
     "10 Best Practices to Follow for Android Application Security"
