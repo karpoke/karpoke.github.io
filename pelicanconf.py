@@ -1,19 +1,21 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
 import os
 from datetime import date
 
-AUTHOR = u"Nacho Cano"
-SITENAME = u"Karpoke"
+AUTHOR = "Nacho Cano"
+SITENAME = "Karpoke - Just another Pelican blog"
 SITEURL = ""
+SITE_DESCRIPTION = """Este es el blog personal de Nacho Cano, vivaracho
+admirado como programador informático, con poderes de súper vaca. Fan del
+steampunk, del ASCII art y de los 8 bits. Nací en el Mediterráneo.  """
 
 PATH = "content"
 
 TIMEZONE = "Europe/Madrid"
 
-DEFAULT_LANG = u"es"
+DEFAULT_LANG = "es"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
