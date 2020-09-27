@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - patch</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 03 Feb 2015 00:50:00 +0100</lastBuildDate><item><title>Solucionado el error «AttributeError: '_ssl._SSLSocket' object has no attribute 'issuer'» en Ubuntu Utopic Unicorn</title><link>https://karpoke.ignaciocano.com/2015/02/03/solucionado-el-error-attributeerror-_ssl-_sslsocket-object-has-no-attribute-issuer-en-ubuntu-utopic-unicorn/</link><description>&lt;p&gt;Si al usar la librería de Python para XMPP nos aparece el error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Traceback (most recent call last):
+  File "./test_xmpp.py", line 12, in
+    cl.connect()
+  File "/usr/lib/python2.7/dist-packages/xmpp/client.py", line 205, in connect
+    while not self.TLS.starttls and self.Process(1): pass
+  File …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 03 Feb 2015 00:50:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2015-02-03:/2015/02/03/solucionado-el-error-attributeerror-_ssl-_sslsocket-object-has-no-attribute-issuer-en-ubuntu-utopic-unicorn/</guid><category>14.10</category><category>patch</category><category>python-xmpp</category><category>ubuntu utopic unicorn</category><category>wget</category></item></channel></rss>

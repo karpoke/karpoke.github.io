@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - dnsomatic</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 03 Dec 2016 14:32:00 +0100</lastBuildDate><item><title>Actualizar nuestra IP en el panel de OpenDNS</title><link>https://karpoke.ignaciocano.com/2016/12/03/actualizar-nuestra-ip-en-el-panel-de-opendns/</link><description>&lt;p&gt;Si estamos usando el servicio &lt;a href="https://signup.opendns.com/homefree/" title="OpenDNS Home"&gt;OpenDNS Home&lt;/a&gt; y tenemos una IP dinámica,
+podemos utilizar &lt;code&gt;ddclient&lt;/code&gt;, disponible en los repositorios, para actualizar
+la IP registrada en dicho servicio cada vez que &lt;a href="https://support.opendns.com/hc/en-us/articles/227987727-Linux-IP-Updater-for-Dynamic-Networks" title="Linux IP Updater"&gt;cambie nuestra IP&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Para ello, lo único que necesitamos es editar el fichero de configuración en
+&lt;code&gt;/etc/ddclient.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;##
+## OpenDNS …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 03 Dec 2016 14:32:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-12-03:/2016/12/03/actualizar-nuestra-ip-en-el-panel-de-opendns/</guid><category>ddclient</category><category>OpenDNS</category><category>OpenDNS Home</category><category>IP dinámica</category><category>dnsomatic</category></item></channel></rss>

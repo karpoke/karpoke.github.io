@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - openssl</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 23 Oct 2011 15:45:00 +0200</lastBuildDate><item><title>TLSSLed v1.2</title><link>https://karpoke.ignaciocano.com/2011/10/23/tlssled-v1-2/</link><description>&lt;p&gt;&lt;a href="http://www.taddong.com/en/lab.html#TLSSLED" title="TLSSLed"&gt;TLSSLed&lt;/a&gt; es un &lt;em&gt;script&lt;/em&gt; cuya finalidad es evaluar la seguridad de
+SSL/TLS de un servidor web. Se basa en el escáner de SSL/TLS, &lt;code&gt;sslscan&lt;/code&gt;,
+el cual a su vez se basa en la librería &lt;code&gt;openssl&lt;/code&gt;, y en el comando
+openssl s_client. Entre las comprobaciones que realiza se incluyen …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 23 Oct 2011 15:45:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-10-23:/2011/10/23/tlssled-v1-2/</guid><category>openssl</category><category>script</category><category>ssl</category><category>tlssled</category></item><item><title>Configurar Apache para servir conexiones seguras</title><link>https://karpoke.ignaciocano.com/2011/06/14/configurar-apache-para-servir-conexiones-seguras/</link><description>&lt;p&gt;Si tenemos Apache, y queremos configurarlo para que se pueda navegar de
+forma segura por nuestro sitio utilizando el protocolo HTTPS,
+necesitamos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;crear las claves que se utilizarán para cifrar la conexión,&lt;/li&gt;
+&lt;li&gt;configurar &lt;code&gt;mod_ssl&lt;/code&gt;, el módulo de Apache para usar conexiones
+    seguras,&lt;/li&gt;
+&lt;li&gt;y permitir la conexión por el puerto 443 …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 14 Jun 2011 14:13:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-06-14:/2011/06/14/configurar-apache-para-servir-conexiones-seguras/</guid><category>apache</category><category>autoridad certificadora</category><category>beast</category><category>ca</category><category>certificado</category><category>clave pública</category><category>des3</category><category>https</category><category>openssl</category><category>renovación del certificado</category><category>rsa</category><category>ssl</category></item><item><title>Sa Nostra y SSL</title><link>https://karpoke.ignaciocano.com/2010/10/25/sa-nostra-y-ssl/</link><description>&lt;p&gt;Leyendo la comparativa de &lt;a href="http://www.securitybydefault.com/2010/10/bancos-y-ssl-quien-aprueba.html" title="SbD"&gt;SbD&lt;/a&gt; sobre el uso de SSL por parte de los
+bancos online, estos son los resultados de Sa Nostra:&lt;/p&gt;
+&lt;p&gt;URL: https://linea.sanostra.es&lt;/p&gt;
+&lt;h2&gt;Verificación SSLv2&lt;/h2&gt;
+&lt;p&gt;Comando:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ openssl s_client -ssl2 -connect linea.sanostra.es:443
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bien: no da soporte&lt;/p&gt;
+&lt;h2&gt;Tipo de certificado (Normal/EV)&lt;/h2&gt;
+&lt;p&gt;Esto lo …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 25 Oct 2010 11:50:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-10-25:/2010/10/25/sa-nostra-y-ssl/</guid><category>banca en línea</category><category>openssl</category><category>ssl</category></item><item><title>Random Bash</title><link>https://karpoke.ignaciocano.com/2010/09/25/random-bash/</link><description>&lt;p&gt;&lt;cite&gt;"Los números aleatorios no deberían ser generados por un método
+elegido aleatoriamente". &lt;em&gt;Donald E. Knuth&lt;/em&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;En Bash, podemos obtener números enteros &lt;a href="http://es.wikipedia.org/wiki/Aleatoriedad" title="aleatorios"&gt;aleatorios&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ echo $RANDOM
+20684
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img alt="Random number" src="https://karpoke.ignaciocano.com/images/random_number-300x107.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Cada vez que se referencia el parámetro &lt;a href="http://linux.die.net/man/1/bash" title="RANDOM"&gt;RANDOM&lt;/a&gt;, éste devuelve un
+valor entre 0 y 32767, es decir, 2^15^-1. Podemos inicializar la
+secuencia …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 25 Sep 2010 00:54:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-09-25:/2010/09/25/random-bash/</guid><category>/dev/random</category><category>/dev/urandom</category><category>/proc/interrupts</category><category>aleatoriedad</category><category>contraseña aleatoria</category><category>dd</category><category>generar entropía</category><category>mac aleatoria</category><category>makepasswd</category><category>md5sum</category><category>mkpasswd</category><category>od</category><category>openssl</category><category>pwgen</category><category>rng-tools</category><category>sha1sum</category><category>sha224sum</category><category>sha256sum</category><category>sha384sum</category><category>sha512sum</category><category>shuf</category><category>strings</category><category>tr</category><category>xxd</category></item></channel></rss>

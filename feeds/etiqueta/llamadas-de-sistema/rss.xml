@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - llamadas de sistema</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 01 Nov 2016 15:09:00 +0100</lastBuildDate><item><title>Linux containers in 500 lines of code</title><link>https://karpoke.ignaciocano.com/2016/11/01/linux-containers-in-500-lines-of-code/</link><description>&lt;blockquote&gt;
+&lt;p&gt;I’ve used Linux containers directly and indirectly for years, but I wanted
+to become more familiar with them. So I wrote some code. This used to be 500
+lines of code, I swear, but I’ve revised it some since publishing; I’ve
+ended up with about 70 lines …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 01 Nov 2016 15:09:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-11-01:/2016/11/01/linux-containers-in-500-lines-of-code/</guid><category>contenedores en linux</category><category>c</category><category>kernel</category><category>cgroups</category><category>strlimit</category><category>llamadas de sistema</category><category>puntos de montaje</category><category>recursos de sistema</category><category>configuración de red</category></item></channel></rss>

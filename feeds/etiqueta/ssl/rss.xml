@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - ssl</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 29 Mar 2013 22:54:00 +0100</lastBuildDate><item><title>SSLyze</title><link>https://karpoke.ignaciocano.com/2013/03/29/sslyze/</link><description>&lt;p&gt;&lt;a href="https://github.com/iSECPartners/sslyze" title="SSLyze"&gt;SSLyze&lt;/a&gt; es una herramienta para analizar la configuración SSL de un
+servidor, diseñada para ser rápida y exhaustiva.&lt;/p&gt;
+&lt;p&gt;Un ejemplo de uso:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ python sslyze --regular localhost:443
+
+
+ REGISTERING AVAILABLE PLUGINS
+ -----------------------------
+
+  PluginCertInfo
+  PluginSessionRenegotiation
+  PluginCompression
+  PluginSessionResumption
+  PluginOpenSSLCipherSuites
+
+
+
+ CHECKING HOST(S) AVAILABILITY
+ -----------------------------
+
+   localhost:443        =&amp;gt; 127.0.0.1:443
+
+
+
+ SCAN RESULTS FOR LOCALHOST …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 29 Mar 2013 22:54:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2013-03-29:/2013/03/29/sslyze/</guid><category>ssl</category><category>sslyze</category></item><item><title>Subdominios dinámicos en un alojamiento con dominio dinámico en OVH</title><link>https://karpoke.ignaciocano.com/2012/12/15/subdominios-dinamicos-en-un-alojamiento-con-dominio-dinamico-en-ovh/</link><description>&lt;p&gt;Lo que se pretende es conseguir una manera rápida y sencilla de poner
+sitios web &lt;em&gt;online&lt;/em&gt;. Una vez configurado el servidor web y el servidor
+DNS, lo único que tendremos que hacer para tener accesible un nuevo
+sitio web será colocarlo en un directorio concreto del servidor y
+podremos acceder …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 15 Dec 2012 01:05:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-12-15:/2012/12/15/subdominios-dinamicos-en-un-alojamiento-con-dominio-dinamico-en-ovh/</guid><category>apache</category><category>apache2</category><category>certificado</category><category>cname</category><category>dns</category><category>dominio dinámico</category><category>dyndns</category><category>dynhost</category><category>https</category><category>mod_rewrite</category><category>nginx</category><category>no-ip</category><category>ovh</category><category>ssl</category><category>tls</category><category>vhost_alias</category><category>wildcard</category></item><item><title>Forzar el uso de SSL/HTTPS de un directorio en Apache2 mediante .htaccess y mod_rewrite</title><link>https://karpoke.ignaciocano.com/2012/05/10/forzar-el-uso-de-sslhttps-de-un-directorio-en-apache2-mediante-htaccess-y-mod_rewrite/</link><description>&lt;p&gt;Si queremos que el acceso a un directorio concreto, es decir, que afecte
+únicamente la ruta relativa en la URL que accede a ese directorio, se
+realice mediante una conexión segura, suponiendo que ya tenemos
+configurado el servidor de forma adecuada, basta incluir en ese
+directorio un fichero &lt;code&gt;.htaccess&lt;/code&gt; que …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 10 May 2012 15:35:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-05-10:/2012/05/10/forzar-el-uso-de-sslhttps-de-un-directorio-en-apache2-mediante-htaccess-y-mod_rewrite/</guid><category>.htaccess</category><category>https</category><category>mod_rewrite</category><category>ssl</category></item><item><title>TLSSLed v1.2</title><link>https://karpoke.ignaciocano.com/2011/10/23/tlssled-v1-2/</link><description>&lt;p&gt;&lt;a href="http://www.taddong.com/en/lab.html#TLSSLED" title="TLSSLed"&gt;TLSSLed&lt;/a&gt; es un &lt;em&gt;script&lt;/em&gt; cuya finalidad es evaluar la seguridad de
+SSL/TLS de un servidor web. Se basa en el escáner de SSL/TLS, &lt;code&gt;sslscan&lt;/code&gt;,
+el cual a su vez se basa en la librería &lt;code&gt;openssl&lt;/code&gt;, y en el comando
+openssl s_client. Entre las comprobaciones que realiza se incluyen …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 23 Oct 2011 15:45:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-10-23:/2011/10/23/tlssled-v1-2/</guid><category>openssl</category><category>script</category><category>ssl</category><category>tlssled</category></item><item><title>HTTP Strict Transport Security</title><link>https://karpoke.ignaciocano.com/2011/09/11/http-strict-transport-security/</link><description>&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security" title="HTTP Strict Transport Security"&gt;HTTP Strict Transport Security&lt;/a&gt; (HSTS) es un mecanismo de seguridad
+web donde el servidor exige que las conexiones se realicen únicamente
+mediante conexiones seguras. El servidor informa de esta política de
+seguridad utilizando la cabecera &lt;code&gt;Strict-Transport-Security&lt;/code&gt;, en donde
+se especifica el periodo durante el cual las conexiones seguras son
+obligatorias …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 11 Sep 2011 17:37:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-09-11:/2011/09/11/http-strict-transport-security/</guid><category>apache</category><category>cabeceras HTTP</category><category>hsts</category><category>http</category><category>https</category><category>man in the middle</category><category>mitm</category><category>mod_headers</category><category>robo de sesión</category><category>ssl</category></item><item><title>sslh, compartiendo el puerto 443</title><link>https://karpoke.ignaciocano.com/2011/07/30/sslh-compartiendo-el-puerto-443/</link><description>&lt;p&gt;Podemos tener varios motivos para tener escuchando nuestro servicio de SSH en
+el puerto 443. Ya sea porque queremos evitarnos los continuos intentos de
+conexión que sufrimos por tener el servicio escuchando en el puerto 22 o porque
+desde donde estemos, ya sea en el trabajo o en un hotel …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 30 Jul 2011 19:21:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-07-30:/2011/07/30/sslh-compartiendo-el-puerto-443/</guid><category>apache</category><category>firewall</category><category>https</category><category>logcheck</category><category>puertos bien conocidos</category><category>ssh</category><category>ssl</category><category>sslh</category><category>ufw</category></item><item><title>Usando una conexión segura en el panel de control de Wordpress</title><link>https://karpoke.ignaciocano.com/2011/06/14/usando-una-conexion-segura-en-el-panel-de-control-de-wordpress/</link><description>&lt;p&gt;Si tenemos &lt;a href="https://karpoke.ignaciocano.com/2010/12/30/la-infame-actualizacion-de-wordpress-en-15-segundos/" title="la infame actualización de wordpress en 15 segundos"&gt;instalado un WordPress&lt;/a&gt; y queremos &lt;a href="http://rackerhacker.com/2009/07/31/requiring-ssl-encryption-for-wordpress-administration/" title="iniciar sesión a través de una conexión segura"&gt;iniciar sesión a
+través de una conexión segura&lt;/a&gt;, deberemos modificar el fichero
+&lt;code&gt;/usr/share/wordpress/wp-config.php&lt;/code&gt; y añadir:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;define('FORCE_SSL_LOGIN', true);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si queremos que se use la conexión segura en todo el panel de control,
+en lugar de lo anterior, añadiremos:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;define …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 14 Jun 2011 14:17:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-06-14:/2011/06/14/usando-una-conexion-segura-en-el-panel-de-control-de-wordpress/</guid><category>apache</category><category>https</category><category>inicio de sesión</category><category>php</category><category>plugin</category><category>ssl</category><category>ssl for logged in users</category><category>wordpress</category></item><item><title>Configurar Apache para servir conexiones seguras</title><link>https://karpoke.ignaciocano.com/2011/06/14/configurar-apache-para-servir-conexiones-seguras/</link><description>&lt;p&gt;Si tenemos Apache, y queremos configurarlo para que se pueda navegar de
+forma segura por nuestro sitio utilizando el protocolo HTTPS,
+necesitamos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;crear las claves que se utilizarán para cifrar la conexión,&lt;/li&gt;
+&lt;li&gt;configurar &lt;code&gt;mod_ssl&lt;/code&gt;, el módulo de Apache para usar conexiones
+    seguras,&lt;/li&gt;
+&lt;li&gt;y permitir la conexión por el puerto 443 …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 14 Jun 2011 14:13:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-06-14:/2011/06/14/configurar-apache-para-servir-conexiones-seguras/</guid><category>apache</category><category>autoridad certificadora</category><category>beast</category><category>ca</category><category>certificado</category><category>clave pública</category><category>des3</category><category>https</category><category>openssl</category><category>renovación del certificado</category><category>rsa</category><category>ssl</category></item><item><title>Cifrar el contenido de Dropbox</title><link>https://karpoke.ignaciocano.com/2011/04/21/cifrar-el-contenido-de-dropbox/</link><description>&lt;p&gt;A raíz del cambio en los términos del servicio de Dropbox, en el cual se
+afirma que le &lt;a href="http://www.businessinsider.com/dropbox-updates-security-terms-of-service-to-say-it-can-decrpyt-files-if-the-government-asks-it-to-2011-4?op=1" title="entregará tus ficheros al gobierno de Estados Unidos"&gt;entregará tus ficheros al gobierno de Estados Unidos&lt;/a&gt;,
+si éste se lo pide, o la noticia de que es posible &lt;a href="http://www.hispasec.com/unaaldia/4558" title="saltarse las restricciones"&gt;saltarse las
+restricciones&lt;/a&gt;, y que nuestra cuenta sea usada en otra máquina …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 21 Apr 2011 13:37:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-04-21:/2011/04/21/cifrar-el-contenido-de-dropbox/</guid><category>AES</category><category>cifrado</category><category>dropbox</category><category>ecryptfs</category><category>fstab</category><category>mount</category><category>setuid</category><category>ssl</category></item><item><title>Sa Nostra y SSL</title><link>https://karpoke.ignaciocano.com/2010/10/25/sa-nostra-y-ssl/</link><description>&lt;p&gt;Leyendo la comparativa de &lt;a href="http://www.securitybydefault.com/2010/10/bancos-y-ssl-quien-aprueba.html" title="SbD"&gt;SbD&lt;/a&gt; sobre el uso de SSL por parte de los
+bancos online, estos son los resultados de Sa Nostra:&lt;/p&gt;
+&lt;p&gt;URL: https://linea.sanostra.es&lt;/p&gt;
+&lt;h2&gt;Verificación SSLv2&lt;/h2&gt;
+&lt;p&gt;Comando:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ openssl s_client -ssl2 -connect linea.sanostra.es:443
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bien: no da soporte&lt;/p&gt;
+&lt;h2&gt;Tipo de certificado (Normal/EV)&lt;/h2&gt;
+&lt;p&gt;Esto lo …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 25 Oct 2010 11:50:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-10-25:/2010/10/25/sa-nostra-y-ssl/</guid><category>banca en línea</category><category>openssl</category><category>ssl</category></item></channel></rss>

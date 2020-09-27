@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+        <meta name="author" content="Nacho Cano" />
+
+        <meta name="description" content="Puede que alguna vez hayamos visto este mensaje en el panel de administración de phpMyAdmin: Las opciones adicionales para trabajar con tablas vinculadas fueron desactivadas. Para saber porqué, dé clic aquí. Si seguimos el enlace, nos lleva a la documentación donde nos explican que, a partir de la versión 3 …
+" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="consultas sql, mysql, phpMyAdmin, pmadb, seguimiento, tablas vinculadas, tracking, admin, " />
+
+<meta property="og:title" content="Opciones adicionales para trabajar con tablas vinculadas en phpMyAdmin "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2012/05/10/opciones-adicionales-para-trabajar-con-tablas-vinculadas-en-phpmyadmin/" />
+<meta property="og:description" content="Puede que alguna vez hayamos visto este mensaje en el panel de administración de phpMyAdmin: Las opciones adicionales para trabajar con tablas vinculadas fueron desactivadas. Para saber porqué, dé clic aquí. Si seguimos el enlace, nos lleva a la documentación donde nos explican que, a partir de la versión 3 …" />
+<meta property="og:site_name" content="Karpoke - Just another Pelican blog" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2012-05-10T12:26:00+02:00" />
+<meta name="twitter:title" content="Opciones adicionales para trabajar con tablas vinculadas en phpMyAdmin ">
+<meta name="twitter:description" content="Puede que alguna vez hayamos visto este mensaje en el panel de administración de phpMyAdmin: Las opciones adicionales para trabajar con tablas vinculadas fueron desactivadas. Para saber porqué, dé clic aquí. Si seguimos el enlace, nos lleva a la documentación donde nos explican que, a partir de la versión 3 …">
+
+        <title>Opciones adicionales para trabajar con tablas vinculadas en phpMyAdmin  · Karpoke - Just another Pelican blog
+</title>
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke - Just another Pelican blog</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2012/05/10/opciones-adicionales-para-trabajar-con-tablas-vinculadas-en-phpmyadmin/">
+                Opciones adicionales para trabajar con tablas vinculadas en phpMyAdmin
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p><img alt="PhpMyAdmin Logo" src="https://karpoke.ignaciocano.com/images/PhpMyAdmin-Logo-300x212.png" /></p>
+<p>Puede que alguna vez hayamos visto este mensaje en el panel de
+administración de phpMyAdmin:</p>
+<blockquote>
+<p>Las opciones adicionales para trabajar con tablas vinculadas fueron
+desactivadas. Para saber porqué, dé clic <a href="http://www.phpmyadmin.net/localized_docs/es/Documentation.html#tracking" title="aquí">aquí</a>.</p>
+</blockquote>
+<p>Si seguimos el enlace, nos lleva a la documentación donde nos explican
+que, a partir de la versión 3.3.x, está disponible el sistema de
+<em>tracking</em>, que es un sistema que permite realizar un seguimiento de las
+consultas SQL ejecutadas por phpMyAdmin, tanto sentencias de definición
+como de manipulación de datos, pudiendo guardar versiones de las tablas.</p>
+<p>Al guardar la versión de una tabla, phpMyAdmin guarda una captura de la
+misma, incluyendo su estructura e índices. Posteriormente, phpMyAdmin
+guardará todas las órdenes que cambien la estructura de la tabla o los
+datos contenidos en ella, y asociará dichas órdenes con el número de
+versión. Se podrán visualizar estos cambios en la pestaña de
+Seguimiento.</p>
+<p>Para permitir esta funcionalidad necesitamos:</p>
+<ul>
+<li>configurar <code>pmadb</code> y el almacenamiento de configuración en
+    phpMyAdmin</li>
+<li>definir el nombre de la tabla en <code>$cfg['Servers'][$i]['tracking']</code></li>
+</ul>
+<p>Gracias a este almacenamiento de configuración se puede disfrutar de un
+gran variedad de funcionalidades tales como marcadores, comentarios,
+histórico de SQL, mecanismo de seguimiento, generación de PDFs,
+transformación de los campos de contenido, etc.</p>
+<h2>Almacenamiento de configuración</h2>
+<p>El primero paso será crear las tablas especiales necesarias. En el
+fichero <code>/usr/share/doc/phpmyadmin/examples/create_tables.sql.gz</code>
+tenemos un ejemplo de lo necesario. Posiblemente, ya tengamos creadas
+algunas de las tablas que ahí aparecen, si lanzamos el <em>script</em> sólo nos
+creará las que no existan:</p>
+<pre><code>$ cp /usr/share/doc/phpmyadmin/examples/create_tables.sql.gz .
+$ gunzip create_tables.sql.gz
+$ mysql -uroot -p &lt; create_tables.sql
+</code></pre>
+<p>Si necesitásemos <a href="https://karpoke.ignaciocano.com/2011/07/08/cambiar-la-contrasena-de-administrador-en-mysql-5-1/" title="Cambiar la contraseña de administrador en MySQL 5.1">recuperar la contraseña de MySQL</a> o tuviéramos
+problemas <a href="https://karpoke.ignaciocano.com/2011/03/27/importar-un-volcado-de-datos-en-mysql/" title="Importar un volcado de datos en MySQL">importando los datos</a> podemos echarle un ojo a estos
+enlaces.</p>
+<p>En particular, lo que nos interesa es lo referente a la tabla
+<code>pma_tracking</code>, y esto es lo que ejecuta el <em>script</em> anterior:</p>
+<pre><code>--
+-- Table structure for table `pma_tracking`
+--
+
+CREATE TABLE IF NOT EXISTS `pma_tracking` (
+  `db_name` varchar(64) collate utf8_bin NOT NULL,
+  `table_name` varchar(64) collate utf8_bin NOT NULL,
+  `version` int(10) unsigned NOT NULL,
+  `date_created` datetime NOT NULL,
+  `date_updated` datetime NOT NULL,
+  `schema_snapshot` text collate utf8_bin NOT NULL,
+  `schema_sql` text collate utf8_bin,
+  `data_sql` text collate utf8_bin,
+  `tracking` set('UPDATE','REPLACE','INSERT','DELETE','TRUNCATE','CREATE DATABASE','ALTER DATABASE','DROP DATABASE','CREATE TABLE','ALTER TABLE','RENAME TABLE','DROP TABLE','CREATE INDEX','DROP INDEX','CREATE VIEW','ALTER VIEW','DROP VIEW') collate utf8_bin default NULL,
+  `tracking_active` int(1) unsigned NOT NULL default '1',
+  PRIMARY KEY  (`db_name`,`table_name`,`version`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin ROW_FORMAT=COMPACT;
+</code></pre>
+<h2>Configurar phpMyAdmin</h2>
+<p>Ahora que ya hemos creado las tablas necesarias, deberemos configurar
+los parámetros que necesita phpMyAdmin. En Ubuntu, editamos el archivo
+<code>/etc/phpmyadmin/config.inc.php</code>, y nos aseguramos de que aparecen las
+siguientes líneas:</p>
+<pre><code>/_ Optional: User for advanced features _/
+$cfg['Servers'][$i]['controluser'] = $dbuser;
+$cfg['Servers'][$i]['controlpass'] = $dbpass;
+
+/_ Optional: Advanced phpMyAdmin features _/
+$cfg['Servers'][$i]['pmadb'] = $dbname;
+$cfg['Servers'][$i]['bookmarktable'] = 'pma_bookmark';
+$cfg['Servers'][$i]['relation'] = 'pma_relation';
+$cfg['Servers'][$i]['table_info'] = 'pma_table_info';
+$cfg['Servers'][$i]['table_coords'] = 'pma_table_coords';
+$cfg['Servers'][$i]['pdf_pages'] = 'pma_pdf_pages';
+$cfg['Servers'][$i]['column_info'] = 'pma_column_info';
+$cfg['Servers'][$i]['history'] = 'pma_history';
+$cfg['Servers'][$i]['designer_coords'] = 'pma_designer_coords';
+</code></pre>
+<p>Los valores de <code>controluser</code>, <code>controlpass</code> y <code>pmadb</code> se toman del
+archivo <code>/etc/phpmyadmin/config-db.php</code>.</p>
+<p>A continuación de las líneas anteriores, añadimos:</p>
+<pre><code>/_ Optional: Tracking features _/
+$cfg['Servers'][$i]['tracking'] = 'pma_tracking';
+$cfg['Servers'][$i]['tracking_default_statements'] = 'CREATE TABLE,ALTER TABLE,DROP TABLE,RENAME TABLE,CREATE INDEX,DROP INDEX,INSERT,UPDATE,DELETE,TRUNCATE,REPLACE,CREATE VIEW,ALTER VIEW,DROP VIEW,CREATE DATABASE,ALTER DATABASE,DROP DATABASE';
+$cfg['Servers'][$i]['tracking_version_auto_create'] = TRUE;
+$cfg['Servers'][$i]['tracking_version_drop_view'] = TRUE;
+$cfg['Servers'][$i]['tracking_version_drop_table'] = TRUE;
+$cfg['Servers'][$i]['tracking_version_drop_database'] = TRUE;
+</code></pre>
+<p>Y ya está. No es necesario reiniciar el servidor, pero es posible que
+necesitemos borrar las <em>cookies</em> del navegador para que no volvamos a
+ver el mensaje del principio, por ejemplo, cerrando la sesión en
+phpMyAdmin y volviendo a entrar, o recargando la caché del navegador
+mediante <code>Ctrl+Shift+r</code>.</p>
+<h2>Referencias</h2>
+<p>» <a href="http://www.phpmyadmin.net/localized_docs/es/Documentation.html#linked-tables" title="phpMyAdmin doc: almacenamiento de configuración para phpMyAdmin">phpMyAdmin doc: almacenamiento de configuración para phpMyAdmin</a>
+» <a href="http://www.phpmyadmin.net/localized_docs/es/Documentation.html#pmadb" title="phpMyAdmin doc: pmadb">phpMyAdmin doc: pmadb</a>
+» <a href="http://www.phpmyadmin.net/documentation/#tracking" title="phpMyAdmin doc: tracking">phpMyAdmin doc: tracking</a></p>
+
+
+             
+ 
+            
+            
+            
+
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2012/05/13/kippo-probando-un-honeypot-en-ubuntu/" title="Kippo, probando un honeypot en Ubuntu">Kippo, probando un honeypot en Ubuntu</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/06/03/symfony-en-ubuntu-lucid-lynx-10-04/" title="Symfony en Ubuntu Lucid Lynx 10.04">Symfony en Ubuntu Lucid Lynx 10.04</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/06/12/cve-2012-2122-saltandose-la-autenticacion-para-acceder-a-mysql-y-mariadb/" title="CVE 2012-2122, saltándose la autenticación para acceder a MySQL y MariaDB">CVE 2012-2122, saltándose la autenticación para acceder a MySQL y MariaDB</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/08/02/de-usuarios-en-wordpress/" title="De usuarios en WordPress">De usuarios en WordPress</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2014/12/26/recuperar-el-sistema-tras-borrar-varlib/" title="Recuperar el sistema tras borrar «/var/lib»">Recuperar el sistema tras borrar «/var/lib»</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2012/04/22/sed-es-turing-completo/" title="Previous: sed es Turing completo">sed es Turing completo</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2012/05/10/forzar-el-uso-de-sslhttps-de-un-directorio-en-apache2-mediante-htaccess-y-mod_rewrite/" title="Next: Forzar el uso de SSL/HTTPS de un directorio en Apache2 mediante .htaccess y mod_rewrite">Forzar el uso de SSL/HTTPS de un directorio en Apache2 mediante .htaccess y mod_rewrite</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2012-05-10T12:26:00+02:00">Thu 10 May 2012</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#admin-ref">admin</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#consultas-sql-ref">consultas sql
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#mysql-ref">mysql
+                    <span class="superscript">12</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#phpmyadmin-ref">phpMyAdmin
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#pmadb-ref">pmadb
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#seguimiento-ref">seguimiento
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#tablas-vinculadas-ref">tablas vinculadas
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#tracking-ref">tracking
+                    <span class="superscript">1</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2020 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="https://karpoke.ignaciocano.com/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

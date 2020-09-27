@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - datos persistentes</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 14 Jan 2017 14:36:00 +0100</lastBuildDate><item><title>Moving persistent data out of Redis</title><link>https://karpoke.ignaciocano.com/2017/01/14/moving-persistent-data-out-of-redis/</link><description>&lt;blockquote&gt;
+&lt;p&gt;Transitioning all that information transparently involved planning and
+coordination. For each problem domain using persistent Redis, we considered
+the volume of operations, the structure of the data, and the different access
+patterns to predict the impact on our current MySQL capacity, and the need
+for provisioning new hardware.&lt;/p&gt;
+&lt;p&gt;For the …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 14 Jan 2017 14:36:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2017-01-14:/2017/01/14/moving-persistent-data-out-of-redis/</guid><category>caché</category><category>LRU</category><category>Redis</category><category>datos persistentes</category><category>datos temporales</category></item></channel></rss>

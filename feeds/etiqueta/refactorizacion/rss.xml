@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - refactorización</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 07 Dec 2016 20:57:00 +0100</lastBuildDate><item><title>Undebt: how we refactored 3 million lines of code</title><link>https://karpoke.ignaciocano.com/2016/12/07/undebt-how-we-refactored-3-million-lines-of-code/</link><description>&lt;blockquote&gt;
+&lt;p&gt;Peter Seibel wrote that to maximize engineering effectiveness, “Let a
+thousand flowers bloom. Then rip 999 of them out by the roots.” Flowers,
+in how the metaphor applies to us, are code patterns — the myriad different
+functions, classes, styles, and idioms that developers use when writing
+code. At first, new …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 07 Dec 2016 20:57:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-12-07:/2016/12/07/undebt-how-we-refactored-3-million-lines-of-code/</guid><category>refactorización</category></item></channel></rss>

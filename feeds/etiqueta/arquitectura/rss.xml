@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - arquitectura</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 01 Nov 2016 14:43:00 +0100</lastBuildDate><item><title>8 simple rules for a robust, scalable CSS architecture</title><link>https://karpoke.ignaciocano.com/2016/11/01/8-simple-rules-for-a-robust-scalable-css-architecture/</link><description>&lt;blockquote&gt;
+&lt;p&gt;This is the manifest of things I’ve learned about managing CSS in large,
+complex web projects during my many years of professional web development.
+I’ve been asked about these things enough times that having a document to
+point to sounded like a good idea.&lt;/p&gt;
+&lt;p&gt;I’ve tried to …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 01 Nov 2016 14:43:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-11-01:/2016/11/01/8-simple-rules-for-a-robust-scalable-css-architecture/</guid><category>CSS</category><category>arquitectura</category><category>escalabilidad</category><category>orientación a componentes</category></item></channel></rss>

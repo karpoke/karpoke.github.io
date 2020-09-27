@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - el guardián de la puerta de Zuul</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 22 Oct 2010 19:37:00 +0200</lastBuildDate><item><title>La guardiana de la puerta</title><link>https://karpoke.ignaciocano.com/2010/10/22/la-guardiana-de-la-puerta/</link><description>&lt;p&gt;¿A veces no os gustaría saber si el que se mete en vuestra casa no es el
+maestro de las llaves?&lt;/p&gt;
+&lt;p&gt;&lt;img alt="la guardiana de la puerta" src="https://karpoke.ignaciocano.com/images/guardiana-300x260.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;En &lt;a href="http://serverfault.com/questions/77983/run-shell-script-each-time-any-user-logs-on" title="ubuntu"&gt;ubuntu&lt;/a&gt;, los &lt;em&gt;scripts&lt;/em&gt; que estén en el directorio &lt;code&gt;/etc/profile.d&lt;/code&gt;
+se ejecutan cada vez que un usuario inicia la sesión. Si nuestro
+servidor sólo lo usamos nosotros …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 22 Oct 2010 19:37:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-10-22:/2010/10/22/la-guardiana-de-la-puerta/</guid><category>detección de intrusos</category><category>el guardián de la puerta de Zuul</category><category>inicio de sesión</category><category>mail</category><category>script</category></item></channel></rss>

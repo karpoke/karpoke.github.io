@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+        <meta name="author" content="Nacho Cano" />
+
+        <meta name="description" content="ConnectBot es, en mi humilde opinión, el mejor cliente SSH para Android. Nos permite conectarnos de forma segura a nuestro servidor SSH, ya sea directamente o mediante la creación de un túnel SSH que sirva de proxy al resto de aplicaciones. La manera más segura de conectarnos es mediante la …
+" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="android, clave pública, connectbot, generar claves ssh, rsa, ssh, admin, " />
+
+<meta property="og:title" content="Conectar a un servidor SSH desde Android mediante ConnectBot utilizando claves "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2012/07/24/conectar-a-un-servidor-ssh-desde-android-mediante-connectbot-utilizando-claves/" />
+<meta property="og:description" content="ConnectBot es, en mi humilde opinión, el mejor cliente SSH para Android. Nos permite conectarnos de forma segura a nuestro servidor SSH, ya sea directamente o mediante la creación de un túnel SSH que sirva de proxy al resto de aplicaciones. La manera más segura de conectarnos es mediante la …" />
+<meta property="og:site_name" content="Karpoke - Just another Pelican blog" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2012-07-24T13:06:00+02:00" />
+<meta name="twitter:title" content="Conectar a un servidor SSH desde Android mediante ConnectBot utilizando claves ">
+<meta name="twitter:description" content="ConnectBot es, en mi humilde opinión, el mejor cliente SSH para Android. Nos permite conectarnos de forma segura a nuestro servidor SSH, ya sea directamente o mediante la creación de un túnel SSH que sirva de proxy al resto de aplicaciones. La manera más segura de conectarnos es mediante la …">
+
+        <title>Conectar a un servidor SSH desde Android mediante ConnectBot utilizando claves  · Karpoke - Just another Pelican blog
+</title>
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke - Just another Pelican blog</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2012/07/24/conectar-a-un-servidor-ssh-desde-android-mediante-connectbot-utilizando-claves/">
+                Conectar a un servidor SSH desde Android mediante ConnectBot utilizando claves
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p><a href="http://code.google.com/p/connectbot/" title="ConnectBot">ConnectBot</a> es, en mi humilde opinión, el mejor cliente SSH para
+Android. Nos permite conectarnos de forma segura a nuestro servidor SSH,
+ya sea directamente o mediante la creación de un túnel SSH que sirva de
+<em>proxy</em> al resto de aplicaciones.</p>
+<p>La manera más segura de conectarnos es mediante la utilización de
+claves. Este es un sistema de autenticación basado en criptografía
+asimétrica, más seguro que utilizar <em>simples</em> contraseñas.</p>
+<p>ConnectBot no sólo permite utilizar claves, sino que también nos permite
+crearlas e importarlas. Para poder conectarnos a nuestro servidor sin
+necesidad de utilizar contraseñas, lo primero será que éste esté
+<a href="https://karpoke.ignaciocano.com/2011/03/03/conectarse-por-ssh-solo-usando-la-clave/" title="conectarse por ssh usando claves">configurado para aceptar claves</a>. En particular, en el fichero
+<code>/etc/ssh/sshd_config</code>, debemos tener la directiva:</p>
+<pre><code>PubkeyAuthentication yes
+</code></pre>
+<p>Si queremos importar una clave para ser utilizada por ConnectBot, lo
+único que tendremos que hacer es guardarla en la raíz de la tarjeta de
+memoria e ir a Menú &gt; Administrar claves públicas &gt; Menú &gt; Importar.</p>
+<p>Otra opción es generar un par de claves. Para ello, vamos a Menú &gt;
+Administrar claves públicas &gt; Menú &gt; Generar, y utilizamos los
+siguientes datos:</p>
+<ul>
+<li>Nombre para la clave: keyname (podemos usar el nombre que queramos
+    para poder identificarla)</li>
+<li>Tipo: RSA</li>
+<li>Bits: 4096</li>
+<li>Contraseña: si queremos, podemos optar por dejarla en blanco,
+    sabiendo que si la clave cae en malas manos puede tener una puerta
+    abierta hacia nuestro servidor.</li>
+<li>Cargar al inicio: lo marcamos si queremos que la clave se cargue en
+    memoria nada más arrancar el teléfono. Si la clave no está cargada
+    en memoria, ConnectBot no intentará utilizarla.</li>
+<li>Confirmar antes de cargar: lo marcamos si queremos que nos pida
+    confirmación cuando se vaya a utilizar la clave.</li>
+</ul>
+<p>El siguiente paso es copiar la clave pública al listado de claves
+autorizadas para el usuario en el servidor. La forma más rápida y
+sencilla y es ir al gestor de claves y copiamos la <strong>clave pública</strong> de
+la clave en cuestión (realizando una pulsación larga sobre la misma).
+Luego, nos conectamos al servidor normalmente, mediante usuario y
+contraseña, y añadimos la clave mediante el siguiente comando (aquí
+pegamos la clave pública que habíamos copiado):</p>
+<pre><code>username@remote:~$ echo "ssh-rsa AAAA.....(resto de la clave)" &gt;&gt; .ssh/authorized_keys
+</code></pre>
+<p>La próxima vez que nos conectemos mediante ConnectBot ya no
+necesitaremos utilizar usuario ni contraseña. Si no hemos seleccionado
+cargar la clave al inicio, y la clave no está cargada en memoria en el
+momento de hacer el intento de conexión, ConnectBot nos pedirá que nos
+autentiquemos mediante usuario y contraseña. Si hemos marcado que nos
+avise antes de usar la clave, y la clave está cargada en memoria, nos
+pedirá confirmación antes de usarla.</p>
+<h2>Denegar el acceso</h2>
+<p>Si, por cualquier motivo, queremos denegar el acceso a dicha clave al
+servidor, lo único que tenemos que hacer es borrarla del fichero
+<code>~/.ssh/authorized_keys</code>. Una sencilla forma de hacerlo es mediante el
+nombre que hemos utilizado para la clave:</p>
+<pre><code>username@remote:~$ sed -i '/keyname$/d' ~/.ssh/authorized_keys
+</code></pre>
+<h2>Referencias</h2>
+<p>» <a href="http://play.google.com/store/apps/details?id=org.connectbot" title="ConnectBot en Play Store">ConnectBot</a> en el <em>market</em></p>
+
+
+             
+ 
+            
+            
+            
+
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2011/03/03/conectarse-por-ssh-solo-usando-la-clave/" title="Conectarse por SSH sólo usando la clave">Conectarse por SSH sólo usando la clave</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/06/17/conectarse-por-ssh-utilizando-expect/" title="Conectarse por SSH utilizando expect">Conectarse por SSH utilizando expect</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/08/05/servicio-de-ssh-con-sistema-de-verificacion-en-dos-pasos-de-google-en-ubuntu-natty-narwhal/" title="Servicio de SSH con sistema de verificación en dos pasos de Google en Ubuntu Natty Narwhal">Servicio de SSH con sistema de verificación en dos pasos de Google en Ubuntu Natty Narwhal</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/09/18/fwknop-single-packet-authorization-y-port-knocking/" title="fwknop: Single Packet Authorization y port knocking">fwknop: Single Packet Authorization y port knocking</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/07/24/conectar-de-forma-segura-en-redes-abiertas-con-android-connectbot-y-proxydroid/" title="Conectar de forma segura en redes abiertas con Android, ConnectBot y ProxyDroid">Conectar de forma segura en redes abiertas con Android, ConnectBot y ProxyDroid</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2012/07/17/history-of-the-browser-user-agent-string/" title="Previous: History of the browser user-agent string">History of the browser user-agent string</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2012/07/24/conectar-de-forma-segura-en-redes-abiertas-con-android-connectbot-y-proxydroid/" title="Next: Conectar de forma segura en redes abiertas con Android, ConnectBot y ProxyDroid">Conectar de forma segura en redes abiertas con Android, ConnectBot y ProxyDroid</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2012-07-24T13:06:00+02:00">Tue 24 July 2012</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#admin-ref">admin</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#android-ref">android
+                    <span class="superscript">11</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#clave-publica-ref">clave pública
+                    <span class="superscript">5</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#connectbot-ref">connectbot
+                    <span class="superscript">2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#generar-claves-ssh-ref">generar claves ssh
+                    <span class="superscript">2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#rsa-ref">rsa
+                    <span class="superscript">5</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ssh-ref">ssh
+                    <span class="superscript">24</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2020 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="https://karpoke.ignaciocano.com/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+        <meta name="author" content="Nacho Cano" />
+
+        <meta name="description" content="Tres herramientas muy útiles: rkhunter, chkrootkit y unhide. rkhunter Busca rootkits, puertas traseras y exploits. Al instalarlo, se programa un escaneo diario, pero cuando instalamos las actualizaciones de algunos programas, las firmas de rkhunter quedan obsoletas, por lo que empieza a mandar avisos. Warning: The file properties have changed: File …
+" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="/dev/.initramfs, /dev/.udev, 12.04, 13.10, ALLOWHIDDENFILE, antirootkit, chkconfig, chkrootkit, e2fsprogs, ext2, ext3, ext4, lsattr, python, reiserfs, rkhunter, rootkit, script, symlink, tiger, troyano, ubuntu, unhide, xfs, zeppoo, admin, " />
+
+<meta property="og:title" content="Buscando rootkits y troyanos "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2010/12/17/buscando-rootkits-y-troyanos/" />
+<meta property="og:description" content="Tres herramientas muy útiles: rkhunter, chkrootkit y unhide. rkhunter Busca rootkits, puertas traseras y exploits. Al instalarlo, se programa un escaneo diario, pero cuando instalamos las actualizaciones de algunos programas, las firmas de rkhunter quedan obsoletas, por lo que empieza a mandar avisos. Warning: The file properties have changed: File …" />
+<meta property="og:site_name" content="Karpoke - Just another Pelican blog" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2010-12-17T03:04:00+01:00" />
+<meta name="twitter:title" content="Buscando rootkits y troyanos ">
+<meta name="twitter:description" content="Tres herramientas muy útiles: rkhunter, chkrootkit y unhide. rkhunter Busca rootkits, puertas traseras y exploits. Al instalarlo, se programa un escaneo diario, pero cuando instalamos las actualizaciones de algunos programas, las firmas de rkhunter quedan obsoletas, por lo que empieza a mandar avisos. Warning: The file properties have changed: File …">
+
+        <title>Buscando rootkits y troyanos  · Karpoke - Just another Pelican blog
+</title>
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke - Just another Pelican blog</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2010/12/17/buscando-rootkits-y-troyanos/">
+                Buscando rootkits y troyanos
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p>Tres herramientas muy útiles: <code>rkhunter</code>, <code>chkrootkit</code> y <code>unhide</code>.</p>
+<h2>rkhunter</h2>
+<p>Busca <em>rootkits</em>, puertas traseras y <em>exploits</em>. Al instalarlo, se
+programa un escaneo diario, pero cuando instalamos las actualizaciones
+de algunos programas, <a href="http://www.mail-archive.com/rkhunter-users@lists.sourceforge.net/msg01966.html" title="las firmas de rkhunter quedan obsoletas">las firmas de <code>rkhunter</code> quedan obsoletas</a>, por
+lo que empieza a mandar avisos.</p>
+<pre><code>Warning: The file properties have changed:
+         File: /usr/bin/md5sum
+         Current inode: 1093680    Stored inode: 475456
+         Current file modification time: 1285094009 (21-sep-2010 20:33:29)
+         Stored file modification time : 1267759792 (05-mar-2010 04:29:52)
+</code></pre>
+<p>Podemos actualizar las firmas de <code>rkhunter</code> ejecutando:</p>
+<pre><code>$ sudo rkhunter --propupd
+</code></pre>
+<p>El motivo de que no se actualicen las firmas automáticamente es que es
+responsabilidad del usuario asegurarse de que los ficheros del sistema
+son genuinos y provienen de una fuente fiable. Cuando ejecutamos el
+comando anterior, le estamos diciendo a <code>rkhunter</code> que acepte las firmas
+de los nuevos ficheros como válidas y a éstos como genuinos.</p>
+<h3>Directorios o ficheros ocultos</h3>
+<p>Si usamos Ubuntu, es posible que nos llegue un correo de aviso de
+<code>rkhunter</code> diciendo que ha encontrado una serie de directorios ocultos,
+pero que son legítimos en Ubuntu. Por ejemplo:</p>
+<pre><code>Warning: Hidden directory found: /dev/.udev
+</code></pre>
+<p>Para solucionarlo, editamos el fichero de configuración
+<code>/etc/rkhunter.conf</code> y descomentamos, o añadimos, las líneas referentes
+a dichos directorios:</p>
+<pre><code>ALLOWHIDDENDIR=/dev/.udev
+</code></pre>
+<p>Si en lugar de un directorio es un fichero, la directiva a utilizar es
+<code>ALLOWHIDDENFILE</code>.</p>
+<p>Después de introducir los cambios, actualizamos <code>rkhunter</code>:</p>
+<pre><code>$ sudo rkhunter --propupd
+</code></pre>
+<hr />
+<h4>Actualización a 17 de marzo de 2013</h4>
+<p>La versión de los repositorios, la 1.3.8, tiene un pequeño fallo por el
+cual <a href="https://bugs.launchpad.net/ubuntu/+source/rkhunter/+bug/883324" title="los enlaces simbólicos no pueden ser ignorados">los enlaces simbólicos no pueden ser ignorados</a> mediante la
+directiva <code>ALLOWHIDDENFILES</code>, por lo que aparece un mensaje como el
+siguiente:</p>
+<pre><code>Warning: Hidden file found: /dev/.initramfs: symbolic link to `/run/initramf`s
+</code></pre>
+<p>En la versión 1.4.0 ya está corregido, aunque aún no se encuentra en los
+repositorios en Ubuntu 12.04.2. Una alternativa es <a href="https://bugs.launchpad.net/ubuntu/+source/rkhunter/+bug/883324/comments/13" title="parchear el script">parchear el
+script</a>[parchear el <em>script</em>].</p>
+<p>Editamos el <em>script</em> en Python y vamos a la línea 846:</p>
+<pre><code>$ sudo vim +846 /usr/bin/rkhunter
+</code></pre>
+<p>Justo a continuación, deberemos comprobar si el fichero en un enlace
+simbólico, por lo que el código deberá queda así:</p>
+<pre><code>elif [ -d "${FNAME}" ]; then
+    #
+    # For the ALLOWHIDDENFILE option we need to allow
+    # a hidden symbolic link to a directory.
+    #
+    test "${OPT_NAME}" = "ALLOWHIDDENFILE" -a -h "${FNAME}" &amp;&amp; continue
+
+    case "${OPT_NAME}" in
+</code></pre>
+<p>Ahora ya podemos añadir el fichero en el archivo de configuración
+<code>/etc/rkhunter.conf</code>:</p>
+<pre><code>ALLOWHIDDENFILE="/dev/.initramfs"
+</code></pre>
+<p>Y actualizar la base de datos de firmas:</p>
+<pre><code>$ sudo rkhunter --propupd
+</code></pre>
+<p>Si usamos algún programa que comprueba la integridad de los ficheros,
+como por ejemplo <code>tiger</code>, es posible que recibamos una aviso como el
+siguiente:</p>
+<pre><code>NEW: --FAIL-- [lin005f] Installed file '/usr/bin/rkhunter' checksum differs from installed package 'rkhunter'.
+</code></pre>
+<hr />
+<h3>Comandos que cambian a <em>scripts</em></h3>
+<p>Si se añade un <em>script</em> al <code>PATH</code> del sistema o sustituye a algún
+comando, <code>rkhunter</code> también nos lo notificará. Por ejemplo:</p>
+<pre><code>Warning: The command '/sbin/chkconfig' has been replaced by a script: /sbin/chkconfig: a /usr/bin/perl script text executable
+</code></pre>
+<p>Si estamos seguros de que el cambio es legítimos, podemos añadir la
+siguiente línea en <code>/etc/rkhunter.conf</code>:</p>
+<pre><code>SCRIPTWHITELIST=/sbin/chkconfig
+</code></pre>
+<p>Después de introducir los cambios, actualizamos <code>rkhunter</code>:</p>
+<pre><code>$ sudo rkhunter --propupd
+</code></pre>
+<h3><code>rkhunter</code> y <code>reiserfs</code></h3>
+<p>Si nuestro sistema de ficheros es <code>reiserfs</code>, o <code>xfs</code>, y hemos instalado
+el paquete <code>e2fsprogs</code>, el cual contiene herramientas para trabajar con
+sistemas de ficheros <code>ext2</code>, <code>ext3</code> y <code>ext4</code>, es posible que recibamos
+un aviso que se queja de <code>lsattr</code>:</p>
+<pre><code>Warning: Checking for prerequisites [ Warning ]
+No output from the 'lsattr' command - all file immutable-bit checks
+will be skipped.
+</code></pre>
+<p>La <a href="http://blog.unixum.de/tiki-index.php?page=install+rkhunter+-+debian+lenny" title="solución">solución</a> pasa por editar el fichero <code>/etc/rkhunter.conf</code>, buscar
+la directiva <code>DISABLE_TESTS</code> y añadir el parámetro <code>immutable</code> al final.</p>
+<p>A continuación, actualizamos <code>rkhunter</code>:</p>
+<pre><code>$ sudo rkhunter --propupd
+</code></pre>
+<h2>chkrootkit</h2>
+<p>...detecta <em>rootkits</em>. Por defecto, sólo se ejecuta cuando lo lanzamos
+nosotros. Para que se realice un escaneo diario, modificaremos el
+fichero <code>/etc/chkrootkit.conf</code>:</p>
+<pre><code>RUN_DAILY="true"
+</code></pre>
+<hr />
+<h4>Actualizado el 2 de noviembre de 2013</h4>
+<p>En los reportes de <code>chkrootkit</code> es posible que nos llegue el aviso de
+que el archivo <code>/sbin/init</code> está infectado:</p>
+<pre><code>Warning: /sbin/init INFECTED
+</code></pre>
+<p>Parece ser un <a href="https://bugzilla.redhat.com/show_bug.cgi?id=636231" title="fallo en chkrootkit">fallo en <code>chkrootkit</code></a>, ya que para determinar si el
+archivo <code>/sbin/init</code> está infectado, lo que hace es buscar la cadena
+"HOME" el el fichero, mediante el comando <code>strings</code>:</p>
+<pre><code>$ strings /sbin/init | egrep HOME
+XDG_CACHE_HOME
+XDG_CONFIG_HOME
+</code></pre>
+<p>El fallo está presente al menos en la versión 0.49, que es la que hay
+disponible en los repositorios de Ubuntu Saucy Salamander. Una manera de
+evitar el aviso es buscar el siguiente trozo de código, alrededor de la
+línea 1005:</p>
+<pre><code>if [ ${SYSTEM} != "HP-UX" ] &amp;&amp; ( ${strings} ${ROOTDIR}sbin/init | ${egrep} HOME  ||
+     cat ${ROOTDIR}/proc/1/maps | ${egrep} "init." ) &gt;/dev/null 2&gt;&amp;1
+</code></pre>
+<p>Y sustituirlo por:</p>
+<pre><code>if [ ${SYSTEM} != "HP-UX" ] &amp;&amp; ( cat ${ROOTDIR}/proc/1/maps | ${egrep} "init." ) &gt;/dev/null 2&gt;&amp;1
+</code></pre>
+<hr />
+<h2>unhide</h2>
+<p>Detecta procesos ocultos y puertas traseras, <a href="http://www.securitybydefault.com/2008/06/detectando-la-presencia-de-rootkits-con.html" title="basándose en la información">basándose en la
+información</a> obtenida de <code>/proc</code>, <code>/bin/ps</code> y <code>syscalls</code>, y de los
+puertos activos que no aparecen según <code>/bin/netstat</code>.</p>
+<p>En la versión <a href="http://unhide.sourcearchive.com/documentation/20100201-1/" title="unhide-20100201-1">unhide-20100201-1</a>, para el listado de procesos,
+comprueba los resultados de <code>/bin/ps</code>, ejecutándolo de las siguientes
+maneras:</p>
+<pre><code>// we are looking only for real process not thread and only one by one
+#define COMMAND "ps --no-header -p %i o pid"
+// we ara looking for session ID one by one
+#define SESSION "ps --no-header -s %i o sess"
+// We are looking for group ID one by one
+// but ps can’t select by pgid
+#define PGID "ps --no-header -eL o pgid"
+// We are looking for all processes even threads
+#define THREADS "ps --no-header -eL o lwp"
+// for sysinfo scanning, fall back to old command, as --no-header seems to create
+// an extra process
+#define SYS_COMMAND "ps -eL o lwp"
+</code></pre>
+<p>En escaneo de puertos utiliza los resultados de <code>/bin/netstat</code>:</p>
+<pre><code>// Linux
+char tcpcommand[]= "netstat -tan | sed -e '/[\\.:][0-9]/!d' -e 's/.*[\\.:]\\([0-9]*\\) .*[\\.:].*/\\1/'" ;
+char udpcommand[]= "netstat -uan | sed -e '/[\\.:][0-9]/!d' -e 's/.*[\\.:]\\([0-9]*\\) .*[\\.:].*/\\1/'" ;
+</code></pre>
+<p>Podemos lograr <a href="http://samiux.wordpress.com/2009/06/13/howto-make-sure-no-rootkit-on-your-ubuntu-9-04-server/" title="que se ejecute periódicamente">que se ejecute periódicamente</a> añadiendo al <code>crontab</code>
+algo como:</p>
+<pre><code>0  8 * * * unhide-linux26 proc 2&gt;&amp;1 | mail -s "Daily unhide-linux26 proc Scan" user@example.com
+30 8 * * * unhide-linux26 sys 2&gt;&amp;1 | mail -s "Daily unhide-linux26 sys Scan" user@example.com
+0  9 * * * unhide-linux26 brute 2&gt;&amp;1 | mail -s "Daily unhide-linux26 brute Scan" user@example.com
+30 9 * * * unhide-tcp 2&gt;&amp;1 | mail -s "Daily unhide-tcp Scan" user@example.com
+</code></pre>
+
+
+             
+ 
+            
+            
+            
+
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2011/08/05/servicio-de-ssh-con-sistema-de-verificacion-en-dos-pasos-de-google-en-ubuntu-natty-narwhal/" title="Servicio de SSH con sistema de verificación en dos pasos de Google en Ubuntu Natty Narwhal">Servicio de SSH con sistema de verificación en dos pasos de Google en Ubuntu Natty Narwhal</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2013/03/20/solucionado-el-error-error-nagiosgrapher1-duplicate-log-entry-for-varlognagiosgrapherngraph-log/" title="Solucionado el error «error: nagiosgrapher:1 duplicate log entry for /var/log/nagiosgrapher/ngraph.log»">Solucionado el error «error: nagiosgrapher:1 duplicate log entry for /var/log/nagiosgrapher/ngraph.log»</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2013/03/21/solucionado-el-error-prelink-is-not-an-elf-file/" title="Solucionado el error «prelink: ... is not an ELF file»">Solucionado el error «prelink: ... is not an ELF file»</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2013/03/22/solucionado-el-error-error-error-running-non-shared-postrotate-script-for-varlogsambalog-nmbd-of-varlogsambalog-nmbd/" title="Solucionado el error «error: error running non-shared postrotate script for /var/log/samba/log.nmbd of &#39;/var/log/samba/log.nmbd &#39;»">Solucionado el error «error: error running non-shared postrotate script for /var/log/samba/log.nmbd of '/var/log/samba/log.nmbd '»</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2013/06/10/iniciar-sesion-en-dyndns-desde-el-terminal/" title="Iniciar sesión en DynDNS desde el terminal">Iniciar sesión en DynDNS desde el terminal</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2010/12/16/mejora-del-rendimiento-interactivo-agrupando-tareas-por-terminal/" title="Previous: Mejora del rendimiento interactivo agrupando tareas por terminal">Mejora del rendimiento interactivo agrupando tareas por terminal</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2010/12/18/robando-la-identidad-del-vecino/" title="Next: Robando la identidad del vecino">Robando la identidad del vecino</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2010-12-17T03:04:00+01:00">Fri 17 December 2010</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#admin-ref">admin</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#1204-ref">12.04
+                    <span class="superscript">9</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#1310-ref">13.10
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#allowhiddenfile-ref">ALLOWHIDDENFILE
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#antirootkit-ref">antirootkit
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#chkconfig-ref">chkconfig
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#chkrootkit-ref">chkrootkit
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#devinitramfs-ref">/dev/.initramfs
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#devudev-ref">/dev/.udev
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#e2fsprogs-ref">e2fsprogs
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ext2-ref">ext2
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ext3-ref">ext3
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ext4-ref">ext4
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#lsattr-ref">lsattr
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#python-ref">python
+                    <span class="superscript">21</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#reiserfs-ref">reiserfs
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#rkhunter-ref">rkhunter
+                    <span class="superscript">2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#rootkit-ref">rootkit
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#script-ref">script
+                    <span class="superscript">27</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#symlink-ref">symlink
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#tiger-ref">tiger
+                    <span class="superscript">3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#troyano-ref">troyano
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ubuntu-ref">ubuntu
+                    <span class="superscript">22</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#unhide-ref">unhide
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#xfs-ref">xfs
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#zeppoo-ref">zeppoo
+                    <span class="superscript">1</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2020 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="https://karpoke.ignaciocano.com/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

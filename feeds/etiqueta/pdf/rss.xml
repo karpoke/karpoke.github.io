@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - pdf</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 28 Feb 2011 13:47:00 +0100</lastBuildDate><item><title>html2pdf = html2ps + ps2pdf</title><link>https://karpoke.ignaciocano.com/2011/02/28/html2pdf-html2ps-ps2pdf/</link><description>&lt;p&gt;Un buen comando para &lt;a href="http://www.atareao.es/ubuntu/conociendo-ubuntu/convetir-un-sitio-web-a-pdf-en-ubuntu/" title="convertir una web a PDF"&gt;convertir una web a PDF&lt;/a&gt;, idóneo para sitios con
+documentación pero que ésta sólo está disponible &lt;em&gt;online&lt;/em&gt;. Por ejemplo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ html2ps -W b http://www.vala-project.org/doc/vala/ | ps2pdf - out.pdf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Con la opción &lt;code&gt;-W b&lt;/code&gt; le decimos a &lt;code&gt;html2ps&lt;/code&gt; que siga sólo los enlaces
+que …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 28 Feb 2011 13:47:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-28:/2011/02/28/html2pdf-html2ps-ps2pdf/</guid><category>alias</category><category>html</category><category>html2ps</category><category>libro</category><category>pdf</category><category>ps</category><category>ps2pdf</category></item></channel></rss>

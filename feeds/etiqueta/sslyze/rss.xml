@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - sslyze</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 29 Mar 2013 22:54:00 +0100</lastBuildDate><item><title>SSLyze</title><link>https://karpoke.ignaciocano.com/2013/03/29/sslyze/</link><description>&lt;p&gt;&lt;a href="https://github.com/iSECPartners/sslyze" title="SSLyze"&gt;SSLyze&lt;/a&gt; es una herramienta para analizar la configuración SSL de un
+servidor, diseñada para ser rápida y exhaustiva.&lt;/p&gt;
+&lt;p&gt;Un ejemplo de uso:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ python sslyze --regular localhost:443
+
+
+ REGISTERING AVAILABLE PLUGINS
+ -----------------------------
+
+  PluginCertInfo
+  PluginSessionRenegotiation
+  PluginCompression
+  PluginSessionResumption
+  PluginOpenSSLCipherSuites
+
+
+
+ CHECKING HOST(S) AVAILABILITY
+ -----------------------------
+
+   localhost:443        =&amp;gt; 127.0.0.1:443
+
+
+
+ SCAN RESULTS FOR LOCALHOST …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 29 Mar 2013 22:54:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2013-03-29:/2013/03/29/sslyze/</guid><category>ssl</category><category>sslyze</category></item></channel></rss>

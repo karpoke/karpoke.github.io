@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+        <meta name="author" content="Nacho Cano" />
+
+        <meta name="description" content="pam_usb es un módulo que permite añadir autenticación hardware utilizando unidades de almacenamiento extraíbles &#34;normales&#34;, como memorias USB, tarjetas SD/MMC, etc. Mediante pamusb podemos especificar que se ejecuten diversas acciones cuando reconoce el dispositivo conectado, como por ejemplo iniciar sesión sin tener que introducir la contraseña o desactivar el …
+" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="12.04, 2FA, autenticación, doble autenticación, token, ubuntu precise pangolin, verificación en dos pasos, admin, " />
+
+<meta property="og:title" content="Autenticación hardware mediante un USB "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2012/09/30/autenticacion-hardware-mediante-un-usb/" />
+<meta property="og:description" content="pam_usb es un módulo que permite añadir autenticación hardware utilizando unidades de almacenamiento extraíbles &#34;normales&#34;, como memorias USB, tarjetas SD/MMC, etc. Mediante pamusb podemos especificar que se ejecuten diversas acciones cuando reconoce el dispositivo conectado, como por ejemplo iniciar sesión sin tener que introducir la contraseña o desactivar el …" />
+<meta property="og:site_name" content="Karpoke - Just another Pelican blog" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2012-09-30T13:06:00+02:00" />
+<meta name="twitter:title" content="Autenticación hardware mediante un USB ">
+<meta name="twitter:description" content="pam_usb es un módulo que permite añadir autenticación hardware utilizando unidades de almacenamiento extraíbles &#34;normales&#34;, como memorias USB, tarjetas SD/MMC, etc. Mediante pamusb podemos especificar que se ejecuten diversas acciones cuando reconoce el dispositivo conectado, como por ejemplo iniciar sesión sin tener que introducir la contraseña o desactivar el …">
+
+        <title>Autenticación hardware mediante un USB  · Karpoke - Just another Pelican blog
+</title>
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke - Just another Pelican blog</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2012/09/30/autenticacion-hardware-mediante-un-usb/">
+                Autenticación hardware mediante un USB
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p><a href="http://pamusb.org/" title="pam_usb">pam_usb</a> es un módulo que permite añadir autenticación hardware
+utilizando unidades de almacenamiento extraíbles "normales", como
+memorias USB, tarjetas SD/MMC, etc. Mediante <code>pamusb</code> podemos
+especificar que se ejecuten diversas acciones cuando reconoce el
+dispositivo conectado, como por ejemplo iniciar sesión sin tener que
+introducir la contraseña o desactivar el salvapantallas, por lo que se
+puede utilizar para implantar un <a href="https://karpoke.ignaciocano.com/2011/08/05/servicio-de-ssh-con-sistema-de-verificacion-en-dos-pasos-de-google-en-ubuntu-natty-narwhal/" title="sistema de autenticación en dos pasos (2FA)">sistema de autenticación en dos pasos
+(2FA)</a>.</p>
+<p>Sirve cualquier USB, ya que el módulo no modifica su contenido, sino que
+comprueba el UUID, el número de serie, el fabricante y el modelo, por lo
+que, aunque se copie, no se podrá suplantar fácilmente.</p>
+<h2>Instalación</h2>
+<p>Instalamos el módulo:</p>
+<pre><code>$ api libpam-usb  pamusb-tools
+</code></pre>
+<h2>Configuración</h2>
+<h3>USBs</h3>
+<p>Una vez conectado el USB que pensamos utilizar, aunque no hace falta que
+esté montado, lo añadimos al archivo de configuración <code>/etc/pamusb.conf</code>
+(podemos asignarle cualquier nombre):</p>
+<pre><code>$ sudo pamusb-conf --add-device myusb
+Please select the device you wish to add.
+* Using "Kingston Aurum (136C0932618F)" (only option)
+
+Which volume would you like to use for storing data ?
+* Using "/dev/sdb1 (UUID: 37AD-8A2F)" (only option)
+
+Name        : myusb
+Vendor      : Kingston
+Model       : Aurum
+Serial      : 136C0932618F
+UUID        : 37AD-8A2F
+
+Save to /etc/pamusb.conf ?
+[Y/n] Y
+Done.
+</code></pre>
+<p>Deberemos repetir el proceso para cada USB que queramos utilizar.</p>
+<h3>Usuarios</h3>
+<p>El siguiente paso es configurar los usuarios que queremos que se
+autentiquen:</p>
+<pre><code>$ sudo pamusb-conf --add-user myuser
+Which device would you like to use for authentication ?
+* Using "myusb" (only option)
+
+User        : myuser
+Device      : myusb
+
+Save to /etc/pamusb.conf ?
+[Y/n] Y
+Done.
+</code></pre>
+<h3>Comprobación</h3>
+<p>Comprobamos la configuración, todavía con el USB conectado:</p>
+<pre><code>$ sudo pamusb-check myuser
+* Authentication request for user "m" (pamusb-check)
+* Device "myusb" is connected (good).
+* Performing one time pad verification...
+* Regenerating new pads...
+* Access granted.
+</code></pre>
+<p>Si desconectamos el USB y volvemos a probar:</p>
+<pre><code>$ sudo pamusb-check myuser
+* Authentication request for user "myuser" (pamusb-check)
+* Device "myusb" is not connected.
+* Access denied.
+</code></pre>
+<h2>Módulo PAM</h2>
+<p>Para incluir <code>pam_usb</code> en el proceso de autenticación del sistema,
+deberemos editar el fichero <code>/etc/pam.d/common-auth</code> y añadir la
+siguiente linea:</p>
+<pre><code>auth    sufficient      pam_usb.so
+</code></pre>
+<p>antes de la línea:</p>
+<pre><code>auth    required        pam_unix.so nullok_secure
+</code></pre>
+<p>La opción <code>sufficient</code> permite autenticar al usuario si el USB conectado
+es correcto, y si no lo es continúa con el proceso de autenticación, es
+decir, pide la contraseña. Si en su lugar ponemos <code>required</code> se
+necesitarán ambos, USB y contraseña, para acceder al sistema.</p>
+<p>Si sólo queremos utilizar este sistema de autenticación para algún
+módulo concreto, en lugar de usar el ficheo <code>common-auth</code> editamos el
+fichero correspondiente, por ejemplo <code>lightdm</code>, <code>sshd</code>, <code>sudo</code>, etc.</p>
+<p>No es necesario reiniciar para que los cambios tengan efecto. Con el USB
+desconectamos hacemos la siguiente prueba:</p>
+<pre><code>$ su myuser
+* pam_usb v0.5.0
+* Authentication request for user "myuser" (su)
+* Device "myusb" is not connected.
+* Access denied.
+Contraseña:
+</code></pre>
+<p>Lo conectamos y volvemos a probar:</p>
+<pre><code>$ su myser
+* pam_usb v0.5.0
+* Authentication request for user "myuser" (su)
+* Device "myusb" is connected (good).
+* Performing one time pad verification...
+* Access granted.
+</code></pre>
+<h2>Agente</h2>
+<p>Si queremos que se ejecute un comando cuando detecte que se ha conectado
+el USB, editamos el fichero <code>/etc/pamusb.conf</code>, esta vez mediante un
+editor de texto, y añadimos las siguientes líneas en la sección de
+configuración de usuario. Hay un ejemplo incluído como el siguiente,
+aunque está comentado, y lo que hace es activar o desactivar el
+salvapantallas:</p>
+<pre><code>myusb
+gnome-screensaver-command --lock
+gnome-screensaver-command --deactivate
+</code></pre>
+<p>Es posible que necesitemos añadir <code>pamusb-agent</code> para que se ejecute al
+inicio, aunque con Ubuntu Precise Pangolin no me ha hecho falta. Si
+tenemos un entorno de escritorio, podemos incluirlo a través del menú de
+Aplicaciones al inicio.</p>
+<p>Si queremos hacerlo desde el terminal, dependerá de si usamos <code>init</code> o
+<code>upstart</code>.</p>
+<h3>Upstart</h3>
+<p>Si usamos el sistema <code>upstart</code>, para hacer que se ejecute al inicio,
+creamos el archivo <code>/etc/init/pamusb-agent.conf</code>:</p>
+<pre><code># pamusb-agent - pam_usb event handler
+#
+# pamusb-agent is in charge of executing commands upon USB device insertion
+# (once authenticated through pam_usb) and removal.
+
+description     "pamusb-agent background daemon"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+expect fork
+respawn
+
+exec /usr/bin/pamusb-agent
+</code></pre>
+<p>Mediante <code>respawn</code> especificamos que se reinicie el proceso si termina
+de forma inesperada.</p>
+<p>Vamos al directorio <code>/etc/init.d</code> y creamos el siguiente enlace
+simbólico:</p>
+<pre><code>$ sudo ln -s /lib/init/upstart-job pamusb-agent
+</code></pre>
+<h3>init</h3>
+<p>Si utilizamos <code>init</code>, añadimos el siguiente <em>script</em> en el directorio
+<code>/etc/init.d</code>:</p>
+<pre><code>#!/usr/bin/env bash
+/usr/bin/pamusb-agent
+</code></pre>
+<p>Le damos permisos de ejecución:</p>
+<pre><code>$ sudo chmod +x /etc/init.d/pamusb-agent
+</code></pre>
+<p>Lo añadimos al inicio:</p>
+<pre><code>$ sudo update-rc.d pamusb-agent defaults
+update-rc.d: warning: /etc/init.d/pamusb-agent missing LSB information
+update-rc.d: see
+ Adding system startup for /etc/init.d/pamusb-agent ...
+   /etc/rc0.d/K20pamusb-agent -&gt; ../init.d/pamusb-agent
+   /etc/rc1.d/K20pamusb-agent -&gt; ../init.d/pamusb-agent
+   /etc/rc6.d/K20pamusb-agent -&gt; ../init.d/pamusb-agent
+   /etc/rc2.d/S20pamusb-agent -&gt; ../init.d/pamusb-agent
+   /etc/rc3.d/S20pamusb-agent -&gt; ../init.d/pamusb-agent
+   /etc/rc4.d/S20pamusb-agent -&gt; ../init.d/pamusb-agent
+   /etc/rc5.d/S20pamusb-agent -&gt; ../init.d/pamusb-agent
+</code></pre>
+<p>Para activarlo sin tener que reiniciar, ejecutamos:</p>
+<pre><code>$ sudo service pamusb-agent start
+</code></pre>
+<h2>Referencias</h2>
+<p>» <a href="http://pamusb.org/" title="pam_usb">pam_usb</a>
+» <a href="http://upstart.ubuntu.com/wiki/Stanzas" title="Upstart">Upstart</a></p>
+
+
+             
+ 
+            
+            
+            
+
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2011/08/05/servicio-de-ssh-con-sistema-de-verificacion-en-dos-pasos-de-google-en-ubuntu-natty-narwhal/" title="Servicio de SSH con sistema de verificación en dos pasos de Google en Ubuntu Natty Narwhal">Servicio de SSH con sistema de verificación en dos pasos de Google en Ubuntu Natty Narwhal</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/09/30/tunel-ssh-inverso/" title="Túnel SSH inverso">Túnel SSH inverso</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/06/28/mostrar-las-aplicaciones-ocultas-que-se-ejecutan-al-inicio/" title="Mostrar las aplicaciones ocultas que se ejecutan al inicio">Mostrar las aplicaciones ocultas que se ejecutan al inicio</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/06/29/raspbmc/" title="Raspbmc">Raspbmc</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2013/03/22/solucionado-el-error-error-error-running-non-shared-postrotate-script-for-varlogsambalog-nmbd-of-varlogsambalog-nmbd/" title="Solucionado el error «error: error running non-shared postrotate script for /var/log/samba/log.nmbd of &#39;/var/log/samba/log.nmbd &#39;»">Solucionado el error «error: error running non-shared postrotate script for /var/log/samba/log.nmbd of '/var/log/samba/log.nmbd '»</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2012/09/26/major-security-vulnerability-in-some-samsung-phones-could-trigger-factory-reset-via-web-page/" title="Previous: Major security vulnerability in some Samsung phones could trigger factory reset via web page">Major security vulnerability in some Samsung phones could trigger factory reset via web page</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2012/10/01/honeymap/" title="Next: HoneyMap">HoneyMap</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2012-09-30T13:06:00+02:00">Sun 30 September 2012</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#admin-ref">admin</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#1204-ref">12.04
+                    <span class="superscript">9</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#2fa-ref">2FA
+                    <span class="superscript">4</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#autenticacion-ref">autenticación
+                    <span class="superscript">2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#doble-autenticacion-ref">doble autenticación
+                    <span class="superscript">2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#token-ref">token
+                    <span class="superscript">2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ubuntu-precise-pangolin-ref">ubuntu precise pangolin
+                    <span class="superscript">4</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#verificacion-en-dos-pasos-ref">verificación en dos pasos
+                    <span class="superscript">3</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2020 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="https://karpoke.ignaciocano.com/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

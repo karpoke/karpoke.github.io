@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - ip</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 09 Feb 2012 21:36:00 +0100</lastBuildDate><item><title>Reiniciar el router desde el terminal</title><link>https://karpoke.ignaciocano.com/2012/02/09/reiniciar-el-router-desde-bash/</link><description>&lt;p&gt;De vez en cuando, necesitamos reiniciar nuestro &lt;em&gt;router&lt;/em&gt;. Por ejemplo,
+para provocar un cambio de IP, si tenemos IP dinámica. Podemos acceder
+al panel de administración del &lt;em&gt;router&lt;/em&gt; mediante el navegador,
+normalmente en el puerto 80 u 8080, aunque también es posible hacerlo a
+través de telnet, en el puerto …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 09 Feb 2012 21:36:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-02-09:/2012/02/09/reiniciar-el-router-desde-bash/</guid><category>comtrend</category><category>expect</category><category>ip</category><category>router</category><category>script</category><category>telnet</category><category>vr-3025u</category><category>yad</category></item><item><title>Encontrar los dominios que comparten IP con otro dado</title><link>https://karpoke.ignaciocano.com/2011/06/14/encontrar-los-dominios-que-comparten-ip-con-otro-dado/</link><description>&lt;p&gt;Éste es algo viejuno, pero lo no había probado. Se trata del &lt;em&gt;script&lt;/em&gt;
+&lt;code&gt;bing-ip2hosts&lt;/code&gt;, que permite &lt;a href="http://seifreed.com/2010/04/10/enumerar-todos-los-host-en-dominio-con-la-direccin-ip-bing/" title="encontrar los dominios que comparten IP"&gt;encontrar los dominios que comparten IP&lt;/a&gt;
+con un dominio dado utilizando Bing:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./bing-ip2hosts -p ubuntu.com
+http://brainstorm.ubuntu.com
+http://kubuntu.org
+http://search.ubuntu.com
+http://www.ubuntu.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Con el argumento …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 14 Jun 2011 21:34:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-06-14:/2011/06/14/encontrar-los-dominios-que-comparten-ip-con-otro-dado/</guid><category>bing</category><category>footprinting</category><category>ip</category><category>resolveip</category></item><item><title>Cambiar la dirección MAC</title><link>https://karpoke.ignaciocano.com/2011/02/09/cambiar-la-direccion-mac/</link><description>&lt;p&gt;A veces, nos puede interesar cambiar la MAC de nuestra tarjeta de red,
+ya sea porqué nos conectamos a una red en la que no queremos que quede
+registrada nuestra MAC real (todavía se podría ser más paranoico), ya
+sea porqué hay un filtrado por MAC y la nuestra no …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 09 Feb 2011 12:58:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-09:/2011/02/09/cambiar-la-direccion-mac/</guid><category>ifconfig</category><category>ip</category><category>ipconfig</category><category>kismet</category><category>mac</category><category>mac aleatoria</category><category>macchanger</category><category>md5sum</category><category>sed</category></item></channel></rss>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - varnish</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 15 Aug 2011 04:29:00 +0200</lastBuildDate><item><title>SSH over HTTP-Proxy</title><link>https://karpoke.ignaciocano.com/2011/08/15/ssh-over-http-proxy/</link><description>&lt;p&gt;A veces, queremos poder navegar o chatear por Internet pero no queremos
+que nadie pueda conocer, ni bloquear, las páginas que visitamos o espiar
+nuestras conversaciones, bien porque porque estamos en el trabajo, la
+universidad o en una red abierta. En la red a la que estamos conectados
+puede que …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 15 Aug 2011 04:29:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-08-15:/2011/08/15/ssh-over-http-proxy/</guid><category>apache</category><category>corkscrew</category><category>htc</category><category>http</category><category>HTTP_PROXY</category><category>https</category><category>proxy</category><category>proxy http</category><category>proxy socks</category><category>proxytunnel</category><category>SOCKS</category><category>ssh</category><category>varnish</category></item><item><title>Mejorando la seguridad de Apache con Varnish</title><link>https://karpoke.ignaciocano.com/2011/05/26/mejorando-la-seguridad-de-apache-con-varnish/</link><description>&lt;p&gt;&lt;a href="http://www.varnish-cache.org/docs/2.1/" title="Varnish"&gt;Varnish&lt;/a&gt; es un acelerador web, que puede ser utilizado tanto para
+cachear contenido estático de nuestro servidor, para balancear la carga
+o &lt;a href="http://www.howtoforge.com/putting-varnish-in-front-of-apache-on-ubuntu-debian" title="para incrementar la seguridad"&gt;para incrementar la seguridad&lt;/a&gt;, por ejemplo, bloqueando cierto tipo
+de peticiones u ocultando cierto tipo de información.&lt;/p&gt;
+&lt;p&gt;Se instala directamente de los repositorios:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo aptitude install varnish
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ahora …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 26 May 2011 19:39:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-05-26:/2011/05/26/mejorando-la-seguridad-de-apache-con-varnish/</guid><category>apache</category><category>cabeceras HTTP</category><category>seguridad por oscuridad</category><category>servidor http</category><category>varnish</category><category>w00tw00t</category></item></channel></rss>

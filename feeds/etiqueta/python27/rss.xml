@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - python2.7</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 13 Nov 2014 22:32:00 +0100</lastBuildDate><item><title>Solucionado el error «ImportError: No module named _sysconfigdata_nd» en Ubuntu</title><link>https://karpoke.ignaciocano.com/2014/11/13/solucionado-el-error-importerror-no-module-named-_sysconfigdata_nd-en-ubuntu/</link><description>&lt;p&gt;Si estando en un entorno virtual, nos encontramos con el error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ImportError: No module named _sysconfigdata_nd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Es debido a un &lt;a href="https://bugs.launchpad.net/ubuntu/+source/python2.7/+bug/1115466" title="conocido error en Ubuntu"&gt;conocido error en Ubuntu&lt;/a&gt;, por el cual dicho fichero
+se encuentra en otra ubicación, en lugar de &lt;code&gt;/usr/lib/python2.7&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En 32 bits:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dpkg -S _sysconfigdata_nd.py
+libpython2.7-minimal …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 13 Nov 2014 22:32:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-11-13:/2014/11/13/solucionado-el-error-importerror-no-module-named-_sysconfigdata_nd-en-ubuntu/</guid><category>_sysconfigdata_nd.py</category><category>ImportError</category><category>python2.7</category><category>virtualenv</category></item></channel></rss>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - ntfsprogs</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 06 Sep 2012 12:46:00 +0200</lastBuildDate><item><title>Solucionado el error "$MFTMirr does not match $MFT (record 0)." al montar una partición NTFS</title><link>https://karpoke.ignaciocano.com/2012/09/06/solucionado-el-error-mftmirr-does-not-match-mft-record-0-al-montar-una-particion-ntfs/</link><description>&lt;p&gt;Si intentamos montar un disco o partición en NTFS, el formato que
+utiliza Windows, que no ha sido desconectada "de forma segura", es
+posible que no podamos montarla y que recibamos el siguiente error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo mount -t ntfs-3g /dev/sdb1 /media/ntfs
+$MFTMirr does not match $MFT (record 0).
+    Failed …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 06 Sep 2012 12:46:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-09-06:/2012/09/06/solucionado-el-error-mftmirr-does-not-match-mft-record-0-al-montar-una-particion-ntfs/</guid><category>$MFT</category><category>$MFTMirr</category><category>NTFS</category><category>ntfsfix</category><category>ntfsprogs</category><category>Windows</category></item></channel></rss>

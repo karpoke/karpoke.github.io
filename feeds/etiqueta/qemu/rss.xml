@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - qemu</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 14 Jan 2011 22:07:00 +0100</lastBuildDate><item><title>pci_add_option_rom: failed to find romfile "pxe-rtl8139.bin"</title><link>https://karpoke.ignaciocano.com/2011/01/14/pci_add_option_rom-failed-to-find-romfile-pxe-rtl8139-bin/</link><description>&lt;p&gt;Trasteando con &lt;code&gt;qemu&lt;/code&gt; y &lt;code&gt;Damn Small Linux&lt;/code&gt;, creamos una imagen de disco
+de 500 MB:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ qemu-img create -f qcow hd-500m.img 500M
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y lanzamos el programa:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ qemu -hda hd-500m.img -cdrom dsl-4.4.10.iso -boot d -m 128 -localtime
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;En seguida nos aparece el siguiente mensaje:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pci_add_option_rom: failed to …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 14 Jan 2011 22:07:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-01-14:/2011/01/14/pci_add_option_rom-failed-to-find-romfile-pxe-rtl8139-bin/</guid><category>dsl</category><category>pxe-rtl8139.bin</category><category>qemu</category><category>romfile</category></item></channel></rss>

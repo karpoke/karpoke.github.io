@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+        <meta name="author" content="Nacho Cano" />
+
+        <meta name="description" content="&#34;Los números aleatorios no deberían ser generados por un método elegido aleatoriamente&#34;. Donald E. Knuth En Bash, podemos obtener números enteros aleatorios: $ echo $RANDOM 20684 Cada vez que se referencia el parámetro RANDOM, éste devuelve un valor entre 0 y 32767, es decir, 2^15^-1. Podemos inicializar la secuencia …
+" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="/dev/random, /dev/urandom, /proc/interrupts, aleatoriedad, contraseña aleatoria, dd, generar entropía, mac aleatoria, makepasswd, md5sum, mkpasswd, od, openssl, pwgen, rng-tools, sha1sum, sha224sum, sha256sum, sha384sum, sha512sum, shuf, strings, tr, xxd, dev, " />
+
+<meta property="og:title" content="Random Bash "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2010/09/25/random-bash/" />
+<meta property="og:description" content="&#34;Los números aleatorios no deberían ser generados por un método elegido aleatoriamente&#34;. Donald E. Knuth En Bash, podemos obtener números enteros aleatorios: $ echo $RANDOM 20684 Cada vez que se referencia el parámetro RANDOM, éste devuelve un valor entre 0 y 32767, es decir, 2^15^-1. Podemos inicializar la secuencia …" />
+<meta property="og:site_name" content="Karpoke - Just another Pelican blog" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2010-09-25T00:54:00+02:00" />
+<meta name="twitter:title" content="Random Bash ">
+<meta name="twitter:description" content="&#34;Los números aleatorios no deberían ser generados por un método elegido aleatoriamente&#34;. Donald E. Knuth En Bash, podemos obtener números enteros aleatorios: $ echo $RANDOM 20684 Cada vez que se referencia el parámetro RANDOM, éste devuelve un valor entre 0 y 32767, es decir, 2^15^-1. Podemos inicializar la secuencia …">
+
+        <title>Random Bash  · Karpoke - Just another Pelican blog
+</title>
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke - Just another Pelican blog</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2010/09/25/random-bash/">
+                Random Bash
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p><cite>"Los números aleatorios no deberían ser generados por un método
+elegido aleatoriamente". <em>Donald E. Knuth</em></cite></p>
+<p>En Bash, podemos obtener números enteros <a href="http://es.wikipedia.org/wiki/Aleatoriedad" title="aleatorios">aleatorios</a>:</p>
+<pre><code>$ echo $RANDOM
+20684
+</code></pre>
+<p><img alt="Random number" src="https://karpoke.ignaciocano.com/images/random_number-300x107.jpg" /></p>
+<p>Cada vez que se referencia el parámetro <a href="http://linux.die.net/man/1/bash" title="RANDOM">RANDOM</a>, éste devuelve un
+valor entre 0 y 32767, es decir, 2^15^-1. Podemos inicializar la
+secuencia de números aleatorios asignando un valor a RANDOM. Debemos
+tener en cuenta que si le asignamos un valor vacío a RANDOM se pierden
+sus propiedades especiales, aunque después lo inicialicemos.</p>
+<p>Podemos poner a prueba la calidad de esos números aleatorios:</p>
+<pre><code>$ a=()
+$ freq=10
+$ max=327680
+$ for ((i=0; i &lt; $max; i++)); do
+&gt;    # progress bar
+&gt;    test $((i%($max/$freq))) -eq 0 &amp;&amp; echo -n "."
+&gt;    j=$RANDOM
+&gt;    a[$j]=$((a[$j]+1))
+&gt; done
+$ for ((i=0; i &lt; $max/$freq; i++)); do
+&gt;    echo "$i: ${a[$i]}";
+&gt; done | less
+</code></pre>
+<h2>Más números</h2>
+<p>Podemos obtener el módulo aleatorio de un número aleatorio.</p>
+<pre><code>$ echo $((RANDOM%RANDOM))
+4530
+</code></pre>
+<p>¿Afectará de alguna manera realizar el módulo aleatorio sobre un número
+aleatorio como variable aleatoria?</p>
+<p><img alt="Dilbert" src="https://karpoke.ignaciocano.com/images/Dilbert-Oct_25_001-300x117.jpg" /></p>
+<p>Sí, ya que en el mejor caso, el módulo será mayor que el primer número
+y, por lo tanto, no afecta al resultado. Pero en el peor caso, el módulo
+será menor que el primer número, con lo que es mayor la probabilidad de
+obtener un número menor.</p>
+<pre><code>$ a=()
+$ freq=10
+$ max=327680
+$ for ((i=0; i &lt; $max; i++)); do
+&gt;    # progress bar
+&gt;    test $((i%($max/$freq))) -eq 0 &amp;&amp; echo -n "."
+&gt;    j=$((RANDOM%RANDOM))
+&gt;    a[$j]=$((a[$j]+1))
+&gt; done
+$ for ((i=0; i &lt; $max/$freq; i++)); do echo "$i: ${a[$i]}"; done
+</code></pre>
+<p>Números aleatorios binarios, octales y hexadecimales:</p>
+<pre><code>$ b=2
+$ for ((i=0; i &lt; RANDOM%RANDOM; i=i+RANDOM%b)); do echo -n $((i%b)); done
+000010001111101001010001111101001011111
+$ b=8
+$ for ((i=0; i &lt; RANDOM%RANDOM; i=i+RANDOM%b)); do echo -n $((i%b)); done
+04743654506265435353610222054150
+$ a="01234566789ABCDEF"
+$ for ((i=0; i &lt; RANDOM%RANDOM; i++ )); do echo -n ${a:$RANDOM%${#a}:1}; done
+0150633894AD8DEF81671B06694C6B5
+</code></pre>
+<p>Debemos tener en cuenta que si queremos utilizar estos números, el
+prefijo, en Bash, para los números binarios es <code>2#</code>, para los números
+octales es <code>0</code> y para los números hexadecimales, <code>0x</code>. Por ejemplo, el
+número 10 es <code>2#1010</code>, <code>012</code> y <code>0x10</code>.</p>
+<h2>Y letras</h2>
+<p>Podemos crear una secuencia de números y letras aleatoria:</p>
+<pre><code>$ a=$(echo $((echo -n {a..z}; echo -n {A..Z}; echo -n {0..9};) | sed 's/ //g'))
+$ for ((i=0; i &lt; RANDOM%RANDOM; i++)); do echo -n ${a:$RANDOM%${#a}:1}; done
+3keV1cLFGdxO2S5nvJGzoq9EyZeryLjkVgP64Dn0z
+</code></pre>
+<h2>Fuentes de aleatoriedad</h2>
+<ul>
+<li>/dev/random</li>
+<li>/dev/urandom</li>
+<li>/proc/interrupts</li>
+</ul>
+<p>Los dos primeros son ficheros especiales que permiten acceso al
+<a href="http://www.kernel.org/doc/man-pages/online/pages/man4/random.4.html" title="generador de números aleatorios">generador de números aleatorios</a> del kernel. El kernel recoge ruido
+ambiental desde los controladores de dispositivos (como por ejemplo, el
+ratón) y otras fuentes y lo usa como fuente de aleatoriedad. También
+tiene en cuenta el número de bits que se pueden crear aleatoriamente con
+un nivel de entropía tal que no sean vulnerables a ataques
+criptográficos. <code>/dev/random</code> se debería utilizar para crear claves
+criptográficas, para todo lo demás, podemos usar <code>/dev/urandom</code>.</p>
+<p>Estas fuentes proporcionan bits aleatorios, no caracteres, por lo que
+antes de utilizarlos para mostrar una cadena de caracteres deberemos
+pasarlos por alguna función como:</p>
+<ul>
+<li><code>md5sum</code></li>
+<li><code>shasum</code></li>
+<li><code>sha1sum</code></li>
+<li><code>sha224sum</code></li>
+<li><code>sha256sum</code></li>
+<li><code>sha384sum</code></li>
+<li><code>sha512sum</code></li>
+<li><code>grep -o '[[:alnum:]]'</code></li>
+<li><code>tr -dc a-zA-Z0-9</code></li>
+<li><code>xxd -ps</code></li>
+<li><code>od -An -td | sed 's/\s_\(._\)\s/\1/g'</code></li>
+<li>o cualquier otra combinación que filtre los caracteres</li>
+</ul>
+<p><code>/proc/interrupts</code> registra el número de interrupciones de cada
+dispotivo de entrada/salida, por lo que debería funcionar bien como
+fuente de aleatoriedad.</p>
+<p>Cadenas de caracteres aleatorios:</p>
+<pre><code>$ strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 12 | tr -d '\n'; echo
+tUqWq9fqem9C1gKbTpCcVJg6DNvxMG
+$ &lt; /dev/urandom tr -dc _a-zA-Z0-9 | head -c12
+1G0gNNXM3RkT
+$ dd if=/dev/random bs=1 count=5 2&gt;/dev/null | xxd -ps
+3e3206ff95
+</code></pre>
+<h2>Generando entropía</h2>
+<p>Si la fuente de entropía no da abasto y necesitamos generar más entropía
+más rápido, por ejemplo, cuando creamos claves RSA muy largas, poner a
+trabajar el equipo podría servir. Algo como:</p>
+<pre><code>$ ls -lRh /
+$ find / -name \*
+</code></pre>
+<p>Sin embargo, existe un programa que sirve para esto. <code>rng-tools</code> ayuda a
+<a href="http://dajul.com/2010/12/18/generar-mas-entropia/" title="generar entropía">generar entropía</a>. Una vez instalado desde los respositorios,
+modificamos el fichero <code>/etc/default/rng-tools</code> para que contenga:</p>
+<pre><code>HRNGDEVICE=/dev/urandom
+</code></pre>
+<p>Y reiniciamos el servicio:</p>
+<pre><code>$ sudo service rng-tools restart
+</code></pre>
+<p>Si ahora volvemos a crear una clave, notaremos que el tiempo necesario
+para conseguir la entropía necesaria es mucho menor.</p>
+<hr />
+<h4>Actualizado el 25 de septiembre de 2016</h4>
+<p>Otro servicio que sirve para esto es <code>haveged</code>:
+    systemctl enable haveged
+    systemctl start haveged</p>
+<hr />
+<h2>Otros programas</h2>
+<p>Podemos instalar estos programas desde los repositorios.</p>
+<h3>makepasswd</h3>
+<p>Para crear contraseñas.</p>
+<pre><code>$ makepasswd --char=12
+</code></pre>
+<h3>mkpasswd</h3>
+<p>Otro para crear contraseñas.</p>
+<pre><code>$ mkpasswd
+</code></pre>
+<h3>openssl</h3>
+<p>Permite obtener una serie de bytes hexadecimales aleatorios; por cada
+byte hexadecimal se imprimen dos caracteres hexadecimales:</p>
+<pre><code>$ openssl rand -hex 16
+5666b2215534c6d4c3be4101219cd0b1
+</code></pre>
+<p>También permite obtener caracteres en base64:</p>
+<pre><code>$ openssl rand -base64 12
+ymwU0wtOZ6wMgAfr
+</code></pre>
+<h3>pwgen</h3>
+<p>Otro más para crear contraseñas</p>
+<pre><code>$ pwgen 12
+</code></pre>
+<h3>rand</h3>
+<p>Trabaja con números y caracteres. Por ejemplo, podemos obtener números
+decimales aleatorios.</p>
+<pre><code>$ rand -f
+0.04691
+</code></pre>
+<h2>No sólo letras y números</h2>
+<p>Podemos crear una dirección MAC aleatoria:</p>
+<pre><code>$ echo $(cat /proc/interrupts | md5sum | sed -r 's/^(.{10}).*$/00\1/; s/([0-9a-f]{2})/\1:/g; s/:$//;')
+00:6d:b6:2f:46:1d
+$ openssl rand -hex 6 | sed -r 's/^(.{10}).*$/00\1/; s/([0-9a-f]{2})/\1:/g; s/:$//;'
+00:8d:e6:98:ca:d2
+</code></pre>
+<p>Podemos crear un fichero o un directorio temporal, cuyo nombre es
+aleatorio:</p>
+<pre><code>$ mktemp
+/tmp/tmp.WBABktXDHZ
+$ mktemp -d
+/tmp/tmp.lHuPARC0YC
+</code></pre>
+<p>Podemos mostrar un fichero aleatorio:</p>
+<pre><code>$ find ~ -maxdepth 1 | shuf -n1 --random-source=/dev/random
+./bash_aliases
+</code></pre>
+<p>Podemos poner una imagen de fondo de escritorio aleatoria en Gnome:</p>
+<pre><code>$ f=$(find ~/Imágenes/ | shuf -n1 | egrep 'gif|jpe?g|png')
+$ while test -n "$f"; do f=$(find ~/Imágenes/ | shuf -n1); done
+$ gconftool-2 -t str --set /desktop/gnome/background/picture_filename "$f"
+</code></pre>
+<p>Podemos generar una contraseña <a href="https://xkcd.com/936/" title="Password Strength">a partir de 4 palabras aleatorias</a>:</p>
+<pre><code>$ printf '%s %s %s %s' $(\grep -v "'" /usr/share/dict/american-english | shuf -n 4 | tr '[:upper:]' '[:lower:]')
+meters haven backtracking subordinates
+</code></pre>
+<p>Podemos mostrar una línea aleatoria de un fichero:</p>
+<pre><code>$ shuf -n1 /etc/passwd
+</code></pre>
+<p>O también podemos mostrar un número de líneas aleatorio de un archivo
+aleatorio del código fuente de Linux:</p>
+<pre><code>$ f=$(find /usr/src/linux-source-2.6.32 -type f -name \* | shuf -n1)
+$ n=$(wc -l $f | awk '{print $1}')
+$ cat $f | sed -n $((RANDOM%n)),$((RANDOM%n))p
+
+        if (!zalloc_cpumask_var(&amp;vec-&gt;mask, gfp))
+            goto cleanup;
+    }
+
+    for_each_possible_cpu(i)
+        cp-&gt;cpu_to_pri[i] = CPUPRI_INVALID;
+    return 0;
+
+cleanup:
+    for (i--; i &gt;= 0; i--)
+        free_cpumask_var(cp-&gt;pri_to_cpu[i].mask);
+    return -ENOMEM;
+}
+</code></pre>
+<h2>Internet</h2>
+<p>En Internet, hay servicios cuyas respuestas aleatorias podemos utilizar
+en nuestra vida cotidiana:</p>
+<p>Obtener una excusa de BOFH aleatoria:</p>
+<pre><code>$ telnet towel.blinkenlights.nl 666
+=== The BOFH Excuse Server ===
+We didn't pay the Internet bill and it's been cut off.
+</code></pre>
+<p>Obtener un hecho aleatorio:</p>
+<pre><code>$ curl -s http://randomfunfacts.com | grep -Eo ".*" | sed -r 's/([^&lt; ]+)&lt;\/i&gt;&lt; \/strong&gt;/\1/'
+Donkeys kill more people annually than plane crashes.
+</code></pre>
+<p>Obtener un mensaje aleatorio para un <em>commit</em>:</p>
+<pre><code>$ curl -s http://whatthecommit.com | grep "" | sed -r 's/([^$]+)$/\1/'
+Fucking egotistical bastard. adds expandtab to vimrc
+</code></pre>
+<p>Obtener una <a href="http://www.commandlinefu.com/commands/view/6656/get-futurama-quotations-from-slashdot.org-servers" title="frase de Futurama">frase de Futurama</a> aleatoria desde Slashdot:</p>
+<pre><code>$ curl -Is slashdot.org | sed -n '5p' | sed 's/^X-//'
+Bender: I'm one of those lazy, homeless bums I've been hearing about.
+</code></pre>
+<p>Obtener una <a href="https://api.githunt.io/programmingexcuses" title="excusa de programador">excusa de programador</a> aleatoria:</p>
+<pre><code>curl -s https://api.githunt.io/programmingexcuses
+</code></pre>
+<p>Además de números y letras, también podemos obtener números de lotería,
+imágenes, secuencias, fechas, horas, coordenadas geográficas, música,
+testimonios... todo aleatorio en <a href="http://www.random.org/" title="random.org">random.org</a></p>
+<pre><code>$ curl -s "https://www.random.org/passwords/?num=1&amp;len=8&amp;format=html&amp;rnd=new"
+</code></pre>
+<ul>
+<li>Imágenes: <a href="http://xkcd.com/" title="xkcd">xkcd</a>, <a href="http://www.dilbert.com/" title="dilbert">dilbert</a></li>
+<li>Comandos relacionados con la aleatoriedad en <a href="http://www.commandlinefu.com/commands/matching/random/cmFuZG9t/sort-by-votes" title="commandlinefu">commandlinefu</a></li>
+</ul>
+
+
+             
+ 
+            
+            
+            
+
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2011/02/09/cambiar-la-direccion-mac/" title="Cambiar la dirección MAC">Cambiar la dirección MAC</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/07/28/salvapantallas-con-el-codigo-fuente-del-kernel/" title="Salvapantallas con el código fuente del kernel">Salvapantallas con el código fuente del kernel</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/09/18/fwknop-single-packet-authorization-y-port-knocking/" title="fwknop: Single Packet Authorization y port knocking">fwknop: Single Packet Authorization y port knocking</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/07/27/saltar-a-una-entrada-aleatoria-en-wordpress/" title="Saltar a una entrada aleatoria en WordPress">Saltar a una entrada aleatoria en WordPress</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2018/01/30/recuperar-un-disco-corrupto/" title="Recuperar un disco corrupto">Recuperar un disco corrupto</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2010/07/28/jabh/" title="Previous: JABH - Just Another Bash Hacker">JABH - Just Another Bash Hacker</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2010/09/25/bash-dns-cache-snooping/" title="Next: Bash DNS Cache Snooping">Bash DNS Cache Snooping</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2010-09-25T00:54:00+02:00">Sat 25 September 2010</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#dev-ref">dev</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#aleatoriedad-ref">aleatoriedad
+                    <span class="superscript">3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#contrasena-aleatoria-ref">contraseña aleatoria
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#dd-ref">dd
+                    <span class="superscript">8</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#devrandom-ref">/dev/random
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#devurandom-ref">/dev/urandom
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#generar-entropia-ref">generar entropía
+                    <span class="superscript">2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#mac-aleatoria-ref">mac aleatoria
+                    <span class="superscript">2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#makepasswd-ref">makepasswd
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#md5sum-ref">md5sum
+                    <span class="superscript">5</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#mkpasswd-ref">mkpasswd
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#od-ref">od
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#openssl-ref">openssl
+                    <span class="superscript">4</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#procinterrupts-ref">/proc/interrupts
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#pwgen-ref">pwgen
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#rng-tools-ref">rng-tools
+                    <span class="superscript">2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#sha1sum-ref">sha1sum
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#sha224sum-ref">sha224sum
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#sha256sum-ref">sha256sum
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#sha384sum-ref">sha384sum
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#sha512sum-ref">sha512sum
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#shuf-ref">shuf
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#strings-ref">strings
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#tr-ref">tr
+                    <span class="superscript">3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#xxd-ref">xxd
+                    <span class="superscript">1</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2020 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="https://karpoke.ignaciocano.com/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

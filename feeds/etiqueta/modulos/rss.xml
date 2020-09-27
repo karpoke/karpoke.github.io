@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - módulos</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 22 Jul 2011 02:45:00 +0200</lastBuildDate><item><title>Instalar módulos de CPAN usando CPAN</title><link>https://karpoke.ignaciocano.com/2011/07/22/instalar-modulos-de-cpan-usando-cpan/</link><description>&lt;p&gt;Una de las razones para querer instalar módulos del repositorio CPAN de
+Perl utilizando, a su vez, el módulo &lt;code&gt;cpan&lt;/code&gt;, es que los módulos están
+más actualizados que en los paquetes de los repositorios. Para
+conseguirlo, podemos seguir los siguientes pasos&lt;/p&gt;
+&lt;p&gt;Necesitamos tener instalado el paquete &lt;code&gt;build-essential&lt;/code&gt;. Lanzamos la
+consola …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 22 Jul 2011 02:45:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-07-22:/2011/07/22/instalar-modulos-de-cpan-usando-cpan/</guid><category>aptitude</category><category>cpan</category><category>local::lib</category><category>módulos</category><category>perl</category></item></channel></rss>
