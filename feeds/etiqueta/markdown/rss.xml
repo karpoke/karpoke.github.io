@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - markdown</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 20 May 2012 13:54:00 +0200</lastBuildDate><item><title>vimrepress, publicar en WordPress desde vim</title><link>https://karpoke.ignaciocano.com/2012/05/20/vimrepress-publicar-en-wordpress-desde-vim/</link><description>&lt;p&gt;&lt;a href="http://www.vim.org/scripts/download_script.php?src_id=16490" title="vimrepress"&gt;vimrepress&lt;/a&gt; es un complemento para trabajar con WordPress. Esta mañana
+he leído sobre él en el blog de CyberHades y me han entrado ganas de
+probarlo.&lt;/p&gt;
+&lt;h2&gt;Instalación&lt;/h2&gt;
+&lt;p&gt;Para que funcione, además de instalar el complemento deberemos activar el
+servicio XML-RPC en WordPress para publicar de forma remota. Para
+activarlo vamos …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 20 May 2012 13:54:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-05-20:/2012/05/20/vimrepress-publicar-en-wordpress-desde-vim/</guid><category>markdown</category><category>python</category><category>vim</category><category>wordpress</category></item></channel></rss>

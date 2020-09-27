@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - permutación</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 29 Mar 2011 20:00:00 +0200</lastBuildDate><item><title>Desordenando listas en Python</title><link>https://karpoke.ignaciocano.com/2011/03/29/desordenando-listas-en-python/</link><description>&lt;p&gt;Si tenemos una lista de elementos, por ejemplo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; l = [ 2, 3, 5, 7, 11, 13, 17, 19 ]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img alt="Deck Card Shuffler" src="https://karpoke.ignaciocano.com/images/deck_card_shuffler-300x213.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Y queremos desordenarla, pero con la condición de que ningún elemento
+ocupe la misma posición que ocupaba originalmente, podemos aplicar el
+&lt;a href="http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#Sattolo.27s_algorithm" title="algoritmo de Sottolo"&gt;algoritmo de Sottolo&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; from random import randrange
+&amp;gt;&amp;gt;&amp;gt; def sattoloCycle(items):
+...     i = len …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 29 Mar 2011 20:00:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-29:/2011/03/29/desordenando-listas-en-python/</guid><category>algoritmo de Sattolo</category><category>intercambio de valores</category><category>permutación</category><category>python</category><category>shuffle</category></item></channel></rss>

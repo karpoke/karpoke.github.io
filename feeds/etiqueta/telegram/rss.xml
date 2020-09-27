@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - telegram</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 31 May 2014 13:27:00 +0200</lastBuildDate><item><title>Enviar y reicibir notificaciones de Telegram desde la línea de comandos</title><link>https://karpoke.ignaciocano.com/2014/05/31/enviar-y-reicibir-notificaciones-de-telegram-desde-la-linea-de-comandos/</link><description>&lt;p&gt;Utilizando &lt;a href="http://github.com/vysheng/tg" title="tg"&gt;tg&lt;/a&gt;, podemos enviar y recibir mensajes de nuestros
+contactos en Telegram, incluyéndonos a nosotros mismos, desde el
+terminal.&lt;/p&gt;
+&lt;h2&gt;Envíos programados&lt;/h2&gt;
+&lt;p&gt;Combinándolo con &lt;code&gt;expect&lt;/code&gt;, conseguiremos una forma sencilla de programar
+notificaciones.&lt;/p&gt;
+&lt;p&gt;He aquí un pequeño ejemplo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/env bash
+
+function tg {
+    # First argument, if any, must be the receiver …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 31 May 2014 13:27:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-05-31:/2014/05/31/enviar-y-reicibir-notificaciones-de-telegram-desde-la-linea-de-comandos/</guid><category>alias</category><category>awk</category><category>expect</category><category>LUA</category><category>notify-send</category><category>script</category><category>telegram</category><category>tg</category></item></channel></rss>

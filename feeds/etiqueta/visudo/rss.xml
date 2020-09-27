@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - visudo</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 22 Jun 2012 20:41:00 +0200</lastBuildDate><item><title>Arch en Raspberry Pi</title><link>https://karpoke.ignaciocano.com/2012/06/22/arch-en-raspberry-pi/</link><description>&lt;p&gt;Después de haber estado usando la &lt;a href="https://karpoke.ignaciocano.com/2012/06/21/raspberry-pi/" title="Raspberry Pi"&gt;Raspberry Pi con Debian&lt;/a&gt;, he
+querido probar otras distribuciones, en este caso Arch.&lt;/p&gt;
+&lt;p&gt;Desde la página de &lt;a href="http://www.raspberrypi.org/downloads" title="descargas"&gt;descargas&lt;/a&gt;, nos bajamos el torrent, así no
+sobrecargamos el servidor.&lt;/p&gt;
+&lt;h2&gt;Crear una copia de la tarjeta SD&lt;/h2&gt;
+&lt;p&gt;He estado unos días trasteando con Debian, ya sabéis, modificando …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 22 Jun 2012 20:41:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-06-22:/2012/06/22/arch-en-raspberry-pi/</guid><category>arch</category><category>autocompletado</category><category>byobu</category><category>copia de seguridad</category><category>dd</category><category>pacman</category><category>pbzip2</category><category>raspberry pi</category><category>sudo</category><category>sudoers</category><category>tarjeta SD</category><category>visudo</category></item><item><title>sudo vacilón</title><link>https://karpoke.ignaciocano.com/2011/08/04/sudo-vacilon/</link><description>&lt;pre&gt;&lt;code&gt;$ sudo passwd
+[sudo] password for user:
+Are you on drugs?
+[sudo] password for user:
+Maybe if you used more than just two fingers...
+[sudo] password for user:
+I’ve seen penguins that can type better than that.
+sudo: 3 incorrect password attempts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si te gustaría recibir un piropo cada vez …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 04 Aug 2011 13:32:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-08-04:/2011/08/04/sudo-vacilon/</guid><category>sudo</category><category>sudo rm -fr</category><category>visudo</category></item></channel></rss>

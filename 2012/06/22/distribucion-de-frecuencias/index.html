@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+        <meta name="author" content="Nacho Cano" />
+
+        <meta name="description" content="Distribución de los comandos más utilizados Una de esas combinaciones de comandos curiosas es aquella que nos devuelve un listado de los comandos más utilizados ordenados por frecuencia, en este caso limitado a los más frecuentes: $ history | awk &#39;{a[$2]++} END {for (i in a) { print a[i] &#34; &#34; i }}&#39; | sort …
+" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="distribución de frecuencias, distribución estadística, history, lenguaje, python, quijote, R, dev, " />
+
+<meta property="og:title" content="Distribución de frecuencias "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2012/06/22/distribucion-de-frecuencias/" />
+<meta property="og:description" content="Distribución de los comandos más utilizados Una de esas combinaciones de comandos curiosas es aquella que nos devuelve un listado de los comandos más utilizados ordenados por frecuencia, en este caso limitado a los más frecuentes: $ history | awk &#39;{a[$2]++} END {for (i in a) { print a[i] &#34; &#34; i }}&#39; | sort …" />
+<meta property="og:site_name" content="Karpoke - Just another Pelican blog" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2012-06-22T00:53:00+02:00" />
+<meta name="twitter:title" content="Distribución de frecuencias ">
+<meta name="twitter:description" content="Distribución de los comandos más utilizados Una de esas combinaciones de comandos curiosas es aquella que nos devuelve un listado de los comandos más utilizados ordenados por frecuencia, en este caso limitado a los más frecuentes: $ history | awk &#39;{a[$2]++} END {for (i in a) { print a[i] &#34; &#34; i }}&#39; | sort …">
+
+        <title>Distribución de frecuencias  · Karpoke - Just another Pelican blog
+</title>
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke - Just another Pelican blog</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2012/06/22/distribucion-de-frecuencias/">
+                Distribución de frecuencias
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <h2>Distribución de los comandos más utilizados</h2>
+<p>Una de esas combinaciones de comandos curiosas es aquella que nos
+devuelve un listado de los <a href="http://www.commandlinefu.com/commands/view/604/list-of-commands-you-use-most-often" title="comandos más utilizados">comandos más utilizados</a> ordenados por
+frecuencia, en este caso limitado a los más frecuentes:</p>
+<pre><code>$ history | awk '{a[$2]++} END {for (i in a) { print a[i] " " i }}' | sort -rn | head
+62 cd
+50 sudo
+45 vim
+39 ls
+32 ssh
+25 wget
+23 memento.sh
+23 cat
+9 curl
+9 man
+</code></pre>
+<p>A partir de estos datos, podemos obtener una <a href="http://bayesianbiologist.com/2012/06/01/distribution-of-oft-used-bash-commands/" title="distribución de su frecuencia de uso">distribución de su
+frecuencia de uso</a> en relación al número total de comandos diferentes
+utilizando el paquete estadístico R:</p>
+<pre><code>$ history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn &gt; cmd_hist.txt
+$ R --no-save &lt;&lt; EOF
+jpeg('cmd_hist.jpg')
+cmd&lt;-read.table('cmd_hist.txt')
+par(cex=1.2)
+plot(log(1:length(cmd[,1])),log(cmd[,1]),
+pch=20,
+xlab='log(Rank)',
+ylab='log(frequency)')
+fit&lt;-lm(log(cmd[,1])~log(1:length(cmd[,1])))
+abline(fit,lty=2)
+EOF
+</code></pre>
+<p>Esta es la imagen resultante:</p>
+<p><img alt="rplot" src="https://karpoke.ignaciocano.com/images/rplot-300x300.jpg" /></p>
+<p>Se cumple que un reducido número de comandos se repiten la mayoría de
+las veces.</p>
+<p>En particular, aunque el historial en este caso contiene 500 entradas,
+para los comandos más utilizados sólo se han utilizado unos 90 comandos
+diferentes:</p>
+<pre><code>$ echo $HISTSIZE
+500
+$ history | wc -l
+500
+$ history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | wc -l
+87
+</code></pre>
+<p>La diferencia estriba en que hay comandos que se utilizan repetidamente
+pero con diferentes argumentos.</p>
+<h2>Distribución de la longitud del nombre de los comandos</h2>
+<p>De la misma manera que se calcula la distribución de la frecuencia de
+los comandos más utilizados, podemos calcular la distribución de la
+longitud de los comandos disponibles.</p>
+<p>Si estamos en el terminal, en una línea nueva, sin haber escrito nada, y
+pulsamos dos veces el tabulador (ejecutamos el autocompletado), nos
+preguntara si queremos mostrar todas las posibilidades. Algo así:</p>
+<pre><code>$ [TAB][TAB]
+Display all 6472 possibilities? (y or n)
+</code></pre>
+<p>Estas posibilidades son cada uno de los programas incluidos en el <em>path</em>
+del sistema, así como comandos propios del <em>shell</em> o alias que hayamos
+definido. Si nos fijamos únicamente en los programas a lo que se puede
+acceder desde el <em>path</em>:</p>
+<pre><code>$ for p in $(sed 's/:/\n/g' &lt;&lt;&lt; $PATH); do
+     for cmd in $(find $p -maxdepth 1 -executable -printf '%p\n'); do
+        # remove prefix
+        cmd=${cmd##*/}
+        echo "${#cmd} $cmd"
+     done
+  done | sort -rn &gt; cmd_len.txt
+$ wc -l cmd_len.txt
+5838 cmd_len.txt
+</code></pre>
+<p>Si queremos obtener la distribución de la longitud de sus nombres,
+podemos ejecutar:</p>
+<pre><code>$ R --no-save &lt;&lt; EOF
+jpeg('cmd_len.jpg')
+cmd&lt;-read.table('cmd_len.txt')
+par(cex=1.2)
+plot(log(1:length(cmd[,1])),log(cmd[,1]),
+pch=20,
+xlab='log(length)',
+ylab='log(frequency)')
+fit&lt;-lm(log(cmd[,1])~log(1:length(cmd[,1])))
+abline(fit,lty=2)
+EOF
+</code></pre>
+<p>Este es el resultado:</p>
+<p><img alt="cmd len" src="https://karpoke.ignaciocano.com/images/cmd_len-300x300.jpg" /></p>
+<p>Aquí la pendiente de la curva no es tan acusada, es decir, aunque la
+mayoría de los comandos tienen nombres cortos y la frecuencia decrece a
+medida que aumenta la longitud, esta variación se produce de forma
+paulatina hasta el final, donde ya sí cae en picado. Esto no ocurre con
+los lenguajes humanos, por lo que debe haber una explicación; y quizá
+tenga que ver con el autocompletado. Gracias a éste, no importa tanto la
+longitud de un comando sino el número de pulsaciones necesarias para
+poder identificarlo de forma única y poder así completar su nombre con
+una pulsación de tabulador. También hay otros comandos que serán
+ejecutados mediante un <em>click</em> de ratón. Por esto, podría ser que se
+priorice claridad y legibilidad sobre longitud en los nombres de los
+comandos.</p>
+<h2>Distribución de palabras</h2>
+<p>Tras haber visto la distribución de la frecuencia de los comandos más
+utilizados y la distribución de la frecuencia de la longitud de los
+comandos disponibles, podemos calcular la distribución de la frecuencia
+de las palabras de un texto.</p>
+<p>El texto que voy a utilizar es la <a href="http://tldp.org/LDP/abs/html/abs-guide.html" title="Advanced Bash-Scripting Guide">Advanced Bash-Scripting Guide</a>.</p>
+<pre><code>$ lynx -dump http://tldp.org/LDP/abs/html/abs-guide.html &gt; abs-guide.txt
+</code></pre>
+<p>Separaremos las palabras del texto, convertiremos las palabras a
+minúsculas, eliminaremos los signos de puntuación, las ordenaremos y las
+contaremos con el siguiente <em>script</em> en Python, <code>word-frequency.py</code>:</p>
+<pre><code>#!/usr/bin/env python
+# encoding: utf-8
+
+import re
+import sys
+from string import punctuation
+
+def main(filename):
+   word_freq = {}
+   word_list = []
+
+   try:
+      # After the statement is executed, the file f is always closed,
+      # even if a problem was encountered while processing the lines.
+      with open(filename) as f:
+         word_list = re.split('\s+', file(filename).read().lower())
+   except IOError as e:
+      print "I/O error({0}): {1}".format(e.errno, e.strerror)
+   except:
+      print "Unexpected error:", sys.exc_info()[0]
+      raise
+
+   for word in word_list:
+      word = word.translate(None, string.punctuation)
+      if len(word):
+         word_freq[word] = word_freq.get(word,0) + 1
+
+   freq_list = [(val, key) for key, val in word_freq.items()]
+   freq_list.sort(reverse=True)
+   for freq, word in reverse(freq_list):
+      print freq, word
+
+def usage():
+   print "Usage:", sys.argv[0], " "
+
+if __name__ == "__main__":
+   if len(sys.argv) &lt; 2:
+      usage()
+   else:
+      main(sys.argv[1])
+</code></pre>
+<p>Creamos el archivo con el número de apariciones de cada palabra:</p>
+<pre><code>$ python word-frequency.py abs-guide.txt &gt; word_freq.txt
+$ wc -l word_freq.txt
+26895 word_freq.txt
+$ head word_freq.txt
+7163 the
+5448 a
+4423 echo
+3836 of
+3805 to
+2555 in
+2511 is
+2273 and
+1794 this
+1776 for
+</code></pre>
+<p>Una vez más, recurrimos a R para generar la gráfica de la distribución:</p>
+<pre><code>$ R --no-save &lt;&lt; EOF
+jpeg('word_freq.jpg')
+cmd&lt;-read.table('word_freq.txt')
+par(cex=1.2)
+plot(log(1:length(cmd[,1])),log(cmd[,1]),
+pch=20,
+xlab='log(Rank)',
+ylab='log(frequency)')
+fit&lt;-lm(log(cmd[,1])~log(1:length(cmd[,1])))
+abline(fit,lty=2)
+EOF
+</code></pre>
+<p>Este es el resultado:</p>
+<p><img alt="word len" src="https://karpoke.ignaciocano.com/images/word_len-300x300.jpg" title="word_len" /></p>
+<p>Aquí la curva es diferente al caso anterior, conforme aumenta el número
+de palabras distintas decrece su frecuencia de uso. Sin embargo, el
+texto escogido es un texto escrito en ingles, un texto técnico con
+ejemplos de código, por lo que tampoco podemos sacar conclusiones sobre
+el uso del lenguaje, o al menos no en su uso más amplio.</p>
+<p>Para terminar, esta es la distribución que obtenemos del <a href="http://www.gutenberg.org/cache/epub/2000/pg2000.txt" title="Quijote">Quijote</a>:</p>
+<pre><code>$ wget http://www.gutenberg.org/cache/epub/2000/pg2000.txt -O quijote-pg2000.txt
+$ python word-length.py Descargas/quijote-pg2000.txt &gt; quijote_freq.txt
+$ wc -l quijote_freq.txt
+23059 quijote_freq.txt
+$ head quijote_freq.txt
+20626 que
+18216 de
+18188 y
+10363 la
+9880 a
+8241 en
+8210 el
+6345 no
+4748 los
+4707 se
+
+$ R --no-save &lt;&lt; EOF
+jpeg('quijote_freq.jpg')
+cmd&lt;-read.table('quijote_freq.txt')
+par(cex=1.2)
+plot(log(1:length(cmd[,1])),log(cmd[,1]),
+pch=20,
+xlab='log(Rank)',
+ylab='log(frequency)')
+fit&lt;-lm(log(cmd[,1])~log(1:length(cmd[,1])))
+abline(fit,lty=2)
+EOF
+</code></pre>
+<p><img alt="Quijote Length" src="https://karpoke.ignaciocano.com/images/quijote_len-300x300.jpg" /></p>
+<p>Curiosamente, se parece bastante a la anterior.</p>
+<h2>Referencias</h2>
+<p>» <a href="http://bayesianbiologist.com/2012/06/01/distribution-of-oft-used-bash-commands/" title="distribución de su frecuencia de uso">Distribution of Oft-Used Bash Commands</a>
+» <a href="http://www.gutenberg.org/cache/epub/2000/pg2000.txt" title="Quijote">The Project Gutenberg EBook of Don Quijote</a>
+» <a href="http://tldp.org/LDP/abs/html/abs-guide.html" title="Advanced Bash-Scripting Guide">Advanced Bash-Scripting Guide</a></p>
+
+
+             
+ 
+            
+            
+            
+
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2012/03/16/evitar-el-registro-de-comandos-en-el-historial/" title="Evitar el registro de comandos en el historial">Evitar el registro de comandos en el historial</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/05/20/vimrepress-publicar-en-wordpress-desde-vim/" title="vimrepress, publicar en WordPress desde vim">vimrepress, publicar en WordPress desde vim</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/06/16/anontwi-tweets-cifrados/" title="AnonTwi, tweets cifrados">AnonTwi, tweets cifrados</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2013/06/10/iniciar-sesion-en-dyndns-desde-el-terminal/" title="Iniciar sesión en DynDNS desde el terminal">Iniciar sesión en DynDNS desde el terminal</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2016/12/12/never-write-for-loops-again/" title="Never write for-loops again">Never write for-loops again</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2012/06/21/hphosts-evitando-la-navegacion-por-dominios-maliciosos/" title="Previous: hpHosts, evitando la navegación por dominios maliciosos">hpHosts, evitando la navegación por dominios maliciosos</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2012/06/22/the-linux-graphics-stack/" title="Next: The Linux Graphics Stack">The Linux Graphics Stack</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2012-06-22T00:53:00+02:00">Fri 22 June 2012</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#dev-ref">dev</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#distribucion-de-frecuencias-ref">distribución de frecuencias
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#distribucion-estadistica-ref">distribución estadística
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#history-ref">history
+                    <span class="superscript">2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#lenguaje-ref">lenguaje
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#python-ref">python
+                    <span class="superscript">21</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#quijote-ref">quijote
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#r-ref">R
+                    <span class="superscript">1</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2020 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="https://karpoke.ignaciocano.com/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

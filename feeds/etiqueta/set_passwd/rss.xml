@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - set_passwd</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 16 Feb 2011 14:11:00 +0100</lastBuildDate><item><title>Cambiar la contraseña de administrador en Django 1.2</title><link>https://karpoke.ignaciocano.com/2011/02/16/cambiar-la-contrasena-de-administrador-en-django-1-2/</link><description>&lt;p&gt;A partir de &lt;a href="https://pythonhosted.org/django_simple_feedback/topics/auth.html#changing-passwords" title="Nuevo comando changepassword en Django 1.2"&gt;Django 1.2&lt;/a&gt; se ha añadido el comando
+&lt;code&gt;manage.py changepassword&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./manage.py changepassword ['username']
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si no proporcionamos un nombre de usuario se intentará cambiar el nombre
+de usuario que concuerde con el del usuario que ha iniciado sesión. Este
+comando nos ahorra escribir lo siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; from …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 16 Feb 2011 14:11:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-16:/2011/02/16/cambiar-la-contrasena-de-administrador-en-django-1-2/</guid><category>changepassword</category><category>check_passwd</category><category>django</category><category>manage.py</category><category>set_passwd</category></item></channel></rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - optimización</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 30 Nov 2016 08:34:00 +0100</lastBuildDate><item><title>Writing efficient JavaScript</title><link>https://karpoke.ignaciocano.com/2016/11/30/writing-efficient-javascript/</link><description>&lt;blockquote&gt;
+&lt;p&gt;This entry describes simple techniques to fulfill the JavaScript compiler
+optimization process which results in faster running code. Especially in
+games you immediately notice frame drops and when the garbage collector has
+to hit in with a big stack of work to do.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;» Felix Maier | &lt;a href="https://medium.com/@xilefmai/efficient-javascript-14a11651d563#.k634iq2t7" title="Writing efficient JavaScript"&gt;medium.com&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 30 Nov 2016 08:34:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-11-30:/2016/11/30/writing-efficient-javascript/</guid><category>javascript</category><category>eficiencia</category><category>optimización</category><category>recolector de basura</category></item><item><title>xkcd 1313: Something is Wrong on the Internet!</title><link>https://karpoke.ignaciocano.com/2014/01/07/xkcd-1313-something-is-wrong-on-the-internet/</link><description>&lt;blockquote&gt;
+&lt;p&gt;I found that the rollover text,
+“&lt;code&gt;/bu|[rn]t|[coy]e|[mtg]a|j|iso|n[hl]|[ae]d|lev|sh|[lnd]i|[po]o|ls/&lt;/code&gt; matches
+the last names of elected US presidents but not their opponents.”, is
+obviously false. After all there are several last names (like “Nixon …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 07 Jan 2014 01:41:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-01-07:/2014/01/07/xkcd-1313-something-is-wrong-on-the-internet/</guid><category>expresiones regulares</category><category>optimización</category><category>algoritmos genéticos</category><category>XKCD</category></item><item><title>localepurge</title><link>https://karpoke.ignaciocano.com/2011/05/25/localepurge/</link><description>&lt;p&gt;&lt;code&gt;localepurge&lt;/code&gt; es una herramienta que elimina los archivos de traducción
+que no necesitemos. Después de instalarlo, nos pedirá que &lt;a href="http://www.guia-ubuntu.org/index.php?title=Localepurge" title="seleccionemos qué idiomas queremos conservar"&gt;seleccionemos
+qué idiomas queremos conservar&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;en_US&lt;/li&gt;
+&lt;li&gt;en_US.ISO-8859-15&lt;/li&gt;
+&lt;li&gt;en_US.UTF-8&lt;/li&gt;
+&lt;li&gt;es&lt;/li&gt;
+&lt;li&gt;es_ES&lt;/li&gt;
+&lt;li&gt;es_ES@euro&lt;/li&gt;
+&lt;li&gt;es_ES.UTF-8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Después de instalarlo, lo ejecutamos:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo localepurge
+Total disk space freed by localepurge: 26552 KiB …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 25 May 2011 10:44:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-05-25:/2011/05/25/localepurge/</guid><category>apt</category><category>apt-config</category><category>localepurge</category><category>optimización</category><category>ubuntu</category><category>uso de disco</category></item></channel></rss>

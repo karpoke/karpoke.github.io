@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - dev</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 26 Dec 2015 19:02:00 +0100</lastBuildDate><item><title>«¿De quién es el pez?», resuelto mediante Prolog</title><link>https://karpoke.ignaciocano.com/2015/12/26/de-quien-es-el-pez-resuelto-mediante-prolog/</link><description>&lt;p&gt;Éste es un viejo &lt;a href="http://hipertextual.com/2015/12/acertijo-de-einstein" title="acertijo lógico"&gt;acertijo lógico&lt;/a&gt;, atribuido a Einstein:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;El inglés vive en la casa roja.&lt;/li&gt;
+&lt;li&gt;El sueco tiene perro.&lt;/li&gt;
+&lt;li&gt;El danés toma té.&lt;/li&gt;
+&lt;li&gt;El noruego vive en la primera casa.&lt;/li&gt;
+&lt;li&gt;El Alemán fuma Prince.&lt;/li&gt;
+&lt;li&gt;La casa verde queda inmediatamente a la izquierda de la blanca.&lt;/li&gt;
+&lt;li&gt;El dueño de la …&lt;/li&gt;&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 26 Dec 2015 19:02:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2015-12-26:/2015/12/26/de-quien-es-el-pez-resuelto-mediante-prolog/</guid><category>acertijo lógico</category><category>Einstein</category><category>problemas de matemáticas</category><category>prolog</category><category>swipl</category></item><item><title>Exclusión de URLs cuando usamos django-debug-toolbar</title><link>https://karpoke.ignaciocano.com/2014/05/15/exclusion-de-urls-cuando-usamos-django-debug-toolbar/</link><description>&lt;p&gt;&lt;a href="http://github.com/django-debug-toolbar/django-debug-toolbar" title="django-debug-toolbar"&gt;django-debug-toolbar&lt;/a&gt; es una aplicación para Django que nos muestra
+información de depuración acerca de las diferentes peticiones y
+respuestas que se llevan a cabo en el servidor: variables de contexto,
+cabeceras, peticiones SQL, etc.&lt;/p&gt;
+&lt;p&gt;Sin embargo, hay algunas URLs para las cuales nos puede interesar que no
+se analicen, como …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 15 May 2014 20:10:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-05-15:/2014/05/15/exclusion-de-urls-cuando-usamos-django-debug-toolbar/</guid><category>django</category><category>django-debug-toolbar</category></item><item><title>Utilizando un tema hijo en WordPress</title><link>https://karpoke.ignaciocano.com/2013/07/13/utilizando-un-tema-hijo-en-wordpress/</link><description>&lt;p&gt;Un &lt;a href="http://codex.wordpress.org/Child_Themes" title="tema hijo en WordPress"&gt;tema hijo en WordPress&lt;/a&gt; es un tema que hereda la funcionalidad de
+otro, el tema padre, permitiendo modificar el estilo o añadir
+funcionalidades a éste. Es la forma más sencilla y segura de modificar
+un tema existente, ya sean cambios grandes o pequeños. Si utilizamos un
+tema de otros …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 13 Jul 2013 19:04:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2013-07-13:/2013/07/13/utilizando-un-tema-hijo-en-wordpress/</guid><category>php</category><category>tema hijo</category><category>tema nieto</category><category>wordpress</category></item><item><title>Saltar a una entrada aleatoria en WordPress</title><link>https://karpoke.ignaciocano.com/2012/07/27/saltar-a-una-entrada-aleatoria-en-wordpress/</link><description>&lt;p&gt;Si queremos añadir un enlace que nos permita saltar a una entrada
+aleatoria de un blog en WordPress, basta crear un archivo que contenga
+lo siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+require('wp-blog-header.php');
+query_posts(array('orderby' =&amp;gt; 'rand', 'showposts' =&amp;gt; 1));
+if (have_posts()) : the_post();
+$url = get_permalink($post-&amp;gt;id);
+        header("Location: " . $url);
+endif;
+wp_reset_query();
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Guardamos el …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 27 Jul 2012 00:20:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-07-27:/2012/07/27/saltar-a-una-entrada-aleatoria-en-wordpress/</guid><category>aleatoriedad</category><category>página aleatoria</category><category>php</category><category>wordpress</category></item><item><title>Distribución de frecuencias</title><link>https://karpoke.ignaciocano.com/2012/06/22/distribucion-de-frecuencias/</link><description>&lt;h2&gt;Distribución de los comandos más utilizados&lt;/h2&gt;
+&lt;p&gt;Una de esas combinaciones de comandos curiosas es aquella que nos
+devuelve un listado de los &lt;a href="http://www.commandlinefu.com/commands/view/604/list-of-commands-you-use-most-often" title="comandos más utilizados"&gt;comandos más utilizados&lt;/a&gt; ordenados por
+frecuencia, en este caso limitado a los más frecuentes:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ history | awk '{a[$2]++} END {for (i in a) { print a[i] " " i }}' | sort …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 22 Jun 2012 00:53:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-06-22:/2012/06/22/distribucion-de-frecuencias/</guid><category>distribución de frecuencias</category><category>distribución estadística</category><category>history</category><category>lenguaje</category><category>python</category><category>quijote</category><category>R</category></item><item><title>vimrepress, publicar en WordPress desde vim</title><link>https://karpoke.ignaciocano.com/2012/05/20/vimrepress-publicar-en-wordpress-desde-vim/</link><description>&lt;p&gt;&lt;a href="http://www.vim.org/scripts/download_script.php?src_id=16490" title="vimrepress"&gt;vimrepress&lt;/a&gt; es un complemento para trabajar con WordPress. Esta mañana
+he leído sobre él en el blog de CyberHades y me han entrado ganas de
+probarlo.&lt;/p&gt;
+&lt;h2&gt;Instalación&lt;/h2&gt;
+&lt;p&gt;Para que funcione, además de instalar el complemento deberemos activar el
+servicio XML-RPC en WordPress para publicar de forma remota. Para
+activarlo vamos …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 20 May 2012 13:54:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-05-20:/2012/05/20/vimrepress-publicar-en-wordpress-desde-vim/</guid><category>markdown</category><category>python</category><category>vim</category><category>wordpress</category></item><item><title>Abrir enlaces externos en una ventana nueva en segundo plano usando jQuery</title><link>https://karpoke.ignaciocano.com/2012/05/13/abrir-enlaces-externos-en-una-ventana-nueva-en-segundo-plano-usando-jquery/</link><description>&lt;p&gt;Si queremos que nuestros enlaces se abran en una ventana nueva podemos
+utilizar el atributo &lt;code&gt;target&lt;/code&gt; para las etiquetas &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;. Sin embargo, si
+utilizamos un esquema XHTML Strict este atributo no es válido para
+ninguna etiqueta. El motivo es separar la presentación del contenido del
+comportamiento, y el atributo &lt;code&gt;target …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 13 May 2012 00:58:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-05-13:/2012/05/13/abrir-enlaces-externos-en-una-ventana-nueva-en-segundo-plano-usando-jquery/</guid><category>chromium</category><category>firefox</category><category>javascript</category><category>jQuery</category><category>target</category><category>xhtml strict</category></item><item><title>sed es Turing completo</title><link>https://karpoke.ignaciocano.com/2012/04/22/sed-es-turing-completo/</link><description>&lt;p&gt;¿Cómo puede ser un editor de flujo, una utilidad para el tratamiento de
+texto, un lenguaje Turing completo? &lt;code&gt;sed&lt;/code&gt; permite saltos condiciones e
+incondicionales y utiliza un &lt;em&gt;buffer&lt;/em&gt; temporal, lo que permite
+&lt;a href="http://www.catonmat.net/blog/proof-that-sed-is-turing-complete/" title="construir una máquina de Turing con él"&gt;construir una máquina de Turing con él&lt;/a&gt;, y cualquier lenguaje que
+pueda construir una máquina de Turing es …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 22 Apr 2012 00:32:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-04-22:/2012/04/22/sed-es-turing-completo/</guid><category>máquina de turing</category><category>sed</category><category>turing completo</category></item><item><title>Consultar el buscón de la RAE desde el terminal</title><link>https://karpoke.ignaciocano.com/2012/02/28/consultar-el-buscon-de-la-rae-desde-el-terminal/</link><description>&lt;p&gt;Al realizar consultas al &lt;a href="http://buscon.rae.es/draeI/" title="buscón de la RAE"&gt;buscón de la RAE&lt;/a&gt; desde el terminal, me iba
+muy lento. Ésta es una página que todavía usa marcos (wtf!), por lo que
+si queremos acceder directamente a la página con el resultado de la
+búsqueda deberemos utilizar una de las siguientes URLs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;~~Para el &lt;a href="http://buscon.rae.es/draeI/" title="diccionario de la RAE"&gt;diccionario …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 28 Feb 2012 01:41:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-02-28:/2012/02/28/consultar-el-buscon-de-la-rae-desde-el-terminal/</guid><category>autocompletado</category><category>buscón</category><category>cabeceras</category><category>complete</category><category>completion</category><category>curl</category><category>diccionario</category><category>dig</category><category>drae</category><category>elinks</category><category>host</category><category>html2text</category><category>iso-8859-1</category><category>links</category><category>lynx</category><category>nslookup</category><category>panhispánico</category><category>php5-cli</category><category>rae</category><category>script</category><category>time</category><category>useragent</category><category>utf8</category></item><item><title>Instalación automática de las fuentes para web de Google</title><link>https://karpoke.ignaciocano.com/2011/08/07/instalacion-automatica-de-las-fuentes-para-web-de-google/</link><description>&lt;p&gt;En &lt;a href="http://www.webupd8.org" title="webupd8.org"&gt;webupd8.org&lt;/a&gt; han publicado un &lt;em&gt;script&lt;/em&gt; que permite &lt;a href="http://www.webupd8.org/2011/01/automatically-install-all-google-web.html" title="descargar las fuentes para web de Google"&gt;descargar las
+fuentes para web de Google&lt;/a&gt;, o actualizarlas si ya las habíamos
+descargado.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.google.com/webfonts#AboutPlace:about" title="Google Web Fonts"&gt;Google Web Fonts&lt;/a&gt; es un proyecto que consiste en crear un repositorio
+de fuentes tipográficas de calidad, libres y gratuitas, para que
+cualquiera pueda utilizarlas en sus …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 07 Aug 2011 00:21:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-08-07:/2011/08/07/instalacion-automatica-de-las-fuentes-para-web-de-google/</guid><category>fc-cache</category><category>fontconfig</category><category>fuentes</category><category>google web fonts</category><category>hg</category><category>mercurial</category><category>script</category><category>software libre</category></item></channel></rss>

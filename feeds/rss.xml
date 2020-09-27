@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 26 Dec 2019 16:49:00 +0100</lastBuildDate><item><title>Una sola pregunta para mejorar tu carrera profesional en 2020</title><link>https://karpoke.ignaciocano.com/2019/12/26/una-sola-pregunta-para-mejorar-tu-carrera-profesional-en-2020/</link><description>&lt;blockquote&gt;
+&lt;p&gt;El consultor José Miguel Bolívar (@jmbolivar) clasifica los comportamientos
+productivos en cuatro niveles:
+* Eficacia es prestar atención a las cosas correctas.
+* Eficiencia es prestar la atención correcta a cada cosa.
+* Efectividad es prestar la atención correcta a las cosas correctas.
+* Equilibrio es prestar la atención adecuada a todas las cosas …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 26 Dec 2019 16:49:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2019-12-26:/2019/12/26/una-sola-pregunta-para-mejorar-tu-carrera-profesional-en-2020/</guid></item><item><title>Color Theory and Contrast Ratios</title><link>https://karpoke.ignaciocano.com/2019/12/26/color-theory-and-contrast-ratios/</link><description>&lt;blockquote&gt;
+&lt;p&gt;There are no definites with color. Sure, you have your red, your green, and
+so on — but even that is relative. Try to describe a specific red color to a
+friend. Chances are the description will settle on, for example, is the color
+more of a brick-red or a fire …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 26 Dec 2019 16:31:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2019-12-26:/2019/12/26/color-theory-and-contrast-ratios/</guid></item><item><title>An OAuth 2.0 introduction for beginners</title><link>https://karpoke.ignaciocano.com/2019/12/16/an-oauth-2-0-introduction-for-beginners/</link><description>&lt;blockquote&gt;
+&lt;p&gt;This article doesn’t want to be the final guide to OAuth 2, but an
+introduction to the flows that this framework is composed of. You’ll have a
+look at the four basic flows and some practical scenarios, to understand the
+involved actors and the detailed behaviors. The goal …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 16 Dec 2019 23:48:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2019-12-16:/2019/12/16/an-oauth-2-0-introduction-for-beginners/</guid></item><item><title>Design Patterns in Python</title><link>https://karpoke.ignaciocano.com/2019/12/16/design-patterns-in-python/</link><description>&lt;blockquote&gt;
+&lt;p&gt;Traditionally, design patterns have been classified into three main
+categories: Creational, Structural, and Behavioral. There are other
+categories, like architectural or concurrency patterns, but they're beyond
+the scope of this article.
+There are also Python-specific design patterns that are created specifically
+around the problems that the structure of the language …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 16 Dec 2019 23:44:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2019-12-16:/2019/12/16/design-patterns-in-python/</guid></item><item><title>Now You See It: Understanding Display</title><link>https://karpoke.ignaciocano.com/2019/12/16/now-you-see-it-understanding-display/</link><description>&lt;blockquote&gt;
+&lt;p&gt;CSS Layout is all about boxes. We know that some boxes are blocks, and others
+are inline, and we can change the display type of elements by changing the
+value of the display property. That property holds the key to much more than
+this, however. It is the foundation on …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 16 Dec 2019 23:29:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2019-12-16:/2019/12/16/now-you-see-it-understanding-display/</guid></item><item><title>Más allá de GRUB</title><link>https://karpoke.ignaciocano.com/2019/11/23/mas-alla-de-grub.md/</link><description>&lt;blockquote&gt;
+&lt;p&gt;GRUB (Grand Unified Bootloader) es un gestor de arranque disponible del
+proyecto GNU. Un gestor de arranque es muy importante ya que es imposible
+iniciar un sistema operativo sin él. Es el primer programa que se inicia
+cuando se enciende el ordenador. El cargador de arranque transfiere el
+control al …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 23 Nov 2019 12:57:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2019-11-23:/2019/11/23/mas-alla-de-grub.md/</guid></item><item><title>Linux VS open source UNIX</title><link>https://karpoke.ignaciocano.com/2019/11/23/linux-vs-open-source-unix/</link><description>&lt;blockquote&gt;
+&lt;p&gt;This is mainstream opinion. Linux is better than anything else and money is
+poured in constantly, more than in other platforms. And aside this is not
+true, this is not based in facts but on feelings. Most GNU/Linux
+distributions are very average on many aspects. The fact they run …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 23 Nov 2019 12:15:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2019-11-23:/2019/11/23/linux-vs-open-source-unix/</guid></item><item><title>130+ Essential Vim Commands</title><link>https://karpoke.ignaciocano.com/2019/11/23/130-vim-essential-vim-commands.md/</link><description>&lt;blockquote&gt;
+&lt;p&gt;Since the 1970’s, Vi and its successor Vim have been included by default on
+many operating systems, including almost all GNU/Linux distributions. Vim is
+free and open-source and is one of the most popular code editors. It can be
+downloaded on Vim official site.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;» Jean-Baptiste Jung | &lt;a href="https://catswhocode.com/vim-commands/" title="130+ Essential Vim Commands"&gt;catswhocode.com …&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 23 Nov 2019 12:12:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2019-11-23:/2019/11/23/130-vim-essential-vim-commands.md/</guid></item><item><title>PC Keyboard: The First Five Years</title><link>https://karpoke.ignaciocano.com/2019/10/27/pc-keyboard-the-first-five-years/</link><description>&lt;blockquote&gt;
+&lt;p&gt;The vast majority of PC users today have no memory of what PC keyboards
+looked like before the standard 101/102-key layout arrived, even though
+various OEMs do their best to mangle the standard layout in order to minimize
+usability, especially on laptops. OEM-specific modifications aside, the basic
+layout of …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 27 Oct 2019 16:20:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2019-10-27:/2019/10/27/pc-keyboard-the-first-five-years/</guid></item><item><title>10 Data Structure &amp; Algorithms Books Every Programmer Should Read</title><link>https://karpoke.ignaciocano.com/2019/06/21/10-data-structure-amp-algorithms-books-every-programmer-should-read/</link><description>&lt;blockquote&gt;
+&lt;p&gt;A collection of awesome Algorithms books which should find a place in every
+programmer’s book self. Includes language specific books in Java, Python,
+and JavaScript for easy learning. Algorithms are language agnostic and any
+programmer worth their salt should be able to convert them to code in their
+programming …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 21 Jun 2019 15:11:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2019-06-21:/2019/06/21/10-data-structure-amp-algorithms-books-every-programmer-should-read/</guid></item></channel></rss>

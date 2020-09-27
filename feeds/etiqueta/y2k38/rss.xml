@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - y2k38</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 27 Oct 2010 12:55:00 +0200</lastBuildDate><item><title>y2k38</title><link>https://karpoke.ignaciocano.com/2010/10/27/y2k38/</link><description>&lt;p&gt;&lt;img alt="Nuke mushroom" src="https://karpoke.ignaciocano.com/images/nuke_mushroom-300x165.jpg" /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ grep INT_MAX /usr/include/limits.h
+#  define INT_MAX   2147483647
+$ date -u -d @2147483647
+mar ene 19 03:14:07 UTC 2038
+$ date -d @2147483647
+mar ene 19 04:14:07 CET 2038
+$ date -u -d @2147483648
+date: fecha ``@2147483648'' inválida
+&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 27 Oct 2010 12:55:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-10-27:/2010/10/27/y2k38/</guid><category>cuarta dimensión</category><category>date</category><category>y2k38</category></item><item><title>De aquí al 2038</title><link>https://karpoke.ignaciocano.com/2010/10/07/de-aqui-al-2038/</link><description>&lt;p&gt;Como bien dice el agente Smith, es cuestión de contrastar un poco.
+&lt;a href="http://rinzewind.org/archives/2010/10/07/5-viernes-5-sabados-5-domingos/" title="Octubres"&gt;Octubres&lt;/a&gt; con 5 viernes, 5 sábados y 5 domingos, de aquí al &lt;a href="http://es.wikipedia.org/wiki/Problema_del_a%C3%B1o_2038" title="2038"&gt;2038&lt;/a&gt;,
+si es que llegamos:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ for ((i=2011; i &amp;lt; 2039; i++)); do cal 10 $i; done |
+grep -B2 -A4  "             1  2  3"
+
+    Octubre 2021
+lu ma …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 07 Oct 2010 13:27:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-10-07:/2010/10/07/de-aqui-al-2038/</guid><category>cadenas</category><category>cal</category><category>y2k38</category></item></channel></rss>

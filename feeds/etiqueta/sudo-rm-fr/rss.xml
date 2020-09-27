@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - sudo rm -fr</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 04 Aug 2011 13:32:00 +0200</lastBuildDate><item><title>sudo vacilón</title><link>https://karpoke.ignaciocano.com/2011/08/04/sudo-vacilon/</link><description>&lt;pre&gt;&lt;code&gt;$ sudo passwd
+[sudo] password for user:
+Are you on drugs?
+[sudo] password for user:
+Maybe if you used more than just two fingers...
+[sudo] password for user:
+I’ve seen penguins that can type better than that.
+sudo: 3 incorrect password attempts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si te gustaría recibir un piropo cada vez …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 04 Aug 2011 13:32:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-08-04:/2011/08/04/sudo-vacilon/</guid><category>sudo</category><category>sudo rm -fr</category><category>visudo</category></item><item><title>With great power comes great responsibility</title><link>https://karpoke.ignaciocano.com/2011/03/07/with-great-power-comes-great-responsibility/</link><description>&lt;p&gt;Cuando ejecutamos &lt;code&gt;sudo&lt;/code&gt; por primera vez nos dice:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+#1) Respect the privacy of others.
+#2) Think before you type.
+#3) With great power comes great responsibility.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Trust... &lt;em&gt;my ass …&lt;/em&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 07 Mar 2011 22:40:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-07:/2011/03/07/with-great-power-comes-great-responsibility/</guid><category>sudo</category><category>sudo rm -fr</category></item></channel></rss>

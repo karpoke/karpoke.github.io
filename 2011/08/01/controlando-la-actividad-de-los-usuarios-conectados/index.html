@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+        <meta name="author" content="Nacho Cano" />
+
+        <meta name="description" content="Podemos utilizar varios comandos para saber qué usuarios están conectados al sistema, desde cuando y qué están haciendo. También podemos saber cuando se han conectado anteriormente. También podríamos interactuar con los usuarios, enviarles mensajes, matarles procesos, echarlos del sistema, etc, pero ahora nos vamos a centrar en saber cuando entran …
+" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="bofh, byobu, DISPLAY, finger, fingerprint, id, last, lastlog, screen, tac, terminales virtuales, w, whatch, who, whoami, whowatch, admin, " />
+
+<meta property="og:title" content="Controlando la actividad de los usuarios conectados "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2011/08/01/controlando-la-actividad-de-los-usuarios-conectados/" />
+<meta property="og:description" content="Podemos utilizar varios comandos para saber qué usuarios están conectados al sistema, desde cuando y qué están haciendo. También podemos saber cuando se han conectado anteriormente. También podríamos interactuar con los usuarios, enviarles mensajes, matarles procesos, echarlos del sistema, etc, pero ahora nos vamos a centrar en saber cuando entran …" />
+<meta property="og:site_name" content="Karpoke - Just another Pelican blog" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2011-08-01T12:51:00+02:00" />
+<meta name="twitter:title" content="Controlando la actividad de los usuarios conectados ">
+<meta name="twitter:description" content="Podemos utilizar varios comandos para saber qué usuarios están conectados al sistema, desde cuando y qué están haciendo. También podemos saber cuando se han conectado anteriormente. También podríamos interactuar con los usuarios, enviarles mensajes, matarles procesos, echarlos del sistema, etc, pero ahora nos vamos a centrar en saber cuando entran …">
+
+        <title>Controlando la actividad de los usuarios conectados  · Karpoke - Just another Pelican blog
+</title>
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke - Just another Pelican blog</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2011/08/01/controlando-la-actividad-de-los-usuarios-conectados/">
+                Controlando la actividad de los usuarios conectados
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p>Podemos utilizar varios comandos para saber qué <a href="https://karpoke.ignaciocano.com/2010/10/22/la-guardiana-de-la-puerta/" title="recibir un aviso cuando un usuario se conecta">usuarios están
+conectados al sistema</a>, desde cuando y qué están haciendo. También
+podemos saber cuando se han conectado anteriormente.</p>
+<p>También podríamos interactuar con los usuarios, enviarles mensajes,
+matarles procesos, echarlos del sistema, etc, pero ahora nos vamos a
+centrar en saber cuando entran, cuando salen y qué están haciendo.</p>
+<h2><code>w</code></h2>
+<p>Con <code>w</code> podemos saber que usuarios están conectados ahora mismo y que
+procesos están ejecutando.</p>
+<pre><code>$ w
+ 11:54:16 up  4:04,  3 users,  load average: 0,34, 0,12, 0,12
+USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT
+karpoke  tty1                      08:58    9.00s  0.62s  0.50s -bash
+karpoke  tty7     :0               07:51    3:04m  7:08   0.28s gnome-session --session=2d-gnome
+karpoke  pts/0    :0.0             07:51   54.00s  1.18s  0.69s ssh 192.168.50.2
+karpoke  pts/1    :0.0             08:14    0.00s  1.67s  0.00s w
+karpoke  pts/2    192.168.50.10:S. 08:27    0.00s  0.53s  0.00s /bin/bash
+karpoke  pts/3    192.168.50.10:S. 08:42    3:19   0.28s  0.28s /bin/bash
+</code></pre>
+<p>En la cabecera muestra la hora actual, el tiempo que lleva encendida la
+máquina, el número de usuarios en el sistema y la carga media del último
+minuto, los últimos 5 minutos y los últimos 15 minutos. Después, para
+cada conexión de usuario, muestra el nombre de usuario, el terminal al
+que está conectado, la máquina remota, el tiempo que hace que está
+conectado, el tiempo que ha estado sin hacer nada, el tiempo usado por
+los procesos en ejecución, incluyendo procesos en segundo plano, y el
+tiempo utilizado por el proceso en ejecución, que es el que aparece en
+la última columna.</p>
+<p>El terminal al que está conectado el usuario puede ser:</p>
+<ul>
+<li>un terminal en modo texto, como <code>tty1</code>. Desde la sesión gráfica
+    podemos cambiar a este tipo de terminal utilizando la combinación de
+    teclas <code>Ctrl+Alt+F&lt;1-6&gt;</code></li>
+<li>una terminal gráfico, como <code>tty7</code>. Es el terminal por defecto cuando
+    iniciamos sesión en Gnome o KDE</li>
+<li>un emulador de terminal, como <code>pts/0</code>. Cuando nos conectamos usando
+    <code>gnome-terminal</code>, por ejemplo.</li>
+</ul>
+<p>Cuando el usuario se conecta desde la propia máquina, en la columna
+correspondiente a la máquina desde la cual se conecta el usuario aparece
+el contenido de <a href="http://linux-faq.blogspot.com/2008/05/display-variable.html" title="la variable DISPLAY">la variable DISPLAY</a>, si es que está definida. Esta
+variable está controlada por el servidor de las X y consiste en un
+nombre de <em>host</em>, que no aparece cuando se refiere a la propia máquina,
+seguido de dos puntos ":" y un número de secuencia, que suele ser 0 pero
+puede variar si hay varias sesiones gráficas conectadas a la misma
+máquina. Si continua con un punto seguido de un número, se refiere al
+número de pantalla dentro de la misma sesión gráfica.</p>
+<p>En el último caso, cuando aparece una IP seguida de dos puntos y una S,
+quiere decir que el usuario está utilizando <code>screen</code> (o, como en este
+caso, <code>byobu</code>). En este caso, la longitud de la IP corta el contenido,
+ya que después de la S viene una secuencia que indica cada una de las
+"ventanas" abiertas con <code>screen</code>, por ejemplo: <code>192.168.50.10:S.1</code>.</p>
+<p>Podemos <a href="http://usuariodebian.blogspot.com/2007/08/varias-sesiones-la-misma-vez.html" title="iniciar otra sesión gráfica">iniciar otra sesión gráfica</a> ejecutando en un terminal,
+debemos ir a un terminal en modo texto libre, por ejemplo, <code>tty1</code>,
+pulsando <code>Ctrl+Alt+F1</code>, iniciamos sesión, y ejecutamos:</p>
+<pre><code>$ startx -- :1 # importante: hay un espacio antes y después de los dos guiones
+</code></pre>
+<p>Para acceder a esta nueva sesión gráfica, pulsamos <code>Ctrl+Alt+F8</code>.</p>
+<p>Sólo puede haber una sesión gráfica por terminal, por lo que si
+quisiéramos una más, deberíamos ir <code>tty2</code>, pulsando <code>Ctrl+Alt+F2</code>, y
+ejecutar:</p>
+<pre><code>$ startx -- :2
+</code></pre>
+<p>Para acceder a esta sesión gráfica, pulsamos <code>Ctrl+Alt+F9</code>.</p>
+<h2><code>who</code></h2>
+<p>Con <code>who</code> también podemos saber quién está conectado.</p>
+<pre><code>$ who -a
+           Sistema de arranque 2011-07-27 07:50
+           `run-level' 2 2011-07-27 07:50
+LOGIN      tty4         2011-07-27 07:50              1250 id=4
+LOGIN      tty5         2011-07-27 07:50              1254 id=5
+LOGIN      tty2         2011-07-27 07:50              1288 id=2
+LOGIN      tty3         2011-07-27 07:50              1289 id=3
+LOGIN      tty6         2011-07-27 07:50              1291 id=6
+karpoke  - tty1         2011-07-27 11:58 00:19       14171
+karpoke  + tty7         2011-07-27 07:51  antig       3723 (:0)
+karpoke  + pts/0        2011-07-27 07:51 00:01        5965 (:0.0)
+karpoke  + pts/1        2011-07-27 08:14   .          5965 (:0.0)
+           pts/2        2011-07-27 11:07                 0 id=/2    term=0 salida=0
+</code></pre>
+<p>Nos muestra la fecha y hora del último arranque del sistema y el nivel
+de ejecución. Después, en la primera columna, muestra los procesos de
+<em>login</em>, marcados con la palabra LOGIN, los usuarios que han iniciado
+sesión y, si no aparece nada, se refiere a los procesos muertos, por
+ejemplo, si abrimos un terminal y lo cerramos. También muestra el PID
+del proceso en ejecución y la máquina remota o el DISPLAY
+correspondiente.</p>
+<p>El comando tiene varias opciones para mostrar esta información por
+partes, por ejemplo, el número de usuarios conectados:</p>
+<pre><code>$ who -q
+karpoke karpoke karpoke karpoke
+# usuarios=4
+</code></pre>
+<h2><code>whoami</code></h2>
+<p>Con <code>whoami</code> podemos saber, <a href="https://karpoke.ignaciocano.com/2011/04/19/true/" title="No hay nada como hacer sólo una cosa, pero hacerla bien...">única y exclusivamente</a>, cual es nuestro
+usuario:</p>
+<pre><code>$ whoami
+karpoke
+</code></pre>
+<p>Es equivalente a ejecutar:</p>
+<pre><code>$ id -un
+</code></pre>
+<h2><code>id</code></h2>
+<p><code>id</code> muestra información de los identificadores de usuarios y grupos:</p>
+<pre><code>$ id
+uid=1000(user) gid=1000(user) grupos=1000(user),4(adm),7(lp),20(dialout),24(cdrom),29(audio),44(video),46(plugdev),103(fuse),104(lpadmin),112(netdev),115(admin),120(sambashare)
+</code></pre>
+<p>Tiene varios argumentos que permiten mostrar sólo cierta información y de
+diferentes maneras.</p>
+<h2><code>whowatch</code></h2>
+<p><code>whowatch</code> es un monitor interactivo por consola de procesos y usuarios.
+Muestra información de los usuarios conectados al sistema en tiempo
+real. Además de la información habitual, como el nombre de usuario, el
+terminal, la máquina remota o el tipo de conexión, se puede visualizar
+el árbol de procesos del usuario, e incluso enviarle señales, como
+SIGINT o SIGKILL, a dichos procesos.</p>
+<p>Soporta el uso de complementos, hasta 3, que amplíen la información acerca
+del sistema, de un usuario o de un proceso.</p>
+<pre><code>$ whowatch
+3 users: (2 local, 0 telnet, 0 ssh, 1 other)             load: 0.06, 0.08, 0.31
+(gdm-session-w karpoke   tty7   :0                  -
+(init)         karpoke   pts/0  :0.0                -
+(init)         karpoke   pts/1  :0.0                -
+[F1]Help [F9]Menu [ENT]proc all[t]ree [i]dle/cmd [c]md [d]etails [s]ysinfo
+</code></pre>
+<p>Pulsando Intro en el usuario conectado que queramos nos muestra
+información de los procesos que está ejecutando:</p>
+<pre><code>3 users: (2 local, 0 telnet, 0 ssh, 1 other)             load: 0.03, 0.07, 0.30
+(init)         karpoke   pts/1  :0.0
+ 6056   - gnome-terminal
+ 6105    |- bash
+ 3135    | `- ssh 192.168.50.10
+ 6062    |- gnome-pty-helper
+ 2982    `- bash
+ 3845 R    `- whowatch
+
+[ENT]users [c]md all[t]ree [d]etails [o]wner [s]ysinfo sig[l]ist ^[K]ILL
+</code></pre>
+<p>Podemos ver detalles de un proceso concreto:</p>
+<pre><code>
+START: Mon Aug  1 09:11:00 2011                   
+EXE: /usr/bin/ssh                                 
+ROOT: /                                           
+CWD: /home/karpoke                                
+                                                  
+STATUS:                                           
+Uid:    1000    1000    1000    1000              
+Gid:    1000    1000    1000    1000              
+FDSize: 256                                       
+Groups: 4 7 20 24 29 44 46 103 104 112 115 120 100
+VmPeak:     7460 kB                               
+VmSize:     7460 kB                               
+VmLck:         0 kB                               
+ &lt; - -&gt; [a]up, [z]down '
+</code></pre>
+<p>Y enviarle una señal:</p>
+<pre><code> PID 3135 - choose signal and press 'y' to send 
+-&gt;1  HUP Hangup detected on controlling terminal  
+  2  INT Interrupt from keyboard                  
+  3  QUIT Quit from keyboard                      
+  4  ILL Illegal Instruction                      
+  6  ABRT Abort signal from abort(3)              
+  8  FPE Floating point exception                 
+  9  KILL Kill signal                             
+  11  SEGV Invalid memory reference               
+  13  PIPE Broken pipe: write to pipe with no read
+  14  ALRM Timer signal from alarm(2)             
+  15  TERM Termination signal                     
+                                                  
+                                                  
+ &lt; - -&gt; [a]up, [z]down '
+</code></pre>
+<p>También podemos consultar información del sistema:</p>
+<pre><code>
+BOOT TIME: Mon Aug  1 08:30:18 2011               
+CPU: 3.6% user 2.1% sys 1.0% nice 93.2% idle      
+MEMORY:                                           
+MemTotal:        4081788 kB                       
+MemFree:          436656 kB                       
+Buffers:          530624 kB                       
+Cached:          1825612 kB                       
+SwapCached:            0 kB                       
+Active:          1777952 kB                       
+Inactive:        1396896 kB                       
+Active(anon):     709296 kB                       
+Inactive(anon):   115352 kB                       
+Active(file):    1068656 kB                       |
+ &lt; - -&gt; [a]up, [z]down '
+</code></pre>
+<h2><code>finger</code></h2>
+<p><code>finger</code> muestra información acerca de los usuarios del sistema, tal
+como el nombre de usuario, el nombre real, el terminal al que está
+conectado y si tiene permisos de escritura, la hora de inicio de sesión,
+tiempo que ha estado ocioso, información de contacto, si tiene correo y
+cuando fue la última vez que lo consultó, etc.</p>
+<pre><code>$ finger
+Login     Name       Tty      Idle  Login Time   Office     Office Phone
+karpoke   karpoke    tty7       26  Aug  1 08:31 (:0)
+karpoke   karpoke    pts/0          Aug  1 08:32 (:0.0)
+
+$ finger karpoke
+Login: karpoke                  Name: karpoke
+Directory: /home/karpoke                Shell: /bin/bash
+On since Mon Aug  1 08:31 (CEST) on tty7 from :0
+    27 minutes 18 seconds idle
+On since Mon Aug  1 08:32 (CEST) on pts/0 from :0.0
+Mail last read Sat Jul 30 14:40 2011 (CEST)
+No Plan.
+</code></pre>
+<p>Antiguamente, se podía acceder a la información de un usuario de forma
+remota. Hoy en día, el servicio de <code>finger</code> no suele utilizarse, por lo
+que se limita a mostrar información de nuestra propia máquina.</p>
+<p>Hay una serie de ficheros que se mostrarán si se encuentran en el
+directorio del usuario: <code>.plan</code>, <code>.project</code> y <code>.gpgkey</code>. Además, si el
+fichero <code>~/.nofinger</code> existe, <code>finger</code> no mostrará información del
+usuario a ninguna petición remota.</p>
+<h2><code>last</code></h2>
+<p><code>last</code> muestra los último usuarios conectados. Por defecto, busca la
+información en el fichero <code>/var/log/wtmp</code>. La información se limpia a
+principios de cada mes.</p>
+<pre><code>$ last
+karpoke  pts/1        192.168.50.10     Mon Aug  1 09:11   still logged in
+wtmp begins Mon Aug  1 09:11:04 2011
+</code></pre>
+<p>Cuando tengamos muchas entradas, una opción interesante sería mostrar el
+listado en orden inverso:</p>
+<pre><code>$ last | tac
+wtmp begins Mon Aug  1 09:11:04 2011
+karpoke  pts/1        192.168.50.10     Mon Aug  1 09:11   still logged in
+</code></pre>
+<h2><code>lastlog</code></h2>
+<p><code>lastlog</code> muestra la última conexión de los usuario del sistema. Permite
+especificar un rango de fechas o un usuario concreto. El orden es el
+mismo en el que aparecen en <code>/etc/passwd</code>.</p>
+<pre><code>$ lastlog -t 1000
+Username         Port     From             Latest
+root             tty2                      dom nov  1 13:40:34 +0100 2009
+karpoke          pts/1    192.168.50.10    lun ago  1 09:11:04 +0200 2011
+</code></pre>
+<p>El contenido lo lee del fichero binario <code>/var/log/lastlog</code>.</p>
+<h2><code>acct</code></h2>
+<p><code>acct</code> muestra el tiempo de conexión en horas basándose en el fichero
+<code>/var/log/wtmp</code>. Permite múltiples opciones, como el tiempo total por
+día o por usuario. También muestra el total global.</p>
+<pre><code>$ ac -d
+Today   total        0.24
+
+$ ac -p
+karpoke                              0.25
+total        0.25
+</code></pre>
+<p>El tiempo se expresa en horas en formato decimal, pero podemos
+<a href="http://www.commandlinefu.com/commands/view/5908/print-statistics-about-users-connect-time" title="convertirlo fácilmente a sexagesimal">convertirlo fácilmente a sexagesimal</a>:</p>
+<pre><code>$ ac -d | awk '{h=int($NF); m=($NF-h)*60; s=int((m-int(m))*60); m=int(m); print $0" = "h"h "m"m "s"s "}'
+Today   total        0.31 = 0h 18m 36s
+</code></pre>
+
+
+             
+ 
+            
+            
+            
+
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2010/09/26/memento-en-bash/" title="Memento en Bash">Memento en Bash</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/03/03/conectarse-por-ssh-solo-usando-la-clave/" title="Conectarse por SSH sólo usando la clave">Conectarse por SSH sólo usando la clave</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/03/14/inception/" title="inception">inception</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/06/20/identificando-los-plugins-de-wordpress-instalados/" title="Identificando los plugins de WordPress instalados">Identificando los plugins de WordPress instalados</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/06/22/arch-en-raspberry-pi/" title="Arch en Raspberry Pi">Arch en Raspberry Pi</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2011/07/30/sslh-compartiendo-el-puerto-443/" title="Previous: sslh, compartiendo el puerto 443">sslh, compartiendo el puerto 443</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2011/08/01/limitando-el-numero-de-procesos-por-usuario/" title="Next: Limitando el número de procesos por usuario">Limitando el número de procesos por usuario</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2011-08-01T12:51:00+02:00">Mon 01 August 2011</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#admin-ref">admin</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#bofh-ref">bofh
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#byobu-ref">byobu
+                    <span class="superscript">4</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#display-ref">DISPLAY
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#finger-ref">finger
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#fingerprint-ref">fingerprint
+                    <span class="superscript">3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#id-ref">id
+                    <span class="superscript">2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#last-ref">last
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#lastlog-ref">lastlog
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#screen-ref">screen
+                    <span class="superscript">3</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#tac-ref">tac
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#terminales-virtuales-ref">terminales virtuales
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#w-ref">w
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#whatch-ref">whatch
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#who-ref">who
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#whoami-ref">whoami
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#whowatch-ref">whowatch
+                    <span class="superscript">1</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2020 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="https://karpoke.ignaciocano.com/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - easy_install</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 28 Jul 2013 13:52:00 +0200</lastBuildDate><item><title>Solucionado el error «DistributionNotFound» al usar pip</title><link>https://karpoke.ignaciocano.com/2013/07/28/solucionado-el-error-distributionnotfound-al-usar-pip/</link><description>&lt;p&gt;Si al ejecutar &lt;code&gt;pip&lt;/code&gt;, nos aparece el siguiente error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pip
+Traceback (most recent call last):
+  File "/usr/local/bin/pip", line 5, in
+    from pkg_resources import load_entry_point
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 2707, in
+    working_set.require(__requires__)
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 28 Jul 2013 13:52:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2013-07-28:/2013/07/28/solucionado-el-error-distributionnotfound-al-usar-pip/</guid><category>distributionerror</category><category>easy_install</category><category>pip</category></item></channel></rss>

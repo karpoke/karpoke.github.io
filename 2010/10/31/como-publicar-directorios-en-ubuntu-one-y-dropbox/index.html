@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://karpoke.ignaciocano.com/theme/css/custom.css" media="screen">
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+        <meta name="author" content="Nacho Cano" />
+
+        <meta name="description" content="Ubuntu One es el servicio que ofrece Ubuntu en la nube. Entre otras cosas, como sincronizar archivos de configuración o nuestros favoritos, permite compartir archivos y directorios de nuestro espacio en la nube con las personas que queramos de una forma sencilla. Tambíen permite publicar archivos, para cada uno de …
+" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="almacenamiento en la nube, compartir, dropbox, licencia de uso, privacidad, python, script, software libre, términos del servicio, u1sdtool, ubuntu one, admin, " />
+
+<meta property="og:title" content="Cómo publicar directorios en Ubuntu One y Dropbox "/>
+<meta property="og:url" content="https://karpoke.ignaciocano.com/2010/10/31/como-publicar-directorios-en-ubuntu-one-y-dropbox/" />
+<meta property="og:description" content="Ubuntu One es el servicio que ofrece Ubuntu en la nube. Entre otras cosas, como sincronizar archivos de configuración o nuestros favoritos, permite compartir archivos y directorios de nuestro espacio en la nube con las personas que queramos de una forma sencilla. Tambíen permite publicar archivos, para cada uno de …" />
+<meta property="og:site_name" content="Karpoke - Just another Pelican blog" />
+<meta property="og:article:author" content="Nacho Cano" />
+<meta property="og:article:published_time" content="2010-10-31T06:28:00+01:00" />
+<meta name="twitter:title" content="Cómo publicar directorios en Ubuntu One y Dropbox ">
+<meta name="twitter:description" content="Ubuntu One es el servicio que ofrece Ubuntu en la nube. Entre otras cosas, como sincronizar archivos de configuración o nuestros favoritos, permite compartir archivos y directorios de nuestro espacio en la nube con las personas que queramos de una forma sencilla. Tambíen permite publicar archivos, para cada uno de …">
+
+        <title>Cómo publicar directorios en Ubuntu One y Dropbox  · Karpoke - Just another Pelican blog
+</title>
+        <link href="https://karpoke.ignaciocano.com/feeds/all/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - Full RSS Feed" />
+        <link href="https://karpoke.ignaciocano.com/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="Karpoke - Just another Pelican blog - RSS Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="https://karpoke.ignaciocano.com/"><span class=site-name>Karpoke - Just another Pelican blog</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       https://karpoke.ignaciocano.com
+                                    >Home</a>
+                                </li>
+                                <li ><a href="https://karpoke.ignaciocano.com/whoami/">Who am I</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/categorias/">Categories</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/etiquetas/">Tags</a></li>
+                                <li ><a href="https://karpoke.ignaciocano.com/archivos/">Archives</a></li>
+                                <li><form class="navbar-search" action="https://karpoke.ignaciocano.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="https://karpoke.ignaciocano.com/2010/10/31/como-publicar-directorios-en-ubuntu-one-y-dropbox/">
+                Cómo publicar directorios en Ubuntu One y Dropbox
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p><a href="http://one.ubuntu.com/" title="Ubuntu One">Ubuntu One</a> es el servicio que ofrece Ubuntu en la nube. Entre otras
+cosas, como <a href="http://wiki.ubuntu.com/UbuntuOne/Tutorials/" title="sincronizar archivos de configuración o nuestros favoritos">sincronizar archivos de configuración o nuestros
+favoritos</a>, permite <a href="http://wiki.ubuntu.com/UbuntuOne/Tutorials/FileSharing" title="compartir archivos y directorios">compartir archivos y directorios</a> de nuestro
+espacio en la nube con las personas que queramos de una forma sencilla.</p>
+<p>Tambíen permite publicar archivos, para cada uno de los cuales se genera
+una URL corta, y que sean accesibles por cualquiera. Sin embargo, <a href="http://lists.launchpad.net/ubuntuone-users/msg00523.html" title="no permite publicar directorios">no
+permite publicar directorios</a>, al menos por ahora.</p>
+<h2>¿Publicar directorios?</h2>
+<p>¿Qué querríamos conseguir publicando un directorio? Pues que todos los
+ficheros que contuviera se hicieran públicos, y que se generase un
+índice, por ejemplo, un <code>index.html</code>, también público, con enlaces a
+cada fichero contenido en dicho directorio (recordemos que los enlaces
+son URLs cortas, no el nombre del fichero).</p>
+<h2>¿URLs cortas?</h2>
+<p>Cuando se publica un fichero, el sistema le asigna una dirección del
+estilo <code>http://ubuntuone.com/p/N21/</code>, por lo que no podemos crear un
+listado de ficheros basándonos en su nombre y situación relativa al
+fichero <code>index.html</code>. Es decir, no podemos incluir enlaces como
+<code>&lt;a href="./articles/index.html"&gt;articles&lt;a&gt;.</code></p>
+<h2>Alternativa: ¿Dropbox?</h2>
+<p>Un servicio similar a Ubuntu One es Dropbox, que tampoco permite
+publicar directorios, al menos directamente, pero el problema anterior
+queda resuelto, ya que no tiene el inconveniente de las URLs cortas.
+Basta crear un fichero HTML con enlaces relativos a los ficheros que
+queramos ofrecer. Se podría crear un <a href="http://dl.dropbox.com/u/13647978/tree.html" title="listado">listado</a> con el comando
+</code><code>tree</code>:</p>
+<pre><code>$ tree -C --charset utf8 --dirsfirst -F -H . -o tree.html
+</code></pre>
+<p>Sin embargo, esto tiene un problema, y es que si se pulsa en el enlace
+de un directorio, obtenemos como resultado que el archivo no existe, ya
+que <code>tree</code> crea los enlaces a directorios como <code>./articles/</code> (Dropbox
+tampoco permite publicar directorios). Una sencilla solución sería crear
+ficheros <code>index.html</code> en cada directorio y que los enlaces a los
+subdirectorios realmente apuntasen a los ficheros <code>index.html</code> que éstos
+contienen. Esto es lo que hace <a href="http://code.google.com/p/kosciak-misc/wiki/DropboxIndex" title="DropboxIndex">DropboxIndex</a>, un <em>script</em> creado por
+Wojciech 'KosciaK' Pietrzok que genera un archivo <code>index.html</code> en la
+raíz y en cada subdirectorio, con un aspecto similar al listado de
+ficheros de Apache.</p>
+<p>El contenido público, por defecto, se encuentra a partir del directorio
+<code>~/Dropbox/Public</code> y es posible utilizar enlaces simbólicos que apunten
+a directorios externos al directorio público.</p>
+<p>De todas formas, un <strong>gran inconveniente</strong> que le veo a Dropbox es que,
+para gestionarlo desde el escritorio, es necesario instalarse software
+privativo.</p>
+<h2>Alternativa: ¿Ubunu One?</h2>
+<p>Ubuntu One <a href="http://www.stefanoforenza.com/what-is-ubuntu-one/" title="también tiene partes del servidor que son software privativo">también tiene partes del servidor que son software
+privativo</a>, pero parece que, al menos, <a href="http://es.wikipedia.org/wiki/Ubuntu_One" title="el cliente y los protocolos de comunicación son libres">el cliente y los protocolos de
+comunicación son libres</a> (también se dice algo <a href="http://one.ubuntu.com/terms/" title="aquí">aquí</a>).</p>
+<h2>¿Y las URLs cortas?</h2>
+<p>Existe un comando, <a href="http://manpages.ubuntu.com/manpages/karmic/man1/u1sdtool.1.html" title="u1sdtool">u1sdtool</a>, que permite gestionar nuestro espacio
+en la nube desde el terminal. Con <code>u1sdtool</code> y partiendo del <em>script</em>
+anterior, he conseguido que se puedan <a href="http://terminus.ignaciocano.com/wp-uploads/linked/ubuntuone-index.py" title="publicar directorios en Ubuntu One">publicar directorios en Ubuntu
+One</a>. Lo único que se necesita para acceder al directorio, o jerarquía
+de directorios, es conocer la <a href="http://ubuntuone.com/p/NoU/" title="dirección pública del directorio raíz">dirección pública del directorio raíz</a>
+que hemos publicado.</p>
+<p>Podemos tener tantos directorios raíz como queramos, siempre que no esté
+contenido uno dentro de otro, ya que sería éste otro el que sería el
+directorio raíz. Aún así, se pueden compartir enlaces de directorios
+públicos intermedios, pero teniendo en cuenta que aparece un enlace para
+ir subiendo en la jerarquía de directorios hasta llegar al directorio
+raíz.</p>
+<p><img alt="UbuntuOne Index" src="https://karpoke.ignaciocano.com/images/ubuntuone-index-300x89.png" /></p>
+<h2>ubuntuone-index.py</h2>
+<p>Se utiliza exactamente igual que el <em>script</em> para Dropbox:</p>
+<pre><code>Usage: ubuntuone-index.py [options] directory
+
+Options:
+  -h, --help            Show help message and exit.
+  -V, --version         print version information
+  -R, --recursive       Include subdirectories (disabled by default).
+  -T, --template file   Use HTML file as template.
+
+ATTENTION:
+  Script will overwrite any existing index.html file(s)!
+</code></pre>
+<p>Por ejemplo:</p>
+<pre><code>$ ubuntuone-index.py -R "~/Ubuntu One/pub"
+</code></pre>
+<p>Descarga el <em>script</em> <a href="http://terminus.ignaciocano.com/wp-uploads/linked/ubuntuone-index.py" title="publicar directorios en Ubuntu One">ubuntuone-index.py</a>.</p>
+<p>Para más información de <a href="http://code.google.com/p/kosciak-misc/wiki/DropboxIndex" title="DropboxIndex">cómo crear las plantillas
+personalizadas</a> podéis visitar la web del proyecto
+DropboxIndex.</p>
+<h2>Privacidad y términos del servicio</h2>
+<p>Si lo he entendido bien, en su <a href="http://one.ubuntu.com/privacy/" title="ubuntu one privacy politcs">política de privacidad</a> advierten de
+que obtienen datos del uso que hagamos del servicio, que puede que nos
+envíen algun correo electrónico ocasionalmente, que posiblemente le pasarán esa
+información a terceros, aunque intentarán que esos terceros sean buena
+gente con esos datos, y, lo más interesante, que si violas los términos
+del servicio, lo tienen todo registrado.</p>
+<p>Se violan los términos del servicio haciendo algo ilegal o en contra de
+los derechos o la privacidad de alguien, pudiendo incluso tener que
+indemnizar a Canonical por posibles daños y perjuicios, y aquí ya no
+dicen nada de sí te avisan o si primero borran los datos y luego te
+avisan</p>
+<p>La <a href="http://one.ubuntu.com/terms/" title="licencia de uso de Ubuntu One">licencia de uso de Ubuntu One</a> advierte de diferentes maneras de
+terminar el uso del servicio:</p>
+<ul>
+<li>por que lo dicen ellos, aunque se supone que te avisan con un mes de
+    antelación de que borrarán nuestros datos</li>
+<li>por que pasamos de su servicio y no lo hemos usado en 3 meses;
+    también avisan con antelación</li>
+<li>por que violas los términos del servicio</li>
+</ul>
+<p>Por mi parte, <strong>todo</strong> lo que he subido a <a href="http://ubuntuone.com/p/NoU/" title="dirección pública del directorio raíz">mi directorio</a> para hacer las pruebas es contenido, muy
+bueno, con una licencia libre, que autoriza su redistribución.</p>
+
+
+             
+ 
+            
+            
+            
+
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Entradas relacionadas</h2>
+<ul class="related-posts-list">
+<li><a href="https://karpoke.ignaciocano.com/2011/03/27/creando-y-leyendo-codigos-qr-desde-python/" title="Creando y leyendo códigos QR desde Python">Creando y leyendo códigos QR desde Python</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/03/30/multiples-cuentas-de-dropbox-en-ubuntu-maverick-meerkat/" title="Múltiples cuentas de Dropbox en Ubuntu Maverick Meerkat">Múltiples cuentas de Dropbox en Ubuntu Maverick Meerkat</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2011/09/30/encuentra-el-hash/" title="Encuentra el hash">Encuentra el hash</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2012/06/16/anontwi-tweets-cifrados/" title="AnonTwi, tweets cifrados">AnonTwi, tweets cifrados</a></li>
+<li><a href="https://karpoke.ignaciocano.com/2013/06/10/iniciar-sesion-en-dyndns-desde-el-terminal/" title="Iniciar sesión en DynDNS desde el terminal">Iniciar sesión en DynDNS desde el terminal</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="https://karpoke.ignaciocano.com/2010/10/28/the-name-of-the-game/" title="Previous: The name of the game">The name of the game</a></li>
+                <li class="next-article"><a href="https://karpoke.ignaciocano.com/2010/11/05/control-de-concurrencia-optimista-en-django/" title="Next: Control de concurrencia optimista en Django">Control de concurrencia optimista en Django</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2010-10-31T06:28:00+01:00">Sun 31 October 2010</time>
+            <h4>Category</h4>
+            <a class="category-link" href="https://karpoke.ignaciocano.com/categorias/#admin-ref">admin</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#almacenamiento-en-la-nube-ref">almacenamiento en la nube
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#compartir-ref">compartir
+                    <span class="superscript">4</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#dropbox-ref">dropbox
+                    <span class="superscript">6</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#licencia-de-uso-ref">licencia de uso
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#privacidad-ref">privacidad
+                    <span class="superscript">7</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#python-ref">python
+                    <span class="superscript">21</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#script-ref">script
+                    <span class="superscript">27</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#software-libre-ref">software libre
+                    <span class="superscript">2</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#terminos-del-servicio-ref">términos del servicio
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#u1sdtool-ref">u1sdtool
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://karpoke.ignaciocano.com/etiquetas/#ubuntu-one-ref">ubuntu one
+                    <span class="superscript">4</span>
+</a></li>
+            </ul>
+<h4>Contacto</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/karpoke" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="/feeds/all/rss.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        2010-2020 (cc) Contenido bajo licencia <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual</a>.
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="https://karpoke.ignaciocano.com/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

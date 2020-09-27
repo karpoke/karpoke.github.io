@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - shell</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 29 Jun 2011 12:11:00 +0200</lastBuildDate><item><title>Variables variables en Bash</title><link>https://karpoke.ignaciocano.com/2011/06/29/variables-variables-en-bash/</link><description>&lt;p&gt;Las variables variables se utilizan cuando queremos tener nombres de
+variables que puedan usarse y modificarse de forma dinámica. &lt;a href="http://php.net/manual/en/language.variables.variable.php" title="PHP permite su uso"&gt;PHP
+permite su uso&lt;/a&gt; de forma directa:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+$a = 'hello';
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Una variable variable toma el valor de una variable y lo usa para el
+nombre de la variable. Podemos utilizar "hello …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 29 Jun 2011 12:11:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-06-29:/2011/06/29/variables-variables-en-bash/</guid><category>bash</category><category>eval</category><category>ksh</category><category>php</category><category>shell</category><category>variables</category></item></channel></rss>

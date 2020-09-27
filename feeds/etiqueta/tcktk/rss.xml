@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - tck/tk</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 21 Feb 2011 14:37:00 +0100</lastBuildDate><item><title>Solucionado el error "Tcl/Tk not found" al instalar OMNeT++ en Ubuntu</title><link>https://karpoke.ignaciocano.com/2011/02/21/solucionado-el-error-tcltk-not-found-al-instalar-omnet-en-ubuntu/</link><description>&lt;p&gt;&lt;a href="http://www.omnetpp.org/" title="OMNeT++"&gt;OMNeT++&lt;/a&gt; es un entorno de desarrollo modular y extensible
+desarrollado en C++, y gratuito pasa uso no comercial, especialmente
+pensado para construir simuladores de redes de eventos discretos en el
+sentido más amplio: redes de comunicaciones alámbricas, inalámbricas,
+redes de colas, etc. El soporte para dominios específicos tales como
+redes …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 21 Feb 2011 14:37:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-21:/2011/02/21/solucionado-el-error-tcltk-not-found-al-instalar-omnet-en-ubuntu/</guid><category>10.10</category><category>configure</category><category>make</category><category>omnetpp</category><category>simulador de redes</category><category>ssh</category><category>tck/tk</category><category>ubuntu maverick meerkat</category></item></channel></rss>
