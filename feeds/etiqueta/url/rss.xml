@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - url</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 05 Apr 2012 14:46:00 +0200</lastBuildDate><item><title>Recuperar la dirección de WordPress</title><link>https://karpoke.ignaciocano.com/2012/04/05/recuperar-la-direccion-de-wordpress/</link><description>&lt;p&gt;En el panel de administración de WordPress, en Ajustes &amp;gt; Generales,
+podemos cambiar la dirección del blog o la dirección donde está
+instalado Wordpress.&lt;/p&gt;
+&lt;p&gt;Tenemos que tener cuidado si cambiamos la dirección de WordPress, ya que
+podemos dejar el sitio, y en especial el panel de control, inaccesible.
+O puede que …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 05 Apr 2012 14:46:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-04-05:/2012/04/05/recuperar-la-direccion-de-wordpress/</guid><category>dirección de wordpress</category><category>dirección del sitio</category><category>home</category><category>mysql</category><category>siteurl</category><category>url</category><category>wordpress</category></item><item><title>urlencode y urldecode</title><link>https://karpoke.ignaciocano.com/2011/03/06/urlencode-y-urldecode/</link><description>&lt;p&gt;Los siguientes caracteres &lt;a href="http://tools.ietf.org/html/rfc3986#section-2.3" title="rfc3986"&gt;son los únicos que se pueden utilizar&lt;/a&gt; en
+una URL:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[a-zA-Z0-9-._~]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El resto, se deben codificar usando el prefijo &lt;code&gt;%&lt;/code&gt; seguido del valor
+ASCII hexadecimal del carácter. Por ejemplo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;( = %28
+) = %29
+/ = %2F
++ = %2B
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para &lt;a href="http://stackoverflow.com/questions/296536/urlencode-from-a-bash-script/298258#298258" title="codificar la URL"&gt;codificar la URL&lt;/a&gt; podemos utilizar la función &lt;code&gt;uri_escape&lt;/code&gt; del
+módulo &lt;code&gt;URI&lt;/code&gt; de Perl …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 06 Mar 2011 17:45:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-06:/2011/03/06/urlencode-y-urldecode/</guid><category>alias</category><category>ASCII</category><category>escape</category><category>perl</category><category>rfc3986</category><category>sed</category><category>uri</category><category>uri_escape</category><category>url</category><category>urldec</category><category>urlenc</category></item></channel></rss>

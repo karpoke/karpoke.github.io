@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - generadores</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 12 Dec 2016 00:22:00 +0100</lastBuildDate><item><title>Never write for-loops again</title><link>https://karpoke.ignaciocano.com/2016/12/12/never-write-for-loops-again/</link><description>&lt;blockquote&gt;
+&lt;p&gt;It’s been a while since I started exploring the amazing language features in
+Python. At the beginning, it’s just a challenge I gave myself to practice
+using more language features instead of those I learned from other
+programming language. And things are just getting more fun! Not only …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 12 Dec 2016 00:22:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-12-12:/2016/12/12/never-write-for-loops-again/</guid><category>buenas prácticas</category><category>bucles</category><category>listas por comprensión</category><category>iteradores</category><category>generadores</category><category>Python</category></item></channel></rss>

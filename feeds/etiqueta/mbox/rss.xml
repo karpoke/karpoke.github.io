@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - mbox</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 08 Jul 2011 15:52:00 +0200</lastBuildDate><item><title>Copia de seguridad de GMail con getmail</title><link>https://karpoke.ignaciocano.com/2011/07/08/copia-de-seguridad-de-gmail-con-getmail/</link><description>&lt;p&gt;Hay otras maneras de realizar una &lt;a href="http://www.mattcutts.com/blog/backup-gmail-in-linux-with-getmail/" title="copia de seguridad de GMail"&gt;copia de seguridad de GMail&lt;/a&gt;, como
+por ejemplo, usar Thunderbird, pero utilizar &lt;code&gt;getmail&lt;/code&gt; tiene la ventaja
+de que es sencillo, puede realizar la copia en formato Maildir y no
+necesitamos utilizar ningún gestor de correo electrónico.&lt;/p&gt;
+&lt;h2&gt;Maildir y mbox&lt;/h2&gt;
+&lt;p&gt;Básicamente, en GNU/Linux hay …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 08 Jul 2011 15:52:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-07-08:/2011/07/08/copia-de-seguridad-de-gmail-con-getmail/</guid><category>copia de seguridad</category><category>getmail</category><category>gmail</category><category>google</category><category>maildir</category><category>mbox</category></item></channel></rss>

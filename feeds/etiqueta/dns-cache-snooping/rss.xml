@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - dns cache snooping</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 25 Sep 2010 04:21:00 +0200</lastBuildDate><item><title>Bash DNS Cache Snooping</title><link>https://karpoke.ignaciocano.com/2010/09/25/bash-dns-cache-snooping/</link><description>&lt;p&gt;&lt;strong&gt;DNS Cache Snooping&lt;/strong&gt; consiste en realizar una serie de peticiones de
+resolución de nombres de dominio a la caché de un servidor DNS, con la
+finalidad de conocer si los usuarios de ese servidor han visitado esos
+dominios. Hay que tener en cuenta que las entradas en la caché tienen …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 25 Sep 2010 04:21:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-09-25:/2010/09/25/bash-dns-cache-snooping/</guid><category>dig</category><category>dns cache snooping</category><category>identificación de servicios</category><category>nslookup</category><category>script</category></item></channel></rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - perl</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 31 Aug 2011 14:19:00 +0200</lastBuildDate><item><title>Denegación de servicio en Apache utilizando la cabecera Range</title><link>https://karpoke.ignaciocano.com/2011/08/31/denegacion-de-servicio-en-apache-utilizando-la-cabecera-range/</link><description>&lt;p&gt;Una &lt;a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=51714" title="vulnerabilidad descubierta por _kingcope_"&gt;vulnerabilidad descubierta por &lt;em&gt;kingcope&lt;/em&gt;&lt;/a&gt; permite que los
+servidores Apache vulnerables sean susceptibles de sufrir una denegación
+de servicio.&lt;/p&gt;
+&lt;p&gt;La vulnerabilidad se encuentra en el uso de la cabecera &lt;code&gt;Range&lt;/code&gt;. Esta
+cabecera se utiliza para obtener sólo una parte de la página. Si se
+solicitan varias partes además de pedir …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 31 Aug 2011 14:19:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-08-31:/2011/08/31/denegacion-de-servicio-en-apache-utilizando-la-cabecera-range/</guid><category>2.2.17</category><category>apache</category><category>cabeceras HTTP</category><category>denegación de servicio</category><category>dos</category><category>mod_headers</category><category>mod_rewrite</category><category>perl</category><category>range</category><category>requestheader</category><category>script</category><category>telnet</category></item><item><title>Obteniendo la IP pública, la IP privada y la dirección MAC en Bash</title><link>https://karpoke.ignaciocano.com/2011/08/14/obteniendo-la-ip-publica-la-ip-privada-y-la-direccion-mac-en-bash/</link><description>&lt;p&gt;En los &lt;em&gt;scripts&lt;/em&gt; que escribimos, a menudo, es necesario conocer la IP pública
+de nuestra red, o la IP privada y la dirección MAC de una interfaz de red. Con
+el comando &lt;code&gt;ifconfig&lt;/code&gt; podemos conocer la información de las interfaces de red:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ifconfig
+eth0      Link encap:Ethernet  direcciónHW 00:11 …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 14 Aug 2011 19:26:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-08-14:/2011/08/14/obteniendo-la-ip-publica-la-ip-privada-y-la-direccion-mac-en-bash/</guid><category>alias</category><category>curl</category><category>dirección MAC</category><category>DynDNS</category><category>hostname</category><category>ifconfig</category><category>in-addr.arpa</category><category>IP privada</category><category>IP pública</category><category>ipcalc</category><category>mac</category><category>oui</category><category>perl</category><category>php</category><category>script</category><category>wget</category></item><item><title>Limitando el número de procesos por usuario</title><link>https://karpoke.ignaciocano.com/2011/08/01/limitando-el-numero-de-procesos-por-usuario/</link><description>&lt;p&gt;Mediante el comando &lt;code&gt;ulimit&lt;/code&gt; podemos consultar y controlar el valor de los
+recursos disponibles para la consola y los &lt;a href="https://karpoke.ignaciocano.com/2010/12/16/mejora-del-rendimiento-interactivo-agrupando-tareas-por-terminal/" title="mejora del rendimiento interactivo agrupando tareas por terminal"&gt;procesos que puedan ser iniciados
+desde ella&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Las diferentes opciones que acepta este comando son:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-a     All current limits are reported
+-b     The maximum socket buffer size
+-c     The maximum size …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 01 Aug 2011 19:23:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-08-01:/2011/08/01/limitando-el-numero-de-procesos-por-usuario/</guid><category>bash</category><category>bomba fork</category><category>c</category><category>limits.conf</category><category>perl</category><category>python</category><category>ubuntu</category><category>ulimit</category></item><item><title>Endianness</title><link>https://karpoke.ignaciocano.com/2011/07/30/endianness/</link><description>&lt;p&gt;"&lt;a href="http://secure.wikimedia.org/wikipedia/es/wiki/Endianness" title="Endianicidad"&gt;Endianicidad&lt;/a&gt;" designa el formato en el que se almacenan los datos
+de más de un byte en un ordenador. El sistema &lt;em&gt;big-endian&lt;/em&gt; adoptado por
+Motorola entre otros, consiste en representar los bytes en el orden
+"natural", así el valor hexadecimal 0x4A3B2C1D se codificaría en memoria
+en la secuencia {4A, 3B …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 30 Jul 2011 17:34:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-07-30:/2011/07/30/endianness/</guid><category>big-endian</category><category>byteorder</category><category>c</category><category>casting</category><category>little-endian</category><category>middle-endian</category><category>oneliner</category><category>pack</category><category>perl</category><category>python</category><category>sys</category></item><item><title>¿Un keylogger en Ubuntu?</title><link>https://karpoke.ignaciocano.com/2011/07/22/un-keylogger-en-ubuntu/</link><description>&lt;p&gt;El comando &lt;code&gt;xinput&lt;/code&gt; permite configurar y probar dispositivos de entrada
+para las XWindow. Podemos obtener un listado de los dispositivos de
+entrada:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ xinput list
+⎡ Virtual core pointer                      id=2    [master pointer  (3)]
+⎜   ↳ Virtual core XTEST pointer                id=4    [slave  pointer  (2)]
+⎜   ↳ SynPS/2 Synaptics TouchPad                id=15   [slave  pointer  (2 …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 22 Jul 2011 04:35:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-07-22:/2011/07/22/un-keylogger-en-ubuntu/</guid><category>apparmor</category><category>c</category><category>ixkeylog</category><category>keylogger</category><category>perl</category><category>selinux</category><category>ubuntu</category><category>xinput</category></item><item><title>Instalar módulos de CPAN usando CPAN</title><link>https://karpoke.ignaciocano.com/2011/07/22/instalar-modulos-de-cpan-usando-cpan/</link><description>&lt;p&gt;Una de las razones para querer instalar módulos del repositorio CPAN de
+Perl utilizando, a su vez, el módulo &lt;code&gt;cpan&lt;/code&gt;, es que los módulos están
+más actualizados que en los paquetes de los repositorios. Para
+conseguirlo, podemos seguir los siguientes pasos&lt;/p&gt;
+&lt;p&gt;Necesitamos tener instalado el paquete &lt;code&gt;build-essential&lt;/code&gt;. Lanzamos la
+consola …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 22 Jul 2011 02:45:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-07-22:/2011/07/22/instalar-modulos-de-cpan-usando-cpan/</guid><category>aptitude</category><category>cpan</category><category>local::lib</category><category>módulos</category><category>perl</category></item><item><title>urlencode y urldecode</title><link>https://karpoke.ignaciocano.com/2011/03/06/urlencode-y-urldecode/</link><description>&lt;p&gt;Los siguientes caracteres &lt;a href="http://tools.ietf.org/html/rfc3986#section-2.3" title="rfc3986"&gt;son los únicos que se pueden utilizar&lt;/a&gt; en
+una URL:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[a-zA-Z0-9-._~]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El resto, se deben codificar usando el prefijo &lt;code&gt;%&lt;/code&gt; seguido del valor
+ASCII hexadecimal del carácter. Por ejemplo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;( = %28
+) = %29
+/ = %2F
++ = %2B
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para &lt;a href="http://stackoverflow.com/questions/296536/urlencode-from-a-bash-script/298258#298258" title="codificar la URL"&gt;codificar la URL&lt;/a&gt; podemos utilizar la función &lt;code&gt;uri_escape&lt;/code&gt; del
+módulo &lt;code&gt;URI&lt;/code&gt; de Perl …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 06 Mar 2011 17:45:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-06:/2011/03/06/urlencode-y-urldecode/</guid><category>alias</category><category>ASCII</category><category>escape</category><category>perl</category><category>rfc3986</category><category>sed</category><category>uri</category><category>uri_escape</category><category>url</category><category>urldec</category><category>urlenc</category></item></channel></rss>

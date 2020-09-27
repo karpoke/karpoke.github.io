@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - aleatoriedad</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 27 Jul 2012 00:20:00 +0200</lastBuildDate><item><title>Saltar a una entrada aleatoria en WordPress</title><link>https://karpoke.ignaciocano.com/2012/07/27/saltar-a-una-entrada-aleatoria-en-wordpress/</link><description>&lt;p&gt;Si queremos añadir un enlace que nos permita saltar a una entrada
+aleatoria de un blog en WordPress, basta crear un archivo que contenga
+lo siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+require('wp-blog-header.php');
+query_posts(array('orderby' =&amp;gt; 'rand', 'showposts' =&amp;gt; 1));
+if (have_posts()) : the_post();
+$url = get_permalink($post-&amp;gt;id);
+        header("Location: " . $url);
+endif;
+wp_reset_query();
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Guardamos el …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 27 Jul 2012 00:20:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-07-27:/2012/07/27/saltar-a-una-entrada-aleatoria-en-wordpress/</guid><category>aleatoriedad</category><category>página aleatoria</category><category>php</category><category>wordpress</category></item><item><title>Salvapantallas con el código fuente del kernel</title><link>https://karpoke.ignaciocano.com/2011/07/28/salvapantallas-con-el-codigo-fuente-del-kernel/</link><description>&lt;p&gt;Si queremos que cada vez que aparezca el salvapantallas, lo haga
+mostrando algunas líneas del código fuente del &lt;em&gt;kernel&lt;/em&gt; por pantalla,
+sólo necesitamos configurar el salvapantallas &lt;code&gt;phosphor&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Phosphor" src="https://karpoke.ignaciocano.com/images/phosphor-300x178.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Lo primero es instalar el código fuente del &lt;code&gt;kernel&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo apt-get source linux-source-$(uname -r)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El comando &lt;code&gt;uname&lt;/code&gt; muestra información acerca del sistema …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 28 Jul 2011 12:42:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-07-28:/2011/07/28/salvapantallas-con-el-codigo-fuente-del-kernel/</guid><category>aleatoriedad</category><category>código fuente</category><category>kernel</category><category>linux</category><category>phosphor</category><category>protector de pantalla</category><category>salvapantallas</category><category>script</category><category>sed</category><category>uname</category></item><item><title>Random Bash</title><link>https://karpoke.ignaciocano.com/2010/09/25/random-bash/</link><description>&lt;p&gt;&lt;cite&gt;"Los números aleatorios no deberían ser generados por un método
+elegido aleatoriamente". &lt;em&gt;Donald E. Knuth&lt;/em&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;En Bash, podemos obtener números enteros &lt;a href="http://es.wikipedia.org/wiki/Aleatoriedad" title="aleatorios"&gt;aleatorios&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ echo $RANDOM
+20684
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img alt="Random number" src="https://karpoke.ignaciocano.com/images/random_number-300x107.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Cada vez que se referencia el parámetro &lt;a href="http://linux.die.net/man/1/bash" title="RANDOM"&gt;RANDOM&lt;/a&gt;, éste devuelve un
+valor entre 0 y 32767, es decir, 2^15^-1. Podemos inicializar la
+secuencia …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 25 Sep 2010 00:54:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-09-25:/2010/09/25/random-bash/</guid><category>/dev/random</category><category>/dev/urandom</category><category>/proc/interrupts</category><category>aleatoriedad</category><category>contraseña aleatoria</category><category>dd</category><category>generar entropía</category><category>mac aleatoria</category><category>makepasswd</category><category>md5sum</category><category>mkpasswd</category><category>od</category><category>openssl</category><category>pwgen</category><category>rng-tools</category><category>sha1sum</category><category>sha224sum</category><category>sha256sum</category><category>sha384sum</category><category>sha512sum</category><category>shuf</category><category>strings</category><category>tr</category><category>xxd</category></item></channel></rss>

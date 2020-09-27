@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - parsear</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Wed, 07 Dec 2016 20:26:00 +0100</lastBuildDate><item><title>How to teach endian</title><link>https://karpoke.ignaciocano.com/2016/12/07/how-to-teach-endian/</link><description>&lt;blockquote&gt;
+&lt;p&gt;One of the major disciplines in computer science is parsing/formatting. This
+is the process of converting the external format of data (file formats,
+network protocols, hardware registers) into the internal format (the data
+structures that software operates on).&lt;/p&gt;
+&lt;p&gt;It should be a formal computer-science discipline, because it’s actually …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Wed, 07 Dec 2016 20:26:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-12-07:/2016/12/07/how-to-teach-endian/</guid><category>endian</category><category>little-endian</category><category>big-endian</category><category>bytes</category><category>nibbles</category><category>parsear</category><category>formatear</category></item></channel></rss>

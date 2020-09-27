@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - compose difference</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 29 Mar 2011 22:08:00 +0200</lastBuildDate><item><title>Encuentra las diferencias... desde el terminal</title><link>https://karpoke.ignaciocano.com/2011/03/29/encuentra-las-diferencias-desde-el-terminal/</link><description>&lt;p&gt;Supongamos que queremos &lt;a href="http://www.linuxhispano.net/2011/03/29/diferencias/" title="encontrar las diferencias"&gt;encontrar las diferencias&lt;/a&gt; en la siguiente
+imagen:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="diferencias" src="https://karpoke.ignaciocano.com/images/diferencias-300x233.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;small&gt;Fuente: &lt;a href="http://www.taringa.net/posts/imagenes/6577248/encuentra-las-diferencias.html" title="taringa.net"&gt;taringa.net&lt;/a&gt;&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Tal como se muestra en la tira cómica, se puede hacer utilizando las
+herramientas de la suite &lt;code&gt;imagemagick&lt;/code&gt;, en particular, &lt;code&gt;composite&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Primero, creamos una imagen con cada mitad de la imagen original:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ convert diferencias.jpg -crop 50 …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 29 Mar 2011 22:08:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-29:/2011/03/29/encuentra-las-diferencias-desde-el-terminal/</guid><category>compose difference</category><category>composite</category><category>convert</category><category>crop</category><category>imagemagick</category></item></channel></rss>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - cal</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 14 Mar 2013 02:03:00 +0100</lastBuildDate><item><title>El día negado</title><link>https://karpoke.ignaciocano.com/2013/03/14/el-dia-negado/</link><description>&lt;p&gt;Leyendo el &lt;a href="http://espejo-ludico.blogspot.com.es/2013/03/el-dia-negado.html" title="espejo lúdico"&gt;espejo lúdico&lt;/a&gt;, me encuentro con estas dos preguntas:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;¿Hay algún día de la semana en el que nunca puede empezar un siglo?
+ Por el contrario, ¿cuál es el día de la semana que puede ser inicio y
+final de un siglo?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;que pueden quedar contestadas rápidamente ejecutando el …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 14 Mar 2013 02:03:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2013-03-14:/2013/03/14/el-dia-negado/</guid><category>año bisiesto</category><category>cal</category></item><item><title>De aquí al 2038</title><link>https://karpoke.ignaciocano.com/2010/10/07/de-aqui-al-2038/</link><description>&lt;p&gt;Como bien dice el agente Smith, es cuestión de contrastar un poco.
+&lt;a href="http://rinzewind.org/archives/2010/10/07/5-viernes-5-sabados-5-domingos/" title="Octubres"&gt;Octubres&lt;/a&gt; con 5 viernes, 5 sábados y 5 domingos, de aquí al &lt;a href="http://es.wikipedia.org/wiki/Problema_del_a%C3%B1o_2038" title="2038"&gt;2038&lt;/a&gt;,
+si es que llegamos:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ for ((i=2011; i &amp;lt; 2039; i++)); do cal 10 $i; done |
+grep -B2 -A4  "             1  2  3"
+
+    Octubre 2021
+lu ma …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 07 Oct 2010 13:27:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2010-10-07:/2010/10/07/de-aqui-al-2038/</guid><category>cadenas</category><category>cal</category><category>y2k38</category></item></channel></rss>

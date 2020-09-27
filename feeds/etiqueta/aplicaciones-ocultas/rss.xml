@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - aplicaciones ocultas</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 28 Jun 2012 12:42:00 +0200</lastBuildDate><item><title>Mostrar las aplicaciones ocultas que se ejecutan al inicio</title><link>https://karpoke.ignaciocano.com/2012/06/28/mostrar-las-aplicaciones-ocultas-que-se-ejecutan-al-inicio/</link><description>&lt;p&gt;Las aplicaciones que se ejecutan al inicio tienen un archivo de
+configuración en el directorio &lt;code&gt;/etc/xdg/autostart&lt;/code&gt;. Algunos de estos
+archivos de configuración tienen la variable &lt;code&gt;NoDisplay=true&lt;/code&gt;, por lo
+que no aparecen en el listado de Aplicaciones al inicio, y por tanto no
+se pueden desactivar a golpe …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 28 Jun 2012 12:42:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-06-28:/2012/06/28/mostrar-las-aplicaciones-ocultas-que-se-ejecutan-al-inicio/</guid><category>12.04</category><category>aplicaciones ocultas</category><category>ubuntu precise pangolin</category></item></channel></rss>

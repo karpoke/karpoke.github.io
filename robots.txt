@@ -1,0 +1,7 @@
+User-Agent: *
+
+Disallow: /are/you/feeling/a/little/bit/curious/./drop/me/a/line/
+
+Disallow: /harming/humans
+Disallow: /ignoring/human/orders
+Disallow: /harm/to/self

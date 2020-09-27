@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - .htaccess</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 10 May 2012 15:35:00 +0200</lastBuildDate><item><title>Forzar el uso de SSL/HTTPS de un directorio en Apache2 mediante .htaccess y mod_rewrite</title><link>https://karpoke.ignaciocano.com/2012/05/10/forzar-el-uso-de-sslhttps-de-un-directorio-en-apache2-mediante-htaccess-y-mod_rewrite/</link><description>&lt;p&gt;Si queremos que el acceso a un directorio concreto, es decir, que afecte
+únicamente la ruta relativa en la URL que accede a ese directorio, se
+realice mediante una conexión segura, suponiendo que ya tenemos
+configurado el servidor de forma adecuada, basta incluir en ese
+directorio un fichero &lt;code&gt;.htaccess&lt;/code&gt; que …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 10 May 2012 15:35:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-05-10:/2012/05/10/forzar-el-uso-de-sslhttps-de-un-directorio-en-apache2-mediante-htaccess-y-mod_rewrite/</guid><category>.htaccess</category><category>https</category><category>mod_rewrite</category><category>ssl</category></item></channel></rss>

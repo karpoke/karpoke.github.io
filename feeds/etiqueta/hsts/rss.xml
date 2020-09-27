@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - hsts</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 11 Sep 2011 17:37:00 +0200</lastBuildDate><item><title>HTTP Strict Transport Security</title><link>https://karpoke.ignaciocano.com/2011/09/11/http-strict-transport-security/</link><description>&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security" title="HTTP Strict Transport Security"&gt;HTTP Strict Transport Security&lt;/a&gt; (HSTS) es un mecanismo de seguridad
+web donde el servidor exige que las conexiones se realicen únicamente
+mediante conexiones seguras. El servidor informa de esta política de
+seguridad utilizando la cabecera &lt;code&gt;Strict-Transport-Security&lt;/code&gt;, en donde
+se especifica el periodo durante el cual las conexiones seguras son
+obligatorias …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 11 Sep 2011 17:37:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-09-11:/2011/09/11/http-strict-transport-security/</guid><category>apache</category><category>cabeceras HTTP</category><category>hsts</category><category>http</category><category>https</category><category>man in the middle</category><category>mitm</category><category>mod_headers</category><category>robo de sesión</category><category>ssl</category></item></channel></rss>

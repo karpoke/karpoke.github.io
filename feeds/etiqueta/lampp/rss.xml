@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - lampp</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 03 Jun 2012 03:59:00 +0200</lastBuildDate><item><title>Symfony en Ubuntu Lucid Lynx 10.04</title><link>https://karpoke.ignaciocano.com/2012/06/03/symfony-en-ubuntu-lucid-lynx-10-04/</link><description>&lt;p&gt;&lt;a href="http://www.symfony-project.org/" title="Symfony"&gt;Symfony&lt;/a&gt; es una &lt;em&gt;framework&lt;/em&gt; MVC escrito en PHP para el desarrollo
+rápido de páginas web. Además, ofrece un conjunto de buenas prácticas
+para desarrollar páginas más seguras y con un coste de mantenimiento
+menor.&lt;/p&gt;
+&lt;p&gt;Para que la instalación sea más segura, los ficheros de Symfony debería
+estar fuera del &lt;code&gt;DocumentRoot …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 03 Jun 2012 03:59:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-06-03:/2012/06/03/symfony-en-ubuntu-lucid-lynx-10-04/</guid><category>10.04</category><category>apache</category><category>csrf</category><category>framework</category><category>lampp</category><category>mvc</category><category>mysql</category><category>php</category><category>symfony</category><category>ubuntu lucid lynx</category><category>xss</category></item></channel></rss>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - avr4518pw</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 01 Jan 2011 18:46:00 +0100</lastBuildDate><item><title>CSRF en el panel de administración del router Arcadyan de ya.com</title><link>https://karpoke.ignaciocano.com/2011/01/01/csrf-en-el-panel-de-administracion-del-router-arcadyan-de-ya-com/</link><description>&lt;p&gt;El router es un Arcadyan, modelo Astoria AVR4518PW. Y parece que es
+vulnerable a ataques CSRF.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Router Arcadyan" src="https://karpoke.ignaciocano.com/images/router-arcadyan-300x225.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Si tienes este router y has iniciado sesión en el panel de
+administración, pulsando en el siguiente enlace se &lt;a href="#" title="cerrará la sesión de usuario"&gt;cerrará la sesión de
+usuario&lt;/a&gt;. Si has cambiado la IP por defecto, 192.168.2 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 01 Jan 2011 18:46:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-01-01:/2011/01/01/csrf-en-el-panel-de-administracion-del-router-arcadyan-de-ya-com/</guid><category>arcadyan</category><category>avr4518pw</category><category>csrf</category><category>router</category><category>ya.com</category></item></channel></rss>

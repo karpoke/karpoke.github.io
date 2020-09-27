@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - almacén de paquetes</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 17 Mar 2011 11:11:00 +0100</lastBuildDate><item><title>Solucionado el error "E: Problem with MergeList" al actualizar Debian</title><link>https://karpoke.ignaciocano.com/2011/03/17/solucionado-el-error-e-problem-with-mergelist-al-actualizar-debian/</link><description>&lt;p&gt;Tras realizar una actualización rutinaria, &lt;code&gt;aptitude update&lt;/code&gt;, me
+encuentro con el siguiente error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;E: Encountered a section with no Package: header
+E: Problem with MergeList /var/lib/apt/lists/ftp.caliu.cat_debian_dists_testing_main_binary-i386_Packages
+E: No se pudieron analizar o abrir las listas de paquetes o el archivo de estado.
+E: No …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 17 Mar 2011 11:11:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-17:/2011/03/17/solucionado-el-error-e-problem-with-mergelist-al-actualizar-debian/</guid><category>almacén de paquetes</category><category>aptitude</category><category>debian</category><category>mergelist</category><category>sid</category><category>update</category><category>wheezy</category></item></channel></rss>

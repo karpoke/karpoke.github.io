@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - logwatch</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 07 Mar 2011 22:11:00 +0100</lastBuildDate><item><title>Detectando intrusos en Ubuntu Maverick Meerkat</title><link>https://karpoke.ignaciocano.com/2011/03/07/detectando-intrusos-en-ubuntu-maverick-meerkat/</link><description>&lt;p&gt;Un artículo para tener en cuenta algunas de las acciones que podemos
+llevar a cabo para &lt;a href="http://dzulkifli.com/index.php?option=com_content&amp;amp;view=article&amp;amp;id=109:securing-maverick-meerkat&amp;amp;catid=35:ubuntu&amp;amp;Itemid=85" title="securizar Ubuntu Maverick Meerkat"&gt;securizar Ubuntu Maverick Meerkat&lt;/a&gt;. Algunos
+programas para facilitar la tarea de controlar los intentos de acceso al
+sistema:&lt;/p&gt;
+&lt;h2&gt;ufw&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ufw&lt;/code&gt; es una forma sencilla de manejar un cortafuegos. Nada más
+instalarlo, lo habilitamos:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 07 Mar 2011 22:11:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-03-07:/2011/03/07/detectando-intrusos-en-ubuntu-maverick-meerkat/</guid><category>10.10</category><category>denyhosts</category><category>detección de intrusos</category><category>fail2ban</category><category>firewall</category><category>http</category><category>https</category><category>log</category><category>logcheck</category><category>logwatch</category><category>psad</category><category>ssh</category><category>tiger</category><category>ufw</category></item></channel></rss>
