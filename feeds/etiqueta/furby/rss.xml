@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - Furby</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 18 Jan 2014 15:58:00 +0100</lastBuildDate><item><title>Reverse Engineering a Furby</title><link>https://karpoke.ignaciocano.com/2014/01/18/reverse-engineering-a-furby/</link><description>&lt;blockquote&gt;
-&lt;p&gt;This past semester I’ve been working on a directed study at my university
-with Prof. Wil Robertson reverse engineering embedded devices. After a couple
-of months looking at a passport scanner, one of my friends jokingly suggested
-I hack a Furby, the notoriously annoying toy of late 1990s fame …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 18 Jan 2014 15:58:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-01-18:/2014/01/18/reverse-engineering-a-furby/</guid><category>Furby</category><category>ingeniería inversa</category><category>EEPROM</category><category>I2C</category><category>microscopio electrónico de barrido</category></item></channel></rss>

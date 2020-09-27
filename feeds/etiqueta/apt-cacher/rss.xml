@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - apt-cacher</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 17 May 2014 01:30:00 +0200</lastBuildDate><item><title>Caché de paquetes descargados en Ubuntu Trusty Tahr</title><link>https://karpoke.ignaciocano.com/2014/05/17/cache-de-paquetes-descargados-en-ubuntu-trusty-tahr/</link><description>&lt;p&gt;Si tenemos una LAN con varios equipos, podemos utilizar &lt;code&gt;apt-cacher-ng&lt;/code&gt;
-para no tener que descargar las actualizaciones desde los repostiorios
-en cada uno de ellos, ya que nos permite reutilizar los paquetes que
-hayamos descargado. Otras opciones, como AptProxy parece que han quedado
-algo obsoletas.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;apt-cacher-ng&lt;/code&gt; es un &lt;em&gt;proxy/caché …&lt;/em&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 17 May 2014 01:30:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-05-17:/2014/05/17/cache-de-paquetes-descargados-en-ubuntu-trusty-tahr/</guid><category>14.04</category><category>apt-cacher</category><category>apt-cacher-ng</category><category>aptproxy</category><category>cache</category><category>proxy</category><category>ubuntu trusty tahr</category><category>ufw</category><category>w3m</category></item></channel></rss>

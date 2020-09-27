@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - censura</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sun, 11 Dec 2016 22:43:00 +0100</lastBuildDate><item><title>Tor at the heart: bridges and pluggable transports</title><link>https://karpoke.ignaciocano.com/2016/12/11/tor-at-the-heart-bridges-and-pluggable-transports/</link><description>&lt;blockquote&gt;
-&lt;p&gt;Censors block Tor in two ways: they can block connections to the IP addresses
-of known Tor relays, and they can analyze network traffic to find use of the
-Tor protocol. Bridges are secret Tor relays—they don’t appear in any public
-list, so the censor doesn’t know …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sun, 11 Dec 2016 22:43:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2016-12-11:/2016/12/11/tor-at-the-heart-bridges-and-pluggable-transports/</guid><category>Tor</category><category>censura</category><category>anonimato</category><category>protocolos ofuscados</category><category>repetidores anónimos</category></item></channel></rss>

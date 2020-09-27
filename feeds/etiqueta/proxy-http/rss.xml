@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - proxy http</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 15 Aug 2011 04:29:00 +0200</lastBuildDate><item><title>SSH over HTTP-Proxy</title><link>https://karpoke.ignaciocano.com/2011/08/15/ssh-over-http-proxy/</link><description>&lt;p&gt;A veces, queremos poder navegar o chatear por Internet pero no queremos
-que nadie pueda conocer, ni bloquear, las páginas que visitamos o espiar
-nuestras conversaciones, bien porque porque estamos en el trabajo, la
-universidad o en una red abierta. En la red a la que estamos conectados
-puede que …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 15 Aug 2011 04:29:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-08-15:/2011/08/15/ssh-over-http-proxy/</guid><category>apache</category><category>corkscrew</category><category>htc</category><category>http</category><category>HTTP_PROXY</category><category>https</category><category>proxy</category><category>proxy http</category><category>proxy socks</category><category>proxytunnel</category><category>SOCKS</category><category>ssh</category><category>varnish</category></item></channel></rss>

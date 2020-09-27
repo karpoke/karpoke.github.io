@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - monit</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 22 Sep 2012 15:17:00 +0200</lastBuildDate><item><title>Monitorizar el tamaño de un directorio con monit</title><link>https://karpoke.ignaciocano.com/2012/09/22/monitorizar-el-tamano-de-un-directorio-con-monit/</link><description>&lt;p&gt;&lt;code&gt;monit&lt;/code&gt; es un herramienta para monitorizar procesos, ficheros,
-directorios y sistemas de ficheros, que permite enviar alertas cuando
-suceden eventos tales como que un proceso no arranca, se incrementa la
-carga del sistema o el uso de memoria por encima de un umbral
-determinado, se modifican ficheros o directorios, etc …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 22 Sep 2012 15:17:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-09-22:/2012/09/22/monitorizar-el-tamano-de-un-directorio-con-monit/</guid><category>monit</category><category>script</category></item></channel></rss>

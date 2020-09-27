@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - pv</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 30 Jan 2018 20:36:00 +0100</lastBuildDate><item><title>Recuperar un disco corrupto</title><link>https://karpoke.ignaciocano.com/2018/01/30/recuperar-un-disco-corrupto/</link><description>&lt;p&gt;Un par de comandos útiles para recuperar datos de un disco problemático.&lt;/p&gt;
-&lt;p&gt;Para copiar el disco, mostrando una barra de progeso:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;dd if=/dev/sda | pv | dd of=/dev/sdb conv=noerror,sync
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Lanzamos &lt;code&gt;ddrescue&lt;/code&gt;:
-    ddrescue -d -r3 /dev/sda /dev/sdb output.log&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 30 Jan 2018 20:36:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2018-01-30:/2018/01/30/recuperar-un-disco-corrupto/</guid><category>copia de seguridad</category><category>recuperación de datos</category><category>dd</category><category>pv</category><category>ddrescue</category><category>gddrescue</category></item></channel></rss>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - vr-3025u</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 09 Feb 2012 21:36:00 +0100</lastBuildDate><item><title>Reiniciar el router desde el terminal</title><link>https://karpoke.ignaciocano.com/2012/02/09/reiniciar-el-router-desde-bash/</link><description>&lt;p&gt;De vez en cuando, necesitamos reiniciar nuestro &lt;em&gt;router&lt;/em&gt;. Por ejemplo,
-para provocar un cambio de IP, si tenemos IP dinámica. Podemos acceder
-al panel de administración del &lt;em&gt;router&lt;/em&gt; mediante el navegador,
-normalmente en el puerto 80 u 8080, aunque también es posible hacerlo a
-través de telnet, en el puerto …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 09 Feb 2012 21:36:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-02-09:/2012/02/09/reiniciar-el-router-desde-bash/</guid><category>comtrend</category><category>expect</category><category>ip</category><category>router</category><category>script</category><category>telnet</category><category>vr-3025u</category><category>yad</category></item></channel></rss>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - header</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Mon, 28 Feb 2011 20:28:00 +0100</lastBuildDate><item><title>Cabeceras HTTP personalizadas en Apache2</title><link>https://karpoke.ignaciocano.com/2011/02/28/cabeceras-http-personalizadas-en-apache2/</link><description>&lt;p&gt;Podemos modificar las cabeceras que devuelve el Apache usando el módulo
-&lt;code&gt;mod_headers&lt;/code&gt;. Por ejemplo, añadiendo a nuestro &lt;em&gt;virtualhost&lt;/em&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Header set X-MyHeader "It took %D microseconds to serve this page."
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Se pueden modificar tanto las cabeceras que van a ser enviadas, con la
-directiva &lt;code&gt;Header&lt;/code&gt;, como las que vienen con una …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Mon, 28 Feb 2011 20:28:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-02-28:/2011/02/28/cabeceras-http-personalizadas-en-apache2/</guid><category>barrapunto</category><category>curl</category><category>header</category><category>mod_headers</category><category>requestheader</category><category>virtualhost</category><category>wordpress</category><category>X-Robots-Tag</category></item></channel></rss>

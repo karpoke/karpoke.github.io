@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - ntp</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 07 Jan 2011 06:04:00 +0100</lastBuildDate><item><title>kernel time sync status change</title><link>https://karpoke.ignaciocano.com/2011/01/07/kernel-time-sync-status-change/</link><description>&lt;p&gt;Tras instalar &lt;code&gt;logcheck&lt;/code&gt;, un programa que escanea los ficheros de &lt;em&gt;log&lt;/em&gt;
-del sistema en busca de "líneas interesantes", comencé a recibir
-demasiados avisos del tipo:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Jan  7 02:04:38 terminus ntpd[1117]: kernel time sync status change 6001
-"1117"
-Jan  7 02:21:44 terminus ntpd[1117]: kernel time …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 07 Jan 2011 06:04:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2011-01-07:/2011/01/07/kernel-time-sync-status-change/</guid><category>logcheck</category><category>ntp</category></item></channel></rss>

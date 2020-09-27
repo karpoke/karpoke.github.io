@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - fichero de bloqueo</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Thu, 06 Sep 2012 13:44:00 +0200</lastBuildDate><item><title>Solucionado el error "No se pudo abrir el fichero de bloqueo «/var/lock/aptitude»" al actualizar Raspbmc</title><link>https://karpoke.ignaciocano.com/2012/09/06/solucionado-el-error-no-se-pudo-abrir-el-fichero-de-bloqueo-varlockaptitude-al-actualizar-raspbmc/</link><description>&lt;p&gt;Tengo una Raspbmc instalada en la Raspberry Pi. Al utilizar &lt;code&gt;aptitude&lt;/code&gt;
-para instalar cualquier paquete o actualizar el sistema, recibo el
-siguiente error:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo aptitude update
-[ ERR] Leyendo la información de estado
-E: No se pudo abrir el fichero de bloqueo "/var/lock/aptitude" - open (2: No existe el fichero …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Thu, 06 Sep 2012 13:44:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-09-06:/2012/09/06/solucionado-el-error-no-se-pudo-abrir-el-fichero-de-bloqueo-varlockaptitude-al-actualizar-raspbmc/</guid><category>aptitude</category><category>fichero de bloqueo</category><category>raspberry pi</category><category>raspbmc</category></item></channel></rss>

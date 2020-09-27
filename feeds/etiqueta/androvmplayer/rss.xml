@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - androvmplayer</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 15 Dec 2012 18:40:00 +0100</lastBuildDate><item><title>Jelly Bean con AndroVM en VirtualBox OSE</title><link>https://karpoke.ignaciocano.com/2012/12/15/jelly-bean-con-androvm-en-virtualbox-ose/</link><description>&lt;p&gt;&lt;a href="http://androvm.org/" title="AndroVM"&gt;AndroVM&lt;/a&gt; es una máquina virtual para ejecutar Android. Si queremos
-probarla, lo único que tenemos que hacer es &lt;a href="http://androvm.org/blog/download/" title="descargarla"&gt;descargarla&lt;/a&gt; y configurar
-VirtualBox OSE para ejecutarla.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="jelly bean" src="https://karpoke.ignaciocano.com/images/jelly-bean-300x183.png" /&gt;&lt;/p&gt;
-&lt;h2&gt;Descarga&lt;/h2&gt;
-&lt;p&gt;Desde la página de &lt;a href="http://androvm.org/blog/download/" title="descargarla"&gt;descargas&lt;/a&gt; nos descargamos el fichero
-OVA, por ejemplo, &lt;strong&gt;vbox86tp version with gapps &amp;amp; houdini&lt;/strong&gt; (hay varias
-versiones, pero ésta es la …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 15 Dec 2012 18:40:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-12-15:/2012/12/15/jelly-bean-con-androvm-en-virtualbox-ose/</guid><category>aceleración gráfica</category><category>android</category><category>androvm</category><category>androvmplayer</category><category>hardware opengl</category><category>jelly bean</category><category>máquina virtual</category><category>ova</category><category>virtualbox-ose</category></item></channel></rss>

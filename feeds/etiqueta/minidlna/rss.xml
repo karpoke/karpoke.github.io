@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - minidlna</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Tue, 11 Nov 2014 15:23:00 +0100</lastBuildDate><item><title>MiniDLNA en Ubuntu Trusty Tahr</title><link>https://karpoke.ignaciocano.com/2014/11/11/minidlna-en-ubuntu-trusty-tahr/</link><description>&lt;p&gt;DLNA define las especificaciones para compartir contenido multimedia
-entre diferentes dispositivos mediante el uso de protocolos UPnP.
-Instalaremos un servidor DLNA en Ubuntu Trusty Tahr, MiniDLNA (ahora se
-llama ReadyMedia), que nos permitirá, por ejemplo, ver películas,
-escuchar música o ver fotos en el portátil, el móvil o la televisión …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Tue, 11 Nov 2014 15:23:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2014-11-11:/2014/11/11/minidlna-en-ubuntu-trusty-tahr/</guid><category>14.04</category><category>android</category><category>checkinstall</category><category>código fuente</category><category>dlna</category><category>init</category><category>mediahouse</category><category>minidlna</category><category>ubuntu trusty tahr</category><category>ufw</category></item></channel></rss>

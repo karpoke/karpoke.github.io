@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - IncompleteRead</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Fri, 02 Jan 2015 13:02:00 +0100</lastBuildDate><item><title>Solucionado el error «ImportError: cannot import name IncompleteRead» al ejecutar pip en Ubuntu Trusty Tahr 14.04</title><link>https://karpoke.ignaciocano.com/2015/01/02/solucionado-el-error-importerror-cannot-import-name-incompleteread-al-ejecutar-pip-en-ubuntu-trusty-tahr-14-04/</link><description>&lt;p&gt;Si al ejecutar &lt;code&gt;pip&lt;/code&gt; nos encontramos con el siguiente error:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Traceback (most recent call last):
-  File "/usr/bin/pip", line 9, in
-    load_entry_point('pip==1.5.4', 'console_scripts', 'pip')()
-  File "/usr/local/lib/python2.7/dist-packages/pkg_resources.py", line 352, in load_entry_point
-    return get_distribution(dist).load_entry_point(group, name)
-  File "/usr …&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Fri, 02 Jan 2015 13:02:00 +0100</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2015-01-02:/2015/01/02/solucionado-el-error-importerror-cannot-import-name-incompleteread-al-ejecutar-pip-en-ubuntu-trusty-tahr-14-04/</guid><category>14.04</category><category>IncompleteRead</category><category>pip</category><category>requests</category><category>ubuntu trusty tahr</category></item></channel></rss>

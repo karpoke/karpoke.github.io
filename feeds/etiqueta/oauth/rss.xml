@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Karpoke - Just another Pelican blog - oauth</title><link>https://karpoke.ignaciocano.com/</link><description></description><lastBuildDate>Sat, 16 Jun 2012 13:23:00 +0200</lastBuildDate><item><title>AnonTwi, tweets cifrados</title><link>https://karpoke.ignaciocano.com/2012/06/16/anontwi-tweets-cifrados/</link><description>&lt;p&gt;&lt;a href="http://anontwi.sourceforge.net/" title="AnonTwi"&gt;AnonTwi&lt;/a&gt; es un &lt;em&gt;script&lt;/em&gt; en Python que permite enviar y recibir
-&lt;em&gt;tweets&lt;/em&gt; y mensajes cifrados mediante AES y HMAC-SHA1 en Twitter, al que
-se conecta mediante SSL. Otras caracterísiticas son la posibilidad de
-usar la red TOR, envío de mensajes largos o la falsificación de las
-cabeceras que envía.&lt;/p&gt;
-&lt;h2&gt;Instalación …&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nacho Cano</dc:creator><pubDate>Sat, 16 Jun 2012 13:23:00 +0200</pubDate><guid isPermaLink="false">tag:karpoke.ignaciocano.com,2012-06-16:/2012/06/16/anontwi-tweets-cifrados/</guid><category>oauth</category><category>privacidad</category><category>python</category><category>script</category><category>twitter</category></item></channel></rss>
