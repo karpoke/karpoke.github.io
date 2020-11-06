@@ -16,6 +16,7 @@ if command -v pipenv > /dev/null; then
     pipenv update
     pipenv run pip freeze | grep -v "pkg-resources" > requirements.txt
 else
+    workon karpoke.github.io
     # shellcheck disable=SC2086
     pip install --upgrade ${BASIC_PACKAGES[*]}
     pip freeze | grep -v "pkg-resources" > requirements.txt
